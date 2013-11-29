@@ -27,24 +27,6 @@
     <include file="View_56_BannerList.xml"/>
     <include file="View_57_58_59_Showcase.xml"/>
     <include file="View_PVR.xml"/>
-    <include name="WindowTitle">
-        <posx>45</posx>
-        <posy>18</posy>
-        <width>1200</width>
-        <aligny>top</aligny>
-        <font>WindowTitleFont</font>
-        <shadowcolor>-</shadowcolor>
-        <textcolor>WindowTitleColor</textcolor>
-    </include>
-    <include name="WindowTitleSub">
-        <posx>45</posx>
-        <posy>68</posy>
-        <width>1200</width>
-        <aligny>top</aligny>
-        <font>WindowTitleSubFont</font>
-        <textcolor>WindowTitleSubColor</textcolor>
-        <shadowcolor>-</shadowcolor>
-    </include>
     <include name="VisibleFadeEffect">
         <animation effect="fade" time="200">Visible</animation>
         <animation effect="fade" time="200">Hidden</animation>
@@ -393,83 +375,6 @@
         <font>size24B</font>
         <textcolor>White2</textcolor>
         <animation effect="fade" time="200">VisibleChange</animation>
-    </include>
-    <include name="FacadeNumItems">
-        <include>VisibleFadeEffect</include>
-        <posx>30r</posx>
-        <posy>1010</posy>
-        <width>594</width>
-        <height>66</height>
-        <align>right</align>
-        <font>FacadeNumItemsFont</font>
-        <textcolor>FacadeNumItemsColor</textcolor>
-        <!-- <label>$VAR[GlobalHeadings]</label> -->
-    </include>
-    <include name="LeftMenu">
-        <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]">Conditional</animation>
-        <animation effect="slide" time="150" end="-600,0">WindowClose</animation>
-        <animation effect="slide" tween="circle" easing="out" time="150" start="-20,0" end="20,0">WindowOpen</animation>
-        <control type="image">
-            <posx>-600</posx>
-            <posy>0</posy>
-            <width>627</width>
-            <height>1080</height>
-            <texture>common/bg_left.png</texture>
-        </control>
-        <control type="button" id="8999">
-            <description>Fake button for mouse control</description>
-            <posx>-600</posx>
-            <posy>0</posy>
-            <width>627</width>
-            <height>1080</height>
-            <label>-</label>
-            <font>-</font>
-            <texturenofocus>-</texturenofocus>
-            <texturefocus>-</texturefocus>
-            <visible>true</visible>
-        </control>
-        <control type="image">
-            <posx>-600</posx>
-            <posy>-12</posy>
-            <width>577</width>
-            <height>79</height>
-            <texture>list/bg_facade_nofocus_top.png</texture>
-        </control>
-    </include>
-    <include name="LeftMenuTitleLabel">
-        <posx>-600</posx>
-        <posy>0</posy>
-        <textoffsetx>45</textoffsetx>
-        <textoffsety>32</textoffsety>
-        <align>left</align>
-        <aligny>top</aligny>
-        <width>590</width>
-        <font>LeftMenuTitleFont</font>
-        <textcolor>60ffffff</textcolor>
-    </include>
-    <include name="LeftMenuButtonGroup">
-        <posx>-600</posx>
-        <posy>67</posy>
-        <width>578</width>
-        <height max="951">auto</height>
-        <itemgap>0</itemgap>
-        <scrolltime>200</scrolltime>
-        <orientation>vertical</orientation>
-    </include>
-    <include name="LeftMenuButton">
-        <height>73</height>
-        <width>578</width>
-        <font>LeftMenuButtonFont</font>
-        <align>left</align>
-        <aligny>top</aligny>
-        <radioposx>505</radioposx>
-        <textoffsetx>45</textoffsetx>
-        <textoffsety>11</textoffsety>
-        <disabledcolor>DisabledColor</disabledcolor>
-        <texturefocus border="4">list/bg_facade_focus.png</texturefocus>
-        <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus>
-        <alttexturefocus border="4">list/bg_facade_focus.png</alttexturefocus>
-        <alttexturenofocus border="4">list/bg_facade_nofocus.png</alttexturenofocus>
     </include>
     <include name="9000ViewButtons">
         <height>54</height>
@@ -1334,5 +1239,100 @@
                 <shadowcolor>ShadowDark</shadowcolor>
             </control>
         </control>
+    </include>
+    <include name="WindowTitle">
+        <posx>45</posx>
+        <posy>18</posy>
+        <width>1200</width>
+        <aligny>top</aligny>
+        <font>WindowTitleFont</font>
+        <shadowcolor>-</shadowcolor>
+        <textcolor>WindowTitleColor</textcolor>
+    </include>
+    <include name="WindowTitleSub">
+        <posx>45</posx>
+        <posy>68</posy>
+        <width>1200</width>
+        <aligny>top</aligny>
+        <font>WindowTitleSubFont</font>
+        <textcolor>WindowTitleSubColor</textcolor>
+        <shadowcolor>-</shadowcolor>
+    </include>
+    <include name="FacadeNumItems">
+        <include>VisibleFadeEffect</include>
+        <posx>30r</posx>
+        <posy>1010</posy>
+        <width>594</width>
+        <height>66</height>
+        <align>right</align>
+        <font>FacadeNumItemsFont</font>
+        <textcolor>FacadeNumItemsColor</textcolor>
+        <!-- <label>$VAR[GlobalHeadings]</label> -->
+    </include>
+    <include name="LeftMenu">
+        <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]">Conditional</animation>
+        <animation effect="slide" time="150" end="-600,0">WindowClose</animation>
+        <animation effect="slide" tween="circle" easing="out" time="150" start="-20,0" end="20,0">WindowOpen</animation>
+        <control type="image">
+            <posx>-600</posx>
+            <posy>0</posy>
+            <width>627</width>
+            <height>1080</height>
+            <texture>common/bg_left.png</texture>
+        </control>
+        <control type="button" id="8999">
+            <description>Fake button for mouse control</description>
+            <posx>-600</posx>
+            <posy>0</posy>
+            <width>627</width>
+            <height>1080</height>
+            <label>-</label>
+            <font>-</font>
+            <texturenofocus>-</texturenofocus>
+            <texturefocus>-</texturefocus>
+            <visible>true</visible>
+        </control>
+        <control type="image">
+            <posx>-600</posx>
+            <posy>-12</posy>
+            <width>577</width>
+            <height>79</height>
+            <texture>list/bg_facade_nofocus_top.png</texture>
+        </control>
+    </include>
+    <include name="LeftMenuTitleLabel">
+        <posx>-600</posx>
+        <posy>0</posy>
+        <textoffsetx>45</textoffsetx>
+        <textoffsety>32</textoffsety>
+        <align>left</align>
+        <aligny>top</aligny>
+        <width>590</width>
+        <font>LeftMenuTitleFont</font>
+        <textcolor>60ffffff</textcolor>
+    </include>
+    <include name="LeftMenuButtonGroup">
+        <posx>-600</posx>
+        <posy>67</posy>
+        <width>578</width>
+        <height max="951">auto</height>
+        <itemgap>0</itemgap>
+        <scrolltime>200</scrolltime>
+        <orientation>vertical</orientation>
+    </include>
+    <include name="LeftMenuButton">
+        <height>73</height>
+        <width>578</width>
+        <font>LeftMenuButtonFont</font>
+        <align>left</align>
+        <aligny>top</aligny>
+        <radioposx>505</radioposx>
+        <textoffsetx>45</textoffsetx>
+        <textoffsety>11</textoffsety>
+        <disabledcolor>DisabledColor</disabledcolor>
+        <texturefocus border="4">list/bg_facade_focus.png</texturefocus>
+        <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus>
+        <alttexturefocus border="4">list/bg_facade_focus.png</alttexturefocus>
+        <alttexturenofocus border="4">list/bg_facade_nofocus.png</alttexturenofocus>
     </include>
 </includes>

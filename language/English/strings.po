@@ -100,6 +100,10 @@ msgctxt "#31048"
 msgid "Visualization Presets"
 msgstr ""
 
+msgctxt "#31049"
+msgid "Settings Level"
+msgstr ""
+
 #empty strings from id 31049 to 31109
 
 msgctxt "#31110"
@@ -185,17 +189,23 @@ msgctxt "#31356"
 msgid "Download Subtitles"
 msgstr ""
 
-#empty strings from id 31357 to 31389
+msgctxt "#31357"
+msgid "Local subtitle available"
+msgstr ""
+
+#empty strings from id 31358 to 31389
 #Skin Fontsets
 
 msgctxt "#31390"
-msgid "(1/2) Skin default"
+msgid "(1/3) Skin default"
 msgstr ""
 
-#empty string with id 31391
+msgctxt "#31391"
+msgid "(3/3) Arial (no caps)"
+msgstr ""
 
 msgctxt "#31392"
-msgid "(2/2) Arial based"
+msgid "(2/3) Arial based"
 msgstr ""
 
 #empty strings from id 31393 to 31499

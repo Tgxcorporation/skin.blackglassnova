@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
   <backgroundcolor>0</backgroundcolor>
   <defaultcontrol always="true">50</defaultcontrol>
@@ -227,6 +228,11 @@
         <control type="radiobutton" id="16" description="PartyMode">
           <include>9000SysButtons</include>
           <label>$LOCALIZE[589]</label>
+        </control>
+		<control type="togglebutton" id="20" description="Library update">
+          <include>9000SysButtons</include>
+          <label>653</label>
+		  <altlabel>13353</altlabel>
         </control>
         <control type="button" id="698" description="Files">
           <include>9000SysButtons</include>
