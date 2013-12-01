@@ -176,7 +176,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems]</label>
+                <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="panel" id="11" description="TV CHANNELS">
                 <posx>1260</posx>
@@ -472,7 +472,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems]</label>
+                <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="panel" id="12" description="RADIO CHANNELS">
                 <posx>1260</posx>
@@ -729,7 +729,7 @@
                     <height>73</height>
                     <font>InfoDetailsFont</font>
                     <textcolor>MainColor</textcolor>
-                    <label>$INFO[Container(13).ListItem.Duration]</label>
+                    <label fallback="161">$INFO[Container(13).ListItem.Duration]</label>
                 </control>
                 <control type="label">
                     <posx>810</posx>
@@ -774,7 +774,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems]</label>
+                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="panel" id="13" description="RECORDINGS">
                 <posx>1260</posx>
@@ -1174,7 +1174,7 @@
             <control type="label">
                 <posx>65r</posx>
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems]</label>
+                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="list" id="14" description="Timers">
                 <posx>45</posx>
@@ -1391,7 +1391,7 @@
             <control type="label">
                 <posx>65r</posx>
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems]</label>
+                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="list" id="17" description="Search">
                 <posx>45</posx>
@@ -1767,7 +1767,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems]</label>
+                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="panel" id="15" description="CHANNELS">
                 <posx>1260</posx>
@@ -2001,7 +2001,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems]</label>
+                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="panel" id="16" description="CHANNELS">
                 <posx>1260</posx>

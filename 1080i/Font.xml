@@ -112,7 +112,8 @@
         <font>
             <name>MainMenu</name>
             <filename>Sansation_Regular.ttf</filename>
-            <size>88</size>
+            <size>73</size>
+            <style>bold</style>
         </font>
         <font>
             <name>MainMenuVerticalFO</name>
@@ -198,7 +199,7 @@
         <font>
             <name>Sublist</name>
             <filename>Sansation_Regular.ttf</filename>
-            <size>30</size>
+            <size>25</size>
         </font>
         <font>
             <name>MainLabelBig</name>

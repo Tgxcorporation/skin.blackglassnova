@@ -787,7 +787,7 @@
             </control>
         </control>
         <control type="image" description="fa overlay">
-            <visible>[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(56)]+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,)</visible>
+            <visible>[Control.IsVisible(50) | Control.IsVisible(51) | Control.IsVisible(56)]+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,) + !StringCompare(Container.FolderPath,plugin://plugin.video.plexbmc/)+!Container.Content(seasons)</visible>
             <include>Icon_Fade</include>
             <posx>-795</posx>
             <posy>350</posy>
@@ -812,7 +812,7 @@
             <texture border="3">list/bg_facade_nofocus_top.png</texture>
         </control>
         <control type="image" description="fa overlay">
-            <visible>Control.IsVisible(54)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,)</visible>
+            <visible>Control.IsVisible(54)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,) + !StringCompare(Container.FolderPath,plugin://plugin.video.plexbmc/)</visible>
             <posx>-795</posx>
             <posy>565</posy>
             <width>2058</width>

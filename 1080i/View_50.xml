@@ -147,7 +147,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label >$INFO[Container.NumItems]</label>
+                <label >$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="label">
                 <include>WindowTitleSub</include>

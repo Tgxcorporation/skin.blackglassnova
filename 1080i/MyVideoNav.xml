@@ -20,7 +20,7 @@
             <include>OpenClose</include>
             <include>View_50</include>
             <control type="group" description="Thumbs NO info">
-                <visible>![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
+                <visible>![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)] + !StringCompare(Container.FolderPath,plugin://plugin.video.plexbmc/)</visible>
                 <include>Icon_Fade</include>
                 <control type="group" description="Poster" id="70050">
                     <visible>SubString(Container.FolderPath,videodb://1/2,left) | SubString(Container.FolderPath,videodb://4,left)</visible>
@@ -50,7 +50,7 @@
                     </control>
                 </control>
                 <control type="group" description="Generic Thumb">
-                    <visible>!Control.IsVisible(70050) + !container.content(artists) + !isempty(ListItem.Art(thumb)) + !Skin.HasSetting(plexbmc)</visible>
+                    <visible>!Control.IsVisible(70050) + !container.content(artists) + !isempty(ListItem.Art(thumb))</visible>
                     <include>Icon_Fade</include>
                     <control type="image" description="Thumb">
                         <posx>45</posx>
@@ -66,7 +66,7 @@
                         <width>416</width>
                         <height>600</height>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
-                        <aspectratio>stretch</aspectratio>
+                        <aspectratio>scale</aspectratio>
                     </control>
                     <control type="image" description="Thumb">
                         <posx>18</posx>
@@ -105,7 +105,7 @@
                 </control>
             </control>
             <control type="group" description="MediaInfo">
-                <visible>[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,)</visible>
+                <visible>[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,) + !StringCompare(Container.FolderPath,plugin://plugin.video.plexbmc/)</visible>
                 <include>Icon_Fade</include>
                 <control type="group" description="Movies and shows">
                     <visible>!container.content(episodes)</visible>
@@ -135,8 +135,6 @@
                     </control>
                     <control type="group" description="Media info">
                         <visible>!Container.Content(seasons)</visible>
-                        <animation effect="fade" delay="100" time="300">Visible</animation>
-                        <animation effect="fade" time="0">Hidden</animation>
                         <posx>475</posx>
                         <posy>426</posy>
                         <control type="label" description="Title">
@@ -218,48 +216,124 @@
                 </control>
                 <control type="group" description="Episodes only">
                     <visible>container.content(episodes)</visible>
-                    <posx>60</posx>
-                    <posy>531</posy>
+                    <include>Icon_Fade</include>
                     <control type="image" description="Thumb">
-                        <posx>-6</posx>
-                        <posy>-123</posy>
-                        <width>720</width>
-                        <height>384</height>
-                        <include>Icon_Fade</include>
+                        <posx>45</posx>
+                        <posy>438</posy>
+                        <width>416</width>
+                        <height>234</height>
+                        <texture>img/BlackDotT.png</texture>
+                        <colordiffuse>EmptyThumbColor</colordiffuse>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>45</posx>
+                        <posy>438</posy>
+                        <width>416</width>
+                        <height>234</height>
                         <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
-                        <include>ThumbBorder</include>
                         <aspectratio>scale</aspectratio>
                     </control>
+                    <control type="image" description="Thumb">
+                        <posx>18</posx>
+                        <posy>411</posy>
+                        <width>470</width>
+                        <height>288</height>
+                        <texture border="37">thumbs/JewelCase.png</texture>
+                    </control>
                     <control type="group" description="Media info">
-                        <posx>0</posx>
-                        <posy>120</posy>
-                        <control type="label" description="Details">
-                            <posy>179</posy>
-                            <height>33</height>
-                            <width>708</width>
-                            <font>Details</font>
-                            <label>$VAR[Details]</label>
+                         <posx>475</posx>
+                        <posy>426</posy>
+                        <control type="label" description="Title">
+                            <posx>30</posx>
+                            <posy>-12</posy>
+                            <width>700</width>
+                            <height>71</height>
+                            <font>InfoTitleFont</font>
+                            <textcolor>MainColor</textcolor>
+                            <align>left</align>
+                            <scroll>false</scroll>
+                            <label>$INFO[ListItem.Title]</label>
                         </control>
-                        <control type="textbox" description="Plot51">
+                        <control type="image">
                             <posx>0</posx>
-                            <posy>221</posy>
-                            <width>708</width>
-                            <height>124</height>
-                            <label>$VAR[Plots]</label>
+                            <posy>0</posy>
+                            <width>741</width>
+                            <height>73</height>
+                            <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="image" description="Stars">
-                            <posx>-6</posx>
-                            <posy>360</posy>
+                            <posx>30</posx>
+                            <posy>92</posy>
                             <include>Stars</include>
                         </control>
+                        <control type="label" description="Rating">
+                            <posx>230</posx>
+                            <posy>73</posy>
+                            <width>480</width>
+                            <height>71</height>
+                            <font>InfoRatingFont</font>
+                            <textcolor>AlternateColor</textcolor>
+                            <scroll>false</scroll>
+                            <label fallback="416">$INFO[ListItem.Rating]</label>
+                        </control>
                         <control type="image" description="HD badge">
-                            <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                            <posx>120</posx>
-                            <posy>363</posy>
+                            <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.ideoResolution,710)]</visible>
+                            <posx>631</posx>
+                            <posy>97</posy>
                             <height>24</height>
                             <width>90</width>
                             <aspectratio aligny="bottom" align="right">keep</aspectratio>
                             <texture>badges/HD.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>73</posy>
+                            <width>741</width>
+                            <height>73</height>
+                            <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                        </control>
+                        <control type="label" description="Season">
+                            <posx>30</posx>
+                            <posy>146</posy>
+                            <width>700</width>
+                            <height>71</height>
+                            <font>InfoDetailsFont</font>
+                            <textcolor>MainColor</textcolor>
+                            <scroll>false</scroll>
+                            <label>$LOCALIZE[20373] $INFO[ListItem.Season]  •  $LOCALIZE[20359] $INFO[ListItem.Episode]</label>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>146</posy>
+                            <width>741</width>
+                            <height>73</height>
+                            <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                        </control>
+                         <control type="label" description="Details">
+                            <posx>30</posx>
+                            <posy>219</posy>
+                            <width>700</width>
+                            <height>71</height>
+                            <font>InfoDetailsFont</font>
+                            <textcolor>AlternateColor</textcolor>
+                            <scroll>false</scroll>
+                            <label>$VAR[Details]</label>
+                        </control>
+                        <control type="image">
+                            <posx>-470</posx>
+                            <posy>219</posy>
+                            <width>1211</width>
+                            <height>73</height>
+                            <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                        </control>
+                        <control type="textbox" description="Plot51">
+                            <posx>-430</posx>
+                            <posy>296</posy>
+                            <width>1140</width>
+                            <height>327</height>
+                            <font>InfoPlotFont</font>
+                            <textcolor>MainColor</textcolor>
+                            <label>$VAR[Plots]</label>
                         </control>
                     </control>
                 </control>
@@ -953,7 +1027,7 @@
                 </control>
                 <control type="button" id="8" description="Search">
                     <include>LeftMenuButton</include>
-                     <label>$LOCALIZE[137]</label>
+                    <label>$LOCALIZE[137]</label>
                 </control>
                 <control type="togglebutton" id="20" description="Library update">
                     <include>LeftMenuButton</include>

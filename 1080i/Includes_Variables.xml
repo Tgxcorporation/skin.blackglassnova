@@ -112,7 +112,7 @@
     <variable name="Details" description="Shown Above Plots and descriptions">
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
         <value condition="Container.content(Albums)">$INFO[ListItem.Artist]</value>
-        <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,  • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]$INFO[ListItem.Rating,  • ]</value>
+        <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,  • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
         <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863] : ]</value>
         <value condition="Container.Content(songs) + !IsEmpty(ListItem.Album)">[COLOR=Grey]$LOCALIZE[558]:[/COLOR] $INFO[ListItem.Album]</value>
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_genre))">$INFO[ListItem.Property(artist_genre),[COLOR=Grey]$LOCALIZE[515]: [/COLOR]]</value>
