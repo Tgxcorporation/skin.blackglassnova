@@ -60,6 +60,11 @@
             <size>35</size>
         </font>
         <font>
+            <name>InfoDetailsContainerFont</name>
+            <filename>Sansation_Regular.ttf</filename>
+            <size>30</size>
+        </font>
+        <font>
             <name>InfoRatingFont</name>
             <filename>Sansation_Regular.ttf</filename>
             <size>30</size>
