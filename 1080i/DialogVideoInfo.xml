@@ -77,9 +77,9 @@
                 <posx>720</posx>
                 <posy>147</posy>
                 <control type="label" description="Main Label">
-                    <posx>35</posx>
+                    <posx>TextMargin</posx>
                     <posy>0</posy>
-                    <width>1130</width>
+                    <width>1100</width>
                     <height>71</height>
                     <font>InfoTitleFont</font>
                     <textcolor>MainColor</textcolor>
@@ -103,7 +103,7 @@
                     <align>left</align>
                     <haspath>true</haspath>
                     <info>ListItem.Path</info>
-                </control> -->
+                </control>
                 <control type="image" description="Stars rating">
                     <posx>860</posx>
                     <posy>-35</posy>
@@ -111,7 +111,7 @@
                     <width>139</width>
                     <aspectratio aligny="center" align="right">keep</aspectratio>
                     <texture>$INFO[ListItem.Rating,badges/,.png]</texture>
-                </control>
+                </control>-->
                 <control type="group" description="List Info">
                     <posx>0</posx>
                     <posy>77</posy>
@@ -180,9 +180,9 @@
                         <control type="textbox" description="Plot">
                             <visible>![Control.HasFocus(9012) | Control.HasFocus(50) | Control.HasFocus(10) | Control.HasFocus(12)]</visible>
                             <include>VisibleFadeEffectDelay</include>
-                            <posx>35</posx>
+                            <posx>TextMargin</posx>
                             <posy>387</posy>
-                            <width>1130</width>
+                            <width>1100</width>
                             <height>330</height>
                             <align>justify</align>
                             <font>InfoPlotFont</font>
@@ -230,6 +230,44 @@
                                 <texture border="37">thumbs/JewelCase.png</texture>
                             </control>
                         </control>
+                        <control type="image" description="Thumb">
+                            <visible>Control.HasFocus(12) | Control.HasFocus(10)</visible>
+                            <posx>508</posx>
+                            <posy>420</posy>
+                            <width>184</width>
+                            <height>266</height>
+                            <texture>img/BlackDotT.png</texture>
+                            <colordiffuse>EmptyThumbColor</colordiffuse>
+                        </control>
+                        <control type="image" description="Current thumb">
+                            <visible>Control.HasFocus(10)</visible>
+                            <include>VisibleFadeEffectDelay</include>
+                            <posx>508</posx>
+                            <posy>420</posy>
+                            <width>184</width>
+                            <height>266</height>
+                            <texture>$INFO[ListItem.Art(thumb)]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="image" description="Current FA">
+                            <visible>Control.HasFocus(12)</visible>
+                            <include>VisibleFadeEffectDelay</include>
+                            <posx>508</posx>
+                            <posy>420</posy>
+                            <width>184</width>
+                            <height>266</height>
+                            <texture>$INFO[ListItem.Art(fanart)]</texture>
+                            <include>ThumbBorder</include>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="image" description="Thumb">
+                            <visible>Control.HasFocus(12) | Control.HasFocus(10)</visible>
+                            <posx>481</posx>
+                            <posy>393</posy>
+                            <width>238</width>
+                            <height>320</height>
+                            <texture border="37">thumbs/JewelCase.png</texture>
+                        </control>
                     </control>
                     <control type="group" description="TV Shows">
                         <visible>Container.Content(TVShows)</visible>
@@ -272,9 +310,9 @@
                         <control type="textbox" description="Plot">
                             <visible>![Control.HasFocus(9012) | Control.HasFocus(50) | Control.HasFocus(10) | Control.HasFocus(12)]</visible>
                             <include>VisibleFadeEffectDelay</include>
-                            <posx>35</posx>
+                            <posx>TextMargin</posx>
                             <posy>262</posy>
-                            <width>1130</width>
+                            <width>1100</width>
                             <height>529</height>
                             <align>justify</align>
                             <font>InfoPlotFont</font>
@@ -321,6 +359,44 @@
                                 <height>423</height>
                                 <texture border="37">thumbs/JewelCase.png</texture>
                             </control>
+                        </control>
+                        <control type="image" description="Thumb">
+                            <visible>Control.HasFocus(12) | Control.HasFocus(10)</visible>
+                            <posx>508</posx>
+                            <posy>420</posy>
+                            <width>184</width>
+                            <height>266</height>
+                            <texture>img/BlackDotT.png</texture>
+                            <colordiffuse>EmptyThumbColor</colordiffuse>
+                        </control>
+                        <control type="image" description="Current thumb">
+                            <visible>Control.HasFocus(10)</visible>
+                            <include>VisibleFadeEffectDelay</include>
+                            <posx>508</posx>
+                            <posy>420</posy>
+                            <width>184</width>
+                            <height>266</height>
+                            <texture>$INFO[ListItem.Art(thumb)]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="image" description="Current FA">
+                            <visible>Control.HasFocus(12)</visible>
+                            <include>VisibleFadeEffectDelay</include>
+                            <posx>508</posx>
+                            <posy>420</posy>
+                            <width>184</width>
+                            <height>266</height>
+                            <texture>$INFO[ListItem.Art(fanart)]</texture>
+                            <include>ThumbBorder</include>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="image" description="Thumb">
+                            <visible>Control.HasFocus(12) | Control.HasFocus(10)</visible>
+                            <posx>481</posx>
+                            <posy>393</posy>
+                            <width>238</width>
+                            <height>320</height>
+                            <texture border="37">thumbs/JewelCase.png</texture>
                         </control>
                     </control>
                     <control type="group" description="Episodes">
@@ -388,14 +464,52 @@
                         <control type="textbox" description="Plot">
                             <visible>![Control.HasFocus(9012) | Control.HasFocus(50) | Control.HasFocus(10) | Control.HasFocus(12)]</visible>
                             <include>VisibleFadeEffectDelay</include>
-                            <posx>35</posx>
+                            <posx>TextMargin</posx>
                             <posy>393</posy>
-                            <width>1130</width>
+                            <width>1100</width>
                             <height>328</height>
                             <align>justify</align>
                             <font>InfoPlotFont</font>
                             <autoscroll delay="15000" time="5000" repeat="10000">true</autoscroll>
                             <label>$VAR[Plots]</label>
+                        </control>
+                        <control type="image" description="Thumb">
+                            <visible>Control.HasFocus(12) | Control.HasFocus(10)</visible>
+                            <posx>336</posx>
+                            <posy>393</posy>
+                            <width>527</width>
+                            <height>320</height>
+                            <texture>img/BlackDotT.png</texture>
+                            <colordiffuse>EmptyThumbColor</colordiffuse>
+                        </control>
+                        <control type="image" description="Current thumb">
+                            <visible>Control.HasFocus(10)</visible>
+                            <include>VisibleFadeEffectDelay</include>
+                            <posx>363</posx>
+                            <posy>420</posy>
+                            <width>473</width>
+                            <height>266</height>
+                            <texture>$INFO[ListItem.Art(thumb)]</texture>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="image" description="Current FA">
+                            <visible>Control.HasFocus(12)</visible>
+                            <include>VisibleFadeEffectDelay</include>
+                            <posx>363</posx>
+                            <posy>420</posy>
+                            <width>473</width>
+                            <height>266</height>
+                            <texture>$INFO[ListItem.Art(fanart)]</texture>
+                            <include>ThumbBorder</include>
+                            <aspectratio>keep</aspectratio>
+                        </control>
+                        <control type="image" description="Thumb">
+                            <visible>Control.HasFocus(12) | Control.HasFocus(10)</visible>
+                            <posx>336</posx>
+                            <posy>393</posy>
+                            <width>527</width>
+                            <height>320</height>
+                            <texture border="37">thumbs/JewelCase.png</texture>
                         </control>
                     </control>
                     <control type="group" description="Music Videos">
@@ -457,9 +571,9 @@
                         <control type="textbox" description="Plot">
                             <visible>![Control.HasFocus(9012) | Control.HasFocus(50) | Control.HasFocus(10) | Control.HasFocus(12)]</visible>
                             <include>VisibleFadeEffectDelay</include>
-                            <posx>35</posx>
+                            <posx>TextMargin</posx>
                             <posy>262</posy>
-                            <width>1130</width>
+                            <width>1100</width>
                             <height>529</height>
                             <align>justify</align>
                             <font>InfoPlotFont</font>
@@ -477,8 +591,8 @@
                     <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                 </control>
                 <control type="grouplist" description="Flags">
-                    <posx>35</posx>
-                    <posy>858</posy>
+                    <posx>TextMargin</posx>
+                    <posy>849</posy>
                     <width min="90" max="1130">auto</width>
                     <height>45</height>
                     <itemgap>30</itemgap>
@@ -537,28 +651,6 @@
                         <texturefocus>badges/video/FlagFrame.png</texturefocus>
                         <label>$INFO[ListItem.VideoAspect]</label>
                     </control>
-                </control>
-                <control type="image" description="Current thumb">
-                    <visible>Control.HasFocus(10)</visible>
-                    <include>VisibleFadeEffectDelay</include>
-                    <posx>813</posx>
-                    <posy>590</posy>
-                    <width>999</width>
-                    <height>340</height>
-                    <texture>$INFO[ListItem.Art(thumb)]</texture>
-                    <include>ThumbBorder</include>
-                    <aspectratio>keep</aspectratio>
-                </control>
-                <control type="image" description="Current FA">
-                    <visible>Control.HasFocus(12)</visible>
-                    <include>VisibleFadeEffectDelay</include>
-                    <posx>813</posx>
-                    <posy>590</posy>
-                    <width>999</width>
-                    <height>340</height>
-                    <texture>$INFO[ListItem.Art(fanart)]</texture>
-                    <include>ThumbBorder</include>
-                    <aspectratio>keep</aspectratio>
                 </control>
             </control>
         </control>

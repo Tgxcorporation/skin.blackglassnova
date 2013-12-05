@@ -138,9 +138,9 @@
                         <posx>475</posx>
                         <posy>426</posy>
                         <control type="label" description="Title">
-                            <posx>30</posx>
+                            <posx>TextMargin</posx>
                             <posy>-12</posy>
-                            <width>700</width>
+                            <width>670</width>
                             <height>71</height>
                             <font>InfoTitleFont</font>
                             <textcolor>MainColor</textcolor>
@@ -156,12 +156,12 @@
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="image" description="Stars">
-                            <posx>30</posx>
+                            <posx>TextMargin</posx>
                             <posy>92</posy>
                             <include>Stars</include>
                         </control>
                         <control type="label" description="Rating">
-                            <posx>230</posx>
+                            <posx>245</posx>
                             <posy>73</posy>
                             <width>480</width>
                             <height>71</height>
@@ -172,7 +172,7 @@
                         </control>
                         <control type="image" description="HD badge">
                             <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.ideoResolution,710)]</visible>
-                            <posx>631</posx>
+                            <posx>616</posx>
                             <posy>97</posy>
                             <height>24</height>
                             <width>90</width>
@@ -187,9 +187,9 @@
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="label" description="Details">
-                            <posx>30</posx>
+                            <posx>TextMargin</posx>
                             <posy>146</posy>
-                            <width>700</width>
+                            <width>670</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
                             <textcolor>MainColor</textcolor>
@@ -204,10 +204,10 @@
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="textbox" description="Plot51">
-                            <posx>30</posx>
-                            <posy>223</posy>
-                            <width>680</width>
-                            <height>410</height>
+                            <posx>TextMargin</posx>
+                            <posy>230</posy>
+                            <width>651</width>
+                            <height>375</height>
                             <font>InfoPlotFont</font>
                             <textcolor>AlternateColor</textcolor>
                             <label>$VAR[Plots]</label>
@@ -241,12 +241,12 @@
                         <texture border="37">thumbs/JewelCase.png</texture>
                     </control>
                     <control type="group" description="Media info">
-                         <posx>475</posx>
+                        <posx>475</posx>
                         <posy>426</posy>
                         <control type="label" description="Title">
-                            <posx>30</posx>
+                            <posx>TextMargin</posx>
                             <posy>-12</posy>
-                            <width>700</width>
+                            <width>670</width>
                             <height>71</height>
                             <font>InfoTitleFont</font>
                             <textcolor>MainColor</textcolor>
@@ -262,12 +262,12 @@
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="image" description="Stars">
-                            <posx>30</posx>
+                            <posx>TextMargin</posx>
                             <posy>92</posy>
                             <include>Stars</include>
                         </control>
                         <control type="label" description="Rating">
-                            <posx>230</posx>
+                            <posx>245</posx>
                             <posy>73</posy>
                             <width>480</width>
                             <height>71</height>
@@ -278,7 +278,7 @@
                         </control>
                         <control type="image" description="HD badge">
                             <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.ideoResolution,710)]</visible>
-                            <posx>631</posx>
+                            <posx>616</posx>
                             <posy>97</posy>
                             <height>24</height>
                             <width>90</width>
@@ -293,9 +293,9 @@
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="label" description="Season">
-                            <posx>30</posx>
+                            <posx>TextMargin</posx>
                             <posy>146</posy>
-                            <width>700</width>
+                            <width>670</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
                             <textcolor>MainColor</textcolor>
@@ -309,10 +309,10 @@
                             <height>73</height>
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
-                         <control type="label" description="Details">
-                            <posx>30</posx>
+                        <control type="label" description="Details">
+                            <posx>TextMargin</posx>
                             <posy>219</posy>
-                            <width>700</width>
+                            <width>670</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
                             <textcolor>AlternateColor</textcolor>
@@ -327,10 +327,10 @@
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="textbox" description="Plot51">
-                            <posx>-430</posx>
-                            <posy>296</posy>
-                            <width>1140</width>
-                            <height>327</height>
+                            <posx>-415</posx>
+                            <posy>306</posy>
+                            <width>1110</width>
+                            <height>290</height>
                             <font>InfoPlotFont</font>
                             <textcolor>MainColor</textcolor>
                             <label>$VAR[Plots]</label>

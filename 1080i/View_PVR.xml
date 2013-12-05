@@ -61,7 +61,7 @@
                 <posx>0</posx>
                 <posy>602</posy>
                 <control type="label" description="Title above progress">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>15</posy>
                     <width>921</width>
                     <height>100</height>
@@ -108,7 +108,7 @@
                 </control>
                 <control type="label">
                     <visible>Container(11).ListItem.HasEpg</visible>
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>117</posy>
                     <width>660</width>
                     <height>73</height>
@@ -124,7 +124,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>190</posy>
                     <width>1123</width>
                     <height>73</height>
@@ -151,7 +151,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="textbox" description="Plot Value for TV">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>282</posy>
                     <width>1123</width>
                     <height>175</height>
@@ -357,7 +357,7 @@
                 <posx>0</posx>
                 <posy>602</posy>
                 <control type="label" description="Title above progress">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>15</posy>
                     <width>921</width>
                     <height>100</height>
@@ -404,7 +404,7 @@
                 </control>
                 <control type="label">
                     <visible>Container(12).ListItem.HasEpg</visible>
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>117</posy>
                     <width>660</width>
                     <height>73</height>
@@ -420,7 +420,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>190</posy>
                     <width>1123</width>
                     <height>73</height>
@@ -447,7 +447,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="textbox" description="Plot Value for TV">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>282</posy>
                     <width>1123</width>
                     <height>175</height>
@@ -654,7 +654,7 @@
                 <posx>0</posx>
                 <posy>602</posy>
                 <control type="label" description="Title above progress">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>15</posy>
                     <width>747</width>
                     <height>100</height>
@@ -700,7 +700,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>117</posy>
                     <width>747</width>
                     <height>73</height>
@@ -723,7 +723,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>190</posy>
                     <width>747</width>
                     <height>73</height>
@@ -749,7 +749,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="textbox" description="Plot Value for TV">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>282</posy>
                     <width>1123</width>
                     <height>175</height>
@@ -916,7 +916,7 @@
                 <width>50</width>
             </control>
             <control type="image">
-                <posx>45</posx>
+                <posx>TextMargin</posx>
                 <posy>131</posy>
                 <width>1840</width>
                 <height>79</height>
@@ -930,7 +930,7 @@
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
             <control type="epggrid" id="10" description="EPG Grid">
-                <posx>45</posx>
+                <posx>TextMargin</posx>
                 <posy>140</posy>
                 <width>1840</width>
                 <height>560</height>
@@ -1065,61 +1065,65 @@
                 <height>675</height>
                 <texture>common/bg_tvguide.png</texture>
             </control>
-            <control type="label">
-                <posx>70</posx>
-                <posy>782</posy>
-                <width>1780</width>
-                <aligny>top</aligny>
-                <align>left</align>
-                <font>InfoTitleFont</font>
-                <scroll>false</scroll>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control>
-                <type>image</type>
-                <posx>45</posx>
-                <posy>774</posy>
-                <width>1840</width>
-                <height>79</height>
-                <texture>list/bg_facade_nofocus_top.png</texture>
-            </control>
-            <control type="label">
-                <posx>70</posx>
-                <posy>853</posy>
-                <width>1780</width>
-                <height>73</height>
-                <font>InfoDetailsFont</font>
-                <textcolor>AlternateColor</textcolor>
-                <scroll>false</scroll>
-                <label>$INFO[ListItem.Duration]  •  $INFO[ListItem.StartTime] / $INFO[ListItem.EndTime]</label>
-            </control>
-            <control type="label">
-                <posx>70r</posx>
-                <posy>853</posy>
-                <width>1780</width>
-                <height>73</height>
-                <font>InfoDetailsFont</font>
-                <textcolor>AlternateColor</textcolor>
-                <scroll>false</scroll>
-                <align>right</align>
-                <label>$INFO[ListItem.Genre]</label>
-            </control>
-            <control>
-                <type>image</type>
-                <posx>45</posx>
-                <posy>847</posy>
-                <width>1840</width>
-                <height>79</height>
-                <texture>list/bg_facade_nofocus_top.png</texture>
-            </control>
-            <control type="textbox" description="Plot Value for TV">
-                <posx>70</posx>
-                <posy>930</posy>
-                <width>1780</width>
-                <height>130</height>
-                <pagecontrol>-</pagecontrol>
-                <textcolor>MainColor</textcolor>
-                <label>$INFO[ListItem.Plot]</label>
+            <control type="group">
+                <posx>TextMargin</posx>
+                <posy>0</posy>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>782</posy>
+                    <width>1740</width>
+                    <aligny>top</aligny>
+                    <align>left</align>
+                    <font>InfoTitleFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control>
+                    <type>image</type>
+                    <posx>0</posx>
+                    <posy>774</posy>
+                    <width>1840</width>
+                    <height>79</height>
+                    <texture>list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>853</posy>
+                    <width>1740</width>
+                    <height>73</height>
+                    <font>InfoDetailsFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Duration]  •  $INFO[ListItem.StartTime] / $INFO[ListItem.EndTime]</label>
+                </control>
+                <control type="label">
+                    <posx>1785</posx>
+                    <posy>853</posy>
+                    <width>1740</width>
+                    <height>73</height>
+                    <font>InfoDetailsFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <scroll>false</scroll>
+                    <align>right</align>
+                    <label>$INFO[ListItem.Genre]</label>
+                </control>
+                <control>
+                    <type>image</type>
+                    <posx>0</posx>
+                    <posy>847</posy>
+                    <width>1840</width>
+                    <height>79</height>
+                    <texture>list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="textbox" description="Plot Value for TV">
+                    <posx>TextMargin</posx>
+                    <posy>930</posy>
+                    <width>1740</width>
+                    <height>130</height>
+                    <pagecontrol>-</pagecontrol>
+                    <textcolor>MainColor</textcolor>
+                    <label>$INFO[ListItem.Plot]</label>
+                </control>
             </control>
             <!-- PREVIEW -->
             <!-- <control type="image">
@@ -1165,7 +1169,7 @@
                 <texture>common/bg_tvguide.png</texture>
             </control>
             <control type="image">
-                <posx>45</posx>
+                <posx>TextMargin</posx>
                 <posy>572</posy>
                 <width>1840</width>
                 <height>73</height>
@@ -1177,7 +1181,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="list" id="14" description="Timers">
-                <posx>45</posx>
+                <posx>TextMargin</posx>
                 <posy>645</posy>
                 <width>1840</width>
                 <height>365</height>
@@ -1319,7 +1323,7 @@
                 <onright>35</onright>
             </control>
             <control type="group" description="Header">
-                <posx>45</posx>
+                <posx>TextMargin</posx>
                 <posy>572</posy>
                 <control type="label">
                     <description>Title header label</description>
@@ -1382,7 +1386,7 @@
                 <texture>common/bg_tvguide.png</texture>
             </control>
             <control type="image">
-                <posx>45</posx>
+                <posx>TextMargin</posx>
                 <posy>572</posy>
                 <width>1840</width>
                 <height>73</height>
@@ -1394,7 +1398,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="list" id="17" description="Search">
-                <posx>45</posx>
+                <posx>TextMargin</posx>
                 <posy>645</posy>
                 <width>1840</width>
                 <height>365</height>
@@ -1598,7 +1602,7 @@
                 <onright>36</onright>
             </control>
             <control type="group" description="Header">
-                <posx>45</posx>
+                <posx>TextMargin</posx>
                 <posy>572</posy>
                 <control type="label">
                     <description>Title header label</description>
@@ -1663,7 +1667,7 @@
                 <posx>0</posx>
                 <posy>602</posy>
                 <control type="label" description="Title above progress">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>15</posy>
                     <width>921</width>
                     <height>100</height>
@@ -1710,7 +1714,7 @@
                 </control>
                 <control type="label">
                     <visible>Container(15).ListItem.HasEpg</visible>
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>117</posy>
                     <width>660</width>
                     <height>73</height>
@@ -1726,7 +1730,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>190</posy>
                     <width>1123</width>
                     <height>73</height>
@@ -1742,7 +1746,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="textbox" description="Plot Value for TV">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>282</posy>
                     <width>1123</width>
                     <height>175</height>
@@ -1874,7 +1878,6 @@
                 <onleft>15</onleft>
                 <onright>31</onright>
             </control>
-
         </control>
     </include>
     <!-- EPG NOW NEXT -->
@@ -1897,7 +1900,7 @@
                 <posx>0</posx>
                 <posy>602</posy>
                 <control type="label" description="Title above progress">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>15</posy>
                     <width>921</width>
                     <height>100</height>
@@ -1944,7 +1947,7 @@
                 </control>
                 <control type="label">
                     <visible>Container(16).ListItem.HasEpg</visible>
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>117</posy>
                     <width>660</width>
                     <height>73</height>
@@ -1960,7 +1963,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>190</posy>
                     <width>1123</width>
                     <height>73</height>
@@ -1976,7 +1979,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="textbox" description="Plot Value for TV">
-                    <posx>45</posx>
+                    <posx>TextMargin</posx>
                     <posy>282</posy>
                     <width>1123</width>
                     <height>175</height>
@@ -2183,7 +2186,6 @@
                 <onleft>16</onleft>
                 <onright>31</onright>
             </control>
-
         </control>
     </include>
 </includes>

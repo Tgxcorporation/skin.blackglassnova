@@ -206,7 +206,7 @@
                 <height>240</height>
             </control>
             <control type="label">
-                <posx>33r</posx>
+                <posx>TextMarginR</posx>
                 <posy>18</posy>
                 <width>500</width>
                 <align>right</align>
@@ -218,7 +218,7 @@
             </control>
             <control type="label">
                 <description>Date label</description>
-                <posx>33r</posx>
+                <posx>TextMarginR</posx>
                 <posy>68</posy>
                 <width>500</width>
                 <align>right</align>
@@ -655,7 +655,7 @@
             <control type="label">
                 <posx>300</posx>
                 <posy>0</posy>
-                <width>265</width>
+                <width>250</width>
                 <height>46</height>
                 <font>InfoDetailsContainerFont</font>
                 <align>right</align>
@@ -690,7 +690,7 @@
             <control type="label">
                 <posx>300</posx>
                 <posy>0</posy>
-                <width>265</width>
+                <width>250</width>
                 <height>46</height>
                 <font>InfoDetailsContainerFont</font>
                 <align>right</align>
@@ -1254,8 +1254,10 @@
             </control>
         </control>
     </include>
+    <constant name="TextMargin">45</constant>
+    <constant name="TextMarginR">45r</constant>
     <include name="WindowTitle">
-        <posx>45</posx>
+        <posx>TextMargin</posx>
         <posy>18</posy>
         <width>1200</width>
         <aligny>top</aligny>
@@ -1264,7 +1266,7 @@
         <textcolor>WindowTitleColor</textcolor>
     </include>
     <include name="WindowTitleSub">
-        <posx>45</posx>
+        <posx>TextMargin</posx>
         <posy>68</posy>
         <width>1200</width>
         <aligny>top</aligny>
@@ -1341,7 +1343,7 @@
         <align>left</align>
         <aligny>top</aligny>
         <radioposx>505</radioposx>
-        <textoffsetx>45</textoffsetx>
+        <textoffsetx>TextMargin</textoffsetx>
         <textoffsety>11</textoffsety>
         <disabledcolor>DisabledColor</disabledcolor>
         <texturefocus border="4">list/bg_facade_focus.png</texturefocus>
