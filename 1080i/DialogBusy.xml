@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
   <coordinates>
     <system>1</system>
@@ -16,7 +17,7 @@
         <righttexture>-</righttexture>
         <lefttexture>-</lefttexture>
       </control>
-	  <control type="group" description="Content">
+      <control type="group" description="Content">
       <animation effect="slide" start="0,0" end="0,-124" time="200">WindowOpen</animation>
       <posy>604</posy>
       <control type="image" description="Background">
@@ -27,8 +28,8 @@
         <texture border="48,24,48,0">dialogs/BusyBG.png</texture>
       </control>
       <control type="label" id="1" description="Progress label">
-        <visible>!IsEmpty(Control.Getlabel(10))</visible>
-		<posx>708</posx>
+        <visible>IntegerGreaterThan(Control.GetLabel(10), 0)</visible>
+        <posx>708</posx>
         <posy>539</posy>
         <width>504</width>
         <height>70</height>
@@ -36,9 +37,9 @@
         <textcolor>Orange</textcolor>
         <label>$LOCALIZE[31979]$INFO[Control.GetLabel(10), ,%]</label>
       </control>
-	  <control type="label" description="Progress label">
-        <visible>!Control.IsVisible(1)</visible>
-		<posx>708</posx>
+      <control type="label" description="Progress label">
+        <visible>!IntegerGreaterThan(Control.GetLabel(10), 0)</visible>
+        <posx>708</posx>
         <posy>539</posy>
         <width>504</width>
         <height>70</height>

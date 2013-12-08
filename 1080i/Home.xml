@@ -30,6 +30,15 @@
             <width>1920</width>
             <height>1080</height>
         </control>
+        <include>Time</include>
+            <control type="label">
+                <include>WindowTitle</include>
+                <label>$LOCALIZE[10000]</label>
+            </control>
+            <control type="label">
+                <include>WindowTitleSub</include>
+                <label>$INFO[Container(300).ListItem.Label]</label>
+            </control>
         <control type="group" description="Content">
             <!--<include>OpenClose</include>-->
             <animation effect="fade" start="0" end="100" time="1000" condition="Window.Previous(Startup.xml)">Conditional</animation>
@@ -37,29 +46,44 @@
             <include condition="Skin.HasSetting(VerticalHome)">Vertical_Home_Layout</include>
             <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Home_Layout</include>
             <control type="group" description="RSS">
-                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+                <visible>system.getbool(lookandfeel.enablerssfeeds) + !Skin.HasSetting(VerticalHome)</visible>
                 <control type="image">
-                    <visible>!Skin.HasSetting(VerticalHome)</visible>
                     <posx>0</posx>
-                    <posy>990</posy>
-                    <width>590</width>
-                    <height>90</height>
-                    <texture flipx="true" border="100,0,0,0">common/TimePanel.png</texture>
+                    <posy>1032</posy>
+                    <width>1920</width>
+                    <height>56</height>
+                    <texture>img/BlackDot.png</texture>
+                    <colordiffuse>b0ffffff</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>958</posy>
+                    <width>1920</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>1034</posy>
+                    <width>1920</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_focus.png</texture>
                 </control>
                 <control type="rss" description="RSS Feed">
-                    <posx>21</posx>
-                    <posy>1044</posy>
-                    <width>480</width>
-                    <height>90</height>
+                    <posx>TextMargin</posx>
+                    <posy>1034</posy>
+                    <width>1830</width>
+                    <height>54</height>
                     <font>rss</font>
                     <urlset>1</urlset>
+                    <font>WindowTitleSubFont</font>
                     <shadowcolor>ShadowDark</shadowcolor>
-                    <titlecolor>White2</titlecolor>
-                    <headlinecolor>White2</headlinecolor>
-                    <textcolor>Grey</textcolor>
+                    <titlecolor>MainColor</titlecolor>
+                    <headlinecolor>AlternateColor</headlinecolor>
+                    <textcolor>AlternateColor</textcolor>
                 </control>
             </control>
-            <include>Time</include>
+
             <control type="group">
                 <include condition="Skin.HasSetting(Show_Library_Count)">Library_Count</include>
             </control>

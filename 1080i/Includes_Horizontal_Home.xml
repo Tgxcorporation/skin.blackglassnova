@@ -179,45 +179,19 @@
           <ondown>700</ondown>
           <itemlayout width="256" height="50">
             <control type="label">
-              <posx>129</posx>
-              <posy>1</posy>
-              <height>50</height>
-              <width>240</width>
-              <align>center</align>
-              <aligny>center</aligny>
-              <font>Sublist</font>
-              <scroll>false</scroll>
-              <label>$INFO[ListItem.Label]</label>
-              <textcolor>Black</textcolor>
-              <shadowcolor>-</shadowcolor>
-            </control>
-            <control type="label">
               <posx>128</posx>
               <posy>0</posy>
               <height>50</height>
               <width>240</width>
               <align>center</align>
               <aligny>center</aligny>
-              <font>Sublist</font>
+              <font>FacadeListSubFont</font>
               <scroll>false</scroll>
               <label>$INFO[ListItem.Label]</label>
-              <textcolor>Sublist</textcolor>
-              <shadowcolor>-</shadowcolor>
-            </control>
+              <textcolor>ListNoFocusColor</textcolor>
+              </control>
           </itemlayout>
           <focusedlayout width="256" height="50">
-            <control type="label">
-              <posx>129</posx>
-              <posy>1</posy>
-              <height>50</height>
-              <width>240</width>
-              <align>center</align>
-              <aligny>center</aligny>
-              <font>Sublist</font>
-              <label>$INFO[ListItem.Label]</label>
-              <textcolor>Black</textcolor>
-              <shadowcolor>-</shadowcolor>
-            </control>
             <control type="label">
               <visible>!Control.HasFocus(9001)</visible>
               <posx>128</posx>
@@ -226,11 +200,10 @@
               <width>240</width>
               <align>center</align>
               <aligny>center</aligny>
-              <font>Sublist</font>
+              <font>FacadeListSubFont</font>
               <label>$INFO[ListItem.Label]</label>
-              <textcolor>Sublist</textcolor>
-              <shadowcolor>-</shadowcolor>
-            </control>
+              <textcolor>ListNoFocusColor</textcolor>
+             </control>
             <control type="label">
               <visible>Control.HasFocus(9001)</visible>
               <posx>128</posx>
@@ -239,11 +212,10 @@
               <width>240</width>
               <align>center</align>
               <aligny>center</aligny>
-              <font>Sublist</font>
+              <font>FacadeListSubFont</font>
               <label>$INFO[ListItem.Label]</label>
-              <textcolor>White2</textcolor>
-              <shadowcolor>-</shadowcolor>
-            </control>
+              <textcolor>ListFocusColor</textcolor>
+              </control>
           </focusedlayout>
           <content>
             <include>Home.Submenu.Items</include>
