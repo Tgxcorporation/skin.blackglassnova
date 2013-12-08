@@ -986,7 +986,7 @@
         <item id="7" description="Favorites">
             <visible>!Skin.HasSetting(Favourites.Hide)</visible>
             <label>$LOCALIZE[1036]</label>
-            <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favourites.Background)]</thumb>
+            <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(Favourites.Background)]</thumb>
             <onclick>ActivateWindow(Favourites)</onclick>
         </item>
         <item id="29" description="Custom.9">

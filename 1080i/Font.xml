@@ -21,6 +21,18 @@
             <!-- <style>bold</style> -->
         </font>
         <font>
+            <name>HomeItemFont</name>
+            <filename>Sansation_Regular.ttf</filename>
+            <size>42</size>
+            <style>bold</style>
+            <aspect>1</aspect>
+        </font>
+        <font>
+            <name>NotificationFont</name>
+            <filename>Sansation_Regular.ttf</filename>
+            <size>30</size>
+        </font>
+        <font>
             <name>LeftMenuButtonFont</name>
             <filename>Sansation_Regular.ttf</filename>
             <size>35</size>
