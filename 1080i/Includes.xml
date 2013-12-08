@@ -355,7 +355,7 @@
         <texture>thumbs/SquareBG_FO.png</texture>
     </include>
     <include name="PosterThumb">
-        <texture background="true" diffuse="thumbs/PosterDiffuse.png">$VAR[Thumbs]</texture>
+        <texture background="true">$VAR[Thumbs]</texture>
         <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
     </include>
     <include name="PosterThumbBG">

@@ -9,8 +9,8 @@
         <movement>6</movement>
     </include>
     <include name="Horizontal_Label_Commons">
-        <posx>48</posx>
-        <width>1300</width>
+        <posx>0</posx>
+        <width>1920</width>
     </include>
     <include name="Horizontal_Home_Layout">
         <control type="group" description="HORIZONTAL HOME">
@@ -35,11 +35,11 @@
                 </control>
                 <control type="image" description="RA BG Plexbmc only">
                     <visible>Skin.HasSetting(plexbmc) + [Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | IntegerGreaterThan(Container(311).NumItems,0) | IntegerGreaterThan(Container(312).NumItems,0) | IntegerGreaterThan(Container(411).NumItems,0) | IntegerGreaterThan(Container(413).NumItems,0) | Control.IsVisible(511) | Control.IsVisible(900)]</visible>
-                    <posx>0</posx>
-                    <posy>345</posy>
-                    <width>1920</width>
-                    <height>390</height>
-                    <texture border="0,40,0,40">home/OverlayRA2.png</texture>
+                    <posx>-200</posx>
+                    <posy>200</posy>
+                    <width>2320</width>
+                    <height>530</height>
+                    <texture border="83">dialogs/bg_dialog.png</texture>
                 </control>
                 <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
                 <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
@@ -54,63 +54,35 @@
                 <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Albums.List</include>
                 <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)">Plexbmc_Shelf</include>
             </control>
+            <control type="image">
+                <posx>-200</posx>
+                <posy>613</posy>
+                <width>2320</width>
+                <height>467</height>
+                <texture>home/HomeGradient.png</texture>
+                <!--  <colordiffuse>ddffffff</colordiffuse> -->
+            </control>
             <control type="group">
-                <posy>170</posy>
-                <control type="group" description="Furniture">
-                    <!-- <control type="image" description="Top glass border">
-            <animation effect="zoom" start="100,100" end="100,50" time="100" condition="true">Conditional</animation>
-            <posx>0</posx>
-            <posy>651</posy>
-            <width>1920</width>
-            <height>87</height>
-            <texture border="0,0,0,12">home/NavbarGlass.png</texture>
-          </control> -->
-                    <!--<control type="image" description="Shelf BG">
-            <visible>Skin.HasSetting(Shelf.Favourites) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)</visible>
-            <posx>760</posx>
-            <posy>644</posy>
-            <width>400</width>
-            <height>50</height>
-            <texture border="39,0,39,0">home/HomeTopNav2.png</texture>
-          </control>
-          <control type="button" description="Shelf label">
-            <visible>Skin.HasSetting(Shelf.Favourites) | Skin.HasSetting(Shelf.Addons) | !Skin.HasSetting(Hide.RecentlyAdded)</visible>
-            <posx>760</posx>
-            <posy>644</posy>
-            <width>400</width>
-            <height>50</height>
-            <textcolor>Grey</textcolor>
-            <focusedcolor>Black</focusedcolor>
-            <shadowcolor>Silver</shadowcolor>
-            <align>center</align>
-            <label>31976</label>
-            <texturefocus></texturefocus>
-            <texturenofocus></texturenofocus>
-            <onclick>ActivateWindow(1112)</onclick>
-          </control>-->
-                    <control type="image">
-                        <posx>-200</posx>
-                        <posy>485</posy>
-                        <width>2320</width>
-                        <height>342</height>
-                        <texture border="83">dialogs/bg_dialog.png</texture>
-                    </control>
-                    <control type="image" description="Bottom glass border">
-                        <animation effect="fade" time="150">Visible</animation>
-                        <posx>-200</posx>
-                        <posy>779</posy>
-                        <width>2320</width>
-                        <height>97</height>
-                        <texture border="0,0,0,83">dialogs/bg_dialog.png</texture>
-                        <visible>IntegerGreaterThan(Container(9001).NumItems,0)</visible>
-                    </control>
+                <posy>110</posy>
+                <control type="label">
+                    <animation effect="fade" time="200" start="100" end="65" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,20" time="100" condition="!system.getbool(lookandfeel.enablerssfeeds) + !Skin.HasSetting(VerticalHome)">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,-10" time="100" condition="IntegerGreaterThan(Container(9001).NumItems,0">Conditional</animation>
+                    <posx>0</posx>
+                    <posy>800</posy>
+                    <width>1920</width>
+                    <height>100</height>
+                    <align>center</align>
+                    <font>HomeItemFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <label>$INFO[Container(300).ListItem.Label]</label>
                 </control>
                 <control type="fixedlist" id="300" description="Main Bar">
-                    <animation effect="fade" time="200" start="100" end="50" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
+                    <animation effect="fade" time="200" start="100" end="65" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
                     <posx>-384</posx>
                     <posy>539</posy>
                     <width>2688</width>
-                    <height>239</height>
+                    <height>500</height>
                     <onleft>300</onleft>
                     <onright>300</onright>
                     <ondown>9001</ondown>
@@ -127,7 +99,15 @@
                             <width>330</width>
                             <height>185</height>
                             <texture>$INFO[ListItem.Icon]</texture>
-                            <!-- <colordiffuse>50ffffff</colordiffuse> -->
+                            <colordiffuse>UnfocusedIconColor</colordiffuse>
+                        </control>
+                        <control type="image" description="Thumb">
+                            <posx>27</posx>
+                            <posy>244</posy>
+                            <width>330</width>
+                            <height>185</height>
+                            <texture flipy="true" diffuse="thumbs/Thumb_Mask.png">$INFO[ListItem.Icon]</texture>
+                            <colordiffuse>UnfocusedIconColor</colordiffuse>
                         </control>
                         <control type="image" description="Thumb">
                             <posx>0</posx>
@@ -135,58 +115,45 @@
                             <width>384</width>
                             <height>239</height>
                             <texture border="37">thumbs/JewelCase.png</texture>
-                            <!-- <colordiffuse>50ffffff</colordiffuse> -->
+                            <colordiffuse>UnfocusedIconColor</colordiffuse>
                         </control>
                         <control type="image" description="Thumb">
-                            <posx>27</posx>
-                            <posy>27</posy>
-                            <width>330</width>
-                            <height>185</height>
-                            <texture>home/itemtextoverlay.png</texture>
-                            <!-- <colordiffuse>50ffffff</colordiffuse> -->
-                        </control>
-                        <control type="label">
-                            <posx>192</posx>
-                            <posy>0</posy>
-                            <width>300</width>
+                            <posx>0</posx>
+                            <posy>217</posy>
+                            <width>384</width>
                             <height>239</height>
-                            <align>center</align>
-                            <font>HomeItemFont</font>
-                            <textcolor>AlternateColor</textcolor>
-                            <label>$INFO[ListItem.Label]</label>
+                            <texture border="37" flipy="true" diffuse="thumbs/Thumb_Mask.png">thumbs/JewelCase.png</texture>
+                            <colordiffuse>UnfocusedIconColor</colordiffuse>
                         </control>
                     </itemlayout>
                     <focusedlayout height="239" width="384">
                         <control type="image" description="Thumb">
-                            <posx>27</posx>
-                            <posy>27</posy>
-                            <width>330</width>
-                            <height>185</height>
+                            <posx>7</posx>
+                            <posy>16</posy>
+                            <width>370</width>
+                            <height>208</height>
                             <texture>$INFO[ListItem.Icon]</texture>
                         </control>
                         <control type="image" description="Thumb">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>384</width>
-                            <height>239</height>
+                            <posx>7</posx>
+                            <posy>259</posy>
+                            <width>370</width>
+                            <height>208</height>
+                            <texture flipy="true" diffuse="thumbs/Thumb_Mask.png">$INFO[ListItem.Icon]</texture>
+                        </control>
+                        <control type="image" description="Thumb">
+                            <posx>-20</posx>
+                            <posy>-11</posy>
+                            <width>424</width>
+                            <height>262</height>
                             <texture border="37">thumbs/JewelCaseOverlay.png</texture>
                         </control>
                         <control type="image" description="Thumb">
-                            <posx>27</posx>
-                            <posy>27</posy>
-                            <width>330</width>
-                            <height>185</height>
-                            <texture>home/itemtextoverlay.png</texture>
-                        </control>
-                        <control type="label">
-                            <posx>192</posx>
-                            <posy>0</posy>
-                            <width>300</width>
-                            <height>239</height>
-                            <align>center</align>
-                            <font>HomeItemFont</font>
-                            <textcolor>MainColor</textcolor>
-                            <label>$INFO[ListItem.Label]</label>
+                            <posx>-20</posx>
+                            <posy>232</posy>
+                            <width>424</width>
+                            <height>262</height>
+                            <texture border="37" flipy="true" diffuse="thumbs/Thumb_Mask.png">thumbs/JewelCaseOverlay.png</texture>
                         </control>
                     </focusedlayout>
                     <content>
@@ -197,8 +164,10 @@
                     <animation effect="slide" start="0,0" end="-128,0" time="0" condition="StringCompare(Container(9001).NumItems,2) | StringCompare(Container(9001).NumItems,4) | StringCompare(Container(9001).NumItems,6)">conditional</animation>
                     <animation effect="fade" time="200" start="100" end="50" reversible="true" condition="!Control.HasFocus(9001)">Conditional</animation>
                     <include>VisibleFadeEffect</include>
+                    <animation effect="slide" start="0,0" end="0,20" time="100" condition="!system.getbool(lookandfeel.enablerssfeeds) + !Skin.HasSetting(VerticalHome)">Conditional</animation>
+                    <animation effect="fade" time="200" condition="IntegerGreaterThan(Container(9001).NumItems,0">Conditional</animation>
                     <posx>64</posx>
-                    <posy>779</posy>
+                    <posy>875</posy>
                     <height>50</height>
                     <width>1792</width>
                     <onleft>9001</onleft>
