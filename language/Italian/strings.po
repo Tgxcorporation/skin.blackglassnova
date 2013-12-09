@@ -74,7 +74,7 @@ msgstr "Trasmessi di recente"
 
 msgctxt "#31014"
 msgid "On Deck"
-msgstr "In Evidenza"
+msgstr "Da Terminare"
 
 #empty strings from id 31015 to 31019
 
@@ -298,7 +298,7 @@ msgstr ""
 
 msgctxt "#31961"
 msgid "Recently added"
-msgstr ""
+msgstr "Aggiunti di recente"
 
 #.view label
 msgctxt "#31962"

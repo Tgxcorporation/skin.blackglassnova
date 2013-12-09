@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="Horizontal_Shelf_Commons">
-        <posx>48</posx>
-        <width>1824</width>
-        <height>345</height>
+        <posx>36</posx>
+        <width>1848</width>
+        <height>400</height>
         <onup>9001</onup>
         <onback>300</onback>
         <movement>6</movement>
@@ -38,7 +38,7 @@
                     <posx>-200</posx>
                     <posy>200</posy>
                     <width>2320</width>
-                    <height>530</height>
+                    <height>520</height>
                     <texture border="83">dialogs/bg_dialog.png</texture>
                 </control>
                 <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>

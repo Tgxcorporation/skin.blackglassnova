@@ -48,6 +48,11 @@
             <size>25</size>
         </font>
         <font>
+            <name>ShelfFont</name>
+            <filename>Sansation_Regular.ttf</filename>
+            <size>24</size>
+        </font>
+        <font>
             <name>FacadeNumItemsFont</name>
             <filename>Sansation_Regular.ttf</filename>
             <size>33</size>

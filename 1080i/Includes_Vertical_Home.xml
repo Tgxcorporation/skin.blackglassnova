@@ -3,8 +3,8 @@
     <include name="RecentlyAdded_Header">
         <animation effect="slide" start="0,0" end="0,-162" time="0" condition="!Skin.HasSetting(plexbmc) + [Control.IsVisible(312) | Control.IsVisible(413) | Control.IsVisible(513) | Control.IsVisible(515)]">Conditional</animation>
         <!--  <animation effect="slide" start="0,0" end="0,-162" time="0" condition="Skin.HasSetting(plexbmc) + [IntegerGreaterThan(Container(312).NumItems,0) | IntegerGreaterThan(Container(413).NumItems,0)]">Conditional</animation> -->
-        <posx>0</posx>
-        <align>center</align>
+        <posx>45</posx>
+        <align>left</align>
         <posy>260</posy>
         <height>45</height>
         <width>1920</width>
@@ -14,8 +14,8 @@
     <include name="Recommended_Header">
         <animation effect="slide" start="0,0" end="0,522" time="0" condition="!Skin.HasSetting(plexbmc) + [Control.IsVisible(311) | Control.IsVisible(411) |  Control.IsVisible(511) | Control.IsVisible(514)]">Conditional</animation>
         <!--  <animation effect="slide" start="0,0" end="0,522" time="0" condition="Skin.HasSetting(plexbmc) + [IntegerGreaterThan(Container(311).NumItems,0) | IntegerGreaterThan(Container(411).NumItems,0) | IntegerGreaterThan(Container(511).NumItems,0)]">Conditional</animation>-->
-        <posx>0</posx>
-        <align>center</align>
+        <posx>45</posx>
+        <align>left</align>
         <posy>260</posy>
         <height>45</height>
         <width>1920</width>
@@ -51,12 +51,12 @@
         <posx>540</posx>
         <posy>300</posy>
         <width>1368</width>
-        <height>327</height>
+        <height>400</height>
         <onleft>300</onleft>
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <itemlayout height="345" width="228">
+        <itemlayout height="400" width="231">
             <control type="image">
                 <posx>21</posx>
                 <posy>21</posy>
@@ -72,31 +72,77 @@
                 <height>339</height>
                 <texture border="37">thumbs/JewelCase.png</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
+            <control type="label">
+                <posx>115</posx>
+                <posy>308</posy>
+                <width>200</width>
+                <height>70</height>
+                <align>center</align>
+                <textcolor>ListNoFocusColor</textcolor>
+                <font>ShelfFont</font>
+                <scroll>false</scroll>
+                <label>$INFO[ListItem.Label]</label>
             </control>
         </itemlayout>
-        <focusedlayout height="345" width="228">
-            <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>189</width>
-                <height>285</height>
-                <include>PosterThumb</include>
-            </control>
-            <control type="image">
+        <focusedlayout height="400" width="231">
+            <control type="group">
                 <visible>![Control.HasFocus(311) | Control.HasFocus(313) | Control.HasFocus(514)]</visible>
-                <posx>-6</posx>
-                <posy>-6</posy>
-                <width>243</width>
-                <height>339</height>
-                <texture border="37">thumbs/JewelCase.png</texture>
+                <control type="image">
+                    <posx>21</posx>
+                    <posy>21</posy>
+                    <width>189</width>
+                    <height>285</height>
+                    <include>PosterThumb</include>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>339</height>
+                    <texture border="37">thumbs/JewelCase.png</texture>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
+                </control>
+                <control type="label">
+                    <posx>115</posx>
+                    <posy>308</posy>
+                    <width>200</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>ListNoFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
             </control>
-            <control type="image">
+            <control type="group">
                 <visible>[Control.HasFocus(311) | Control.HasFocus(313) | Control.HasFocus(514)]</visible>
-                <posx>-6</posx>
-                <posy>-6</posy>
-                <width>243</width>
-                <height>339</height>
-                <texture border="37">thumbs/JewelCaseOverlay.png</texture>
+                <control type="image">
+                    <posx>21</posx>
+                    <posy>21</posy>
+                    <width>189</width>
+                    <height>285</height>
+                    <include>PosterThumb</include>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>339</height>
+                    <texture border="37">thumbs/JewelCaseOverlay.png</texture>
+                </control>
+                <control type="label">
+                    <posx>115</posx>
+                    <posy>308</posy>
+                    <width>200</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>ListFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
             </control>
         </focusedlayout>
     </include>
@@ -107,12 +153,12 @@
         <posx>540</posx>
         <posy>300</posy>
         <width>1368</width>
-        <height>327</height>
+        <height>400</height>
         <onleft>300</onleft>
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <itemlayout height="345" width="228">
+        <itemlayout height="400" width="231">
             <control type="image">
                 <posx>21</posx>
                 <posy>21</posy>
@@ -128,6 +174,17 @@
                 <height>339</height>
                 <texture border="37">thumbs/JewelCase.png</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
+            <control type="label">
+                <posx>115</posx>
+                <posy>308</posy>
+                <width>200</width>
+                <height>70</height>
+                <align>center</align>
+                <textcolor>ListNoFocusColor</textcolor>
+                <font>ShelfFont</font>
+                <scroll>false</scroll>
+                <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="image">
                 <visible>Control.IsVisible(312)</visible>
@@ -138,29 +195,64 @@
                 <texture>OverlayInProgress.png</texture>
             </control>
         </itemlayout>
-        <focusedlayout height="345" width="228">
-            <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>189</width>
-                <height>285</height>
-                <include>PosterThumb</include>
-            </control>
-            <control type="image">
+        <focusedlayout height="400" width="231">
+            <control type="group">
                 <visible>![Control.HasFocus(312) | Control.HasFocus(515)]</visible>
-                <posx>-6</posx>
-                <posy>-6</posy>
-                <width>243</width>
-                <height>339</height>
-                <texture border="37">thumbs/JewelCase.png</texture>
+                <control type="image">
+                    <posx>21</posx>
+                    <posy>21</posy>
+                    <width>189</width>
+                    <height>285</height>
+                    <include>PosterThumb</include>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>339</height>
+                    <texture border="37">thumbs/JewelCase.png</texture>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
+                </control>
+                <control type="label">
+                    <posx>115</posx>
+                    <posy>308</posy>
+                    <width>200</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>ListNoFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
             </control>
-            <control type="image">
+            <control type="group">
                 <visible>[Control.HasFocus(312) | Control.HasFocus(515)]</visible>
-                <posx>-6</posx>
-                <posy>-6</posy>
-                <width>243</width>
-                <height>339</height>
-                <texture border="37">thumbs/JewelCaseOverlay.png</texture>
+                <control type="image">
+                    <posx>21</posx>
+                    <posy>21</posy>
+                    <width>189</width>
+                    <height>285</height>
+                    <include>PosterThumb</include>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>339</height>
+                    <texture border="37">thumbs/JewelCaseOverlay.png</texture>
+                </control>
+                <control type="label">
+                    <posx>115</posx>
+                    <posy>308</posy>
+                    <width>200</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>ListFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
             </control>
             <control type="image">
                 <visible>Control.IsVisible(312)</visible>
@@ -177,87 +269,99 @@
         <!-- <animation effect="slide" start="0,0" end="0,-162" time="0" condition="Skin.HasSetting(plexbmc) + IntegerGreaterThan(Container(413).NumItems,0)">Conditional</animation> -->
         <include>VisibleFadeEffectDelayShelf</include>
         <posx>540</posx>
-        <posy>378</posy>
+        <posy>300</posy>
         <width>1368</width>
-        <height>327</height>
+        <height>400</height>
         <onleft>300</onleft>
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <itemlayout height="345" width="228">
-            <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>189</width>
-                <height>285</height>
-                <include>PosterThumbBG</include>
-            </control>
+        <itemlayout height="400" width="231">
             <control type="image">
                 <posx>21</posx>
                 <posy>21</posy>
                 <width>189</width>
                 <height>285</height>
                 <include>PosterThumb</include>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
-            <control type="group">
-                <posy>240</posy>
-                <control type="image">
-                    <posx>21</posx>
-                    <posy>12</posy>
-                    <width>189</width>
-                    <height>44</height>
-                    <texture>img/OverlayStripe.png</texture>
-                </control>
-                <control type="label">
-                    <posx>114</posx>
-                    <width>185</width>
-                    <height>70</height>
-                    <font>Slider</font>
-                    <align>center</align>
-                    <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
-                </control>
+            <control type="image">
+                <posx>-6</posx>
+                <posy>-6</posy>
+                <width>243</width>
+                <height>339</height>
+                <texture border="37">thumbs/JewelCase.png</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
+            <control type="label">
+                <posx>115</posx>
+                <posy>308</posy>
+                <width>200</width>
+                <height>70</height>
+                <align>center</align>
+                <textcolor>ListNoFocusColor</textcolor>
+                <font>ShelfFont</font>
+                <scroll>false</scroll>
+                <label>$INFO[ListItem.Label2]</label>
             </control>
         </itemlayout>
-        <focusedlayout height="345" width="228">
-            <control type="image">
-                <visible>![Control.HasFocus(411) | Control.HasFocus(412)]</visible>
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>189</width>
-                <height>285</height>
-                <include>PosterThumbBG</include>
-            </control>
-            <control type="image">
-                <visible>Control.HasFocus(411) | Control.HasFocus(412)</visible>
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>189</width>
-                <height>285</height>
-                <include>PosterThumbFO</include>
-            </control>
-            <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>189</width>
-                <height>285</height>
-                <include>PosterThumb</include>
-            </control>
+        <focusedlayout height="400" width="231">
             <control type="group">
-                <posy>240</posy>
+                <visible>![Control.HasFocus(411) | Control.HasFocus(412)]</visible>
                 <control type="image">
                     <posx>21</posx>
-                    <posy>12</posy>
+                    <posy>21</posy>
                     <width>189</width>
-                    <height>44</height>
-                    <texture>img/OverlayStripe.png</texture>
+                    <height>285</height>
+                    <include>PosterThumb</include>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>339</height>
+                    <texture border="37">thumbs/JewelCase.png</texture>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>114</posx>
-                    <width>185</width>
+                    <posx>115</posx>
+                    <posy>308</posy>
+                    <width>200</width>
                     <height>70</height>
-                    <font>Slider</font>
                     <align>center</align>
-                    <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
+                    <textcolor>ListNoFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
+            </control>
+            <control type="group">
+                <visible>[Control.HasFocus(411) | Control.HasFocus(412)]</visible>
+                <control type="image">
+                    <posx>21</posx>
+                    <posy>21</posy>
+                    <width>189</width>
+                    <height>285</height>
+                    <include>PosterThumb</include>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>339</height>
+                    <texture border="37">thumbs/JewelCaseOverlay.png</texture>
+                </control>
+                <control type="label">
+                    <posx>115</posx>
+                    <posy>308</posy>
+                    <width>200</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>ListFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label2]</label>
                 </control>
             </control>
         </focusedlayout>
@@ -267,86 +371,98 @@
         <!-- <animation effect="slide" start="0,0" end="0,162" time="0" condition="Skin.HasSetting(plexbmc) + IntegerGreaterThan(Container(411).NumItems,0)">Conditional</animation> -->
         <include>VisibleFadeEffectDelayShelf</include>
         <posx>540</posx>
-        <posy>378</posy>
+        <posy>300</posy>
         <width>1368</width>
-        <height>327</height>
+        <height>400</height>
         <onleft>300</onleft>
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <itemlayout height="345" width="228">
-            <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>189</width>
-                <height>285</height>
-                <include>PosterThumbBG</include>
-            </control>
+        <itemlayout height="400" width="231">
             <control type="image">
                 <posx>21</posx>
                 <posy>21</posy>
                 <width>189</width>
                 <height>285</height>
                 <include>PosterThumb</include>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
+            <control type="image">
+                <posx>-6</posx>
+                <posy>-6</posy>
+                <width>243</width>
+                <height>339</height>
+                <texture border="37">thumbs/JewelCase.png</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
+            <control type="label">
+                <posx>115</posx>
+                <posy>308</posy>
+                <width>200</width>
+                <height>70</height>
+                <align>center</align>
+                <textcolor>ListNoFocusColor</textcolor>
+                <font>ShelfFont</font>
+                <scroll>false</scroll>
+                <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
+            </control>
+        </itemlayout>
+        <focusedlayout height="400" width="231">
             <control type="group">
-                <posy>240</posy>
+                <visible>![Control.HasFocus(413)]</visible>
                 <control type="image">
                     <posx>21</posx>
-                    <posy>12</posy>
+                    <posy>21</posy>
                     <width>189</width>
-                    <height>44</height>
-                    <texture>img/OverlayStripe.png</texture>
+                    <height>285</height>
+                    <include>PosterThumb</include>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>339</height>
+                    <texture border="37">thumbs/JewelCase.png</texture>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
                 </control>
                 <control type="label">
-                    <posx>114</posx>
-                    <width>185</width>
+                    <posx>115</posx>
+                    <posy>308</posy>
+                    <width>200</width>
                     <height>70</height>
-                    <font>Slider</font>
                     <align>center</align>
+                    <textcolor>ListNoFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
                     <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
                 </control>
             </control>
-        </itemlayout>
-        <focusedlayout height="345" width="228">
-            <control type="image">
-                <visible>!Control.HasFocus(413)</visible>
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>189</width>
-                <height>285</height>
-                <include>PosterThumbBG</include>
-            </control>
-            <control type="image">
-                <visible>Control.HasFocus(413)</visible>
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>189</width>
-                <height>285</height>
-                <include>PosterThumbFO</include>
-            </control>
-            <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>189</width>
-                <height>285</height>
-                <include>PosterThumb</include>
-            </control>
             <control type="group">
-                <posy>240</posy>
+                <visible>[Control.HasFocus(413)]</visible>
                 <control type="image">
                     <posx>21</posx>
-                    <posy>12</posy>
+                    <posy>21</posy>
                     <width>189</width>
-                    <height>44</height>
-                    <texture>img/OverlayStripe.png</texture>
+                    <height>285</height>
+                    <include>PosterThumb</include>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>339</height>
+                    <texture border="37">thumbs/JewelCaseOverlay.png</texture>
                 </control>
                 <control type="label">
-                    <posx>114</posx>
-                    <width>185</width>
+                    <posx>115</posx>
+                    <posy>308</posy>
+                    <width>200</width>
                     <height>70</height>
-                    <font>Slider</font>
                     <align>center</align>
+                    <textcolor>ListFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
                     <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
                 </control>
             </control>
@@ -356,111 +472,133 @@
         <animation effect="slide" start="0,0" end="0,-162" time="0" condition="!Skin.HasSetting(plexbmc) + Control.IsVisible(513)">Conditional</animation>
         <include>VisibleFadeEffectDelayShelf</include>
         <posx>540</posx>
-        <posy>378</posy>
+        <posy>340</posy>
         <width>1368</width>
-        <height>327</height>
+        <height>400</height>
         <onleft>300</onleft>
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <itemlayout height="345" width="228">
+        <itemlayout height="400" width="231">
             <control type="image">
                 <posx>21</posx>
                 <posy>21</posy>
-                <width>198</width>
-                <height>198</height>
-                <bordersize>-12</bordersize>
-                <include>SquareThumbBG</include>
-            </control>
-            <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>198</width>
-                <height>198</height>
+                <width>189</width>
+                <height>189</height>
                 <include>SquareThumb</include>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
-                <posx>21</posx>
-                <posy>240</posy>
-                <width>198</width>
-                <height>66</height>
-                <bordersize>-3</bordersize>
-                <texture border="8">img/WhiteRoundedT.png</texture>
+                <posx>-6</posx>
+                <posy>-6</posy>
+                <width>243</width>
+                <height>243</height>
+                <texture border="37">thumbs/JewelCase.png</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="label">
-                <posx>120</posx>
-                <posy>243</posy>
-                <width>190</width>
-                <height>30</height>
+                <posx>115</posx>
+                <posy>225</posy>
+                <width>200</width>
+                <height>70</height>
                 <align>center</align>
-                <font>ItemCount</font>
+                <textcolor>ListNoFocusColor</textcolor>
+                <font>ShelfFont</font>
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
-                <posx>120</posx>
-                <posy>273</posy>
-                <width>190</width>
-                <height>30</height>
+                <posx>115</posx>
+                <posy>255</posy>
+                <width>200</width>
+                <height>70</height>
                 <align>center</align>
-                <font>ItemCount</font>
+                <textcolor>SublistNoFocusColor</textcolor>
+                <font>ShelfFont</font>
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
         </itemlayout>
-        <focusedlayout height="345" width="228">
-            <control type="image">
+        <focusedlayout height="400" width="231">
+            <control type="group">
                 <visible>![Control.HasFocus(511) | Control.HasFocus(512) | Control.HasFocus(515)]</visible>
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>198</width>
-                <height>198</height>
-                <bordersize>-12</bordersize>
-                <include>SquareThumbBG</include>
+                <control type="image">
+                    <posx>21</posx>
+                    <posy>21</posy>
+                    <width>189</width>
+                    <height>189</height>
+                    <include>SquareThumb</include>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>243</height>
+                    <texture border="37">thumbs/JewelCase.png</texture>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
+                </control>
+                <control type="label">
+                    <posx>115</posx>
+                    <posy>225</posy>
+                    <width>200</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>ListNoFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label">
+                    <posx>115</posx>
+                    <posy>255</posy>
+                    <width>200</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>SublistNoFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
             </control>
-            <control type="image">
-                <visible>Control.HasFocus(511) | Control.HasFocus(512) | Control.HasFocus(515)</visible>
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>198</width>
-                <height>198</height>
-                <bordersize>-12</bordersize>
-                <include>SquareThumbFO</include>
-            </control>
-            <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>198</width>
-                <height>198</height>
-                <include>SquareThumb</include>
-            </control>
-            <control type="image">
-                <posx>21</posx>
-                <posy>240</posy>
-                <width>198</width>
-                <height>66</height>
-                <bordersize>-3</bordersize>
-                <texture border="8">img/WhiteRoundedT.png</texture>
-            </control>
-            <control type="label">
-                <posx>120</posx>
-                <posy>243</posy>
-                <width>190</width>
-                <height>30</height>
-                <align>center</align>
-                <font>ItemCount</font>
-                <scroll>false</scroll>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label">
-                <posx>120</posx>
-                <posy>273</posy>
-                <width>190</width>
-                <height>30</height>
-                <align>center</align>
-                <font>ItemCount</font>
-                <scroll>false</scroll>
-                <label>$INFO[ListItem.Label2]</label>
+            <control type="group">
+                <visible>[Control.HasFocus(511) | Control.HasFocus(512) | Control.HasFocus(515)]</visible>
+                <control type="image">
+                    <posx>21</posx>
+                    <posy>21</posy>
+                    <width>189</width>
+                    <height>189</height>
+                    <include>SquareThumb</include>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>243</height>
+                    <texture border="37">thumbs/JewelCaseOverlay.png</texture>
+                </control>
+                <control type="label">
+                    <posx>115</posx>
+                    <posy>225</posy>
+                    <width>200</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>ListFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label">
+                    <posx>115</posx>
+                    <posy>255</posy>
+                    <width>200</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>SublistFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label2]</label>
+                </control>
             </control>
         </focusedlayout>
     </include>
@@ -471,12 +609,12 @@
         <posx>540</posx>
         <posy>378</posy>
         <width>1368</width>
-        <height>327</height>
+        <height>400</height>
         <onleft>300</onleft>
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <itemlayout height="345" width="228">
+        <itemlayout height="400" width="231">
             <control type="image">
                 <posx>21</posx>
                 <posy>21</posy>
@@ -521,7 +659,7 @@
                 <label>$INFO[ListItem.Label2]</label>
             </control>
         </itemlayout>
-        <focusedlayout height="345" width="228">
+        <focusedlayout height="400" width="231">
             <control type="image">
                 <visible>!Control.HasFocus(513)</visible>
                 <posx>21</posx>
@@ -580,91 +718,100 @@
     <include name="RecentlyAdded_Addons">
         <include>VisibleFadeEffectDelayShelf</include>
         <posx>540</posx>
-        <posy>378</posy>
+        <posy>340</posy>
         <width>1368</width>
         <height>327</height>
         <onleft>300</onleft>
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <itemlayout height="345" width="228">
+        <itemlayout height="345" width="231">
             <control type="image">
                 <posx>21</posx>
                 <posy>21</posy>
-                <width>198</width>
-                <height>198</height>
-                <bordersize>-12</bordersize>
-                <include>SquareThumbBG</include>
-            </control>
-            <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>198</width>
-                <height>198</height>
+                <width>189</width>
+                <height>189</height>
                 <include>SquareThumb</include>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
-                <posx>21</posx>
-                <posy>264</posy>
-                <width>198</width>
-                <height>42</height>
-                <bordersize>-3</bordersize>
-                <texture border="8">img/WhiteRoundedT.png</texture>
+                <posx>-6</posx>
+                <posy>-6</posy>
+                <width>243</width>
+                <height>243</height>
+                <texture border="37">thumbs/JewelCase.png</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="label">
-                <posx>120</posx>
-                <posy>264</posy>
-                <width>190</width>
-                <height>42</height>
+                <posx>115</posx>
+                <posy>225</posy>
+                <width>200</width>
+                <height>70</height>
                 <align>center</align>
-                <font>ItemCount</font>
+                <textcolor>ListNoFocusColor</textcolor>
+                <font>ShelfFont</font>
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
             </control>
         </itemlayout>
-        <focusedlayout height="345" width="228">
-            <control type="image">
+        <focusedlayout height="345" width="231">
+            <control type="group">
                 <visible>![Control.HasFocus(111) | Control.HasFocus(211) | Control.HasFocus(212) | Control.HasFocus(900)]</visible>
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>198</width>
-                <height>198</height>
-                <bordersize>-12</bordersize>
-                <include>SquareThumbBG</include>
+                <control type="image">
+                    <posx>21</posx>
+                    <posy>21</posy>
+                    <width>189</width>
+                    <height>189</height>
+                    <include>SquareThumb</include>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>243</height>
+                    <texture border="37">thumbs/JewelCase.png</texture>
+                    <colordiffuse>UnfocusedIconColor</colordiffuse>
+                </control>
+                <control type="label">
+                    <posx>115</posx>
+                    <posy>225</posy>
+                    <width>200</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>ListNoFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
             </control>
-            <control type="image">
-                <visible>Control.HasFocus(111) | Control.HasFocus(211) | Control.HasFocus(212) | Control.HasFocus(900)</visible>
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>198</width>
-                <height>198</height>
-                <bordersize>-12</bordersize>
-                <include>SquareThumbFO</include>
-            </control>
-            <control type="image">
-                <posx>21</posx>
-                <posy>21</posy>
-                <width>198</width>
-                <height>198</height>
-                <include>SquareThumb</include>
-            </control>
-            <control type="image">
-                <posx>21</posx>
-                <posy>264</posy>
-                <width>198</width>
-                <height>42</height>
-                <bordersize>-3</bordersize>
-                <texture border="8">img/WhiteRoundedT.png</texture>
-            </control>
-            <control type="label">
-                <posx>120</posx>
-                <posy>264</posy>
-                <width>190</width>
-                <height>42</height>
-                <align>center</align>
-                <font>ItemCount</font>
-                <scroll>false</scroll>
-                <label>$INFO[ListItem.Label]</label>
+            <control type="group">
+                <visible>[Control.HasFocus(111) | Control.HasFocus(211) | Control.HasFocus(212) | Control.HasFocus(900)]</visible>
+                <control type="image">
+                    <posx>21</posx>
+                    <posy>21</posy>
+                    <width>189</width>
+                    <height>189</height>
+                    <include>SquareThumb</include>
+                </control>
+                <control type="image">
+                    <posx>-6</posx>
+                    <posy>-6</posy>
+                    <width>243</width>
+                    <height>243</height>
+                    <texture border="37">thumbs/JewelCaseOverlay.png</texture>
+                </control>
+                <control type="label">
+                    <posx>115</posx>
+                    <posy>225</posy>
+                    <width>200</width>
+                    <height>70</height>
+                    <align>center</align>
+                    <textcolor>ListFocusColor</textcolor>
+                    <font>ShelfFont</font>
+                    <scroll>false</scroll>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
             </control>
         </focusedlayout>
     </include>
