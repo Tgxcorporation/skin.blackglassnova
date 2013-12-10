@@ -5,12 +5,12 @@
       <include>RecentlyAdded_Header</include>
       <label>$INFO[Container(111).ListItem.Property(ItemType)]</label>
     </control>
-    <control type="label" description="Label">
+   <!--  <control type="label" description="Label">
       <visible>Control.HasFocus(111)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(111).ListItem.Label]</label>
-    </control>
+    </control> -->
     <control type="fixedlist" id="111" description="Favourites">
       <visible>!IsEmpty(Window(Home).Property(favourite.1.path))</visible>
       <visible>Container(300).HasFocus(7)</visible>
@@ -32,12 +32,12 @@
       <include>RecentlyAdded_Header</include>
       <label>$INFO[Container(211).ListItem.Property(ItemType)]</label>
     </control>
-    <control type="label" description="Label">
+    <!-- <control type="label" description="Label">
       <visible>Control.HasFocus(211)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(211).ListItem.Label]</label>
-    </control>
+    </control> -->
     <control type="fixedlist" id="211" description="Addons">
       <visible>!IsEmpty(Skin.String(ShelfAddons.1.Label)) | !IsEmpty(Skin.String(ShelfAddons.2.Label)) | !IsEmpty(Skin.String(ShelfAddons.3.Label)) | !IsEmpty(Skin.String(ShelfAddons.4.Label)) | !IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
       <visible>Container(300).HasFocus(2)</visible>
@@ -59,12 +59,12 @@
       <include>RecentlyAdded_Header</include>
       <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
     </control>
-    <control type="label" description="Label">
+   <!--  <control type="label" description="Label">
       <visible>Control.HasFocus(311)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(311).ListItem.Label]</label>
-    </control>
+    </control> -->
     <control type="fixedlist" id="311" description="Movies XBMC">
       <visible>!IsEmpty(Window(Home).Property(RecentMovie.1.Title))</visible>
       <visible>Container(300).HasFocus(4)</visible>
@@ -87,12 +87,12 @@
       <include>Recommended_Header</include>
       <label>$INFO[Container(312).ListItem.Property(ItemType)]</label>
     </control>
-    <control type="label" description="Label">
+    <!-- <control type="label" description="Label">
       <visible>Control.HasFocus(312)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>Recommended_Label</include>
       <label>$INFO[Container(312).ListItem.Label]</label>
-    </control>
+    </control> -->
     <control type="fixedlist" id="312" description="TOP Shortcuts">
       <visible>![IsEmpty(Window(Home).Property(RecommendedMovie.1.Title)) + IsEmpty(Window(Home).Property(RandomMovie.1.Title))]</visible>
       <visible>Container(300).HasFocus(4)</visible>
@@ -116,12 +116,12 @@
       <include>RecentlyAdded_Header</include>
       <label>$INFO[Container(514).ListItem.Property(ItemType)]</label>
     </control>
-    <control type="label" description="Label">
+    <!-- <control type="label" description="Label">
       <visible>Control.HasFocus(514)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(514).ListItem.Label]</label>
-    </control>
+    </control> -->
     <control type="fixedlist" id="514" description="Recent concerts">
       <visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))</visible>
       <visible>Container(300).HasFocus(14)</visible>
@@ -145,12 +145,12 @@
       <include>Recommended_Header</include>
       <label>$INFO[Container(515).ListItem.Property(ItemType)]</label>
     </control>
-    <control type="label" description="Label">
+    <!-- <control type="label" description="Label">
       <visible>Control.HasFocus(515)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>Recommended_Label</include>
       <label>$INFO[Container(515).ListItem.Label]</label>
-    </control>
+    </control> -->
     <control type="fixedlist" id="515" description="Recommended concerts">
       <visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.1.Title))</visible>
       <visible>Container(300).HasFocus(14)</visible>
@@ -173,12 +173,12 @@
       <include>RecentlyAdded_Header</include>
       <label>$INFO[Container(411).ListItem.Property(ItemType)]</label>
     </control>
-    <control type="label" description="Label">
+    <!-- <control type="label" description="Label">
       <visible>Control.HasFocus(411)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(411).ListItem.Label]</label>
-    </control>
+    </control> -->
     <control type="fixedlist" id="411" description="TV Shows XBMC">
       <visible>!IsEmpty(Window(Home).Property(RecentEpisode.1.Title))</visible>
       <visible>Container(300).HasFocus(5)</visible>
@@ -201,12 +201,12 @@
       <include>Recommended_Header</include>
       <label>$INFO[Container(413).ListItem.Property(ItemType)]</label>
     </control>
-    <control type="label" description="Label">
+    <!-- <control type="label" description="Label">
       <visible>Control.HasFocus(413)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>Recommended_Label</include>
       <label>$INFO[Container(413).ListItem.Label2,,[COLOR=Orange]  •  [/COLOR]]$INFO[Container(413).ListItem.Label]</label>
-    </control>
+    </control> -->
     <control type="fixedlist" id="413" description="TV Shows XBMC Widgets">
       <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.Title))</visible>
       <visible>Container(300).HasFocus(5)</visible>
@@ -229,12 +229,12 @@
       <include>RecentlyAdded_Header</include>
       <label>$INFO[Container(511).ListItem.Property(ItemType)]</label>
     </control>
-    <control type="label" description="Label">
+    <!-- <control type="label" description="Label">
       <visible>Control.HasFocus(511)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(511).ListItem.Property(ShelfLabel)]</label>
-    </control>
+    </control> -->
     <control type="fixedlist" id="511" description="TOP Shortcuts">
       <visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
       <visible>Container(300).HasFocus(6)</visible>
@@ -258,12 +258,12 @@
       <include>Recommended_Header</include>
       <label>$INFO[Container(513).ListItem.Property(ItemType)]</label>
     </control>
-    <control type="label" description="Label">
+    <!-- <control type="label" description="Label">
       <visible>Control.HasFocus(513)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>Recommended_Label</include>
       <label>$INFO[Container(513).ListItem.Property(ShelfLabel)]</label>
-    </control>
+    </control> -->
     <control type="fixedlist" id="513" description="TOP Shortcuts">
       <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))]</visible>
       <visible>Container(300).HasFocus(6)</visible>
@@ -286,12 +286,12 @@
       <include>RecentlyAdded_Header</include>
       <label>$INFO[Container(512).ListItem.Property(ItemType)]</label>
     </control>
-    <control type="label" description="Label">
+   <!--  <control type="label" description="Label">
       <visible>Control.HasFocus(512)</visible>
       <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
       <include>RecentlyAdded_Label</include>
       <label>$INFO[Container(512).ListItem.Label]</label>
-    </control>
+    </control> -->
     <control type="fixedlist" id="512" description="Music video clips">
       <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
       <visible>Container(300).HasFocus(13)</visible>
