@@ -2,17 +2,19 @@
 <includes>
     <include name="Plexbmc_Shelf">
         <control type="group" description="PLEXBMC">
+            <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="Control.HasFocus(300)|Control.HasFocus(9001)">Conditional</animation>
             <control type="label" description="Header">
                 <visible>Control.IsVisible(900)</visible>
+                <posy>280</posy>
                 <include>RecentlyAdded_Header</include>
                 <label>$INFO[Container(900).ListItem.Property(ItemType)]</label>
             </control>
-            <control type="label" description="Label">
+            <!-- <control type="label" description="Label">
                 <visible>Control.HasFocus(900)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Commons</include>
                 <include>RecentlyAdded_Label</include>
                 <label>$INFO[Container(900).ListItem.Label]</label>
-            </control>
+            </control> -->
             <control type="fixedlist" id="900" description="Pictures">
                 <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))</visible>
                 <visible>StringCompare(Container(300).ListItem.Property(type),photo)</visible>

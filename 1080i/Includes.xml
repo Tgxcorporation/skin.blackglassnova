@@ -1225,11 +1225,41 @@
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/1")</onclick>
             <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/1")</onclick>
         </item>
-        <item id="50" description="Reload skin">
+        <item id="90142">
+            <visible>Container(300).HasFocus(300)</visible>
+            <label>$LOCALIZE[19023]</label>
+            <onclick>ActivateWindowAndFocus(MyPVR, 32,0, 11,0)</onclick>
+        </item>
+        <item id="90143">
+            <visible>Container(300).HasFocus(300)</visible>
+            <label>$LOCALIZE[19024]</label>
+            <onclick>ActivateWindowAndFocus(MyPVR, 33,0, 12,0)</onclick>
+        </item>
+        <item id="90145">
+            <visible>Container(300).HasFocus(300)</visible>
+            <label>$LOCALIZE[19163]</label>
+            <onclick>ActivateWindowAndFocus(MyPVR, 34,0, 13,0)</onclick>
+        </item>
+        <item id="90146">
+            <visible>Container(300).HasFocus(300)</visible>
+            <label>$LOCALIZE[19040]</label>
+            <onclick>ActivateWindowAndFocus(MyPVR, 35,0, 14,0)</onclick>
+        </item><item id="90147">
+            <visible>Container(300).HasFocus(300)</visible>
+            <label>$LOCALIZE[137]</label>
+            <onclick>ActivateWindowAndFocus(MyPVR, 36,0, 17,0)</onclick>
+        </item>
+         <item id="90144">
+            <visible>Container(300).HasFocus(300)</visible>
+            <label>$LOCALIZE[19069]</label>
+            <onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
+        </item>
+<item id="50" description="Reload skin">
             <visible>Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[20183]</label>
             <onclick>XBMC.ReloadSkin()</onclick>
         </item>
+
         <include condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
     </include>
     <include name="Library_Count">

@@ -26,6 +26,7 @@
                 <width>1920</width>
                 <height>56</height>
                 <texture>img/BlackDot.png</texture>
+                <colordiffuse>90ffffff</colordiffuse>
             </control>
             <control type="image">
                 <posx>0</posx>
