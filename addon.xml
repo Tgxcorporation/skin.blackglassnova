@@ -10,7 +10,7 @@
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<description>Port from Mediaportal</description>
+		<description>Ported from Mediaportal, Black Glass Nova is an easy to use and fanart oriented skin.</description>
 	</extension>
 </addon>
 
