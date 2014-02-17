@@ -3,10 +3,6 @@
     <include name="View_53_Grid">
         <control type="group" description="Grid view">
             <visible>Control.IsVisible(53)</visible>
-            <control type="label">
-                <include>WindowTitleSub</include>
-                <label>$VAR[GlobalSubTitles]</label>
-            </control>
             <include>FooterInfo</include>
             <control type="image">
                 <posx>-100</posx>

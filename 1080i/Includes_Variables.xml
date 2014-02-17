@@ -4,6 +4,15 @@
         <value condition="Player.ChapterCount + !IsEmpty(Player.ChapterName)">  •  $INFO[Player.ChapterName]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
         <value condition="Player.ChapterCount">  •  $LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
     </variable>
+    <variable name="Overlay" description="Overlay image">
+      <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
+      <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$INFO[ListItem.property(overlay)]</value>
+      <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)">-</value>
+      <value condition="Skin.HasSetting(Hide_Unwatched_Marks)">$INFO[ListItem.Overlay,overlay_watched/]</value>
+      <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
+      <value condition="Skin.HasSetting(Hide_Watched_Marks)">$INFO[ListItem.Overlay,overlay_unwatched/]</value>
+      <value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
+    </variable>
     <variable name="Banner" description="TV Banners">
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(tvshows)]">DefaultFolderBackBanner.png</value>
         <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>

@@ -9,6 +9,10 @@
             <include>WindowTitle</include>
             <label>$LOCALIZE[2]</label>
         </control>
+        <control type="label">
+            <include>WindowTitleSub</include>
+            <label>$VAR[GlobalSubTitles]</label>
+        </control>
         <control type="group" description="Fix for Plexbmc">
             <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
             <include>View_50</include>

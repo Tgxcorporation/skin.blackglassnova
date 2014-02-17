@@ -504,65 +504,14 @@
                 </control>
                 <control type="grouplist" description="Flags">
                     <posx>TextMargin</posx>
-                    <posy>849</posy>
+                    <posy>820</posy>
                     <width min="90" max="1130">auto</width>
-                    <height>45</height>
+                    <height>90</height>
                     <itemgap>30</itemgap>
                     <orientation>horizontal</orientation>
                     <align>left</align>
                     <aligny>center</aligny>
-                    <control type="button">
-                        <visible>!IsEmpty(ListItem.VideoResolution)</visible>
-                        <height>36</height>
-                        <width>102</width>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <font>Flags</font>
-                        <align>center</align>
-                        <textoffsetx>0</textoffsetx>
-                        <colordiffuse>Silver</colordiffuse>
-                        <texturenofocus>badges/video/ResFrame.png</texturenofocus>
-                        <texturefocus>badges/video/ResFrame.png</texturefocus>
-                        <label>$INFO[ListItem.VideoResolution]</label>
-                    </control>
-                    <control type="image">
-                        <visible>!IsEmpty(ListItem.VideoCodec)</visible>
-                        <height>36</height>
-                        <width>102</width>
-                        <aspectratio>keep</aspectratio>
-                        <colordiffuse>Silver</colordiffuse>
-                        <texture aligny="top">$INFO[ListItem.VideoCodec,badges/video/,.png]</texture>
-                    </control>
-                    <control type="image">
-                        <visible>!IsEmpty(ListItem.AudioChannels)</visible>
-                        <height>36</height>
-                        <width>102</width>
-                        <aspectratio>keep</aspectratio>
-                        <colordiffuse>Silver</colordiffuse>
-                        <texture>$INFO[ListItem.AudioChannels,badges/channels,.png]</texture>
-                    </control>
-                    <control type="image">
-                        <visible>!IsEmpty(ListItem.AudioCodec)</visible>
-                        <height>36</height>
-                        <width>102</width>
-                        <aspectratio>keep</aspectratio>
-                        <colordiffuse>Silver</colordiffuse>
-                        <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
-                    </control>
-                    <control type="button">
-                        <visible>!IsEmpty(ListItem.VideoAspect)</visible>
-                        <height>36</height>
-                        <width>102</width>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <font>Flags</font>
-                        <align>center</align>
-                        <textoffsetx>0</textoffsetx>
-                        <colordiffuse>Silver</colordiffuse>
-                        <texturenofocus>badges/video/FlagFrame.png</texturenofocus>
-                        <texturefocus>badges/video/FlagFrame.png</texturefocus>
-                        <label>$INFO[ListItem.VideoAspect]</label>
-                    </control>
+                    <include>Codecs</include>
                 </control>
             </control>
         </control>

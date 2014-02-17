@@ -6,7 +6,7 @@
             <posy>950</posy>
             <width>2400</width>
             <height>130</height>
-            <texture>img/gradient.png</texture>
+            <texture>common/HomeGradient.png</texture>
         </control>
         <control type="label" description="Title Label">
             <posx>510</posx>

@@ -79,66 +79,15 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="grouplist" description="Flags">
-                <posx>236</posx>
-                <posy>880</posy>
+                <posx>273</posx>
+                <posy>865</posy>
                 <width>1006</width>
                 <height>408</height>
-                <itemgap>60</itemgap>
+                <itemgap>20</itemgap>
                 <orientation>horizontal</orientation>
-                <align>center</align>
+                <align>left</align>
                 <aligny>center</aligny>
-                <control type="button">
-                    <visible>!IsEmpty(VideoPlayer.VideoResolution)</visible>
-                    <height>36</height>
-                    <width>102</width>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <font>Flags</font>
-                    <align>center</align>
-                    <textoffsetx>0</textoffsetx>
-                    <colordiffuse>Silver</colordiffuse>
-                    <texturenofocus>badges/video/ResFrame.png</texturenofocus>
-                    <texturefocus>badges/video/ResFrame.png</texturefocus>
-                    <label>$INFO[VideoPlayer.VideoResolution]</label>
-                </control>
-                <control type="image">
-                    <visible>!IsEmpty(VideoPlayer.VideoCodec)</visible>
-                    <height>36</height>
-                    <width>102</width>
-                    <aspectratio>keep</aspectratio>
-                    <colordiffuse>Silver</colordiffuse>
-                    <texture aligny="top">$INFO[VideoPlayer.VideoCodec,badges/video/,.png]</texture>
-                </control>
-                <control type="image">
-                    <visible>!IsEmpty(VideoPlayer.AudioChannels)</visible>
-                    <height>36</height>
-                    <width>102</width>
-                    <aspectratio>keep</aspectratio>
-                    <colordiffuse>Silver</colordiffuse>
-                    <texture>$INFO[VideoPlayer.AudioChannels,badges/channels,.png]</texture>
-                </control>
-                <control type="image">
-                    <visible>!IsEmpty(VideoPlayer.AudioCodec)</visible>
-                    <height>36</height>
-                    <width>102</width>
-                    <aspectratio>keep</aspectratio>
-                    <colordiffuse>Silver</colordiffuse>
-                    <texture>$INFO[VideoPlayer.AudioCodec,badges/audio/,.png]</texture>
-                </control>
-                <control type="button">
-                    <visible>!IsEmpty(VideoPlayer.VideoAspect)</visible>
-                    <height>36</height>
-                    <width>102</width>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <font>Flags</font>
-                    <align>center</align>
-                    <textoffsetx>0</textoffsetx>
-                    <colordiffuse>Silver</colordiffuse>
-                    <texturenofocus>badges/video/FlagFrame.png</texturenofocus>
-                    <texturefocus>badges/video/FlagFrame.png</texturefocus>
-                    <label>$INFO[VideoPlayer.VideoAspect]</label>
-                </control>
+                <include>CodecsOSD</include>
             </control>
         </control>
     </controls>

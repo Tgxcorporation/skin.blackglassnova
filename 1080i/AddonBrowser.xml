@@ -9,6 +9,10 @@
             <include>WindowTitle</include>
             <label>$LOCALIZE[10040]</label>
         </control>
+        <control type="label">
+            <include>WindowTitleSub</include>
+            <label>$VAR[GlobalSubTitles]</label>
+        </control>
         <control type="group" description="Content">
             <visible>Control.IsVisible(50)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
             <include>Icon_Fade</include>
@@ -101,10 +105,6 @@
         <control type="label">
             <include>FacadeNumItems</include>
             <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
-        </control>
-        <control type="label">
-            <include>WindowTitleSub</include>
-            <label>$VAR[GlobalSubTitles]</label>
         </control>
         <control type="list" id="50" description="No Thumbs">
             <viewtype label="List">list</viewtype>

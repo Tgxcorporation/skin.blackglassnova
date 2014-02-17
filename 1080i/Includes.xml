@@ -13,6 +13,7 @@
 
    -->
     <include file="Includes_Variables.xml"/>
+    <include file="Includes_Codec.xml"/>
     <include file="defaults.xml"/>
     <include file="Includes_Plexbmc.xml"/>
     <include file="Includes_Horizontal_Home.xml"/>
@@ -66,38 +67,6 @@
         <animation effect="slide" tween="circle" easing="out" time="250" start="750,0" end="0,0">WindowOpen</animation>
         <animation effect="slide" tween="circle" easing="out" time="250" end="750,0">WindowClose</animation>
     </include>
-    <include name="WeatherAni0">
-        <animation type="WindowOpen">
-            <effect type="fade" start="80" end="100" time="200"/>
-        </animation>
-        <animation type="WindowClose">
-            <effect type="fade" start="100" end="0" time="100"/>
-        </animation>
-    </include>
-    <include name="WeatherAni1">
-        <animation type="WindowOpen">
-            <effect type="fade" start="80" end="100" time="200" delay="150"/>
-        </animation>
-        <animation type="WindowClose">
-            <effect type="fade" start="100" end="0" time="100" delay="150"/>
-        </animation>
-    </include>
-    <include name="WeatherAni2">
-        <animation type="WindowOpen">
-            <effect type="fade" start="80" end="100" time="200" delay="300"/>
-        </animation>
-        <animation type="WindowClose">
-            <effect type="fade" start="100" end="0" time="100" delay="300"/>
-        </animation>
-    </include>
-    <include name="WeatherAni3">
-        <animation type="WindowOpen">
-            <effect type="fade" start="80" end="100" time="200" delay="450"/>
-        </animation>
-        <animation type="WindowClose">
-            <effect type="fade" start="100" end="0" time="100" delay="450"/>
-        </animation>
-    </include>
     <include name="Icon_Fade">
         <fadetime>200</fadetime>
         <animation effect="fade" time="200">Visible</animation>
@@ -131,12 +100,6 @@
         <posy>0</posy>
         <width>1920</width>
         <height>1080</height>
-    </include>
-    <include name="Panel_Size">
-        <posx>36</posx>
-        <posy>54</posy>
-        <width>1849</width>
-        <height>1010</height>
     </include>
     <include name="Time">
         <control type="group">
@@ -249,15 +212,6 @@
         <shadowcolor>Black</shadowcolor>
         <animation effect="fade" time="50">VisibleChange</animation>
     </include>
-    <include name="MiniBackground">
-        <control type="image" description="Default BG">
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-            <texture>common/BlackDot.png</texture>
-        </control>
-    </include>
     <include name="Stars">
         <visible>!IsEmpty(ListItem.StarRating)</visible>
         <height>36</height>
@@ -331,24 +285,6 @@
     <include name="PosterThumb">
         <texture fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
         <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
-    </include>
-    <include name="FullscreenInfoLabelMain">
-        <posx>300</posx>
-        <posy>0</posy>
-        <width>1200</width>
-        <scroll>false</scroll>
-        <align>left</align>
-        <font>size24B</font>
-        <textcolor>White2</textcolor>
-        <animation effect="fade" time="200">VisibleChange</animation>
-    </include>
-    <include name="9000SysButtons">
-        <height>54</height>
-        <width>500</width>
-        <font>ViewMenu</font>
-        <radioposx>390</radioposx>
-        <textoffsetx>30</textoffsetx>
-        <disabledcolor>Grey</disabledcolor>
     </include>
     <include name="9000GrouplistParameters">
         <control type="radiobutton" id="9145" description="View 50">
@@ -1086,7 +1022,7 @@
             <label>$LOCALIZE[19069]</label>
             <onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
         </item>
-<!--         <item id="50" description="Reload skin">
+        <!--         <item id="50" description="Reload skin">
             <visible>Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[20183]</label>
             <onclick>XBMC.ReloadSkin()</onclick>
@@ -1113,7 +1049,6 @@
         </item>
         <include condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
     </include>
-
     <constant name="TextMargin">45</constant>
     <constant name="TextMarginR">45r</constant>
     <include name="FacadeOverlay">
