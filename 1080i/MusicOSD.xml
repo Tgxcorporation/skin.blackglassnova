@@ -145,8 +145,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[210]</label>
                     <font>-</font>
-                    <texturefocus>Topbar/topbar_skipback_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_skipback_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
                     <onleft>20</onleft>
                     <onright>601</onright>
                     <onclick>PlayerControl(Previous)</onclick>
@@ -158,8 +158,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31354]</label>
                     <font>-</font>
-                    <texturefocus>Topbar/topbar_rewind_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_rewind_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
                     <onleft>600</onleft>
                     <onright>602</onright>
                     <onclick>PlayerControl(Rewind)</onclick>
@@ -172,11 +172,11 @@
                     <label>$LOCALIZE[31351]</label>
                     <altlabel>$LOCALIZE[208]</altlabel>
                     <font>-</font>
-                    <texturefocus>Topbar/topbar_pause_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_pause_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
                     <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                    <alttexturefocus>Topbar/topbar_play_focus.png</alttexturefocus>
-                    <alttexturenofocus>Topbar/topbar_play_nofocus.png</alttexturenofocus>
+                    <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
+                    <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
                     <onleft>601</onleft>
                     <onright>603</onright>
                     <onup>XBMC.ActivateWindow(142)</onup>
@@ -189,8 +189,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31352]</label>
                     <font>-</font>
-                    <texturefocus>Topbar/topbar_stop_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_stop_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
                     <onleft>602</onleft>
                     <onright>604</onright>
                     <onclick>PlayerControl(Stop)</onclick>
@@ -202,8 +202,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[31353]</label>
                     <font>-</font>
-                    <texturefocus>Topbar/topbar_fastforward_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_fastforward_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
                     <onleft>603</onleft>
                     <onright>605</onright>
                     <onclick>PlayerControl(Forward)</onclick>
@@ -215,8 +215,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[209]</label>
                     <font>-</font>
-                    <texturefocus>Topbar/topbar_skipforward_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_skipforward_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_skipforward_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                     <onleft>604</onleft>
                     <onright>1</onright>
                     <onclick>PlayerControl(Next)</onclick>
@@ -234,8 +234,8 @@
                         <font>-</font>
                         <onleft>605</onleft>
                         <onright>21</onright>
-                        <texturefocus>Topbar/topbar_repeat_focus.png</texturefocus>
-                        <texturenofocus>Topbar/topbar_repeat_nofocus.png</texturenofocus>
+                        <texturefocus>topbar/topbar_repeat_focus.png</texturefocus>
+                        <texturenofocus>topbar/topbar_repeat_nofocus.png</texturenofocus>
                         <onclick>XBMC.PlayerControl(Repeat)</onclick>
                     </control>
                     <control type="image" id="4">
@@ -243,7 +243,7 @@
                         <posy>0</posy>
                         <width>50</width>
                         <height>50</height>
-                        <texture>Topbar/topbar_repeat_one_nofocus.png</texture>
+                        <texture>topbar/topbar_repeat_one_nofocus.png</texture>
                         <visible>Playlist.IsRepeatOne</visible>
                         <visible>!Control.HasFocus(1)</visible>
                     </control>
@@ -252,7 +252,7 @@
                         <posy>0</posy>
                         <width>50</width>
                         <height>50</height>
-                        <texture>Topbar/topbar_repeat_one_focus.png</texture>
+                        <texture>topbar/topbar_repeat_one_focus.png</texture>
                         <visible>Playlist.IsRepeatOne</visible>
                         <visible>Control.HasFocus(1)</visible>
                     </control>
@@ -261,7 +261,7 @@
                         <posy>0</posy>
                         <width>50</width>
                         <height>50</height>
-                        <texture>Topbar/topbar_repeat_all_nofocus.png</texture>
+                        <texture>topbar/topbar_repeat_all_nofocus.png</texture>
                         <visible>Playlist.IsRepeat</visible>
                         <visible>!Control.HasFocus(1)</visible>
                     </control>
@@ -270,7 +270,7 @@
                         <posy>0</posy>
                         <width>50</width>
                         <height>50</height>
-                        <texture>Topbar/topbar_repeat_all_focus.png</texture>
+                        <texture>topbar/topbar_repeat_all_focus.png</texture>
                         <visible>Playlist.IsRepeat</visible>
                         <visible>Control.HasFocus(1)</visible>
                     </control>
@@ -301,8 +301,8 @@
                     <font>-</font>
                     <onleft>21</onleft>
                     <onright>555</onright>
-                    <texturefocus>Topbar/topbar_teletext_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_teletext_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_teletext_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_teletext_nofocus.png</texturenofocus>
                     <onclick>Close</onclick>
                     <onclick condition="IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
                     <onclick condition="!IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
@@ -316,8 +316,8 @@
                     <font>-</font>
                     <onleft>9</onleft>
                     <onright>556</onright>
-                    <texturefocus>Topbar/topbar_bookmark_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_bookmark_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_bookmark_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_bookmark_nofocus.png</texturenofocus>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(MusicPlaylist)</onclick>
                 </control>
@@ -330,8 +330,8 @@
                     <font>-</font>
                     <onleft>555</onleft>
                     <onright>500</onright>
-                    <texturefocus>Topbar/topbar_fanart_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_fanart_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_fanart_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_fanart_nofocus.png</texturenofocus>
                     <label2>$VAR[MusicPlayingFanartLabel2]</label2>
                     <onclick>Skin.ToggleSetting(MusicPlayingFanart)</onclick>
                 </control>
@@ -344,8 +344,8 @@
                     <font>-</font>
                     <onleft>556</onleft>
                     <onright>19</onright>
-                    <texturefocus>Topbar/topbar_video_settings_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_video_settings_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_video_settings_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
                 </control>
                 <control type="button" id="19" description="Visualisation settings">
                     <posx>840</posx>
@@ -356,8 +356,8 @@
                     <font>-</font>
                     <onleft>500</onleft>
                     <onright>20</onright>
-                    <texturefocus>Topbar/topbar_settings_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_settings_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                     <enable>Visualisation.Enabled</enable>
                 </control>
@@ -370,8 +370,8 @@
                     <font>-</font>
                     <onleft>19</onleft>
                     <onright>600</onright>
-                    <texturefocus>Topbar/topbar_presets_focus.png</texturefocus>
-                    <texturenofocus>Topbar/topbar_presets_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_presets_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_presets_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(122)</onclick>
                     <enable>Visualisation.Enabled</enable>
                 </control>

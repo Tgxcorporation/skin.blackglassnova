@@ -167,7 +167,7 @@
                     <height>71</height>
                     <align>right</align>
                     <font>InfoDetailsContainerFont</font>
-                    <textcolor>AlternateColor</textcolor>
+                    <textcolor>MainColor</textcolor>
                     <label>$LOCALIZE[404]: $INFO[Window.Property(Current.Wind)]</label>
                 </control>
                 <control type="image">
@@ -223,7 +223,7 @@
                     <height>71</height>
                     <width>255</width>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
                 <control type="image" description="Day 0 icon">
@@ -269,7 +269,7 @@
                     <height>71</height>
                     <width>255</width>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
                 <control type="image" description="Day 1 icon">
@@ -315,7 +315,7 @@
                     <height>71</height>
                     <width>255</width>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
                 <control type="image" description="Day 2 icon">
@@ -361,7 +361,7 @@
                     <height>71</height>
                     <width>255</width>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
                 <control type="image" description="Day 3 icon">
@@ -407,7 +407,7 @@
                     <height>71</height>
                     <width>255</width>
                     <font>InfoDetailsFont</font>
-                    <textcolor>MainColor</textcolor>
+                    <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day4.LowTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
                 <control type="image" description="Day 4 icon">

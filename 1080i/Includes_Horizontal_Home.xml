@@ -76,7 +76,7 @@
                     <animation effect="fade" time="200" start="100" end="65" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
                     <posx>-15</posx>
                     <posy>539</posy>
-                    <width>2688</width>
+                    <width>1950</width>
                     <height>500</height>
                     <onleft>300</onleft>
                     <onright>300</onright>
@@ -160,7 +160,7 @@
                     <animation effect="fade" time="200" start="100" end="50" reversible="true" condition="!Control.HasFocus(9001)">Conditional</animation>
                     <include>VisibleFadeEffect</include>
                     <animation effect="slide" time="200" start="0,0" end="0,27" reversible="true" condition="!system.getbool(lookandfeel.enablerssfeeds)">Conditional</animation>
-                    <animation effect="fade" time="200" condition="IntegerGreaterThan(Container(9001).NumItems,0">Conditional</animation>
+                    <animation effect="fade" time="200" condition="IntegerGreaterThan(Container(9001).NumItems,0)">Conditional</animation>
                     <posx>64</posx>
                     <posy>875</posy>
                     <height>50</height>
@@ -218,42 +218,42 @@
                         <include>Home.Submenu.Items</include>
                     </content>
                 </control>
-                <control type="group" description="RSS">
-                    <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>1036</posy>
-                        <width>1920</width>
-                        <height>44</height>
-                        <texture>common/BlackDot.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>966</posy>
-                        <width>1920</width>
-                        <height>73</height>
-                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>1040</posy>
-                        <width>1920</width>
-                        <height>41</height>
-                        <texture border="3">list/bg_facade_focus.png</texture>
-                    </control>
-                    <control type="rss" description="RSS Feed">
-                        <posx>TextMargin</posx>
-                        <posy>1041</posy>
-                        <width>1830</width>
-                        <height>40</height>
-                        <font>rss</font>
-                        <urlset>1</urlset>
-                        <font>WindowTitleSubFont</font>
-                        <shadowcolor>ShadowDark</shadowcolor>
-                        <titlecolor>MainColor</titlecolor>
-                        <headlinecolor>AlternateColor</headlinecolor>
-                        <textcolor>AlternateColor</textcolor>
-                    </control>
+            </control>
+            <control type="group" description="RSS">
+                <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>1036</posy>
+                    <width>1920</width>
+                    <height>44</height>
+                    <texture>common/BlackDot.png</texture>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>966</posy>
+                    <width>1920</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>1040</posy>
+                    <width>1920</width>
+                    <height>41</height>
+                    <texture border="3">list/bg_facade_focus.png</texture>
+                </control>
+                <control type="rss" description="RSS Feed">
+                    <posx>TextMargin</posx>
+                    <posy>1041</posy>
+                    <width>1830</width>
+                    <height>40</height>
+                    <font>rss</font>
+                    <urlset>1</urlset>
+                    <font>WindowTitleSubFont</font>
+                    <shadowcolor>ShadowDark</shadowcolor>
+                    <titlecolor>MainColor</titlecolor>
+                    <headlinecolor>AlternateColor</headlinecolor>
+                    <textcolor>AlternateColor</textcolor>
                 </control>
             </control>
         </control>

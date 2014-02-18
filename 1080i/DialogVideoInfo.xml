@@ -181,6 +181,14 @@
                         <control type="group">
                             <visible>Control.HasFocus(9012) | Control.HasFocus(50)</visible>
                             <include>VisibleFadeEffectDelay</include>
+                            <control type="image">
+                                <posx>159</posx>
+                                <posy>384</posy>
+                                <height>336</height>
+                                <width>150</width>
+                                <texture>list/bg_strip_horizontal_left.png</texture>
+                                <colordiffuse>90ffffff</colordiffuse>
+                            </control>
                             <control type="panel" id="50">
                                 <posx>310</posx>
                                 <posy>384</posy>

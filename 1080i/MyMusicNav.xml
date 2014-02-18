@@ -20,7 +20,7 @@
             <include>View_52_BigList</include>
             <include>View_53_Grid</include>
             <include>View_54_LowList</include>
-            <include condition="Skin.HasSetting(plexbmc)">View_55_BigPanel</include>
+            <include>View_55_BigPanel</include>
             <include>View_56_BannerList</include>
             <!-- Showcase 57 58 & 59 -->
             <include>View_59_Showcase</include>
@@ -558,6 +558,13 @@
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[1024] $LOCALIZE[14022]</label>
                     <onclick>ActivateWindow(MusicLibrary,root)</onclick>
+                </control>
+                <control type="radiobutton" id="99">
+                    <description>Library button</description>
+                    <label>$LOCALIZE[29800]</label>
+                    <onclick>ReplaceWindow(MusicFiles)</onclick>
+                    <selected>Window.IsVisible(MusicLibrary)</selected>
+                    <include>LeftMenuButton</include>
                 </control>
                 <control type="togglebutton" id="699" description="Playing">
                     <enable>Player.HasMedia</enable>

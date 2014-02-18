@@ -158,6 +158,10 @@
             <filename>Sansation_Regular.ttf</filename>
             <size>30</size>
         </font>
+        <font>
+             <name>rss</name>
+             <filename>Sansation_Regular.ttf</filename>
+             <size>25</size>
+        </font>
     </fontset>
-
 </fonts>

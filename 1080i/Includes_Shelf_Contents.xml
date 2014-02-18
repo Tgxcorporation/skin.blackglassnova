@@ -182,7 +182,7 @@
             <control type="label" description="Header">
                 <visible>Control.IsVisible(413)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                <include>Recommended_Header</include>
+                <include>Poster_Header</include>
                 <label>$INFO[Container(413).ListItem.Property(ItemType)]</label>
             </control>
             <control type="panel" id="413" description="TV Shows XBMC Widgets">

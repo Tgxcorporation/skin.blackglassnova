@@ -954,6 +954,7 @@
                 <onup>10</onup>
                 <ondown>10</ondown>
                 <onback>50</onback>
+                <progresstexture border="0,85,20,20">common/EPGMarker.png</progresstexture>
                 <rulerlayout height="70" width="60">
                     <control type="image" id="1" description="Header row">
                         <width>50</width>
@@ -973,7 +974,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </rulerlayout>
-                <channellayout height="70" width="420">
+               <channellayout height="70" width="420">
                     <control type="image" id="1" description="Column 1">
                         <posx>0</posx>
                         <posy>0</posy>
