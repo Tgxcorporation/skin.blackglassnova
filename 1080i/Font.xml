@@ -11,8 +11,7 @@
             <name>WindowTitleSubFont</name>
             <filename>Sansation_Regular.ttf</filename>
             <size>26</size>
-            <!-- <style>bold</style> -->
-        </font>
+         </font>
         <font>
             <name>LeftMenuTitleFont</name>
             <filename>Sansation_Regular.ttf</filename>
@@ -102,7 +101,6 @@
         <font>
             <name>InfoPlotFont</name>
             <filename>Sansation_Regular.ttf</filename>
-            <!-- <style>bold</style> -->
             <size>35</size>
             <linespacing>1.00</linespacing>
             <aspect>1.0</aspect>
@@ -159,9 +157,14 @@
             <size>30</size>
         </font>
         <font>
-             <name>rss</name>
-             <filename>Sansation_Regular.ttf</filename>
-             <size>25</size>
+            <name>rss</name>
+            <filename>Sansation_Regular.ttf</filename>
+            <size>25</size>
+        </font>
+        <font>
+            <name>font13</name>
+            <filename>Sansation_Regular.ttf</filename>
+            <size>35</size>
         </font>
     </fontset>
 </fonts>
