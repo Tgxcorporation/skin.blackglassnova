@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="0">
+    <include>OpenClose</include>
     <defaultcontrol always="true">300</defaultcontrol>
     <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,amberskin,nocat)</onload>
     <!--<onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,channelShelf)</onload>-->

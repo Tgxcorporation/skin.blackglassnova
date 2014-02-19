@@ -6,7 +6,6 @@
         <posy>0</posy>
     </coordinates>
     <controls>
-        <!--  <include>DimBG</include> -->
         <control type="progress" id="10" description="Progress bar">
             <posx>708</posx>
             <posy>550</posy>
@@ -22,11 +21,11 @@
             <animation effect="slide" start="0,0" end="0,-88" time="200">WindowClose</animation>
             <posy>0</posy>
             <control type="image">
-                <posx>595</posx>
-                <posy>-330</posy>
-                <width>730</width>
+                <posx>695</posx>
+                <posy>-318</posy>
+                <width>530</width>
                 <height>417</height>
-                <texture>common/bg_dialog.png</texture>
+                <texture border="90">common/bg_dialog.png</texture>
             </control>
             <control type="label" id="1" description="Progress label">
                 <visible>IntegerGreaterThan(Control.GetLabel(10), 0)</visible>

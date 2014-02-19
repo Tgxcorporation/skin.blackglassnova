@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="true">11</defaultcontrol>
-    <include>OpenClose</include>
+    <include>DialogOpenClose</include>
     <controls>
         <control type="group">
             <posx>735</posx>

@@ -7,7 +7,7 @@
         <posx>0</posx>
         <posy>0</posy>
     </coordinates>
-    <include>OpenClose</include>
+    <include>DialogOpenClose</include>
     <controls>
         <control type="group">
             <control type="image">

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
-    <animation delay="600" effect="fade" time="250">WindowClose</animation>
     <include>OpenClose</include>
     <controls>
         <include>Weather_Art</include>

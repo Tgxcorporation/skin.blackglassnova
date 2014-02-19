@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <include>OpenClose</include>
+    <include>OSDFade</include>
     <controls>
         <control type="visualisation" id="1">
             <description>visualisation</description>

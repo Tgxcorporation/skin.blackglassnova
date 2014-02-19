@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
     <defaultcontrol always="true">5</defaultcontrol>
-    <include>OpenClose</include>
+    <include>DialogOpenClose</include>
     <controls>
         <include>DimBG</include>
         <control type="group">

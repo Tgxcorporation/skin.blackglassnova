@@ -4,7 +4,7 @@
     <coordinates>
         <system>1</system>
     </coordinates>
-    <include>OpenClose</include>
+    <include>DialogOpenClose</include>
     <controls>
         <include>DimBG</include>
         <control type="image">

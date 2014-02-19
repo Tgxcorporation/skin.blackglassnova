@@ -6,7 +6,7 @@
         <posx>0</posx>
         <posy>-174</posy>
     </coordinates>
-    <include>DialogOpenClose</include>
+    <include>OSDFade</include>
     <controls>
         <control type="image">
             <posx>233</posx>
