@@ -16,28 +16,47 @@
         <control type="group" description="Content">
             <visible>Control.IsVisible(50)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
             <include>Icon_Fade</include>
-            <control type="image" description="fa overlay">
-                <posx>-795</posx>
-                <posy>350</posy>
-                <width>2058</width>
-                <height>900</height>
-                <texture border="90">common/bg_tvguide.png</texture>
-            </control>
-            <control type="image" description="Thumb">
-                <posx>18</posx>
-                <posy>411</posy>
-                <width>470</width>
-                <height>470</height>
-                <include>SquareThumb</include>
-                <include>ThumbBorder</include>
+            <control type="group">
+                <posx>0</posx>
+                <posy>260</posy>
+                <control type="image" description="fa overlay">
+                    <posx>-795</posx>
+                    <posy>90</posy>
+                    <width>2058</width>
+                    <height>1160</height>
+                    <texture border="90">common/bg_tvguide.png</texture>
+                </control>
+                <control type="image">
+                    <posx>242</posx>
+                    <posy>139</posy>
+                    <height>700</height>
+                    <width>250</width>
+                    <texture>list/bg_strip_horizontal_left.png</texture>
+                    <colordiffuse>90ffffff</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>493</posx>
+                    <posy>139</posy>
+                    <width>2</width>
+                    <height>700</height>
+                    <texture>list/bg_facade_vertical.png</texture>
+                </control>
+                <control type="image" description="Thumb">
+                    <posx>18</posx>
+                    <posy>151</posy>
+                    <width>470</width>
+                    <height>470</height>
+                    <include>SquareThumb</include>
+                    <include>ThumbBorder</include>
+                </control>
             </control>
             <control type="group" description="Media info">
-                <posx>475</posx>
+                <posx>495</posx>
                 <posy>426</posy>
                 <control type="label" description="Title">
                     <posx>TextMargin</posx>
                     <posy>-12</posy>
-                    <width>651</width>
+                    <width>630</width>
                     <height>71</height>
                     <font>InfoTitleFont</font>
                     <textcolor>MainColor</textcolor>
@@ -48,21 +67,21 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
-                    <width>741</width>
+                    <width>721</width>
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
                     <posx>0</posx>
                     <posy>73</posy>
-                    <width>741</width>
+                    <width>721</width>
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label" description="Details">
                     <posx>TextMargin</posx>
                     <posy>73</posy>
-                    <width>651</width>
+                    <width>630</width>
                     <height>71</height>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
@@ -72,7 +91,7 @@
                 <control type="textbox" description="Plot51">
                     <posx>TextMargin</posx>
                     <posy>157</posy>
-                    <width>651</width>
+                    <width>630</width>
                     <height>450</height>
                     <font>InfoPlotFont</font>
                     <textcolor>MainColor</textcolor>
