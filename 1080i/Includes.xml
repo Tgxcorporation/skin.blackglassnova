@@ -479,14 +479,14 @@
             <selected>Skin.HasSetting(Posters_Info)</selected>
             <label>   $LOCALIZE[31968]</label>
         </control> -->
-        <control type="image" id="9183">
+        <!-- <control type="image" id="9183">
             <width>577</width>
             <height>2</height>
             <texture border="0,0,0,2">list/bg_facade_nofocus_top.png</texture>
-        </control>
+        </control> -->
         <control type="label" id="9181">
             <textoffsety>35</textoffsety>
-            <height>67</height>
+            <height>69</height>
             <include>LeftMenuTitleLabel</include>
             <include>LeftMenuButton</include>
             <label>$LOCALIZE[581]</label>
@@ -1117,7 +1117,14 @@
         </control>
         <control type="image">
             <posx>-600</posx>
-            <posy>924</posy>
+            <posy>-1</posy>
+            <width>577</width>
+            <height>79</height>
+            <texture>list/bg_facade_nofocus_top.png</texture>
+        </control>
+        <control type="image">
+            <posx>-600</posx>
+            <posy>922</posy>
             <width>577</width>
             <height>79</height>
             <texture>list/bg_facade_nofocus_top.png</texture>
