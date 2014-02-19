@@ -91,7 +91,7 @@
                 <width>600</width>
                 <height>292</height>
                 <onleft>11</onleft>
-                <onright>noop</onright>
+                <onright>11</onright>
                 <onup>52</onup>
                 <ondown>52</ondown>
                 <pagecontrol>-</pagecontrol>

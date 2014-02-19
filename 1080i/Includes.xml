@@ -415,7 +415,7 @@
             <visible>Control.IsVisible(57) + container.content(episodes)</visible>
             <font>LeftMenuSubButtonFont</font>
             <include>LeftMenuButton</include>
-            <onclick>Skin.Reset(Episodes_Info)</onclick>
+            <!-- <onclick>Skin.Reset(Episodes_Info)</onclick> -->
             <onclick>Skin.ToggleSetting(Episodes_Gallery)</onclick>
             <selected>Skin.HasSetting(Episodes_Gallery)</selected>
             <label>   $LOCALIZE[31970]</label>
@@ -440,7 +440,7 @@
             <visible>Control.IsVisible(58) + [container.content(albums) | container.content(artists)]</visible>
             <font>LeftMenuSubButtonFont</font>
             <include>LeftMenuButton</include>
-            <onclick>Skin.Reset(Music_Info)</onclick>
+            <!-- <onclick>Skin.Reset(Music_Info)</onclick> -->
             <onclick>Skin.ToggleSetting(Music_Gallery)</onclick>
             <selected>Skin.HasSetting(Music_Gallery)</selected>
             <label>   $LOCALIZE[31970]</label>
@@ -465,7 +465,7 @@
             <visible>Control.IsVisible(59) + [[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
             <font>LeftMenuSubButtonFont</font>
             <include>LeftMenuButton</include>
-            <onclick>Skin.Reset(Posters_Info)</onclick>
+            <!-- <onclick>Skin.Reset(Posters_Info)</onclick> -->
             <onclick>Skin.ToggleSetting(Posters_Gallery)</onclick>
             <selected>Skin.HasSetting(Posters_Gallery)</selected>
             <label>   $LOCALIZE[31970]</label>

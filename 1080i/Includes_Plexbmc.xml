@@ -957,6 +957,7 @@
     </include>
     <include name="Plexbmc.Items">
         <item id="30">
+            <visible>!Skin.HasSetting(hide.plexbmc.0.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.0.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.0.title)]</label>
@@ -977,6 +978,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.0.year)]</property>
         </item>
         <item id="31">
+            <visible>!Skin.HasSetting(hide.plexbmc.1.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.1.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.1.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.1.title)]</label>
@@ -997,6 +999,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.1.year)]</property>
         </item>
         <item id="32">
+            <visible>!Skin.HasSetting(hide.plexbmc.2.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.2.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.2.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.2.title)]</label>
@@ -1017,6 +1020,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.2.year)]</property>
         </item>
         <item id="33">
+            <visible>!Skin.HasSetting(hide.plexbmc.3.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.3.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.3.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.3.title)]</label>
@@ -1037,6 +1041,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.3.year)]</property>
         </item>
         <item id="34">
+            <visible>!Skin.HasSetting(hide.plexbmc.4.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.4.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.4.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.4.title)]</label>
@@ -1057,6 +1062,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.4.year)]</property>
         </item>
         <item id="35">
+            <visible>!Skin.HasSetting(hide.plexbmc.5.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.5.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.5.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.5.title)]</label>
@@ -1077,6 +1083,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.5.year)]</property>
         </item>
         <item id="36">
+            <visible>!Skin.HasSetting(hide.plexbmc.6.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.6.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.6.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.6.title)]</label>
@@ -1097,6 +1104,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.6.year)]</property>
         </item>
         <item id="37">
+            <visible>!Skin.HasSetting(hide.plexbmc.7.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.7.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.7.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.7.title)]</label>
@@ -1117,6 +1125,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.7.year)]</property>
         </item>
         <item id="38">
+            <visible>!Skin.HasSetting(hide.plexbmc.8.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.8.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.8.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.8.title)]</label>
@@ -1137,6 +1146,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.8.year)]</property>
         </item>
         <item id="39">
+            <visible>!Skin.HasSetting(hide.plexbmc.9.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.9.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.9.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.9.title)]</label>
@@ -1157,6 +1167,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.9.year)]</property>
         </item>
         <item id="40">
+            <visible>!Skin.HasSetting(hide.plexbmc.10.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.10.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.10.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.10.title)]</label>
@@ -1177,6 +1188,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.10.year)]</property>
         </item>
         <item id="41">
+            <visible>!Skin.HasSetting(hide.plexbmc.11.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.11.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.11.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.11.title)]</label>
@@ -1197,6 +1209,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.11.year)]</property>
         </item>
         <item id="40">
+            <visible>!Skin.HasSetting(hide.plexbmc.12.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.12.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.12.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.12.title)]</label>
@@ -1217,6 +1230,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.12.year)]</property>
         </item>
         <item id="43">
+            <visible>!Skin.HasSetting(hide.plexbmc.13.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.13.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.13.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.13.title)]</label>
@@ -1237,6 +1251,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.13.year)]</property>
         </item>
         <item id="44">
+            <visible>!Skin.HasSetting(hide.plexbmc.14.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.14.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.14.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.14.title)]</label>
@@ -1257,6 +1272,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.14.year)]</property>
         </item>
         <item id="45">
+            <visible>!Skin.HasSetting(hide.plexbmc.15.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.15.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.15.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.15.title)]</label>
@@ -1277,6 +1293,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.15.year)]</property>
         </item>
         <item id="46">
+            <visible>!Skin.HasSetting(hide.plexbmc.16.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.16.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.16.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.16.title)]</label>
@@ -1297,6 +1314,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.16.year)]</property>
         </item>
         <item id="47">
+            <visible>!Skin.HasSetting(hide.plexbmc.17.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.17.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.17.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.17.title)]</label>
@@ -1317,6 +1335,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.17.year)]</property>
         </item>
         <item id="48">
+            <visible>!Skin.HasSetting(hide.plexbmc.18.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.18.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.18.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.18.title)]</label>
@@ -1337,6 +1356,7 @@
             <property name="year">$INFO[Window(Home).Property(plexbmc.18.year)]</property>
         </item>
         <item id="49">
+            <visible>!Skin.HasSetting(hide.plexbmc.19.title)</visible>
             <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.19.title))</visible>
             <visible>![Skin.HasSetting(Hide.Shared) + Substring(Window(Home).Property(plexbmc.19.shared),t)]</visible>
             <label>$INFO[Window(Home).Property(plexbmc.19.title)]</label>
@@ -1363,7 +1383,7 @@
             <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
         </item>
         <item id="49" description="Queue">
-            <visible>Skin.HasSetting(plexbmc)</visible>
+            <visible>Skin.HasSetting(plexbmc) + !Skin.HasSetting(Queue.Hide)</visible>
             <label>$LOCALIZE[31010]</label>
             <thumb fallback="special://skin/backgrounds/Network.jpg">$INFO[Skin.String(Network.Background)]</thumb>
             <onclick>$INFO[Window(Home).Property(plexbmc.queue)]</onclick>
