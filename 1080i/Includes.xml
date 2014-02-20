@@ -287,83 +287,8 @@
         <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
     </include>
     <include name="9000GrouplistParameters">
-        <control type="radiobutton" id="9145" description="View 50">
-            <include>LeftMenuRadioButton</include>
-            <onclick>Container.SetViewMode(50)</onclick>
-            <selected>Control.IsVisible(50)</selected>
-            <label>$LOCALIZE[535]</label>
-        </control>
-        <control type="radiobutton" id="9146" description="View 56">
-            <visible>Container.Content(TVShows)</visible>
-            <include>LeftMenuRadioButton</include>
-            <onclick>Container.SetViewMode(56)</onclick>
-            <selected>Control.IsVisible(56)</selected>
-            <label>$LOCALIZE[31965]</label>
-        </control>
-        <control type="radiobutton" id="9147" description="View 52">
-            <!-- <visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(episodes) | Container.Content(albums) | Container.Content(artists) | Window.IsActive(MyPics.xml)</visible> -->
-            <include>LeftMenuRadioButton</include>
-            <onclick>Container.SetViewMode(52)</onclick>
-            <selected>Control.IsVisible(52)</selected>
-            <label>$LOCALIZE[537]</label>
-        </control>
-        <!-- <control type="radiobutton" id="9148" description="View 52 Movies">
-            <visible>Control.IsVisible(52) + Container.Content(Movies)</visible>
-            <font>ListDetails</font>
+        <control type="button" id="2" description="View as">
             <include>LeftMenuButton</include>
-            <onclick>Skin.ToggleSetting(52_Movies_UseFanart)</onclick>
-            <selected>Skin.HasSetting(52_Movies_UseFanart)</selected>
-            <label>- $LOCALIZE[20445]</label>
-        </control>
-        <control type="radiobutton" id="9149" description="View 52 TV">
-            <visible>Control.IsVisible(52) + Container.Content(TVShows)</visible>
-            <font>ListDetails</font>
-            <include>LeftMenuButton</include>
-            <onclick>Skin.ToggleSetting(52_TV_UseFanart)</onclick>
-            <selected>Skin.HasSetting(52_TV_UseFanart)</selected>
-            <label>- $LOCALIZE[20445]</label>
-        </control>
-        <control type="radiobutton" id="9150" description="View 52 Episodes">
-            <visible>Control.IsVisible(52) + Container.Content(Episodes)</visible>
-            <font>ListDetails</font>
-            <include>LeftMenuButton</include>
-            <onclick>Skin.ToggleSetting(52_Episodes_UseFanart)</onclick>
-            <selected>Skin.HasSetting(52_Episodes_UseFanart)</selected>
-            <label>- $LOCALIZE[20445]</label>
-        </control>
-        <control type="radiobutton" id="9151" description="View 52 Episodes">
-            <visible>Control.IsVisible(52) + Container.Content(Albums)</visible>
-            <font>ListDetails</font>
-            <include>LeftMenuButton</include>
-            <onclick>Skin.ToggleSetting(52_Albums_UseFanart)</onclick>
-            <selected>Skin.HasSetting(52_Albums_UseFanart)</selected>
-            <label>- $LOCALIZE[20445]</label>
-        </control>
-        <control type="radiobutton" id="9152" description="View 52 Episodes">
-            <visible>Control.IsVisible(52) + Container.Content(artists)</visible>
-            <font>ListDetails</font>
-            <include>LeftMenuButton</include>
-            <onclick>Skin.ToggleSetting(52_Artists_UseFanart)</onclick>
-            <selected>Skin.HasSetting(52_Artists_UseFanart)</selected>
-            <label>- $LOCALIZE[20445]</label>
-        </control> -->
-        <control type="radiobutton" id="9153" description="View 51">
-            <include>LeftMenuRadioButton</include>
-            <onclick>Container.SetViewMode(51)</onclick>
-            <selected>Control.IsVisible(51)</selected>
-            <label>$LOCALIZE[31963]</label>
-        </control>
-        <control type="radiobutton" id="9154" description="View 54">
-            <include>LeftMenuRadioButton</include>
-            <onclick>Container.SetViewMode(54)</onclick>
-            <selected>Control.IsVisible(54)</selected>
-            <label>$LOCALIZE[31962]</label>
-        </control>
-        <control type="radiobutton" id="9155" description="View 53">
-            <include>LeftMenuRadioButton</include>
-            <onclick>Container.SetViewMode(53)</onclick>
-            <selected>Control.IsVisible(53)</selected>
-            <label>$LOCALIZE[536]</label>
         </control>
         <control type="radiobutton" id="9156" description="View 53 Banners">
             <visible>Control.IsVisible(53) + Container.Content(TVShows)</visible>
@@ -371,7 +296,7 @@
             <include>LeftMenuButton</include>
             <onclick>Skin.ToggleSetting(53_UseBanners)</onclick>
             <selected>Skin.HasSetting(53_UseBanners)</selected>
-            <label>   $LOCALIZE[31992]</label>
+            <label>$LOCALIZE[31992]</label>
         </control>
         <control type="radiobutton" id="9157" description="View 53 Bigger">
             <visible>Control.IsVisible(53) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | Container.content(actors) | container.content(musicvideos) | container.content(movies) | container.content(seasons)]</visible>
@@ -379,111 +304,40 @@
             <include>LeftMenuButton</include>
             <onclick>Skin.ToggleSetting(53_BigGrid)</onclick>
             <selected>Skin.HasSetting(53_BigGrid)</selected>
-            <label>   $LOCALIZE[538]</label>
+            <label>$LOCALIZE[538]</label>
         </control>
-        <control type="radiobutton" id="9158" description="View 55 BigPanel">
-            <!-- <visible>Skin.HasSetting(plexbmc) | !Window.IsActive(MyMusicSongs.xml)</visible> -->
-            <include>LeftMenuRadioButton</include>
-            <onclick>Container.SetViewMode(55)</onclick>
-            <selected>Control.IsVisible(55)</selected>
-            <label>$LOCALIZE[31958]</label>
-        </control>
-        <!-- <control type="radiobutton" id="9159" description="View 55 with fanart">
-            <visible>Control.IsVisible(55) + [Window.IsActive(MyVideoNav.xml) | Window.IsActive(MyMusicNav.xml)]</visible>
-            <font>ListDetails</font>
-            <include>LeftMenuButton</include>
-            <onclick>Skin.ToggleSetting(55_SmallFanart)</onclick>
-            <selected>Skin.HasSetting(55_SmallFanart)</selected>
-            <label>- $LOCALIZE[20445]</label>
-        </control> -->
         <control type="radiobutton" id="9160" description="View 55 Banners">
             <visible>Control.IsVisible(55) + Container.Content(TVShows)</visible>
             <font>LeftMenuSubButtonFont</font>
             <include>LeftMenuButton</include>
             <onclick>Skin.ToggleSetting(55_UseBanners)</onclick>
             <selected>Skin.HasSetting(55_UseBanners)</selected>
-            <label>   $LOCALIZE[31992]</label>
-        </control>
-        <control type="radiobutton" id="9161" description="View 57 EPISODES">
-            <visible>container.content(episodes)</visible>
-            <include>LeftMenuRadioButton</include>
-            <onclick>Container.SetViewMode(57)</onclick>
-            <selected>Control.IsVisible(57)</selected>
-            <label>$LOCALIZE[20445]</label>
+            <label>$LOCALIZE[31992]</label>
         </control>
         <control type="radiobutton" id="9162" description="View 57 Enable gallery for EPISODES">
             <visible>Control.IsVisible(57) + container.content(episodes)</visible>
             <font>LeftMenuSubButtonFont</font>
             <include>LeftMenuButton</include>
-            <!-- <onclick>Skin.Reset(Episodes_Info)</onclick> -->
             <onclick>Skin.ToggleSetting(Episodes_Gallery)</onclick>
             <selected>Skin.HasSetting(Episodes_Gallery)</selected>
-            <label>   $LOCALIZE[31970]</label>
-        </control>
-        <!-- <control type="radiobutton" id="9163" description="View 57 Enable info for EPISODES">
-            <visible>Control.IsVisible(57) + container.content(episodes)</visible>
-            <font>LeftMenuSubButtonFont</font>
-            <include>LeftMenuButton</include>
-            <onclick>Skin.Reset(Episodes_Gallery)</onclick>
-            <onclick>Skin.ToggleSetting(Episodes_Info)</onclick>
-            <selected>Skin.HasSetting(Episodes_Info)</selected>
-            <label>   $LOCALIZE[31968]</label>
-        </control> -->
-        <control type="radiobutton" id="9164" description="View 58 SQUARES">
-            <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
-            <include>LeftMenuRadioButton</include>
-            <onclick>Container.SetViewMode(58)</onclick>
-            <selected>Control.IsVisible(58)</selected>
-            <label>$LOCALIZE[20445]</label>
+            <label>$LOCALIZE[31970]</label>
         </control>
         <control type="radiobutton" id="9165" description="View 58 Enable gallery for MUSIC">
             <visible>Control.IsVisible(58) + [container.content(albums) | container.content(artists)]</visible>
             <font>LeftMenuSubButtonFont</font>
             <include>LeftMenuButton</include>
-            <!-- <onclick>Skin.Reset(Music_Info)</onclick> -->
             <onclick>Skin.ToggleSetting(Music_Gallery)</onclick>
             <selected>Skin.HasSetting(Music_Gallery)</selected>
-            <label>   $LOCALIZE[31970]</label>
-        </control>
-        <!--         <control type="radiobutton" id="9166" description="View 58 Enable Info for MUSIC">
-            <visible>Control.IsVisible(58) + [container.content(albums) | container.content(artists)]</visible>
-            <font>LeftMenuSubButtonFont</font>
-            <include>LeftMenuButton</include>
-            <onclick>Skin.Reset(Music_Gallery)</onclick>
-            <onclick>Skin.ToggleSetting(Music_Info)</onclick>
-            <selected>Skin.HasSetting(Music_Info)</selected>
-            <label>   $LOCALIZE[31968]</label>
-        </control> -->
-        <control type="radiobutton" id="9167" description="View 59 POSTERS">
-            <visible>[[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
-            <include>LeftMenuRadioButton</include>
-            <onclick>Container.SetViewMode(59)</onclick>
-            <selected>Control.IsVisible(59)</selected>
-            <label>$LOCALIZE[20445]</label>
+            <label>$LOCALIZE[31970]</label>
         </control>
         <control type="radiobutton" id="9168" description="View 59 Enable gallery for POSTERS">
             <visible>Control.IsVisible(59) + [[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
             <font>LeftMenuSubButtonFont</font>
             <include>LeftMenuButton</include>
-            <!-- <onclick>Skin.Reset(Posters_Info)</onclick> -->
             <onclick>Skin.ToggleSetting(Posters_Gallery)</onclick>
             <selected>Skin.HasSetting(Posters_Gallery)</selected>
-            <label>   $LOCALIZE[31970]</label>
+            <label>$LOCALIZE[31970]</label>
         </control>
-        <!--         <control type="radiobutton" id="9169" description="View 59 Enable Info for POSTERS">
-            <visible>Control.IsVisible(59) + [[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
-            <font>LeftMenuSubButtonFont</font>
-            <include>LeftMenuButton</include>
-            <onclick>Skin.Reset(Posters_Gallery)</onclick>
-            <onclick>Skin.ToggleSetting(Posters_Info)</onclick>
-            <selected>Skin.HasSetting(Posters_Info)</selected>
-            <label>   $LOCALIZE[31968]</label>
-        </control> -->
-        <!-- <control type="image" id="9183">
-            <width>577</width>
-            <height>2</height>
-            <texture border="0,0,0,2">list/bg_facade_nofocus_top.png</texture>
-        </control> -->
         <control type="label" id="9181">
             <textoffsety>35</textoffsety>
             <height>69</height>
@@ -1173,20 +1027,6 @@
         <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus>
         <alttexturefocus border="4">list/bg_facade_focus.png</alttexturefocus>
         <alttexturenofocus border="4">list/bg_facade_nofocus.png</alttexturenofocus>
-    </include>
-    <include name="LeftMenuRadioButton">
-        <height>71</height>
-        <width>578</width>
-        <font>LeftMenuButtonFont</font>
-        <align>left</align>
-        <radioposx>-25</radioposx>
-        <radiowidth>50</radiowidth>
-        <radioheight>50</radioheight>
-        <textoffsetx>TextMargin</textoffsetx>
-        <texturefocus border="4">list/bg_facade_focus.png</texturefocus>
-        <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus>
-        <textureradiofocus>topbar/topbar_rec_focus.png</textureradiofocus>
-        <textureradionofocus>-</textureradionofocus>
     </include>
     <include name="List_9009_Commons_Actors" description="Video Info metadata container">
         <onleft>8</onleft>
