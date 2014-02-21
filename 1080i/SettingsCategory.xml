@@ -3,7 +3,8 @@
     <backgroundcolor>0</backgroundcolor>
     <allowoverlay>no</allowoverlay>
     <defaultcontrol always="true">3</defaultcontrol>
-    <include>OpenClose</include>
+    <animation effect="fade" time="150" condition="!Window.Previous(Settings.xml)">WindowOpen</animation>
+    <animation effect="fade" time="150" condition="!Window.Next(Settings.xml)">WindowClose</animation>
     <controls>
         <include>Settings_Art</include>
         <include>Time</include>
