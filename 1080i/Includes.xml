@@ -28,6 +28,30 @@
     <include file="View_56_BannerList.xml"/>
     <include file="View_57_58_59_Showcase.xml"/>
     <include file="View_PVR.xml"/>
+    <include name="Player_Show">
+        <control type="image" description="fa overlay">
+            <visible>[Player.HasAudio|Player.HasVideo] + Skin.HasSetting(Show_Player)</visible>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <texture>common/BlackDot.png</texture>
+        </control>
+        <control type="visualisation">
+            <visible>Player.HasAudio + Skin.HasSetting(Show_Player)</visible>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+        </control>
+        <control type="videowindow">
+            <visible>Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+        </control>
+    </include>
     <include name="VisibleFadeEffect">
         <animation effect="fade" time="200">Visible</animation>
         <animation effect="fade" time="200">Hidden</animation>

@@ -17,20 +17,7 @@
             <randomize>true</randomize>
             <aspectratio aligny="top">scale</aspectratio>
         </control>
-        <control type="visualisation">
-            <visible>Player.HasAudio + Skin.HasSetting(Show_Player)</visible>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-        </control>
-        <control type="videowindow">
-            <visible>Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-        </control>
+        <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
             <include>WindowTitle</include>

@@ -8,13 +8,7 @@
             <visible>!Player.HasVideo</visible>
             <include>Pvr_Art</include>
         </control>
-        <control type="videowindow" description="TV Channel Live BG">
-            <visible>Player.HasVideo</visible>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>1920</width>
-            <height>1080</height>
-        </control>
+        <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
             <include>WindowTitle</include>

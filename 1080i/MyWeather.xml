@@ -11,6 +11,7 @@
             <height>1080</height>
             <texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/backgrounds/weather/,.jpg]</texture>
         </control>
+        <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
             <include>WindowTitle</include>
@@ -426,7 +427,6 @@
                 </control>
             </control>
         </control>
-
         <!-- SIDE MENU -->
         <control type="group" description="Side menu 9000 group">
             <include>LeftMenu</include>

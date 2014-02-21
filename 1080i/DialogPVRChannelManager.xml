@@ -4,6 +4,7 @@
     <include>DialogOpenClose</include>
     <controls>
         <include>Settings_Art</include>
+        <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
             <include>WindowTitle</include>

@@ -6,6 +6,7 @@
         <control type="group" description="fanart">
             <include>Fanart_Art</include>
         </control>
+        <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
             <include>WindowTitle</include>

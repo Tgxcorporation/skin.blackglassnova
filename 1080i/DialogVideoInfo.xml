@@ -16,6 +16,7 @@
             <texture background="true">$INFO[ListItem.Art(fanart)]</texture>
             <aspectratio>scale</aspectratio>
         </control>
+        <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
             <include>WindowTitle</include>
