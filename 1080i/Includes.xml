@@ -299,7 +299,7 @@
             <label>$LOCALIZE[31992]</label>
         </control>
         <control type="radiobutton" id="9157" description="View 53 Bigger">
-            <visible>Control.IsVisible(53) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | Container.content(actors) | container.content(musicvideos) | container.content(movies) | container.content(seasons)]</visible>
+            <visible>Control.IsVisible(53)</visible>
             <font>LeftMenuSubButtonFont</font>
             <include>LeftMenuButton</include>
             <onclick>Skin.ToggleSetting(53_BigGrid)</onclick>
