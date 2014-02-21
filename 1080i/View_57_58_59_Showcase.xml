@@ -2,10 +2,11 @@
 <includes>
     <include name="FooterInfo">
         <control type="image">
+            <visible>Control.IsVisible(53)</visible>
             <posx>-100</posx>
-            <posy>950</posy>
+            <posy>750</posy>
             <width>2400</width>
-            <height>130</height>
+            <height>330</height>
             <texture>common/HomeGradient.png</texture>
         </control>
         <control type="label" description="Title Label">
@@ -84,10 +85,14 @@
         </control>
     </include>
     <include name="View_59_Showcase">
-        <control type="group" description="Footer info">
+        <control type="image">
             <include>Icon_Fade</include>
             <visible>!Control.hasfocus(7000)+[Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59)]</visible>
-            <include>FooterInfo</include>
+            <posx>-100</posx>
+            <posy>750</posy>
+            <width>2400</width>
+            <height>330</height>
+            <texture>common/HomeGradient.png</texture>
         </control>
         <control type="image">
             <include>Icon_Fade</include>
@@ -116,33 +121,6 @@
             <height>900</height>
             <texture border="90">common/bg_tvguide.png</texture>
         </control>
-        <control type="image">
-            <include>Icon_Fade</include>
-            <visible>!Control.hasfocus(7000)+[Control.IsVisible(57)]</visible>
-            <posx>-100</posx>
-            <posy>629</posy>
-            <width>2258</width>
-            <height>390</height>
-            <texture border="90">common/bg_tvguide.png</texture>
-        </control>
-        <control type="image">
-            <include>Icon_Fade</include>
-            <visible>!Control.hasfocus(7000)+[Control.IsVisible(58)]</visible>
-            <posx>-100</posx>
-            <posy>629</posy>
-            <width>2258</width>
-            <height>390</height>
-            <texture border="90">common/bg_tvguide.png</texture>
-        </control>
-        <control type="image">
-            <include>Icon_Fade</include>
-            <visible>!Control.hasfocus(7000)+[Control.IsVisible(59)]</visible>
-            <posx>-100</posx>
-            <posy>569</posy>
-            <width>2258</width>
-            <height>450</height>
-            <texture border="90">common/bg_tvguide.png</texture>
-        </control>
         <control type="group" description="Showcase 59 Movies TV Seasons">
             <visible>Control.IsVisible(59)</visible>
             <control type="fixedlist" id="59">
@@ -151,7 +129,7 @@
                 <posx>-222</posx>
                 <posy>619</posy>
                 <width>2360</width>
-                <height>400</height>
+                <height>500</height>
                 <onleft>59</onleft>
                 <onright>59</onright>
                 <onup>9000</onup>
@@ -173,6 +151,22 @@
                         <include>PosterThumb</include>
                         <include>ThumbBorder</include>
                     </control>
+                    <control type="image" description="Thumb">
+                        <posx>27</posx>
+                        <posy>364</posy>
+                        <width>198</width>
+                        <height>300</height>
+                        <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
+                        <colordiffuse>UnfocusedIconColor</colordiffuse>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>0</posx>
+                        <posy>337</posy>
+                        <width>252</width>
+                        <height>354</height>
+                        <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                        <colordiffuse>UnfocusedIconColor</colordiffuse>
+                    </control>
                     <control type="image">
                         <posx>194</posx>
                         <posy>296</posy>
@@ -189,6 +183,20 @@
                         <height>354</height>
                         <include>PosterThumb</include>
                         <include>ThumbBorderOverlay</include>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>27</posx>
+                        <posy>364</posy>
+                        <width>198</width>
+                        <height>300</height>
+                        <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>0</posx>
+                        <posy>337</posy>
+                        <width>252</width>
+                        <height>354</height>
+                        <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
                     </control>
                     <control type="image">
                         <posx>194</posx>
@@ -347,7 +355,7 @@
                 <posx>-265</posx>
                 <posy>679</posy>
                 <width>2190</width>
-                <height>400</height>
+                <height>500</height>
                 <onleft>58</onleft>
                 <onright>58</onright>
                 <onup>9000</onup>
@@ -369,6 +377,22 @@
                         <include>SquareThumb</include>
                         <include>ThumbBorder</include>
                     </control>
+                    <control type="image" description="Thumb">
+                        <posx>27</posx>
+                        <posy>304</posy>
+                        <width>240</width>
+                        <height>240</height>
+                        <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
+                        <colordiffuse>UnfocusedIconColor</colordiffuse>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>0</posx>
+                        <posy>277</posy>
+                        <width>294</width>
+                        <height>294</height>
+                        <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                        <colordiffuse>UnfocusedIconColor</colordiffuse>
+                    </control>
                 </itemlayout>
                 <focusedlayout height="400" width="310">
                     <control type="image">
@@ -378,6 +402,20 @@
                         <height>294</height>
                         <include>SquareThumb</include>
                         <include>ThumbBorderOverlay</include>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>27</posx>
+                        <posy>304</posy>
+                        <width>240</width>
+                        <height>240</height>
+                        <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>0</posx>
+                        <posy>277</posy>
+                        <width>294</width>
+                        <height>294</height>
+                        <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
                     </control>
                 </focusedlayout>
             </control>
@@ -496,7 +534,7 @@
                 <posx>15</posx>
                 <posy>679</posy>
                 <width>1950</width>
-                <height>400</height>
+                <height>500</height>
                 <onleft>57</onleft>
                 <onright>57</onright>
                 <onup>9000</onup>
@@ -518,6 +556,22 @@
                         <include>EpisodeThumb</include>
                         <include>ThumbBorder</include>
                     </control>
+                    <control type="image" description="Thumb">
+                        <posx>27</posx>
+                        <posy>304</posy>
+                        <width>426</width>
+                        <height>240</height>
+                        <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
+                        <colordiffuse>UnfocusedIconColor</colordiffuse>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>0</posx>
+                        <posy>277</posy>
+                        <width>480</width>
+                        <height>294</height>
+                        <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                        <colordiffuse>UnfocusedIconColor</colordiffuse>
+                    </control>
                     <control type="image">
                         <posx>422</posx>
                         <posy>236</posy>
@@ -534,6 +588,20 @@
                         <height>294</height>
                         <include>EpisodeThumb</include>
                         <include>ThumbBorderOverlay</include>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>27</posx>
+                        <posy>304</posy>
+                        <width>426</width>
+                        <height>240</height>
+                        <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
+                    </control>
+                    <control type="image" description="Thumb">
+                        <posx>0</posx>
+                        <posy>277</posy>
+                        <width>480</width>
+                        <height>294</height>
+                        <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
                     </control>
                     <control type="image">
                         <posx>422</posx>
@@ -666,6 +734,11 @@
                 <onup>57</onup>
                 <onright>noop</onright>
             </control>
+        </control>
+        <control type="group" description="Footer info">
+            <include>Icon_Fade</include>
+            <visible>!Control.hasfocus(7000)+[Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59)]</visible>
+            <include>FooterInfo</include>
         </control>
     </include>
 </includes>
