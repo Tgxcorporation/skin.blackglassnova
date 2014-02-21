@@ -30,7 +30,7 @@
     <include file="View_PVR.xml"/>
     <include name="Player_Show">
         <control type="image" description="fa overlay">
-            <visible>[Player.HasAudio|Player.HasVideo] + Skin.HasSetting(Show_Player)</visible>
+            <visible>[Player.HasVideo] + Skin.HasSetting(Show_Player)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
