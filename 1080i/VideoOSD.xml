@@ -10,6 +10,19 @@
             <include>OSDFade</include>
             <posx>0</posx>
             <posy>0</posy>
+            <control type="slider" id="87">
+                <description>Seek Slider</description>
+                <posx>0</posx>
+                <posy>985</posy>
+                <width>1920</width>
+                <height>54</height>
+                <onup>100</onup>
+                <ondown>100</ondown>
+                <action>seek</action>
+                <texturesliderbar>OSD/osd_progress_empty.png</texturesliderbar>
+                <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
+                <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+            </control>
             <control type="image">
                 <posx>-150</posx>
                 <posy>-3</posy>
@@ -35,6 +48,8 @@
                     <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
                     <onleft>705</onleft>
                     <onright>601</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="601">
@@ -48,6 +63,8 @@
                     <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
                     <onleft>600</onleft>
                     <onright>602</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="togglebutton" id="602">
@@ -65,6 +82,8 @@
                     <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
                     <onleft>601</onleft>
                     <onright>603</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="button" id="603">
@@ -78,6 +97,8 @@
                     <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
                     <onleft>602</onleft>
                     <onright>604</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="604">
@@ -91,8 +112,8 @@
                     <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
                     <onleft>603</onleft>
                     <onright>605</onright>
-                    <onup>noop</onup>
-                    <ondown>702</ondown>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Forward)</onclick>
                 </control>
                 <control type="button" id="605">
@@ -106,6 +127,8 @@
                     <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                     <onleft>604</onleft>
                     <onright>700</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
             </control>
@@ -127,6 +150,8 @@
                     <texturenofocus>topbar/topbar_channel_down_nofocus.png</texturenofocus>
                     <onleft>704</onleft>
                     <onright>601</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="601">
@@ -140,6 +165,8 @@
                     <texturenofocus>topbar/topbar_channel_up_nofocus.png</texturenofocus>
                     <onleft>600</onleft>
                     <onright>602</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="602">
@@ -153,6 +180,8 @@
                     <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
                     <onleft>601</onleft>
                     <onright>603</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="togglebutton" id="603">
@@ -170,6 +199,8 @@
                     <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
                     <onleft>602</onleft>
                     <onright>604</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="button" id="604">
@@ -183,6 +214,8 @@
                     <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
                     <onleft>603</onleft>
                     <onright>605</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="605">
@@ -196,6 +229,8 @@
                     <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
                     <onleft>604</onleft>
                     <onright>606</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Forward)</onclick>
                 </control>
                 <control type="button" id="606">
@@ -209,6 +244,8 @@
                     <texturenofocus>topbar/topbar_channel_nofocus.png</texturenofocus>
                     <onleft>605</onleft>
                     <onright>607</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>ActivateWindow(PVROSDChannels)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                 </control>
@@ -223,6 +260,8 @@
                     <texturenofocus>topbar/topbar_epg_nofocus.png</texturenofocus>
                     <onleft>606</onleft>
                     <onright>700</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>ActivateWindow(PVROSDGuide)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                 </control>
@@ -247,6 +286,8 @@
                     <usealttexture>!VideoPlayer.HasMenu</usealttexture>
                     <onleft>605</onleft>
                     <onright>701</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(ShowVideoMenu)</onclick>
                 </control>
                 <control type="button" id="701">
@@ -260,6 +301,8 @@
                     <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
                     <onleft>700</onleft>
                     <onright>702</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>ActivateWindow(OSDVideoSettings)</onclick>
                 </control>
                 <control type="togglebutton" id="702">
@@ -277,8 +320,10 @@
                     <usealttexture>IsEmpty(Skin.String(SubtitleScript_Path))</usealttexture>
                     <onleft>701</onleft>
                     <onright>703</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>Close</onclick>
-                             <onclick>ActivateWindow(SubtitleSearch)</onclick>
+                    <onclick>ActivateWindow(SubtitleSearch)</onclick>
                 </control>
                 <control type="button" id="703">
                     <posx>210</posx>
@@ -291,6 +336,8 @@
                     <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
                     <onleft>702</onleft>
                     <onright>704</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>ActivateWindow(OSDAudioSettings)</onclick>
                 </control>
                 <control type="button" id="704">
@@ -304,6 +351,8 @@
                     <texturenofocus>topbar/topbar_channel_nofocus.png</texturenofocus>
                     <onleft>703</onleft>
                     <onright>706</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>ActivateWindow(VideoBookmarks)</onclick>
                 </control>
                 <control type="button" id="706" description="Playlist">
@@ -315,6 +364,8 @@
                     <font>-</font>
                     <onleft>704</onleft>
                     <onright>705</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <texturefocus>topbar/topbar_bookmark_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_bookmark_nofocus.png</texturenofocus>
                     <onclick>Close</onclick>
@@ -331,6 +382,8 @@
                     <texturenofocus>topbar/topbar_3d_nofocus.png</texturenofocus>
                     <onleft>706</onleft>
                     <onright>600</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>StereoMode</onclick>
                 </control>
             </control>
@@ -352,6 +405,8 @@
                     <texturenofocus>topbar/topbar_rec_nofocus.png</texturenofocus>
                     <onleft>607</onleft>
                     <onright>701</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Record)</onclick>
                     <animation effect="fade" start="100" end="50" time="100" condition="!Player.CanRecord">Conditional</animation>
                 </control>
@@ -367,6 +422,8 @@
                     <texturenofocus>topbar/topbar_teletext_nofocus.png</texturenofocus>
                     <onleft>700</onleft>
                     <onright>702</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                     <onclick>ActivateWindow(Teletext)</onclick>
                     <onclick>ActivateWindow(Teletext)</onclick>
@@ -382,6 +439,8 @@
                     <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
                     <onleft>701</onleft>
                     <onright>703</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>ActivateWindow(OSDVideoSettings)</onclick>
                 </control>
                 <control type="button" id="703">
@@ -395,6 +454,8 @@
                     <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
                     <onleft>702</onleft>
                     <onright>704</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>ActivateWindow(OSDAudioSettings)</onclick>
                 </control>
                 <control type="button" id="704">
@@ -408,6 +469,8 @@
                     <texturenofocus>topbar/topbar_3d_nofocus.png</texturenofocus>
                     <onleft>703</onleft>
                     <onright>600</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>StereoMode</onclick>
                 </control>
             </control>

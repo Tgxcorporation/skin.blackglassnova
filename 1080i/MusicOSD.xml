@@ -12,6 +12,19 @@
                 <width>2220</width>
                 <height>440</height>
             </control>
+            <control type="slider" id="87">
+                <description>Seek Slider</description>
+                <posx>0</posx>
+                <posy>985</posy>
+                <width>1920</width>
+                <height>54</height>
+                <onup>101</onup>
+                <ondown>101</ondown>
+                <action>seek</action>
+                <texturesliderbar>OSD/osd_progress_empty.png</texturesliderbar>
+                <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
+                <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+            </control>
             <control type="image" description="Background">
                 <posx>-15</posx>
                 <posy>0</posy>
@@ -149,6 +162,8 @@
                     <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
                     <onleft>20</onleft>
                     <onright>601</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="601">
@@ -162,6 +177,8 @@
                     <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
                     <onleft>600</onleft>
                     <onright>602</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="togglebutton" id="602">
@@ -179,7 +196,8 @@
                     <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
                     <onleft>601</onleft>
                     <onright>603</onright>
-                    <onup>XBMC.ActivateWindow(142)</onup>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="button" id="603">
@@ -193,6 +211,8 @@
                     <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
                     <onleft>602</onleft>
                     <onright>604</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="604">
@@ -206,6 +226,8 @@
                     <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
                     <onleft>603</onleft>
                     <onright>605</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Forward)</onclick>
                 </control>
                 <control type="button" id="605">
@@ -219,6 +241,8 @@
                     <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                     <onleft>604</onleft>
                     <onright>1</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="group">
@@ -234,6 +258,8 @@
                         <font>-</font>
                         <onleft>605</onleft>
                         <onright>21</onright>
+                        <onup>87</onup>
+                        <ondown>87</ondown>
                         <texturefocus>topbar/topbar_repeat_focus.png</texturefocus>
                         <texturenofocus>topbar/topbar_repeat_nofocus.png</texturenofocus>
                         <onclick>XBMC.PlayerControl(Repeat)</onclick>
@@ -285,6 +311,8 @@
                     <font>-</font>
                     <onleft>1</onleft>
                     <onright>9</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <texturefocus>topbar/topbar_random_off_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_random_off_nofocus.png</texturenofocus>
                     <usealttexture>Playlist.IsRandom</usealttexture>
@@ -301,6 +329,8 @@
                     <font>-</font>
                     <onleft>21</onleft>
                     <onright>555</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <texturefocus>topbar/topbar_teletext_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_teletext_nofocus.png</texturenofocus>
                     <onclick>Close</onclick>
@@ -316,6 +346,8 @@
                     <font>-</font>
                     <onleft>9</onleft>
                     <onright>556</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <texturefocus>topbar/topbar_bookmark_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_bookmark_nofocus.png</texturenofocus>
                     <onclick>Close</onclick>
@@ -330,6 +362,8 @@
                     <font>-</font>
                     <onleft>555</onleft>
                     <onright>500</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <texturefocus>topbar/topbar_fanart_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_fanart_nofocus.png</texturenofocus>
                     <label2>$VAR[MusicPlayingFanartLabel2]</label2>
@@ -344,6 +378,8 @@
                     <font>-</font>
                     <onleft>556</onleft>
                     <onright>19</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <texturefocus>topbar/topbar_video_settings_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
                 </control>
@@ -356,6 +392,8 @@
                     <font>-</font>
                     <onleft>500</onleft>
                     <onright>20</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
@@ -370,6 +408,8 @@
                     <font>-</font>
                     <onleft>19</onleft>
                     <onright>600</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
                     <texturefocus>topbar/topbar_presets_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_presets_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(122)</onclick>

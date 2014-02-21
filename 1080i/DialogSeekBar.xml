@@ -74,7 +74,7 @@
                 <info>Player.Progress</info>
                 <visible>true</visible>
             </control>
-            <control type="label" description="Progress time label">
+           <control type="label" description="Progress time label">
                 <posx>20</posx>
                 <posy>1026</posy>
                 <height>52</height>
