@@ -53,7 +53,7 @@
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
             <control type="image">
-                <visible>!Control.IsVisible(3)</visible>
+                <visible>!Control.IsVisible(3)+IsEmpty(Container(6).ListItem.Thumb)</visible>
                 <posx>611</posx>
                 <posy>154</posy>
                 <width>264</width>
@@ -62,7 +62,7 @@
                 <aspectratio>keep</aspectratio>
                 <include>ThumbBorder</include>
             </control>
-            <control type="image">
+            <control type="image" id="5775">
                 <visible>!Control.IsVisible(3)</visible>
                 <posx>611</posx>
                 <posy>154</posy>

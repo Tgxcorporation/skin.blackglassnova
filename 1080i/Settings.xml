@@ -995,7 +995,7 @@
                                 <visible>!Skin.HasSetting(DVD.Hide)</visible>
                                 <label>$LOCALIZE[427]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
-                                <icon>special://skin/backgrounds/default/default.jpg</icon>
+                                <icon>special://skin/backgrounds/Dvds.jpg</icon>
                                 <thumb>$INFO[Skin.String(DVD.Background)]</thumb>
                             </item>
                             <item id="11">
@@ -1208,7 +1208,8 @@
                         <ondown>9004</ondown>
                         <control type="button" id="300">
                             <description>Single Image button</description>
-                            <label>$LOCALIZE[31113]</label>
+                            <width>450</width>
+                            <label>$LOCALIZE[1030]</label>
                             <onclick condition="Container(9004).HasFocus(0)">Skin.SetImage(Default.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(1)">Skin.SetImage(Videos.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(2)">Skin.SetImage(Movies.Background)</onclick>
@@ -1245,7 +1246,7 @@
                             <onclick condition="Container(9004).HasFocus(69)">Skin.SetImage(Plexbmc.9.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(70)">Skin.SetImage(Plexbmc.10.Background)</onclick>
                         </control>
-                        <control type="button" id="301">
+                        <!-- <control type="button" id="301">
                             <description>Multi Image button</description>
                             <label>$LOCALIZE[31114]</label>
                             <onclick condition="Container(9004).HasFocus(0)">Skin.SetPath(Default.Background)</onclick>
@@ -1283,10 +1284,11 @@
                             <onclick condition="Container(9004).HasFocus(68)">Skin.SetPath(Plexbmc.8.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(69)">Skin.SetPath(Plexbmc.9.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(70)">Skin.SetPath(Plexbmc.10.Background)</onclick>
-                        </control>
+                        </control> -->
                         <control type="button" id="302">
                             <description>Default Image button</description>
                             <label>$LOCALIZE[571]</label>
+                            <width>450</width>
                             <onclick condition="Container(9004).HasFocus(0)">Skin.Reset(Default.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(1)">Skin.Reset(Videos.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(2)">Skin.Reset(Movies.Background)</onclick>
