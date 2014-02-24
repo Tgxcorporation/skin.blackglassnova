@@ -457,6 +457,24 @@
         </focusedlayout>
     </include>
     <include name="Vertical_Home_Layout">
+        <control type="image" description="Arrow XBMC only">
+            <visible>!Skin.HasSetting(plexbmc)+[[[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|[[IntegerGreaterThan(Container(211).NumItems,0)]+Container(300).HasFocus(2)]|[[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+Container(300).HasFocus(4)]|[[IntegerGreaterThan(Container(514).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+Container(300).HasFocus(5)]|[[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+Container(300).HasFocus(6)]|[[IntegerGreaterThan(Container(512).NumItems,0)]+Container(300).HasFocus(13)]]</visible>
+            <include>VisibleFadeEffectDelayShelf</include>
+            <posx>490</posx>
+            <posy>515</posy>
+            <width>50</width>
+            <height>50</height>
+            <texture>topbar/topbar_play_focus.png</texture>
+        </control>
+        <control type="image" description="Arrow Plexbmc only">
+            <visible>Skin.HasSetting(plexbmc)+[[[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|[[IntegerGreaterThan(Container(900).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),photo)]|[[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),movie)]|[[IntegerGreaterThan(Container(511).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),artist)]|[[IntegerGreaterThan(Container(212).NumItems,0)]+Container(300).HasFocus(50)]|[[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]]</visible>
+            <include>VisibleFadeEffectDelayShelf</include>
+            <posx>490</posx>
+            <posy>515</posy>
+            <width>50</width>
+            <height>50</height>
+            <texture>topbar/topbar_play_focus.png</texture>
+        </control>
         <control type="group" id="700">
             <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
             <include condition="Skin.HasSetting(Shelf.Delay)">Shelf_Delay</include>
@@ -496,6 +514,7 @@
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Albums.List</include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)">Plexbmc_Shelf</include>
         </control>
+
         <control type="group">
             <control type="group" description="Furniture">
                 <posx>-110</posx>

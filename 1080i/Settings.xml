@@ -1432,7 +1432,7 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.Reset(Hide.RecentlyAdded)</onclick>
                         </item>
-                        <item id="2" description="Shelf Delay">
+                        <!-- <item id="2" description="Shelf Delay">
                             <visible>Skin.HasSetting(Shelf.Delay)</visible>
                             <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
                             <label>$LOCALIZE[31955]</label>
@@ -1445,7 +1445,7 @@
                             <label>$LOCALIZE[31955]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(Shelf.Delay)</onclick>
-                        </item>
+                        </item> -->
                         <item id="3" description="Configure service.skin.widgets">
                             <visible>System.HasAddon(service.skin.widgets) + !Skin.HasSetting(Hide.RecentlyAdded)</visible>
                             <label>$LOCALIZE[31964]</label>
@@ -1997,6 +1997,16 @@
                         </item>
                     </content>
                 </control>
+                <control type="textbox">
+                    <visible>Container(9008).HasFocus(3)+Container(9000).HasFocus(8)</visible>
+                    <posx>173</posx>
+                    <posy>720</posy>
+                    <width>1141</width>
+                    <height>470</height>
+                    <align>justify</align>
+                    <font>InfoPlotFont</font>
+                    <label>$LOCALIZE[31982]</label>
+                </control>
                 <!-- 9000 9 -->
                 <control type="panel" id="9009">
                     <visible>Container(9000).HasFocus(9)</visible>
@@ -2378,16 +2388,7 @@
                 </control>
             </control>
         </control>
-        <control type="textbox">
-            <visible>Container(9008).HasFocus(3)</visible>
-            <posx>173</posx>
-            <posy>820</posy>
-            <width>1141</width>
-            <height>170</height>
-            <align>justify</align>
-            <font>InfoPlotFont</font>
-            <label>$LOCALIZE[31982]</label>
-        </control>
+
         <!-- <control type="scrollbar" id="63">
             <visible>Control.IsVisible(9003)</visible>
             <posx>1518</posx>
