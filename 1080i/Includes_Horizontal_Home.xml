@@ -34,7 +34,7 @@
                 <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
                 <include condition="Skin.HasSetting(Shelf.Delay)">Shelf_Delay</include>
                 <posy>-105</posy>
-                <control type="image" description="RA BG XBMC only">
+                <control type="image" description="BG XBMC only">
                     <visible>!Skin.HasSetting(plexbmc) + [Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | Control.IsVisible(311)  | Control.IsVisible(312) | Control.IsVisible(411) | Control.IsVisible(413) | Control.IsVisible(511) | Control.IsVisible(513) | Control.IsVisible(514) | Control.IsVisible(515) | Control.IsVisible(412) | Control.IsVisible(512)]</visible>
                     <posx>-200</posx>
                     <posy>200</posy>
@@ -42,7 +42,7 @@
                     <height>520</height>
                     <texture border="83">common/bg_dialog.png</texture>
                 </control>
-                <control type="image" description="RA BG Plexbmc only">
+                <control type="image" description="BG Plexbmc only">
                     <visible>Skin.HasSetting(plexbmc) + [Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | IntegerGreaterThan(Container(311).NumItems,0) | IntegerGreaterThan(Container(312).NumItems,0) | IntegerGreaterThan(Container(411).NumItems,0) | IntegerGreaterThan(Container(413).NumItems,0) | Control.IsVisible(511) | Control.IsVisible(900)]</visible>
                     <posx>-200</posx>
                     <posy>200</posy>
@@ -69,6 +69,24 @@
                 <width>2320</width>
                 <height>467</height>
                 <texture>common/HomeGradient.png</texture>
+            </control>
+            <control type="image" description="Arrow XBMC only">
+                <visible>!Skin.HasSetting(plexbmc)+[[[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|[[IntegerGreaterThan(Container(211).NumItems,0)]+Container(300).HasFocus(2)]|[[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+Container(300).HasFocus(4)]|[[IntegerGreaterThan(Container(514).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+Container(300).HasFocus(5)]|[[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+Container(300).HasFocus(6)]|[[IntegerGreaterThan(Container(512).NumItems,0)]+Container(300).HasFocus(13)]]</visible>
+                <include>VisibleFadeEffectDelayShelf</include>
+                <posx>935</posx>
+                <posy>600</posy>
+                <width>50</width>
+                <height>50</height>
+                <texture>topbar/topbar_channel_up_focus.png</texture>
+            </control>
+            <control type="image" description="Arrow Plexbmc only">
+                <visible>Skin.HasSetting(plexbmc)+[[[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|[[IntegerGreaterThan(Container(900).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),photo)]|[[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),movie)]|[[IntegerGreaterThan(Container(511).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),artist)]|[[IntegerGreaterThan(Container(212).NumItems,0)]+Container(300).HasFocus(50)]|[[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]]</visible>
+                <include>VisibleFadeEffectDelayShelf</include>
+                <posx>935</posx>
+                <posy>600</posy>
+                <width>50</width>
+                <height>50</height>
+                <texture>topbar/topbar_channel_up_focus.png</texture>
             </control>
             <control type="group">
                 <posy>110</posy>
