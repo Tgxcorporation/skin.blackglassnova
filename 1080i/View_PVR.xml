@@ -953,7 +953,7 @@
                 <onright>31</onright>
                 <onup>10</onup>
                 <ondown>10</ondown>
-                <onback>50</onback>
+                <!-- <onback>50</onback> -->
                 <progresstexture border="0,85,20,20">common/EPGMarker.png</progresstexture>
                 <rulerlayout height="70" width="60">
                     <control type="image" id="1" description="Header row">
