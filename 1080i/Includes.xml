@@ -48,15 +48,15 @@
             <animation effect="fade" start="0" end="100" time="250">Visible</animation>
             <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
         </control>
-       <control type="image" description="Fanart only">
-           <visible>Player.HasAudio + Skin.HasSetting(Show_Player) + Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
-           <include>Dimensions_Fullscreen</include>
-           <fadetime>400</fadetime>
-           <aspectratio>scale</aspectratio>
-           <texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-           <animation effect="fade" start="0" end="100" time="250">Visible</animation>
-           <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
-       </control>
+        <control type="image" description="Fanart only">
+            <visible>Player.HasAudio + Skin.HasSetting(Show_Player) + Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+            <include>Dimensions_Fullscreen</include>
+            <fadetime>400</fadetime>
+            <aspectratio>scale</aspectratio>
+            <texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+            <animation effect="fade" start="0" end="100" time="250">Visible</animation>
+            <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
+        </control>
         <control type="visualisation">
             <visible>Player.HasAudio + Skin.HasSetting(Show_Player)</visible>
             <posx>0</posx>
@@ -145,6 +145,17 @@
         <width>1920</width>
         <height>1080</height>
     </include>
+    <include name="FakeTopbarButton">
+        <control type="button">
+            <width>20</width>
+            <height>50</height>
+            <label>-</label>
+            <font>-</font>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onclick>-</onclick>
+        </control>
+    </include>
     <include name="Time">
         <control type="group">
             <control type="image">
@@ -154,40 +165,223 @@
                 <width>2220</width>
                 <height>240</height>
             </control>
-            <control type="label">
-                <posx>TextMarginR</posx>
-                <posy>18</posy>
-                <width>500</width>
-                <align>right</align>
-                <aligny>top</aligny>
-                <font>WindowTitleFont</font>
-                <textcolor>WindowTitleColor</textcolor>
-                <shadowcolor>-</shadowcolor>
-                <label>$INFO[System.Time]</label>
-            </control>
-            <control type="label">
-                <description>Date label</description>
-                <posx>TextMarginR</posx>
-                <posy>68</posy>
-                <width>500</width>
-                <align>right</align>
-                <aligny>top</aligny>
-                <font>WindowTitleSubFont</font>
-                <textcolor>WindowTitleSubColor</textcolor>
-                <shadowcolor>-</shadowcolor>
-                <label>$INFO[System.Date]</label>
-            </control>
-            <control type="image">
-                <posx>1881</posx>
-                <posy>-25</posy>
-                <width>64</width>
-                <height>64</height>
-                <texture>OverlayTopRecording.png</texture>
-                <visible>PVR.IsRecording</visible>
-                <animation effect="fade" start="65" time="3000" condition="true" pulse="true">Conditional</animation>
-            </control>
             <control type="group" description="Fix for Plexbmc">
                 <include>PlexbmcFixTrick</include>
+                <control type="group" description="Content">
+                    <animation effect="slide" start="0,0" end="0,130" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+[[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,85" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+![[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]">Conditional</animation>
+                    <animation effect="slide" time="150" end="0,-88">WindowClose</animation>
+                    <animation effect="slide" tween="circle" easing="out" time="150" start="0,-88" end="0,-50">WindowOpen</animation>
+                    <posy>0</posy>
+                    <control type="image">
+                        <posx>-80</posx>
+                        <posy>-90</posy>
+                        <texture>common/basichome_upper_gradient.png</texture>
+                        <width>2220</width>
+                        <height>180</height>
+                    </control>
+                    <control type="button" id="8998">
+                        <description>Fake button for mouse control</description>
+                        <posx>395</posx>
+                        <posy>0</posy>
+                        <width>1130</width>
+                        <height>140</height>
+                        <label>-</label>
+                        <font>-</font>
+                        <texturenofocus>-</texturenofocus>
+                        <texturefocus>-</texturefocus>
+                        <visible>true</visible>
+                    </control>
+                    <control type="button" id="8997">
+                        <description>Fake button for mouse control</description>
+                        <posx>395</posx>
+                        <posy>-110</posy>
+                        <width>1130</width>
+                        <height>100</height>
+                        <label>-</label>
+                        <font>-</font>
+                        <texturenofocus>-</texturenofocus>
+                        <texturefocus>-</texturefocus>
+                        <visible>true</visible>
+                    </control>
+                    <control type="grouplist" id="9900">
+                        <posx>395</posx>
+                        <posy>-10</posy>
+                        <width>1130</width>
+                        <height>100</height>
+                        <itemgap>0</itemgap>
+                        <scrolltime>200</scrolltime>
+                        <orientation>horizontal</orientation>
+                        <onleft>9900</onleft>
+                        <onright>9900</onright>
+                        <onup>9900</onup>
+                        <ondown>9900</ondown>
+                        <align>center</align>
+                        <control type="button" id="599">
+                            <width>50</width>
+                            <height>50</height>
+                            <label>-</label>
+                            <font>-</font>
+                            <texturefocus>topbar/topbar_back_focus.png</texturefocus>
+                            <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
+                            <onleft>20</onleft>
+                            <onright>601</onright>
+                            <onup>87</onup>
+                            <ondown>87</ondown>
+                            <onclick>back</onclick>
+                        </control>
+                        <include>FakeTopbarButton</include>
+                        <include>FakeTopbarButton</include>
+                        <include>FakeTopbarButton</include>
+                        <control type="button" id="600">
+                            <width>50</width>
+                            <height>50</height>
+                            <label>$LOCALIZE[210]</label>
+                            <font>-</font>
+                            <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
+                            <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
+                            <onleft>20</onleft>
+                            <onright>601</onright>
+                            <onup>87</onup>
+                            <ondown>87</ondown>
+                            <onclick>PlayerControl(Previous)</onclick>
+                        </control>
+                        <include>FakeTopbarButton</include>
+                        <control type="button" id="601">
+                            <width>50</width>
+                            <height>50</height>
+                            <label>$LOCALIZE[31354]</label>
+                            <font>-</font>
+                            <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
+                            <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
+                            <onleft>600</onleft>
+                            <onright>602</onright>
+                            <onup>87</onup>
+                            <ondown>87</ondown>
+                            <onclick>PlayerControl(Rewind)</onclick>
+                        </control>
+                        <include>FakeTopbarButton</include>
+                        <control type="togglebutton" id="602">
+                            <width>50</width>
+                            <height>50</height>
+                            <label>$LOCALIZE[31351]</label>
+                            <altlabel>$LOCALIZE[208]</altlabel>
+                            <font>-</font>
+                            <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
+                            <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
+                            <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+                            <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
+                            <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
+                            <onleft>601</onleft>
+                            <onright>603</onright>
+                            <onup>87</onup>
+                            <ondown>87</ondown>
+                            <onclick>PlayerControl(Play)</onclick>
+                        </control>
+                        <include>FakeTopbarButton</include>
+                        <control type="button" id="603">
+                            <width>50</width>
+                            <height>50</height>
+                            <label>$LOCALIZE[31352]</label>
+                            <font>-</font>
+                            <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
+                            <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
+                            <onleft>602</onleft>
+                            <onright>604</onright>
+                            <onup>87</onup>
+                            <ondown>87</ondown>
+                            <onclick>PlayerControl(Stop)</onclick>
+                        </control>
+                        <include>FakeTopbarButton</include>
+                        <control type="button" id="604">
+                            <width>50</width>
+                            <height>50</height>
+                            <label>$LOCALIZE[31353]</label>
+                            <font>-</font>
+                            <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
+                            <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
+                            <onleft>603</onleft>
+                            <onright>605</onright>
+                            <onup>87</onup>
+                            <ondown>87</ondown>
+                            <onclick>PlayerControl(Forward)</onclick>
+                        </control>
+                        <include>FakeTopbarButton</include>
+                        <control type="button" id="605">
+                            <width>50</width>
+                            <height>50</height>
+                            <label>$LOCALIZE[209]</label>
+                            <font>-</font>
+                            <texturefocus>topbar/topbar_skipforward_focus.png</texturefocus>
+                            <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
+                            <onleft>604</onleft>
+                            <onright>1</onright>
+                            <onup>87</onup>
+                            <ondown>87</ondown>
+                            <onclick>PlayerControl(Next)</onclick>
+                        </control>
+                        <include>FakeTopbarButton</include>
+                        <include>FakeTopbarButton</include>
+                        <include>FakeTopbarButton</include>
+                        <control type="button" id="606">
+                            <width>50</width>
+                            <height>50</height>
+                            <label>$LOCALIZE[13376]</label>
+                            <font>-</font>
+                            <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
+                            <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
+                            <onleft>604</onleft>
+                            <onright>1</onright>
+                            <onup>87</onup>
+                            <ondown>87</ondown>
+                            <onclick>Mute</onclick>
+                        </control>
+                        <include>FakeTopbarButton</include>
+                        <control type="button" id="607">
+                            <width>50</width>
+                            <height>50</height>
+                            <label>$LOCALIZE[13376]</label>
+                            <font>-</font>
+                            <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
+                            <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
+                            <onleft>604</onleft>
+                            <onright>1</onright>
+                            <onup>87</onup>
+                            <ondown>87</ondown>
+                            <onclick>VolumeDown</onclick>
+                        </control>
+                        <include>FakeTopbarButton</include>
+                        <control type="button" id="608">
+                            <width>50</width>
+                            <height>50</height>
+                            <label>$LOCALIZE[13376]</label>
+                            <font>-</font>
+                            <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
+                            <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                            <onleft>604</onleft>
+                            <onright>1</onright>
+                            <onup>87</onup>
+                            <ondown>87</ondown>
+                            <onclick>VolumeUp</onclick>
+                        </control>
+                        <include>FakeTopbarButton</include>
+                        <include>FakeTopbarButton</include>
+                        <include>FakeTopbarButton</include>
+                        <control type="button" id="609">
+                            <width>50</width>
+                            <height>50</height>
+                            <label>$LOCALIZE[13005]</label>
+                            <font>-</font>
+                            <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
+                            <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
+                            <onleft>604</onleft>
+                            <onright>1</onright>
+                            <onup>87</onup>
+                            <ondown>87</ondown>
+                            <onclick>$VAR[QuitAction]</onclick>
+                        </control>
+                    </control>
+                </control>
                 <control type="group" description="Content">
                     <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo</visible>
                     <animation effect="slide" start="0,-88" end="0,0" time="200">Visible</animation>
@@ -233,6 +427,38 @@
                         <label>$INFO[VideoPlayer.Title,,  •  ][COLOR=AlternateColor]$INFO[VideoPlayer.TimeSpeed]$INFO[VideoPlayer.Duration, - ][/COLOR]</label>
                     </control>
                 </control>
+            </control>
+            <control type="label">
+                <posx>TextMarginR</posx>
+                <posy>18</posy>
+                <width>500</width>
+                <align>right</align>
+                <aligny>top</aligny>
+                <font>WindowTitleFont</font>
+                <textcolor>WindowTitleColor</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>$INFO[System.Time]</label>
+            </control>
+            <control type="label">
+                <description>Date label</description>
+                <posx>TextMarginR</posx>
+                <posy>68</posy>
+                <width>500</width>
+                <align>right</align>
+                <aligny>top</aligny>
+                <font>WindowTitleSubFont</font>
+                <textcolor>WindowTitleSubColor</textcolor>
+                <shadowcolor>-</shadowcolor>
+                <label>$INFO[System.Date]</label>
+            </control>
+            <control type="image">
+                <posx>1881</posx>
+                <posy>-25</posy>
+                <width>64</width>
+                <height>64</height>
+                <texture>OverlayTopRecording.png</texture>
+                <visible>PVR.IsRecording</visible>
+                <animation effect="fade" start="65" time="3000" condition="true" pulse="true">Conditional</animation>
             </control>
         </control>
     </include>

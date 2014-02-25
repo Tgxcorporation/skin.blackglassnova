@@ -17,7 +17,7 @@
             <label>$LOCALIZE[10008]</label>
         </control>
         <control type="group">
-            <posy>-219</posy>
+            <posy>-189</posy>
             <control type="image">
                 <posx>83</posx>
                 <posy>244</posy>
