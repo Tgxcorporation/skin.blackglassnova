@@ -2,8 +2,8 @@
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
     <onload condition="Skin.HasSetting(TVTunes.Enabled) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
-   <include>OpenClose</include>
-   <controls>
+    <include>OpenClose</include>
+    <controls>
         <include>Fanart_Art</include>
         <include>Player_Show</include>
         <include>Time</include>
@@ -132,12 +132,21 @@
                                 <scroll>false</scroll>
                                 <label fallback="416">$INFO[ListItem.Rating]</label>
                             </control>
+                            <control type="image" description="3D badge">
+                                <visible>ListItem.IsStereoscopic</visible>
+                                <posx>556</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
+                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
+                                <texture>badges/3D.png</texture>
+                            </control>
                             <control type="image" description="HD badge">
                                 <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>586</posx>
-                                <posy>97</posy>
-                                <height>24</height>
-                                <width>90</width>
+                                <posx>621</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
                                 <aspectratio aligny="bottom" align="right">keep</aspectratio>
                                 <texture>badges/HD.png</texture>
                             </control>
@@ -246,12 +255,21 @@
                                 <scroll>false</scroll>
                                 <label fallback="416">$INFO[ListItem.Rating]</label>
                             </control>
+                            <control type="image" description="3D badge">
+                                <visible>ListItem.IsStereoscopic</visible>
+                                <posx>556</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
+                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
+                                <texture>badges/3D.png</texture>
+                            </control>
                             <control type="image" description="HD badge">
                                 <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>586</posx>
-                                <posy>97</posy>
-                                <height>24</height>
-                                <width>90</width>
+                                <posx>621</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
                                 <aspectratio aligny="bottom" align="right">keep</aspectratio>
                                 <texture>badges/HD.png</texture>
                             </control>
@@ -358,6 +376,24 @@
                         <textcolor>AlternateColor</textcolor>
                         <scroll>false</scroll>
                         <label fallback="416">$INFO[ListItem.Rating]</label>
+                    </control>
+                    <control type="image" description="3D badge">
+                        <visible>ListItem.IsStereoscopic</visible>
+                        <posx>486</posx>
+                        <posy>95</posy>
+                        <height>30</height>
+                        <width>54</width>
+                        <aspectratio aligny="bottom" align="right">keep</aspectratio>
+                        <texture>badges/3D.png</texture>
+                    </control>
+                    <control type="image" description="HD badge">
+                        <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
+                        <posx>551</posx>
+                        <posy>95</posy>
+                        <height>30</height>
+                        <width>54</width>
+                        <aspectratio aligny="bottom" align="right">keep</aspectratio>
+                        <texture>badges/HD.png</texture>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -480,12 +516,21 @@
                                 <scroll>false</scroll>
                                 <label fallback="416">$INFO[ListItem.Rating]</label>
                             </control>
+                            <control type="image" description="3D badge">
+                                <visible>ListItem.IsStereoscopic</visible>
+                                <posx>556</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
+                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
+                                <texture>badges/3D.png</texture>
+                            </control>
                             <control type="image" description="HD badge">
                                 <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>586</posx>
-                                <posy>97</posy>
-                                <height>24</height>
-                                <width>90</width>
+                                <posx>621</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
                                 <aspectratio aligny="bottom" align="right">keep</aspectratio>
                                 <texture>badges/HD.png</texture>
                             </control>
@@ -594,12 +639,21 @@
                                 <scroll>false</scroll>
                                 <label fallback="416">$INFO[ListItem.Rating]</label>
                             </control>
+                            <control type="image" description="3D badge">
+                                <visible>ListItem.IsStereoscopic</visible>
+                                <posx>556</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
+                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
+                                <texture>badges/3D.png</texture>
+                            </control>
                             <control type="image" description="HD badge">
                                 <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>586</posx>
-                                <posy>97</posy>
-                                <height>24</height>
-                                <width>90</width>
+                                <posx>621</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
                                 <aspectratio aligny="bottom" align="right">keep</aspectratio>
                                 <texture>badges/HD.png</texture>
                             </control>
@@ -727,12 +781,21 @@
                                 <scroll>false</scroll>
                                 <label fallback="416">$INFO[ListItem.Rating]</label>
                             </control>
+                            <control type="image" description="3D badge">
+                                <visible>ListItem.IsStereoscopic</visible>
+                                <posx>708</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
+                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
+                                <texture>badges/3D.png</texture>
+                            </control>
                             <control type="image" description="HD badge">
                                 <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>738</posx>
-                                <posy>97</posy>
-                                <height>24</height>
-                                <width>90</width>
+                                <posx>773</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
                                 <aspectratio aligny="bottom" align="right">keep</aspectratio>
                                 <texture>badges/HD.png</texture>
                             </control>
@@ -842,12 +905,21 @@
                                 <scroll>false</scroll>
                                 <label fallback="416">$INFO[ListItem.Rating]</label>
                             </control>
+                            <control type="image" description="3D badge">
+                                <visible>ListItem.IsStereoscopic</visible>
+                                <posx>632</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
+                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
+                                <texture>badges/3D.png</texture>
+                            </control>
                             <control type="image" description="HD badge">
                                 <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>662</posx>
-                                <posy>97</posy>
-                                <height>24</height>
-                                <width>90</width>
+                                <posx>697</posx>
+                                <posy>95</posy>
+                                <height>30</height>
+                                <width>54</width>
                                 <aspectratio aligny="bottom" align="right">keep</aspectratio>
                                 <texture>badges/HD.png</texture>
                             </control>
@@ -937,6 +1009,24 @@
                         <textcolor>AlternateColor</textcolor>
                         <scroll>false</scroll>
                         <label fallback="416">$INFO[ListItem.Rating]</label>
+                    </control>
+                    <control type="image" description="3D badge">
+                        <visible>ListItem.IsStereoscopic</visible>
+                        <posx>486</posx>
+                        <posy>95</posy>
+                        <height>30</height>
+                        <width>54</width>
+                        <aspectratio aligny="bottom" align="right">keep</aspectratio>
+                        <texture>badges/3D.png</texture>
+                    </control>
+                    <control type="image" description="HD badge">
+                        <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
+                        <posx>551</posx>
+                        <posy>95</posy>
+                        <height>30</height>
+                        <width>54</width>
+                        <aspectratio aligny="bottom" align="right">keep</aspectratio>
+                        <texture>badges/HD.png</texture>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -1058,15 +1148,6 @@
                                 <textcolor>AlternateColor</textcolor>
                                 <scroll>false</scroll>
                                 <label>$VAR[Details]</label>
-                            </control>
-                            <control type="image" description="HD badge">
-                                <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>1171</posx>
-                                <posy>24</posy>
-                                <height>24</height>
-                                <width>90</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/HD.png</texture>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
