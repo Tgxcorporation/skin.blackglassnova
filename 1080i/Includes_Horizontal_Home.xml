@@ -268,7 +268,7 @@
                     <font>rss</font>
                     <urlset>1</urlset>
                     <font>WindowTitleSubFont</font>
-                    <shadowcolor>ShadowDark</shadowcolor>
+                    <shadowcolor>ShadowColor</shadowcolor>
                     <titlecolor>MainColor</titlecolor>
                     <headlinecolor>AlternateColor</headlinecolor>
                     <textcolor>AlternateColor</textcolor>

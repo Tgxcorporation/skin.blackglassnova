@@ -159,7 +159,7 @@
         <value condition="Window.IsActive(MyPics.xml) + !IsEmpty(ListItem.PictureDesc)">$INFO[ListItem.PictureDesc]</value>
         <value condition="Window.IsActive(MyPics.xml) + !IsEmpty(ListItem.PictureComment)">$INFO[ListItem.PictureComment]</value>
         <value condition="Window.IsActive(MyPics.xml) + !IsEmpty(ListItem.PictureKeywords)">$INFO[ListItem.PictureKeywords]</value>
-        <value condition="Window.IsActive(MyPics.xml)">[COLOR=Grey]$LOCALIZE[21821]:[/COLOR][CR][CR]   $LOCALIZE[416]</value>
+        <value condition="Window.IsActive(MyPics.xml)">$LOCALIZE[21821]:[CR][CR]   $LOCALIZE[416]</value>
         <value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
     </variable>
     <variable name="Default.Art" description="Calculate BG to show">

@@ -260,7 +260,7 @@
                     <posy>50</posy>
                     <width>600</width>
                     <align>right</align>
-                    <textcolor>Orange</textcolor>
+                    <textcolor>MainColor</textcolor>
                 </control>
             </control>
             <control type="group" description="Right side options group">

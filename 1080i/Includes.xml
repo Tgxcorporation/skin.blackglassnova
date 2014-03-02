@@ -460,7 +460,7 @@
         <width>1840</width>
         <align>center</align>
         <font>OSDFont</font>
-        <shadowcolor>Black</shadowcolor>
+        <shadowcolor>ShadowColor</shadowcolor>
         <animation effect="fade" time="50">VisibleChange</animation>
     </include>
     <include name="OSDSeekbarLabels">
@@ -470,7 +470,7 @@
         <width>600</width>
         <align>center</align>
         <font>ListDetails</font>
-        <shadowcolor>Black</shadowcolor>
+        <shadowcolor>ShadowColor</shadowcolor>
         <animation effect="fade" time="50">VisibleChange</animation>
     </include>
     <include name="Stars">

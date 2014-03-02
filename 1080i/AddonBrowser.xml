@@ -230,22 +230,18 @@
                 <control type="button" id="3">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[186]</label>
-                    <font>Label2</font>
                 </control>
                 <control type="radiobutton" id="5">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[24063]</label>
-                    <font>Label2</font>
                 </control>
                 <control type="radiobutton" id="6">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[25000]</label>
-                    <font>Label2</font>
                 </control>
                 <control type="radiobutton" id="7">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[25001]</label>
-                    <font>Label2</font>
                 </control>
             </control>
         </control>
