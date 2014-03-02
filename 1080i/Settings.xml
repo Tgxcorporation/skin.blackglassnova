@@ -75,8 +75,8 @@
                 <posy>382</posy>
                 <width>433</width>
                 <height>657</height>
-                <onleft>9010</onleft>
-                <onright>9010</onright>
+                <onleft>9110</onleft>
+                <onright>9110</onright>
                 <onup>9000</onup>
                 <ondown>9000</ondown>
                 <pagecontrol>-</pagecontrol>
@@ -140,6 +140,10 @@
                         <label>$LOCALIZE[33069]</label>
                         <onclick>noop</onclick>
                     </item>
+                    <item id="10" description="Home Icons">
+                        <label>$LOCALIZE[10000] - $LOCALIZE[536]</label>
+                        <onclick>noop</onclick>
+                    </item>
                     <item id="7" description="Quit menu">
                         <label>$LOCALIZE[31990]</label>
                         <onclick>noop</onclick>
@@ -154,7 +158,7 @@
                     </item>
                 </content>
             </control>
-            <control type="group" id="9010">
+            <control type="group" id="9110">
                 <!--9000 1-->
                 <control type="panel" id="9001">
                     <visible>Container(9000).HasFocus(1)</visible>
@@ -972,12 +976,12 @@
                                 <icon>special://skin/backgrounds/Favourites.jpg</icon>
                                 <thumb>$INFO[Skin.String(Favourites.Background)]</thumb>
                             </item>
-                            <item id="7">
+                            <!-- <item id="7">
                                 <label>$LOCALIZE[8]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Weather.jpg</icon>
                                 <thumb>$INFO[Skin.String(Weather.Background)]</thumb>
-                            </item>
+                            </item> -->
                             <item id="8">
                                 <visible>!Skin.HasSetting(Addons.Hide)</visible>
                                 <label>$LOCALIZE[24001]</label>
@@ -1208,7 +1212,7 @@
                         <ondown>9004</ondown>
                         <control type="button" id="300">
                             <description>Single Image button</description>
-                            <width>450</width>
+                            <!-- <width>450</width> -->
                             <label>$LOCALIZE[1030]</label>
                             <onclick condition="Container(9004).HasFocus(0)">Skin.SetImage(Default.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(1)">Skin.SetImage(Videos.Background)</onclick>
@@ -1217,7 +1221,7 @@
                             <onclick condition="Container(9004).HasFocus(4)">Skin.SetImage(Music.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(5)">Skin.SetImage(Pictures.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(6)">Skin.SetImage(Favourites.Background)</onclick>
-                            <onclick condition="Container(9004).HasFocus(7)">Skin.SetImage(Weather.Background)</onclick>
+                            <!-- <onclick condition="Container(9004).HasFocus(7)">Skin.SetImage(Weather.Background)</onclick> -->
                             <onclick condition="Container(9004).HasFocus(8)">Skin.SetImage(Addons.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(9)">Skin.SetImage(Settings.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(10)">Skin.SetImage(DVD.Background)</onclick>
@@ -1246,7 +1250,7 @@
                             <onclick condition="Container(9004).HasFocus(69)">Skin.SetImage(Plexbmc.9.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(70)">Skin.SetImage(Plexbmc.10.Background)</onclick>
                         </control>
-                        <!-- <control type="button" id="301">
+                        <control type="button" id="301">
                             <description>Multi Image button</description>
                             <label>$LOCALIZE[31114]</label>
                             <onclick condition="Container(9004).HasFocus(0)">Skin.SetPath(Default.Background)</onclick>
@@ -1256,7 +1260,7 @@
                             <onclick condition="Container(9004).HasFocus(4)">Skin.SetPath(Music.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(5)">Skin.SetPath(Pictures.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(6)">Skin.SetPath(Favourites.Background)</onclick>
-                            <onclick condition="Container(9004).HasFocus(7)">Skin.SetPath(Weather.Background)</onclick>
+                            <!-- <onclick condition="Container(9004).HasFocus(7)">Skin.SetPath(Weather.Background)</onclick> -->
                             <onclick condition="Container(9004).HasFocus(8)">Skin.SetPath(Addons.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(9)">Skin.SetPath(Settings.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(10)">Skin.SetPath(DVD.Background)</onclick>
@@ -1284,11 +1288,11 @@
                             <onclick condition="Container(9004).HasFocus(68)">Skin.SetPath(Plexbmc.8.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(69)">Skin.SetPath(Plexbmc.9.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(70)">Skin.SetPath(Plexbmc.10.Background)</onclick>
-                        </control> -->
+                        </control>
                         <control type="button" id="302">
                             <description>Default Image button</description>
                             <label>$LOCALIZE[571]</label>
-                            <width>450</width>
+                            <!-- <width>450</width> -->
                             <onclick condition="Container(9004).HasFocus(0)">Skin.Reset(Default.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(1)">Skin.Reset(Videos.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(2)">Skin.Reset(Movies.Background)</onclick>
@@ -1296,7 +1300,7 @@
                             <onclick condition="Container(9004).HasFocus(4)">Skin.Reset(Music.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(5)">Skin.Reset(Pictures.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(6)">Skin.Reset(Favourites.Background)</onclick>
-                            <onclick condition="Container(9004).HasFocus(7)">Skin.Reset(Weather.Background)</onclick>
+                            <!-- <onclick condition="Container(9004).HasFocus(7)">Skin.Reset(Weather.Background)</onclick> -->
                             <onclick condition="Container(9004).HasFocus(8)">Skin.Reset(Addons.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(9)">Skin.Reset(Settings.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(10)">Skin.Reset(DVD.Background)</onclick>
@@ -1324,6 +1328,439 @@
                             <onclick condition="Container(9004).HasFocus(68)">Skin.Reset(Plexbmc.8.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(69)">Skin.Reset(Plexbmc.9.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(70)">Skin.Reset(Plexbmc.10.Background)</onclick>
+                        </control>
+                    </control>
+                </control>
+                <!--9000 10-->
+                <control type="group">
+                    <posx>128</posx>
+                    <posy>382</posy>
+                    <visible>Container(9000).Hasfocus(10)</visible>
+                    <control type="list" id="9010">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>1231</width>
+                        <height>73</height>
+                        <onleft>300</onleft>
+                        <onright>9000</onright>
+                        <onup>9010</onup>
+                        <ondown>9010</ondown>
+                        <pagecontrol>-</pagecontrol>
+                        <scrolltime>0</scrolltime>
+                        <itemlayout height="1" width="1231"/>
+                        <focusedlayout height="73" width="1231">
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <height>73</height>
+                                <width>1231</width>
+                                <texture border="3">list/bg_facade_nofocus.png</texture>
+                            </control>
+                            <control type="image">
+                                <visible>Control.HasFocus(9010)</visible>
+                                <posx>0</posx>
+                                <posy>0</posy>
+                                <height>73</height>
+                                <width>1231</width>
+                                <texture border="3">list/bg_facade_focus.png</texture>
+                            </control>
+                            <control type="label" description="Main Label">
+                                <posx>TextMargin</posx>
+                                <height>71</height>
+                                <width>730</width>
+                                <font>FacadeListMainFont</font>
+                                <textcolor>ListNoFocusColor</textcolor>
+                                <label>$LOCALIZE[513] - $LOCALIZE[20019]</label>
+                            </control>
+                            <control type="label" description="Label2">
+                                <posx>TextMarginR</posx>
+                                <height>71</height>
+                                <width>530</width>
+                                <font>FacadeListMainFont</font>
+                                <textcolor>MainColor</textcolor>
+                                <align>right</align>
+                                <label>$INFO[ListItem.Label]</label>
+                            </control>
+                        </focusedlayout>
+                        <content>
+                            <!-- <item id="0">
+                                <label>$LOCALIZE[571]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/default/default.jpg</icon>
+                                <thumb>$INFO[Skin.String(Default.Icon)]</thumb>
+                            </item> -->
+                            <item id="1">
+                                <label>$LOCALIZE[3]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Videos.jpg</icon>
+                                <thumb>$INFO[Skin.String(Videos.Icon)]</thumb>
+                            </item>
+                            <item id="2">
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
+                                <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
+                                <label>$LOCALIZE[20342]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Movies.jpg</icon>
+                                <thumb>$INFO[Skin.String(Movies.Icon)]</thumb>
+                            </item>
+                            <item id="3">
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
+                                <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
+                                <label>$LOCALIZE[20343]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/TVShows.jpg</icon>
+                                <thumb>$INFO[Skin.String(TVShows.Icon)]</thumb>
+                            </item>
+                            <item id="4">
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
+                                <visible>!Skin.HasSetting(Music.Hide)</visible>
+                                <label>$LOCALIZE[2]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Music.jpg</icon>
+                                <thumb>$INFO[Skin.String(Music.Icon)]</thumb>
+                            </item>
+                            <item id="13">
+                                <visible>Skin.HasSetting(Clips.Show)</visible>
+                                <label>$LOCALIZE[31972]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Clips.jpg</icon>
+                                <thumb>$INFO[Skin.String(Clips.Icon)]</thumb>
+                            </item>
+                            <item id="14">
+                                <visible>Skin.HasSetting(Concerts.Show)</visible>
+                                <label>$LOCALIZE[31971]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Concerts.jpg</icon>
+                                <thumb>$INFO[Skin.String(Concerts.Icon)]</thumb>
+                            </item>
+                            <item id="5">
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
+                                <visible>!Skin.HasSetting(Pictures.Hide)</visible>
+                                <label>$LOCALIZE[1]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Pictures.jpg</icon>
+                                <thumb>$INFO[Skin.String(Pictures.Icon)]</thumb>
+                            </item>
+                            <item id="6">
+                                <visible>!Skin.HasSetting(Favourites.Hide)</visible>
+                                <label>$LOCALIZE[1036]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Favourites.jpg</icon>
+                                <thumb>$INFO[Skin.String(Favourites.Icon)]</thumb>
+                            </item>
+                            <!-- <item id="7">
+                                <label>$LOCALIZE[8]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Weather.jpg</icon>
+                                <thumb>$INFO[Skin.String(Weather.Icon)]</thumb>
+                            </item> -->
+                            <item id="8">
+                                <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                                <label>$LOCALIZE[24001]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Addons.jpg</icon>
+                                <thumb>$INFO[Skin.String(Addons.Icon)]</thumb>
+                            </item>
+                            <item id="9">
+                                <label>$LOCALIZE[5]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Settings.jpg</icon>
+                                <thumb>$INFO[Skin.String(Settings.Icon)]</thumb>
+                            </item>
+                            <item id="10">
+                                <visible>!Skin.HasSetting(DVD.Hide)</visible>
+                                <label>$LOCALIZE[427]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Dvds.jpg</icon>
+                                <thumb>$INFO[Skin.String(DVD.Icon)]</thumb>
+                            </item>
+                            <item id="11">
+                                <visible>!Skin.HasSetting(Quit.Hide)</visible>
+                                <label>$LOCALIZE[13009]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Quit.jpg</icon>
+                                <thumb>$INFO[Skin.String(Quit.Icon)]</thumb>
+                            </item>
+                            <item id="12">
+                                <visible>System.GetBool(pvrmanager.enabled)</visible>
+                                <label>31500</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Pvr.jpg</icon>
+                                <thumb>$INFO[Skin.String(Pvr.Icon)]</thumb>
+                            </item>
+                            <item id="21">
+                                <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
+                                <label>$INFO[Skin.String(CustomHome.1.Label)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/default/default.jpg</icon>
+                                <thumb>$INFO[Skin.String(CustomHome.1.Icon)]</thumb>
+                            </item>
+                            <item id="22">
+                                <visible>!IsEmpty(Skin.String(CustomHome.2.Path))</visible>
+                                <label>$INFO[Skin.String(CustomHome.2.Label)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/default/default.jpg</icon>
+                                <thumb>$INFO[Skin.String(CustomHome.2.Icon)]</thumb>
+                            </item>
+                            <item id="23">
+                                <visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>
+                                <label>$INFO[Skin.String(CustomHome.3.Label)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/default/default.jpg</icon>
+                                <thumb>$INFO[Skin.String(CustomHome.3.Icon)]</thumb>
+                            </item>
+                            <item id="24">
+                                <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
+                                <label>$INFO[Skin.String(CustomHome.4.Label)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/default/default.jpg</icon>
+                                <thumb>$INFO[Skin.String(CustomHome.4.Icon)]</thumb>
+                            </item>
+                            <item id="25">
+                                <visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>
+                                <label>$INFO[Skin.String(CustomHome.5.Label)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/default/default.jpg</icon>
+                                <thumb>$INFO[Skin.String(CustomHome.5.Icon)]</thumb>
+                            </item>
+                            <item id="26">
+                                <visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>
+                                <label>$INFO[Skin.String(CustomHome.6.Label)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/default/default.jpg</icon>
+                                <thumb>$INFO[Skin.String(CustomHome.6.Icon)]</thumb>
+                            </item>
+                            <item id="27">
+                                <visible>!IsEmpty(Skin.String(CustomHome.7.Path))</visible>
+                                <label>$INFO[Skin.String(CustomHome.7.Label)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/default/default.jpg</icon>
+                                <thumb>$INFO[Skin.String(CustomHome.7.Icon)]</thumb>
+                            </item>
+                            <item id="28">
+                                <visible>!IsEmpty(Skin.String(CustomHome.8.Path))</visible>
+                                <label>$INFO[Skin.String(CustomHome.8.Label)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/default/default.jpg</icon>
+                                <thumb>$INFO[Skin.String(CustomHome.8.Icon)]</thumb>
+                            </item>
+                            <item id="29">
+                                <visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>
+                                <label>$INFO[Skin.String(CustomHome.9.Label)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/default/default.jpg</icon>
+                                <thumb>$INFO[Skin.String(CustomHome.9.Icon)]</thumb>
+                            </item>
+                            <item id="60">
+                                <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.0.title))</visible>
+                                <label>$INFO[Window(Home).Property(plexbmc.0.title)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>$INFO[Window(Home).Property(plexbmc.0.art)]</icon>
+                                <thumb>$INFO[Skin.String(Plexbmc.0.Icon)]</thumb>
+                            </item>
+                            <item id="61">
+                                <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.1.title))</visible>
+                                <label>$INFO[Window(Home).Property(plexbmc.1.title)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>$INFO[Window(Home).Property(plexbmc.1.art)]</icon>
+                                <thumb>$INFO[Skin.String(Plexbmc.1.Icon)]</thumb>
+                            </item>
+                            <item id="62">
+                                <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.2.title))</visible>
+                                <label>$INFO[Window(Home).Property(plexbmc.2.title)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>$INFO[Window(Home).Property(plexbmc.2.art)]</icon>
+                                <thumb>$INFO[Skin.String(Plexbmc.2.Icon)]</thumb>
+                            </item>
+                            <item id="63">
+                                <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.3.title))</visible>
+                                <label>$INFO[Window(Home).Property(plexbmc.3.title)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>$INFO[Window(Home).Property(plexbmc.3.art)]</icon>
+                                <thumb>$INFO[Skin.String(Plexbmc.3.Icon)]</thumb>
+                            </item>
+                            <item id="64">
+                                <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.4.title))</visible>
+                                <label>$INFO[Window(Home).Property(plexbmc.4.title)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>$INFO[Window(Home).Property(plexbmc.4.art)]</icon>
+                                <thumb>$INFO[Skin.String(Plexbmc.4.Icon)]</thumb>
+                            </item>
+                            <item id="65">
+                                <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.5.title))</visible>
+                                <label>$INFO[Window(Home).Property(plexbmc.5.title)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>$INFO[Window(Home).Property(plexbmc.5.art)]</icon>
+                                <thumb>$INFO[Skin.String(Plexbmc.5.Icon)]</thumb>
+                            </item>
+                            <item id="66">
+                                <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.6.title))</visible>
+                                <label>$INFO[Window(Home).Property(plexbmc.6.title)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>$INFO[Window(Home).Property(plexbmc.6.art)]</icon>
+                                <thumb>$INFO[Skin.String(Plexbmc.6.Icon)]</thumb>
+                            </item>
+                            <item id="67">
+                                <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.7.title))</visible>
+                                <label>$INFO[Window(Home).Property(plexbmc.7.title)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>$INFO[Window(Home).Property(plexbmc.7.art)]</icon>
+                                <thumb>$INFO[Skin.String(Plexbmc.7.Icon)]</thumb>
+                            </item>
+                            <item id="68">
+                                <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.8.title))</visible>
+                                <label>$INFO[Window(Home).Property(plexbmc.8.title)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>$INFO[Window(Home).Property(plexbmc.8.art)]</icon>
+                                <thumb>$INFO[Skin.String(Plexbmc.8.Icon)]</thumb>
+                            </item>
+                            <item id="69">
+                                <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.9.title))</visible>
+                                <label>$INFO[Window(Home).Property(plexbmc.9.title)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>$INFO[Window(Home).Property(plexbmc.9.art)]</icon>
+                                <thumb>$INFO[Skin.String(Plexbmc.9.Icon)]</thumb>
+                            </item>
+                            <item id="70">
+                                <visible>Skin.HasSetting(plexbmc) + !IsEmpty(Window(Home).Property(plexbmc.10.title))</visible>
+                                <label>$INFO[Window(Home).Property(plexbmc.10.title)]</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>$INFO[Window(Home).Property(plexbmc.10.art)]</icon>
+                                <thumb>$INFO[Skin.String(Plexbmc.10.Icon)]</thumb>
+                            </item>
+                        </content>
+                    </control>
+                    <control type="image">
+                        <posx>95</posx>
+                        <posy>80</posy>
+                        <height>609</height>
+                        <width>1041</width>
+                        <texture border="27">common/JewelCase.png</texture>
+                    </control>
+                    <control type="multiimage">
+                        <posx>122</posx>
+                        <posy>107</posy>
+                        <width>987</width>
+                        <height>555</height>
+                        <imagepath background="true">$INFO[Container(9010).ListItem.Icon]</imagepath>
+                        <timeperimage>6000</timeperimage>
+                        <randomize>true</randomize>
+                        <fadetime>500</fadetime>
+                    </control>
+                    <control type="label">
+                        <posx>122</posx>
+                        <posy>680</posy>
+                        <width>987</width>
+                        <height>50</height>
+                        <align>center</align>
+                        <haspath>yes</haspath>
+                        <font>OSDFont</font>
+                        <label fallback="571">$INFO[Container(9010).ListItem.Thumb]</label>
+                    </control>
+                </control>
+                <control type="group">
+                    <posx>128</posx>
+                    <posy>790</posy>
+                    <visible>Container(9000).HasFocus(10)</visible>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>250</posy>
+                        <width>1231</width>
+                        <height>79</height>
+                        <texture>list/bg_facade_nofocus_top.png</texture>
+                    </control>
+                    <control type="grouplist">
+                        <posx>0</posx>
+                        <posy>336</posy>
+                        <width>1231</width>
+                        <height>90</height>
+                        <itemgap>30</itemgap>
+                        <aligny>bottom</aligny>
+                        <align>center</align>
+                        <orientation>horizontal</orientation>
+                        <onleft>9000</onleft>
+                        <onright>9000</onright>
+                        <onup>9010</onup>
+                        <ondown>9010</ondown>
+                        <control type="button" id="300">
+                            <description>Single Image button</description>
+                            <width>450</width>
+                            <label>$LOCALIZE[1030]</label>
+                            <onclick condition="Container(9010).HasFocus(0)">Skin.SetImage(Default.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(1)">Skin.SetImage(Videos.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(2)">Skin.SetImage(Movies.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(3)">Skin.SetImage(TVShows.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(4)">Skin.SetImage(Music.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(5)">Skin.SetImage(Pictures.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(6)">Skin.SetImage(Favourites.Icon)</onclick>
+                            <!-- <onclick condition="Container(9010).HasFocus(7)">Skin.SetImage(Weather.Icon)</onclick> -->
+                            <onclick condition="Container(9010).HasFocus(8)">Skin.SetImage(Addons.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(9)">Skin.SetImage(Settings.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(10)">Skin.SetImage(DVD.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(11)">Skin.SetImage(Quit.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(12)">Skin.SetImage(Pvr.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(13)">Skin.SetImage(Clips.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(14)">Skin.SetImage(Concerts.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(21)">Skin.SetImage(CustomHome.1.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(22)">Skin.SetImage(CustomHome.2.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(23)">Skin.SetImage(CustomHome.3.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(24)">Skin.SetImage(CustomHome.4.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(25)">Skin.SetImage(CustomHome.5.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(26)">Skin.SetImage(CustomHome.6.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(27)">Skin.SetImage(CustomHome.7.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(28)">Skin.SetImage(CustomHome.8.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(29)">Skin.SetImage(CustomHome.9.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(60)">Skin.SetImage(Plexbmc.0.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(61)">Skin.SetImage(Plexbmc.1.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(62)">Skin.SetImage(Plexbmc.2.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(63)">Skin.SetImage(Plexbmc.3.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(64)">Skin.SetImage(Plexbmc.4.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(65)">Skin.SetImage(Plexbmc.5.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(66)">Skin.SetImage(Plexbmc.6.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(67)">Skin.SetImage(Plexbmc.7.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(68)">Skin.SetImage(Plexbmc.8.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(69)">Skin.SetImage(Plexbmc.9.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(70)">Skin.SetImage(Plexbmc.10.Icon)</onclick>
+                        </control>
+                        <control type="button" id="302">
+                            <description>Default Image button</description>
+                            <label>$LOCALIZE[571]</label>
+                            <width>450</width>
+                            <onclick condition="Container(9010).HasFocus(0)">Skin.Reset(Default.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(1)">Skin.Reset(Videos.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(2)">Skin.Reset(Movies.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(3)">Skin.Reset(TVShows.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(4)">Skin.Reset(Music.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(5)">Skin.Reset(Pictures.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(6)">Skin.Reset(Favourites.Icon)</onclick>
+                            <!-- <onclick condition="Container(9010).HasFocus(7)">Skin.Reset(Weather.Icon)</onclick> -->
+                            <onclick condition="Container(9010).HasFocus(8)">Skin.Reset(Addons.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(9)">Skin.Reset(Settings.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(10)">Skin.Reset(DVD.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(11)">Skin.Reset(Quit.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(12)">Skin.Reset(Pvr.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(13)">Skin.Reset(Clips.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(14)">Skin.Reset(Concerts.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(21)">Skin.Reset(CustomHome.1.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(22)">Skin.Reset(CustomHome.2.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(23)">Skin.Reset(CustomHome.3.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(24)">Skin.Reset(CustomHome.4.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(25)">Skin.Reset(CustomHome.5.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(26)">Skin.Reset(CustomHome.6.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(27)">Skin.Reset(CustomHome.7.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(28)">Skin.Reset(CustomHome.8.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(29)">Skin.Reset(CustomHome.9.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(60)">Skin.Reset(Plexbmc.0.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(61)">Skin.Reset(Plexbmc.1.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(62)">Skin.Reset(Plexbmc.2.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(63)">Skin.Reset(Plexbmc.3.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(64)">Skin.Reset(Plexbmc.4.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(65)">Skin.Reset(Plexbmc.5.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(66)">Skin.Reset(Plexbmc.6.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(67)">Skin.Reset(Plexbmc.7.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(68)">Skin.Reset(Plexbmc.8.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(69)">Skin.Reset(Plexbmc.9.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(70)">Skin.Reset(Plexbmc.10.Icon)</onclick>
                         </control>
                     </control>
                 </control>
@@ -2388,7 +2825,6 @@
                 </control>
             </control>
         </control>
-
         <!-- <control type="scrollbar" id="63">
             <visible>Control.IsVisible(9003)</visible>
             <posx>1518</posx>

@@ -5,13 +5,13 @@
         <value condition="Player.ChapterCount">  •  $LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
     </variable>
     <variable name="Overlay" description="Overlay image">
-      <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
-      <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$INFO[ListItem.property(overlay)]</value>
-      <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)">-</value>
-      <value condition="Skin.HasSetting(Hide_Unwatched_Marks)">$INFO[ListItem.Overlay,overlay_watched/]</value>
-      <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
-      <value condition="Skin.HasSetting(Hide_Watched_Marks)">$INFO[ListItem.Overlay,overlay_unwatched/]</value>
-      <value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
+        <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
+        <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$INFO[ListItem.property(overlay)]</value>
+        <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)">-</value>
+        <value condition="Skin.HasSetting(Hide_Unwatched_Marks)">$INFO[ListItem.Overlay,overlay_watched/]</value>
+        <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
+        <value condition="Skin.HasSetting(Hide_Watched_Marks)">$INFO[ListItem.Overlay,overlay_unwatched/]</value>
+        <value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
     </variable>
     <variable name="Banner" description="TV Banners">
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(tvshows)]">DefaultFolderBackBanner.png</value>
@@ -187,6 +187,7 @@
     <variable name="Fanart.Art" description="Calculate BG to show">
         <value condition="!IsEmpty(ListItem.Art(fanart))">$INFO[ListItem.Art(fanart)]</value>
         <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+        <!-- <value condition="[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)]">$INFO[Skin.String(TVShows.Background)]</value> -->
         <!-- <value condition="[IsEmpty(Skin.String(Default.Background))|IsEmpty(ListItem.Art(fanart))]+[Container.content(movies)]">special://skin/backgrounds/Movies.jpg</value>
         <value condition="[IsEmpty(Skin.String(Default.Background))|IsEmpty(ListItem.Art(fanart))]+[Container.content(seasons)|Container.content(episodes)|Container.content(tvshows)]">special://skin/backgrounds/TVShows.jpg</value> -->
         <value condition="[IsEmpty(Skin.String(Default.Background))|IsEmpty(ListItem.Art(fanart))]+[Container.content(Addons)|Window.IsActive(CustomAddons.xml)|Window.IsActive(myPrograms.xml)]+!StringCompare(ListItem.Label,..)">special://skin/backgrounds/Addons.jpg</value>

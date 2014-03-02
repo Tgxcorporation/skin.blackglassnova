@@ -108,7 +108,7 @@ msgstr ""
 
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
-msgstr ""
+msgstr "Modifica sfondo per tipologia"
 
 #empty strings from id 31111 to 31112
 

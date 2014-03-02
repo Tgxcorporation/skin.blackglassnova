@@ -756,6 +756,7 @@
             <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.1.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.1.Path)]</onclick>
         </item>
         <item id="1" description="Pictures">
@@ -763,24 +764,28 @@
             <visible>!Skin.HasSetting(Pictures.Hide)</visible>
             <label>$LOCALIZE[1]</label>
             <thumb fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Icon)]</icon>
             <onclick>ActivateWindow(Pictures,root)</onclick>
         </item>
         <item id="22" description="Custom2">
             <visible>!IsEmpty(Skin.String(CustomHome.2.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.2.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.2.Path)]</onclick>
         </item>
         <item id="2" description="Addons">
             <visible>!Skin.HasSetting(Addons.Hide)</visible>
             <label>$LOCALIZE[24001]</label>
             <thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Icon)]</icon>
             <onclick>ActivateWindow(1119)</onclick>
         </item>
         <item id="23" description="Custom3">
             <visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.3.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.3.Path)]</onclick>
         </item>
         <item id="3" description="Videos">
@@ -788,12 +793,14 @@
             <visible>!Skin.HasSetting(Videos.Hide)</visible>
             <label>$LOCALIZE[3]</label>
             <thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Icon)]</icon>
             <onclick>ActivateWindow(Videos,root)</onclick>
         </item>
         <item id="24" description="Custom.4">
             <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.4.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.4.Path)]</onclick>
         </item>
         <item id="4" description="MyMovies">
@@ -801,12 +808,14 @@
             <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
             <label>$LOCALIZE[20342]</label>
             <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Icon)]</icon>
             <onclick>$VAR[MovieEntryPoint]</onclick>
         </item>
         <item id="25" description="Custom.5">
             <visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.5.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.5.Path)]</onclick>
         </item>
         <item id="5" description="MyTV">
@@ -814,12 +823,14 @@
             <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
             <label>$LOCALIZE[20343]</label>
             <thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Icon)]</icon>
             <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
         </item>
         <item id="26" description="Custom.6">
             <visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.6.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.6.Path)]</onclick>
         </item>
         <item id="6" description="Music">
@@ -827,6 +838,7 @@
             <visible>!Skin.HasSetting(Music.Hide)</visible>
             <label>$LOCALIZE[2]</label>
             <thumb fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Icon)]</icon>
             <onclick condition="Library.HasContent(Music) + !Skin.HasSetting(ArtistView)">ActivateWindow(MusicLibrary,root)</onclick>
             <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,root)</onclick>
             <onclick condition="Library.HasContent(Music) + Skin.HasSetting(ArtistView)">ActivateWindow(MusicLibrary,Artists)</onclick>
@@ -835,6 +847,7 @@
             <visible>!IsEmpty(Skin.String(CustomHome.7.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.7.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.7.Path)]</onclick>
         </item>
         <item id="13" description="Clips">
@@ -842,6 +855,7 @@
             <visible>Skin.HasSetting(Clips.Show) + Library.HasContent(MusicVideos)</visible>
             <label>$LOCALIZE[31972]</label>
             <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Icon)]</icon>
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/")</onclick>
             <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/")</onclick>
         </item>
@@ -850,36 +864,42 @@
             <visible>Skin.HasSetting(Concerts.Show) + Library.HasContent(MusicVideos)</visible>
             <label>$LOCALIZE[31971]</label>
             <thumb fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Icon)]</icon>
             <onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
         </item>
         <item id="28" description="Custom.8">
             <visible>!IsEmpty(Skin.String(CustomHome.8.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.8.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.8.Path)]</onclick>
         </item>
         <item id="300" description="PVR">
             <visible>System.GetBool(pvrmanager.enabled)</visible>
             <label>$LOCALIZE[31500]</label>
             <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Icon)]</icon>
             <onclick>ActivateWindowAndFocus(PVR)</onclick>
         </item>
         <item id="7" description="Favorites">
             <visible>!Skin.HasSetting(Favourites.Hide)</visible>
             <label>$LOCALIZE[1036]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(Favourites.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(Favourites.Icon)]</icon>
             <onclick>ActivateWindow(Favourites)</onclick>
         </item>
         <item id="29" description="Custom.9">
             <visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.9.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.9.Path)]</onclick>
         </item>
         <item id="8" description="DVD">
             <visible>System.HasMediaDVD + !Skin.HasSetting(DVD.Hide)</visible>
             <label>$LOCALIZE[427]</label>
             <thumb fallback="special://skin/backgrounds/Dvds.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Dvds.jpg">$INFO[Skin.String(DVD.Icon)]</icon>
             <onclick condition="System.HasMediaDvd">PlayDVD()</onclick>
             <onclick condition="!System.HasMediaDvd">Notification($LOCALIZE[164],$LOCALIZE[219],5,DefaultIconWarning.png)</onclick>
         </item>
@@ -887,6 +907,7 @@
             <visible>!Skin.HasSetting(Weather.Hide)</visible>
             <label>$LOCALIZE[8]</label>
             <thumb fallback="special://skin/backgrounds/Weather.jpg">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</thumb>
+            <icon fallback="special://skin/backgrounds/Weather.jpg">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</icon>
             <!-- <thumb fallback="special://skin/backgrounds/Weather.jpg">$INFO[Skin.String(Weather.Background)]</thumb> -->
             <onclick>ActivateWindow(Weather)</onclick>
         </item>
@@ -894,12 +915,14 @@
             <visible>!Skin.HasSetting(QuitMenu_Show_Settings)</visible>
             <label>$LOCALIZE[5]</label>
             <thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Icon)]</icon>
             <onclick>ActivateWindow(Settings)</onclick>
         </item>
         <item id="11" description="Quit">
             <visible>!Skin.HasSetting(Quit.Hide)</visible>
             <label fallback="13009">$VAR[QuitLabel2]</label>
             <thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Icon)]</icon>
             <onclick>$VAR[QuitAction]</onclick>
         </item>
     </include>

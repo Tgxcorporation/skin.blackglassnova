@@ -112,7 +112,7 @@
                             <posy>11</posy>
                             <width>384</width>
                             <height>239</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
+                            <texture>$INFO[ListItem.ActualIcon]</texture>
                             <include>ThumbBorder</include>
                             <colordiffuse>UnfocusedIconColor</colordiffuse>
                         </control>
@@ -121,7 +121,7 @@
                             <posy>255</posy>
                             <width>330</width>
                             <height>185</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Icon]</texture>
+                            <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.ActualIcon]</texture>
                             <colordiffuse>UnfocusedIconColor</colordiffuse>
                         </control>
                         <control type="image" description="Thumb">
@@ -139,7 +139,7 @@
                             <posy>0</posy>
                             <width>424</width>
                             <height>262</height>
-                            <texture>$INFO[ListItem.Icon]</texture>
+                            <texture>$INFO[ListItem.ActualIcon]</texture>
                             <include>ThumbBorderOverlay</include>
                         </control>
                         <control type="image" description="Thumb">
@@ -147,7 +147,7 @@
                             <posy>270</posy>
                             <width>370</width>
                             <height>208</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Icon]</texture>
+                            <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.ActualIcon]</texture>
                         </control>
                         <control type="image" description="Thumb">
                             <posx>15</posx>
