@@ -1380,12 +1380,14 @@
             <visible>Skin.HasSetting(plexbmc) + !Skin.HasSetting(Channels.Hide)</visible>
             <label>$LOCALIZE[31975]</label>
             <thumb>special://skin/backgrounds/Channels.jpg</thumb>
+            <icon>special://skin/backgrounds/Channels.jpg</icon>
             <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
         </item>
         <item id="49" description="Queue">
             <visible>Skin.HasSetting(plexbmc) + !Skin.HasSetting(Queue.Hide)</visible>
             <label>$LOCALIZE[31010]</label>
-            <thumb fallback="special://skin/backgrounds/Network.jpg">$INFO[Skin.String(Network.Background)]</thumb>
+            <thumb>special://skin/backgrounds/queue.jpg</thumb>
+            <icon>special://skin/backgrounds/queue.jpg</icon>
             <onclick>$INFO[Window(Home).Property(plexbmc.queue)]</onclick>
             <visible>!IsEmpty(Window(Home).Property(plexbmc.myplex))</visible>
         </item>

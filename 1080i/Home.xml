@@ -13,7 +13,7 @@
             <include>Dimensions_Fullscreen</include>
             <timeperimage>12000</timeperimage>
             <fadetime>400</fadetime>
-            <imagepath background="true">$INFO[Container(300).ListItem.Thumb]</imagepath>
+            <imagepath background="true">$INFO[Container(300).ListItem.Icon]</imagepath>
             <randomize>true</randomize>
             <aspectratio aligny="top">scale</aspectratio>
         </control>
