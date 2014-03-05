@@ -69,6 +69,7 @@
                 <height>210</height>
                 <align>justify</align>
                 <label>$INFO[VideoPlayer.Plot]</label>
+                <textcolor>AlternateBrightColor</textcolor>
                 <font>InfoPlotFont</font>
             </control>
             <control type="image">
