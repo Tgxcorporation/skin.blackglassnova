@@ -1160,6 +1160,11 @@
             <label>$LOCALIZE[19069]</label>
             <onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
         </item>
+        <item id="90150">
+            <visible>Container(300).HasFocus(300)</visible>
+            <label>$LOCALIZE[19069]</label>
+            <onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
+        </item>
         <!--         <item id="50" description="Reload skin">
             <visible>Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[20183]</label>
@@ -1180,10 +1185,20 @@
             <label>$LOCALIZE[10003]</label>
             <onclick>activatewindow(filemanager)</onclick>
         </item>
-        <item id="90147" description="Sys Info">
-            <visible>Container(300).HasFocus(10)</visible>
-            <label>$LOCALIZE[138]</label>
-            <onclick>activatewindow(systeminfo)</onclick>
+        <item id="90200" description="Weather">
+            <visible>Container(300).HasFocus(15)</visible>
+            <label>$INFO[Weather.Location]</label>
+            <onclick>activatewindow(weather)</onclick>
+        </item>
+        <item id="90201" description="Weather">
+            <visible>Container(300).HasFocus(15)</visible>
+            <label>$INFO[Weather.Conditions]</label>
+            <onclick>activatewindow(weather)</onclick>
+        </item>
+        <item id="90202" description="Weather">
+            <visible>Container(300).HasFocus(15)</visible>
+            <label>$INFO[Weather.Temperature]</label>
+            <onclick>activatewindow(weather)</onclick>
         </item>
         <include condition="System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
     </include>
