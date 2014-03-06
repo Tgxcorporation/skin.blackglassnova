@@ -20,4 +20,9 @@
         <color name="FacadeOverlayColor">15ffffff</color>
         <color name="WarningColor">FFfe3737</color>
 		<color name="ShadowColor">FF000000</color>
+        <!-- ADDON COMPATIBILITY -->
+        <color name="white">FFFFFF</color>
+        <color name="grey">FFaaaaaa</color>
+        <color name="black">FF000000</color>
+        <color name="blue">FFcccccc</color>
 </colors>
