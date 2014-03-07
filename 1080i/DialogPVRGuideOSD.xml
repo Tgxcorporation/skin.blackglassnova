@@ -110,7 +110,7 @@
                         <height>71</height>
                         <width>300</width>
                         <align>right</align>
-                        <font>FacadePanelFont</font>
+                        <font>FacadeListMainFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$INFO[ListItem.StartTime]</label>
                     </control>
@@ -162,7 +162,7 @@
                         <height>71</height>
                         <width>300</width>
                         <align>right</align>
-                        <font>FacadePanelFont</font>
+                        <font>FacadeListMainFont</font>
                         <textcolor>SublistFocusColor</textcolor>
                         <label>$INFO[ListItem.StartTime]</label>
                     </control>

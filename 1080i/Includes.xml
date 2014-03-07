@@ -1160,11 +1160,6 @@
             <label>$LOCALIZE[19069]</label>
             <onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
         </item>
-        <item id="90150">
-            <visible>Container(300).HasFocus(300)</visible>
-            <label>$LOCALIZE[19069]</label>
-            <onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
-        </item>
         <!--         <item id="50" description="Reload skin">
             <visible>Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[20183]</label>
