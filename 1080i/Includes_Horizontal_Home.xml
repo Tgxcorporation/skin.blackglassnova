@@ -35,20 +35,24 @@
                 <include condition="Skin.HasSetting(Shelf.Delay)">Shelf_Delay</include>
                 <posy>-105</posy>
                 <control type="image" description="BG XBMC only">
-                    <visible>!Skin.HasSetting(plexbmc) + [Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | Control.IsVisible(311)  | Control.IsVisible(312) | Control.IsVisible(411) | Control.IsVisible(413) | Control.IsVisible(511) | Control.IsVisible(513) | Control.IsVisible(514) | Control.IsVisible(515) | Control.IsVisible(412) | Control.IsVisible(512)]</visible>
+                    <visible>!Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | Control.Hasfocus(311)  | Control.Hasfocus(312) | Control.Hasfocus(411) | Control.Hasfocus(413) | Control.Hasfocus(511) | Control.Hasfocus(513) | Control.Hasfocus(514) | Control.Hasfocus(515) | Control.Hasfocus(412) | Control.Hasfocus(512)]</visible>
+                    <animation effect="fade" time="100" start="100" end="0">hidden</animation>
+                    <animation effect="fade" time="100" start="0" end="100">visible</animation>
                     <posx>-200</posx>
                     <posy>200</posy>
                     <width>2320</width>
-                    <height>520</height>
-                    <texture border="83">common/bg_dialog.png</texture>
+                    <height>540</height>
+                    <texture>common/shelf_gradient.png</texture>
                 </control>
                 <control type="image" description="BG Plexbmc only">
-                    <visible>Skin.HasSetting(plexbmc) + [Control.IsVisible(111) | Control.IsVisible(211) | Control.IsVisible(212) | IntegerGreaterThan(Container(311).NumItems,0) | IntegerGreaterThan(Container(312).NumItems,0) | IntegerGreaterThan(Container(411).NumItems,0) | IntegerGreaterThan(Container(413).NumItems,0) | Control.IsVisible(511) | Control.IsVisible(900)]</visible>
+                    <visible>Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | [IntegerGreaterThan(Container(311).NumItems,0) + Control.Hasfocus(311)]| [IntegerGreaterThan(Container(312).NumItems,0) + Control.Hasfocus(312)] | [IntegerGreaterThan(Container(411).NumItems,0) + Control.Hasfocus(411)] | [IntegerGreaterThan(Container(413).NumItems,0) + Control.Hasfocus(413)] | Control.Hasfocus(511) | Control.Hasfocus(900)]</visible>
+                    <animation effect="fade" time="100" start="100" end="0">hidden</animation>
+                    <animation effect="fade" time="100" start="0" end="100">visible</animation>
                     <posx>-200</posx>
                     <posy>200</posy>
                     <width>2320</width>
-                    <height>520</height>
-                    <texture border="83">common/bg_dialog.png</texture>
+                    <height>540</height>
+                    <texture>common/shelf_gradient.png</texture>
                 </control>
                 <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
                 <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>

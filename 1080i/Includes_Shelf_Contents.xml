@@ -1,53 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="Favourite.List">
-        <control type="label" description="Header">
-            <visible>Control.IsVisible(111)</visible>
-            <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-            <include>Square_Header</include>
-            <label>$INFO[Container(111).ListItem.Property(ItemType)]</label>
-        </control>
-        <control type="panel" id="111" description="Favourites">
-            <visible>!IsEmpty(Window(Home).Property(favourite.1.path))</visible>
-            <visible>Container(300).HasFocus(7)</visible>
-            <onright>111</onright>
-            <onup>300</onup>
-            <ondown>300</ondown>
-            <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-            <onleft condition="!Skin.HasSetting(VerticalHome)">111</onleft>
-            <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-            <include>RecentlyAdded_Addons</include>
-            <content>
-                <include>FavouriteContent</include>
-            </content>
+        <control type="group">
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[!Control.HasFocus(111)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
+            <control type="label" description="Header">
+                <visible>Control.IsVisible(111)</visible>
+                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                <include>Square_Header</include>
+                <label>$INFO[Container(111).ListItem.Property(ItemType)]</label>
+            </control>
+            <control type="panel" id="111" description="Favourites">
+                <visible>!IsEmpty(Window(Home).Property(favourite.1.path))</visible>
+                <visible>Container(300).HasFocus(7)</visible>
+                <onright>111</onright>
+                <onup>300</onup>
+                <ondown>300</ondown>
+                <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+                <onleft condition="!Skin.HasSetting(VerticalHome)">111</onleft>
+                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                <include>RecentlyAdded_Addons</include>
+                <content>
+                    <include>FavouriteContent</include>
+                </content>
+            </control>
         </control>
     </include>
     <include name="Addons.List">
-        <control type="label" description="Header">
-            <visible>Control.IsVisible(211)</visible>
-            <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-            <include>Square_Header</include>
-            <label>$INFO[Container(211).ListItem.Property(ItemType)]</label>
-        </control>
-        <control type="panel" id="211" description="Addons">
-            <visible>!IsEmpty(Skin.String(ShelfAddons.1.Label)) | !IsEmpty(Skin.String(ShelfAddons.2.Label)) | !IsEmpty(Skin.String(ShelfAddons.3.Label)) | !IsEmpty(Skin.String(ShelfAddons.4.Label)) | !IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
-            <visible>Container(300).HasFocus(2)</visible>
-            <onright>211</onright>
-            <onup>300</onup>
-            <ondown>300</ondown>
-            <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-            <onleft condition="!Skin.HasSetting(VerticalHome)">211</onleft>
-            <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-            <include>RecentlyAdded_Addons</include>
-            <content>
-                <include>AddonContent</include>
-            </content>
+        <control type="group">
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[!Control.HasFocus(211)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
+            <control type="label" description="Header">
+                <visible>Control.IsVisible(211)</visible>
+                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                <include>Square_Header</include>
+                <label>$INFO[Container(211).ListItem.Property(ItemType)]</label>
+            </control>
+            <control type="panel" id="211" description="Addons">
+                <visible>!IsEmpty(Skin.String(ShelfAddons.1.Label)) | !IsEmpty(Skin.String(ShelfAddons.2.Label)) | !IsEmpty(Skin.String(ShelfAddons.3.Label)) | !IsEmpty(Skin.String(ShelfAddons.4.Label)) | !IsEmpty(Skin.String(ShelfAddons.5.Label))</visible>
+                <visible>Container(300).HasFocus(2)</visible>
+                <onright>211</onright>
+                <onup>300</onup>
+                <ondown>300</ondown>
+                <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+                <onleft condition="!Skin.HasSetting(VerticalHome)">211</onleft>
+                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                <include>RecentlyAdded_Addons</include>
+                <content>
+                    <include>AddonContent</include>
+                </content>
+            </control>
         </control>
     </include>
     <include name="Recent.Movies.List">
         <control type="group">
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(312)]">Conditional</animation>
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(312)|!Control.HasFocus(311)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
             <control type="label" description="Header">
                 <visible>Control.IsVisible(311)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
@@ -72,8 +80,8 @@
     </include>
     <include name="Recommended.And.Random.Movies.List">
         <control type="group">
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(311)]">Conditional</animation>
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(311)|!Control.HasFocus(312)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
             <control type="label" description="Header">
                 <visible>Control.IsVisible(312)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
@@ -99,8 +107,8 @@
     </include>
     <include name="Recent.Concerts.List">
         <control type="group">
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(515)]">Conditional</animation>
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(515)|!Control.HasFocus(514)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
             <control type="label" description="Header recent concerts">
                 <visible>Control.IsVisible(514)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
@@ -125,8 +133,8 @@
     </include>
     <include name="Recommended.Concerts.List">
         <control type="group">
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(514)]">Conditional</animation>
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(514)|!Control.HasFocus(515)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
             <control type="label" description="Header recommended concerts">
                 <visible>Control.IsVisible(515)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
@@ -151,8 +159,8 @@
     </include>
     <include name="Recent.Episodes.List">
         <control type="group">
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(413)]">Conditional</animation>
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(413)|!Control.HasFocus(411)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
             <control type="label" description="Header">
                 <visible>Control.IsVisible(411)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
@@ -177,8 +185,8 @@
     </include>
     <include name="Recommended.Episodes.List">
         <control type="group">
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(411)]">Conditional</animation>
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(411)|!Control.HasFocus(413)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
             <control type="label" description="Header">
                 <visible>Control.IsVisible(413)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
@@ -203,8 +211,8 @@
     </include>
     <include name="Recent.Albums.List">
         <control type="group">
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(513)]">Conditional</animation>
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(513)|!Control.HasFocus(511)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
             <control type="label" description="Header">
                 <visible>Control.IsVisible(511)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
@@ -229,8 +237,8 @@
     </include>
     <include name="Recommended.Albums.List">
         <control type="group">
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(511)]">Conditional</animation>
-            <animation effect="fade" time="0" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(511)|!Control.HasFocus(513)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
             <control type="label" description="Header">
                 <visible>Control.IsVisible(513)</visible>
                 <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
@@ -254,25 +262,29 @@
         </control>
     </include>
     <include name="Recent.Clips.List">
-        <control type="label" description="Header Clips">
-            <visible>Control.IsVisible(512)</visible>
-            <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-            <include>Square_Header</include>
-            <label>$INFO[Container(512).ListItem.Property(ItemType)]</label>
-        </control>
-        <control type="panel" id="512" description="Music video clips">
-            <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
-            <visible>Container(300).HasFocus(13)</visible>
-            <onright>512</onright>
-            <onup>300</onup>
-            <ondown>300</ondown>
-            <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
-            <onleft condition="!Skin.HasSetting(VerticalHome)">512</onleft>
-            <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-            <include>RecentlyAdded_Albums</include>
-            <content>
-                <include>RecentMusicVideoContent</include>
-            </content>
+        <control type="group">
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[!Control.HasFocus(512)]">Conditional</animation>
+            <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
+            <control type="label" description="Header Clips">
+                <visible>Control.IsVisible(512)</visible>
+                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                <include>Square_Header</include>
+                <label>$INFO[Container(512).ListItem.Property(ItemType)]</label>
+            </control>
+            <control type="panel" id="512" description="Music video clips">
+                <visible>![Skin.HasSetting(Hide.RecentlyAdded) | IsEmpty(Window(Home).Property(RecentMusicVideo.1.Title))]</visible>
+                <visible>Container(300).HasFocus(13)</visible>
+                <onright>512</onright>
+                <onup>300</onup>
+                <ondown>300</ondown>
+                <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
+                <onleft condition="!Skin.HasSetting(VerticalHome)">512</onleft>
+                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                <include>RecentlyAdded_Albums</include>
+                <content>
+                    <include>RecentMusicVideoContent</include>
+                </content>
+            </control>
         </control>
     </include>
     <include name="FavouriteContent">
