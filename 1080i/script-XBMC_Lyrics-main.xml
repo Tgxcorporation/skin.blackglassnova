@@ -181,6 +181,7 @@
                 <visible>Control.IsVisible(120)</visible>
             </control>
             <control type="label">
+                <visible>false</visible>
                 <description>Scraper label</description>
                 <posx>580</posx>
                 <posy>680</posy>

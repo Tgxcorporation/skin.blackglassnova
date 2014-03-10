@@ -228,7 +228,7 @@
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>FacadeListSubFont</font>
-                            <label>$INFO[ListItem.Label]</label>
+                            <label>[B]$INFO[ListItem.Label][/B]</label>
                             <textcolor>ListFocusColor</textcolor>
                         </control>
                     </focusedlayout>

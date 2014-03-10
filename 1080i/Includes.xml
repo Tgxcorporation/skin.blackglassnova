@@ -538,7 +538,7 @@
     </include>
     <include name="EpisodeThumb">
         <texture fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
-        <aspectratio aligny="top" scalediffuse="false">keep</aspectratio>
+        <aspectratio scalediffuse="false">keep</aspectratio>
     </include>
     <include name="SquareThumb">
         <texture fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>

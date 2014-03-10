@@ -157,6 +157,12 @@
             <size>30</size>
         </font>
         <font>
+            <name>BadgeFont</name>
+            <filename>Sansation_Regular.ttf</filename>
+            <size>26</size>
+            <aspect>0.95</aspect>
+        </font>
+        <font>
             <name>rss</name>
             <filename>Sansation_Regular.ttf</filename>
             <size>25</size>
