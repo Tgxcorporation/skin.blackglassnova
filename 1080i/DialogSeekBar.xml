@@ -74,7 +74,7 @@
                 <info>Player.Progress</info>
                 <visible>true</visible>
             </control>
-           <control type="label" description="Progress time label">
+            <control type="label" description="Progress time label">
                 <posx>20</posx>
                 <posy>1026</posy>
                 <height>52</height>
@@ -137,6 +137,22 @@
                 <visible>Player.DisplayAfterSeek</visible>
                 <include>SeekbarLabels</include>
                 <label>$INFO[Player.SeekOffset,$LOCALIZE[773] ]</label>
+            </control>
+            <control type="image">
+                <visible>player.rewinding</visible>
+                <posx>850</posx>
+                <posy>2</posy>
+                <width>50</width>
+                <height>50</height>
+                <texture>topbar/topbar_rewind_focus.png</texture>
+            </control>
+            <control type="image">
+                <visible>player.forwarding</visible>
+                <posx>1020</posx>
+                <posy>2</posy>
+                <width>50</width>
+                <height>50</height>
+                <texture>topbar/topbar_fastforward_focus.png</texture>
             </control>
         </control>
     </controls>

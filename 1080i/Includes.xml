@@ -459,6 +459,7 @@
         <height>52</height>
         <width>1840</width>
         <align>center</align>
+        <textcolor>aaffffff</textcolor>
         <font>OSDFont</font>
         <shadowcolor>ShadowColor</shadowcolor>
         <animation effect="fade" time="50">VisibleChange</animation>
