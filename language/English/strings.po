@@ -444,3 +444,7 @@ msgstr ""
 msgctxt "#31995"
 msgid "Home layout"
 msgstr ""
+
+msgctxt "#31996"
+msgid "Big Channel List in OSD"
+msgstr ""
