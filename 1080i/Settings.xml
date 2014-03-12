@@ -2285,6 +2285,20 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(QuitMenu_Show_Settings)</onclick>
                         </item>
+                        <item id="7" description="Timer">
+                            <visible>IsEmpty(Skin.String(timer))</visible>
+                            <visible>Skin.HasSetting(QuitMenu_Hide_Timer)</visible>
+                            <label> - $LOCALIZE[20144]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(QuitMenu_Hide_Timer)</onclick>
+                        </item>
+                        <item id="7" description="Timer">
+                            <visible>IsEmpty(Skin.String(timer))</visible>
+                            <visible>!Skin.HasSetting(QuitMenu_Hide_Timer)</visible>
+                            <label> - $LOCALIZE[20144]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(QuitMenu_Hide_Timer)</onclick>
+                        </item>
                     </content>
                 </control>
                 <!-- 9000 8 -->

@@ -32,7 +32,7 @@
             </control>
             <control type="group" id="100">
                 <visible>!VideoPlayer.Content(LiveTV)</visible>
-                <posx>515</posx>
+                <posx>480</posx>
                 <posy>68</posy>
                 <onup>noop</onup>
                 <ondown>702</ondown>
@@ -46,7 +46,7 @@
                     <font>-</font>
                     <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
-                    <onleft>705</onleft>
+                    <onleft>707</onleft>
                     <onright>601</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
@@ -134,7 +134,7 @@
             </control>
             <control type="group" id="100">
                 <visible>VideoPlayer.Content(LiveTV)</visible>
-                <posx>515</posx>
+                <posx>480</posx>
                 <posy>68</posy>
                 <onup>noop</onup>
                 <ondown>701</ondown>
@@ -148,7 +148,7 @@
                     <font>-</font>
                     <texturefocus>topbar/topbar_channel_down_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_channel_down_nofocus.png</texturenofocus>
-                    <onleft>704</onleft>
+                    <onleft>705</onleft>
                     <onright>601</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
@@ -274,7 +274,7 @@
             </control>
             <control type="group" id="101">
                 <visible>!VideoPlayer.Content(LiveTV)</visible>
-                <posx>935</posx>
+                <posx>900</posx>
                 <posy>68</posy>
                 <onup>609</onup>
                 <ondown>609</ondown>
@@ -384,15 +384,30 @@
                     <texturefocus>topbar/topbar_3d_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_3d_nofocus.png</texturenofocus>
                     <onleft>706</onleft>
-                    <onright>600</onright>
+                    <onright>707</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
                     <onclick>StereoMode</onclick>
                 </control>
+                <control type="button" id="707">
+                    <posx>490</posx>
+                    <posy>0</posy>
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[544]</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_info_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_info_nofocus.png</texturenofocus>
+                    <onleft>705</onleft>
+                    <onright>600</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
+                    <onclick>ActivateWindow(fullscreeninfo)</onclick>
+                </control>
             </control>
             <control type="group" id="101">
                 <visible>VideoPlayer.Content(LiveTV)</visible>
-                <posx>1075</posx>
+                <posx>1040</posx>
                 <posy>68</posy>
                 <onup>609</onup>
                 <ondown>609</ondown>
@@ -473,10 +488,25 @@
                     <texturefocus>topbar/topbar_3d_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_3d_nofocus.png</texturenofocus>
                     <onleft>703</onleft>
-                    <onright>600</onright>
+                    <onright>705</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
                     <onclick>StereoMode</onclick>
+                </control>
+                <control type="button" id="705">
+                    <posx>350</posx>
+                    <posy>0</posy>
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[544]</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_info_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_info_nofocus.png</texturenofocus>
+                    <onleft>704</onleft>
+                    <onright>600</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
+                    <onclick>ActivateWindow(fullscreeninfo)</onclick>
                 </control>
             </control>
             <control type="group">
