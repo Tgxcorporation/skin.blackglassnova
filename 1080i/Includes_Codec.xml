@@ -38,7 +38,7 @@
             <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
         </control>
     </include>
-    <include name="CodecsOSD">
+    <include name="CodecsVideoOSD">
         <control type="image">
             <description>Video rez Image</description>
             <width>100</width>
@@ -126,34 +126,20 @@
             </control>
         </control>
     </include>
-    <include name="CodecsSmall">
+    <include name="CodecsMusicOSD">
         <control type="image">
-            <description>Video rez Image</description>
-            <width>80</width>
-            <height>90</height>
+            <description>Audio Codec Image</description>
+            <width>100</width>
+            <height>70</height>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
-        </control>
-        <control type="image">
-            <description>Codec Image</description>
-            <width>80</width>
-            <height>90</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$VAR[videocodec,badges/video/,.png]</texture>
+            <texture>$INFO[VideoPlayer.AudioChannels,badges/audio/,.png]</texture>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
-            <width>80</width>
-            <height>90</height>
+            <width>100</width>
+            <height>70</height>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.AudioChannels,badges/audio/,.png]</texture>
-        </control>
-        <control type="image">
-            <description>Audio Codec Image</description>
-            <width>80</width>
-            <height>90</height>
-            <aspectratio>keep</aspectratio>
-            <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
+            <texture>$INFO[VideoPlayer.AudioCodec,badges/audio/,.png]</texture>
         </control>
     </include>
 </includes>

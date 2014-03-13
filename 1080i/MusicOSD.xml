@@ -145,6 +145,22 @@
                 <include>SeekbarLabels</include>
                 <label>$INFO[Player.SeekOffset,$LOCALIZE[773] ]</label>
             </control>
+            <control type="image">
+                <visible>player.rewinding</visible>
+                <posx>850</posx>
+                <posy>2</posy>
+                <width>50</width>
+                <height>50</height>
+                <texture>topbar/topbar_rewind_focus.png</texture>
+            </control>
+            <control type="image">
+                <visible>player.forwarding</visible>
+                <posx>1020</posx>
+                <posy>2</posy>
+                <width>50</width>
+                <height>50</height>
+                <texture>topbar/topbar_fastforward_focus.png</texture>
+            </control>
         </control>
         <control type="group">
             <!--101-->
@@ -384,6 +400,8 @@
                     <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
                 </control>
                 <control type="button" id="19" description="Visualisation settings">
+                    <enable>Visualisation.Enabled</enable>
+                    <animation effect="fade" start="100" end="50" time="100" condition="!Visualisation.Enabled">Conditional</animation>
                     <posx>840</posx>
                     <posy>0</posy>
                     <width>50</width>
@@ -397,9 +415,10 @@
                     <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
-                    <enable>Visualisation.Enabled</enable>
                 </control>
                 <control type="button" id="20" description="Visualisation Presets">
+                    <enable>Visualisation.Enabled</enable>
+                    <animation effect="fade" start="100" end="50" time="100" condition="!Visualisation.Enabled">Conditional</animation>
                     <posx>910</posx>
                     <posy>0</posy>
                     <width>50</width>
@@ -413,16 +432,6 @@
                     <texturefocus>topbar/topbar_presets_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_presets_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(122)</onclick>
-                    <enable>Visualisation.Enabled</enable>
-                </control>
-                <control type="button" id="301" description="CodecInfo">
-                    <posx>3280</posx>
-                    <posy>0</posy>
-                    <width>50</width>
-                    <height>50</height>
-                    <label>$LOCALIZE[21446]</label>
-                    <font>-</font>
-                    <onclick>CodecInfo</onclick>
                 </control>
             </control>
         </control>

@@ -159,8 +159,8 @@
                         <onclick>dialog.close(all,true)</onclick>
                         <onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
                         <label>$LOCALIZE[20144]</label>
-                        <thumb>topbar/topbar_sleep_nofocus.png</thumb>
-                        <icon>topbar/topbar_sleep_focus.png</icon>
+                        <thumb>topbar/topbar_timer_nofocus.png</thumb>
+                        <icon>topbar/topbar_timer_focus.png</icon>
                     </item>
                 </content>
             </control>
