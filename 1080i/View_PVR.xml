@@ -241,6 +241,16 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label" description="Main Label">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <posx>103</posx>
+                        <height>71</height>
+                        <width>530</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListNoFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label" description="Main Label">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
                         <posx>103</posx>
                         <height>42</height>
                         <width>530</width>
@@ -305,6 +315,16 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label" description="Main Label">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <posx>103</posx>
+                        <height>71</height>
+                        <width>530</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label" description="Main Label">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
                         <posx>103</posx>
                         <height>42</height>
                         <width>530</width>
@@ -541,6 +561,16 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label" description="Main Label">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <posx>103</posx>
+                        <height>71</height>
+                        <width>530</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListNoFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label" description="Main Label">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
                         <posx>103</posx>
                         <height>42</height>
                         <width>530</width>
@@ -605,6 +635,16 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label" description="Main Label">
+                        <visible>IsEmpty(ListItem.Title)</visible>
+                        <posx>103</posx>
+                        <height>71</height>
+                        <width>530</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label" description="Main Label">
+                        <visible>!IsEmpty(ListItem.Title)</visible>
                         <posx>103</posx>
                         <height>42</height>
                         <width>530</width>
@@ -974,7 +1014,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                 </rulerlayout>
-               <channellayout height="70" width="420">
+                <channellayout height="70" width="420">
                     <control type="image" id="1" description="Column 1">
                         <posx>0</posx>
                         <posy>0</posy>
