@@ -478,7 +478,19 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(PVRChannelListBig)</onclick>
                         </item>
-                        <item id="16" description="Reset Skin">
+                        <item id="16" description="Ken Burns Effect">
+                            <visible>Skin.HasSetting(KenBurnsEffect)</visible>
+                            <label>$LOCALIZE[31997]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(KenBurnsEffect)</onclick>
+                        </item>
+                        <item id="16" description="Ken Burns Effect">
+                            <visible>!Skin.HasSetting(KenBurnsEffect)</visible>
+                            <label>$LOCALIZE[31997]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(KenBurnsEffect)</onclick>
+                        </item>
+                        <item id="17" description="Reset Skin">
                             <label>$LOCALIZE[31038]</label>
                             <onclick>Skin.ResetSettings</onclick>
                             <onclick>XBMC.ReloadSkin()</onclick>

@@ -448,3 +448,7 @@ msgstr ""
 msgctxt "#31996"
 msgid "Big Channel List in OSD"
 msgstr ""
+
+msgctxt "#31997"
+msgid "Ken Burns Effect on backdrops"
+msgstr ""
