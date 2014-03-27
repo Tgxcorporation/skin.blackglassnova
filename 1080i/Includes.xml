@@ -387,37 +387,55 @@
                         <height>417</height>
                         <texture>common/bg_dialog.png</texture>
                     </control>
-                    <control type="image">
-                        <posx>448</posx>
-                        <posy>4</posy>
-                        <width>40</width>
-                        <height>40</height>
-                        <texture>topbar/topbar_play_focus.png</texture>
+                    <control type="label" description="Message">
+                        <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]</visible>
+                        <posx>460</posx>
+                        <posy>0</posy>
+                        <height>46</height>
+                        <width>750</width>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                        <font>NotificationFont</font>
+                        <textcolor>MainColor</textcolor>
+                        <label>$INFO[MusicPlayer.Artist,,  •  ]$INFO[MusicPlayer.Title,[COLOR=AlternateColor],[/COLOR]]</label>
                     </control>
                     <control type="label" description="Message">
                         <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]</visible>
-                        <posx>515</posx>
+                        <posx>1455</posx>
                         <posy>0</posy>
                         <height>46</height>
-                        <width>890</width>
+                        <width>200</width>
                         <scroll>false</scroll>
-                        <align>center</align>
+                        <align>right</align>
                         <font>NotificationFont</font>
                         <textcolor>MainColor</textcolor>
-                        <label>$INFO[MusicPlayer.Artist,,  •  ]$INFO[MusicPlayer.Title,[COLOR=AlternateColor],[/COLOR]  •  ]$INFO[MusicPlayer.TimeSpeed]$INFO[MusicPlayer.Duration, - ]</label>
+                        <label>$INFO[MusicPlayer.TimeSpeed] - $INFO[MusicPlayer.Duration]</label>
                     </control>
                     <control type="label" description="Message">
                         <visible>Player.hasvideo</visible>
-                        <posx>515</posx>
+                        <posx>460</posx>
                         <posy>0</posy>
                         <height>46</height>
-                        <width>890</width>
+                        <width>650</width>
                         <scroll>false</scroll>
-                        <align>center</align>
+                        <align>left</align>
                         <font>NotificationFont</font>
                         <textcolor>MainColor</textcolor>
                         <scroll>false</scroll>
-                        <label>$INFO[VideoPlayer.Title,,  •  ][COLOR=AlternateColor]$INFO[VideoPlayer.TimeSpeed]$INFO[VideoPlayer.Duration, - ][/COLOR]</label>
+                        <label>$INFO[VideoPlayer.Title]</label>
+                    </control>
+                    <control type="label" description="Message">
+                        <visible>Player.hasvideo</visible>
+                        <posx>1455</posx>
+                        <posy>0</posy>
+                        <height>46</height>
+                        <width>300</width>
+                        <scroll>false</scroll>
+                        <align>right</align>
+                        <font>NotificationFont</font>
+                        <textcolor>AlternateColor</textcolor>
+                        <scroll>false</scroll>
+                        <label>$INFO[VideoPlayer.TimeSpeed] - $INFO[VideoPlayer.Duration]</label>
                     </control>
                 </control>
             </control>

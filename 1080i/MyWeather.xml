@@ -51,7 +51,8 @@
                 <posy>151</posy>
                 <width>440</width>
                 <height>440</height>
-                <texture>$INFO[Window(Weather).Property(Current.FanartCode),weather/,.png]</texture>
+                <aspectratio>scale</aspectratio>
+                <texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/backgrounds/weather/,.jpg]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="group" description="Media info">
