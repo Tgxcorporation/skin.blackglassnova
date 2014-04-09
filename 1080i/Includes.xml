@@ -53,6 +53,7 @@
         <control type="image" description="Fanart only">
             <visible>Player.HasAudio + Skin.HasSetting(Show_Player) + Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>Dimensions_Fullscreen</include>
+            <include>KenBurns</include>
             <fadetime>400</fadetime>
             <aspectratio>scale</aspectratio>
             <texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
