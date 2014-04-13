@@ -4,7 +4,7 @@
         <posx>36</posx>
         <posy>300</posy>
         <width>1848</width>
-        <height>400</height>
+        <height>600</height>
         <onup>9001</onup>
         <onback>300</onback>
         <movement>6</movement>
@@ -30,30 +30,18 @@
     </include>
     <include name="Horizontal_Home_Layout">
         <control type="group" description="HORIZONTAL HOME">
+            <control type="image">
+                <posx>-200</posx>
+                <posy>613</posy>
+                <width>2320</width>
+                <height>467</height>
+                <texture>common/HomeGradient.png</texture>
+            </control>
             <control type="group" id="700">
                 <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
+                <animation effect="slide" tween="circle" time="200" start="0,-300" end="0,320" reversible="true" condition="!Control.HasFocus(300)+!Control.HasFocus(9001)">Conditional</animation>
                 <include condition="Skin.HasSetting(Shelf.Delay)">Shelf_Delay</include>
                 <posy>-105</posy>
-                <control type="image" description="BG XBMC only">
-                    <visible>!Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | Control.Hasfocus(311)  | Control.Hasfocus(312) | Control.Hasfocus(411) | Control.Hasfocus(413) | Control.Hasfocus(511) | Control.Hasfocus(513) | Control.Hasfocus(514) | Control.Hasfocus(515) | Control.Hasfocus(412) | Control.Hasfocus(512)]</visible>
-                    <animation effect="fade" time="100" start="100" end="0">hidden</animation>
-                    <animation effect="fade" time="100" start="0" end="100">visible</animation>
-                    <posx>-200</posx>
-                    <posy>200</posy>
-                    <width>2320</width>
-                    <height>540</height>
-                    <texture>common/shelf_gradient.png</texture>
-                </control>
-                <control type="image" description="BG Plexbmc only">
-                    <visible>Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | [IntegerGreaterThan(Container(311).NumItems,0) + Control.Hasfocus(311)]| [IntegerGreaterThan(Container(312).NumItems,0) + Control.Hasfocus(312)] | [IntegerGreaterThan(Container(411).NumItems,0) + Control.Hasfocus(411)] | [IntegerGreaterThan(Container(413).NumItems,0) + Control.Hasfocus(413)] | Control.Hasfocus(511) | Control.Hasfocus(900)]</visible>
-                    <animation effect="fade" time="100" start="100" end="0">hidden</animation>
-                    <animation effect="fade" time="100" start="0" end="100">visible</animation>
-                    <posx>-200</posx>
-                    <posy>200</posy>
-                    <width>2320</width>
-                    <height>540</height>
-                    <texture>common/shelf_gradient.png</texture>
-                </control>
                 <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
                 <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
                 <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Movies.List</include>
@@ -67,14 +55,8 @@
                 <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Albums.List</include>
                 <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)">Plexbmc_Shelf</include>
             </control>
-            <control type="image">
-                <posx>-200</posx>
-                <posy>613</posy>
-                <width>2320</width>
-                <height>467</height>
-                <texture>common/HomeGradient.png</texture>
-            </control>
             <control type="image" description="Arrow XBMC only">
+                <animation effect="slide" tween="circle" time="200" start="0,0" end="0,500" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
                 <visible>!Skin.HasSetting(plexbmc)+[[[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|[[IntegerGreaterThan(Container(211).NumItems,0)]+Container(300).HasFocus(2)]|[[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+Container(300).HasFocus(4)]|[[IntegerGreaterThan(Container(514).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+Container(300).HasFocus(5)]|[[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+Container(300).HasFocus(6)]|[[IntegerGreaterThan(Container(512).NumItems,0)]+Container(300).HasFocus(13)]]</visible>
                 <include>VisibleFadeEffectDelayShelf</include>
                 <posx>935</posx>
@@ -84,6 +66,7 @@
                 <texture>topbar/topbar_channel_up_focus.png</texture>
             </control>
             <control type="image" description="Arrow Plexbmc only">
+                <animation effect="slide" tween="circle" time="200" start="0,0" end="0,500" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
                 <visible>Skin.HasSetting(plexbmc)+[[[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|[[IntegerGreaterThan(Container(900).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),photo)]|[[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),movie)]|[[IntegerGreaterThan(Container(511).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),artist)]|[[IntegerGreaterThan(Container(212).NumItems,0)]+Container(300).HasFocus(50)]|[[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]]</visible>
                 <include>VisibleFadeEffectDelayShelf</include>
                 <posx>935</posx>
@@ -95,7 +78,8 @@
             <control type="group">
                 <posy>110</posy>
                 <control type="wraplist" id="300" description="Main Bar">
-                    <animation effect="fade" time="200" start="100" end="65" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
+                    <animation effect="fade" time="200" start="100" end="65" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
+                    <animation effect="slide" tween="circle" time="200" start="0,0" end="0,500" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
                     <posx>-15</posx>
                     <posy>539</posy>
                     <width>1950</width>
@@ -178,6 +162,8 @@
                     <label>$INFO[Container(300).ListItem.Label]</label>
                 </control>
                 <control type="fixedlist" id="9001" description="Submenu Bar">
+                    <animation effect="slide" tween="circle" time="200" start="0,0" end="0,500" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
+                    <include>VisibleFadeEffect</include>
                     <animation effect="slide" start="0,0" end="-128,0" time="0" condition="StringCompare(Container(9001).NumItems,2) | StringCompare(Container(9001).NumItems,4) | StringCompare(Container(9001).NumItems,6)">conditional</animation>
                     <animation effect="fade" time="200" start="100" end="50" reversible="true" condition="!Control.HasFocus(9001)">Conditional</animation>
                     <include>VisibleFadeEffect</include>

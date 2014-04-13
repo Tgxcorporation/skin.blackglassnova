@@ -23,12 +23,12 @@
         <posx>505</posx>
         <posy>380</posy>
         <width>1386</width>
-        <height>400</height>
+        <height>600</height>
         <onleft>300</onleft>
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <itemlayout height="400" width="231">
+        <itemlayout height="600" width="231">
             <control type="image">
                 <posx>-6</posx>
                 <posy>-6</posy>
@@ -49,8 +49,26 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
             </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>380</posy>
+                <width>189</width>
+                <height>235</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>353</posy>
+                <width>243</width>
+                <height>235</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
         </itemlayout>
-        <focusedlayout height="400" width="231">
+        <focusedlayout height="600" width="231">
             <control type="image">
                 <posx>-6</posx>
                 <posy>-6</posy>
@@ -69,6 +87,22 @@
                 <font>ShelfFont</font>
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>380</posy>
+                <width>189</width>
+                <height>235</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>353</posy>
+                <width>243</width>
+                <height>235</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
             </control>
         </focusedlayout>
     </include>
@@ -77,12 +111,12 @@
         <posx>505</posx>
         <posy>380</posy>
         <width>1386</width>
-        <height>400</height>
+        <height>600</height>
         <onleft>300</onleft>
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <itemlayout height="400" width="231">
+        <itemlayout height="600" width="231">
             <control type="image">
                 <posx>-6</posx>
                 <posy>-6</posy>
@@ -111,8 +145,26 @@
                 <height>33</height>
                 <texture>OverlayInProgress.png</texture>
             </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>380</posy>
+                <width>189</width>
+                <height>235</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>353</posy>
+                <width>243</width>
+                <height>235</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
         </itemlayout>
-        <focusedlayout height="400" width="231">
+        <focusedlayout height="600" width="231">
             <control type="image">
                 <posx>-6</posx>
                 <posy>-6</posy>
@@ -139,6 +191,22 @@
                 <width>33</width>
                 <height>33</height>
                 <texture>OverlayInProgress.png</texture>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>380</posy>
+                <width>189</width>
+                <height>235</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>353</posy>
+                <width>243</width>
+                <height>235</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
             </control>
         </focusedlayout>
     </include>
@@ -147,12 +215,12 @@
         <posx>505</posx>
         <posy>380</posy>
         <width>1386</width>
-        <height>400</height>
+        <height>600</height>
         <onleft>300</onleft>
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <itemlayout height="400" width="231">
+        <itemlayout height="600" width="231">
             <control type="image">
                 <posx>-6</posx>
                 <posy>-6</posy>
@@ -173,8 +241,26 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
             </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>380</posy>
+                <width>189</width>
+                <height>235</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>353</posy>
+                <width>243</width>
+                <height>235</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
         </itemlayout>
-        <focusedlayout height="400" width="231">
+        <focusedlayout height="600" width="231">
             <control type="image">
                 <posx>-6</posx>
                 <posy>-6</posy>
@@ -193,6 +279,22 @@
                 <font>ShelfFont</font>
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>380</posy>
+                <width>189</width>
+                <height>235</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>353</posy>
+                <width>243</width>
+                <height>235</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
             </control>
         </focusedlayout>
     </include>
@@ -201,12 +303,12 @@
         <posx>505</posx>
         <posy>380</posy>
         <width>1386</width>
-        <height>400</height>
+        <height>600</height>
         <onleft>300</onleft>
         <onback>300</onback>
         <movement>4</movement>
         <orientation>horizontal</orientation>
-        <itemlayout height="400" width="231">
+        <itemlayout height="600" width="231">
             <control type="image">
                 <posx>-6</posx>
                 <posy>-6</posy>
@@ -227,8 +329,26 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
             </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>380</posy>
+                <width>189</width>
+                <height>235</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>353</posy>
+                <width>243</width>
+                <height>235</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
         </itemlayout>
-        <focusedlayout height="400" width="231">
+        <focusedlayout height="600" width="231">
             <control type="image">
                 <posx>-6</posx>
                 <posy>-6</posy>
@@ -247,6 +367,22 @@
                 <font>ShelfFont</font>
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>380</posy>
+                <width>189</width>
+                <height>235</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>353</posy>
+                <width>243</width>
+                <height>235</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
             </control>
         </focusedlayout>
     </include>
@@ -292,6 +428,24 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>340</posy>
+                <width>189</width>
+                <height>159</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>313</posy>
+                <width>243</width>
+                <height>159</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
         </itemlayout>
         <focusedlayout height="400" width="231">
             <control type="image">
@@ -324,6 +478,22 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>340</posy>
+                <width>189</width>
+                <height>159</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>313</posy>
+                <width>243</width>
+                <height>159</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+            </control>
         </focusedlayout>
     </include>
     <include name="Recommended_Albums">
@@ -342,6 +512,7 @@
                 <posy>-6</posy>
                 <width>243</width>
                 <height>243</height>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <include>SquareThumb</include>
                 <include>ThumbBorder</include>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
@@ -368,6 +539,24 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>340</posy>
+                <width>189</width>
+                <height>159</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>313</posy>
+                <width>243</width>
+                <height>159</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
         </itemlayout>
         <focusedlayout height="400" width="231">
             <control type="image">
@@ -375,6 +564,7 @@
                 <posy>-6</posy>
                 <width>243</width>
                 <height>243</height>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <include>SquareThumb</include>
                 <include>ThumbBorderOverlay</include>
             </control>
@@ -400,6 +590,22 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>340</posy>
+                <width>189</width>
+                <height>159</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>313</posy>
+                <width>243</width>
+                <height>159</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+            </control>
         </focusedlayout>
     </include>
     <include name="RecentlyAdded_Addons">
@@ -418,6 +624,7 @@
                 <posy>-6</posy>
                 <width>243</width>
                 <height>243</height>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <include>SquareThumb</include>
                 <include>ThumbBorder</include>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
@@ -433,6 +640,24 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
             </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>310</posy>
+                <width>189</width>
+                <height>159</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>283</posy>
+                <width>243</width>
+                <height>159</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                <colordiffuse>UnfocusedIconColor</colordiffuse>
+            </control>
         </itemlayout>
         <focusedlayout height="345" width="231">
             <control type="image">
@@ -440,6 +665,7 @@
                 <posy>-6</posy>
                 <width>243</width>
                 <height>243</height>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <include>SquareThumb</include>
                 <include>ThumbBorderOverlay</include>
             </control>
@@ -453,6 +679,22 @@
                 <font>ShelfFont</font>
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>21</posx>
+                <posy>310</posy>
+                <width>189</width>
+                <height>159</height>
+                <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
+            </control>
+            <control type="image" description="Thumb">
+                <visible>!Skin.HasSetting(VerticalHome)</visible>
+                <posx>-6</posx>
+                <posy>283</posy>
+                <width>243</width>
+                <height>159</height>
+                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
             </control>
         </focusedlayout>
     </include>
