@@ -2,7 +2,7 @@
 <includes>
     <include name="Horizontal_Shelf_Poster_Commons">
         <posx>36</posx>
-        <posy>300</posy>
+        <posy>315</posy>
         <width>1848</width>
         <height>600</height>
         <onup>9001</onup>
@@ -11,7 +11,7 @@
     </include>
     <include name="Horizontal_Shelf_Square_Commons">
         <posx>36</posx>
-        <posy>340</posy>
+        <posy>410</posy>
         <width>1848</width>
         <height>400</height>
         <onup>9001</onup>
@@ -20,26 +20,38 @@
     </include>
     <include name="Horizontal_Label_Poster_Commons">
         <posx>45</posx>
-        <posy>260</posy>
-        <width>1920</width>
+        <posy>754</posy>
+        <width>1830</width>
+        <align>center</align>
     </include>
     <include name="Horizontal_Label_Square_Commons">
         <posx>45</posx>
-        <posy>280</posy>
-        <width>1920</width>
+        <posy>754</posy>
+        <width>1830</width>
+        <align>center</align>
+    </include>
+    <include name="Horizontal_BigLabel_Commons">
+        <posx>45</posx>
+        <posy>683</posy>
+        <width>1830</width>
+        <align>center</align>
+        <font>HomeItemFont</font>
+        <textcolor>MainColor</textcolor>
     </include>
     <include name="Horizontal_Home_Layout">
         <control type="group" description="HORIZONTAL HOME">
             <control type="image">
                 <posx>-200</posx>
-                <posy>613</posy>
+                <posy>633</posy>
                 <width>2320</width>
                 <height>467</height>
                 <texture>common/HomeGradient.png</texture>
             </control>
             <control type="group" id="700">
                 <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
-                <animation effect="slide" tween="circle" time="200" start="0,-300" end="0,320" reversible="true" condition="!Control.HasFocus(300)+!Control.HasFocus(9001)">Conditional</animation>
+                <animation effect="slide" tween="circle" time="200" start="0,0" end="0,340" condition="!Control.HasFocus(300)+!Control.HasFocus(9001)">Conditional</animation>
+                <animation effect="slide" tween="circle" time="200" start="0,0" end="0,-340" condition="Control.HasFocus(300)|Control.HasFocus(9001)">Conditional</animation>
+                <animation effect="slide" time="200" start="0,0" end="0,27" reversible="true" condition="!system.getbool(lookandfeel.enablerssfeeds)">Conditional</animation>
                 <include condition="Skin.HasSetting(Shelf.Delay)">Shelf_Delay</include>
                 <posy>-105</posy>
                 <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
@@ -78,7 +90,7 @@
             <control type="group">
                 <posy>110</posy>
                 <control type="wraplist" id="300" description="Main Bar">
-                    <animation effect="fade" time="200" start="100" end="65" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
+                    <animation effect="fade" time="200" start="100" end="65" reversible="true" condition="Control.HasFocus(9001)|Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
                     <animation effect="slide" tween="circle" time="200" start="0,0" end="0,500" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
                     <posx>-15</posx>
                     <posy>539</posy>
@@ -150,7 +162,7 @@
                     </content>
                 </control>
                 <control type="label">
-                    <animation effect="fade" time="200" start="100" end="65" reversible="true" condition="!Control.HasFocus(300)">Conditional</animation>
+                    <animation effect="slide" tween="circle" time="200" start="0,0" end="0,500" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
                     <animation effect="slide" time="200" start="0,0" end="0,22" reversible="true" condition="!system.getbool(lookandfeel.enablerssfeeds)">Conditional</animation>
                     <posx>0</posx>
                     <posy>793</posy>

@@ -5,12 +5,6 @@
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[!Control.HasFocus(900)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="label" description="Header">
-                    <visible>Control.IsVisible(900)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                    <include>Square_Header</include>
-                    <label>$INFO[Container(900).ListItem.Property(ItemType)]</label>
-                </control>
                 <control type="panel" id="900" description="Pictures">
                     <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),photo)</visible>
@@ -129,16 +123,21 @@
                         </item>
                     </content>
                 </control>
+                <control type="label" description="Header">
+                    <visible>Control.IsVisible(900)</visible>
+                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                    <include>Square_Header</include>
+                    <label>$INFO[Container(900).ListItem.Property(ItemType)]</label>
+                </control>
+                <control type="label" description="Item">
+                    <visible>Control.IsVisible(900)+!Skin.HasSetting(VerticalHome)</visible>
+                    <include>Horizontal_BigLabel_Commons</include>
+                    <label>$INFO[Container(900).ListItem.Label]</label>
+                </control>
             </control>
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[!Control.HasFocus(901)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="label" description="Header">
-                    <visible>Control.IsVisible(901)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                    <include>Square_Header</include>
-                    <label>$INFO[Container(901).ListItem.Property(ItemType)]</label>
-                </control>
                 <control type="panel" id="901" description="Queue">
                     <visible>!IsEmpty(Window.Property(Plexbmc.Queue.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Label,$LOCALIZE[31010])</visible>
@@ -257,16 +256,21 @@
                         </item>
                     </content>
                 </control>
+                <control type="label" description="Header">
+                    <visible>Control.IsVisible(901)</visible>
+                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                    <include>Square_Header</include>
+                    <label>$INFO[Container(901).ListItem.Property(ItemType)]</label>
+                </control>
+                <control type="label" description="Item">
+                    <visible>Control.IsVisible(901)+!Skin.HasSetting(VerticalHome)</visible>
+                    <include>Horizontal_BigLabel_Commons</include>
+                    <label>$INFO[Container(901).ListItem.Label]</label>
+                </control>
             </control>
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(312)|!Control.HasFocus(311)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="label" description="Header">
-                    <visible>Control.IsVisible(311)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                    <include>Poster_Header</include>
-                    <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
-                </control>
                 <control type="panel" id="311" description="Movies PLEXBMC">
                     <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),movie)</visible>
@@ -400,16 +404,21 @@
                         </item>
                     </content>
                 </control>
+                <control type="label" description="Header">
+                    <visible>Control.IsVisible(311)</visible>
+                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                    <include>Poster_Header</include>
+                    <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
+                </control>
+                <control type="label" description="Item">
+                    <visible>Control.IsVisible(311)+!Skin.HasSetting(VerticalHome)</visible>
+                    <include>Horizontal_BigLabel_Commons</include>
+                    <label>$INFO[Container(311).ListItem.Label]</label>
+                </control>
             </control>
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(311)|!Control.HasFocus(312)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="label" description="Header">
-                    <visible>Control.IsVisible(312)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                    <include>Poster_Header</include>
-                    <label>$INFO[Container(312).ListItem.Property(ItemType)]</label>
-                </control>
                 <control type="panel" id="312" description="Movies PLEXBMC">
                     <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),movie)</visible>
@@ -543,16 +552,21 @@
                         </item>
                     </content>
                 </control>
+                <control type="label" description="Header">
+                    <visible>Control.IsVisible(312)</visible>
+                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                    <include>Poster_Header</include>
+                    <label>$INFO[Container(312).ListItem.Property(ItemType)]</label>
+                </control>
+                <control type="label" description="Item">
+                    <visible>Control.IsVisible(312)+!Skin.HasSetting(VerticalHome)</visible>
+                    <include>Horizontal_BigLabel_Commons</include>
+                    <label>$INFO[Container(312).ListItem.Label]</label>
+                </control>
             </control>
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[!Control.HasFocus(511)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="label" description="Header">
-                    <visible>Control.IsVisible(511)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                    <include>Square_Header</include>
-                    <label>$INFO[Container(511).ListItem.Property(ItemType)]</label>
-                </control>
                 <control type="panel" id="511" description="TOP Shortcuts">
                     <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),artist)</visible>
@@ -666,16 +680,21 @@
                         </item>
                     </content>
                 </control>
+                <control type="label" description="Header">
+                    <visible>Control.IsVisible(511)</visible>
+                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                    <include>Square_Header</include>
+                    <label>$INFO[Container(511).ListItem.Property(ItemType)]</label>
+                </control>
+                <control type="label" description="Item">
+                    <visible>Control.IsVisible(511)+!Skin.HasSetting(VerticalHome)</visible>
+                    <include>Horizontal_BigLabel_Commons</include>
+                    <label>$INFO[Container(511).ListItem.Label]  •  $INFO[Container(511).ListItem.Label2]</label>
+                </control>
             </control>
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[!Control.HasFocus(212)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="label" description="Header">
-                    <visible>Control.IsVisible(212)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                    <include>Square_Header</include>
-                    <label>$INFO[Container(212).ListItem.Property(ItemType)]</label>
-                </control>
                 <control type="panel" id="212" description="Channels">
                     <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))</visible>
                     <visible>Container(300).HasFocus(50)</visible>
@@ -759,16 +778,21 @@
                         </item>
                     </content>
                 </control>
+                <control type="label" description="Header">
+                    <visible>Control.IsVisible(212)</visible>
+                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                    <include>Square_Header</include>
+                    <label>$INFO[Container(212).ListItem.Property(ItemType)]</label>
+                </control>
+                <control type="label" description="Item">
+                    <visible>Control.IsVisible(212)+!Skin.HasSetting(VerticalHome)</visible>
+                    <include>Horizontal_BigLabel_Commons</include>
+                    <label>$INFO[Container(212).ListItem.Label]</label>
+                </control>
             </control>
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(413)|!Control.HasFocus(411)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="label" description="Header">
-                    <visible>Control.IsVisible(411)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                    <include>Poster_Header</include>
-                    <label>$INFO[Container(411).ListItem.Property(ItemType)]</label>
-                </control>
                 <control type="panel" id="411" description="TV Shows PleXBMC">
                     <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),show)</visible>
@@ -784,7 +808,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.1.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeason)]</property>
@@ -794,7 +818,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.2.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.2.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeSeason)]</property>
@@ -804,7 +828,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.3.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.3.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeSeason)]</property>
@@ -814,7 +838,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.4.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.4.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeSeason)]</property>
@@ -824,7 +848,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.5.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.5.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.Thumb)]</thumb>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeSeason)]</property>
                             <property name="ItemType">$LOCALIZE[31961]</property>
@@ -834,7 +858,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.6.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.6.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeSeason)]</property>
@@ -844,7 +868,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.7.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.7.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeSeason)]</property>
@@ -854,7 +878,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.8.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.8.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeSeason)]</property>
@@ -864,7 +888,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.9.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.9.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeSeason)]</property>
@@ -874,7 +898,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.10.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.10.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeSeason)]</property>
@@ -884,7 +908,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.11.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.11.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeSeason)]</property>
@@ -894,7 +918,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.12.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.12.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeSeason)]</property>
@@ -904,7 +928,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.13.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.13.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeSeason)]</property>
@@ -914,7 +938,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.14.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.14.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeSeason)]</property>
@@ -924,7 +948,7 @@
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.15.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.LatestEpisode.15.uuid))</visible>
                             <label>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.ShowTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeSeason)]</label2>
+                            <label2>$LOCALIZE[20373] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeSeasonNumber)]</label2>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31961]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeSeason)]</property>
@@ -932,16 +956,21 @@
                         </item>
                     </content>
                 </control>
+                <control type="label" description="Header">
+                    <visible>Control.IsVisible(411)</visible>
+                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                    <include>Poster_Header</include>
+                    <label>$INFO[Container(411).ListItem.Property(ItemType)]</label>
+                </control>
+                <control type="label" description="Item">
+                    <visible>Control.IsVisible(411)+!Skin.HasSetting(VerticalHome)</visible>
+                    <include>Horizontal_BigLabel_Commons</include>
+                    <label>$INFO[Container(411).ListItem.Label]  •  $INFO[Container(411).ListItem.Label2]</label>
+                </control>
             </control>
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(411)|!Control.HasFocus(413)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="label" description="Header">
-                    <visible>Control.IsVisible(413)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                    <include>Poster_Header</include>
-                    <label>$INFO[Container(413).ListItem.Property(ItemType)]</label>
-                </control>
                 <control type="panel" id="413" description="OnDeck TV Shows PleXBMC">
                     <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),show)</visible>
@@ -956,7 +985,7 @@
                         <item id="1" description="Episodes1">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.1.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.EpisodeNumber)]</property>
@@ -965,8 +994,7 @@
                         <item id="2" description="Shortcut2">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.2.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.2.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeTitle)]</label>
-                            <label2>$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeNumber)]</label2>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeNumber)]</property>
@@ -975,7 +1003,7 @@
                         <item id="3" description="Shortcut3">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.3.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.3.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.EpisodeNumber)]</property>
@@ -984,7 +1012,7 @@
                         <item id="4" description="Shortcut4">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.4.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.4.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.EpisodeNumber)]</property>
@@ -993,7 +1021,7 @@
                         <item id="5" description="Shortcut5">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.5.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.5.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.EpisodeNumber)]</property>
@@ -1002,7 +1030,7 @@
                         <item id="6" description="Shortcut6">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.6.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.6.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.EpisodeNumber)]</property>
@@ -1011,7 +1039,7 @@
                         <item id="7" description="Shortcut7">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.7.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.7.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.EpisodeNumber)]</property>
@@ -1020,7 +1048,7 @@
                         <item id="8" description="Shortcut8">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.8.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.8.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.EpisodeNumber)]</property>
@@ -1029,7 +1057,7 @@
                         <item id="9" description="Shortcut9">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.9.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.9.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.EpisodeNumber)]</property>
@@ -1038,7 +1066,7 @@
                         <item id="10" description="Shortcut10">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.10.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.10.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.EpisodeNumber)]</property>
@@ -1047,7 +1075,7 @@
                         <item id="11" description="Shortcut11">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.11.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.11.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.EpisodeNumber)]</property>
@@ -1056,7 +1084,7 @@
                         <item id="12" description="Shortcut12">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.12.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.12.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.EpisodeNumber)]</property>
@@ -1065,7 +1093,7 @@
                         <item id="13" description="Shortcut13">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.13.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.13.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.EpisodeNumber)]</property>
@@ -1074,7 +1102,7 @@
                         <item id="14" description="Shortcut14">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.14.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.14.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.EpisodeNumber)]</property>
@@ -1083,13 +1111,24 @@
                         <item id="15" description="Shortcut15">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.15.Path))</visible>
                             <visible>StringCompare(Container(300).ListItem.Property(uuid),Window(Home).Property(Plexbmc.OnDeckEpisode.15.uuid))</visible>
-                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.ShowTitle)] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.EpisodeSeason), • ]</label>
+                            <label>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.EpisodeSeason)]</label>
                             <thumb>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.Thumb)]</thumb>
                             <property name="ItemType">$LOCALIZE[31014]</property>
                             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.EpisodeSeasonNumber),,.]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.EpisodeNumber)]</property>
                             <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.Path)])</onclick>
                         </item>
                     </content>
+                </control>
+                <control type="label" description="Header">
+                    <visible>Control.IsVisible(413)</visible>
+                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                    <include>Poster_Header</include>
+                    <label>$INFO[Container(413).ListItem.Property(ItemType)]</label>
+                </control>
+                <control type="label" description="Item">
+                    <visible>Control.IsVisible(413)+!Skin.HasSetting(VerticalHome)</visible>
+                    <include>Horizontal_BigLabel_Commons</include>
+                    <label>$INFO[Container(413).ListItem.Label]  •  $INFO[Container(413).ListItem.Property(SeasonEpisode)]</label>
                 </control>
             </control>
         </control>
