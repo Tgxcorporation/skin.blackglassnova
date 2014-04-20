@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <include name="GridInfo">
+        <control type="image">
+            <visible>Control.IsVisible(53)</visible>
+            <posx>-100</posx>
+            <posy>750</posy>
+            <width>2400</width>
+            <height>330</height>
+            <texture>common/HomeGradient.png</texture>
+        </control>
+        <control type="label" description="Title Label">
+            <posx>510</posx>
+            <posy>1008</posy>
+            <width>900</width>
+            <height>45</height>
+            <align>center</align>
+            <font>InfoTitleFont</font>
+            <textcolor>MainColor</textcolor>
+            <shadowcolor>ShadowColor</shadowcolor>
+            <label>$INFO[ListItem.Label]</label>
+        </control>
+        <control type="label" description="Details">
+            <posx>30</posx>
+            <posy>1015</posy>
+            <height>33</height>
+            <width>450</width>
+            <align>left</align>
+            <font>InfoDetailsFont</font>
+            <textcolor>AlternateColor</textcolor>
+            <scroll>false</scroll>
+            <label>$VAR[Fanart_Details]</label>
+        </control>
+        <control type="image" description="Stars">
+            <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]</visible>
+            <posx>1715</posx>
+            <posy>1015</posy>
+            <align>right</align>
+            <include>Stars</include>
+        </control>
+        <control type="image" description="3D badge">
+            <visible>Window.IsActive(MyVideoNav.xml) + ListItem.IsStereoscopic</visible>
+            <posx>1565</posx>
+            <posy>1020</posy>
+            <height>30</height>
+            <width>54</width>
+            <aspectratio aligny="bottom" align="right">keep</aspectratio>
+            <texture>badges/3D.png</texture>
+        </control>
+        <control type="image" description="HD badge">
+            <visible>Window.IsActive(MyVideoNav.xml) + ![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
+            <posx>1630</posx>
+            <posy>1020</posy>
+            <height>30</height>
+            <width>54</width>
+            <aspectratio aligny="bottom" align="right">keep</aspectratio>
+            <texture>badges/HD.png</texture>
+        </control>
+    </include>
     <include name="View_53_Grid">
         <control type="group" description="Grid view">
             <visible>Control.IsVisible(53)</visible>
-            <include>FooterInfo</include>
+            <include>GridInfo</include>
             <control type="image">
                 <posx>-100</posx>
                 <posy>94</posy>
@@ -162,20 +219,20 @@
                         <texture>$VAR[Overlay]</texture>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="260" width="273">
+                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="269" width="273">
                     <control type="image">
                         <posx>0</posx>
-                        <posy>20</posy>
+                        <posy>10</posy>
                         <width>260</width>
                         <height>260</height>
                         <include>SquareThumb</include>
                         <include>ThumbBorder</include>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="260" width="273">
+                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="269" width="273">
                     <control type="image">
                         <posx>0</posx>
-                        <posy>20</posy>
+                        <posy>10</posy>
                         <width>260</width>
                         <height>260</height>
                         <include>SquareThumb</include>

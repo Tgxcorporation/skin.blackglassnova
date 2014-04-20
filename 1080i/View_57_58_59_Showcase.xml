@@ -10,9 +10,9 @@
             <texture>common/HomeGradient.png</texture>
         </control>
         <control type="label" description="Title Label">
-            <posx>510</posx>
-            <posy>1008</posy>
-            <width>900</width>
+            <posx>45</posx>
+            <posy>938</posy>
+            <width>1830</width>
             <height>45</height>
             <align>center</align>
             <font>InfoTitleFont</font>
@@ -21,75 +21,39 @@
             <label>$INFO[ListItem.Label]</label>
         </control>
         <control type="label" description="Details">
-            <posx>30</posx>
+            <posx>410</posx>
             <posy>1015</posy>
             <height>33</height>
-            <width>450</width>
-            <align>left</align>
+            <width>1120</width>
+            <align>center</align>
             <font>InfoDetailsFont</font>
             <textcolor>AlternateColor</textcolor>
             <scroll>false</scroll>
             <label>$VAR[Fanart_Details]</label>
         </control>
         <control type="image" description="Stars">
-            <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]</visible>
+            <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible>
             <posx>1715</posx>
             <posy>1015</posy>
             <align>right</align>
             <include>Stars</include>
         </control>
-        <control type="label" description="Right value">
-            <visible>container.content(albums)</visible>
-            <posx>1890</posx>
-            <posy>1015</posy>
-            <height>33</height>
-            <width>500</width>
-            <align>right</align>
-            <textcolor>AlternateColor</textcolor>
-            <font>InfoDetailsFont</font>
-            <scroll>false</scroll>
-            <label>$INFO[ListItem.Year]</label>
-        </control>
-        <!-- <control type="label" description="Right value">
-            <visible>container.content(songs)</visible>
-            <posx>200r</posx>
-            <posy>1015</posy>
-            <height>33</height>
-            <width>500</width>
-            <align>right</align>
-            <textcolor>AlternateColor</textcolor>
-            <font>InfoDetailsFont</font>
-            <scroll>false</scroll>
-            <label>$INFO[ListItem.FileExtension]</label>
-        </control> -->
-        <control type="label" description="Right value">
-            <visible>container.content(addons)</visible>
-            <posx>1890</posx>
-            <posy>1015</posy>
-            <height>33</height>
-            <width>500</width>
-            <align>right</align>
-            <textcolor>AlternateColor</textcolor>
-            <font>InfoDetailsFont</font>
-            <scroll>false</scroll>
-            <label>$INFO[ListItem.Property(Addon.Version)]</label>
-        </control>
         <control type="image" description="3D badge">
             <visible>Window.IsActive(MyVideoNav.xml) + ListItem.IsStereoscopic</visible>
-            <posx>1565</posx>
+            <posx>110</posx>
             <posy>1020</posy>
             <height>30</height>
             <width>54</width>
-            <aspectratio aligny="bottom" align="right">keep</aspectratio>
+            <aspectratio aligny="bottom" align="left">keep</aspectratio>
             <texture>badges/3D.png</texture>
         </control>
         <control type="image" description="HD badge">
             <visible>Window.IsActive(MyVideoNav.xml) + ![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-            <posx>1630</posx>
+            <posx>45</posx>
             <posy>1020</posy>
             <height>30</height>
             <width>54</width>
-            <aspectratio aligny="bottom" align="right">keep</aspectratio>
+            <aspectratio aligny="bottom" align="left">keep</aspectratio>
             <texture>badges/HD.png</texture>
         </control>
     </include>
@@ -136,7 +100,7 @@
                 <visible>[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)</visible>
                 <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
                 <posx>-242</posx>
-                <posy>589</posy>
+                <posy>519</posy>
                 <width>2360</width>
                 <height>500</height>
                 <onleft>59</onleft>
@@ -164,7 +128,7 @@
                         <posx>27</posx>
                         <posy>399</posy>
                         <width>220</width>
-                        <height>333</height>
+                        <height>263</height>
                         <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
                         <colordiffuse>UnfocusedIconColor</colordiffuse>
                     </control>
@@ -197,7 +161,7 @@
                         <posx>27</posx>
                         <posy>399</posy>
                         <width>220</width>
-                        <height>333</height>
+                        <height>263</height>
                         <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
                     </control>
                     <control type="image" description="Thumb">
@@ -371,7 +335,7 @@
                 <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
                 <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
                 <posx>-342</posx>
-                <posy>609</posy>
+                <posy>539</posy>
                 <width>2255</width>
                 <height>500</height>
                 <onleft>58</onleft>
@@ -400,7 +364,7 @@
                         <posx>27</posx>
                         <posy>374</posy>
                         <width>310</width>
-                        <height>310</height>
+                        <height>270</height>
                         <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
                         <colordiffuse>UnfocusedIconColor</colordiffuse>
                     </control>
@@ -427,7 +391,7 @@
                         <posx>27</posx>
                         <posy>374</posy>
                         <width>310</width>
-                        <height>310</height>
+                        <height>270</height>
                         <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
                     </control>
                     <control type="image" description="Thumb">
@@ -584,7 +548,7 @@
                 <visible>container.content(episodes)</visible>
                 <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
                 <posx>15</posx>
-                <posy>679</posy>
+                <posy>609</posy>
                 <width>1950</width>
                 <height>500</height>
                 <onleft>57</onleft>
@@ -612,7 +576,7 @@
                         <posx>27</posx>
                         <posy>304</posy>
                         <width>426</width>
-                        <height>240</height>
+                        <height>200</height>
                         <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
                         <colordiffuse>UnfocusedIconColor</colordiffuse>
                     </control>
@@ -645,7 +609,7 @@
                         <posx>27</posx>
                         <posy>304</posy>
                         <width>426</width>
-                        <height>240</height>
+                        <height>200</height>
                         <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
                     </control>
                     <control type="image" description="Thumb">
