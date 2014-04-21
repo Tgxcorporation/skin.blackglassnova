@@ -32,7 +32,7 @@
     </include>
     <include name="Horizontal_BigLabel_Commons">
         <posx>45</posx>
-        <posy>683</posy>
+        <posy>688</posy>
         <width>1830</width>
         <align>center</align>
         <font>HomeItemFont</font>

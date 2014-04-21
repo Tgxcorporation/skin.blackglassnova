@@ -11,29 +11,29 @@
     <include name="Codecs">
         <control type="image">
             <description>Video rez Image</description>
-            <width>132</width>
-            <height>90</height>
+            <width>105</width>
+            <height>72</height>
             <aspectratio>keep</aspectratio>
             <texture>$INFO[ListItem.VideoResolution,badges/video/,.png]</texture>
         </control>
         <control type="image">
             <description>Codec Image</description>
-            <width>132</width>
-            <height>90</height>
+            <width>105</width>
+            <height>72</height>
             <aspectratio>keep</aspectratio>
             <texture>$VAR[videocodec,badges/video/,.png]</texture>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
-            <width>132</width>
-            <height>90</height>
+            <width>105</width>
+            <height>72</height>
             <aspectratio>keep</aspectratio>
             <texture>$INFO[ListItem.AudioChannels,badges/audio/,.png]</texture>
         </control>
         <control type="image">
             <description>Audio Codec Image</description>
-            <width>132</width>
-            <height>90</height>
+            <width>105</width>
+            <height>72</height>
             <aspectratio>keep</aspectratio>
             <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
         </control>
