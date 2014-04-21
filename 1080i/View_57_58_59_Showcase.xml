@@ -38,6 +38,18 @@
             <align>right</align>
             <include>Stars</include>
         </control>
+        <control type="label" description="Stars">
+            <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible>
+            <posx>1690</posx>
+            <posy>1016</posy>
+            <height>33</height>
+            <width>1120</width>
+            <align>right</align>
+            <font>InfoDetailsFont</font>
+            <textcolor>AlternateColor</textcolor>
+            <scroll>false</scroll>
+            <label fallback="416">$INFO[ListItem.Rating]</label>
+        </control>
         <control type="image" description="3D badge">
             <visible>Window.IsActive(MyVideoNav.xml) + ListItem.IsStereoscopic</visible>
             <posx>110</posx>
@@ -560,8 +572,8 @@
                 <pagecontrol>60</pagecontrol>
                 <orientation>horizontal</orientation>
                 <scrolltime>250</scrolltime>
-                <focusposition>4</focusposition>
-                <movement>3</movement>
+                <focusposition>1</focusposition>
+                <movement>2</movement>
                 <preloaditems>4</preloaditems>
                 <itemlayout height="400" width="474">
                     <control type="image">

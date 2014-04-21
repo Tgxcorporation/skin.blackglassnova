@@ -181,10 +181,10 @@
                     <include>VisibleFadeEffect</include>
                     <animation effect="slide" time="200" start="0,0" end="0,27" reversible="true" condition="!system.getbool(lookandfeel.enablerssfeeds)">Conditional</animation>
                     <animation effect="fade" time="200" condition="IntegerGreaterThan(Container(9001).NumItems,0)">Conditional</animation>
-                    <posx>64</posx>
+                    <posx>0</posx>
                     <posy>875</posy>
                     <height>50</height>
-                    <width>1792</width>
+                    <width>1920</width>
                     <onleft>9001</onleft>
                     <onright>9001</onright>
                     <viewtype>list</viewtype>
@@ -194,9 +194,9 @@
                     <onup>300</onup>
                     <onback>SetFocus(300)</onback>
                     <ondown>700</ondown>
-                    <itemlayout width="256" height="50">
+                    <itemlayout width="274" height="50">
                         <control type="label">
-                            <posx>128</posx>
+                            <posx>137</posx>
                             <posy>0</posy>
                             <height>50</height>
                             <width>240</width>
@@ -208,10 +208,10 @@
                             <textcolor>ListNoFocusColor</textcolor>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="256" height="50">
+                    <focusedlayout width="274" height="50">
                         <control type="label">
                             <visible>!Control.HasFocus(9001)</visible>
-                            <posx>128</posx>
+                            <posx>137</posx>
                             <posy>0</posy>
                             <height>50</height>
                             <width>240</width>
@@ -223,7 +223,7 @@
                         </control>
                         <control type="label">
                             <visible>Control.HasFocus(9001)</visible>
-                            <posx>128</posx>
+                            <posx>137</posx>
                             <posy>0</posy>
                             <height>50</height>
                             <width>240</width>
