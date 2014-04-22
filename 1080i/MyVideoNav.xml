@@ -25,7 +25,7 @@
                     <include>Icon_Fade</include>
                     <control type="group" description="Poster" id="70050">
                         <posy>219</posy>
-                        <visible>SubString(Container.FolderPath,videodb://1/2,left) | SubString(Container.FolderPath,videodb://4,left) | container.content(actors)</visible>
+                        <visible>SubString(Container.FolderPath,videodb://movies/titles/,left) | SubString(Container.FolderPath,videodb://recentlyaddedmovies/,left) | container.content(actors)</visible>
                         <include>Icon_Fade</include>
                         <control type="image" description="Thumb">
                             <posx>18</posx>
@@ -38,7 +38,7 @@
                     </control>
                     <control type="group" description="Generic Thumb">
                         <posy>219</posy>
-                        <visible>![SubString(Container.FolderPath,videodb://1/2,left) | SubString(Container.FolderPath,videodb://4,left) | container.content(actors)]</visible>
+                        <visible>![SubString(Container.FolderPath,videodb://movies/titles/,left) | SubString(Container.FolderPath,videodb://recentlyaddedmovies/,left) | container.content(actors)]</visible>
                         <include>Icon_Fade</include>
                         <control type="image" description="Thumb">
                             <posx>18</posx>

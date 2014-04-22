@@ -864,8 +864,8 @@
             <label>$LOCALIZE[31972]</label>
             <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Icon)]</icon>
-            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/")</onclick>
-            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/")</onclick>
+            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/")</onclick>
+            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/")</onclick>
         </item>
         <item id="14" description="Concerts">
             <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -1074,8 +1074,8 @@
         <item id="23" description="Music Videos">
             <visible>Container(300).HasFocus(6) + Library.HasContent(MusicVideos)</visible>
             <label>$LOCALIZE[31972]</label>
-            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/")</onclick>
-            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/")</onclick>
+            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/")</onclick>
+            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/")</onclick>
         </item>
         <item id="24" description="Recently added">
             <visible>Container(300).HasFocus(6) + !Skin.HasSetting(Music1) + Library.HasContent(Music)</visible>
@@ -1123,20 +1123,20 @@
         <item id="30" description="Clips albums">
             <visible>Container(300).HasFocus(13)</visible>
             <label>$LOCALIZE[132]</label>
-            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/5")</onclick>
-            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/5")</onclick>
+            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/5")</onclick>
+            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/5")</onclick>
         </item>
         <item id="30" description="Clips artists">
             <visible>Container(300).HasFocus(13)</visible>
             <label>$LOCALIZE[133]</label>
-            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/4")</onclick>
-            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/4")</onclick>
+            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/4")</onclick>
+            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/4")</onclick>
         </item>
         <item id="30" description="Clips genres">
             <visible>Container(300).HasFocus(13)</visible>
             <label>$LOCALIZE[135]</label>
-            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://3/1")</onclick>
-            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://3/1")</onclick>
+            <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/1")</onclick>
+            <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/1")</onclick>
         </item>
         <item id="90142">
             <visible>Container(300).HasFocus(300)</visible>

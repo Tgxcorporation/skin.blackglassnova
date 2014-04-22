@@ -102,7 +102,7 @@
                         <posy>3</posy>
                         <width>180</width>
                         <height>36</height>
-                        <texture>badges/info_window_icon_rating_star_$INFO[ListItem.ActualIcon].png</texture>
+                        <texture>badges/rating$INFO[ListItem.ActualIcon].png</texture>
                     </control>
                 </itemlayout>
                 <focusedlayout height="73" width="931">
@@ -153,7 +153,7 @@
                         <posy>3</posy>
                         <width>180</width>
                         <height>36</height>
-                        <texture>badges/info_window_icon_rating_star_$INFO[ListItem.ActualIcon].png</texture>
+                        <texture>badges/rating$INFO[ListItem.ActualIcon].png</texture>
                     </control>
                 </focusedlayout>
             </control>
