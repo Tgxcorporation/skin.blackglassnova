@@ -973,6 +973,11 @@
             <label>$LOCALIZE[1]</label>
             <onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
         </item>
+        <item id="501" description="Addon Browser">
+            <visible>Container(300).HasFocus(2)</visible>
+            <label>$LOCALIZE[10040]</label>
+            <onclick>XBMC.ActivateWindow(addonbrowser)</onclick>
+        </item>
         <item id="6" description="MyTV">
             <visible>Container(300).HasFocus(5)</visible>
             <label>$LOCALIZE[136]</label>

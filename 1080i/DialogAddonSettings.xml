@@ -92,7 +92,8 @@
             </control>
             <control type="image" id="6">
                 <description>Default Seperator</description>
-                <height>0</height>
+                <height>8</height>
+                <texture>list/bg_facade_separator.png</texture>
             </control>
             <control type="label" id="7">
                 <description>separator label headline</description>
