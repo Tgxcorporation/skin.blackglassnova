@@ -509,7 +509,7 @@
                     <onright>9000</onright>
                     <onup>9003</onup>
                     <ondown>9003</ondown>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol>500</pagecontrol>
                     <scrolltime>280</scrolltime>
                     <itemlayout width="1231" height="73">
                         <control type="image">
@@ -882,6 +882,15 @@
                             <onclick>Skin.ToggleSetting(Quit.Hide)</onclick>
                         </item>
                     </content>
+                </control>
+                <control type="scrollbar" id="500">
+                    <visible>Container(9000).Hasfocus(3)</visible>
+                    <posx>1328</posx>
+                    <posy>382</posy>
+                    <height>803</height>
+                    <onleft>9003</onleft>
+                    <onright>9003</onright>
+                    <include>VerticalScroller</include>
                 </control>
                 <!--9000 4-->
                 <control type="group">

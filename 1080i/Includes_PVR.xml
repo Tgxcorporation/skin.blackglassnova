@@ -244,19 +244,10 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="61">
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-                <posx>21r</posx>
+                <posx>1611</posx>
                 <posy>621</posy>
-                <width>42</width>
                 <height>292</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <include>VerticalScroller</include>
                 <ondown>61</ondown>
                 <onup>61</onup>
                 <onleft>11</onleft>
@@ -509,19 +500,10 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="61">
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-                <posx>21r</posx>
+                <posx>1611</posx>
                 <posy>621</posy>
-                <width>42</width>
                 <height>730</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <include>VerticalScroller</include>
                 <ondown>61</ondown>
                 <onup>61</onup>
                 <onleft>11</onleft>
@@ -703,19 +685,10 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-                <posx>21r</posx>
+                <posx>1611</posx>
                 <posy>621</posy>
-                <width>42</width>
                 <height>292</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <include>VerticalScroller</include>
                 <onleft>11</onleft>
                 <onright>close</onright>
                 <ondown>60</ondown>
@@ -897,19 +870,10 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="60">
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-                <posx>21r</posx>
+                <posx>1611</posx>
                 <posy>621</posy>
-                <width>42</width>
                 <height>730</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <include>VerticalScroller</include>
                 <onleft>11</onleft>
                 <onright>close</onright>
                 <ondown>60</ondown>

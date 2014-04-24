@@ -1336,6 +1336,26 @@
         <alttexturefocus border="4">list/bg_facade_focus.png</alttexturefocus>
         <alttexturenofocus border="4">list/bg_facade_nofocus.png</alttexturenofocus>
     </include>
+    <include name="VerticalScroller">
+        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbar border="0,21,0,21">buttons/Scrollbar_Vertical_NoFocus.png</texturesliderbar>
+        <texturesliderbarfocus border="0,21,0,21">buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
+        <textureslidernib>-</textureslidernib>
+        <textureslidernibfocus>-</textureslidernibfocus>
+        <showonepage>false</showonepage>
+        <orientation>vertical</orientation>
+        <width>42</width>
+    </include>
+    <include name="HorizontalScroller">
+        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbar border="21,0,21,0">buttons/Scrollbar_Horizontal_NoFocus.png</texturesliderbar>
+        <texturesliderbarfocus border="21,0,21,0">buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
+        <textureslidernib>-</textureslidernib>
+        <textureslidernibfocus>-</textureslidernibfocus>
+        <showonepage>false</showonepage>
+        <orientation>horizontal</orientation>
+        <height>42</height>
+    </include>
     <include name="List_9009_Commons_Actors" description="Video Info metadata container">
         <onleft>8</onleft>
         <onright>8</onright>

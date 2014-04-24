@@ -329,14 +329,7 @@
                 <posx>90</posx>
                 <posy>1059</posy>
                 <width>1750</width>
-                <height>42</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Horizontal_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Horizontal_Focus.png</textureslidernibfocus>
-                <showonepage>true</showonepage>
-                <orientation>horizontal</orientation>
+                <include>HorizontalScroller</include>
                 <onup>59</onup>
                 <onright>noop</onright>
             </control>
@@ -542,14 +535,7 @@
                 <posx>90</posx>
                 <posy>1059</posy>
                 <width>1750</width>
-                <height>42</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Horizontal_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Horizontal_Focus.png</textureslidernibfocus>
-                <showonepage>true</showonepage>
-                <orientation>horizontal</orientation>
+                <include>HorizontalScroller</include>
                 <onup>58</onup>
                 <onright>noop</onright>
             </control>
@@ -760,14 +746,7 @@
                 <posx>90</posx>
                 <posy>1059</posy>
                 <width>1750</width>
-                <height>42</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Horizontal_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Horizontal_Focus.png</textureslidernibfocus>
-                <showonepage>true</showonepage>
-                <orientation>horizontal</orientation>
+                <include>HorizontalScroller</include>
                 <onup>57</onup>
                 <onright>noop</onright>
             </control>

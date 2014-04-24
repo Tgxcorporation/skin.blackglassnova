@@ -68,9 +68,18 @@
                 <onup>3</onup>
                 <ondown>20</ondown>
                 <orientation>vertical</orientation>
+                <pagecontrol>61</pagecontrol>
             </control>
             <control type="button" id="10" description="Category Button">
                 <include>LeftMenuButton</include>
+            </control>
+            <control type="scrollbar" id="61">
+                <posx>1761</posx>
+                <posy>382</posy>
+                <height>639</height>
+                <onleft>3</onleft>
+                <onright>3</onright>
+                <include>VerticalScroller</include>
             </control>
             <control type="grouplist" id="5" description="Right - Control Area">
                 <posx>128</posx>
@@ -142,19 +151,12 @@
                 <onclick>SettingsLevelChange</onclick>
             </control>
             <control type="scrollbar" id="60">
-                <posx>1899</posx>
+                <posx>1328</posx>
                 <posy>382</posy>
-                <width>42</width>
                 <height>639</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <include>VerticalScroller</include>
                 <onleft>5</onleft>
-                <onright>noop</onright>
+                <onright>5</onright>
             </control>
         </control>
     </controls>

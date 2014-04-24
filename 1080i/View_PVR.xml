@@ -346,17 +346,10 @@
             <control type="scrollbar" id="70">
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-                <posx>21r</posx>
-                <posy>641</posy>
-                <width>42</width>
-                <height>373</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <posx>1899</posx>
+                <posy>645</posy>
+                <height>365</height>
+                <include>VerticalScroller</include>
                 <onleft>11</onleft>
                 <onright>32</onright>
             </control>
@@ -666,17 +659,10 @@
             <control type="scrollbar" id="71">
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-                <posx>21r</posx>
-                <posy>641</posy>
-                <width>42</width>
-                <height>373</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <posx>1899</posx>
+                <posy>645</posy>
+                <height>365</height>
+                <include>VerticalScroller</include>
                 <onleft>12</onleft>
                 <onright>33</onright>
             </control>
@@ -918,17 +904,10 @@
             <control type="scrollbar" id="72">
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-                <posx>21r</posx>
-                <posy>641</posy>
-                <width>42</width>
-                <height>373</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <posx>1899</posx>
+                <posy>645</posy>
+                <height>365</height>
+                <include>VerticalScroller</include>
                 <onleft>13</onleft>
                 <onright>34</onright>
             </control>
@@ -1351,17 +1330,10 @@
             <control type="scrollbar" id="73">
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-                <posx>21r</posx>
-                <posy>641</posy>
-                <width>42</width>
-                <height>373</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <posx>1899</posx>
+                <posy>645</posy>
+                <height>365</height>
+                <include>VerticalScroller</include>
                 <onleft>14</onleft>
                 <onright>35</onright>
             </control>
@@ -1645,17 +1617,10 @@
             <control type="scrollbar" id="74">
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-                <posx>21r</posx>
-                <posy>641</posy>
-                <width>42</width>
-                <height>373</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <posx>1899</posx>
+                <posy>645</posy>
+                <height>365</height>
+                <include>VerticalScroller</include>
                 <onleft>17</onleft>
                 <onright>36</onright>
             </control>
@@ -1926,17 +1891,10 @@
             <control type="scrollbar" id="75">
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-                <posx>21r</posx>
-                <posy>641</posy>
-                <width>42</width>
-                <height>373</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <posx>1899</posx>
+                <posy>645</posy>
+                <height>365</height>
+                <include>VerticalScroller</include>
                 <onleft>15</onleft>
                 <onright>31</onright>
             </control>
@@ -2238,17 +2196,10 @@
             <control type="scrollbar" id="76">
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
-                <posx>21r</posx>
-                <posy>641</posy>
-                <width>42</width>
-                <height>373</height>
-                <texturesliderbackground>-</texturesliderbackground>
-                <texturesliderbar>-</texturesliderbar>
-                <texturesliderbarfocus>-</texturesliderbarfocus>
-                <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-                <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
-                <showonepage>false</showonepage>
-                <orientation>vertical</orientation>
+                <posx>1899</posx>
+                <posy>645</posy>
+                <height>365</height>
+                <include>VerticalScroller</include>
                 <onleft>16</onleft>
                 <onright>31</onright>
             </control>
