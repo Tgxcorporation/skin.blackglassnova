@@ -2,7 +2,7 @@
 <includes>
     <include name="Horizontal_Shelf_Poster_Commons">
         <posx>36</posx>
-        <posy>315</posy>
+        <posy>330</posy>
         <width>1848</width>
         <height>600</height>
         <onup>9001</onup>

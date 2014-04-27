@@ -32,8 +32,7 @@
             <label>$VAR[Fanart_Details]</label>
         </control>
         <control type="image" description="Stars">
-            <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]</visible>
-            <posx>1715</posx>
+            <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible><posx>1715</posx>
             <posy>1015</posy>
             <align>right</align>
             <include>Stars</include>

@@ -128,9 +128,9 @@
             <onleft>50</onleft>
             <onright>9000</onright>
         </control>
-        <!-- <control type="label">
+        <control type="label">
             <include>FacadeNumItems</include>
-            <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
-        </control> -->
+            <label>$INFO[Container(50).NumItems] $LOCALIZE[31025]</label>
+        </control>
     </controls>
 </window>
