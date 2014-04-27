@@ -125,11 +125,11 @@
                     <posy>0</posy>
                     <width>1131</width>
                     <height>365</height>
-                    <onleft>49</onleft>
-                    <onright>49</onright>
+                    <onleft>60</onleft>
+                    <onright>9000</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol>60</pagecontrol>
                     <scrolltime>200</scrolltime>
                     <itemlayout height="73">
                         <control type="image">
@@ -242,22 +242,30 @@
                         </item>
                     </content>
                 </control>
+                <control type="scrollbar" id="60">
+                    <posx>1100</posx>
+                    <posy>0</posy>
+                    <height>365</height>
+                    <include>VerticalScroller</include>
+                    <onleft>49</onleft>
+                    <onright>9000</onright>
+                </control>
             </control>
             <control type="group">
                 <visible>container.content(Artists) + !Control.HasFocus(12)</visible>
                 <posx>178</posx>
                 <posy>382</posy>
                 <include>VisibleFadeEffect</include>
-                <control type="list" id="49">
+                <control type="panel" id="49">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>1131</width>
                     <height>365</height>
-                    <onleft>9000</onleft>
+                    <onleft>60</onleft>
                     <onright>9000</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol>60</pagecontrol>
                     <scrolltime>200</scrolltime>
                     <itemlayout height="73">
                         <control type="image">
@@ -292,7 +300,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1131</width>
-                            <texture border="3">list/bg_facade_nofocus.png</texture>
+                            <texture border="3">list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label" description="Label2">
                             <posx>TextMargin</posx>
@@ -369,6 +377,14 @@
                             <visible>!IsEmpty(ListItem.Property(Artist_YearsActive))</visible>
                         </item>
                     </content>
+                </control>
+                <control type="scrollbar" id="60">
+                    <posx>1100</posx>
+                    <posy>0</posy>
+                    <height>365</height>
+                    <include>VerticalScroller</include>
+                    <onleft>49</onleft>
+                    <onright>9000</onright>
                 </control>
             </control>
             <control type="group">

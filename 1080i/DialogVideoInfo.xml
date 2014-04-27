@@ -27,141 +27,124 @@
             <include>WindowTitleSub</include>
             <label>$VAR[GlobalSubTitles]</label>
         </control>
-        <control type="image" description="Menu BG">
-            <posx>0</posx>
-            <posy>83</posy>
-            <width>1920</width>
-            <height>1000</height>
-            <texture border="84">common/bg_dialog.png</texture>
-        </control>
-        <control type="label" description="Main Label">
-            <posx>90</posx>
-            <posy>148</posy>
-            <width>1740</width>
-            <height>71</height>
-            <font>InfoTitleFont</font>
-            <textcolor>MainColor</textcolor>
-            <align>center</align>
-            <autoscroll time="6000" delay="8000" repeat="8000">true</autoscroll>
-            <info>ListItem.Label</info>
-        </control>
-        <control type="image">
-            <posx>45</posx>
-            <posy>131</posy>
-            <width>1830</width>
-            <height>90</height>
-            <texture border="3">list/bg_facade_nofocus_top.png</texture>
-        </control>
-        <control type="image">
-            <posx>525</posx>
-            <posy>221</posy>
-            <width>2</width>
-            <height>810</height>
-            <texture>list/bg_facade_vertical.png</texture>
-        </control>
-        <control type="image">
-            <posx>150</posx>
-            <posy>221</posy>
-            <height>810</height>
-            <width>375</width>
-            <texture>list/bg_strip_horizontal_left.png</texture>
-            <colordiffuse>90ffffff</colordiffuse>
-        </control>
-        <control type="image">
-            <posx>1492</posx>
-            <posy>221</posy>
-            <width>2</width>
-            <height>810</height>
-            <texture>list/bg_facade_vertical.png</texture>
-        </control>
-        <control type="image">
-            <posx>1492</posx>
-            <posy>221</posy>
-            <height>810</height>
-            <width>375</width>
-            <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
-            <colordiffuse>90ffffff</colordiffuse>
-        </control>
-        <control type="image" description="Thumb">
-            <visible>![Container.Content(episodes) + IsEmpty(ListItem.Art(tvshow.poster))]+![Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)]</visible>
-            <posx>48</posx>
-            <posy>225</posy>
-            <width>475</width>
-            <height>660</height>
-            <texture background="true">$INFO[ListItem.Art(thumb)]</texture>
-            <include>ThumbBorder</include>
-            <aspectratio aligny="top">keep</aspectratio>
-        </control>
-        <!-- <control type="image" description="Episodes Season Poster">
-            <visible>Container.Content(episodes) + !IsEmpty(ListItem.Art(tvshow.poster))+![Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)]</visible>
-            <posx>48</posx>
-            <posy>225</posy>
-            <width>475</width>
-            <height>660</height>
-            <texture background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
-            <include>ThumbBorder</include>
-            <aspectratio aligny="top">keep</aspectratio>
-        </control> -->
-        <control type="image" description="Episodes Season Poster">
-            <visible>Container.Content(episodes) + IsEmpty(ListItem.Art(tvshow.poster))+![Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)]</visible>
-            <posx>48</posx>
-            <posy>225</posy>
-            <width>475</width>
-            <height>291</height>
-            <include>EpisodeThumb</include>
-            <include>ThumbBorder</include>
-            <aspectratio aligny="top">keep</aspectratio>
-        </control>
-        <control type="image" description="Actor">
-            <visible>Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)</visible>
-            <posx>48</posx>
-            <posy>225</posy>
-            <width>475</width>
-            <height>660</height>
-            <texture>$INFO[Container(50).ListItem.Thumb]</texture>
-            <include>ThumbBorder</include>
-            <aspectratio aligny="top">keep</aspectratio>
-        </control>
-        <control type="group" description="Media Info">
-            <control type="group" description="top">
-                <posx>525</posx>
-                <posy>221</posy>
+        <control type="group">
+            <posy>-4</posy>
+            <control type="image" description="Menu BG">
+                <posx>133</posx>
+                <posy>25</posy>
+                <width>1654</width>
+                <height>1036</height>
+                <texture border="84">common/bg_dialog.png</texture>
+            </control>
+            <control type="label" description="Main Label">
+                <posx>223</posx>
+                <posy>104</posy>
+                <width>1474</width>
+                <height>36</height>
+                <font>InfoTitleFont</font>
+                <textcolor>MainColor</textcolor>
+                <align>center</align>
+                <info>ListItem.Label</info>
+            </control>
+            <control type="image">
+                <posx>178</posx>
+                <posy>73</posy>
+                <width>1564</width>
+                <height>90</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="image">
+                <posx>1309</posx>
+                <posy>163</posy>
+                <width>2</width>
+                <height>848</height>
+                <texture>list/bg_facade_vertical.png</texture>
+            </control>
+            <control type="image">
+                <posx>1309</posx>
+                <posy>163</posy>
+                <height>848</height>
+                <width>375</width>
+                <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
+                <colordiffuse>90ffffff</colordiffuse>
+            </control>
+            <control type="group">
+                <posx>178</posx>
+                <posy>163</posy>
+                <control type="panel" id="50">
+                    <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)]</visible>
+                    <include>VisibleFadeEffectDelay</include>
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>1131</width>
+                    <height>803</height>
+                    <pagecontrol>61</pagecontrol>
+                    <onleft>61</onleft>
+                    <onright>9000</onright>
+                    <include>List_9009_Commons_Actors</include>
+                </control>
+                <control type="scrollbar" id="61">
+                    <visible>[Control.IsVisible(50)]</visible>
+                    <posx>1100</posx>
+                    <posy>0</posy>
+                    <height>803</height>
+                    <include>VerticalScroller</include>
+                    <onleft>50</onleft>
+                    <onright>9000</onright>
+                </control>
+                <control type="image" description="Thumb">
+                    <visible>![Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)]</visible>
+                    <posx>1142</posx>
+                    <posy>365</posy>
+                    <width>410</width>
+                    <height>483</height>
+                    <aspectratio>keep</aspectratio>
+                    <include>PosterThumb</include>
+                    <include>ThumbBorder</include>
+                </control>
+                <control type="image" description="Actor">
+                    <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)]</visible>
+                    <posx>1142</posx>
+                    <posy>365</posy>
+                    <width>410</width>
+                    <height>483</height>
+                    <texture>$INFO[Container(50).ListItem.Thumb]</texture>
+                    <include>ThumbBorder</include>
+                    <aspectratio>keep</aspectratio>
+                </control>
                 <control type="textbox" description="Plot">
                     <visible>[Control.HasFocus(9013)]</visible>
                     <include>VisibleFadeEffectDelay</include>
-                    <posx>40</posx>
-                    <posy>15</posy>
-                    <width>887</width>
-                    <height>780</height>
+                    <posx>TextMargin</posx>
+                    <posy>10</posy>
+                    <width>1041</width>
+                    <height>820</height>
                     <align>justify</align>
                     <font>InfoDetailsFontBig</font>
                     <autoscroll delay="15000" time="5000" repeat="10000">true</autoscroll>
                     <label>$VAR[Plots]</label>
                 </control>
-                <control type="panel" id="50">
-                    <visible>[Control.HasFocus(9012) | Control.HasFocus(50)| Control.HasFocus(60)]</visible>
-                    <include>VisibleFadeEffectDelay</include>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>967</width>
-                    <height>781</height>
-                    <pagecontrol>60</pagecontrol>
-                    <onleft>50</onleft>
-                    <onright>60</onright>
-                    <include>List_9009_Commons_Actors</include>
-                </control>
-                <control type="scrollbar" id="60">
-                    <visible>[Control.IsVisible(50)]</visible>
-                    <posx>936</posx>
-                    <posy>0</posy>
-                    <height>781</height>
-                    <include>VerticalScroller</include>
-                    <onleft>50</onleft>
-                    <onright>9000</onright>
-                </control>
                 <control type="group" description="Movies">
-                    <visible>![Control.HasFocus(9012) | Control.HasFocus(50) | Control.HasFocus(9013)| Control.HasFocus(60)]</visible>
+                    <visible>![Control.HasFocus(9013) |Control.HasFocus(9012) | Control.HasFocus(50) | Control.HasFocus(61)]</visible>
                     <include>VisibleFadeEffectDelay</include>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>730</posy>
+                        <width>1131</width>
+                        <height>8</height>
+                        <texture>list/bg_facade_separator.png</texture>
+                    </control>
+                    <control type="grouplist" description="Flags">
+                        <posx>45</posx>
+                        <posy>753</posy>
+                        <width min="90" max="967">auto</width>
+                        <height>90</height>
+                        <itemgap>20</itemgap>
+                        <orientation>horizontal</orientation>
+                        <align>left</align>
+                        <aligny>center</aligny>
+                        <include>Codecs</include>
+                    </control>
                     <control type="panel" id="9009">
                         <visible>![container.content(tvshows) | container.content(episodes) | SubString(Container.FolderPath,videodb://musicvideos,left)]</visible>
                         <include>VisibleFadeEffectDelay</include>
@@ -216,10 +199,22 @@
                                 <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
                             </item>
                             <item>
+                                <label>$LOCALIZE[202]:</label>
+                                <label2>$INFO[ListItem.TagLine]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.TagLine)</visible>
+                            </item>
+                            <item>
                                 <label>$LOCALIZE[20074]:</label>
                                 <label2>$INFO[ListItem.mpaa]</label2>
                                 <onclick>noop</onclick>
                                 <visible>!IsEmpty(ListItem.mpaa)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[15311]</label>
+                                <label2>$INFO[ListItem.FilenameAndPath]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.FilenameAndPath)</visible>
                             </item>
                         </content>
                     </control>
@@ -259,6 +254,12 @@
                                     <onclick>noop</onclick>
                                     <visible>!IsEmpty(ListItem.Rating)</visible>
                                 </item>
+                                <item>
+                                    <label>$LOCALIZE[15311]</label>
+                                    <label2>$INFO[ListItem.FilenameAndPath]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.FilenameAndPath)</visible>
+                                </item>
                             </content>
                         </control>
                     </control>
@@ -279,6 +280,12 @@
                                     <label2>$INFO[ListItem.Season]</label2>
                                     <onclick>noop</onclick>
                                     <visible>!IsEmpty(ListItem.Season)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[20359]:</label>
+                                    <label2>$INFO[ListItem.Episode]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.Episode)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[31322]:</label>
@@ -321,6 +328,12 @@
                                     <label2>$INFO[ListItem.Rating]</label2>
                                     <onclick>noop</onclick>
                                     <visible>!IsEmpty(ListItem.Rating)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[15311]</label>
+                                    <label2>$INFO[ListItem.FilenameAndPath]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.FilenameAndPath)</visible>
                                 </item>
                             </content>
                         </control>
@@ -379,91 +392,88 @@
                                     <onclick>noop</onclick>
                                     <visible>!IsEmpty(ListItem.Duration)</visible>
                                 </item>
+                                <item>
+                                    <label>$LOCALIZE[15311]</label>
+                                    <label2>$INFO[ListItem.FilenameAndPath]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.FilenameAndPath)</visible>
+                                </item>
                             </content>
                         </control>
                     </control>
+                    <control type="scrollbar" id="60">
+                        <posx>1100</posx>
+                        <posy>0</posy>
+                        <height>730</height>
+                        <include>VerticalScroller</include>
+                        <onleft>49</onleft>
+                        <onright>9000</onright>
+                    </control>
                 </control>
             </control>
-        </control>
-        <control type="image">
-            <posx>45</posx>
-            <posy>832</posy>
-            <height>73</height>
-            <width>480</width>
-            <texture border="3">list/bg_facade_nofocus.png</texture>
-            <visible>!IsEmpty(ListItem.VideoResolution)</visible>
-        </control>
-        <control type="grouplist" description="Flags">
-            <posx>69</posx>
-            <posy>934</posy>
-            <width min="90" max="967">auto</width>
-            <height>90</height>
-            <itemgap>5</itemgap>
-            <orientation>horizontal</orientation>
-            <align>left</align>
-            <aligny>center</aligny>
-            <include>Codecs</include>
-        </control>
-        <control type="grouplist" id="9000">
-            <posx>1492</posx>
-            <posy>221</posy>
-            <width>383</width>
-            <onleft>9000</onleft>
-            <onright>50</onright>
-            <onup>9000</onup>
-            <ondown>9000</ondown>
-            <onback>50</onback>
-            <itemgap>0</itemgap>
-            <control type="togglebutton" id="8" description="Play/browse to Show">
-                <width>383</width>
-                <include>LeftMenuButton</include>
-                <label>$LOCALIZE[208]</label>
-                <altlabel>$LOCALIZE[1024]</altlabel>
-                <usealttexture>Container.Content(TVShows)</usealttexture>
+            <control type="grouplist" id="9000">
+                <posx>1309</posx>
+                <posy>163</posy>
+                <width>433</width>
+                <height>365</height>
+                <onleft>9009</onleft>
+                <onright>62</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <onback>50</onback>
+                <itemgap>0</itemgap>
+                <pagecontrol>62</pagecontrol>
+                <control type="togglebutton" id="8" description="Play/browse to Show">
+                    <include>RightDialogButton</include>
+                    <label>$LOCALIZE[208]</label>
+                    <altlabel>$LOCALIZE[1024]</altlabel>
+                    <usealttexture>Container.Content(TVShows)</usealttexture>
+                </control>
+                <control type="button" id="299" description="Cinema">
+                    <visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience)</visible>
+                    <include>RightDialogButton</include>
+                    <label>$LOCALIZE[31005]</label>
+                    <onclick>Dialog.Close(all,true)</onclick>
+                    <onclick>Playlist.Clear</onclick>
+                    <onclick>RunScript(script.cinema.experience)</onclick>
+                </control>
+                <control type="button" id="11" description="Trailer">
+                    <include>RightDialogButton</include>
+                    <label>$LOCALIZE[20410]</label>
+                    <visible>!IsEmpty(ListItem.Trailer)</visible>
+                </control>
+                <control type="togglebutton" id="9013" description="Plot">
+                    <include>RightDialogButton</include>
+                    <label>$LOCALIZE[207]</label>
+                </control>
+                <control type="togglebutton" id="9012" description="Actors">
+                    <include>RightDialogButton</include>
+                    <label>$LOCALIZE[344]</label>
+                    <onclick>Control.SetFocus(50)</onclick>
+                    <onleft>Control.SetFocus(50)</onleft>
+                </control>
+                <control type="button" id="6" description="Refresh">
+                    <include>RightDialogButton</include>
+                    <label>$LOCALIZE[184]</label>
+                </control>
+                <control type="togglebutton" id="10" description="Get Art">
+                    <include>RightDialogButton</include>
+                    <label>$LOCALIZE[13511]</label>
+                </control>
+                <control type="togglebutton" id="100" description="TvTunes">
+                    <visible>Container.Content(TVShows) + System.HasAddon(script.tvtunes) + Skin.HasSetting(TVTunes.Enabled)</visible>
+                    <include>RightDialogButton</include>
+                    <label>$LOCALIZE[31956]</label>
+                    <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
+                </control>
             </control>
-            <control type="button" id="299" description="Cinema">
-                <visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience)</visible>
-                <width>383</width>
-                <include>LeftMenuButton</include>
-                <label>$LOCALIZE[31005]</label>
-                <onclick>Dialog.Close(all,true)</onclick>
-                <onclick>Playlist.Clear</onclick>
-                <onclick>RunScript(script.cinema.experience)</onclick>
-            </control>
-            <control type="button" id="11" description="Trailer">
-                <width>383</width>
-                <include>LeftMenuButton</include>
-                <label>$LOCALIZE[20410]</label>
-                <visible>!IsEmpty(ListItem.Trailer)</visible>
-            </control>
-            <control type="togglebutton" id="9013" description="Plot">
-                <width>383</width>
-                <include>LeftMenuButton</include>
-                <label>$LOCALIZE[207]</label>
-            </control>
-            <control type="togglebutton" id="9012" description="Actors">
-                <width>383</width>
-                <include>LeftMenuButton</include>
-                <label>$LOCALIZE[344]</label>
-                <onclick>Control.SetFocus(50)</onclick>
-                <onleft>Control.SetFocus(50)</onleft>
-            </control>
-            <control type="button" id="6" description="Refresh">
-                <width>383</width>
-                <include>LeftMenuButton</include>
-                <label>$LOCALIZE[184]</label>
-            </control>
-            <control type="togglebutton" id="10" description="Get Art">
-                <width>383</width>
-                <include>LeftMenuButton</include>
-                <label>$LOCALIZE[13511]</label>
-            </control>
-            <control type="togglebutton" id="100" description="TvTunes">
-                <visible>Container.Content(TVShows) + System.HasAddon(script.tvtunes) + Skin.HasSetting(TVTunes.Enabled)</visible>
-                <width>383</width>
-                <include>LeftMenuButton</include>
-                <label>$LOCALIZE[31956]</label>
-                <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
+            <control type="scrollbar" id="62">
+                <posx>1711</posx>
+                <posy>163</posy>
+                <height>365</height>
+                <include>VerticalScroller</include>
+                <onleft>9000</onleft>
+                <onright>9000</onright>
             </control>
         </control>
     </controls>
