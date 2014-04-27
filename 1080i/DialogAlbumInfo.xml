@@ -120,7 +120,7 @@
                 <posx>178</posx>
                 <posy>382</posy>
                 <include>VisibleFadeEffect</include>
-                <control type="list" id="49">
+                <control type="panel" id="49">
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>1131</width>
@@ -131,7 +131,7 @@
                     <ondown>50</ondown>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime>200</scrolltime>
-                    <itemlayout height="73">
+                    <itemlayout height="73" width="1131">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -158,13 +158,13 @@
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="73">
+                    <focusedlayout height="73" width="1131">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
                             <height>73</height>
                             <width>1131</width>
-                            <texture border="3">list/bg_facade_nofocus.png</texture>
+                            <texture border="3">list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label" description="Label2">
                             <posx>TextMargin</posx>
@@ -267,7 +267,7 @@
                     <ondown>50</ondown>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime>200</scrolltime>
-                    <itemlayout height="73">
+                    <itemlayout height="73" width="1131">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -294,7 +294,7 @@
                             <label>$INFO[ListItem.Label2]</label>
                         </control>
                     </itemlayout>
-                    <focusedlayout height="73">
+                    <focusedlayout height="73" width="1131">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
