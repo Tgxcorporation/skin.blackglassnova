@@ -749,7 +749,7 @@
                 <texture border="83">common/bg_dialog.png</texture>
             </control>
             <control type="image" description="RA BG Plexbmc only">
-                <visible>Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | [IntegerGreaterThan(Container(311).NumItems,0) + Control.Hasfocus(311)] | [IntegerGreaterThan(Container(312).NumItems,0) + Control.Hasfocus(312)] | [IntegerGreaterThan(Container(411).NumItems,0) + Control.Hasfocus(411)] | [IntegerGreaterThan(Container(413).NumItems,0) + Control.Hasfocus(413)] | Control.Hasfocus(511)] | Control.Hasfocus(900)]</visible>
+                <visible>Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | [IntegerGreaterThan(Container(311).NumItems,0) + Control.Hasfocus(311)] | [IntegerGreaterThan(Container(312).NumItems,0) + Control.Hasfocus(312)] | [IntegerGreaterThan(Container(411).NumItems,0) + Control.Hasfocus(411)] | [IntegerGreaterThan(Container(413).NumItems,0) + Control.Hasfocus(413)] | Control.Hasfocus(511) | Control.Hasfocus(900)]</visible>
                 <animation effect="fade" time="100" start="100" end="0">hidden</animation>
                 <animation effect="fade" time="100" start="0" end="100">visible</animation>
                 <posx>400</posx>
