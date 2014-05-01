@@ -46,7 +46,7 @@
                 <posx>278</posx>
                 <posy>398</posy>
                 <width>931</width>
-                <height>730</height>
+                <height>657</height>
                 <onleft>60</onleft>
                 <onright>150</onright>
                 <onup>120</onup>
@@ -162,7 +162,7 @@
                 <animation effect="slide" start="-6,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1178</posx>
                 <posy>398</posy>
-                <height>730</height>
+                <height>657</height>
                 <include>VerticalScroller</include>
                 <onleft>120</onleft>
                 <onright>120</onright>
@@ -208,10 +208,11 @@
                     <width>433</width>
                     <height>292</height>
                     <onleft>120</onleft>
-                    <onright>120</onright>
+                    <onright>61</onright>
                     <onup>150</onup>
                     <ondown>160</ondown>
                     <scrolltime>200</scrolltime>
+                    <pagecontrol>61</pagecontrol>
                     <itemlayout width="433" height="73">
                         <control type="image">
                             <posx>0</posx>
@@ -247,6 +248,14 @@
                         </control>
                     </focusedlayout>
                 </control>
+                <control type="scrollbar" id="61">
+                    <posx>1611</posx>
+                    <posy>455</posy>
+                    <height>292</height>
+                    <include>VerticalScroller</include>
+                    <onleft>150</onleft>
+                    <onright>150</onright>
+                </control>
                 <control type="image">
                     <posx>1209</posx>
                     <posy>745</posy>
@@ -274,14 +283,15 @@
                 <width>370</width>
                 <height>231</height>
                 <aspectratio>keep</aspectratio>
+                <include>ThumbBorder</include>
             </control>
             <control type="label" id="140" description="Searching...">
                 <posx>1179</posx>
-                <posy>1080</posy>
+                <posy>1065</posy>
                 <width>876</width>
                 <align>right</align>
-                <font>LeftMenuTitleFont</font>
-                <textcolor>60ffffff</textcolor>
+                <font>FacadeNumItemsFont</font>
+                <textcolor>FacadeNumItemsColor</textcolor>
             </control>
             <control type="group" id="111">
                 <control type="grouplist">

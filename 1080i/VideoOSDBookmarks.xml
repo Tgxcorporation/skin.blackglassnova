@@ -104,7 +104,7 @@
             <posy>1036</posy>
             <width>1364</width>
             <height>90</height>
-            <itemgap>30</itemgap>
+            <itemgap>0</itemgap>
             <aligny>bottom</aligny>
             <align>center</align>
             <orientation>horizontal</orientation>
@@ -121,6 +121,7 @@
                 <label>$LOCALIZE[296]</label>
             </control>
             <control type="button" id="4">
+                <width>550</width>
                 <description>Clear Bookmark button</description>
                 <label>$LOCALIZE[20406]</label>
                 <visible>videoplayer.content(episodes)</visible>
