@@ -414,7 +414,7 @@
                     <posy>371</posy>
                     <width>1131</width>
                     <height>438</height>
-                    <onleft>9000</onleft>
+                    <onleft>61</onleft>
                     <onright>9000</onright>
                     <onup>9000</onup>
                     <ondown>9000</ondown>
@@ -510,6 +510,15 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>
+                </control>
+                <control type="scrollbar" id="61">
+                    <visible>Control.IsVisible(50)</visible>
+                    <posx>1100</posx>
+                    <posy>371</posy>
+                    <height>438</height>
+                    <include>VerticalScroller</include>
+                    <onleft>50</onleft>
+                    <onright>9000</onright>
                 </control>
             </control>
         </control>
