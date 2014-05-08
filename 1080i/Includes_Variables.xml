@@ -193,4 +193,8 @@
         <value condition="[IsEmpty(Skin.String(Default.Background))|IsEmpty(ListItem.Art(fanart))]+[Container.content(Addons)|Window.IsActive(CustomAddons.xml)|Window.IsActive(myPrograms.xml)]+!StringCompare(ListItem.Label,..)">special://skin/backgrounds/Addons.jpg</value>
         <value>special://skin/backgrounds/default/</value>
     </variable>
+    <variable name="Home.Menu.Type" description="FixedList or Wraplist for home menus">
+        <value condition="Skin.HasSetting(Fixed_HomeMenu)">fixedlist</value>
+        <value>wraplist</value>
+    </variable>
 </includes>

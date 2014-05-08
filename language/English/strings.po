@@ -460,3 +460,7 @@ msgstr ""
 msgctxt "#31997"
 msgid "Ken Burns Effect on backdrops"
 msgstr ""
+
+msgctxt "#31998"
+msgid "Use fixed list on Home Menu"
+msgstr ""

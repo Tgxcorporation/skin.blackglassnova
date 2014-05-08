@@ -2148,6 +2148,18 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(Home_DefaultBG)</onclick>
                         </item>
+                        <item id="2" description="FixedList Home Menu">
+                            <visible>Skin.HasSetting(Fixed_HomeMenu)</visible>
+                            <label>$LOCALIZE[31998]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(Fixed_HomeMenu)</onclick>
+                        </item>
+                        <item id="2" description="FixedList Home Menu">
+                            <visible>!Skin.HasSetting(Fixed_HomeMenu)</visible>
+                            <label>$LOCALIZE[31998]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(Fixed_HomeMenu)</onclick>
+                        </item>
                     </content>
                 </control>
                 <!-- 9000 7 -->
