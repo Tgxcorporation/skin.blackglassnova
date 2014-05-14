@@ -83,13 +83,13 @@
         <font>
             <name>InfoTitleFont</name>
             <filename>Sansation_Regular.ttf</filename>
-            <size>46</size>
+            <size>39</size>
             <style>bold</style>
         </font>
         <font>
             <name>InfoTitleShortFont</name>
             <filename>Sansation_Regular.ttf</filename>
-            <size>40</size>
+            <size>37</size>
             <style>bold</style>
             <aspect>1.0</aspect>
         </font>

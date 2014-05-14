@@ -939,11 +939,11 @@
                 <include>FacadeOverlay</include>
             </control>
             <control type="image">
-                <posx>415</posx>
+                <posx>115</posx>
                 <posy>210</posy>
                 <height>490</height>
                 <texture>list/bg_strip_horizontal_left.png</texture>
-                <width>50</width>
+                <width>350</width>
             </control>
             <control type="image">
                 <posx>TextMargin</posx>
@@ -1096,13 +1096,36 @@
                 <height>675</height>
                 <texture>common/bg_tvguide.png</texture>
             </control>
+            <control type="image">
+                <posx>115</posx>
+                <posy>772</posy>
+                <height>490</height>
+                <texture>list/bg_strip_horizontal_left.png</texture>
+                <width>350</width>
+            </control>
+            <control type="image">
+                <posx>465</posx>
+                <posy>772</posy>
+                <width>2</width>
+                <height>490</height>
+                <texture>list/bg_facade_vertical.png</texture>
+            </control>
+            <control type="image">
+                <posx>95</posx>
+                <posy>798</posy>
+                <width>318</width>
+                <height>254</height>
+                <aspectratio>keep</aspectratio>
+                <texture>$INFO[ListItem.Icon]</texture>
+                <include>ThumbBorder</include>
+            </control>
             <control type="group">
-                <posx>TextMargin</posx>
+                <posx>465</posx>
                 <posy>0</posy>
                 <control type="label">
                     <posx>TextMargin</posx>
                     <posy>782</posy>
-                    <width>1740</width>
+                    <width>1320</width>
                     <aligny>top</aligny>
                     <align>left</align>
                     <font>InfoTitleFont</font>
@@ -1113,14 +1136,14 @@
                     <type>image</type>
                     <posx>0</posx>
                     <posy>774</posy>
-                    <width>1840</width>
+                    <width>1420</width>
                     <height>79</height>
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
                     <posx>TextMargin</posx>
                     <posy>853</posy>
-                    <width>1740</width>
+                    <width>1320</width>
                     <height>73</height>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
@@ -1128,9 +1151,9 @@
                     <label>$INFO[ListItem.Duration]  •  $INFO[ListItem.StartTime] / $INFO[ListItem.EndTime]</label>
                 </control>
                 <control type="label">
-                    <posx>1785</posx>
+                    <posx>1365</posx>
                     <posy>853</posy>
-                    <width>1740</width>
+                    <width>720</width>
                     <height>73</height>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
@@ -1142,14 +1165,14 @@
                     <type>image</type>
                     <posx>0</posx>
                     <posy>847</posy>
-                    <width>1840</width>
+                    <width>1420</width>
                     <height>79</height>
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="textbox" description="Plot Value for TV">
                     <posx>TextMargin</posx>
                     <posy>930</posy>
-                    <width>1740</width>
+                    <width>1320</width>
                     <height>130</height>
                     <pagecontrol>-</pagecontrol>
                     <textcolor>MainColor</textcolor>
