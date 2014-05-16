@@ -36,7 +36,6 @@
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="image">
-                <visible>!Control.IsVisible(3)</visible>
                 <posx>610</posx>
                 <posy>154</posy>
                 <height>471</height>
@@ -45,7 +44,6 @@
                 <colordiffuse>90ffffff</colordiffuse>
             </control>
             <control type="image">
-                <visible>!Control.IsVisible(3)</visible>
                 <posx>609</posx>
                 <posy>154</posy>
                 <width>2</width>
@@ -53,7 +51,7 @@
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
             <control type="image">
-                <visible>!Control.IsVisible(3)+IsEmpty(Container(6).ListItem.Thumb)</visible>
+                <visible>IsEmpty(Container(6).ListItem.Thumb)</visible>
                 <posx>611</posx>
                 <posy>154</posy>
                 <width>264</width>
@@ -63,7 +61,6 @@
                 <include>ThumbBorder</include>
             </control>
             <control type="image" id="5775">
-                <visible>!Control.IsVisible(3)</visible>
                 <posx>611</posx>
                 <posy>154</posy>
                 <width>264</width>
@@ -73,7 +70,7 @@
                 <include>ThumbBorder</include>
             </control>
             <control type="label" description="Author">
-                <visible>!Control.IsVisible(3)+!IsEmpty(Container(6).ListItem.Property(Addon.Creator))</visible>
+                <visible>Control.IsVisible(5)+!IsEmpty(Container(6).ListItem.Property(Addon.Creator))</visible>
                 <posx>636</posx>
                 <posy>410</posy>
                 <width>214</width>
@@ -86,7 +83,7 @@
                 <label>$INFO[Container(6).ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</label>
             </control>
             <control type="image">
-                <visible>!Control.IsVisible(3)</visible>
+                <visible>Control.IsVisible(5)</visible>
                 <posx>611</posx>
                 <posy>440</posy>
                 <width>264</width>
@@ -94,13 +91,14 @@
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="button" id="5" description="Manual Get more common button">
-                <visible>!Control.IsVisible(3)</visible>
                 <posx>611</posx>
                 <posy>519</posy>
                 <width>264</width>
                 <height>73</height>
                 <onright>60</onright>
                 <onleft>6</onleft>
+                <textoffsetx>25</textoffsetx>
+                <font>SmallButtonFont</font>
                 <include>LeftMenuButton</include>
             </control>
             <control type="group" description="Group 6 Thumbs">
@@ -112,7 +110,7 @@
                     <itemgap>0</itemgap>
                     <orientation>vertical</orientation>
                     <onleft>5</onleft>
-                    <onright>5</onright>
+                    <onright>60</onright>
                     <onup>6</onup>
                     <ondown>6</ondown>
                     <pagecontrol>60</pagecontrol>
@@ -129,7 +127,7 @@
                             <visible>IsEmpty(ListItem.Label2)</visible>
                             <posx>25</posx>
                             <height>71</height>
-                            <width>515</width>
+                            <width>505</width>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListNoFocusColor</textcolor>
                             <info>ListItem.Label</info>
@@ -138,7 +136,7 @@
                             <visible>!IsEmpty(ListItem.Label2)</visible>
                             <posx>25</posx>
                             <height>42</height>
-                            <width>515</width>
+                            <width>505</width>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListNoFocusColor</textcolor>
                             <info>ListItem.Label</info>
@@ -148,7 +146,7 @@
                             <posx>25</posx>
                             <posy>39</posy>
                             <height>28</height>
-                            <width>515</width>
+                            <width>505</width>
                             <font>FacadeListSubFont</font>
                             <textcolor>SublistNoFocusColor</textcolor>
                             <info>ListItem.Label2</info>
@@ -175,7 +173,7 @@
                             <visible>!IsEmpty(ListItem.Label2)</visible>
                             <posx>25</posx>
                             <height>42</height>
-                            <width>515</width>
+                            <width>505</width>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListFocusColor</textcolor>
                             <info>ListItem.Label</info>
@@ -185,7 +183,7 @@
                             <posx>25</posx>
                             <posy>39</posy>
                             <height>28</height>
-                            <width>515</width>
+                            <width>505</width>
                             <font>FacadeListSubFont</font>
                             <textcolor>SublistFocusColor</textcolor>
                             <info>ListItem.Label2</info>
@@ -193,61 +191,72 @@
                     </focusedlayout>
                 </control>
             </control>
+            <control type="scrollbar" id="60">
+                <visible>Control.IsVisible(6)</visible>
+                <posx>578</posx>
+                <posy>154</posy>
+                <height>438</height>
+                <include>VerticalScroller</include>
+                <onleft>6</onleft>
+                <onright>5</onright>
+            </control>
             <control type="group" description="Group 3 Plain list">
                 <control type="list" id="3">
                     <posx>45</posx>
                     <posy>154</posy>
-                    <width>830</width>
+                    <width>564</width>
                     <height>438</height>
                     <itemgap>0</itemgap>
                     <orientation>vertical</orientation>
                     <onleft>5</onleft>
-                    <onright>60</onright>
+                    <onright>61</onright>
                     <onup>3</onup>
                     <ondown>3</ondown>
-                    <pagecontrol>60</pagecontrol>
+                    <pagecontrol>61</pagecontrol>
                     <scrolltime>0</scrolltime>
-                    <itemlayout width="830" height="73">
+                    <itemlayout width="566" height="73">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
                             <height>73</height>
-                            <width>830</width>
+                            <width>565</width>
                             <texture border="3">list/bg_facade_nofocus.png</texture>
                         </control>
                         <control type="label">
-                            <posx>TextMargin</posx>
+                            <posx>25</posx>
                             <height>71</height>
-                            <width>740</width>
+                            <width>505</width>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListNoFocusColor</textcolor>
                             <info>ListItem.Label</info>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="830" height="73">
+                    <focusedlayout width="566" height="73">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
                             <height>73</height>
-                            <width>830</width>
+                            <width>565</width>
                             <texture border="3">list/bg_facade_focus.png</texture>
                         </control>
                         <control type="label">
-                            <posx>TextMargin</posx>
+                            <posx>25</posx>
                             <height>71</height>
-                            <width>740</width>
+                            <width>505</width>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListFocusColor</textcolor>
                             <info>ListItem.Label</info>
                         </control>
                     </focusedlayout>
                 </control>
-                <control type="scrollbar" id="60">
-                    <posx>844</posx>
+                <control type="scrollbar" id="61">
+                    <visible>Control.IsVisible(3)</visible>
+                    <posx>578</posx>
                     <posy>154</posy>
                     <height>438</height>
                     <include>VerticalScroller</include>
                     <onleft>3</onleft>
+                    <onright>5</onright>
                 </control>
             </control>
         </control>
