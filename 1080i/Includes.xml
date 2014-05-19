@@ -1183,15 +1183,15 @@
             <label>$LOCALIZE[19069]</label>
             <onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
         </item>
-        <!--         <item id="50" description="Reload skin">
+        <item id="50" description="Reload skin">
             <visible>Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[20183]</label>
             <onclick>XBMC.ReloadSkin()</onclick>
-        </item> -->
-        <item id="90145" description="Weather">
+        </item>
+        <item id="90145" description="SysInfo">
             <visible>Container(300).HasFocus(10)</visible>
-            <label>$LOCALIZE[8]</label>
-            <onclick>activatewindow(WeatherSettings)</onclick>
+            <label>$LOCALIZE[130]</label>
+            <onclick>activatewindow(systeminfo)</onclick>
         </item>
         <item id="90146" description="Profiles">
             <visible>Container(300).HasFocus(10)</visible>
