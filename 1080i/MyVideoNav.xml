@@ -42,9 +42,10 @@
                         <include>Icon_Fade</include>
                         <control type="image" description="Thumb">
                             <posx>18</posx>
-                            <posy>411</posy>
-                            <width>435</width>
-                            <height>435</height>
+                            <posy>398</posy>
+                            <width>648</width>
+                            <height>448</height>
+                            <aspectratio aligny="bottom" scalediffuse="false">keep</aspectratio>
                             <include>SquareThumb</include>
                             <include>ThumbBorder</include>
                         </control>
@@ -446,6 +447,7 @@
                 <control type="group" description="MediaInfo">
                     <visible>[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,)</visible>
                     <include>Icon_Fade</include>
+                    <posy>37</posy>
                     <control type="group" description="Movies and shows">
                         <visible>!container.content(episodes)</visible>
                         <include>Icon_Fade</include>
@@ -562,7 +564,7 @@
                                 <posx>TextMargin</posx>
                                 <posy>230</posy>
                                 <width>630</width>
-                                <height>650</height>
+                                <height>610</height>
                                 <font>InfoPlotFont</font>
                                 <textcolor>MainColor</textcolor>
                                 <label>$VAR[Plots]</label>
@@ -685,7 +687,7 @@
                                 <posx>TextMargin</posx>
                                 <posy>230</posy>
                                 <width>630</width>
-                                <height>650</height>
+                                <height>610</height>
                                 <font>InfoPlotFont</font>
                                 <textcolor>MainColor</textcolor>
                                 <label>$VAR[Plots]</label>

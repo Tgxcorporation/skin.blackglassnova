@@ -276,8 +276,12 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr ""
 
-#empty strings from id 31905 to 31953
-#AMBER
+#empty strings from id 31905 to 31952
+#BLACK GLASS NOVA
+
+msgctxt "#31953"
+msgid "Large List"
+msgstr ""
 
 #."S" Season
 msgctxt "#31954"
