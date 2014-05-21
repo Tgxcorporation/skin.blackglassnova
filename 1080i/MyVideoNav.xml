@@ -19,7 +19,7 @@
             <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
             <!-- COMMON -->
             <control type="group" description="COMMON">
-                <visible>StringCompare(ListItem.Title,)|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]]</visible>
+                <visible>StringCompare(ListItem.Label,..)|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)|!IsEmpty(ListItem.Property(Addon.Description))]]</visible>
                 <include>Icon_Fade</include>
                 <posy>219</posy>
                 <control type="image" description="Thumb">
