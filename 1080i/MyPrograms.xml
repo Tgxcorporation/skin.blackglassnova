@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+    <defaultcontrol always="true">50</defaultcontrol>
+    <include>OpenClose</include>
+    <controls>
+        <control type="group" description="fanart">
+            <include>Fanart_Art</include>
+        </control>
+        <include>Player_Show</include>
+        <include>Time</include>
+        <control type="label">
+            <include>WindowTitle</include>
+            <label>$LOCALIZE[0]</label>
+        </control>
+        <control type="label">
+            <include>WindowTitleSub</include>
+            <label>$VAR[GlobalSubTitles]</label>
+        </control>
+        <control type="group" description="Fix for Plexbmc">
+            <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
+            <include>View_50</include>
+            <include>View_51_Panel</include>
+            <include>View_52_BigList</include>
+            <include>View_53_Grid</include>
+            <include>View_54_LowList</include>
+            <include>View_55_BigPanel</include>
+            <include>View_56_BannerList</include>
+            <!-- Showcase 57,
+                        58 & 59 -->
+            <include>View_59_Showcase</include>
+            <!-- COMMON -->
+            <control type="group" description="Generic Thumb">
+                <visible>[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+IsEmpty(ListItem.Property(Addon.Description))</visible>
+                <posy>219</posy>
+                <control type="image" description="Thumb">
+                    <posx>18</posx>
+                    <posy>411</posy>
+                    <width>435</width>
+                    <height>435</height>
+                    <aspectratio align="left" aligny="bottom" scalediffuse="false">keep</aspectratio>
+                    <include>SquareThumb</include>
+                    <include>ThumbBorder</include>
+                </control>
+            </control>
+            <!-- LIST 50 -->
+            <control type="group" description="50 MediaInfo">
+                <visible>Control.IsVisible(50)</visible>
+                <include>OpenClose</include>
+                <include>Addons_Info_50</include>
+            </control>
+            <!-- LIST 51 Panel -->
+            <control type="group" description="51 MediaInfo">
+                <visible>Control.IsVisible(51)</visible>
+                <include>OpenClose</include>
+                <include>Addons_Info_51</include>
+            </control>
+            <!-- LIST 52 BigList -->
+            <control type="group" description="52 MediaInfo">
+                <visible>Control.IsVisible(52)</visible>
+                <include>OpenClose</include>
+                <include>Addons_Info_52</include>
+            </control>
+            <!-- LIST 54 Low List -->
+            <control type="group" description="54 MediaInfo">
+                <visible>Control.IsVisible(54)</visible>
+                <include>OpenClose</include>
+                <include>Addons_Info_54</include>
+            </control>
+            <!-- LIST 55 Big Panel -->
+            <control type="group" description="55">
+                <visible>Control.IsVisible(55)</visible>
+                <include>OpenClose</include>
+                <include>Addons_Info_55</include>
+            </control>
+        </control>
+        <!-- SIDE MENU -->
+        <control type="group" description="Side menu 9000 group">
+            <include>LeftMenu</include>
+            <control type="label">
+                <include>LeftMenuTitleLabel</include>
+                <label>$LOCALIZE[582]</label>
+            </control>
+            <control type="grouplist" id="9000">
+                <include>LeftMenuButtonGroup</include>
+                <onleft>9000</onleft>
+                <onright>50</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <onback>50</onback>
+                <include>9000GrouplistParameters</include>
+                <control type="button" id="3" description="Sort">
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="togglebutton" id="4" description="SortMode">
+                    <alttexturenofocus>-</alttexturenofocus>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
+                    <altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
+                </control>
+                <control type="label" id="9183">
+                    <textoffsety>35</textoffsety>
+                    <height>69</height>
+                    <include>LeftMenuTitleLabel</include>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[1034]</label>
+                </control>
+                <control type="image" id="9184">
+                    <width>577</width>
+                    <height>2</height>
+                    <texture border="0,0,0,2">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="button" id="699" description="Playing">
+                    <enable>Player.HasMedia</enable>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[16003]</label>
+                    <onclick>fullscreen</onclick>
+                </control>
+            </control>
+        </control>
+    </controls>
+</window>
