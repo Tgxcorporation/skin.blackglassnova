@@ -15,6 +15,7 @@
     <include file="Includes_Variables.xml"/>
     <include file="Includes_Codec.xml"/>
     <include file="Includes_PVR.xml"/>
+    <include file="Includes_Programs.xml"/>
     <include file="defaults.xml"/>
     <include file="Includes_Plexbmc.xml"/>
     <include file="Includes_Horizontal_Home.xml"/>

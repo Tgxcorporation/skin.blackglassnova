@@ -24,9 +24,15 @@
             <include>View_55_BigPanel</include>
             <include>View_56_BannerList</include>
             <include>View_59_Showcase</include>
+            <include>Addons_Info_50</include>
+            <include>Addons_Info_51</include>
+            <include>Addons_Info_52</include>
+            <include>Addons_Info_54</include>
+            <include>Addons_Info_55</include>
+
             <!-- COMMON -->
             <control type="group" description="COMMON">
-                <visible>[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]</visible>
+                <visible>[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+IsEmpty(ListItem.Property(Addon.Description))</visible>
                 <posx>0</posx>
                 <posy>479</posy>
                 <include>Icon_Fade</include>
@@ -35,6 +41,7 @@
                     <posy>151</posy>
                     <width>440</width>
                     <height>440</height>
+                    <aspectratio align="left" aligny="bottom" scalediffuse="false">keep</aspectratio>
                     <include>EpisodeThumb</include>
                     <include>ThumbBorder</include>
                 </control>
