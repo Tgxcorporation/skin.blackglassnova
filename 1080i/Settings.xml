@@ -153,6 +153,7 @@
                         <onclick>noop</onclick>
                     </item>
                     <item id="9" description="Plexbmc addon specific">
+                        <visible>System.HasAddon(plugin.video.plexbmc)</visible>
                         <label>PleXBMC</label>
                         <onclick>noop</onclick>
                     </item>
