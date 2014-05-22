@@ -164,7 +164,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1131</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Label2">
                             <posx>TextMargin</posx>
@@ -300,7 +300,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1131</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Label2">
                             <posx>TextMargin</posx>
@@ -454,7 +454,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1131</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Main Label">
                             <posx>TextMargin</posx>
@@ -498,7 +498,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1131</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Main Label">
                             <posx>TextMargin</posx>

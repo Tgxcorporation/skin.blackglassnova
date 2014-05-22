@@ -14,6 +14,7 @@
    -->
     <include file="Includes_Variables.xml"/>
     <include file="Includes_Codec.xml"/>
+    <include file="Includes_CustomColors.xml"/>
     <include file="Includes_PVR.xml"/>
     <include file="Includes_Programs.xml"/>
     <include file="defaults.xml"/>
@@ -554,10 +555,6 @@
         <bordertexture border="27">common/JewelCase.png</bordertexture>
         <bordersize>27</bordersize>
     </include>
-    <include name="ThumbBorderOverlay">
-        <bordertexture border="27">common/JewelCaseOverlay.png</bordertexture>
-        <bordersize>27</bordersize>
-    </include>
     <include name="EpisodeThumb">
         <texture fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
         <aspectratio scalediffuse="false">keep</aspectratio>
@@ -643,9 +640,9 @@
         <height>85</height>
         <font>ButtonFont</font>
         <focusedcolor>MainColor</focusedcolor>
-        <texturefocus border="27">buttons/bg_button_focus.png</texturefocus>
+        <include>KeybaordTextureFocus</include>
         <texturenofocus border="27">buttons/bg_button_nofocus.png</texturenofocus>
-        <alttexturefocus border="27">buttons/bg_button_focus.png</alttexturefocus>
+        <include>KeybaordAltTextureFocus</include>
         <alttexturenofocus border="27">buttons/bg_button_nofocus.png</alttexturenofocus>
     </include>
     <include name="List_9009_Commons" description="Video Info metadata container">
@@ -691,7 +688,7 @@
                 <posy>0</posy>
                 <height>73</height>
                 <width>1131</width>
-                <texture border="3">list/bg_facade_focus.png</texture>
+                <include>FacadeFocus</include>
             </control>
             <control type="label" description="Label2">
                 <posx>TextMargin</posx>
@@ -1330,9 +1327,9 @@
         <align>left</align>
         <radioposx>505</radioposx>
         <textoffsetx>TextMargin</textoffsetx>
-        <texturefocus border="4">list/bg_facade_focus.png</texturefocus>
+        <include>TextureFocus</include>
         <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus>
-        <alttexturefocus border="4">list/bg_facade_focus.png</alttexturefocus>
+        <include>AltTextureFocus</include>
         <alttexturenofocus border="4">list/bg_facade_nofocus.png</alttexturenofocus>
     </include>
     <include name="RightDialogButton">
@@ -1342,9 +1339,9 @@
         <align>left</align>
         <radioposx>505</radioposx>
         <textoffsetx>TextMargin</textoffsetx>
-        <texturefocus border="4">list/bg_facade_focus.png</texturefocus>
+        <include>TextureFocus</include>
         <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus>
-        <alttexturefocus border="4">list/bg_facade_focus.png</alttexturefocus>
+        <include>AltTextureFocus</include>
         <alttexturenofocus border="4">list/bg_facade_nofocus.png</alttexturenofocus>
     </include>
     <include name="VerticalScroller">
@@ -1402,7 +1399,7 @@
                 <posy>0</posy>
                 <height>73</height>
                 <width>1131</width>
-                <texture border="3">list/bg_facade_focus.png</texture>
+                <include>FacadeFocus</include>
             </control>
             <control type="label">
                 <posx>TextMargin</posx>
@@ -1457,7 +1454,7 @@
                 <posy>0</posy>
                 <width>377</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_focus.png</texture>
+                <include>FlippedFacadeFocus</include>
             </control>
             <control type="label" description="Main Label">
                 <posx>TextMarginR</posx>
@@ -1523,7 +1520,7 @@
                 <posy>0</posy>
                 <width>577</width>
                 <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_focus.png</texture>
+                <include>FlippedFacadeFocus</include>
             </control>
             <control type="label" description="Main Label">
                 <posx>TextMarginR</posx>
@@ -1589,7 +1586,7 @@
                 <posy>228</posy>
                 <width>384</width>
                 <height>239</height>
-                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                <texture border="27" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
         </itemlayout>
@@ -1614,7 +1611,7 @@
                 <posy>243</posy>
                 <width>424</width>
                 <height>262</height>
-                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+                <include>ThumbOverlay</include>
             </control>
         </focusedlayout>
         <content>

@@ -156,7 +156,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="progress">
                         <posx>0</posx>
@@ -412,7 +412,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="progress">
                         <posx>0</posx>
@@ -637,7 +637,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="image">
                         <posx>1339</posx>
@@ -704,7 +704,7 @@
                 <posx>233</posx>
                 <posy>483</posy>
                 <width>1454</width>
-                <height>515</height>
+                <height>953</height>
                 <texture border="90">common/bg_dialog.png</texture>
             </control>
             <control type="image">
@@ -822,7 +822,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1364</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="image">
                         <posx>1339</posx>

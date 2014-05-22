@@ -181,7 +181,7 @@
                         <posy>372</posy>
                         <width>274</width>
                         <height>387</height>
-                        <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+                        <include>ThumbOverlay</include>
                     </control>
                     <control type="image">
                         <posx>216</posx>
@@ -404,7 +404,7 @@
                         <posy>347</posy>
                         <width>364</width>
                         <height>364</height>
-                        <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+                        <include>ThumbOverlay</include>
                     </control>
                 </focusedlayout>
             </control>
@@ -615,7 +615,7 @@
                         <posy>277</posy>
                         <width>480</width>
                         <height>294</height>
-                        <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+                        <include>ThumbOverlay</include>
                     </control>
                     <control type="image">
                         <posx>422</posx>

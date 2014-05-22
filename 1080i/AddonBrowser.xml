@@ -191,7 +191,7 @@
                     <posy>0</posy>
                     <height>73</height>
                     <width>660</width>
-                    <texture border="3">list/bg_facade_focus.png</texture>
+                    <include>FacadeFocus</include>
                 </control>
                 <control type="label" description="Main Label">
                     <visible>[StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>

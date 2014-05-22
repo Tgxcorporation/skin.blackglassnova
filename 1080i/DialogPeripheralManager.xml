@@ -82,7 +82,7 @@
                         <posy>0</posy>
                         <height>101</height>
                         <width>1164</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="label" description="Name">
                         <posx>25</posx>

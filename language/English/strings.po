@@ -88,7 +88,19 @@ msgctxt "#31025"
 msgid "Items"
 msgstr ""
 
-#empty strings from id 31026 to 31037
+#empty strings from id 31026 to 31034
+
+msgctxt "#31035"
+msgid "Fuchsia"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Violet"
+msgstr ""
+
+msgctxt "#31037"
+msgid "Highlighted Colors"
+msgstr ""
 
 msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"

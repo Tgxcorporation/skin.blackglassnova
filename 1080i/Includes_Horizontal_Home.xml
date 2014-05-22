@@ -190,7 +190,7 @@
                     <posy>1040</posy>
                     <width>1920</width>
                     <height>41</height>
-                    <texture border="3">list/bg_facade_focus.png</texture>
+                    <texture border="3">list/bg_facade_focus_white.png</texture>
                 </control>
                 <control type="rss" description="RSS Feed">
                     <posx>TextMargin</posx>

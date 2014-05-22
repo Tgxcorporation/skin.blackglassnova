@@ -104,7 +104,7 @@
                 <posy>315</posy>
                 <width>243</width>
                 <height>235</height>
-                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+                <include>ThumbOverlay</include>
             </control>
         </focusedlayout>
     </include>
@@ -210,7 +210,7 @@
                 <posy>315</posy>
                 <width>243</width>
                 <height>235</height>
-                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+                <include>ThumbOverlay</include>
             </control>
         </focusedlayout>
     </include>
@@ -300,7 +300,7 @@
                 <posy>315</posy>
                 <width>243</width>
                 <height>235</height>
-                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+                <include>ThumbOverlay</include>
             </control>
         </focusedlayout>
     </include>
@@ -390,7 +390,7 @@
                 <posy>315</posy>
                 <width>243</width>
                 <height>235</height>
-                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+                <include>ThumbOverlay</include>
             </control>
         </focusedlayout>
     </include>
@@ -504,7 +504,7 @@
                 <posy>220</posy>
                 <width>243</width>
                 <height>159</height>
-                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+                <include>ThumbOverlay</include>
             </control>
         </focusedlayout>
     </include>
@@ -620,7 +620,7 @@
                 <posy>210</posy>
                 <width>243</width>
                 <height>159</height>
-                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+                <include>ThumbOverlay</include>
             </control>
         </focusedlayout>
     </include>
@@ -712,7 +712,7 @@
                 <posy>220</posy>
                 <width>243</width>
                 <height>159</height>
-                <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay.png</texture>
+                <include>ThumbOverlay</include>
             </control>
         </focusedlayout>
     </include>

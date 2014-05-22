@@ -274,7 +274,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>660</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="progress">
                         <posx>0</posx>
@@ -587,7 +587,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>660</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="progress">
                         <posx>0</posx>
@@ -869,7 +869,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>660</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <include>RecOverlayFocus</include>
                     <control type="image" description="Thumb">
@@ -1000,7 +1000,7 @@
                         <width>420</width>
                         <height>70</height>
                         <bordersize>0</bordersize>
-                        <texture border="3">list/tvguide_button_nofocus.png</texture>
+                        <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="image">
                         <posx>15</posx>
@@ -1027,7 +1027,7 @@
                         <width>420</width>
                         <height>70</height>
                         <bordersize>0</bordersize>
-                        <texture border="3">list/tvguide_button_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="image">
                         <posx>15</posx>
@@ -1299,7 +1299,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1840</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="image">
                         <posx>15</posx>
@@ -1554,7 +1554,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>1840</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="image">
                         <posx>15</posx>
@@ -1878,7 +1878,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>660</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <include>RecOverlayFocus</include>
                     <control type="label" description="Main Label">
@@ -2146,7 +2146,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>660</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="progress">
                         <posx>0</posx>

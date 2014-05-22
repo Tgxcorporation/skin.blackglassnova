@@ -104,7 +104,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>433</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="label" description="Main Label">
                         <posx>TextMargin</posx>
@@ -152,8 +152,12 @@
                         <label>$LOCALIZE[31985]</label>
                         <onclick>noop</onclick>
                     </item>
+                    <item id="11" description="Highlighted Textures">
+                        <label>$LOCALIZE[31037]</label>
+                        <onclick>noop</onclick>
+                    </item>
                     <item id="9" description="Plexbmc addon specific">
-                        <visible>System.HasAddon(plugin.video.plexbmc)</visible>
+                        <visible>Skin.HasSetting(plexbmc)</visible>
                         <label>PleXBMC</label>
                         <onclick>noop</onclick>
                     </item>
@@ -215,14 +219,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>73</height>
-                            <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Main Label">
                             <posx>TextMargin</posx>
@@ -347,14 +344,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>73</height>
-                            <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Main Label">
                             <posx>TextMargin</posx>
@@ -554,14 +544,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>73</height>
-                            <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Main Label">
                             <posx>TextMargin</posx>
@@ -924,7 +907,7 @@
                                 <posy>0</posy>
                                 <height>73</height>
                                 <width>1231</width>
-                                <texture border="3">list/bg_facade_focus.png</texture>
+                                <include>FacadeFocus</include>
                             </control>
                             <control type="label" description="Main Label">
                                 <posx>TextMargin</posx>
@@ -1396,7 +1379,7 @@
                                 <posy>0</posy>
                                 <height>73</height>
                                 <width>1231</width>
-                                <texture border="3">list/bg_facade_focus.png</texture>
+                                <include>FacadeFocus</include>
                             </control>
                             <control type="label" description="Main Label">
                                 <posx>TextMargin</posx>
@@ -1853,14 +1836,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>73</height>
-                            <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Main Label">
                             <posx>TextMargin</posx>
@@ -2087,14 +2063,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>73</height>
-                            <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Main Label">
                             <posx>TextMargin</posx>
@@ -2218,14 +2187,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>73</height>
-                            <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Main Label">
                             <posx>TextMargin</posx>
@@ -2402,14 +2364,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>73</height>
-                            <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Main Label">
                             <posx>TextMargin</posx>
@@ -2549,14 +2504,7 @@
                             <posy>0</posy>
                             <height>73</height>
                             <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>73</height>
-                            <width>1231</width>
-                            <texture border="3">list/bg_facade_focus.png</texture>
+                            <include>FacadeFocus</include>
                         </control>
                         <control type="label" description="Main Label">
                             <posx>TextMargin</posx>
@@ -2882,6 +2830,463 @@
                             <onclick>Skin.ToggleSetting(Queue.Hide)</onclick>
                         </item>
                     </content>
+                </control>
+                <!--9000 4-->
+                <control type="group">
+                    <posx>128</posx>
+                    <posy>382</posy>
+                    <visible>Container(9000).Hasfocus(11)</visible>
+                    <control type="image">
+                        <posx>307</posx>
+                        <posy>0</posy>
+                        <width>2</width>
+                        <height>803</height>
+                        <texture>list/bg_facade_vertical.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>615</posx>
+                        <posy>0</posy>
+                        <width>2</width>
+                        <height>803</height>
+                        <texture>list/bg_facade_vertical.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>923</posx>
+                        <posy>0</posy>
+                        <width>2</width>
+                        <height>803</height>
+                        <texture>list/bg_facade_vertical.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>328</posy>
+                        <width>1231</width>
+                        <height>73</height>
+                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>258</posy>
+                        <width>1231</width>
+                        <height>73</height>
+                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>104</posy>
+                        <width>1231</width>
+                        <height>73</height>
+                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>730</posy>
+                        <width>1231</width>
+                        <height>73</height>
+                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>660</posy>
+                        <width>1231</width>
+                        <height>73</height>
+                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>506</posy>
+                        <width>1231</width>
+                        <height>73</height>
+                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                    </control>
+                    <!-- WHITE -->
+                    <control type="group">
+                        <posx>0</posx>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>307</width>
+                            <height>177</height>
+                            <texture border="27">common/JewelCaseOverlay_white.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>177</posy>
+                            <width>307</width>
+                            <height>63</height>
+                            <texture border="27">list/bg_facade_focus_white.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>240</posy>
+                            <width>307</width>
+                            <height>90</height>
+                            <texture border="27">buttons/bg_button_focus_white.png</texture>
+                        </control>
+                        <control type="radiobutton" id="852801">
+                            <posx>0</posx>
+                            <posy>331</posy>
+                            <width>307</width>
+                            <height>70</height>
+                            <label>$LOCALIZE[742]</label>
+                            <radioposx>225</radioposx>
+                            <font>SmallButtonFont</font>
+                            <onright>852802</onright>
+                            <onleft>9000</onleft>
+                            <ondown>852805</ondown>
+                            <onup>852805</onup>
+                            <onclick>Skin.ToggleSetting(Highilighted.Color.White)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Fuchsia)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Azure)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Blue)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Green)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Red)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Violet)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Yellow)</onclick>
+                            <selected>Skin.HasSetting(Highilighted.Color.White)|![Skin.HasSetting(Highilighted.Color.Fuchsia)|Skin.HasSetting(Highilighted.Color.Azure)|Skin.HasSetting(Highilighted.Color.Yellow)|Skin.HasSetting(Highilighted.Color.Blue)|Skin.HasSetting(Highilighted.Color.Green)|Skin.HasSetting(Highilighted.Color.Red)|Skin.HasSetting(Highilighted.Color.Violet)]</selected>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </control>
+                    </control>
+                    <!-- FUCHSIA -->
+                    <control type="group">
+                        <posx>308</posx>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>307</width>
+                            <height>177</height>
+                            <texture border="27">common/JewelCaseOverlay_fuchsia.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>177</posy>
+                            <width>307</width>
+                            <height>63</height>
+                            <texture border="27">list/bg_facade_focus_fuchsia.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>240</posy>
+                            <width>307</width>
+                            <height>90</height>
+                            <texture border="27">buttons/bg_button_focus_fuchsia.png</texture>
+                        </control>
+                        <control type="radiobutton" id="852802">
+                            <posx>0</posx>
+                            <posy>331</posy>
+                            <width>307</width>
+                            <height>70</height>
+                            <label>$LOCALIZE[31035]</label>
+                            <radioposx>225</radioposx>
+                            <font>SmallButtonFont</font>
+                            <onright>852803</onright>
+                            <onleft>852801</onleft>
+                            <ondown>852806</ondown>
+                            <onup>852806</onup>
+                            <onclick>Skin.Reset(Highilighted.Color.White)</onclick>
+                            <onclick>Skin.ToggleSetting(Highilighted.Color.Fuchsia)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Azure)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Blue)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Green)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Red)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Violet)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Yellow)</onclick>
+                            <selected>Skin.HasSetting(Highilighted.Color.Fuchsia)</selected>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </control>
+                    </control>
+                    <!-- AZURE -->
+                    <control type="group">
+                        <posx>616</posx>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>307</width>
+                            <height>177</height>
+                            <texture border="27">common/JewelCaseOverlay_azure.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>177</posy>
+                            <width>307</width>
+                            <height>63</height>
+                            <texture border="27">list/bg_facade_focus_azure.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>240</posy>
+                            <width>307</width>
+                            <height>90</height>
+                            <texture border="27">buttons/bg_button_focus_azure.png</texture>
+                        </control>
+                        <control type="radiobutton" id="852803">
+                            <posx>0</posx>
+                            <posy>331</posy>
+                            <width>307</width>
+                            <height>70</height>
+                            <label>$LOCALIZE[765]</label>
+                            <radioposx>225</radioposx>
+                            <font>SmallButtonFont</font>
+                            <onright>852804</onright>
+                            <onleft>852802</onleft>
+                            <ondown>852807</ondown>
+                            <onup>852807</onup>
+                            <onclick>Skin.Reset(Highilighted.Color.White)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Fuchsia)</onclick>
+                            <onclick>Skin.ToggleSetting(Highilighted.Color.Azure)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Blue)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Green)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Red)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Violet)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Yellow)</onclick>
+                            <selected>Skin.HasSetting(Highilighted.Color.Azure)</selected>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </control>
+                    </control>
+                    <!-- BLUE -->
+                    <control type="group">
+                        <posx>924</posx>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>307</width>
+                            <height>177</height>
+                            <texture border="27">common/JewelCaseOverlay_blue.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>177</posy>
+                            <width>307</width>
+                            <height>63</height>
+                            <texture border="27">list/bg_facade_focus_blue.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>240</posy>
+                            <width>307</width>
+                            <height>90</height>
+                            <texture border="27">buttons/bg_button_focus_blue.png</texture>
+                        </control>
+                        <control type="radiobutton" id="852804">
+                            <posx>0</posx>
+                            <posy>331</posy>
+                            <width>307</width>
+                            <height>70</height>
+                            <label>$LOCALIZE[762]</label>
+                            <radioposx>225</radioposx>
+                            <font>SmallButtonFont</font>
+                            <onright>9000</onright>
+                            <onleft>852803</onleft>
+                            <ondown>852808</ondown>
+                            <onup>852808</onup>
+                            <onclick>Skin.Reset(Highilighted.Color.White)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Fuchsia)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Azure)</onclick>
+                            <onclick>Skin.ToggleSetting(Highilighted.Color.Blue)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Green)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Red)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Violet)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Yellow)</onclick>
+                            <selected>Skin.HasSetting(Highilighted.Color.Blue)</selected>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </control>
+                    </control>
+                    <!-- GREEN -->
+                    <control type="group">
+                        <posx>0</posx>
+                        <posy>402</posy>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>307</width>
+                            <height>177</height>
+                            <texture border="27">common/JewelCaseOverlay_green.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>177</posy>
+                            <width>307</width>
+                            <height>63</height>
+                            <texture border="27">list/bg_facade_focus_green.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>240</posy>
+                            <width>307</width>
+                            <height>90</height>
+                            <texture border="27">buttons/bg_button_focus_green.png</texture>
+                        </control>
+                        <control type="radiobutton" id="852805">
+                            <posx>0</posx>
+                            <posy>331</posy>
+                            <width>307</width>
+                            <height>70</height>
+                            <label>$LOCALIZE[763]</label>
+                            <radioposx>225</radioposx>
+                            <font>SmallButtonFont</font>
+                            <onright>852806</onright>
+                            <onleft>9000</onleft>
+                            <ondown>852801</ondown>
+                            <onup>852801</onup>
+                            <onclick>Skin.Reset(Highilighted.Color.White)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Fuchsia)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Azure)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Blue)</onclick>
+                            <onclick>Skin.ToggleSetting(Highilighted.Color.Green)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Red)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Violet)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Yellow)</onclick>
+                            <selected>Skin.HasSetting(Highilighted.Color.Green)</selected>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </control>
+                    </control>
+                    <!-- RED -->
+                    <control type="group">
+                        <posx>308</posx>
+                        <posy>402</posy>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>307</width>
+                            <height>177</height>
+                            <texture border="27">common/JewelCaseOverlay_red.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>177</posy>
+                            <width>307</width>
+                            <height>63</height>
+                            <texture border="27">list/bg_facade_focus_red.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>240</posy>
+                            <width>307</width>
+                            <height>90</height>
+                            <texture border="27">buttons/bg_button_focus_red.png</texture>
+                        </control>
+                        <control type="radiobutton" id="852806">
+                            <posx>0</posx>
+                            <posy>331</posy>
+                            <width>307</width>
+                            <height>70</height>
+                            <label>$LOCALIZE[13343]</label>
+                            <radioposx>225</radioposx>
+                            <font>SmallButtonFont</font>
+                            <onright>852807</onright>
+                            <onleft>852805</onleft>
+                            <ondown>852802</ondown>
+                            <onup>852802</onup>
+                            <onclick>Skin.Reset(Highilighted.Color.White)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Fuchsia)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Azure)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Blue)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Green)</onclick>
+                            <onclick>Skin.ToggleSetting(Highilighted.Color.Red)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Violet)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Yellow)</onclick>
+                            <selected>Skin.HasSetting(Highilighted.Color.Red)</selected>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </control>
+                    </control>
+                    <!-- Violet -->
+                    <control type="group">
+                        <posx>616</posx>
+                        <posy>402</posy>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>307</width>
+                            <height>177</height>
+                            <texture border="27">common/JewelCaseOverlay_violet.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>177</posy>
+                            <width>307</width>
+                            <height>63</height>
+                            <texture border="27">list/bg_facade_focus_violet.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>240</posy>
+                            <width>307</width>
+                            <height>90</height>
+                            <texture border="27">buttons/bg_button_focus_violet.png</texture>
+                        </control>
+                        <control type="radiobutton" id="852807">
+                            <posx>0</posx>
+                            <posy>331</posy>
+                            <width>307</width>
+                            <height>70</height>
+                            <label>$LOCALIZE[31036]</label>
+                            <radioposx>225</radioposx>
+                            <font>SmallButtonFont</font>
+                            <onright>852808</onright>
+                            <onleft>852806</onleft>
+                            <ondown>852803</ondown>
+                            <onup>852803</onup>
+                            <onclick>Skin.Reset(Highilighted.Color.White)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Fuchsia)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Azure)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Blue)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Green)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Red)</onclick>
+                            <onclick>Skin.ToggleSetting(Highilighted.Color.Violet)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Yellow)</onclick>
+                            <selected>Skin.HasSetting(Highilighted.Color.Violet)</selected>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </control>
+                    </control>
+                    <!-- Yellow -->
+                    <control type="group">
+                        <posx>924</posx>
+                        <posy>402</posy>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>307</width>
+                            <height>177</height>
+                            <texture border="27">common/JewelCaseOverlay_yellow.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>177</posy>
+                            <width>307</width>
+                            <height>63</height>
+                            <texture border="27">list/bg_facade_focus_yellow.png</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>240</posy>
+                            <width>307</width>
+                            <height>90</height>
+                            <texture border="27">buttons/bg_button_focus_yellow.png</texture>
+                        </control>
+                        <control type="radiobutton" id="852808">
+                            <posx>0</posx>
+                            <posy>331</posy>
+                            <width>307</width>
+                            <height>70</height>
+                            <label>$LOCALIZE[743]</label>
+                            <radioposx>225</radioposx>
+                            <font>SmallButtonFont</font>
+                            <onright>9000</onright>
+                            <onleft>852807</onleft>
+                            <ondown>852804</ondown>
+                            <onup>852804</onup>
+                            <onclick>Skin.Reset(Highilighted.Color.White)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Fuchsia)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Azure)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Blue)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Green)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Red)</onclick>
+                            <onclick>Skin.Reset(Highilighted.Color.Violet)</onclick>
+                            <onclick>Skin.ToggleSetting(Highilighted.Color.Yellow)</onclick>
+                            <selected>Skin.HasSetting(Highilighted.Color.Yellow)</selected>
+                            <onclick>XBMC.ReloadSkin()</onclick>
+                        </control>
+                    </control>
                 </control>
             </control>
         </control>

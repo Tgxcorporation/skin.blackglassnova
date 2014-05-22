@@ -93,7 +93,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>864</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="label" description="Main Label">
                         <visible>IsEmpty(ListItem.Label2)</visible>
@@ -230,7 +230,7 @@
                         <posy>0</posy>
                         <height>73</height>
                         <width>864</width>
-                        <texture border="3">list/bg_facade_focus.png</texture>
+                        <include>FacadeFocus</include>
                     </control>
                     <control type="label" description="Main Label">
                         <visible>IsEmpty(ListItem.Label2)</visible>

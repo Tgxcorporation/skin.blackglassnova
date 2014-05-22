@@ -1217,7 +1217,7 @@
     <include name="RecommendedEpisodeContent">
         <item id="1" description="Shortcut 1 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.1.Season)].$INFO[Window(Home).Property(RecommendedEpisode.1.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1225,7 +1225,7 @@
         </item>
         <item id="2" description="Shortcut 2 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.2.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.2.Season)].$INFO[Window(Home).Property(RecommendedEpisode.2.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1233,7 +1233,7 @@
         </item>
         <item id="3" description="Shortcut 3 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.3.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.3.Season)].$INFO[Window(Home).Property(RecommendedEpisode.3.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1241,7 +1241,7 @@
         </item>
         <item id="4" description="Shortcut 4 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.4.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.4.Season)].$INFO[Window(Home).Property(RecommendedEpisode.4.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1249,7 +1249,7 @@
         </item>
         <item id="5" description="Shortcut 5 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.5.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.5.Season)].$INFO[Window(Home).Property(RecommendedEpisode.5.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1257,7 +1257,7 @@
         </item>
         <item id="6" description="Shortcut 6 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.6.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.6.Season)].$INFO[Window(Home).Property(RecommendedEpisode.6.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1265,7 +1265,7 @@
         </item>
         <item id="7" description="Shortcut 7 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.7.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.7.Season)].$INFO[Window(Home).Property(RecommendedEpisode.7.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1273,7 +1273,7 @@
         </item>
         <item id="8" description="Shortcut 8 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.8.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.8.Season)].$INFO[Window(Home).Property(RecommendedEpisode.8.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1281,7 +1281,7 @@
         </item>
         <item id="9" description="Shortcut 9 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.9.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.9.Season)].$INFO[Window(Home).Property(RecommendedEpisode.9.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1289,7 +1289,7 @@
         </item>
         <item id="10" description="Shortcut 10 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.10.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.10.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.10.Season)].$INFO[Window(Home).Property(RecommendedEpisode.10.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.10.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1297,7 +1297,7 @@
         </item>
         <item id="11" description="Shortcut 11 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.11.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.11.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.11.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.11.Season)].$INFO[Window(Home).Property(RecommendedEpisode.11.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.11.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1305,7 +1305,7 @@
         </item>
         <item id="12" description="Shortcut 12 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.12.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.12.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.12.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[120359] $INFO[Window(Home).Property(RecommendedEpisode.12.Season)].$INFO[Window(Home).Property(RecommendedEpisode.12.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.12.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1313,7 +1313,7 @@
         </item>
         <item id="13" description="Shortcut 13 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.13.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.13.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.13.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[201359] $INFO[Window(Home).Property(RecommendedEpisode.13.Season)].$INFO[Window(Home).Property(RecommendedEpisode.13.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.13.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1321,7 +1321,7 @@
         </item>
         <item id="14" description="Shortcut 14 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.14.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.14.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.14.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.14.Season)].$INFO[Window(Home).Property(RecommendedEpisode.14.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.14.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1329,7 +1329,7 @@
         </item>
         <item id="15" description="Shortcut 15 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.15.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.15.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.15.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[203159] $INFO[Window(Home).Property(RecommendedEpisode.15.Season)].$INFO[Window(Home).Property(RecommendedEpisode.15.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.15.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1337,7 +1337,7 @@
         </item>
         <item id="16" description="Shortcut 16 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.16.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.16.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.16.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.16.Season)].$INFO[Window(Home).Property(RecommendedEpisode.16.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.16.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1345,7 +1345,7 @@
         </item>
         <item id="17" description="Shortcut 17 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.17.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.17.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.17.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.17.Season)].$INFO[Window(Home).Property(RecommendedEpisode.17.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.17.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1353,7 +1353,7 @@
         </item>
         <item id="18" description="Shortcut 18 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.18.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.18.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.18.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.18.Season)].$INFO[Window(Home).Property(RecommendedEpisode.18.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.18.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1361,7 +1361,7 @@
         </item>
         <item id="19" description="Shortcut 19 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.19.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.19.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.19.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[203519] $INFO[Window(Home).Property(RecommendedEpisode.19.Season)].$INFO[Window(Home).Property(RecommendedEpisode.19.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.19.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>
@@ -1369,7 +1369,7 @@
         </item>
         <item id="20" description="Shortcut 20 (skin widgets)">
             <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.20.TVshowTitle))</visible>
-            <label>$INFO[Window(Home).Property(RecommendedEpisode.20.TVshowTitle)</label>
+            <label>$INFO[Window(Home).Property(RecommendedEpisode.20.TVshowTitle)]</label>
             <property name="SeasonEpisode">$LOCALIZE[20359] $INFO[Window(Home).Property(RecommendedEpisode.20.Season)].$INFO[Window(Home).Property(RecommendedEpisode.20.Episode)]</property>
             <thumb>$INFO[Window(Home).Property(RecommendedEpisode.20.Art(tvshow.poster))]</thumb>
             <property name="ItemType">$LOCALIZE[31966]</property>

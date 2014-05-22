@@ -110,12 +110,19 @@
     <variable name="PVROverlayFocus" description="PVR Overlay image">
         <value condition="ListItem.IsRecording">list/tvguide_button_recording_focus.png</value>
         <value condition="ListItem.HasTimer">list/tvguide_button_timer_focus.png</value>
-        <value>list/tvguide_button_focus.png</value>
+        <value condition="Skin.HasSetting(Highilighted.Color.Yellow)">list/bg_facade_focus_yellow.png</value>
+        <value condition="Skin.HasSetting(Highilighted.Color.Violet)">list/bg_facade_focus_violet.png</value>
+        <value condition="Skin.HasSetting(Highilighted.Color.Red)">list/bg_facade_focus_red.png</value>
+        <value condition="Skin.HasSetting(Highilighted.Color.Green)">list/bg_facade_focus_green.png</value>
+        <value condition="Skin.HasSetting(Highilighted.Color.Blue)">list/bg_facade_focus_blue.png</value>
+        <value condition="Skin.HasSetting(Highilighted.Color.Azure)">list/bg_facade_focus_azure.png</value>
+        <value condition="Skin.HasSetting(Highilighted.Color.Fuchsia)">list/bg_facade_focus_fuchsia.png</value>
+        <value>list/bg_facade_focus_white.png</value>
     </variable>
     <variable name="PVROverlayNoFocus" description="PVR Overlay image">
         <value condition="ListItem.IsRecording">list/tvguide_button_recording_nofocus.png</value>
         <value condition="ListItem.HasTimer">list/tvguide_button_timer_nofocus.png</value>
-        <value>list/tvguide_button_nofocus.png</value>
+        <value>list/bg_facade_nofocus.png</value>
     </variable>
     <variable name="PVR_Headings" description="PVR Headings">
         <value condition="Control.IsVisible(16) | Control.IsVisible(15) | Control.IsVisible(10)">$INFO[Control.GetLabel(31)]</value>
