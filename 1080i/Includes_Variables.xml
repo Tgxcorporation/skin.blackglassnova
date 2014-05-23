@@ -27,6 +27,7 @@
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(files)]">defaultHardDiskBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(years)]">defaultYearBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Window.IsActive(MyPics.xml)]">defaultPictureBig.png</value>
+        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Window.IsActive(script-videoextras-main.xml)]">defaultVideoBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Genres)]">defaultGenreBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Playlists)]">defaultPlaylistBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(movies)|Container.content(musicvideos)]">defaultVideoBig.png</value>
