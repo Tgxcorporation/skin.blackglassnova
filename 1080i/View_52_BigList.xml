@@ -5,7 +5,8 @@
             <visible>Control.IsVisible(52)</visible>
             <include>Icon_Fade</include>
             <control type="group">
-                <animation effect="slide" time="0" start="0,0" end="-780,0" condition="![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]">Conditional</animation>
+                <include>SlideViewUnknown</include>
+                <include>SlideView</include>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>131</posy>

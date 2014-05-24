@@ -19,7 +19,7 @@
             <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
             <!-- COMMON -->
             <control type="group" description="COMMON">
-                <visible>StringCompare(ListItem.Label,..)|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)|!IsEmpty(ListItem.Property(Addon.Description))]]</visible>
+                <visible>StringCompare(ListItem.Label,..)|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)|!IsEmpty(ListItem.Property(Addon.Description))]]|control.hasfocus(60)</visible>
                 <include>Icon_Fade</include>
                 <posy>219</posy>
                 <control type="image" description="Thumb">
@@ -39,6 +39,8 @@
                 <include>View_50</include>
                 <include>Addons_Info_50</include>
                 <control type="group" description="MediaInfo">
+                    <include>SlideView</include>
+                    <include>HideMediaInfo</include>
                     <visible>[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,)</visible>
                     <include>Icon_Fade</include>
                     <control type="group" description="Movies and shows">
@@ -430,6 +432,8 @@
                 <include>View_52_BigList</include>
                 <include>Addons_Info_52</include>
                 <control type="group" description="MediaInfo">
+                    <include>SlideView</include>
+                    <include>HideMediaInfo</include>
                     <visible>[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,)</visible>
                     <include>Icon_Fade</include>
                     <posy>37</posy>
@@ -707,6 +711,8 @@
                 <include>View_54_LowList</include>
                 <include>Addons_Info_54</include>
                 <control type="group" description="MediaInfo">
+                    <include>SlideView</include>
+                    <include>HideMediaInfo</include>
                     <visible>[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,)</visible>
                     <include>Icon_Fade</include>
                     <control type="group" description="Movies and shows">

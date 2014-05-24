@@ -505,18 +505,28 @@
         <texture fallback="rating0.png">$INFO[ListItem.StarRating]</texture>
     </include>
     <include name="ListWatchedOverlayFocus">
-        <control type="image">
-            <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-            <posx>58r</posx>
-            <posy>0</posy>
-            <width>30</width>
-            <height>72</height>
-            <texture>$VAR[Overlay]</texture>
-            <aspectratio aligny="center">keep</aspectratio>
-        </control>
         <control type="group">
-            <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+            <animation effect="slide" time="0" start="0,0" end="-780,0" condition="!control.hasfocus(60)">Conditional</animation>
+            <control type="image">
+                <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]+![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]</visible>
+                <posx>90r</posx>
+                <posy>0</posy>
+                <width>90</width>
+                <height>72</height>
+                <colordiffuse>ccffffff</colordiffuse>
+                <texture border="0,0,50,0">common/basichome_vertical_gradient.png</texture>
+            </control>
+            <control type="image">
+                <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+                <posx>58r</posx>
+                <posy>0</posy>
+                <width>30</width>
+                <height>72</height>
+                <texture>$VAR[Overlay]</texture>
+                <aspectratio aligny="center">keep</aspectratio>
+            </control>
             <control type="label" description="l2">
+                <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
                 <posx>30r</posx>
                 <height>71</height>
                 <width>100</width>
@@ -528,19 +538,29 @@
         </control>
     </include>
     <include name="ListWatchedOverlayNoFocus">
-        <control type="image">
-            <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-            <posx>58r</posx>
-            <posy>0</posy>
-            <width>30</width>
-            <height>72</height>
-            <texture>$VAR[Overlay]</texture>
-            <colordiffuse>aaffffff</colordiffuse>
-            <aspectratio aligny="center">keep</aspectratio>
-        </control>
         <control type="group">
-            <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
+            <animation effect="slide" time="0" start="0,0" end="-780,0" condition="!control.hasfocus(60)">Conditional</animation>
+            <control type="image">
+                <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]+![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]</visible>
+                <posx>90r</posx>
+                <posy>0</posy>
+                <width>90</width>
+                <height>72</height>
+                <colordiffuse>ccffffff</colordiffuse>
+                <texture border="0,0,50,0">common/basichome_vertical_gradient.png</texture>
+            </control>
+            <control type="image">
+                <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+                <posx>58r</posx>
+                <posy>0</posy>
+                <width>30</width>
+                <height>72</height>
+                <texture>$VAR[Overlay]</texture>
+                <colordiffuse>aaffffff</colordiffuse>
+                <aspectratio aligny="center">keep</aspectratio>
+            </control>
             <control type="label" description="l2">
+                <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
                 <posx>30r</posx>
                 <height>71</height>
                 <width>100</width>
@@ -1627,5 +1647,14 @@
         <control type="wraplist" id="300" description="Main Bar">
             <include>Horizontal_HomeMenu</include>
         </control>
+    </include>
+    <include name="SlideView" description="View slides to the left">
+        <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="control.hasfocus(60)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]">Conditional</animation>
+    </include>
+    <include name="HideMediaInfo" description="Hide Media Info">
+        <animation effect="fade" time="150" start="100" end="0" condition="control.hasfocus(60)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]">Conditional</animation>
+    </include>
+    <include name="SlideViewUnknown" description="View slides to the left">
+        <animation effect="slide" time="0" start="0,0" end="-780,0" condition="![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]">Conditional</animation>
     </include>
 </includes>

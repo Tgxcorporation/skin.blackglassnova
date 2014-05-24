@@ -284,7 +284,7 @@
                         </item>
                         <item id="7" description="Plexbmc config">
                             <visible>System.HasAddon(plugin.video.plexbmc)</visible>
-                            <label>PleXBMC</label>
+                            <label>$LOCALIZE[31007]</label>
                             <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
                         </item>
                     </content>

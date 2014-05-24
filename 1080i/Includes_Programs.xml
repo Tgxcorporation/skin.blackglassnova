@@ -2,6 +2,8 @@
 <includes>
     <include name="Addons_Info_50">
         <control type="group" description="MediaInfo">
+            <include>SlideView</include>
+            <include>HideMediaInfo</include>
             <visible>Control.IsVisible(50)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
             <include>Icon_Fade</include>
             <control type="group">
@@ -183,6 +185,8 @@
     </include>
     <include name="Addons_Info_52">
         <control type="group" description="MediaInfo">
+            <include>SlideView</include>
+            <include>HideMediaInfo</include>
             <visible>Control.IsVisible(52)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
             <include>Icon_Fade</include>
             <posy>37</posy>
@@ -284,6 +288,8 @@
     </include>
     <include name="Addons_Info_54">
         <control type="group" description="MediaInfo">
+            <include>SlideView</include>
+            <include>HideMediaInfo</include>
             <visible>Control.IsVisible(54)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
             <include>Icon_Fade</include>
             <control type="group">
