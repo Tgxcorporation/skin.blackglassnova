@@ -127,8 +127,8 @@
                 <posy>426</posy>
                 <height>584</height>
                 <include>VerticalScroller</include>
-                <onleft>50</onleft>
-                <onright>9000</onright>
+                <onleft>56</onleft>
+                <onright>56</onright>
             </control>
         </control>
     </include>

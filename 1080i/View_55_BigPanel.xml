@@ -237,7 +237,7 @@
                 <height>858</height>
                 <include>VerticalScroller</include>
                 <onleft>55</onleft>
-                <onright>9000</onright>
+                <onright>55</onright>
             </control>
         </control>
     </include>
