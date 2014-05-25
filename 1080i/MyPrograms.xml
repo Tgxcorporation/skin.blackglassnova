@@ -30,7 +30,7 @@
             <include>View_59_Showcase</include>
             <!-- COMMON -->
             <control type="group" description="Generic Thumb">
-                <visible>[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+IsEmpty(ListItem.Property(Addon.Description))</visible>
+                <visible>[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+IsEmpty(ListItem.Property(Addon.Description))|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)]</visible>
                 <posy>219</posy>
                 <control type="image" description="Thumb">
                     <posx>18</posx>

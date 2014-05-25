@@ -27,7 +27,7 @@
             <include>View_59_Showcase</include>
             <!-- COMMON -->
             <control type="group" description="COMMON">
-                <visible>[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+![!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Property(Addon.Description))]|control.hasfocus(60)</visible>
+                <visible>[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+![!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Property(Addon.Description))]|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)]</visible>
                 <posx>0</posx>
                 <posy>479</posy>
                 <include>Icon_Fade</include>

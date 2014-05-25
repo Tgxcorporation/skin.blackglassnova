@@ -16,7 +16,7 @@
         </control>
         <!-- COMMON -->
         <control type="group" description="COMMON">
-            <visible>StringCompare(ListItem.Label,..)|control.hasfocus(60)</visible>
+            <visible>StringCompare(ListItem.Label,..)|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)]</visible>
             <posx>0</posx>
             <posy>479</posy>
             <include>Icon_Fade</include>
@@ -119,7 +119,7 @@
             </control>
         </control>
         <control type="group">
-            <include>SlideView</include>
+            <include condition="Skin.HasSetting(SlideListToLeft)">SlideView</include>
             <control type="image">
                 <posx>1224</posx>
                 <posy>350</posy>
@@ -165,7 +165,8 @@
                         <visible>[StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>25</posx>
                         <height>71</height>
-                        <width>1385</width>
+                        <include condition="Skin.HasSetting(SlideListToLeft)">SlideViewLabelWidth</include>
+                        <width>605</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -174,7 +175,8 @@
                         <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>25</posx>
                         <height>42</height>
-                        <width>1385</width>
+                        <include condition="Skin.HasSetting(SlideListToLeft)">SlideViewLabelWidth</include>
+                        <width>605</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -213,7 +215,8 @@
                         <visible>[StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>25</posx>
                         <height>71</height>
-                        <width>1385</width>
+                        <include condition="Skin.HasSetting(SlideListToLeft)">SlideViewLabelWidth</include>
+                        <width>605</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -222,7 +225,8 @@
                         <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>25</posx>
                         <height>42</height>
-                        <width>1385</width>
+                        <include condition="Skin.HasSetting(SlideListToLeft)">SlideViewLabelWidth</include>
+                        <width>605</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -261,6 +265,7 @@
             <posx>1899</posx>
             <posy>426</posy>
             <height>584</height>
+            <include condition="Skin.HasSetting(SlideListToLeft)">SlideViewScroller</include>
             <include>VerticalScroller</include>
             <onleft>50</onleft>
             <onright>9000</onright>

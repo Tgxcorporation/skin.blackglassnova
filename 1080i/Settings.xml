@@ -296,11 +296,11 @@
                     <posy>382</posy>
                     <width>1231</width>
                     <height>803</height>
-                    <onleft>500</onleft>
+                    <onleft>501</onleft>
                     <onright>9000</onright>
                     <onup>9002</onup>
                     <ondown>9002</ondown>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol>501</pagecontrol>
                     <scrolltime>280</scrolltime>
                     <itemlayout width="1231" height="73">
                         <control type="image">
@@ -481,13 +481,34 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(KenBurnsEffect)</onclick>
                         </item>
-                        <item id="17" description="Reset Skin">
+                        <item id="17" description="Slide List To Left">
+                            <visible>Skin.HasSetting(SlideListToLeft)</visible>
+                            <label>$LOCALIZE[31999]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(SlideListToLeft)</onclick>
+                        </item>
+                        <item id="17" description="SlideListToLeft">
+                            <visible>!Skin.HasSetting(SlideListToLeft)</visible>
+                            <label>$LOCALIZE[31999]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(SlideListToLeft)</onclick>
+                        </item>
+                        <item id="18" description="Reset Skin">
                             <label>$LOCALIZE[31038]</label>
                             <onclick>Skin.ResetSettings</onclick>
                             <onclick>XBMC.ReloadSkin()</onclick>
                             <icon>DefaultIconWarning.png</icon>
                         </item>
                     </content>
+                </control>
+                <control type="scrollbar" id="501">
+                    <visible>Container(9000).Hasfocus(2)</visible>
+                    <posx>1328</posx>
+                    <posy>382</posy>
+                    <height>803</height>
+                    <onleft>9002</onleft>
+                    <onright>9002</onright>
+                    <include>VerticalScroller</include>
                 </control>
                 <!-- 9000 3 -->
                 <control type="panel" id="9003">

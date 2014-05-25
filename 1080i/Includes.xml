@@ -506,9 +506,9 @@
     </include>
     <include name="ListWatchedOverlayFocus">
         <control type="group">
-            <animation effect="slide" time="0" start="0,0" end="-780,0" condition="!control.hasfocus(60)">Conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="-780,0" condition="!control.hasfocus(60)|!Skin.HasSetting(SlideListToLeft)">Conditional</animation>
             <control type="image">
-                <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]+![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]</visible>
+                <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]+![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]+Skin.HasSetting(SlideListToLeft)</visible>
                 <posx>90r</posx>
                 <posy>0</posy>
                 <width>90</width>
@@ -539,9 +539,9 @@
     </include>
     <include name="ListWatchedOverlayNoFocus">
         <control type="group">
-            <animation effect="slide" time="0" start="0,0" end="-780,0" condition="!control.hasfocus(60)">Conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="-780,0" condition="!control.hasfocus(60)|!Skin.HasSetting(SlideListToLeft)">Conditional</animation>
             <control type="image">
-                <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]+![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]</visible>
+                <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]+![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]+Skin.HasSetting(SlideListToLeft)</visible>
                 <posx>90r</posx>
                 <posy>0</posy>
                 <width>90</width>
@@ -1649,12 +1649,18 @@
         </control>
     </include>
     <include name="SlideView" description="View slides to the left">
-        <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="control.hasfocus(60)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]">Conditional</animation>
+        <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="control.hasfocus(60)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]+Skin.HasSetting(SlideListToLeft)">Conditional</animation>
     </include>
     <include name="HideMediaInfo" description="Hide Media Info">
-        <animation effect="fade" time="150" start="100" end="0" condition="control.hasfocus(60)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]">Conditional</animation>
+        <animation effect="fade" time="150" start="100" end="0" condition="control.hasfocus(60)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]+Skin.HasSetting(SlideListToLeft)">Conditional</animation>
     </include>
     <include name="SlideViewUnknown" description="View slides to the left">
         <animation effect="slide" time="0" start="0,0" end="-780,0" condition="![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]">Conditional</animation>
+    </include>
+    <include name="SlideViewScroller" description="Vertical scroller always visible">
+        <showonepage>true</showonepage>
+    </include>
+    <include name="SlideViewLabelWidth">
+        <width>1385</width>
     </include>
 </includes>
