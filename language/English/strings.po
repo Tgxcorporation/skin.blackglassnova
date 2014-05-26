@@ -484,3 +484,7 @@ msgstr ""
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
 msgstr ""
+
+msgctxt "#32000"
+msgid "Enable window closing icon"
+msgstr ""

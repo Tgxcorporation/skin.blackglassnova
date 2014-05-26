@@ -15,6 +15,18 @@
             <include>WindowTitleSub</include>
             <label>$LOCALIZE[13200]</label>
         </control>
+        <control type="button" id="11" description="Quit xbmc">
+            <posx>1387</posx>
+            <posy>266</posy>
+            <height>50</height>
+            <width>50</width>
+            <onright>52</onright>
+            <textoffsetx>20</textoffsetx>
+            <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
+            <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+            <onclick>ActivateWindow(shutdownmenu)</onclick>
+            <label>-</label>
+        </control>
         <control type="image">
             <posx>483</posx>
             <posy>270</posy>
@@ -43,18 +55,6 @@
                 <font>InfoTitleSubFont</font>
                 <textcolor>AlternateColor</textcolor>
                 <info>Container(52).ListItem.Label2</info>
-            </control>
-            <control type="button" id="11" description="Quit xbmc">
-                <posx>785</posx>
-                <posy>46</posy>
-                <height>50</height>
-                <width>50</width>
-                <onright>52</onright>
-                <textoffsetx>20</textoffsetx>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
-                <onclick>ActivateWindow(shutdownmenu)</onclick>
-                <label>-</label>
             </control>
             <control type="image">
                 <posx>0</posx>

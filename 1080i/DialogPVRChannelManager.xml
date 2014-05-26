@@ -22,6 +22,17 @@
         </control>
         <control type="group">
             <posy>-10</posy>
+            <control type="button" description="Quit">
+                <posx>1867</posx>
+                <posy>80</posy>
+                <height>50</height>
+                <width>50</width>
+                <visible>Skin.HasSetting(WindowClosingIcon)</visible>
+                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <onclick>back</onclick>
+                <label>-</label>
+            </control>
             <control type="image">
                 <posx>3</posx>
                 <posy>84</posy>

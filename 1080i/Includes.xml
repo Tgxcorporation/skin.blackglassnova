@@ -178,7 +178,8 @@
                     <texturefocus>-</texturefocus>
                     <visible>true</visible>
                 </control>
-                <control type="group" description="Content">
+                <control type="group" description="TOPBAR">
+                    <visible>!Window.isvisible(DialogVideoInfo.xml)</visible>
                     <animation effect="slide" start="0,0" end="0,130" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+[[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]">Conditional</animation>
                     <animation effect="slide" start="0,0" end="0,85" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+![[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]">Conditional</animation>
                     <animation effect="slide" time="150" end="0,-88">WindowClose</animation>
@@ -506,7 +507,7 @@
     </include>
     <include name="ListWatchedOverlayFocus">
         <control type="group">
-            <animation effect="slide" time="0" start="0,0" end="-780,0" condition="!Window.IsActive(pvr)+[!control.hasfocus(60)|!Skin.HasSetting(SlideListToLeft)]">Conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="-780,0" condition="!Window.IsVisible(MyPVR.xml)+[!control.hasfocus(60)|!Skin.HasSetting(SlideListToLeft)]">Conditional</animation>
             <control type="image">
                 <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]+![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]+Skin.HasSetting(SlideListToLeft)</visible>
                 <posx>90r</posx>
@@ -539,7 +540,7 @@
     </include>
     <include name="ListWatchedOverlayNoFocus">
         <control type="group">
-            <animation effect="slide" time="0" start="0,0" end="-780,0" condition="!Window.IsActive(pvr)+[!control.hasfocus(60)|!Skin.HasSetting(SlideListToLeft)]">Conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="-780,0" condition="!Window.IsVisible(MyPVR.xml)+[!control.hasfocus(60)|!Skin.HasSetting(SlideListToLeft)]">Conditional</animation>
             <control type="image">
                 <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]+![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]+Skin.HasSetting(SlideListToLeft)</visible>
                 <posx>90r</posx>

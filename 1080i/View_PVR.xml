@@ -843,7 +843,7 @@
                         <aligny>center</aligny>
                         <aspectratio>scale</aspectratio>
                         <colordiffuse>NoFocusedColor</colordiffuse>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Thumb]</texture>
+                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                     </control>
                     <control type="label" description="Main Label">
                         <posx>103</posx>
@@ -881,7 +881,7 @@
                         <align>center</align>
                         <aligny>center</aligny>
                         <aspectratio>scale</aspectratio>
-                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Thumb]</texture>
+                        <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                     </control>
                     <control type="label" description="Main Label">
                         <posx>103</posx>

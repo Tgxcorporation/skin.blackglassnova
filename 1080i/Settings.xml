@@ -18,6 +18,17 @@
         </control>
         <control type="group">
             <posy>-189</posy>
+            <control type="button" description="Quit">
+                <visible>Skin.HasSetting(WindowClosingIcon)</visible>
+                <posx>1787</posx>
+                <posy>240</posy>
+                <height>50</height>
+                <width>50</width>
+                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <onclick>back</onclick>
+                <label>-</label>
+            </control>
             <control type="image">
                 <posx>83</posx>
                 <posy>244</posy>
@@ -493,7 +504,19 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(SlideListToLeft)</onclick>
                         </item>
-                        <item id="18" description="Reset Skin">
+                        <item id="18" description="Window Closing Icon">
+                            <visible>Skin.HasSetting(WindowClosingIcon)</visible>
+                            <label>$LOCALIZE[32000]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(WindowClosingIcon)</onclick>
+                        </item>
+                        <item id="18" description="Window Closing Icon">
+                            <visible>!Skin.HasSetting(WindowClosingIcon)</visible>
+                            <label>$LOCALIZE[32000]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(WindowClosingIcon)</onclick>
+                        </item>
+                        <item id="19" description="Reset Skin">
                             <label>$LOCALIZE[31038]</label>
                             <onclick>Skin.ResetSettings</onclick>
                             <onclick>XBMC.ReloadSkin()</onclick>
