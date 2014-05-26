@@ -848,7 +848,7 @@
                     <control type="label" description="Main Label">
                         <posx>103</posx>
                         <height>42</height>
-                        <width>530</width>
+                        <width>490</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -857,11 +857,12 @@
                         <posx>103</posx>
                         <posy>39</posy>
                         <height>28</height>
-                        <width>530</width>
+                        <width>490</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$INFO[ListItem.ChannelName]  •  $INFO[ListItem.Date]</label>
                     </control>
+                    <include>ListWatchedOverlayNoFocus</include>
                 </itemlayout>
                 <focusedlayout height="73" width="660">
                     <control type="image">
@@ -885,7 +886,7 @@
                     <control type="label" description="Main Label">
                         <posx>103</posx>
                         <height>42</height>
-                        <width>530</width>
+                        <width>490</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -894,11 +895,12 @@
                         <posx>103</posx>
                         <posy>39</posy>
                         <height>28</height>
-                        <width>530</width>
+                        <width>490</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistFocusColor</textcolor>
                         <label>$INFO[ListItem.ChannelName]  •  $INFO[ListItem.Date]</label>
                     </control>
+                    <include>ListWatchedOverlayFocus</include>
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="72">
