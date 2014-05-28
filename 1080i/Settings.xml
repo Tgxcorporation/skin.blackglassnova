@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+    <defaultcontrol always="true">9000</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <animation effect="fade" time="150" condition="![Window.Previous(SettingsCategory.xml)|Window.Previous(SkinSettings.xml)]">WindowOpen</animation>
+    <animation effect="fade" time="150" condition="![Window.Next(SettingsCategory.xml)|Window.Next(SkinSettings.xml)]">WindowClose</animation>
+    <controls>
+        <include>Settings_Art</include>
+        <include>Player_Show</include>
+        <include>Time</include>
+        <control type="label">
+            <include>WindowTitle</include>
+            <label>$LOCALIZE[5]</label>
+        </control>
+        <control type="label">
+            <include>WindowTitleSub</include>
+            <label>$LOCALIZE[10008]</label>
+        </control>
+        <control type="group">
+            <posy>-189</posy>
+            <control type="button" description="Quit">
+                <visible>Skin.HasSetting(WindowClosingIcon)</visible>
+                <posx>1787</posx>
+                <posy>240</posy>
+                <height>50</height>
+                <width>50</width>
+                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
+                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+                <onclick>back</onclick>
+                <label>-</label>
+            </control>
+            <control type="image">
+                <posx>83</posx>
+                <posy>244</posy>
+                <width>1754</width>
+                <height>1029</height>
+                <texture border="90">common/bg_dialog.png</texture>
+            </control>
+            <control type="image">
+                <posx>128</posx>
+                <posy>292</posy>
+                <width>1664</width>
+                <height>90</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="label" description="XBMC settings">
+                <posx>173</posx>
+                <posy>323</posy>
+                <height>36</height>
+                <width>1574</width>
+                <align>center</align>
+                <font>InfoTitleFont</font>
+                <textcolor>MainColor</textcolor>
+                <label>$LOCALIZE[10008]</label>
+            </control>
+            <control type="image">
+                <posx>1359</posx>
+                <posy>382</posy>
+                <width>2</width>
+                <height>841</height>
+                <texture>list/bg_facade_vertical.png</texture>
+            </control>
+            <control type="image">
+                <posx>1359</posx>
+                <posy>382</posy>
+                <height>841</height>
+                <width>375</width>
+                <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
+                <colordiffuse>90ffffff</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>138</posx>
+                <posy>392</posy>
+                <width>1213</width>
+                <height>825</height>
+                <aspectratio>scale</aspectratio>
+                <texture>special://skin/backgrounds/Settings.jpg</texture>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="group">
+                <posy>195</posy>
+                <control type="image">
+                    <posx>165</posx>
+                    <posy>682</posy>
+                    <width>1159</width>
+                    <height>313</height>
+                    <texture flipy="true">common/basichome_upper_gradient.png</texture>
+                </control>
+                <control type="image">
+                    <posx>656</posx>
+                    <posy>801</posy>
+                    <width>178</width>
+                    <height>44</height>
+                    <texture>common/logo.png</texture>
+                    <colordiffuse>ff000000</colordiffuse>
+                </control>
+                <control type="image">
+                    <posx>655</posx>
+                    <posy>800</posy>
+                    <width>178</width>
+                    <height>44</height>
+                    <texture>common/logo.png</texture>
+                </control>
+                <control type="label">
+                    <posx>158</posx>
+                    <posy>880</posy>
+                    <height>36</height>
+                    <width>1173</width>
+                    <align>center</align>
+                    <font>HomeItemFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <label>Black Glass Nova</label>
+                </control>
+                <control type="label">
+                    <posx>158</posx>
+                    <posy>940</posy>
+                    <height>36</height>
+                    <width>1173</width>
+                    <align>center</align>
+                    <font>WindowTitleSubFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <label>by Tgx</label>
+                </control>
+            </control>
+            <!-- <control type="image">
+                <posx>128</posx>
+                <posy>942</posy>
+                <width>1231</width>
+                <height>79</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="image">
+                <posx>128</posx>
+                <posy>1021</posy>
+                <height>8</height>
+                <width>1231</width>
+                <texture>list/bg_facade_separator.png</texture>
+            </control>
+            <control type="textbox" description="Settings description">
+                <posx>173</posx>
+                <posy>1039</posy>
+                <width>1141</width>
+                <height>170</height>
+                <align>justify</align>
+                <font>InfoPlotFont</font>
+                <label>$INFO[Container(9000).ListItem.Label2]</label>
+                <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+            </control> -->
+            <!-- 9000 Left panel -->
+            <control type="list" id="9000">
+                <posx>1359</posx>
+                <posy>382</posy>
+                <width>433</width>
+                <height>803</height>
+                <onleft>9110</onleft>
+                <onright>9110</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <pagecontrol>-</pagecontrol>
+                <scrolltime>280</scrolltime>
+                <itemlayout width="433" height="71">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <height>71</height>
+                        <width>433</width>
+                        <texture border="3">list/bg_facade_nofocus.png</texture>
+                    </control>
+                    <control type="label" description="Main Label">
+                        <posx>TextMargin</posx>
+                        <height>69</height>
+                        <width>343</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListNoFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </itemlayout>
+                <focusedlayout width="433" height="71">
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <height>71</height>
+                        <width>433</width>
+                        <include>FacadeFocus</include>
+                    </control>
+                    <control type="label" description="Main Label">
+                        <posx>TextMargin</posx>
+                        <height>69</height>
+                        <width>343</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                </focusedlayout>
+                <content>
+                    <item id="1">
+                        <label>480</label>
+                        <label2>31400</label2>
+                        <onclick>ActivateWindow(AppearanceSettings)</onclick>
+                        <icon>-</icon>
+                    </item>
+                    <item id="2">
+                        <label>157</label>
+                        <label2>31401</label2>
+                        <onclick>ActivateWindow(VideosSettings)</onclick>
+                        <icon>-</icon>
+                    </item>
+                    <item id="3">
+                        <label>31502</label>
+                        <label2>31409</label2>
+                        <onclick>ActivateWindow(PVRSettings)</onclick>
+                        <icon>special://skin/backgrounds/tv.jpg</icon>
+                    </item>
+                    <item id="4">
+                        <label>2</label>
+                        <label2>31402</label2>
+                        <onclick>ActivateWindow(MusicSettings)</onclick>
+                        <icon>-</icon>
+                    </item>
+                    <item id="5">
+                        <label>1</label>
+                        <label2>31403</label2>
+                        <onclick>ActivateWindow(PicturesSettings)</onclick>
+                        <icon>-</icon>
+                    </item>
+                    <item id="6">
+                        <label>8</label>
+                        <label2>31404</label2>
+                        <onclick>ActivateWindow(WeatherSettings)</onclick>
+                        <icon>-</icon>
+                    </item>
+                    <item id="7">
+                        <label>24001</label>
+                        <label2>31408</label2>
+                        <onclick>ActivateWindow(AddonBrowser)</onclick>
+                        <icon>-</icon>
+                    </item>
+                    <item id="8">
+                        <label>14036</label>
+                        <label2>31410</label2>
+                        <onclick>ActivateWindow(ServiceSettings)</onclick>
+                        <icon>-</icon>
+                    </item>
+                    <item id="9">
+                        <label>13000</label>
+                        <label2>31406</label2>
+                        <onclick>ActivateWindow(SystemSettings)</onclick>
+                        <icon>-</icon>
+                    </item>
+                </content>
+            </control>
+        </control>
+    </controls>
+</window>
