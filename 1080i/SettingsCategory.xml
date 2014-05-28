@@ -3,8 +3,8 @@
     <backgroundcolor>0</backgroundcolor>
     <allowoverlay>no</allowoverlay>
     <defaultcontrol always="true">3</defaultcontrol>
-    <animation effect="fade" time="150" condition="!Window.Previous(Settings.xml)">WindowOpen</animation>
-    <animation effect="fade" time="150" condition="!Window.Next(Settings.xml)">WindowClose</animation>
+    <animation effect="fade" time="150" condition="![Window.Previous(Settings.xml)|Window.Previous(SkinSettings.xml)]">WindowOpen</animation>
+    <animation effect="fade" time="150" condition="![Window.Next(Settings.xml)|Window.Next(SkinSettings.xml)]">WindowClose</animation>
     <controls>
         <include>Settings_Art</include>
         <include>Player_Show</include>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol always="true">9000</defaultcontrol>
+    <backgroundcolor>0</backgroundcolor>
     <allowoverlay>no</allowoverlay>
+    <defaultcontrol always="true">9000</defaultcontrol>
     <animation effect="fade" time="150" condition="!Window.Previous(SettingsCategory.xml)">WindowOpen</animation>
     <animation effect="fade" time="150" condition="!Window.Next(SettingsCategory.xml)">WindowClose</animation>
     <controls>
@@ -14,7 +15,7 @@
         </control>
         <control type="label">
             <include>WindowTitleSub</include>
-            <label>$LOCALIZE[10008]</label>
+            <label>$LOCALIZE[20077] - Black Glass Nova</label>
         </control>
         <control type="group">
             <posy>-189</posy>
@@ -43,8 +44,7 @@
                 <height>90</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="label" description="XBMC settings">
-                <visible>Container(9000).HasFocus(1)</visible>
+             <control type="label" description="BlackGlassNova">
                 <posx>173</posx>
                 <posy>323</posy>
                 <height>36</height>
@@ -52,18 +52,7 @@
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
-                <label>$LOCALIZE[5] - XBMC</label>
-            </control>
-            <control type="label" description="BlackGlassNova">
-                <visible>![Container(9000).HasFocus(1)]</visible>
-                <posx>173</posx>
-                <posy>323</posy>
-                <height>36</height>
-                <width>1574</width>
-                <align>center</align>
-                <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
-                <label>$LOCALIZE[5] - Black Glass Nova</label>
+                <label>$LOCALIZE[20077] - Black Glass Nova</label>
             </control>
             <control type="image">
                 <posx>1359</posx>
@@ -127,11 +116,7 @@
                     </control>
                 </focusedlayout>
                 <content>
-                    <item id="1">
-                        <label>XBMC</label>
-                        <onclick>noop</onclick>
-                    </item>
-                    <item id="2" description="Options">
+                    <item id="1" description="Options">
                         <label>$LOCALIZE[20077]</label>
                         <onclick>noop</onclick>
                     </item>
@@ -175,142 +160,17 @@
                 </content>
             </control>
             <control type="group" id="9110">
-                <!--9000 1-->
+                <!--9000 2-->
                 <control type="panel" id="9001">
                     <visible>Container(9000).HasFocus(1)</visible>
                     <posx>128</posx>
                     <posy>382</posy>
                     <width>1231</width>
                     <height>803</height>
-                    <onleft>500</onleft>
+                    <onleft>501</onleft>
                     <onright>9000</onright>
                     <onup>9001</onup>
                     <ondown>9001</ondown>
-                    <pagecontrol>-</pagecontrol>
-                    <scrolltime>280</scrolltime>
-                    <itemlayout width="1231" height="73">
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>73</height>
-                            <width>1231</width>
-                            <texture border="3">list/bg_facade_nofocus.png</texture>
-                        </control>
-                        <control type="label" description="Main Label">
-                            <posx>TextMargin</posx>
-                            <height>71</height>
-                            <width>1041</width>
-                            <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                        <control type="label" description="Label2">
-                            <posx>TextMarginR</posx>
-                            <height>71</height>
-                            <width>1041</width>
-                            <align>right</align>
-                            <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
-                            <label>$INFO[ListItem.Label2]</label>
-                        </control>
-                        <!-- <control type="image" description="Icon">
-                            <visible>!IsEmpty(ListItem.Icon)</visible>
-                            <posx>81r</posx>
-                            <posy>0</posy>
-                            <height>60</height>
-                            <width>60</width>
-                            <aspectratio>keep</aspectratio>
-                            <bordersize>6</bordersize>
-                            <texture>$INFO[ListItem.Icon]</texture>
-                        </control> -->
-                    </itemlayout>
-                    <focusedlayout width="1231" height="73">
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <height>73</height>
-                            <width>1231</width>
-                            <include>FacadeFocus</include>
-                        </control>
-                        <control type="label" description="Main Label">
-                            <posx>TextMargin</posx>
-                            <height>71</height>
-                            <width>1041</width>
-                            <font>FacadeListMainFont</font>
-                            <textcolor>ListFocusColor</textcolor>
-                            <label>$INFO[ListItem.Label]</label>
-                        </control>
-                        <control type="label" description="Label2">
-                            <posx>TextMarginR</posx>
-                            <height>71</height>
-                            <width>1041</width>
-                            <align>right</align>
-                            <font>FacadeListMainFont</font>
-                            <textcolor>MainColor</textcolor>
-                            <label>$INFO[ListItem.Label2]</label>
-                        </control>
-                        <!-- <control type="image" description="Icon">
-                                                    <visible>!IsEmpty(ListItem.Icon)</visible>
-                                                    <posx>81r</posx>
-                                                    <posy>0</posy>
-                                                    <height>60</height>
-                                                    <width>60</width>
-                                                    <aspectratio>keep</aspectratio>
-                                                    <bordersize>6</bordersize>
-                                                    <texture>$INFO[ListItem.Icon]</texture>
-                                                </control> -->
-                    </focusedlayout>
-                    <content>
-                        <item id="2" description="Appearance">
-                            <label>$LOCALIZE[480]</label>
-                            <onclick>activatewindow(AppearanceSettings)</onclick>
-                        </item>
-                        <item id="3" description="Videos">
-                            <label>$LOCALIZE[3]</label>
-                            <onclick>activatewindow(VideosSettings)</onclick>
-                        </item>
-                        <item id="4" description="Music">
-                            <label>$LOCALIZE[2]</label>
-                            <onclick>activatewindow(MusicSettings)</onclick>
-                        </item>
-                        <item id="5" description="Pictures">
-                            <label>$LOCALIZE[1]</label>
-                            <onclick>activatewindow(PicturesSettings)</onclick>
-                        </item>
-                        <item id="1" description="Addons">
-                            <label>$LOCALIZE[24001]</label>
-                            <onclick>ActivateWindow(AddonBrowser,root)</onclick>
-                        </item>
-                        <item id="8" description="Service">
-                            <label>$LOCALIZE[14036]</label>
-                            <onclick>activatewindow(ServiceSettings)</onclick>
-                        </item>
-                        <item id="9" description="System">
-                            <label>$LOCALIZE[13000]</label>
-                            <onclick>activatewindow(SystemSettings)</onclick>
-                        </item>
-                        <item id="11" description="PVR">
-                            <label>$LOCALIZE[31500]</label>
-                            <onclick>activateWindow(PVRSettings)</onclick>
-                        </item>
-                        <item id="7" description="Plexbmc config">
-                            <visible>System.HasAddon(plugin.video.plexbmc)</visible>
-                            <label>$LOCALIZE[31007]</label>
-                            <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
-                        </item>
-                    </content>
-                </control>
-                <!--9000 2-->
-                <control type="panel" id="9002">
-                    <visible>Container(9000).HasFocus(2)</visible>
-                    <posx>128</posx>
-                    <posy>382</posy>
-                    <width>1231</width>
-                    <height>803</height>
-                    <onleft>501</onleft>
-                    <onright>9000</onright>
-                    <onup>9002</onup>
-                    <ondown>9002</ondown>
                     <pagecontrol>501</pagecontrol>
                     <scrolltime>280</scrolltime>
                     <itemlayout width="1231" height="73">
@@ -525,12 +385,12 @@
                     </content>
                 </control>
                 <control type="scrollbar" id="501">
-                    <visible>Container(9000).Hasfocus(2)</visible>
+                    <visible>Container(9000).Hasfocus(1)</visible>
                     <posx>1328</posx>
                     <posy>382</posy>
                     <height>803</height>
-                    <onleft>9002</onleft>
-                    <onright>9002</onright>
+                    <onleft>9001</onleft>
+                    <onright>9001</onright>
                     <include>VerticalScroller</include>
                 </control>
                 <!-- 9000 3 -->
