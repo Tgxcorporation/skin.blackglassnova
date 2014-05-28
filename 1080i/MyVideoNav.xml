@@ -19,7 +19,7 @@
             <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
             <!-- COMMON -->
             <control type="group" description="COMMON">
-                <visible>StringCompare(ListItem.Label,..)|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)|!IsEmpty(ListItem.Property(Addon.Description))]]|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)]</visible>
+                <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)|Control.IsVisible(56)]+![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)|!IsEmpty(ListItem.Property(Addon.Description))]]|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)+[Control.IsVisible(50)|Control.IsVisible(52)|Control.IsVisible(56)|Control.IsVisible(54)]]</visible>
                 <include>Icon_Fade</include>
                 <posy>219</posy>
                 <control type="image" description="Thumb">
@@ -44,8 +44,6 @@
                     <visible>[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,)</visible>
                     <include>Icon_Fade</include>
                     <control type="group" description="Movies and shows">
-                        <visible>!container.content(episodes)</visible>
-                        <include>Icon_Fade</include>
                         <control type="group">
                             <visible>!Container.Content(seasons)</visible>
                             <include>Icon_Fade</include>
@@ -77,7 +75,8 @@
                             <posy>411</posy>
                             <width>470</width>
                             <height>654</height>
-                            <include>PosterThumb</include>
+                            <aspectratio aligny="top" scalediffuse="false">keep</aspectratio>
+                            <include>EpisodeThumb</include>
                             <include>ThumbBorder</include>
                         </control>
                         <control type="group" description="Media info">
@@ -118,23 +117,17 @@
                                 <scroll>false</scroll>
                                 <label fallback="416">$INFO[ListItem.Rating]</label>
                             </control>
-                            <control type="image" description="3D badge">
-                                <visible>ListItem.IsStereoscopic</visible>
-                                <posx>556</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/3D.png</texture>
-                            </control>
-                            <control type="image" description="HD badge">
-                                <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>621</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/HD.png</texture>
+                            <control type="label" description="Season">
+                                <visible>[Container.Content(episodes)]</visible>
+                                <posx>675</posx>
+                                <posy>73</posy>
+                                <width>630</width>
+                                <height>71</height>
+                                <font>InfoDetailsFont</font>
+                                <textcolor>MainColor</textcolor>
+                                <align>right</align>
+                                <scroll>false</scroll>
+                                <label>S$INFO[ListItem.Season]  •  E$INFO[ListItem.Episode]</label>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -161,6 +154,7 @@
                                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
                             </control>
                             <control type="textbox" description="Plot51">
+                                <visible>IsEmpty(ListItem.VideoResolution)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>230</posy>
                                 <width>631</width>
@@ -169,145 +163,35 @@
                                 <textcolor>MainColor</textcolor>
                                 <label>$VAR[Plots]</label>
                             </control>
-                        </control>
-                    </control>
-                    <control type="group" description="Episodes only">
-                        <visible>container.content(episodes)</visible>
-                        <include>Icon_Fade</include>
-                        <control type="image" description="fa overlay">
-                            <include>Icon_Fade</include>
-                            <posx>-795</posx>
-                            <posy>350</posy>
-                            <width>2058</width>
-                            <height>900</height>
-                            <texture border="90">common/bg_tvguide.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>242</posx>
-                            <posy>399</posy>
-                            <height>700</height>
-                            <width>250</width>
-                            <texture>list/bg_strip_horizontal_left.png</texture>
-                            <colordiffuse>90ffffff</colordiffuse>
-                        </control>
-                        <control type="image">
-                            <posx>493</posx>
-                            <posy>399</posy>
-                            <width>2</width>
-                            <height>700</height>
-                            <texture>list/bg_facade_vertical.png</texture>
-                        </control>
-                        <control type="image" description="Thumb">
-                            <posx>18</posx>
-                            <posy>411</posy>
-                            <width>470</width>
-                            <height>288</height>
-                            <include>EpisodeThumb</include>
-                            <include>ThumbBorder</include>
-                        </control>
-                        <control type="group" description="Media info">
-                            <posx>495</posx>
-                            <posy>426</posy>
-                            <control type="label" description="Title">
-                                <posx>TextMargin</posx>
-                                <posy>-12</posy>
-                                <width>630</width>
-                                <height>71</height>
-                                <font>InfoTitleFont</font>
-                                <textcolor>MainColor</textcolor>
-                                <align>left</align>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.Title]</label>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>721</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="image" description="Stars">
-                                <posx>TextMargin</posx>
-                                <posy>92</posy>
-                                <include>Stars</include>
-                            </control>
-                            <control type="label" description="Rating">
-                                <posx>245</posx>
-                                <posy>73</posy>
-                                <width>420</width>
-                                <height>71</height>
-                                <font>InfoRatingFont</font>
-                                <textcolor>AlternateColor</textcolor>
-                                <scroll>false</scroll>
-                                <label fallback="416">$INFO[ListItem.Rating]</label>
-                            </control>
-                            <control type="image" description="3D badge">
-                                <visible>ListItem.IsStereoscopic</visible>
-                                <posx>556</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/3D.png</texture>
-                            </control>
-                            <control type="image" description="HD badge">
-                                <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>621</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/HD.png</texture>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>73</posy>
-                                <width>721</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="label" description="Season">
-                                <posx>TextMargin</posx>
-                                <posy>146</posy>
-                                <width>630</width>
-                                <height>71</height>
-                                <font>InfoDetailsFont</font>
-                                <textcolor>MainColor</textcolor>
-                                <scroll>false</scroll>
-                                <label>$LOCALIZE[20373] $INFO[ListItem.Season]  •  $LOCALIZE[20359] $INFO[ListItem.Episode]</label>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>146</posy>
-                                <width>721</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="label" description="Details">
-                                <posx>TextMargin</posx>
-                                <posy>219</posy>
-                                <width>630</width>
-                                <height>71</height>
-                                <font>InfoDetailsFont</font>
-                                <textcolor>AlternateColor</textcolor>
-                                <scroll>false</scroll>
-                                <label>$VAR[Details]</label>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>219</posy>
-                                <width>721</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="textbox" description="Plot51">
-                                <posx>TextMargin</posx>
-                                <posy>306</posy>
-                                <width>630</width>
-                                <height>290</height>
-                                <font>InfoPlotFont</font>
-                                <textcolor>MainColor</textcolor>
-                                <label>$VAR[Plots]</label>
+                            <control type="group">
+                                <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                                <control type="textbox" description="Plot51">
+                                    <posx>TextMargin</posx>
+                                    <posy>234</posy>
+                                    <width>631</width>
+                                    <height>290</height>
+                                    <font>InfoPlotFont</font>
+                                    <textcolor>MainColor</textcolor>
+                                    <label>$VAR[Plots]</label>
+                                </control>
+                                <control type="image">
+                                    <posx>0</posx>
+                                    <posy>468</posy>
+                                    <width>721</width>
+                                    <height>73</height>
+                                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                                </control>
+                                <control type="grouplist" description="Flags">
+                                    <posx>35</posx>
+                                    <posy>563</posy>
+                                    <width min="90" max="967">auto</width>
+                                    <height>90</height>
+                                    <itemgap>-8</itemgap>
+                                    <orientation>horizontal</orientation>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <include>CodecsView</include>
+                                </control>
                             </control>
                         </control>
                     </control>
@@ -364,23 +248,17 @@
                         <scroll>false</scroll>
                         <label fallback="416">$INFO[ListItem.Rating]</label>
                     </control>
-                    <control type="image" description="3D badge">
-                        <visible>ListItem.IsStereoscopic</visible>
-                        <posx>486</posx>
-                        <posy>95</posy>
-                        <height>30</height>
-                        <width>54</width>
-                        <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                        <texture>badges/3D.png</texture>
-                    </control>
-                    <control type="image" description="HD badge">
-                        <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                        <posx>551</posx>
-                        <posy>95</posy>
-                        <height>30</height>
-                        <width>54</width>
-                        <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                        <texture>badges/HD.png</texture>
+                    <control type="label" description="Season">
+                        <visible>[Container.Content(episodes)]</visible>
+                        <posx>605</posx>
+                        <posy>73</posy>
+                        <width>630</width>
+                        <height>71</height>
+                        <font>InfoDetailsFont</font>
+                        <textcolor>MainColor</textcolor>
+                        <align>right</align>
+                        <scroll>false</scroll>
+                        <label>S$INFO[ListItem.Season]  •  E$INFO[ListItem.Episode]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -407,6 +285,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="textbox" description="Plot51">
+                        <visible>IsEmpty(ListItem.VideoResolution)</visible>
                         <posx>TextMargin</posx>
                         <posy>230</posy>
                         <width>560</width>
@@ -415,13 +294,35 @@
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
                     </control>
-                    <control type="label" description="Addon version">
-                        <visible>Container.Content(addons)</visible>
-                        <posy>624</posy>
-                        <width>800</width>
-                        <height>33</height>
-                        <font>Details</font>
-                        <label>$INFO[ListItem.Label2,$LOCALIZE[19114] : ]</label>
+                    <control type="group">
+                        <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                        <control type="textbox" description="Plot51">
+                            <posx>TextMargin</posx>
+                            <posy>234</posy>
+                            <width>560</width>
+                            <height>290</height>
+                            <font>InfoPlotFont</font>
+                            <textcolor>MainColor</textcolor>
+                            <label>$VAR[Plots]</label>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>468</posy>
+                            <width>645</width>
+                            <height>73</height>
+                            <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                        </control>
+                        <control type="grouplist" description="Flags">
+                            <posx>35</posx>
+                            <posy>563</posy>
+                            <width min="90" max="967">auto</width>
+                            <height>90</height>
+                            <itemgap>-10</itemgap>
+                            <orientation>horizontal</orientation>
+                            <align>left</align>
+                            <aligny>center</aligny>
+                            <include>CodecsViewPanel</include>
+                        </control>
                     </control>
                 </control>
             </control>
@@ -438,8 +339,6 @@
                     <include>Icon_Fade</include>
                     <posy>37</posy>
                     <control type="group" description="Movies and shows">
-                        <visible>!container.content(episodes)</visible>
-                        <include>Icon_Fade</include>
                         <control type="group">
                             <visible>!Container.Content(seasons)</visible>
                             <include>Icon_Fade</include>
@@ -470,6 +369,7 @@
                                 <posy>151</posy>
                                 <width>470</width>
                                 <height>654</height>
+                                <aspectratio aligny="top" scalediffuse="false">keep</aspectratio>
                                 <include>PosterThumb</include>
                                 <include>ThumbBorder</include>
                             </control>
@@ -521,23 +421,17 @@
                                 <scroll>false</scroll>
                                 <label fallback="416">$INFO[ListItem.Rating]</label>
                             </control>
-                            <control type="image" description="3D badge">
-                                <visible>ListItem.IsStereoscopic</visible>
-                                <posx>556</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/3D.png</texture>
-                            </control>
-                            <control type="image" description="HD badge">
-                                <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>621</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/HD.png</texture>
+                            <control type="label" description="Season">
+                                <visible>[Container.Content(episodes)]</visible>
+                                <posx>675</posx>
+                                <posy>73</posy>
+                                <width>630</width>
+                                <height>71</height>
+                                <font>InfoDetailsFont</font>
+                                <textcolor>MainColor</textcolor>
+                                <align>right</align>
+                                <scroll>false</scroll>
+                                <label>S$INFO[ListItem.Season]  •  E$INFO[ListItem.Episode]</label>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -564,136 +458,44 @@
                                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
                             </control>
                             <control type="textbox" description="Plot51">
+                                <visible>IsEmpty(ListItem.VideoResolution)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>230</posy>
-                                <width>630</width>
+                                <width>631</width>
                                 <height>610</height>
                                 <font>InfoPlotFont</font>
                                 <textcolor>MainColor</textcolor>
                                 <label>$VAR[Plots]</label>
                             </control>
-                        </control>
-                    </control>
-                    <control type="group" description="Episodes only">
-                        <visible>container.content(episodes)</visible>
-                        <include>Icon_Fade</include>
-                        <control type="image" description="fa overlay">
-                            <include>Icon_Fade</include>
-                            <posx>-795</posx>
-                            <posy>94</posy>
-                            <width>2058</width>
-                            <height>1160</height>
-                            <texture border="90">common/bg_tvguide.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>242</posx>
-                            <posy>143</posy>
-                            <height>1200</height>
-                            <width>250</width>
-                            <texture>list/bg_strip_horizontal_left.png</texture>
-                            <colordiffuse>90ffffff</colordiffuse>
-                        </control>
-                        <control type="image">
-                            <posx>493</posx>
-                            <posy>143</posy>
-                            <width>2</width>
-                            <height>1200</height>
-                            <texture>list/bg_facade_vertical.png</texture>
-                        </control>
-                        <control type="image" description="Thumb">
-                            <posx>18</posx>
-                            <posy>151</posy>
-                            <width>470</width>
-                            <height>288</height>
-                            <include>EpisodeThumb</include>
-                            <include>ThumbBorder</include>
-                        </control>
-                        <control type="group" description="Media info">
-                            <posx>495</posx>
-                            <posy>166</posy>
-                            <control type="label" description="Title">
-                                <posx>TextMargin</posx>
-                                <posy>-12</posy>
-                                <width>630</width>
-                                <height>71</height>
-                                <font>InfoTitleFont</font>
-                                <textcolor>MainColor</textcolor>
-                                <align>left</align>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.Title]</label>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>721</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="image" description="Stars">
-                                <posx>TextMargin</posx>
-                                <posy>92</posy>
-                                <include>Stars</include>
-                            </control>
-                            <control type="label" description="Rating">
-                                <posx>245</posx>
-                                <posy>73</posy>
-                                <width>460</width>
-                                <height>71</height>
-                                <font>InfoRatingFont</font>
-                                <textcolor>AlternateColor</textcolor>
-                                <scroll>false</scroll>
-                                <label fallback="416">$INFO[ListItem.Rating]</label>
-                            </control>
-                            <control type="image" description="3D badge">
-                                <visible>ListItem.IsStereoscopic</visible>
-                                <posx>556</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/3D.png</texture>
-                            </control>
-                            <control type="image" description="HD badge">
-                                <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>621</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/HD.png</texture>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>73</posy>
-                                <width>721</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="label" description="Details">
-                                <posx>TextMargin</posx>
-                                <posy>146</posy>
-                                <width>630</width>
-                                <height>71</height>
-                                <font>InfoDetailsFont</font>
-                                <textcolor>AlternateColor</textcolor>
-                                <scroll>false</scroll>
-                                <label>$LOCALIZE[20373] $INFO[ListItem.Season]  •  $LOCALIZE[20359] $INFO[ListItem.Episode]</label>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>146</posy>
-                                <width>721</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="textbox" description="Plot51">
-                                <posx>TextMargin</posx>
-                                <posy>230</posy>
-                                <width>630</width>
-                                <height>610</height>
-                                <font>InfoPlotFont</font>
-                                <textcolor>MainColor</textcolor>
-                                <label>$VAR[Plots]</label>
+                            <control type="group">
+                                <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                                <control type="textbox" description="Plot51">
+                                    <posx>TextMargin</posx>
+                                    <posy>225</posy>
+                                    <width>631</width>
+                                    <height>533</height>
+                                    <font>InfoPlotFont</font>
+                                    <textcolor>MainColor</textcolor>
+                                    <label>$VAR[Plots]</label>
+                                </control>
+                                <control type="image">
+                                    <posx>0</posx>
+                                    <posy>696</posy>
+                                    <width>721</width>
+                                    <height>73</height>
+                                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                                </control>
+                                <control type="grouplist" description="Flags">
+                                    <posx>35</posx>
+                                    <posy>791</posy>
+                                    <width min="90" max="967">auto</width>
+                                    <height>90</height>
+                                    <itemgap>-8</itemgap>
+                                    <orientation>horizontal</orientation>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <include>CodecsView</include>
+                                </control>
                             </control>
                         </control>
                     </control>
@@ -717,8 +519,6 @@
                     <include>Icon_Fade</include>
                     <control type="group" description="Movies and shows">
                         <posy>219</posy>
-                        <visible>!container.content(episodes)</visible>
-                        <include>Icon_Fade</include>
                         <control type="group">
                             <visible>!Container.Content(seasons)</visible>
                             <include>Icon_Fade</include>
@@ -750,6 +550,7 @@
                             <posy>411</posy>
                             <width>318</width>
                             <height>435</height>
+                            <aspectratio aligny="top" scalediffuse="false">keep</aspectratio>
                             <include>PosterThumb</include>
                             <include>ThumbBorder</include>
                         </control>
@@ -791,36 +592,12 @@
                                 <scroll>false</scroll>
                                 <label fallback="416">$INFO[ListItem.Rating]</label>
                             </control>
-                            <control type="image" description="3D badge">
-                                <visible>ListItem.IsStereoscopic</visible>
-                                <posx>708</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/3D.png</texture>
-                            </control>
-                            <control type="image" description="HD badge">
-                                <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>773</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/HD.png</texture>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>73</posy>
-                                <width>873</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
                             <control type="label" description="Details">
-                                <posx>TextMargin</posx>
-                                <posy>146</posy>
+                                <posx>825</posx>
+                                <posy>73</posy>
                                 <width>780</width>
                                 <height>71</height>
+                                <align>right</align>
                                 <font>InfoDetailsFont</font>
                                 <textcolor>AlternateColor</textcolor>
                                 <scroll>false</scroll>
@@ -828,143 +605,50 @@
                             </control>
                             <control type="image">
                                 <posx>0</posx>
-                                <posy>146</posy>
+                                <posy>73</posy>
                                 <width>873</width>
                                 <height>73</height>
                                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
                             </control>
                             <control type="textbox" description="Plot51">
+                                <visible>IsEmpty(ListItem.VideoResolution)</visible>
                                 <posx>TextMargin</posx>
-                                <posy>230</posy>
+                                <posy>155</posy>
                                 <width>780</width>
-                                <height>166</height>
+                                <height>250</height>
                                 <font>InfoPlotFont</font>
                                 <textcolor>MainColor</textcolor>
                                 <label>$VAR[Plots]</label>
                             </control>
-                        </control>
-                    </control>
-                    <control type="group" description="Episodes only">
-                        <visible>container.content(episodes)</visible>
-                        <posy>219</posy>
-                        <include>Icon_Fade</include>
-                        <control type="image" description="fa overlay">
-                            <include>Icon_Fade</include>
-                            <posx>-795</posx>
-                            <posy>350</posy>
-                            <width>2058</width>
-                            <height>900</height>
-                            <texture border="90">common/bg_tvguide.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>170</posx>
-                            <posy>399</posy>
-                            <height>600</height>
-                            <width>250</width>
-                            <texture>list/bg_strip_horizontal_left.png</texture>
-                            <colordiffuse>90ffffff</colordiffuse>
-                        </control>
-                        <control type="image">
-                            <posx>421</posx>
-                            <posy>399</posy>
-                            <width>2</width>
-                            <height>600</height>
-                            <texture>list/bg_facade_vertical.png</texture>
-                        </control>
-                        <control type="image" description="Thumb">
-                            <posx>18</posx>
-                            <posy>401</posy>
-                            <width>399</width>
-                            <height>248</height>
-                            <include>EpisodeThumb</include>
-                            <include>ThumbBorder</include>
-                        </control>
-                        <control type="group" description="Media info">
-                            <posx>424</posx>
-                            <posy>426</posy>
-                            <control type="label" description="Title">
-                                <posx>TextMargin</posx>
-                                <posy>-12</posy>
-                                <width>716</width>
-                                <height>71</height>
-                                <font>InfoTitleFont</font>
-                                <textcolor>MainColor</textcolor>
-                                <align>left</align>
-                                <scroll>false</scroll>
-                                <label>$INFO[ListItem.Title]</label>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>792</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="image" description="Stars">
-                                <posx>TextMargin</posx>
-                                <posy>92</posy>
-                                <include>Stars</include>
-                            </control>
-                            <control type="label" description="Rating">
-                                <posx>245</posx>
-                                <posy>73</posy>
-                                <width>460</width>
-                                <height>71</height>
-                                <font>InfoRatingFont</font>
-                                <textcolor>AlternateColor</textcolor>
-                                <scroll>false</scroll>
-                                <label fallback="416">$INFO[ListItem.Rating]</label>
-                            </control>
-                            <control type="image" description="3D badge">
-                                <visible>ListItem.IsStereoscopic</visible>
-                                <posx>632</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/3D.png</texture>
-                            </control>
-                            <control type="image" description="HD badge">
-                                <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                                <posx>697</posx>
-                                <posy>95</posy>
-                                <height>30</height>
-                                <width>54</width>
-                                <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                                <texture>badges/HD.png</texture>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>73</posy>
-                                <width>792</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="label" description="Season">
-                                <posx>TextMargin</posx>
-                                <posy>146</posy>
-                                <width>716</width>
-                                <height>71</height>
-                                <font>InfoDetailsFont</font>
-                                <textcolor>AlternateColor</textcolor>
-                                <scroll>false</scroll>
-                                <label>$VAR[Details]</label>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>146</posy>
-                                <width>792</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="textbox" description="Plot51">
-                                <posx>TextMargin</posx>
-                                <posy>230</posy>
-                                <width>716</width>
-                                <height>165</height>
-                                <font>InfoPlotFont</font>
-                                <textcolor>MainColor</textcolor>
-                                <label>$VAR[Plots]</label>
+                            <control type="group">
+                                <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                                <control type="textbox" description="Plot51">
+                                    <posx>TextMargin</posx>
+                                    <posy>150</posy>
+                                    <width>780</width>
+                                    <height>172</height>
+                                    <font>InfoPlotFont</font>
+                                    <textcolor>MainColor</textcolor>
+                                    <label>$VAR[Plots]</label>
+                                </control>
+                                <control type="image">
+                                    <posx>0</posx>
+                                    <posy>258</posy>
+                                    <width>873</width>
+                                    <height>73</height>
+                                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                                </control>
+                                <control type="grouplist" description="Flags">
+                                    <posx>38</posx>
+                                    <posy>353</posy>
+                                    <width min="90" max="967">auto</width>
+                                    <height>90</height>
+                                    <itemgap>14</itemgap>
+                                    <orientation>horizontal</orientation>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <include>CodecsView</include>
+                                </control>
                             </control>
                         </control>
                     </control>
@@ -975,6 +659,7 @@
                 <visible>Control.IsVisible(55)</visible>
                 <include>OpenClose</include>
                 <include>View_55_BigPanel</include>
+                <include>Addons_Info_55</include>
                 <control type="group" description="MediaInfo">
                     <visible>[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,)</visible>
                     <include>Icon_Fade</include>
@@ -1020,23 +705,17 @@
                         <scroll>false</scroll>
                         <label fallback="416">$INFO[ListItem.Rating]</label>
                     </control>
-                    <control type="image" description="3D badge">
-                        <visible>ListItem.IsStereoscopic</visible>
-                        <posx>486</posx>
-                        <posy>95</posy>
-                        <height>30</height>
-                        <width>54</width>
-                        <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                        <texture>badges/3D.png</texture>
-                    </control>
-                    <control type="image" description="HD badge">
-                        <visible>![ListItem.IsFolder | IsEmpty(ListItem.VideoResolution) | !IntegerGreaterThan(ListItem.VideoResolution,710)]</visible>
-                        <posx>551</posx>
-                        <posy>95</posy>
-                        <height>30</height>
-                        <width>54</width>
-                        <aspectratio aligny="bottom" align="right">keep</aspectratio>
-                        <texture>badges/HD.png</texture>
+                    <control type="label" description="Season">
+                        <visible>[Container.Content(episodes)]</visible>
+                        <posx>605</posx>
+                        <posy>73</posy>
+                        <width>630</width>
+                        <height>71</height>
+                        <font>InfoDetailsFont</font>
+                        <textcolor>MainColor</textcolor>
+                        <align>right</align>
+                        <scroll>false</scroll>
+                        <label>S$INFO[ListItem.Season]  •  E$INFO[ListItem.Episode]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -1063,6 +742,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="textbox" description="Plot51">
+                        <visible>IsEmpty(ListItem.VideoResolution)</visible>
                         <posx>TextMargin</posx>
                         <posy>230</posy>
                         <width>560</width>
@@ -1071,88 +751,36 @@
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
                     </control>
-                    <control type="label" description="Addon version">
-                        <visible>Container.Content(addons)</visible>
-                        <posy>624</posy>
-                        <width>800</width>
-                        <height>33</height>
-                        <font>Details</font>
-                        <label>$INFO[ListItem.Label2,$LOCALIZE[19114] : ]</label>
-                    </control>
-                </control>
-                <control type="group" description="ADDONS">
-                    <visible>!IsEmpty(ListItem.Property(Addon.Description))</visible>
-                    <include>Icon_Fade</include>
                     <control type="group">
-                        <posx>-567</posx>
-                        <posy>0</posy>
-                        <control type="image" description="fa overlay">
-                            <posx>-795</posx>
-                            <posy>90</posy>
-                            <width>2058</width>
-                            <height>1160</height>
-                            <texture border="90">common/bg_tvguide.png</texture>
+                        <visible>!IsEmpty(ListItem.VideoResolution)</visible>
+                        <control type="textbox" description="Plot51">
+                            <posx>TextMargin</posx>
+                            <posy>241</posy>
+                            <width>560</width>
+                            <height>530</height>
+                            <font>InfoPlotFont</font>
+                            <textcolor>MainColor</textcolor>
+                            <label>$VAR[Plots]</label>
                         </control>
-                        <control type="group" description="Media info">
-                            <posx>570</posx>
-                            <posy>166</posy>
-                            <control type="label" description="Title">
-                                <posx>TextMargin</posx>
-                                <posy>-12</posy>
-                                <width>570</width>
-                                <height>71</height>
-                                <font>InfoTitleFont</font>
-                                <textcolor>MainColor</textcolor>
+                        <control type="group">
+                            <posy>260</posy>
+                            <control type="image">
+                                <posx>0</posx>
+                                <posy>463</posy>
+                                <width>645</width>
+                                <height>73</height>
+                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                            </control>
+                            <control type="grouplist" description="Flags">
+                                <posx>35</posx>
+                                <posy>569</posy>
+                                <width min="90" max="967">auto</width>
+                                <height>90</height>
+                                <itemgap>-10</itemgap>
+                                <orientation>horizontal</orientation>
                                 <align>left</align>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>646</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="label" description="Details">
-                                <posx>TextMargin</posx>
-                                <posy>73</posy>
-                                <width>570</width>
-                                <height>71</height>
-                                <font>InfoDetailsFont</font>
-                                <textcolor>AlternateColor</textcolor>
-                                <label>$INFO[ListItem.Label2,$LOCALIZE[19114] : ]</label>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>73</posy>
-                                <width>646</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="label" description="Details">
-                                <posx>TextMargin</posx>
-                                <posy>146</posy>
-                                <width>570</width>
-                                <height>71</height>
-                                <font>InfoDetailsFont</font>
-                                <textcolor>AlternateColor</textcolor>
-                                <label>$VAR[Details]</label>
-                            </control>
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>146</posy>
-                                <width>646</width>
-                                <height>73</height>
-                                <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                            </control>
-                            <control type="textbox" description="Plot51">
-                                <posx>TextMargin</posx>
-                                <posy>230</posy>
-                                <width>570</width>
-                                <height>610</height>
-                                <font>InfoPlotFont</font>
-                                <textcolor>MainColor</textcolor>
-                                <label>$VAR[Plots]</label>
+                                <aligny>center</aligny>
+                                <include>CodecsViewPanel</include>
                             </control>
                         </control>
                     </control>
@@ -1164,6 +792,8 @@
                 <include>OpenClose</include>
                 <include>View_56_BannerList</include>
                 <control type="group" description="MediaInfo">
+                    <include>SlideView</include>
+                    <include>HideMediaInfo</include>
                     <visible>[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]+!StringCompare(ListItem.Title,)</visible>
                     <include>Icon_Fade</include>
                     <control type="group" description="Movies and shows">

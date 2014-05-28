@@ -147,6 +147,7 @@
                         <texture>list/bg_facade_separator.png</texture>
                     </control>
                     <control type="grouplist" description="Flags">
+                        <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                         <posx>45</posx>
                         <posy>753</posy>
                         <width min="90" max="967">auto</width>

@@ -16,7 +16,7 @@
         </control>
         <!-- COMMON -->
         <control type="group" description="COMMON">
-            <visible>StringCompare(ListItem.Label,..)|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)]</visible>
+            <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]||[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)]</visible>
             <posx>0</posx>
             <posy>479</posy>
             <include>Icon_Fade</include>
@@ -130,7 +130,7 @@
             <control type="image">
                 <posx>1260</posx>
                 <posy>353</posy>
-                <width>660</width>
+                <width>1440</width>
                 <height>73</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
@@ -138,7 +138,7 @@
                 <visible>!IntegerGreaterThan(Container(50).NumItems,7)</visible>
                 <posx>1260</posx>
                 <posy>937</posy>
-                <width>660</width>
+                <width>1440</width>
                 <height>73</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>

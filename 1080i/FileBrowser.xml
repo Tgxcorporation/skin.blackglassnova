@@ -326,10 +326,10 @@
                 </control>
             </control>
             <control type="image">
-                <posx>1262</posx>
-                <posy>785</posy>
-                <width>330</width>
-                <height>330</height>
+                <posx>1212</posx>
+                <posy>678</posy>
+                <width>430</width>
+                <height>473</height>
                 <include>SquareThumb</include>
                 <include>ThumbBorder</include>
             </control>

@@ -163,6 +163,12 @@
             <aspect>0.95</aspect>
         </font>
         <font>
+            <name>BadgeFontSmall</name>
+            <filename>Sansation_Regular.ttf</filename>
+            <size>22</size>
+            <aspect>0.95</aspect>
+        </font>
+        <font>
             <name>rss</name>
             <filename>Sansation_Regular.ttf</filename>
             <size>25</size>
@@ -359,7 +365,13 @@
             <name>BadgeFont</name>
             <filename>Sansation_Regular.ttf</filename>
             <size>26</size>
-            <aspect>0.95</aspect>
+            <aspect>0.85</aspect>
+        </font>
+        <font>
+            <name>BadgeFontSmall</name>
+            <filename>Sansation_Regular.ttf</filename>
+            <size>22</size>
+            <aspect>0.85</aspect>
         </font>
         <font>
             <name>rss</name>
@@ -588,6 +600,13 @@
             <name>BadgeFont</name>
             <filename>Asap-Regular.ttf</filename>
             <size>26</size>
+            <linespacing>1.03</linespacing>
+            <aspect>1.00</aspect>
+        </font>
+        <font>
+            <name>BadgeFontSmall</name>
+            <filename>Asap-Regular.ttf</filename>
+            <size>22</size>
             <linespacing>1.03</linespacing>
             <aspect>1.00</aspect>
         </font>
