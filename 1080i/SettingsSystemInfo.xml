@@ -4,7 +4,7 @@
     <backgroundcolor>0</backgroundcolor>
     <include>OpenClose</include>
     <controls>
-        <include>Settings_Art</include>
+        <include>Fanart_Art</include>
         <include>Player_Show</include>
         <include>Time</include>
         <control type="label">

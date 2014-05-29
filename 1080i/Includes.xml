@@ -735,55 +735,17 @@
         <animation effect="zoom" start="110" end="130" center="auto" time="15000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(KenBurnsEffect)">Conditional</animation>
         <animation effect="slide" start="-10,-10" end="20,20" time="7000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(KenBurnsEffect)">Conditional</animation>
     </include>
-    <include name="BG.Defaults">
-        <posx>0</posx>
-        <posy>0</posy>
-        <width>1920</width>
-        <height>1080</height>
-        <timeperimage>9000</timeperimage>
-        <randomize>true</randomize>
-        <fadetime>400</fadetime>
-        <aspectratio aligny="top">scale</aspectratio>
-    </include>
-    <include name="Default_Art">
-        <control type="multiimage">
-            <include>KenBurns</include>
-            <include>BG.Defaults</include>
-            <imagepath background="true">$VAR[Default.Art]</imagepath>
-        </control>
-    </include>
-    <include name="Settings_Art">
-        <control type="multiimage">
-            <include>KenBurns</include>
-            <include>BG.Defaults</include>
-            <imagepath background="true">$VAR[Settings.Art]</imagepath>
-        </control>
-    </include>
-    <include name="Pvr_Art">
-        <control type="multiimage">
-            <include>KenBurns</include>
-            <include>BG.Defaults</include>
-            <imagepath background="true">$VAR[Pvr.Art]</imagepath>
-        </control>
-    </include>
-    <include name="Weather_Art">
-        <control type="multiimage">
-            <include>KenBurns</include>
-            <include>BG.Defaults</include>
-            <imagepath background="true">$VAR[Weather.Art]</imagepath>
-        </control>
-    </include>
     <include name="Fanart_Art">
-        <control type="multiimage">
-            <visible>Window.IsActive(MyPics.xml)</visible>
-            <include>KenBurns</include>
-            <include>BG.Defaults</include>
-            <imagepath background="true">$VAR[Pictures.Art]</imagepath>
-        </control>
         <control type="multiimage" description="FA fullscreen">
-            <visible>!Window.IsActive(MyPics.xml)</visible>
             <include>KenBurns</include>
-            <include>BG.Defaults</include>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <timeperimage>9000</timeperimage>
+            <randomize>true</randomize>
+            <fadetime>400</fadetime>
+            <aspectratio aligny="top">scale</aspectratio>
             <imagepath background="true">$VAR[Fanart.Art]</imagepath>
         </control>
     </include>

@@ -6,7 +6,7 @@
     <animation effect="fade" time="150" condition="![Window.Previous(SettingsCategory.xml)|Window.Previous(Settings.xml)]">WindowOpen</animation>
     <animation effect="fade" time="150" condition="![Window.Next(SettingsCategory.xml)|Window.Next(Settings.xml)]">WindowClose</animation>
     <controls>
-        <include>Settings_Art</include>
+        <include>Fanart_Art</include>
         <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
