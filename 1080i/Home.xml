@@ -7,7 +7,7 @@
     <onload condition="!Skin.HasSetting(Hide.Favourites)">RunScript(script.favourites)</onload>
     <onload condition="!Skin.HasSetting(plexbmc)">SetProperty(SkinWidgets_RandomItems_Update,true)</onload>
     <controls>
-        <include condition="Skin.HasSetting(Home_DefaultBG)">Default_Art</include>
+        <include condition="Skin.HasSetting(Home_DefaultBG)">Fanart_Art</include>
         <control type="multiimage">
             <visible>![Player.HasVideo + Skin.HasSetting(Show_Player)] + !Skin.HasSetting(Home_DefaultBG)</visible>
             <include>KenBurns</include>
