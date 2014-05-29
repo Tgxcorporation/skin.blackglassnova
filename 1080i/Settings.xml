@@ -92,14 +92,14 @@
                     <posy>602</posy>
                     <width>1159</width>
                     <height>393</height>
-                    <texture flipy="true">common/basichome_upper_gradient.png</texture>
+                    <texture flipy="true" border="10">common/basichome_upper_gradient.png</texture>
                 </control>
                 <control type="image">
                     <posx>165</posx>
                     <posy>602</posy>
                     <width>1159</width>
                     <height>393</height>
-                    <texture flipy="true">common/basichome_upper_gradient.png</texture>
+                    <texture flipy="true" border="10">common/basichome_upper_gradient.png</texture>
                 </control>
                 <control type="image">
                     <posx>656</posx>

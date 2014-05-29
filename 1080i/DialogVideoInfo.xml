@@ -120,7 +120,7 @@
                     <posy>365</posy>
                     <width>410</width>
                     <height>483</height>
-                    <texture>$INFO[Container(50).ListItem.Thumb]</texture>
+                    <texture fallback="defaultArtistBig.png">$INFO[Container(50).ListItem.Thumb]</texture>
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>

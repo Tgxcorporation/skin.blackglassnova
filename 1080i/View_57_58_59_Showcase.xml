@@ -11,7 +11,7 @@
         </control>
         <control type="group">
             <visible>![StringCompare(ListItem.Label,..)</visible>
-            <animation effect="slide" time="0" start="0,0" end="0,35" condition="[IsEmpty(control.getlabel(45742))]">Conditional</animation>
+            <animation effect="slide" time="0" start="0,0" end="0,40" condition="[IsEmpty(control.getlabel(45742))]">Conditional</animation>
             <control type="label" description="Title Label">
                 <posx>52</posx>
                 <posy>933</posy>

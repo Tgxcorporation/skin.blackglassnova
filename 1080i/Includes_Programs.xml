@@ -36,6 +36,7 @@
                     <posy>151</posy>
                     <width>470</width>
                     <height>470</height>
+                    <aspectratio aligny="top" scalediffuse="false">keep</aspectratio>
                     <include>SquareThumb</include>
                     <include>ThumbBorder</include>
                 </control>
@@ -218,6 +219,7 @@
                     <posy>151</posy>
                     <width>470</width>
                     <height>470</height>
+                    <aspectratio aligny="top" scalediffuse="false">keep</aspectratio>
                     <include>SquareThumb</include>
                     <include>ThumbBorder</include>
                 </control>
@@ -322,6 +324,7 @@
                     <posy>151</posy>
                     <width>440</width>
                     <height>440</height>
+                    <aspectratio aligny="top" scalediffuse="false">keep</aspectratio>
                     <include>SquareThumb</include>
                     <include>ThumbBorder</include>
                 </control>

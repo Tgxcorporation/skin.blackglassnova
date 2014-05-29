@@ -24,6 +24,7 @@
                 <posy>411</posy>
                 <width>435</width>
                 <height>435</height>
+                <aspectratio align="left" aligny="bottom" scalediffuse="false">keep</aspectratio>
                 <include>SquareThumb</include>
                 <include>ThumbBorder</include>
             </control>

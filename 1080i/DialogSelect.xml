@@ -91,7 +91,7 @@
                 <aligny>top</aligny>
                 <font>WindowTitleSubFont</font>
                 <textcolor>MainColor</textcolor>
-                <label>asasas $INFO[Container(6).ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</label>
+                <label>$INFO[Container(6).ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</label>
             </control>
             <control type="image">
                 <visible>Control.IsVisible(5)</visible>

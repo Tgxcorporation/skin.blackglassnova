@@ -1655,13 +1655,13 @@
         </control>
     </include>
     <include name="SlideView" description="View slides to the left">
-        <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="control.hasfocus(60)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]+Skin.HasSetting(SlideListToLeft)">Conditional</animation>
+        <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="control.hasfocus(60)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)|!IsEmpty(ListItem.Plot)]+Skin.HasSetting(SlideListToLeft)">Conditional</animation>
     </include>
     <include name="HideMediaInfo" description="Hide Media Info">
-        <animation effect="fade" time="150" start="100" end="0" condition="control.hasfocus(60)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]+Skin.HasSetting(SlideListToLeft)">Conditional</animation>
+        <animation effect="fade" time="150" start="100" end="0" condition="control.hasfocus(60)+[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)|!IsEmpty(ListItem.Plot)]+Skin.HasSetting(SlideListToLeft)">Conditional</animation>
     </include>
     <include name="SlideViewUnknown" description="View slides to the left">
-        <animation effect="slide" time="0" start="0,0" end="-780,0" condition="![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)]">Conditional</animation>
+        <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | container.content(seasons) | container.content(episodes)|container.content(artists)|container.content(albums)|container.content(addons)|!IsEmpty(ListItem.Plot)]">Conditional</animation>
     </include>
     <include name="SlideViewScroller" description="Vertical scroller always visible">
         <showonepage>true</showonepage>
