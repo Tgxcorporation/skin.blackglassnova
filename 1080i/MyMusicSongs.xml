@@ -26,14 +26,9 @@
             <include>View_56_BannerList</include>
             <include>View_59_Showcase</include>
             <include>View_5050_CardList</include>
-            <include>Addons_Info_50</include>
-            <include>Addons_Info_51</include>
-            <include>Addons_Info_52</include>
-            <include>Addons_Info_54</include>
-            <include>Addons_Info_55</include>
             <!-- COMMON -->
             <control type="group" description="COMMON">
-               <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(5050)|Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+![!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Property(Addon.Description))|!IsEmpty(ListItem.Plot)]|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)+[Control.IsVisible(50)|Control.IsVisible(52)|Control.IsVisible(54)]]</visible>
+                <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(5050)|Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+![!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Property(Addon.Description))|!IsEmpty(ListItem.Plot)]|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)+[Control.IsVisible(50)|Control.IsVisible(52)|Control.IsVisible(54)]]</visible>
                 <posx>0</posx>
                 <posy>479</posy>
                 <include>Icon_Fade</include>
@@ -43,7 +38,7 @@
                     <width>440</width>
                     <height>440</height>
                     <aspectratio align="left" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                    <include>SquareThumb</include>
+                    <texture fallback="defaultAudioBig.png">$VAR[Thumbs]</texture>
                     <include>ThumbBorder</include>
                 </control>
             </control>
@@ -51,7 +46,7 @@
             <control type="group" description="MediaInfo List 50">
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
-                <visible>Control.IsVisible(50)+!StringCompare(ListItem.Label,)+[!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+!Container.Content(songs)</visible>
+                <visible>Control.IsVisible(50)+[!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Addon.Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+!Container.Content(songs)</visible>
                 <include>Icon_Fade</include>
                 <control type="group">
                     <posx>0</posx>
@@ -190,7 +185,7 @@
             </control>
             <!-- PANEL 51 -->
             <control type="group" description="MediaInfo Panel 51">
-                <visible>Control.IsVisible(51)+!StringCompare(ListItem.Label,)+[!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+!Container.Content(songs)</visible>
+                <visible>Control.IsVisible(51)+[!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Addon.Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+!Container.Content(songs)</visible>
                 <include>Icon_Fade</include>
                 <control type="group">
                     <posx>-567</posx>
@@ -307,7 +302,7 @@
             <control type="group" description="MediaInfo BigList 52">
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
-                <visible>Control.IsVisible(52)+!StringCompare(ListItem.Label,)+[!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+!Container.Content(songs)</visible>
+                <visible>Control.IsVisible(52)+[!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Addon.Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+!Container.Content(songs)</visible>
                 <include>Icon_Fade</include>
                 <posy>37</posy>
                 <control type="group">
@@ -447,7 +442,7 @@
             <control type="group" description="MediaInfo LOWLIST 54">
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
-                <visible>Control.IsVisible(54)+!StringCompare(ListItem.Label,)+[!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+!Container.Content(songs)</visible>
+                <visible>Control.IsVisible(54)+[!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Addon.Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+!Container.Content(songs)</visible>
                 <include>Icon_Fade</include>
                 <control type="group">
                     <posx>0</posx>
@@ -586,7 +581,7 @@
             </control>
             <!-- LIST 55 Big Panel -->
             <control type="group" description="MediaInfo Panel 55">
-                <visible>Control.IsVisible(55)+!StringCompare(ListItem.Label,)+[!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+!Container.Content(songs)</visible>
+                <visible>Control.IsVisible(55)+[!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Addon.Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+!Container.Content(songs)</visible>
                 <include>Icon_Fade</include>
                 <control type="group">
                     <posx>-567</posx>
