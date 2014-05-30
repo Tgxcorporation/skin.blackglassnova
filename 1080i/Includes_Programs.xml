@@ -5,6 +5,7 @@
             <include>SlideView</include>
             <include>HideMediaInfo</include>
             <visible>Control.IsVisible(50)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
+            <include>OpenClose</include>
             <include>Icon_Fade</include>
             <control type="group">
                 <posx>0</posx>
@@ -68,7 +69,7 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <label>$INFO[ListItem.Label2,$LOCALIZE[19114] : ]</label>
+                        <label>$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -110,6 +111,7 @@
     <include name="Addons_Info_51">
         <control type="group" description="Media info">
             <visible>Control.IsVisible(51)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
+            <include>OpenClose</include>
             <include>Icon_Fade</include>
             <posx>-567</posx>
             <posy>260</posy>
@@ -147,7 +149,7 @@
                     <height>71</height>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
-                    <label>$INFO[ListItem.Label2,$LOCALIZE[19114] : ]</label>
+                    <label>$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                 </control>
                 <control type="image">
                     <posx>0</posx>
@@ -189,6 +191,7 @@
             <include>SlideView</include>
             <include>HideMediaInfo</include>
             <visible>Control.IsVisible(52)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
+            <include>OpenClose</include>
             <include>Icon_Fade</include>
             <posy>37</posy>
             <control type="group">
@@ -250,7 +253,7 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <label>$INFO[ListItem.Label2,$LOCALIZE[19114] : ]</label>
+                        <label>$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -293,6 +296,7 @@
             <include>SlideView</include>
             <include>HideMediaInfo</include>
             <visible>Control.IsVisible(54)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
+            <include>OpenClose</include>
             <include>Icon_Fade</include>
             <control type="group">
                 <posx>0</posx>
@@ -355,7 +359,7 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <label>$INFO[ListItem.Label2,$LOCALIZE[19114] : ]</label>
+                        <label>$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -396,6 +400,7 @@
     <include name="Addons_Info_55">
         <control type="group" description="MediaInfo">
             <visible>Control.IsVisible(55)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
+            <include>OpenClose</include>
             <include>Icon_Fade</include>
             <control type="group">
                 <posx>-567</posx>
@@ -434,7 +439,7 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <label>$INFO[ListItem.Label2,$LOCALIZE[19114] : ]</label>
+                        <label>$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>

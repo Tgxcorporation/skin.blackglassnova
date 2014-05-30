@@ -19,7 +19,7 @@
             </control>
             <control type="group" description="Container and frame">
                 <control type="panel" id="51" description="Grid">
-                    <viewtype label="Panel">Panel</viewtype>
+                    <viewtype label="31090">Panel</viewtype>
                     <posx>693</posx>
                     <posy>406</posy>
                     <width>1227</width>

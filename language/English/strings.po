@@ -124,7 +124,35 @@ msgctxt "#31051"
 msgid "Sort: Descending"
 msgstr ""
 
-#empty strings from id 31052 to 31109
+#empty strings from id 31052 to 31089
+#Viewtype
+
+msgctxt "#31090"
+msgid "Panel"
+msgstr ""
+
+msgctxt "#31091"
+msgid "Large List"
+msgstr ""
+
+msgctxt "#31092"
+msgid "Low List"
+msgstr ""
+
+msgctxt "#31093"
+msgid "Big Panel"
+msgstr ""
+
+msgctxt "#31094"
+msgid "Banner List"
+msgstr ""
+
+msgctxt "#31095"
+msgid "Card List"
+msgstr ""
+
+
+
 
 msgctxt "#31110"
 msgid "Edit Background for Media Type"

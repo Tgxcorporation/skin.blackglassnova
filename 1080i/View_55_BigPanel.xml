@@ -36,7 +36,7 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="panel" id="55" description="Big Panel">
-                <viewtype label="Big Panel">Big Panel</viewtype>
+                <viewtype label="31093">Big Panel</viewtype>
                 <posx>693</posx>
                 <posy>150</posy>
                 <width>1227</width>

@@ -30,6 +30,7 @@
     <include file="View_55_BigPanel.xml"/>
     <include file="View_56_BannerList.xml"/>
     <include file="View_57_58_59_Showcase.xml"/>
+    <include file="View_5050_CardList.xml"/>
     <include file="View_PVR.xml"/>
     <include name="Player_Show">
         <control type="image" description="fa overlay">
@@ -499,7 +500,7 @@
         <animation effect="fade" time="50">VisibleChange</animation>
     </include>
     <include name="Stars">
-        <visible>!IsEmpty(ListItem.StarRating)</visible>
+        <!-- <visible>!IsEmpty(ListItem.StarRating)</visible> -->
         <height>36</height>
         <width>180</width>
         <aspectratio align="left">keep</aspectratio>

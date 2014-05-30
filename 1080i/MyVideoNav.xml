@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
     <onload condition="Skin.HasSetting(TVTunes.Enabled) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
+    <views>50,51,52,53,54,55,56,57,58,59,5050</views>
     <include>OpenClose</include>
     <controls>
         <include>Fanart_Art</include>
@@ -17,9 +18,23 @@
         </control>
         <control type="group" description="Fix for Plexbmc">
             <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
+            <include>View_50</include>
+            <include>View_51_Panel</include>
+            <include>View_52_BigList</include>
+            <include>View_53_Grid</include>
+            <include>View_54_LowList</include>
+            <include>View_55_BigPanel</include>
+            <include>View_56_BannerList</include>
+            <include>View_59_Showcase</include>
+            <include>View_5050_CardList</include>
+            <include>Addons_Info_50</include>
+            <include>Addons_Info_51</include>
+            <include>Addons_Info_52</include>
+            <include>Addons_Info_54</include>
+            <include>Addons_Info_55</include>
             <!-- COMMON -->
             <control type="group" description="COMMON">
-                <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)|Control.IsVisible(56)]+![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)|!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]]|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)+[Control.IsVisible(50)|Control.IsVisible(52)|Control.IsVisible(56)|Control.IsVisible(54)]]</visible>
+                <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(5050)|Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)|Control.IsVisible(56)]+![Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)|!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]]|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)+[Control.IsVisible(50)|Control.IsVisible(52)|Control.IsVisible(56)|Control.IsVisible(54)]]</visible>
                 <include>Icon_Fade</include>
                 <posy>219</posy>
                 <control type="image" description="Thumb">
@@ -36,8 +51,6 @@
             <control type="group" description="50 MediaInfo">
                 <visible>Control.IsVisible(50)</visible>
                 <include>OpenClose</include>
-                <include>View_50</include>
-                <include>Addons_Info_50</include>
                 <control type="group" description="MediaInfo">
                     <include>SlideView</include>
                     <include>HideMediaInfo</include>
@@ -201,8 +214,6 @@
             <control type="group" description="51 MediaInfo">
                 <visible>Control.IsVisible(51)</visible>
                 <include>OpenClose</include>
-                <include>View_51_Panel</include>
-                <include>Addons_Info_51</include>
                 <control type="group" description="Media info">
                     <visible>[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)|!IsEmpty(ListItem.Plot)]+!StringCompare(ListItem.Title,)</visible>
                     <include>Icon_Fade</include>
@@ -330,8 +341,6 @@
             <control type="group" description="51 MediaInfo">
                 <visible>Control.IsVisible(52)</visible>
                 <include>OpenClose</include>
-                <include>View_52_BigList</include>
-                <include>Addons_Info_52</include>
                 <control type="group" description="MediaInfo">
                     <include>SlideView</include>
                     <include>HideMediaInfo</include>
@@ -504,14 +513,11 @@
             <!-- GRID 53 -->
             <control type="group" description="53">
                 <include>OpenClose</include>
-                <include>View_53_Grid</include>
             </control>
             <!-- LIST 54 Low List -->
             <control type="group" description="54 MediaInfo">
                 <visible>Control.IsVisible(54)</visible>
                 <include>OpenClose</include>
-                <include>View_54_LowList</include>
-                <include>Addons_Info_54</include>
                 <control type="group" description="MediaInfo">
                     <include>SlideView</include>
                     <include>HideMediaInfo</include>
@@ -658,8 +664,6 @@
             <control type="group" description="55">
                 <visible>Control.IsVisible(55)</visible>
                 <include>OpenClose</include>
-                <include>View_55_BigPanel</include>
-                <include>Addons_Info_55</include>
                 <control type="group" description="MediaInfo">
                     <visible>[Container.Content(musicvideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)|!IsEmpty(ListItem.Plot)]+!StringCompare(ListItem.Title,)</visible>
                     <include>Icon_Fade</include>
@@ -790,7 +794,6 @@
             <control type="group" description="56 MediaInfo">
                 <visible>Control.IsVisible(56)</visible>
                 <include>OpenClose</include>
-                <include>View_56_BannerList</include>
                 <control type="group" description="MediaInfo">
                     <include>SlideView</include>
                     <include>HideMediaInfo</include>
@@ -889,7 +892,6 @@
             <!-- LIST 57,58,59 Fanart -->
             <control type="group" description="Fanart View">
                 <include>OpenClose</include>
-                <include>View_59_Showcase</include>
             </control>
         </control>
         <!-- SIDE MENU -->
