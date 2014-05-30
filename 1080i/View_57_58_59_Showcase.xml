@@ -151,6 +151,7 @@
                 <focusposition>4</focusposition>
                 <movement>3</movement>
                 <preloaditems>4</preloaditems>
+                <scrolltime tween="sine" easing="out">300</scrolltime>
                 <itemlayout height="400" width="268">
                     <control type="image">
                         <posx>0</posx>
@@ -379,6 +380,7 @@
                 <focusposition>3</focusposition>
                 <movement>2</movement>
                 <preloaditems>4</preloaditems>
+                <scrolltime tween="sine" easing="out">300</scrolltime>
                 <itemlayout height="400" width="375">
                     <control type="image">
                         <posx>0</posx>
@@ -653,6 +655,7 @@
                 <focusposition>1</focusposition>
                 <movement>2</movement>
                 <preloaditems>4</preloaditems>
+                <scrolltime tween="sine" easing="out">300</scrolltime>
                 <itemlayout height="400" width="474">
                     <control type="image">
                         <posx>0</posx>
