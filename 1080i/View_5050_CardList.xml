@@ -675,7 +675,7 @@
                 <align>center</align>
                 <width>1920</width>
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                <label>$INFO[container.CurrentPage] / $INFO[Container.NumPages] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
                 <animation effect="slide" start="0,0" end="0,-8" time="150">Focus</animation>
