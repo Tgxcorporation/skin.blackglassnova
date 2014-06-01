@@ -336,6 +336,14 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
             </control>
+            <control type="image">
+                <visible>Control.IsVisible(413)</visible>
+                <posx>175</posx>
+                <posy>273</posy>
+                <width>33</width>
+                <height>33</height>
+                <texture>OverlayInProgress.png</texture>
+            </control>
             <control type="image" description="Thumb">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
@@ -375,6 +383,14 @@
                 <font>ShelfFont</font>
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
+            </control>
+            <control type="image">
+                <visible>Control.IsVisible(413)</visible>
+                <posx>175</posx>
+                <posy>273</posy>
+                <width>33</width>
+                <height>33</height>
+                <texture>OverlayInProgress.png</texture>
             </control>
             <control type="image" description="Thumb">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>

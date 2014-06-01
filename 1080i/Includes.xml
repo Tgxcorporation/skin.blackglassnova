@@ -908,7 +908,6 @@
             <label>$LOCALIZE[8]</label>
             <thumb fallback="special://skin/backgrounds/Weather.jpg">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</thumb>
             <icon fallback="special://skin/backgrounds/Weather.jpg">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</icon>
-            <!-- <thumb fallback="special://skin/backgrounds/Weather.jpg">$INFO[Skin.String(Weather.Background)]</thumb> -->
             <onclick>ActivateWindow(Weather)</onclick>
         </item>
         <item id="10" description="Settings">
