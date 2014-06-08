@@ -1440,7 +1440,7 @@
                 <include>FacadeOverlay</include>
             </control>
             <control type="image">
-                <visible>!IntegerGreaterThan(Container(14).NumItems,17)</visible>
+                <visible>!IntegerGreaterThan(Container(17).NumItems,4)</visible>
                 <posx>TextMargin</posx>
                 <posy>937</posy>
                 <width>1840</width>
@@ -1855,7 +1855,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label" description="Label2">
-                        <posx>20</posx>
+                        <posx>15</posx>
                         <posy>39</posy>
                         <height>28</height>
                         <width>330</width>

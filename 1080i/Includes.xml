@@ -156,6 +156,221 @@
         <height>50</height>
         <texture>-</texture>
     </include>
+    <include name="TopBar">
+        <control type="button" id="8998">
+            <description>Fake button for mouse control</description>
+            <posx>395</posx>
+            <posy>0</posy>
+            <width>1130</width>
+            <height>100</height>
+            <label>-</label>
+            <font>-</font>
+            <texturenofocus>-</texturenofocus>
+            <texturefocus>-</texturefocus>
+            <visible>true</visible>
+        </control>
+        <control type="group" description="TOPBAR">
+            <visible>!Window.isvisible(DialogVideoInfo.xml)</visible>
+            <animation effect="slide" start="0,0" end="0,130" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+[[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,85" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+![[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]">Conditional</animation>
+            <animation effect="slide" time="150" end="0,-88">WindowClose</animation>
+            <animation effect="slide" tween="circle" easing="out" time="150" start="0,-88" end="0,-50">WindowOpen</animation>
+            <posy>0</posy>
+            <control type="image">
+                <posx>-80</posx>
+                <posy>-90</posy>
+                <texture>common/basichome_upper_gradient.png</texture>
+                <width>2220</width>
+                <height>150</height>
+            </control>
+            <control type="button" id="8997">
+                <description>Fake button for mouse control</description>
+                <posx>395</posx>
+                <posy>-110</posy>
+                <width>1130</width>
+                <height>100</height>
+                <label>-</label>
+                <font>-</font>
+                <texturenofocus>-</texturenofocus>
+                <texturefocus>-</texturefocus>
+                <visible>true</visible>
+            </control>
+            <control type="grouplist" id="9900">
+                <posx>395</posx>
+                <posy>-10</posy>
+                <width>1130</width>
+                <height>100</height>
+                <itemgap>0</itemgap>
+                <scrolltime>200</scrolltime>
+                <orientation>horizontal</orientation>
+                <onleft>9000</onleft>
+                <onright>9000</onright>
+                <onup>9000</onup>
+                <ondown>9000</ondown>
+                <align>center</align>
+                <control type="button" id="600">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>-</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_back_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
+                    <onclick>back</onclick>
+                </control>
+                <control type="image" id="601">
+                    <width>60</width>
+                    <include>FakeTopbarButton</include>
+                </control>
+                <control type="button" id="602">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[210]</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
+                    <onclick>PlayerControl(Previous)</onclick>
+                </control>
+                <control type="image" id="603">
+                    <include>FakeTopbarButton</include>
+                </control>
+                <control type="button" id="604">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[31354]</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
+                    <onclick>PlayerControl(Rewind)</onclick>
+                </control>
+                <control type="image" id="605">
+                    <include>FakeTopbarButton</include>
+                </control>
+                <control type="togglebutton" id="606">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[31351]</label>
+                    <altlabel>$LOCALIZE[208]</altlabel>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
+                    <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
+                    <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
+                    <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
+                    <onclick>PlayerControl(Play)</onclick>
+                </control>
+                <control type="image" id="607">
+                    <include>FakeTopbarButton</include>
+                </control>
+                <control type="button" id="608">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[31352]</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
+                    <onclick>PlayerControl(Stop)</onclick>
+                </control>
+                <control type="image" id="609">
+                    <include>FakeTopbarButton</include>
+                </control>
+                <control type="button" id="610">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[31353]</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
+                    <onclick>PlayerControl(Forward)</onclick>
+                </control>
+                <control type="image" id="611">
+                    <include>FakeTopbarButton</include>
+                </control>
+                <control type="button" id="612">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[209]</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_skipforward_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
+                    <onclick>PlayerControl(Next)</onclick>
+                </control>
+                <control type="image" id="613">
+                    <width>60</width>
+                    <include>FakeTopbarButton</include>
+                </control>
+                <control type="button" id="614">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[13376]</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
+                    <onclick>Mute</onclick>
+                </control>
+                <control type="image" id="615">
+                    <include>FakeTopbarButton</include>
+                </control>
+                <control type="button" id="616">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[13376]</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
+                    <onleft>606</onleft>
+                    <onright>608</onright>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
+                    <onclick>VolumeDown</onclick>
+                </control>
+                <control type="image" id="617">
+                    <include>FakeTopbarButton</include>
+                </control>
+                <control type="button" id="618">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[13376]</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                    <onleft>607</onleft>
+                    <onright>609</onright>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
+                    <onclick>VolumeUp</onclick>
+                </control>
+                <control type="image" id="619">
+                    <width>60</width>
+                    <include>FakeTopbarButton</include>
+                </control>
+                <control type="button" id="620">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>$LOCALIZE[13005]</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
+                    <onleft>608</onleft>
+                    <onright>9000</onright>
+                    <onup>9000</onup>
+                    <ondown>9000</ondown>
+                    <onclick>$VAR[QuitAction]</onclick>
+                </control>
+            </control>
+            <control type="button" id="8997">
+                <description>Fake button for mouse control</description>
+                <posx>395</posx>
+                <posy>40</posy>
+                <width>1130</width>
+                <height>30</height>
+                <label>-</label>
+                <font>-</font>
+                <texturenofocus>-</texturenofocus>
+                <texturefocus>-</texturefocus>
+                <visible>true</visible>
+            </control>
+        </control>
+    </include>
     <include name="Time">
         <control type="group">
             <control type="image">
@@ -167,220 +382,8 @@
             </control>
             <control type="group" description="Fix for Plexbmc">
                 <include>PlexbmcFixTrick</include>
-                <control type="button" id="8998">
-                    <description>Fake button for mouse control</description>
-                    <posx>395</posx>
-                    <posy>0</posy>
-                    <width>1130</width>
-                    <height>100</height>
-                    <label>-</label>
-                    <font>-</font>
-                    <texturenofocus>-</texturenofocus>
-                    <texturefocus>-</texturefocus>
-                    <visible>true</visible>
-                </control>
-                <control type="group" description="TOPBAR">
-                    <visible>!Window.isvisible(DialogVideoInfo.xml)</visible>
-                    <animation effect="slide" start="0,0" end="0,130" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+[[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]">Conditional</animation>
-                    <animation effect="slide" start="0,0" end="0,85" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+![[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]">Conditional</animation>
-                    <animation effect="slide" time="150" end="0,-88">WindowClose</animation>
-                    <animation effect="slide" tween="circle" easing="out" time="150" start="0,-88" end="0,-50">WindowOpen</animation>
-                    <posy>0</posy>
-                    <control type="image">
-                        <posx>-80</posx>
-                        <posy>-90</posy>
-                        <texture>common/basichome_upper_gradient.png</texture>
-                        <width>2220</width>
-                        <height>150</height>
-                    </control>
-                    <control type="button" id="8997">
-                        <description>Fake button for mouse control</description>
-                        <posx>395</posx>
-                        <posy>-110</posy>
-                        <width>1130</width>
-                        <height>100</height>
-                        <label>-</label>
-                        <font>-</font>
-                        <texturenofocus>-</texturenofocus>
-                        <texturefocus>-</texturefocus>
-                        <visible>true</visible>
-                    </control>
-                    <control type="grouplist" id="9900">
-                        <posx>395</posx>
-                        <posy>-10</posy>
-                        <width>1130</width>
-                        <height>100</height>
-                        <itemgap>0</itemgap>
-                        <scrolltime>200</scrolltime>
-                        <orientation>horizontal</orientation>
-                        <onleft>9000</onleft>
-                        <onright>9000</onright>
-                        <onup>9000</onup>
-                        <ondown>9000</ondown>
-                        <align>center</align>
-                        <control type="button" id="600">
-                            <width>50</width>
-                            <height>50</height>
-                            <label>-</label>
-                            <font>-</font>
-                            <texturefocus>topbar/topbar_back_focus.png</texturefocus>
-                            <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
-                            <onclick>back</onclick>
-                        </control>
-                        <control type="image" id="601">
-                            <width>60</width>
-                            <include>FakeTopbarButton</include>
-                        </control>
-                        <control type="button" id="602">
-                            <width>50</width>
-                            <height>50</height>
-                            <label>$LOCALIZE[210]</label>
-                            <font>-</font>
-                            <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
-                            <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
-                            <onclick>PlayerControl(Previous)</onclick>
-                        </control>
-                        <control type="image" id="603">
-                            <include>FakeTopbarButton</include>
-                        </control>
-                        <control type="button" id="604">
-                            <width>50</width>
-                            <height>50</height>
-                            <label>$LOCALIZE[31354]</label>
-                            <font>-</font>
-                            <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
-                            <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
-                            <onclick>PlayerControl(Rewind)</onclick>
-                        </control>
-                        <control type="image" id="605">
-                            <include>FakeTopbarButton</include>
-                        </control>
-                        <control type="togglebutton" id="606">
-                            <width>50</width>
-                            <height>50</height>
-                            <label>$LOCALIZE[31351]</label>
-                            <altlabel>$LOCALIZE[208]</altlabel>
-                            <font>-</font>
-                            <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
-                            <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
-                            <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                            <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
-                            <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
-                            <onclick>PlayerControl(Play)</onclick>
-                        </control>
-                        <control type="image" id="607">
-                            <include>FakeTopbarButton</include>
-                        </control>
-                        <control type="button" id="608">
-                            <width>50</width>
-                            <height>50</height>
-                            <label>$LOCALIZE[31352]</label>
-                            <font>-</font>
-                            <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
-                            <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
-                            <onclick>PlayerControl(Stop)</onclick>
-                        </control>
-                        <control type="image" id="609">
-                            <include>FakeTopbarButton</include>
-                        </control>
-                        <control type="button" id="610">
-                            <width>50</width>
-                            <height>50</height>
-                            <label>$LOCALIZE[31353]</label>
-                            <font>-</font>
-                            <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
-                            <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
-                            <onclick>PlayerControl(Forward)</onclick>
-                        </control>
-                        <control type="image" id="611">
-                            <include>FakeTopbarButton</include>
-                        </control>
-                        <control type="button" id="612">
-                            <width>50</width>
-                            <height>50</height>
-                            <label>$LOCALIZE[209]</label>
-                            <font>-</font>
-                            <texturefocus>topbar/topbar_skipforward_focus.png</texturefocus>
-                            <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
-                            <onclick>PlayerControl(Next)</onclick>
-                        </control>
-                        <control type="image" id="613">
-                            <width>60</width>
-                            <include>FakeTopbarButton</include>
-                        </control>
-                        <control type="button" id="614">
-                            <width>50</width>
-                            <height>50</height>
-                            <label>$LOCALIZE[13376]</label>
-                            <font>-</font>
-                            <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
-                            <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
-                            <onclick>Mute</onclick>
-                        </control>
-                        <control type="image" id="615">
-                            <include>FakeTopbarButton</include>
-                        </control>
-                        <control type="button" id="616">
-                            <width>50</width>
-                            <height>50</height>
-                            <label>$LOCALIZE[13376]</label>
-                            <font>-</font>
-                            <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
-                            <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
-                            <onleft>606</onleft>
-                            <onright>608</onright>
-                            <onup>9000</onup>
-                            <ondown>9000</ondown>
-                            <onclick>VolumeDown</onclick>
-                        </control>
-                        <control type="image" id="617">
-                            <include>FakeTopbarButton</include>
-                        </control>
-                        <control type="button" id="618">
-                            <width>50</width>
-                            <height>50</height>
-                            <label>$LOCALIZE[13376]</label>
-                            <font>-</font>
-                            <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
-                            <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
-                            <onleft>607</onleft>
-                            <onright>609</onright>
-                            <onup>9000</onup>
-                            <ondown>9000</ondown>
-                            <onclick>VolumeUp</onclick>
-                        </control>
-                        <control type="image" id="619">
-                            <width>60</width>
-                            <include>FakeTopbarButton</include>
-                        </control>
-                        <control type="button" id="620">
-                            <width>50</width>
-                            <height>50</height>
-                            <label>$LOCALIZE[13005]</label>
-                            <font>-</font>
-                            <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
-                            <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
-                            <onleft>608</onleft>
-                            <onright>9000</onright>
-                            <onup>9000</onup>
-                            <ondown>9000</ondown>
-                            <onclick>$VAR[QuitAction]</onclick>
-                        </control>
-                    </control>
-                    <control type="button" id="8997">
-                        <description>Fake button for mouse control</description>
-                        <posx>395</posx>
-                        <posy>40</posy>
-                        <width>1130</width>
-                        <height>30</height>
-                        <label>-</label>
-                        <font>-</font>
-                        <texturenofocus>-</texturenofocus>
-                        <texturefocus>-</texturefocus>
-                        <visible>true</visible>
-                    </control>
-                </control>
-                <control type="group" description="Content">
+                <include>TopBar</include>
+                <control type="group" description="Playing Content">
                     <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo</visible>
                     <animation effect="slide" start="0,-88" end="0,0" time="200">Visible</animation>
                     <animation effect="slide" start="0,0" end="0,-88" time="200">Hidden</animation>

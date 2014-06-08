@@ -49,7 +49,7 @@
                 <align>center</align>
                 <textoffsetx>0</textoffsetx>
                 <include>LeftMenuButton</include>
-                <label>$ADDON[script.videoextras 32104] </label>
+                <label>$ADDON[script.videoextras 32104]</label>
             </control>
             <control type="button" id="40">
                 <description>Start from beginning button</description>
