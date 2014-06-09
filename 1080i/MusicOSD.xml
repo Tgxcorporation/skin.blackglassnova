@@ -165,8 +165,23 @@
         <control type="group">
             <!--101-->
             <control type="group" id="101">
-                <posx>480</posx>
+                <posx>515</posx>
                 <posy>68</posy>
+                <control type="button" id="599">
+                    <posx>-70</posx>
+                    <posy>0</posy>
+                    <width>50</width>
+                    <height>50</height>
+                    <label>-</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_back_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
+                    <onleft>20</onleft>
+                    <onright>600</onright>
+                    <onup>87</onup>
+                    <ondown>87</ondown>
+                    <onclick>ActivateWindow(home)</onclick>
+                </control>
                 <control type="button" id="600">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -176,7 +191,7 @@
                     <font>-</font>
                     <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
-                    <onleft>20</onleft>
+                    <onleft>599</onleft>
                     <onright>601</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
@@ -426,7 +441,7 @@
                     <label>$LOCALIZE[31048]</label>
                     <font>-</font>
                     <onleft>19</onleft>
-                    <onright>600</onright>
+                    <onright>599</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
                     <texturefocus>topbar/topbar_presets_focus.png</texturefocus>
