@@ -44,7 +44,7 @@
                 <height>90</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
-             <control type="label" description="BlackGlassNova">
+            <control type="label" description="BlackGlassNova">
                 <posx>173</posx>
                 <posy>323</posy>
                 <height>36</height>
@@ -376,7 +376,19 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(WindowClosingIcon)</onclick>
                         </item>
-                        <item id="19" description="Reset Skin">
+                        <item id="20" description="Sliding Animations">
+                            <visible>Skin.HasSetting(DisablePauseIconOSD)</visible>
+                            <label>$LOCALIZE[32003]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(DisablePauseIconOSD)</onclick>
+                        </item>
+                        <item id="20" description="Sliding Animations">
+                            <visible>!Skin.HasSetting(DisablePauseIconOSD)</visible>
+                            <label>$LOCALIZE[32003]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(DisablePauseIconOSD)</onclick>
+                        </item>
+                        <item id="21" description="Reset Skin">
                             <label>$LOCALIZE[31038]</label>
                             <onclick>Skin.ResetSettings</onclick>
                             <onclick>XBMC.ReloadSkin()</onclick>

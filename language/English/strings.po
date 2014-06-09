@@ -516,3 +516,15 @@ msgstr ""
 msgctxt "#32000"
 msgid "Enable window closing icon"
 msgstr ""
+
+msgctxt "#32001"
+msgid "Disable Fanart Backdrops"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Disable Sliding Animations"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Disable Pause, FF, RW icons in OSD"
+msgstr ""
