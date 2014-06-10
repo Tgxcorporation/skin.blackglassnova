@@ -224,6 +224,36 @@
                                 <visible>!IsEmpty(ListItem.mpaa)</visible>
                             </item>
                             <item>
+                                <label>$LOCALIZE[21445]  •  $LOCALIZE[21805]</label>
+                                <label2>$INFO[ListItem.VideoCodec]$INFO[ListItem.VideoResolution,  •  ]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21446]  •  $LOCALIZE[21444]  •  $LOCALIZE[21447]</label>
+                                <label2>$INFO[ListItem.AudioCodec]$INFO[ListItem.AudioChannels,  •  ]$INFO[ListItem.AudioLanguage,  •  ]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[21448]</label>
+                                <label2>$INFO[ListItem.SubtitleLanguage]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
+                            </item>
+                            <item>
+                                <label>IMDB Top 250 #</label>
+                                <label2>$INFO[ListItem.Top250]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.Top250)</visible>
+                            </item>
+                            <item>
+                                <label>$LOCALIZE[36501]</label>
+                                <label2>$INFO[ListItem.StereoscopicMode]</label2>
+                                <onclick>noop</onclick>
+                                <visible>!IsEmpty(ListItem.StereoscopicMode)</visible>
+                            </item>
+                            <item>
                                 <label>$LOCALIZE[15311]</label>
                                 <label2>$INFO[ListItem.FilenameAndPath]</label2>
                                 <onclick>noop</onclick>
@@ -343,6 +373,36 @@
                                     <visible>!IsEmpty(ListItem.Rating)</visible>
                                 </item>
                                 <item>
+                                    <label>$LOCALIZE[21445]  •  $LOCALIZE[21805]</label>
+                                    <label2>$INFO[ListItem.VideoCodec]$INFO[ListItem.VideoResolution,  •  ]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[21446]  •  $LOCALIZE[21444]  •  $LOCALIZE[21447]</label>
+                                    <label2>$INFO[ListItem.AudioCodec]$INFO[ListItem.AudioChannels,  •  ]$INFO[ListItem.AudioLanguage,  •  ]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[21448]</label>
+                                    <label2>$INFO[ListItem.SubtitleLanguage]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
+                                </item>
+                                <item>
+                                    <label>IMDB Top 250 #</label>
+                                    <label2>$INFO[ListItem.Top250]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.Top250)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[36501]</label>
+                                    <label2>$INFO[ListItem.StereoscopicMode]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.StereoscopicMode)</visible>
+                                </item>
+                                <item>
                                     <label>$LOCALIZE[15311]</label>
                                     <label2>$INFO[ListItem.FilenameAndPath]</label2>
                                     <onclick>noop</onclick>
@@ -404,6 +464,30 @@
                                     <label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
                                     <onclick>noop</onclick>
                                     <visible>!IsEmpty(ListItem.Duration)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[21445]  •  $LOCALIZE[21805]</label>
+                                    <label2>$INFO[ListItem.VideoCodec]$INFO[ListItem.VideoResolution,  •  ]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.VideoCodec)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[21446]  •  $LOCALIZE[21444]  •  $LOCALIZE[21447]</label>
+                                    <label2>$INFO[ListItem.AudioCodec]$INFO[ListItem.AudioChannels,  •  ]$INFO[ListItem.AudioLanguage,  •  ]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[21448]</label>
+                                    <label2>$INFO[ListItem.SubtitleLanguage]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.SubtitleLanguage)</visible>
+                                </item>
+                                <item>
+                                    <label>$LOCALIZE[36501]</label>
+                                    <label2>$INFO[ListItem.StereoscopicMode]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.StereoscopicMode)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[15311]</label>
