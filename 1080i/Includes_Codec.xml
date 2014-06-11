@@ -66,7 +66,7 @@
             </control>
         </control>
         <control type="image">
-            <visible>ListItem.IsStereoscopic</visible>
+            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
             <description>3D Image</description>
             <width>120</width>
             <height>80</height>
@@ -132,7 +132,7 @@
             </control>
         </control>
         <control type="image">
-            <visible>ListItem.IsStereoscopic</visible>
+            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
             <description>3D Image</description>
             <width>100</width>
             <height>60</height>
@@ -208,7 +208,7 @@
             </control>
         </control>
         <control type="image">
-            <visible>ListItem.IsStereoscopic</visible>
+            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
             <description>3D Image</description>
             <posx>612</posx>
             <posy>0</posy>
@@ -276,7 +276,7 @@
             </control>
         </control>
         <control type="image">
-            <visible>ListItem.IsStereoscopic</visible>
+            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
             <description>3D Image</description>
             <width>90</width>
             <height>53</height>
@@ -393,7 +393,7 @@
             </control>
         </control>
         <control type="image">
-            <visible>ListItem.IsStereoscopic</visible>
+            <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
             <description>3D Image</description>
             <width>100</width>
             <height>70</height>
