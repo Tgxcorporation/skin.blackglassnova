@@ -91,7 +91,7 @@
                 <posy>865</posy>
                 <width>1006</width>
                 <height>408</height>
-                <itemgap>18</itemgap>
+                <itemgap>4</itemgap>
                 <orientation>horizontal</orientation>
                 <align>left</align>
                 <aligny>center</aligny>
