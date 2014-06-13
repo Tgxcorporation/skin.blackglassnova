@@ -98,7 +98,7 @@
         <value condition="SubString(ListItem.Filenameandpath,hdtv)">hdtv</value>
         <value condition="SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,Right) | SubString(ListItem.Filenameandpath,.iso,Right)">dvd</value>
         <value condition="SubString(ListItem.Path,videodb://movies/sets,left)">set</value>
-        <value condition="SubString(ListItem.Filenameandpath,4k)">4k</value>
+        <value condition="SubString(ListItem.Filenameandpath,4k)">4kbis</value>
         <value condition="[substring(ListItem.VideoCodec,div,left) | stringcompare(ListItem.VideoCodec,dx50)]">divx</value>
         <value>$INFO[ListItem.VideoCodec]</value>
     </variable>
@@ -107,7 +107,7 @@
         <value condition="SubString(Player.Filenameandpath,web)">webtv</value>
         <value condition="SubString(Player.Filenameandpath,hdtv)">hdtv</value>
         <value condition="SubString(Player.Filenameandpath,dvd) | SubString(Player.Filenameandpath,.ifo,Right) | SubString(Player.Filenameandpath,.iso,Right)">dvd</value>
-        <value condition="SubString(Player.Filenameandpath,4k)">4k</value>
+        <value condition="SubString(Player.Filenameandpath,4k)">4kbis</value>
         <value condition="[substring(VideoPlayer.VideoCodec,div,left) | stringcompare(VideoPlayer.VideoCodec,dx50)]">divx</value>
         <value>$INFO[VideoPlayer.VideoCodec]</value>
     </variable>

@@ -366,25 +366,25 @@
                         </item>
                         <item id="18" description="Window Closing Icon">
                             <visible>Skin.HasSetting(WindowClosingIcon)</visible>
-                            <label>$LOCALIZE[32000]</label>
+                            <label>$LOCALIZE[31949]</label>
                             <label2>$LOCALIZE[107]</label2>
                             <onclick>Skin.ToggleSetting(WindowClosingIcon)</onclick>
                         </item>
                         <item id="18" description="Window Closing Icon">
                             <visible>!Skin.HasSetting(WindowClosingIcon)</visible>
-                            <label>$LOCALIZE[32000]</label>
+                            <label>$LOCALIZE[31949]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(WindowClosingIcon)</onclick>
                         </item>
-                        <item id="20" description="Sliding Animations">
+                        <item id="20" description="Disable Pause, FF, RW icons in OSD">
                             <visible>Skin.HasSetting(DisablePauseIconOSD)</visible>
-                            <label>$LOCALIZE[32003]</label>
+                            <label>$LOCALIZE[31952]</label>
                             <label2>$LOCALIZE[107]</label2>
                             <onclick>Skin.ToggleSetting(DisablePauseIconOSD)</onclick>
                         </item>
-                        <item id="20" description="Sliding Animations">
+                        <item id="20" description="Disable Pause, FF, RW icons in OSD">
                             <visible>!Skin.HasSetting(DisablePauseIconOSD)</visible>
-                            <label>$LOCALIZE[32003]</label>
+                            <label>$LOCALIZE[31952]</label>
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(DisablePauseIconOSD)</onclick>
                         </item>

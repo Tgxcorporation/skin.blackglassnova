@@ -39,13 +39,24 @@
                 <width>577</width>
                 <height max="949">auto</height>
                 <itemgap>0</itemgap>
-            </control>
-            <control type="button" id="1000" description="Buttons">
-                <posx>0</posx>
-                <posy>0</posy>
-                <align>center</align>
-                <textoffsetx>0</textoffsetx>
-                <include>LeftMenuButton</include>
+                <control type="button" id="1000" description="Buttons">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <include>LeftMenuButton</include>
+                </control>
+                <control type="button" id="2001" description="actor/director info button (visible only container is MovieActors, MovieDirectors or TvShowActors)">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <align>center</align>
+                    <textoffsetx>0</textoffsetx>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[21891]</label>
+                    <onclick>RunScript(script.metadata.actors,$INFO[ListItem.Label])</onclick>
+                    <visible>Container.Content(Actors) | Container.Content(Directors) | Container.Content(Artists)</visible>
+                    <visible>System.HasAddon(script.metadata.actors) + !Window.IsVisible(script-Actors-DialogInfo.xml)</visible>
+                </control>
             </control>
         </control>
     </controls>

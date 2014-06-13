@@ -76,7 +76,19 @@ msgctxt "#31014"
 msgid "On Deck"
 msgstr ""
 
-#empty strings from id 31015 to 31019
+msgctxt "#31015"
+msgid "Actor Info"
+msgstr ""
+
+msgctxt "#31016"
+msgid "Director Info"
+msgstr ""
+
+msgctxt "#31017"
+msgid "Writer Info"
+msgstr ""
+
+#empty strings from id 31018 to 31019
 
 msgctxt "#31020"
 msgid "Recently Added"
@@ -316,8 +328,24 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr ""
 
-#empty strings from id 31905 to 31952
+#empty strings from id 31905 to 31948
 #BLACK GLASS NOVA
+
+msgctxt "#31949"
+msgid "Enable window closing icon"
+msgstr ""
+
+msgctxt "#31950"
+msgid "Disable Fanart Backdrops"
+msgstr ""
+
+msgctxt "#31951"
+msgid "Disable Sliding Animations"
+msgstr ""
+
+msgctxt "#31952"
+msgid "Disable Pause, FF, RW icons in OSD"
+msgstr ""
 
 msgctxt "#31953"
 msgid "Large List"
@@ -511,20 +539,4 @@ msgstr ""
 
 msgctxt "#31999"
 msgid "Slide to left animations of list views"
-msgstr ""
-
-msgctxt "#32000"
-msgid "Enable window closing icon"
-msgstr ""
-
-msgctxt "#32001"
-msgid "Disable Fanart Backdrops"
-msgstr ""
-
-msgctxt "#32002"
-msgid "Disable Sliding Animations"
-msgstr ""
-
-msgctxt "#32003"
-msgid "Disable Pause, FF, RW icons in OSD"
 msgstr ""

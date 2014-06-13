@@ -7,6 +7,7 @@
         <posx>0</posx>
         <posy>0</posy>
     </coordinates>
+    <zorder>0</zorder>
     <include>OpenClose</include>
     <controls>
         <control type="image">
@@ -84,7 +85,7 @@
                 <posx>178</posx>
                 <posy>163</posy>
                 <control type="panel" id="50">
-                    <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)]</visible>
+                    <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)| Control.HasFocus(9014)]</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>0</posx>
                     <posy>0</posy>
@@ -105,7 +106,7 @@
                     <onright>9000</onright>
                 </control>
                 <control type="image" description="Thumb">
-                    <visible>![Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)]</visible>
+                    <visible>![Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)| Control.HasFocus(9014)]</visible>
                     <posx>1142</posx>
                     <posy>365</posy>
                     <width>410</width>
@@ -115,7 +116,7 @@
                     <include>ThumbBorder</include>
                 </control>
                 <control type="image" description="Actor">
-                    <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)]</visible>
+                    <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)| Control.HasFocus(9014)]</visible>
                     <posx>1142</posx>
                     <posy>365</posy>
                     <width>410</width>
@@ -136,8 +137,8 @@
                     <autoscroll delay="15000" time="5000" repeat="10000">true</autoscroll>
                     <label>$VAR[Plots]</label>
                 </control>
-                <control type="group" description="Movies">
-                    <visible>![Control.HasFocus(9013) |Control.HasFocus(9012) | Control.HasFocus(50) | Control.HasFocus(61)]</visible>
+                <control type="group">
+                    <visible>![Control.HasFocus(9013) |Control.HasFocus(9012) | Control.HasFocus(50) | Control.HasFocus(61)| Control.HasFocus(9014)]</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="image">
                         <posx>0</posx>
@@ -525,6 +526,7 @@
                     <label>$LOCALIZE[208]</label>
                     <altlabel>$LOCALIZE[1024]</altlabel>
                     <usealttexture>Container.Content(TVShows)</usealttexture>
+                    <onleft>9009</onleft>
                 </control>
                 <control type="button" id="299" description="Cinema">
                     <visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience)</visible>
@@ -533,11 +535,13 @@
                     <onclick>Dialog.Close(all,true)</onclick>
                     <onclick>Playlist.Clear</onclick>
                     <onclick>RunScript(script.cinema.experience)</onclick>
+                    <onleft>9009</onleft>
                 </control>
                 <control type="button" id="11" description="Trailer">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[20410]</label>
                     <visible>!IsEmpty(ListItem.Trailer)</visible>
+                    <onleft>9009</onleft>
                 </control>
                 <control type="togglebutton" id="9013" description="Plot">
                     <include>RightDialogButton</include>
@@ -549,25 +553,50 @@
                     <onclick>Control.SetFocus(50)</onclick>
                     <onleft>Control.SetFocus(50)</onleft>
                 </control>
+                <control type="button" id="9014" description="Actor Info">
+                    <include>RightDialogButton</include>
+                    <label>$LOCALIZE[31015]</label>
+                    <visible>System.HasAddon(script.metadata.actors)</visible>
+                    <onclick>RunScript(script.metadata.actors,$INFO[Container(50).Listitem.Label])</onclick>
+                    <onleft>Control.SetFocus(50)</onleft>
+                </control>
+                <control type="button" id="9015" description="Director Info">
+                    <include>RightDialogButton</include>
+                    <label>$LOCALIZE[31016]</label>
+                    <visible>System.HasAddon(script.metadata.actors)+!IsEmpty(ListItem.Director)</visible>
+                    <onclick>RunScript(script.metadata.actors,$INFO[ListItem.Director])</onclick>
+                    <onleft>9009</onleft>
+                </control>
+                <control type="button" id="9016" description="Writer Info">
+                    <include>RightDialogButton</include>
+                    <label>$LOCALIZE[31017]</label>
+                    <visible>System.HasAddon(script.metadata.actors)+!IsEmpty(ListItem.Writer)</visible>
+                    <onclick>RunScript(script.metadata.actors,$INFO[ListItem.Writer])</onclick>
+                    <onleft>9009</onleft>
+                </control>
                 <control type="button" id="6" description="Refresh">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[184]</label>
+                    <onleft>9009</onleft>
                 </control>
                 <control type="togglebutton" id="10" description="Get Art">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[13511]</label>
+                    <onleft>9009</onleft>
                 </control>
                 <control type="button" id="105" description="Extras">
                     <include>RightDialogButton</include>
                     <label>Extras</label>
                     <onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
                     <visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
+                    <onleft>9009</onleft>
                 </control>
                 <control type="togglebutton" id="100" description="TvTunes">
                     <visible>Container.Content(TVShows) + System.HasAddon(script.tvtunes) + Skin.HasSetting(TVTunes.Enabled)</visible>
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[31956]</label>
                     <onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
+                    <onleft>9009</onleft>
                 </control>
             </control>
             <control type="scrollbar" id="62">
