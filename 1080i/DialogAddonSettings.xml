@@ -102,6 +102,7 @@
                 <width>1131</width>
                 <height>73</height>
                 <radioposx>1028</radioposx>
+                <textwidth>970</textwidth>
                 <include>LeftMenuButton</include>
             </control>
             <control type="spincontrolex" id="5">

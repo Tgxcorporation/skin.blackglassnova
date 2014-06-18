@@ -600,6 +600,7 @@
         <control type="radiobutton" id="9156" description="View 53 Banners">
             <visible>Control.IsVisible(53) + Container.Content(TVShows)</visible>
             <font>LeftMenuSubButtonFont</font>
+            <textwidth>450</textwidth>
             <include>LeftMenuButton</include>
             <onclick>Skin.ToggleSetting(53_UseBanners)</onclick>
             <selected>Skin.HasSetting(53_UseBanners)</selected>
@@ -608,6 +609,7 @@
         <control type="radiobutton" id="9157" description="View 53 Bigger">
             <visible>Control.IsVisible(53)+!Skin.HasSetting(53_UseBanners)+!Container.Content(episodes)</visible>
             <font>LeftMenuSubButtonFont</font>
+            <textwidth>450</textwidth>
             <include>LeftMenuButton</include>
             <onclick>Skin.ToggleSetting(53_BigGrid)</onclick>
             <selected>Skin.HasSetting(53_BigGrid)</selected>
@@ -616,6 +618,7 @@
         <control type="radiobutton" id="9160" description="View 55 Banners">
             <visible>Control.IsVisible(55) + Container.Content(TVShows)</visible>
             <font>LeftMenuSubButtonFont</font>
+            <textwidth>450</textwidth>
             <include>LeftMenuButton</include>
             <onclick>Skin.ToggleSetting(55_UseBanners)</onclick>
             <selected>Skin.HasSetting(55_UseBanners)</selected>
@@ -624,6 +627,7 @@
         <control type="radiobutton" id="9162" description="View 57 Enable gallery for EPISODES">
             <visible>Control.IsVisible(57) + container.content(episodes)</visible>
             <font>LeftMenuSubButtonFont</font>
+            <textwidth>450</textwidth>
             <include>LeftMenuButton</include>
             <onclick>Skin.ToggleSetting(Episodes_Gallery)</onclick>
             <selected>Skin.HasSetting(Episodes_Gallery)</selected>
@@ -632,6 +636,7 @@
         <control type="radiobutton" id="9165" description="View 58 Enable gallery for MUSIC">
             <visible>Control.IsVisible(58) + ![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(tvshows) | container.content(seasons)|container.content(episodes)]</visible>
             <font>LeftMenuSubButtonFont</font>
+            <textwidth>450</textwidth>
             <include>LeftMenuButton</include>
             <onclick>Skin.ToggleSetting(Music_Gallery)</onclick>
             <selected>Skin.HasSetting(Music_Gallery)</selected>
@@ -640,6 +645,7 @@
         <control type="radiobutton" id="9168" description="View 59 Enable gallery for POSTERS">
             <visible>Control.IsVisible(59) + [[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
             <font>LeftMenuSubButtonFont</font>
+            <textwidth>450</textwidth>
             <include>LeftMenuButton</include>
             <onclick>Skin.ToggleSetting(Posters_Gallery)</onclick>
             <selected>Skin.HasSetting(Posters_Gallery)</selected>
@@ -1421,5 +1427,10 @@
     </include>
     <include name="SlideViewLabelWidth">
         <width>1385</width>
+    </include>
+    <include name="Animation_ViewsCDart">
+        <animation effect="rotate" end="-360" center="auto" time="5000" loop="true" reversible="false" condition="[[Player.HasAudio|Player.HasVideo] + !Player.Paused]">Conditional</animation>
+        <animation effect="rotate" start="0" end="-360" center="auto" time="40000" loop="true" reversible="false" condition="!Player.HasVideo">Conditional</animation>
+        <!-- <fadetime>500</fadetime> -->
     </include>
 </includes>

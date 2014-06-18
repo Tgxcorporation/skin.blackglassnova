@@ -92,6 +92,7 @@
                 <width>931</width>
                 <height>73</height>
                 <radioposx>828</radioposx>
+                <textwidth>770</textwidth>
                 <include>LeftMenuButton</include>
             </control>
             <control type="group" description="Right side options group">

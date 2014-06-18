@@ -70,6 +70,7 @@
                 <onleft>noop</onleft>
                 <onup>noop</onup>
                 <ondown>5</ondown>
+                <textwidth>722</textwidth>
                 <include>LeftMenuButton</include>
             </control>
             <control type="radiobutton" id="5" description="Enable auto Login">
@@ -82,6 +83,7 @@
                 <onleft>noop</onleft>
                 <onup>4</onup>
                 <ondown>2</ondown>
+                <textwidth>722</textwidth>
                 <include>LeftMenuButton</include>
             </control>
             <control type="group" description="Slider and List">

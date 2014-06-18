@@ -1118,7 +1118,7 @@
                 <width>318</width>
                 <height>254</height>
                 <aspectratio>keep</aspectratio>
-                <texture>$INFO[ListItem.Icon]</texture>
+                <texture fallback="DefaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorder</include>
             </control>
             <control type="group">

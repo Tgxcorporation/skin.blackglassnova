@@ -102,6 +102,7 @@
                     <font>SmallButtonFont</font>
                     <radioposx>680</radioposx>
                     <label>$LOCALIZE[19134]</label>
+                    <textwidth>622</textwidth>
                     <include>LeftMenuButton</include>
                     <onleft>12</onleft>
                     <onright>12</onright>
@@ -113,6 +114,7 @@
                     <width>782</width>
                     <font>SmallButtonFont</font>
                     <radioposx>680</radioposx>
+                    <textwidth>622</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19135]</label>
                     <onleft>13</onleft>
@@ -158,6 +160,7 @@
                     <width>782</width>
                     <font>SmallButtonFont</font>
                     <radioposx>680</radioposx>
+                    <textwidth>622</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19132]</label>
                     <onleft>21</onleft>
@@ -170,6 +173,7 @@
                     <width>782</width>
                     <font>SmallButtonFont</font>
                     <radioposx>680</radioposx>
+                    <textwidth>622</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19123]</label>
                     <onleft>23</onleft>
@@ -182,6 +186,7 @@
                     <width>782</width>
                     <font>SmallButtonFont</font>
                     <radioposx>680</radioposx>
+                    <textwidth>622</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19124]</label>
                     <onleft>27</onleft>
@@ -244,6 +249,7 @@
                     <width>782</width>
                     <font>SmallButtonFont</font>
                     <radioposx>680</radioposx>
+                    <textwidth>622</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19121]</label>
                     <onright>18</onright>
@@ -278,6 +284,7 @@
                     <width>782</width>
                     <font>SmallButtonFont</font>
                     <radioposx>680</radioposx>
+                    <textwidth>622</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19125]</label>
                     <onleft>24</onleft>

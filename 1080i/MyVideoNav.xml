@@ -32,6 +32,19 @@
                 <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(5050)|Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)|Control.IsVisible(56)]+![!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]]|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)+[Control.IsVisible(50)|Control.IsVisible(52)|Control.IsVisible(56)|Control.IsVisible(54)]]</visible>
                 <include>Icon_Fade</include>
                 <posy>219</posy>
+                <control type="group">
+                    <!-- CDART -->
+                    <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
+                    <control type="image">
+                        <posx>45</posx>
+                        <posy>294</posy>
+                        <width>256</width>
+                        <height>256</height>
+                        <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <include>Animation_ViewsCDart</include>
+                    </control>
+                </control>
                 <control type="image" description="Thumb">
                     <posx>18</posx>
                     <posy>411</posy>
@@ -69,6 +82,19 @@
                     <width>2</width>
                     <height>700</height>
                     <texture>list/bg_facade_vertical.png</texture>
+                </control>
+                <control type="group">
+                    <!-- CDART -->
+                    <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
+                    <control type="image">
+                        <posx>51</posx>
+                        <posy>221</posy>
+                        <width>404</width>
+                        <height>404</height>
+                        <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <include>Animation_ViewsCDart</include>
+                    </control>
                 </control>
                 <control type="image" description="Thumb">
                     <posx>18</posx>
@@ -377,6 +403,19 @@
                     <height>1200</height>
                     <texture>list/bg_facade_vertical.png</texture>
                 </control>
+                <control type="group">
+                    <!-- CDART -->
+                    <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
+                    <control type="image">
+                        <posx>51</posx>
+                        <posy>588</posy>
+                        <width>404</width>
+                        <height>404</height>
+                        <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <include>Animation_ViewsCDart</include>
+                    </control>
+                </control>
                 <control type="image" description="Thumb">
                     <posx>18</posx>
                     <posy>151</posy>
@@ -549,6 +588,19 @@
                         <width>2</width>
                         <height>600</height>
                         <texture>list/bg_facade_vertical.png</texture>
+                    </control>
+                    <control type="group">
+                        <!-- CDART -->
+                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
+                        <control type="image">
+                            <posx>51</posx>
+                            <posy>296</posy>
+                            <width>254</width>
+                            <height>254</height>
+                            <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                            <aspectratio align="center" aligny="center">keep</aspectratio>
+                            <include>Animation_ViewsCDart</include>
+                        </control>
                     </control>
                     <control type="image" description="Thumb">
                         <posx>18</posx>
@@ -947,9 +999,32 @@
                     <height>2</height>
                     <texture border="0,0,0,2">list/bg_facade_nofocus_top.png</texture>
                 </control>
+                <control type="edit" id="19">
+                    <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+                    <description>Filter</description>
+                    <textwidth>520</textwidth>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[587]</label>
+                </control>
+                <control type="radiobutton" id="98">
+                    <visible>Container.CanFilterAdvanced</visible>
+                    <description>Filter</description>
+                    <include>LeftMenuButton</include>
+                    <label>587</label>
+                    <selected>Container.Filtered</selected>
+                    <onclick>right</onclick>
+                    <onclick>Filter</onclick>
+                </control>
                 <control type="button" id="8" description="Search">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[137]</label>
+                </control>
+                <control type="radiobutton" id="16">
+                    <description>PartyMode</description>
+                    <label>$LOCALIZE[589]</label>
+                    <textwidth>450</textwidth>
+                    <include>LeftMenuButton</include>
+                    <visible>Container.Content(MusicVideos)</visible>
                 </control>
                 <control type="togglebutton" id="20" description="Library update">
                     <include>LeftMenuButton</include>
@@ -962,6 +1037,15 @@
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[16003]</label>
                     <onclick>fullscreen</onclick>
+                </control>
+                <control type="radiobutton" id="11">
+                    <description>Unlock Shares</description>
+                    <textwidth>450</textwidth>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[20336]</label>
+                    <onclick>xbmc.mastermode</onclick>
+                    <selected>system.ismaster</selected>
+                    <visible>system.haslocks</visible>
                 </control>
             </control>
         </control>

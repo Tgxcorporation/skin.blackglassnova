@@ -7,6 +7,7 @@
         <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
+            <include>OpenCloseSlideRight</include>
             <include>WindowTitle</include>
             <label>$LOCALIZE[3]</label>
         </control>
@@ -58,8 +59,8 @@
                 <height>730</height>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
-                <onleft>noop</onleft>
-                <onright>9000</onright>
+                <onleft>60</onleft>
+                <onright>9001</onright>
                 <onup>450</onup>
                 <ondown>450</ondown>
                 <itemlayout height="73" width="931">
@@ -142,8 +143,8 @@
                 <posy>382</posy>
                 <height>730</height>
                 <include>VerticalScroller</include>
-                <onleft>450</onleft>
-                <onright>450</onright>
+                <onleft>50</onleft>
+                <onright>50</onright>
             </control>
             <control type="image">
                 <posx>1209</posx>
@@ -160,23 +161,25 @@
                 <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
                 <colordiffuse>90ffffff</colordiffuse>
             </control>
-            <control type="grouplist" id="9000">
+            <control type="grouplist" id="9001">
                 <posx>1209</posx>
                 <posy>382</posy>
                 <width>433</width>
-                <height>438</height>
+                <height>365</height>
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <onleft>50</onleft>
-                <onright>60</onright>
+                <onright>61</onright>
                 <onup>noop</onup>
                 <ondown>noop</ondown>
+                <pagecontrol>61</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <control type="radiobutton" id="20" description="shuffle">
                     <width>433</width>
                     <height>73</height>
                     <align>left</align>
                     <!-- <textoffsetx>30</textoffsetx> -->
+                    <textwidth>287</textwidth>
                     <radioposx>345</radioposx>
                     <!-- <font>SmallButtonFont</font> -->
                     <include>LeftMenuButton</include>
@@ -213,11 +216,32 @@
                     <altlabel>$LOCALIZE[21429]:  $LOCALIZE[21431]</altlabel>
                 </control>
             </control>
+            <control type="scrollbar" id="61">
+                <posx>1611</posx>
+                <posy>382</posy>
+                <height>365</height>
+                <include>VerticalScroller</include>
+                <onleft>9001</onleft>
+                <onright>9001</onright>
+            </control>
+            <control type="group">
+                <!-- CDART -->
+                <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)</visible>
+                <control type="image">
+                    <posx>1385</posx>
+                    <posy>792</posy>
+                    <width>316</width>
+                    <height>316</height>
+                    <texture diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <include>Animation_ViewsCDart</include>
+                </control>
+            </control>
             <control type="image">
                 <posx>1242</posx>
-                <posy>838</posy>
+                <posy>765</posy>
                 <width>370</width>
-                <height>231</height>
+                <height>370</height>
                 <include>EpisodeThumb</include>
                 <include>ThumbBorder</include>
             </control>

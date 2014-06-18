@@ -82,6 +82,7 @@
                     <visible>ListItem.IsFolder</visible>
                 </control>
                 <control type="radiobutton" id="9" description="Randomize">
+                    <textwidth>450</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[13319]</label>
                 </control>

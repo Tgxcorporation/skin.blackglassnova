@@ -62,6 +62,7 @@
                 </control>
                 <control type="radiobutton" id="8">
                     <radioposx>962</radioposx>
+                    <textwidth>904</textwidth>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="spincontrolex" id="9">

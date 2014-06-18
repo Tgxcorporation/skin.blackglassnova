@@ -302,14 +302,17 @@
                     <usealttexture>Container.SortDirection(Ascending)</usealttexture>
                 </control>
                 <control type="radiobutton" id="5">
+                    <textwidth>450</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[24063]</label>
                 </control>
                 <control type="radiobutton" id="6">
+                    <textwidth>450</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[25000]</label>
                 </control>
                 <control type="radiobutton" id="7">
+                    <textwidth>450</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[25001]</label>
                 </control>

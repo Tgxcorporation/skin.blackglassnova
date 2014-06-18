@@ -65,6 +65,7 @@
                 <control type="radiobutton" id="701" description="All Movies">
                     <width>620</width>
                     <radioposx>520</radioposx>
+                    <textwidth>460</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[31502]</label>
                     <onclick>Skin.Reset(CustomMovie.1.Label)</onclick>
@@ -75,6 +76,7 @@
                 <control type="radiobutton" id="702" description="Playlists">
                     <width>620</width>
                     <radioposx>520</radioposx>
+                    <textwidth>460</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[136]</label>
                     <onclick>Skin.Reset(CustomMovie.1.Label)</onclick>
@@ -85,6 +87,7 @@
                 <control type="radiobutton" id="703" description="Files">
                     <width>620</width>
                     <radioposx>520</radioposx>
+                    <textwidth>460</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[744]</label>
                     <onclick>Skin.Reset(CustomMovie.1.Label)</onclick>
@@ -95,6 +98,7 @@
                 <control type="radiobutton" id="704" description="Library">
                     <width>620</width>
                     <radioposx>520</radioposx>
+                    <textwidth>460</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[15100]</label>
                     <onclick>Skin.Reset(CustomMovie.1.Label)</onclick>
@@ -106,6 +110,7 @@
                     <visible>IsEmpty(Skin.String(CustomMovie.1.Path))</visible>
                     <width>620</width>
                     <radioposx>520</radioposx>
+                    <textwidth>460</textwidth>
                     <include>LeftMenuButton</include>
                     <label>636</label>
                     <onclick>Skin.Reset(movie_entries)</onclick>
@@ -116,6 +121,7 @@
                     <visible>!IsEmpty(Skin.String(CustomMovie.1.Path))</visible>
                     <width>620</width>
                     <radioposx>520</radioposx>
+                    <textwidth>460</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$INFO[Skin.String(CustomMovie.1.Label)]</label>
                     <onclick>Skin.Reset(movie_entries)</onclick>

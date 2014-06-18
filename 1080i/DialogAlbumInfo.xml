@@ -101,6 +101,19 @@
                     <label>20413</label>
                 </control>
             </control>
+            <control type="group">
+                <!-- CDART -->
+                <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+container.content(Albums)</visible>
+                <control type="image">
+                    <posx>1540</posx>
+                    <posy>865</posy>
+                    <width>316</width>
+                    <height>316</height>
+                    <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</texture>
+                    <aspectratio align="center" aligny="center">keep</aspectratio>
+                    <include>Animation_ViewsCDart</include>
+                </control>
+            </control>
             <control type="image">
                 <posx>1342</posx>
                 <posy>838</posy>

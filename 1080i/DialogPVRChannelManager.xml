@@ -190,6 +190,7 @@
                     <control type="radiobutton" id="7" description="Activate channel">
                         <width>695</width>
                         <radioposx>591</radioposx>
+                        <textwidth>533</textwidth>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[19074]</label>
                     </control>
@@ -206,6 +207,7 @@
                     <control type="radiobutton" id="12" description="EPG active">
                         <width>695</width>
                         <radioposx>591</radioposx>
+                        <textwidth>533</textwidth>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[19206]</label>
                     </control>
@@ -307,7 +309,6 @@
                     <texture>$VAR[Thumbs]</texture>
                 </control>
             </control>
-
         </control>
         <!-- <control type="image" id="10">
           <width>600</width>

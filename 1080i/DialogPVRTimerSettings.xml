@@ -65,6 +65,7 @@
                 <description>Default RadioButton</description>
                 <radioposx>760</radioposx>
                 <width>864</width>
+                <textwidth>702</textwidth>
                 <include>LeftMenuButton</include>
             </control>
             <control type="spincontrolex" id="9">

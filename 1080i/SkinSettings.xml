@@ -388,7 +388,24 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(DisablePauseIconOSD)</onclick>
                         </item>
-                        <item id="21" description="Reset Skin">
+                        <item id="21" description="Enable CdArt">
+                            <visible>Skin.HasSetting(EnableCdArt)</visible>
+                            <label>$LOCALIZE[31040]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(EnableCdArt)</onclick>
+                        </item>
+                        <item id="21" description="Enable CdArt">
+                            <visible>!Skin.HasSetting(EnableCdArt)</visible>
+                            <label>$LOCALIZE[31040]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(EnableCdArt)</onclick>
+                        </item>
+                        <item id="22" description="Set Music Path">
+                            <label>$LOCALIZE[31039]</label>
+                            <label2>$INFO[Skin.String(MusicPath)]</label2>
+                            <onclick>Skin.SetPath(MusicPath)</onclick>
+                        </item>
+                        <item id="23" description="Reset Skin">
                             <label>$LOCALIZE[31038]</label>
                             <onclick>Skin.ResetSettings</onclick>
                             <onclick>XBMC.ReloadSkin()</onclick>

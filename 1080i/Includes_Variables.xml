@@ -20,6 +20,9 @@
         <value>$INFO[ListItem.Art(thumb)]</value>
     </variable>
     <variable name="Thumbs" description="Thumbs">
+        <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+        <value condition="!IsEmpty(ListItem.Property(Icon))">$INFO[ListItem.Property(Icon)]</value>
+        <value condition="!IsEmpty(ListItem.thumb)">$INFO[ListItem.thumb]</value>
         <value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(MyPVR.xml)]">defaultChannelTvBig_Wide.png</value>
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyVideoPlaylist.xml)]">DefaultFolderBackEpisode.png</value>
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)]">DefaultFolderBackPoster.png</value>
@@ -36,9 +39,6 @@
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Artists)|Container.content(Actors)|Container.content(directors)]">defaultArtistBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Albums)|Container.content(songs)]">defaultAudioBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]">DefaultFolderBig.png</value>
-        <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
-        <value condition="!IsEmpty(ListItem.Property(Icon))">$INFO[ListItem.Property(Icon)]</value>
-        <value condition="!IsEmpty(ListItem.thumb)">$INFO[ListItem.thumb]</value>
         <value>$INFO[ListItem.Art(thumb)]</value>
     </variable>
     <variable name="Playlist" description="Side menu label">
@@ -246,5 +246,12 @@
     <variable name="Home.Menu.Type" description="FixedList or Wraplist for home menus">
         <value condition="Skin.HasSetting(Fixed_HomeMenu)">fixedlist</value>
         <value>wraplist</value>
+    </variable>
+    <variable name="Cd.Art" description="CdArt Management">
+        <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(albums)+![Control.isvisible(5050)|Control.isvisible(58)]">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Label]/cdart.png</value>
+        <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(albums)+[Control.isvisible(5050)|Control.isvisible(58)]">$INFO[ListItem.Path]/cdart.png</value>
+        <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(songs)">$INFO[ListItem.Path]/cdart.png</value>
+        <value condition="Window.IsActive(MyMusicSongs.xml)">$INFO[ListItem.Path]cdart.png</value>
+        <value>prova</value>
     </variable>
 </includes>

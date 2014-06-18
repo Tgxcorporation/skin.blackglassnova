@@ -378,8 +378,8 @@
                     <height>50</height>
                     <label>$LOCALIZE[298]</label>
                     <font>-</font>
-                    <texturefocus>topbar/topbar_channel_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_channel_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_bookmark2_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_bookmark2_nofocus.png</texturenofocus>
                     <onleft>250</onleft>
                     <onright>706</onright>
                     <onup>87</onup>
@@ -397,8 +397,8 @@
                     <onright>705</onright>
                     <onup>87</onup>
                     <ondown>87</ondown>
-                    <texturefocus>topbar/topbar_bookmark2_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_bookmark2_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_bookmark_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_bookmark_nofocus.png</texturenofocus>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(VideoPlaylist)</onclick>
                 </control>

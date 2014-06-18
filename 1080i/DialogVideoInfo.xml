@@ -105,8 +105,23 @@
                     <onleft>50</onleft>
                     <onright>9000</onright>
                 </control>
+                <control type="group">
+                    <!-- CDART -->
+                    <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+![Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)| Control.HasFocus(9014)]</visible>
+                    <include>VisibleFadeEffectDelay</include>
+                    <control type="image">
+                        <posx>1290</posx>
+                        <posy>392</posy>
+                        <width>429</width>
+                        <height>429</height>
+                        <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                        <aspectratio align="center" aligny="center">keep</aspectratio>
+                        <include>Animation_ViewsCDart</include>
+                    </control>
+                </control>
                 <control type="image" description="Thumb">
                     <visible>![Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)| Control.HasFocus(9014)]</visible>
+                    <include>VisibleFadeEffectDelay</include>
                     <posx>1142</posx>
                     <posy>365</posy>
                     <width>410</width>
@@ -117,6 +132,7 @@
                 </control>
                 <control type="image" description="Actor">
                     <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)| Control.HasFocus(9014)]</visible>
+                    <include>VisibleFadeEffectDelay</include>
                     <posx>1142</posx>
                     <posy>365</posy>
                     <width>410</width>
@@ -534,7 +550,7 @@
                     <label>$LOCALIZE[31005]</label>
                     <onclick>Dialog.Close(all,true)</onclick>
                     <onclick>Playlist.Clear</onclick>
-                    <onclick>RunScript(script.cinema.experience)</onclick>
+                    <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
                     <onleft>9009</onleft>
                 </control>
                 <control type="button" id="11" description="Trailer">

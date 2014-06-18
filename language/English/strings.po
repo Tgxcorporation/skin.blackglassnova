@@ -118,7 +118,15 @@ msgctxt "#31038"
 msgid "Reset ALL skin settings to default values"
 msgstr ""
 
-#empty strings from id 31039 to 31047
+msgctxt "#31039"
+msgid "Music library root path"
+msgstr ""
+
+msgctxt "#31040"
+msgid "Enable CdArt"
+msgstr ""
+
+#empty strings from id 31041 to 31047
 
 msgctxt "#31048"
 msgid "Visualization Presets"

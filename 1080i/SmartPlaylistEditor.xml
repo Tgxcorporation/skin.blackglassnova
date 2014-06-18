@@ -278,6 +278,7 @@
                     <width>433</width>
                     <radioposx>350</radioposx>
                     <font>SmallButtonFont</font>
+                    <textwidth>292</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[20395]</label>
                     <onleft>17</onleft>

@@ -129,6 +129,7 @@
             <control type="radiobutton" id="8" description="Radio Button">
                 <width>1231</width>
                 <radioposx>1128</radioposx>
+                <textwidth>1070</textwidth>
                 <include>LeftMenuButton</include>
             </control>
             <control type="spincontrolex" id="9" description="Spin control">

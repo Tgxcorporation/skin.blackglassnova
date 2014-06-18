@@ -320,6 +320,7 @@
                     <height>73</height>
                     <radioposx>345</radioposx>
                     <font>SmallButtonFont</font>
+                    <textwidth>287</textwidth>
                     <include>LeftMenuButton</include>
                     <onleft>450</onleft>
                     <onright>60</onright>

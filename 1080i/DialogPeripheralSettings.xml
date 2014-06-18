@@ -57,16 +57,21 @@
                 <ondown>9000</ondown>
             </control>
             <control type="button" id="7">
+                <width>1164</width>
                 <include>LeftMenuButton</include>
             </control>
             <control type="radiobutton" id="8">
-                <radioposx>1062</radioposx>
+                <width>1164</width>
+                <textwidth>1003</textwidth>
+                <radioposx>1061</radioposx>
                 <include>LeftMenuButton</include>
             </control>
             <control type="spincontrolex" id="9">
+                <width>1164</width>
                 <include>LeftMenuButton</include>
             </control>
             <control type="sliderex" id="10">
+                <width>1164</width>
                 <include>LeftMenuButton</include>
             </control>
             <control type="scrollbar" id="60">
