@@ -24,14 +24,14 @@
                 <ondown>53</ondown>
                 <preloaditems>4</preloaditems>
                 <pagecontrol>60</pagecontrol>
-                <itemlayout condition="Container.Content(TvShows) + Skin.HasSetting(53_UseBanners)" height="185" width="920">
+                <itemlayout condition="[Container.Content(TVShows)|Container.Content(movies)] + Skin.HasSetting(53_UseBanners)" height="185" width="920">
                     <control type="image">
                         <posx>60</posx>
                         <posy>0</posy>
                         <width>860</width>
                         <height>195</height>
                         <texture background="true">$VAR[Banner]</texture>
-                        <aspectratio>stretch</aspectratio>
+                        <aspectratio>scale</aspectratio>
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
@@ -42,14 +42,14 @@
                         <texture>$VAR[Overlay]</texture>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="Container.Content(TvShows) + Skin.HasSetting(53_UseBanners)" height="185" width="920">
+                <focusedlayout condition="[Container.Content(TVShows)|Container.Content(movies)] + Skin.HasSetting(53_UseBanners)" height="185" width="920">
                     <control type="image">
                         <posx>60</posx>
                         <posy>0</posy>
                         <width>860</width>
                         <height>195</height>
                         <texture background="true">$VAR[Banner]</texture>
-                        <aspectratio>stretch</aspectratio>
+                        <aspectratio>scale</aspectratio>
                         <include>ThumbBorderOverlay</include>
                     </control>
                     <control type="image">
@@ -60,7 +60,7 @@
                         <texture>$VAR[Overlay]</texture>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="246" width="188">
+                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners)] + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="246" width="188">
                     <control type="image">
                         <posx>0</posx>
                         <posy>-3</posy>
@@ -77,7 +77,7 @@
                         <texture>$VAR[Overlay]</texture>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="246" width="188">
+                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners)] + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="246" width="188">
                     <control type="image">
                         <posx>0</posx>
                         <posy>-3</posy>
@@ -94,7 +94,7 @@
                         <texture>$VAR[Overlay]</texture>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="Skin.HasSetting(53_BigGrid) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="372" width="268">
+                <itemlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners)] + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="372" width="268">
                     <control type="image">
                         <posx>0</posx>
                         <posy>-2</posy>
@@ -111,7 +111,7 @@
                         <texture>$VAR[Overlay]</texture>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="Skin.HasSetting(53_BigGrid) + [[Container.Content(TvShows) + !Skin.HasSetting(53_UseBanners)] | Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="372" width="268">
+                <focusedlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners)] + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="372" width="268">
                     <control type="image">
                         <posx>0</posx>
                         <posy>-2</posy>
@@ -164,7 +164,7 @@
                         <texture>$VAR[Overlay]</texture>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="246" width="268">
+                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners)] + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="246" width="268">
                     <control type="image">
                         <posx>15</posx>
                         <posy>0</posy>
@@ -174,7 +174,7 @@
                         <include>ThumbBorder</include>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="246" width="268">
+                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners)] + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="246" width="268">
                     <control type="image">
                         <posx>15</posx>
                         <posy>0</posy>
@@ -184,7 +184,7 @@
                         <include>ThumbBorderOverlay</include>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="370" width="375">
+                <itemlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners)] + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="370" width="375">
                     <control type="image">
                         <posx>15</posx>
                         <posy>5</posy>
@@ -194,7 +194,7 @@
                         <include>ThumbBorder</include>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="Skin.HasSetting(53_BigGrid) + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="370" width="375">
+                <focusedlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners)] + ![container.content(episodes) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="370" width="375">
                     <control type="image">
                         <posx>15</posx>
                         <posy>5</posy>

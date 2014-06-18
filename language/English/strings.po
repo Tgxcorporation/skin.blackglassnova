@@ -126,7 +126,11 @@ msgctxt "#31040"
 msgid "Enable CdArt"
 msgstr ""
 
-#empty strings from id 31041 to 31047
+msgctxt "#31041"
+msgid "Enable Extra Fanart"
+msgstr ""
+
+#empty strings from id 31042 to 31047
 
 msgctxt "#31048"
 msgid "Visualization Presets"

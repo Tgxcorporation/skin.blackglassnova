@@ -405,7 +405,19 @@
                             <label2>$INFO[Skin.String(MusicPath)]</label2>
                             <onclick>Skin.SetPath(MusicPath)</onclick>
                         </item>
-                        <item id="23" description="Reset Skin">
+                        <item id="23" description="Enable Extra Fanart">
+                            <visible>Skin.HasSetting(EnableExtraFanart)</visible>
+                            <label>$LOCALIZE[31041]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(EnableExtraFanart)</onclick>
+                        </item>
+                        <item id="23" description="Enable Extra Fanart">
+                            <visible>!Skin.HasSetting(EnableExtraFanart)</visible>
+                            <label>$LOCALIZE[31041]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(EnableExtraFanart)</onclick>
+                        </item>
+                        <item id="24" description="Reset Skin">
                             <label>$LOCALIZE[31038]</label>
                             <onclick>Skin.ResetSettings</onclick>
                             <onclick>XBMC.ReloadSkin()</onclick>

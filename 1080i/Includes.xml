@@ -598,7 +598,7 @@
             <include>LeftMenuButton</include>
         </control>
         <control type="radiobutton" id="9156" description="View 53 Banners">
-            <visible>Control.IsVisible(53) + Container.Content(TVShows)</visible>
+            <visible>Control.IsVisible(53) + [Container.Content(TVShows)|Container.Content(movies)]</visible>
             <font>LeftMenuSubButtonFont</font>
             <textwidth>450</textwidth>
             <include>LeftMenuButton</include>
@@ -758,6 +758,19 @@
             <fadetime>400</fadetime>
             <aspectratio aligny="top">scale</aspectratio>
             <imagepath background="true">$VAR[Fanart.Art]</imagepath>
+        </control>
+        <control type="multiimage" description="Extra FA fullscreen">
+            <visible>Skin.HasSetting(EnableExtraFanart)</visible>
+            <include>KenBurns</include>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>1920</width>
+            <height>1080</height>
+            <timeperimage>9000</timeperimage>
+            <randomize>true</randomize>
+            <fadetime>400</fadetime>
+            <aspectratio aligny="top">scale</aspectratio>
+            <imagepath background="true">$INFO[ListItem.Path]extrafanart/</imagepath>
         </control>
     </include>
     <include name="Home.Main.Menu.Items">
