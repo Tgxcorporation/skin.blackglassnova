@@ -15,7 +15,7 @@
             </control>
             <control type="progress" id="32" description="Progress bar">
                 <posx>550</posx>
-                <posy>65</posy>
+                <posy>-5</posy>
                 <width>780</width>
                 <height>42</height>
                 <midtexture border="31,0,31,0">buttons/Scrollbar_Horizontal_Focus.png</midtexture>
@@ -25,7 +25,7 @@
             </control>
             <control type="label" id="30" description="Header Label">
                 <posx>570</posx>
-                <posy>-3</posy>
+                <posy>22</posy>
                 <width>740</width>
                 <height>46</height>
                 <font>NotificationFont</font>
@@ -34,7 +34,7 @@
             </control>
             <control type="label" id="31" description="Current Directory Label">
                 <posx>570</posx>
-                <posy>29</posy>
+                <posy>54</posy>
                 <width>740</width>
                 <height>46</height>
                 <font>NotificationFont</font>

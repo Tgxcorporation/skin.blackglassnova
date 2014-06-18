@@ -82,6 +82,21 @@
                     <height>2</height>
                     <texture border="0,0,0,2">list/bg_facade_nofocus_top.png</texture>
                 </control>
+                <control type="edit" id="19">
+                    <visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
+                    <description>Filter</description>
+                    <textwidth>520</textwidth>
+                    <include>LeftMenuButton</include>
+                    <label>587</label>
+                </control>
+                <control type="radiobutton" id="20">
+                    <visible>Container.CanFilterAdvanced</visible>
+                    <description>Filter</description>
+                    <include>LeftMenuButton</include>
+                    <label>587</label>
+                    <onclick>right</onclick>
+                    <onclick>Filter</onclick>
+                </control>
                 <control type="button" id="699" description="Playing">
                     <enable>Player.HasMedia</enable>
                     <include>LeftMenuButton</include>
