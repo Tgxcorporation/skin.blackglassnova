@@ -20,6 +20,26 @@
             <label>-</label>
             <onfocus>noop</onfocus>
         </control>
+        <control type="group">
+            <!-- CLEAR ART -->
+            <visible>Skin.HasSetting(EnableClearArt)</visible>
+            <control type="image">
+                <posx>645r</posx>
+                <posy>283</posy>
+                <width>300</width>
+                <height>235</height>
+                <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                <texture>$INFO[Skin.String(cdartPath)]$INFO[Player.Artist,,/logo.png]</texture>
+            </control>
+            <control type="image">
+                <posx>645r</posx>
+                <posy>283</posy>
+                <width>300</width>
+                <height>235</height>
+                <texture>$INFO[Player.Art(clearlogo)]</texture>
+                <aspectratio align="right" aligny="bottom">keep</aspectratio>
+            </control>
+        </control>
         <control type="image">
             <posx>233</posx>
             <posy>483</posy>
