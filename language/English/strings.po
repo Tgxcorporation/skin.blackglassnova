@@ -119,7 +119,7 @@ msgid "Reset ALL skin settings to default values"
 msgstr ""
 
 msgctxt "#31039"
-msgid "Music library root path"
+msgid "Root Folder of Music library"
 msgstr ""
 
 msgctxt "#31040"
@@ -130,7 +130,15 @@ msgctxt "#31041"
 msgid "Enable Extra Fanart"
 msgstr ""
 
-#empty strings from id 31042 to 31047
+msgctxt "#31042"
+msgid "Enable Clear Art"
+msgstr ""
+
+msgctxt "#31043"
+msgid "Root Folder of cdART Manager library"
+msgstr ""
+
+#empty strings from id 31044 to 31047
 
 msgctxt "#31048"
 msgid "Visualization Presets"

@@ -103,33 +103,6 @@
             <height>330</height>
             <texture>common/HomeGradient.png</texture>
         </control>
-        <control type="image">
-            <include>Icon_Fade</include>
-            <visible>Control.hasfocus(7000)+[Control.IsVisible(57)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
-            <posx>-100</posx>
-            <posy>629</posy>
-            <width>2258</width>
-            <height>900</height>
-            <texture border="90">common/bg_tvguide.png</texture>
-        </control>
-        <control type="image">
-            <include>Icon_Fade</include>
-            <visible>Control.hasfocus(7000)+[Control.IsVisible(58)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
-            <posx>-100</posx>
-            <posy>629</posy>
-            <width>2258</width>
-            <height>900</height>
-            <texture border="90">common/bg_tvguide.png</texture>
-        </control>
-        <control type="image">
-            <include>Icon_Fade</include>
-            <visible>Control.hasfocus(7000)+[Control.IsVisible(59)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
-            <posx>-100</posx>
-            <posy>569</posy>
-            <width>2258</width>
-            <height>900</height>
-            <texture border="90">common/bg_tvguide.png</texture>
-        </control>
         <control type="group" description="Showcase 59 Movies TV Seasons">
             <visible>Control.IsVisible(59)</visible>
             <control type="fixedlist" id="59">
@@ -247,6 +220,35 @@
                     <onclick>Control.SetFocus(59)</onclick>
                     <onleft>Control.Move(59,-1)</onleft>
                     <onright>Control.Move(59,1)</onright>
+                </control>
+                <control type="group">
+                    <!-- CLEAR ART -->
+                    <visible>Skin.HasSetting(EnableClearArt)</visible>
+                    <control type="image">
+                        <posx>345r</posx>
+                        <posy>369</posy>
+                        <width>300</width>
+                        <height>235</height>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                        <texture>$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>345r</posx>
+                        <posy>369</posy>
+                        <width>300</width>
+                        <height>235</height>
+                        <texture>$INFO[ListItem.Art(clearart)]</texture>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    </control>
+                </control>
+                <control type="image">
+                    <include>Icon_Fade</include>
+                    <visible>Control.hasfocus(7000)+[Control.IsVisible(59)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
+                    <posx>-100</posx>
+                    <posy>569</posy>
+                    <width>2258</width>
+                    <height>900</height>
+                    <texture border="90">common/bg_tvguide.png</texture>
                 </control>
                 <control type="group" description="Movies and shows">
                     <posy>219</posy>
@@ -496,6 +498,35 @@
                     <onclick>Control.SetFocus(58)</onclick>
                     <onleft>Control.Move(58,-1)</onleft>
                     <onright>Control.Move(58,1)</onright>
+                </control>
+                <control type="group">
+                    <!-- CLEAR ART -->
+                    <visible>Skin.HasSetting(EnableClearArt)</visible>
+                    <control type="image">
+                        <posx>345r</posx>
+                        <posy>429</posy>
+                        <width>300</width>
+                        <height>235</height>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                        <texture>$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>345r</posx>
+                        <posy>429</posy>
+                        <width>300</width>
+                        <height>235</height>
+                        <texture>$INFO[ListItem.Art(clearart)]</texture>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    </control>
+                </control>
+                <control type="image">
+                    <include>Icon_Fade</include>
+                    <visible>Control.hasfocus(7000)+[Control.IsVisible(58)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
+                    <posx>-100</posx>
+                    <posy>629</posy>
+                    <width>2258</width>
+                    <height>900</height>
+                    <texture border="90">common/bg_tvguide.png</texture>
                 </control>
                 <control type="group" description="Movies and shows">
                     <posy>279</posy>
@@ -798,6 +829,35 @@
                     <onclick>Control.SetFocus(57)</onclick>
                     <onleft>Control.Move(57,-1)</onleft>
                     <onright>Control.Move(57,1)</onright>
+                </control>
+                <control type="group">
+                    <!-- CLEAR ART -->
+                    <visible>Skin.HasSetting(EnableClearArt)</visible>
+                    <control type="image">
+                        <posx>345r</posx>
+                        <posy>429</posy>
+                        <width>300</width>
+                        <height>235</height>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                        <texture>$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
+                    </control>
+                    <control type="image">
+                        <posx>345r</posx>
+                        <posy>429</posy>
+                        <width>300</width>
+                        <height>235</height>
+                        <texture>$INFO[ListItem.Art(clearart)]</texture>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    </control>
+                </control>
+                <control type="image">
+                    <include>Icon_Fade</include>
+                    <visible>Control.hasfocus(7000)+[Control.IsVisible(57)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
+                    <posx>-100</posx>
+                    <posy>629</posy>
+                    <width>2258</width>
+                    <height>900</height>
+                    <texture border="90">common/bg_tvguide.png</texture>
                 </control>
                 <control type="group" description="Movies and shows">
                     <posy>279</posy>

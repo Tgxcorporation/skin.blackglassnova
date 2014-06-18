@@ -3,6 +3,26 @@
     <include name="View_55_BigPanel">
         <control type="group" description="Big Panel">
             <visible>Control.IsVisible(55)</visible>
+            <control type="group">
+                <!-- CLEAR ART -->
+                <visible>Skin.HasSetting(EnableClearArt)</visible>
+                <control type="image">
+                    <posx>645r</posx>
+                    <posy>10</posy>
+                    <width>300</width>
+                    <height>118</height>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <texture>$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
+                </control>
+                <control type="image">
+                    <posx>645r</posx>
+                    <posy>10</posy>
+                    <width>300</width>
+                    <height>118</height>
+                    <texture>$INFO[ListItem.Art(clearart)]</texture>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                </control>
+            </control>
             <control type="image">
                 <visible>![Container.Content(TvShows) + Skin.HasSetting(55_UseBanners)]</visible>
                 <posx>657</posx>

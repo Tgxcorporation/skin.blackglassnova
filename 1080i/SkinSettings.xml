@@ -417,7 +417,24 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(EnableExtraFanart)</onclick>
                         </item>
-                        <item id="24" description="Reset Skin">
+                        <item id="24" description="Enable Clear Art">
+                            <visible>Skin.HasSetting(EnableClearArt)</visible>
+                            <label>$LOCALIZE[31042]</label>
+                            <label2>$LOCALIZE[107]</label2>
+                            <onclick>Skin.ToggleSetting(EnableClearArt)</onclick>
+                        </item>
+                        <item id="24" description="Enable Clear Art">
+                            <visible>!Skin.HasSetting(EnableClearArt)</visible>
+                            <label>$LOCALIZE[31042]</label>
+                            <label2>$LOCALIZE[106]</label2>
+                            <onclick>Skin.ToggleSetting(EnableClearArt)</onclick>
+                        </item>
+                        <item id="25" description="Set cdART Manager Path">
+                            <label>$LOCALIZE[31043]</label>
+                            <label2>$INFO[Skin.String(cdartPath)]</label2>
+                            <onclick>Skin.SetPath(cdartPath)</onclick>
+                        </item>
+                        <item id="25" description="Reset Skin">
                             <label>$LOCALIZE[31038]</label>
                             <onclick>Skin.ResetSettings</onclick>
                             <onclick>XBMC.ReloadSkin()</onclick>
