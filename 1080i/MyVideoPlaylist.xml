@@ -7,7 +7,6 @@
         <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
-            <include>OpenCloseSlideRight</include>
             <include>WindowTitle</include>
             <label>$LOCALIZE[3]</label>
         </control>

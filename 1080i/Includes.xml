@@ -114,10 +114,6 @@
         <animation effect="slide" time="0" end="-4000,0">WindowClose</animation>
         <posx>-4000</posx>
     </include>
-    <include name="MiniGuideOpenClose">
-        <animation effect="slide" tween="circle" easing="out" time="250" start="750,0" end="0,0">WindowOpen</animation>
-        <animation effect="slide" tween="circle" easing="out" time="250" end="750,0">WindowClose</animation>
-    </include>
     <include name="Icon_Fade">
         <fadetime>200</fadetime>
         <animation effect="fade" time="200">Visible</animation>
