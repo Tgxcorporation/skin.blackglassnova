@@ -5,7 +5,7 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
-            <control type="button" description="Quit">
+            <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1387</posx>
                 <posy>276</posy>
@@ -26,7 +26,7 @@
             <control type="group">
                 <posx>528</posx>
                 <posy>317</posy>
-                <control type="label" id="1" description="Heading">
+                <control type="label" id="1">
                     <posx>45</posx>
                     <posy>18</posy>
                     <width>774</width>
@@ -70,7 +70,7 @@
                     <aligny>bottom</aligny>
                     <align>center</align>
                     <orientation>horizontal</orientation>
-                    <control type="button" id="10" description="OK">
+                    <control type="button" id="10">
                         <label>$LOCALIZE[186]</label>
                     </control>
                 </control>

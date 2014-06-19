@@ -16,7 +16,7 @@
         </control>
         <control type="group">
             <posy>-208</posy>
-            <control type="button" description="Quit">
+            <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1637</posx>
                 <posy>240</posy>
@@ -66,7 +66,7 @@
                 <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
                 <colordiffuse>90ffffff</colordiffuse>
             </control>
-            <control type="grouplist" id="9001" description="Add remove edit">
+            <control type="grouplist" id="9001">
                 <posx>1209</posx>
                 <posy>595</posy>
                 <width>433</width>
@@ -108,7 +108,7 @@
                     <height>79</height>
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="grouplist" id="9002" description="Ok cancel">
+                <control type="grouplist" id="9002">
                     <posx>278</posx>
                     <posy>336</posy>
                     <width>1364</width>
@@ -132,7 +132,7 @@
             <control type="group" id="9000">
                 <posx>278</posx>
                 <posy>382</posy>
-                <control type="spincontrolex" id="22" description="Set Playlist type">
+                <control type="spincontrolex" id="22">
                     <posy>0</posy>
                     <width>931</width>
                     <label>$LOCALIZE[467]</label>
@@ -143,7 +143,7 @@
                     <onup>9002</onup>
                     <ondown>12</ondown>
                 </control>
-                <control type="edit" id="12" description="Name Button">
+                <control type="edit" id="12">
                     <posy>71</posy>
                     <width>931</width>
                     <include>LeftMenuButton</include>
@@ -167,7 +167,7 @@
                     <height>8</height>
                     <texture>list/bg_facade_separator.png</texture>
                 </control>
-                <control type="panel" id="10" description="Rules List">
+                <control type="panel" id="10">
                     <posy>213</posy>
                     <width>931</width>
                     <height>213</height>
@@ -183,7 +183,7 @@
                             <width>931</width>
                             <texture border="3">list/bg_facade_nofocus.png</texture>
                         </control>
-                        <control type="label" description="Main Label">
+                        <control type="label">
                             <posx>TextMargin</posx>
                             <height>69</height>
                             <width>841</width>
@@ -200,7 +200,7 @@
                             <width>931</width>
                             <include>FacadeFocus</include>
                         </control>
-                        <control type="label" description="Main Label">
+                        <control type="label">
                             <posx>TextMargin</posx>
                             <height>69</height>
                             <width>841</width>
@@ -217,7 +217,7 @@
                     <height>8</height>
                     <texture>list/bg_facade_separator.png</texture>
                 </control>
-                <control type="spincontrolex" id="16" description="Items must match">
+                <control type="spincontrolex" id="16">
                     <posy>432</posy>
                     <width>931</width>
                     <font>SmallButtonFont</font>
@@ -229,7 +229,7 @@
                     <onup>10</onup>
                     <ondown>17</ondown>
                 </control>
-                <control type="spincontrolex" id="17" description="Limit to">
+                <control type="spincontrolex" id="17">
                     <posy>503</posy>
                     <width>931</width>
                     <font>SmallButtonFont</font>
@@ -241,7 +241,7 @@
                     <onup>16</onup>
                     <ondown>18</ondown>
                 </control>
-                <control type="spincontrolex" id="18" description="Order by">
+                <control type="spincontrolex" id="18">
                     <posy>574</posy>
                     <width>931</width>
                     <font>SmallButtonFont</font>
@@ -253,7 +253,7 @@
                     <onup>17</onup>
                     <ondown>23</ondown>
                 </control>
-                <control type="spincontrolex" id="23" description="Group by">
+                <control type="spincontrolex" id="23">
                     <posy>645</posy>
                     <width>931</width>
                     <font>SmallButtonFont</font>
@@ -272,7 +272,7 @@
                     <height>79</height>
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="radiobutton" id="24" description="Mixed">
+                <control type="radiobutton" id="24">
                     <posx>931</posx>
                     <posy>503</posy>
                     <width>433</width>
@@ -286,7 +286,7 @@
                     <onup>23</onup>
                     <ondown>19</ondown>
                 </control>
-                <control type="togglebutton" id="19" description="Ascending descending">
+                <control type="togglebutton" id="19">
                     <posx>931</posx>
                     <posy>574</posy>
                     <width>433</width>

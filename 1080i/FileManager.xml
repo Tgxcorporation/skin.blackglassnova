@@ -15,7 +15,7 @@
             <include>WindowTitleSub</include>
             <label>$LOCALIZE[7]</label>
         </control>
-        <control type="group" description="Left panel">
+        <control type="group">
             <posy>-10</posy>
             <control type="image">
                 <posx>3</posx>
@@ -31,7 +31,7 @@
                 <height>79</height>
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="label" id="101" description="Header Label">
+            <control type="label" id="101">
                 <posx>93</posx>
                 <posy>138</posy>
                 <height>100</height>
@@ -40,7 +40,7 @@
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
             </control>
-            <control type="panel" id="20" description="Left File List">
+            <control type="panel" id="20">
                 <posx>48</posx>
                 <posy>238</posy>
                 <width>864</width>
@@ -58,7 +58,7 @@
                         <width>864</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <height>71</height>
@@ -67,7 +67,7 @@
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <height>42</height>
@@ -76,7 +76,7 @@
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Label2">
+                    <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <posy>39</posy>
@@ -95,7 +95,7 @@
                         <width>864</width>
                         <include>FacadeFocus</include>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <height>71</height>
@@ -104,7 +104,7 @@
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <height>42</height>
@@ -113,7 +113,7 @@
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Label2">
+                    <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <posy>39</posy>
@@ -141,7 +141,7 @@
                 <height>73</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="label" id="12" description="Footer Label">
+            <control type="label" id="12">
                 <posx>867</posx>
                 <posy>968</posy>
                 <width>594</width>
@@ -151,7 +151,7 @@
                 <textcolor>FacadeNumItemsColor</textcolor>
             </control>
         </control>
-        <control type="group" description="Right panel">
+        <control type="group">
             <posx>960</posx>
             <posy>-10</posy>
             <control type="image">
@@ -168,7 +168,7 @@
                 <height>79</height>
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="label" id="102" description="Header Label">
+            <control type="label" id="102">
                 <posx>93</posx>
                 <posy>138</posy>
                 <height>100</height>
@@ -177,7 +177,7 @@
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
             </control>
-            <control type="panel" id="21" description="Left File List">
+            <control type="panel" id="21">
                 <posx>48</posx>
                 <posy>238</posy>
                 <width>864</width>
@@ -195,7 +195,7 @@
                         <width>864</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <height>71</height>
@@ -204,7 +204,7 @@
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <height>42</height>
@@ -213,7 +213,7 @@
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Label2">
+                    <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <posy>39</posy>
@@ -232,7 +232,7 @@
                         <width>864</width>
                         <include>FacadeFocus</include>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <height>71</height>
@@ -241,7 +241,7 @@
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <height>42</height>
@@ -250,7 +250,7 @@
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Label2">
+                    <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
                         <posx>TextMargin</posx>
                         <posy>39</posy>
@@ -278,7 +278,7 @@
                 <height>73</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="label" id="13" description="Footer Label">
+            <control type="label" id="13">
                 <posx>867</posx>
                 <posy>968</posy>
                 <width>594</width>

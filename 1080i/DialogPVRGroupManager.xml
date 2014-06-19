@@ -7,7 +7,7 @@
             <include>DialogOpenClose</include>
             <control type="group">
                 <posy>-10</posy>
-                <control type="button" description="Quit">
+                <control type="button">
                     <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                     <posx>1867</posx>
                     <posy>80</posy>
@@ -42,7 +42,7 @@
                     <textcolor>MainColor</textcolor>
                     <label>$LOCALIZE[19143]</label>
                 </control>
-                <control type="group" description="1st group">
+                <control type="group">
                     <posx>48</posx>
                     <posy>238</posy>
                     <control type="label">
@@ -53,7 +53,7 @@
                         <align>center</align>
                         <font>InfoTitleSubFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <multiline>false</multiline>
+                        <wrapmultiline>false</wrapmultiline>
                         <label>$LOCALIZE[19146]</label>
                     </control>
                     <control type="list" id="13">
@@ -75,7 +75,7 @@
                                 <width>464</width>
                                 <texture border="3">list/bg_facade_nofocus.png</texture>
                             </control>
-                            <control type="label" description="Main Label">
+                            <control type="label">
                                 <posx>25</posx>
                                 <height>69</height>
                                 <width>413</width>
@@ -92,7 +92,7 @@
                                 <width>464</width>
                                 <include>FacadeFocus</include>
                             </control>
-                            <control type="label" description="Main Label">
+                            <control type="label">
                                 <posx>25</posx>
                                 <height>69</height>
                                 <width>413</width>
@@ -113,7 +113,7 @@
                         <onup>73</onup>
                     </control>
                 </control>
-                <control type="group" description="2nd group">
+                <control type="group">
                     <posx>513</posx>
                     <posy>238</posy>
                     <control type="label" id="21">
@@ -159,7 +159,7 @@
                                 <width>463</width>
                                 <texture border="3">list/bg_facade_nofocus.png</texture>
                             </control>
-                            <control type="label" description="Main Label">
+                            <control type="label">
                                 <posx>25</posx>
                                 <height>69</height>
                                 <width>413</width>
@@ -176,7 +176,7 @@
                                 <width>463</width>
                                 <include>FacadeFocus</include>
                             </control>
-                            <control type="label" description="Main Label">
+                            <control type="label">
                                 <posx>25</posx>
                                 <height>69</height>
                                 <width>413</width>
@@ -197,7 +197,7 @@
                         <onup>71</onup>
                     </control>
                 </control>
-                <control type="group" description="3rd group">
+                <control type="group">
                     <posx>976</posx>
                     <posy>238</posy>
                     <control type="label" id="22">
@@ -243,7 +243,7 @@
                                 <width>463</width>
                                 <texture border="3">list/bg_facade_nofocus.png</texture>
                             </control>
-                            <control type="label" description="Main Label">
+                            <control type="label">
                                 <posx>25</posx>
                                 <height>69</height>
                                 <width>413</width>
@@ -260,7 +260,7 @@
                                 <width>463</width>
                                 <include>FacadeFocus</include>
                             </control>
-                            <control type="label" description="Main Label">
+                            <control type="label">
                                 <posx>25</posx>
                                 <height>69</height>
                                 <width>413</width>
@@ -281,7 +281,7 @@
                         <onup>72</onup>
                     </control>
                 </control>
-                <control type="group" description="Right side options group">
+                <control type="group">
                     <posx>1439</posx>
                     <posy>238</posy>
                     <control type="image">
@@ -299,7 +299,7 @@
                         <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
                         <colordiffuse>90ffffff</colordiffuse>
                     </control>
-                    <control type="grouplist" id="9000" description="Right panel">
+                    <control type="grouplist" id="9000">
                         <posx>0</posx>
                         <width>433</width>
                         <height>729</height>
@@ -324,7 +324,6 @@
                             <description>Delete Group</description>
                             <width>433</width>
                             <include>LeftMenuButton</include>
-                            <width>345</width>
                             <label>$LOCALIZE[31505]</label>
                         </control>
                         <control type="button" id="29">

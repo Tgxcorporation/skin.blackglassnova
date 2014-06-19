@@ -4,7 +4,7 @@
     <include>DialogOpenClose</include>
     <controls>
         <include>DimBG</include>
-        <control type="button" description="Quit">
+        <control type="button">
             <visible>Skin.HasSetting(WindowClosingIcon)</visible>
             <posx>1387</posx>
             <posy>276</posy>
@@ -25,7 +25,7 @@
         <control type="group">
             <posx>528</posx>
             <posy>317</posy>
-            <control type="label" description="Heading">
+            <control type="label">
                 <posx>45</posx>
                 <posy>18</posy>
                 <width>774</width>
@@ -42,7 +42,7 @@
                 <height>79</height>
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="label" description="program title" id="20">
+            <control type="label" id="20">
                 <posx>45</posx>
                 <posy>117</posy>
                 <height>71</height>
@@ -53,7 +53,7 @@
             </control>
             <control type="group" id="9001">
                 <posy>0</posy>
-                <control type="radiobutton" id="10" description="Episode rec">
+                <control type="radiobutton" id="10">
                     <posx>45</posx>
                     <posy>187</posy>
                     <height>73</height>
@@ -69,7 +69,7 @@
                     <onup>1</onup>
                     <ondown>11</ondown>
                 </control>
-                <control type="radiobutton" id="11" description="Series rec">
+                <control type="radiobutton" id="11">
                     <posx>45</posx>
                     <posy>256</posy>
                     <height>73</height>
@@ -102,14 +102,14 @@
                 <aligny>bottom</aligny>
                 <align>center</align>
                 <orientation>horizontal</orientation>
-                <control type="button" id="1" description="OK">
+                <control type="button" id="1">
                     <label>$LOCALIZE[186]</label>
                     <onup>11</onup>
                     <onleft>2</onleft>
                     <onright>2</onright>
                     <ondown>10</ondown>
                 </control>
-                <control type="button" id="2" description="Cancel">
+                <control type="button" id="2">
                     <label>$LOCALIZE[222]</label>
                     <onup>11</onup>
                     <onleft>1</onleft>

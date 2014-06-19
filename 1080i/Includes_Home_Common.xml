@@ -32,7 +32,7 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>342</posy>
@@ -41,7 +41,7 @@
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>315</posy>
@@ -72,7 +72,7 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>342</posy>
@@ -80,7 +80,7 @@
                 <height>235</height>
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>315</posy>
@@ -130,7 +130,7 @@
                 <height>33</height>
                 <texture>OverlayInProgress.png</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>342</posy>
@@ -139,7 +139,7 @@
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>315</posy>
@@ -178,7 +178,7 @@
                 <height>33</height>
                 <texture>OverlayInProgress.png</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>342</posy>
@@ -186,7 +186,7 @@
                 <height>235</height>
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>315</posy>
@@ -228,7 +228,7 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>342</posy>
@@ -237,7 +237,7 @@
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>315</posy>
@@ -268,7 +268,7 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>342</posy>
@@ -276,7 +276,7 @@
                 <height>235</height>
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>315</posy>
@@ -326,7 +326,7 @@
                 <height>33</height>
                 <texture>OverlayInProgress.png</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>342</posy>
@@ -335,7 +335,7 @@
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>315</posy>
@@ -374,7 +374,7 @@
                 <height>33</height>
                 <texture>OverlayInProgress.png</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>342</posy>
@@ -382,7 +382,7 @@
                 <height>235</height>
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>315</posy>
@@ -436,7 +436,7 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>247</posy>
@@ -445,7 +445,7 @@
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>220</posy>
@@ -488,7 +488,7 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>247</posy>
@@ -496,7 +496,7 @@
                 <height>159</height>
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>220</posy>
@@ -551,7 +551,7 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>247</posy>
@@ -560,7 +560,7 @@
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>220</posy>
@@ -604,7 +604,7 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label2]</label>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>247</posy>
@@ -612,7 +612,7 @@
                 <height>159</height>
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>210</posy>
@@ -655,7 +655,7 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>247</posy>
@@ -664,7 +664,7 @@
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>220</posy>
@@ -696,7 +696,7 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>21</posx>
                 <posy>247</posy>
@@ -704,7 +704,7 @@
                 <height>159</height>
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Thumb]</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
                 <posx>-6</posx>
                 <posy>220</posy>

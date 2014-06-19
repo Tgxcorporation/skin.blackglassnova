@@ -386,7 +386,7 @@
                     <ondown>87</ondown>
                     <onclick>ActivateWindow(VideoBookmarks)</onclick>
                 </control>
-                <control type="button" id="706" description="Playlist">
+                <control type="button" id="706">
                     <posx>350</posx>
                     <posy>0</posy>
                     <width>50</width>
@@ -464,7 +464,6 @@
                     <width>50</width>
                     <height>50</height>
                     <label>$LOCALIZE[23050]</label>
-                    <altlabel>$LOCALIZE[23050]</altlabel>
                     <font>-</font>
                     <texturefocus>topbar/topbar_teletext_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_teletext_nofocus.png</texturenofocus>
@@ -544,7 +543,7 @@
                 <include>VisibleFadeEffect</include>
                 <posx>676</posx>
                 <posy>115</posy>
-                <control type="image" description="Menu BG">
+                <control type="image">
                     <posx>0</posx>
                     <posy>-20</posy>
                     <width>567</width>
@@ -629,7 +628,7 @@
             <control type="group">
                 <animation effect="slide" start="0,0" end="0,-250" time="0" condition="window.IsActive(DialogFullScreenInfo.xml)">conditional</animation>
                 <!-- <visible>window.isactive(videoosd)</visible> -->
-                <control type="image" description="pause logo">
+                <control type="image">
                     <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek] + [Player.Paused] + !Skin.HasSetting(DisablePauseIconOSD)</visible>
                     <posx>810</posx>
                     <posy>390</posy>
@@ -637,7 +636,7 @@
                     <height>300</height>
                     <texture>OSD/pause.png</texture>
                 </control>
-                <control type="image" description="rewind logo">
+                <control type="image">
                     <visible>player.rewinding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
                     <posx>810</posx>
                     <posy>390</posy>
@@ -645,7 +644,7 @@
                     <height>300</height>
                     <texture>OSD/rewind.png</texture>
                 </control>
-                <control type="image" description="fastforward logo">
+                <control type="image">
                     <visible>player.forwarding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
                     <posx>810</posx>
                     <posy>390</posy>

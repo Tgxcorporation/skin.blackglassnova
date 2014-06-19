@@ -6,7 +6,7 @@
             <include>Fanart_Art</include>
             <include>OpenClose</include>
             <include>Player_Show</include>
-            <control type="progress" id="23" description="Progress Bar">
+            <control type="progress" id="23">
                 <visible>true</visible>
                 <posx>-2000</posx>
                 <posy>-1500</posy>
@@ -14,11 +14,11 @@
                 <info>Player.Progress</info>
                 <visible>true</visible>
             </control>
-            <control type="group" description="INFO grouped for visibility sake">
+            <control type="group">
                 <visible>[Player.ShowInfo | Window.IsActive(MusicOSD) | !Visualisation.Enabled] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
                 <animation effect="fade" time="500">Visible</animation>
                 <animation effect="fade" time="200">Hidden</animation>
-                <control type="group" description="Info panel LEFT">
+                <control type="group">
                     <posy>55</posy>
                     <animation type="Conditional" condition="!IntegerGreaterThan(Control.GetLabel(23),0)" reversible="false">
                         <effect type="fade" start="0" end="100" time="500"/>
@@ -87,9 +87,9 @@
                         <include>ThumbBorder</include>
                         <aspectratio aligny="top" align="center">keep</aspectratio>
                     </control>
-                    <control type="group" description="Left Labels">
+                    <control type="group">
                         <posx>656</posx>
-                        <control type="label" description="Heading">
+                        <control type="label">
                             <posx>37</posx>
                             <posy>562</posy>
                             <height>36</height>
@@ -105,7 +105,7 @@
                             <height>90</height>
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
-                        <control type="label" description="Artist">
+                        <control type="label">
                             <posx>37</posx>
                             <posy>621</posy>
                             <height>66</height>
@@ -121,7 +121,7 @@
                             <height>90</height>
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
-                        <control type="label" description="Album">
+                        <control type="label">
                             <posx>37</posx>
                             <posy>689</posy>
                             <height>66</height>
@@ -137,7 +137,7 @@
                             <height>90</height>
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
-                        <control type="label" description="Time">
+                        <control type="label">
                             <posx>37</posx>
                             <posy>757</posy>
                             <height>66</height>
@@ -146,7 +146,7 @@
                             <textcolor>AlternateColor</textcolor>
                             <label>$INFO[MusicPlayer.TimeSpeed] / $INFO[MusicPlayer.Duration]</label>
                         </control>
-                        <control type="label" description="Track">
+                        <control type="label">
                             <visible>!Skin.HasSetting(plexbmc)</visible>
                             <posx>950</posx>
                             <posy>757</posy>
@@ -164,7 +164,7 @@
                             <height>90</height>
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
-                        <!-- <control type="label" description="Track">
+                        <!-- <control type="label">
                             <visible>!Skin.HasSetting(plexbmc)</visible>
                             <posx>37</posx>
                             <posy>825</posy>
@@ -174,7 +174,7 @@
                             <textcolor>MainColor</textcolor>
                             <label>$INFO[MusicPlayer.offset(-1).Title,[COLOR=AlternateColor]$LOCALIZE[210]: [/COLOR]]</label>
                         </control> -->
-                        <control type="label" description="Time">
+                        <control type="label">
                             <visible>!Skin.HasSetting(plexbmc)</visible>
                             <posx>950</posx>
                             <posy>835</posy>
@@ -185,7 +185,7 @@
                             <textcolor>MainColor</textcolor>
                             <label>$INFO[MusicPlayer.offset(1).Title,[COLOR=AlternateColor]$LOCALIZE[209]: [/COLOR]]</label>
                         </control>
-                        <control type="grouplist" description="Flags">
+                        <control type="grouplist">
                             <posx>37</posx>
                             <posy>835</posy>
                             <width>1006</width>
@@ -201,7 +201,7 @@
             </control>
             <control type="group">
                 <animation effect="slide" start="0,0" end="0,-250" time="0" condition="[Player.ShowInfo | Window.IsActive(MusicOSD) | !Visualisation.Enabled] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]">conditional</animation>
-                <control type="image" description="pause logo">
+                <control type="image">
                     <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek] + [Player.Paused] + !Skin.HasSetting(DisablePauseIconOSD)</visible>
                     <posx>810</posx>
                     <posy>390</posy>
@@ -209,7 +209,7 @@
                     <height>300</height>
                     <texture>OSD/pause.png</texture>
                 </control>
-                <control type="image" description="rewind logo">
+                <control type="image">
                     <visible>player.rewinding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
                     <posx>810</posx>
                     <posy>390</posy>
@@ -217,7 +217,7 @@
                     <height>300</height>
                     <texture>OSD/rewind.png</texture>
                 </control>
-                <control type="image" description="fastforward logo">
+                <control type="image">
                     <visible>player.forwarding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
                     <posx>810</posx>
                     <posy>390</posy>

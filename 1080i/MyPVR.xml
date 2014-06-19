@@ -30,7 +30,7 @@
             <include>LiveTVSearchView</include>
             <!-- view id = 17 -->
         </control>
-        <control type="group" description="Side menu">
+        <control type="group">
             <include>LeftMenu</include>
             <control type="label">
                 <include>LeftMenuTitleLabel</include>
@@ -43,27 +43,27 @@
                 <onup>9000</onup>
                 <ondown>9000</ondown>
                 <onback>50</onback>
-                <control type="togglebutton" id="32" description="TV Channels">
+                <control type="togglebutton" id="32">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19023]</label>
                 </control>
-                <control type="button" id="33" description="TV Radio">
+                <control type="button" id="33">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19024]</label>
                 </control>
-                <control type="button" id="34" description="Recordings">
+                <control type="button" id="34">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19163]</label>
                 </control>
-                <control type="button" id="35" description="Timers">
+                <control type="button" id="35">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19040]</label>
                 </control>
-                <control type="button" id="36" description="Search">
+                <control type="button" id="36">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[137]</label>
                 </control>
-                <control type="button" id="31" description="TV Guide">
+                <control type="button" id="31">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[19222]: $LOCALIZE[19030]</label>
                 </control>

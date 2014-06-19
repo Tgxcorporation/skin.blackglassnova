@@ -7,7 +7,7 @@
     <include>DialogOpenClose</include>
     <controls>
         <include>DimBG</include>
-        <control type="button" description="Quit">
+        <control type="button">
             <visible>Skin.HasSetting(WindowClosingIcon)</visible>
             <posx>1387</posx>
             <posy>98</posy>
@@ -28,7 +28,7 @@
         <control type="group">
             <posx>528</posx>
             <posy>139</posy>
-            <control type="label" id="2" description="Header">
+            <control type="label" id="2">
                 <posx>45</posx>
                 <posy>18</posy>
                 <width>774</width>
@@ -44,7 +44,7 @@
                 <height>79</height>
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="grouplist" id="5" description="Controls">
+            <control type="grouplist" id="5">
                 <posx>0</posx>
                 <posy>117</posy>
                 <width>864</width>
@@ -100,11 +100,11 @@
                 <aligny>bottom</aligny>
                 <align>center</align>
                 <orientation>horizontal</orientation>
-                <control type="button" id="28" description="OK">
+                <control type="button" id="28">
                     <onup>5</onup>
                     <label>$LOCALIZE[186]</label>
                 </control>
-                <control type="button" id="29" description="Cancel">
+                <control type="button" id="29">
                     <onup>5</onup>
                     <label>$LOCALIZE[222]</label>
                 </control>

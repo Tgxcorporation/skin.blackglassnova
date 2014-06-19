@@ -4,7 +4,7 @@
     <include>DialogOpenClose</include>
     <controls>
         <include>DimBG</include>
-        <control type="button" description="Quit">
+        <control type="button">
             <visible>Skin.HasSetting(WindowClosingIcon)</visible>
             <posx>1537</posx>
             <posy>169</posy>
@@ -25,7 +25,7 @@
         <control type="group">
             <posx>378</posx>
             <posy>210</posy>
-            <control type="label" description="Heading">
+            <control type="label">
                 <posx>45</posx>
                 <posy>18</posy>
                 <width>1074</width>
@@ -103,15 +103,15 @@
                     <orientation>horizontal</orientation>
                     <onup>5</onup>
                     <ondown>5</ondown>
-                    <control type="button" id="50" description="Defaults">
+                    <control type="button" id="50">
                         <width>360</width>
                         <label>$LOCALIZE[409]</label>
                     </control>
-                    <control type="button" id="28" description="OK">
+                    <control type="button" id="28">
                         <width>360</width>
                         <label>$LOCALIZE[186]</label>
                     </control>
-                    <control type="button" id="29" description="Cancel">
+                    <control type="button" id="29">
                         <width>360</width>
                         <label>$LOCALIZE[222]</label>
                     </control>

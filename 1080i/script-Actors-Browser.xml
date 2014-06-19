@@ -10,9 +10,9 @@
     </coordinates>
     <controls>
         <include>DimBG</include>
-        <control type="group" description="Content">
+        <control type="group">
             <posy>-182</posy>
-            <control type="button" description="Quit">
+            <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1737</posx>
                 <posy>240</posy>
@@ -30,7 +30,7 @@
                 <height>948</height>
                 <texture border="90">common/bg_dialog.png</texture>
             </control>
-            <control type="label" id="411" description="Header">
+            <control type="label" id="411">
                 <posx>223</posx>
                 <posy>323</posy>
                 <height>36</height>

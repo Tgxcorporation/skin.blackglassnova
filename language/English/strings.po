@@ -183,8 +183,7 @@ msgctxt "#31095"
 msgid "Card List"
 msgstr ""
 
-
-
+#empty strings from id 31096 to 31109
 
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
@@ -323,13 +322,27 @@ msgctxt "#31507"
 msgid "Movies homescreen button opens:"
 msgstr ""
 
-#empty strings from id 31508 to 31509
+msgctxt "#31508"
+msgid "Last Updated"
+msgstr ""
+
+msgctxt "#31509"
+msgid "Extras"
+msgstr ""
 
 msgctxt "#31510"
 msgid "Timer Set"
 msgstr ""
 
-#empty strings from id 31511 to 31900
+msgctxt "#31511"
+msgid "Artwork Downloader Solo"
+msgstr ""
+
+msgctxt "#31512"
+msgid "Artwork Downloader Gui"
+msgstr ""
+
+#empty strings from id 31513 to 31900
 #Weather plugin
 
 msgctxt "#31901"

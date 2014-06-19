@@ -23,7 +23,7 @@
         <control type="group">
             <visible>!Window.IsVisible(FileBrowser)</visible>
             <posy>-4</posy>
-            <control type="button" description="Quit">
+            <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1737</posx>
                 <posy>21</posy>
@@ -34,14 +34,14 @@
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
-            <control type="image" description="Menu BG">
+            <control type="image">
                 <posx>133</posx>
                 <posy>25</posy>
                 <width>1654</width>
                 <height>1036</height>
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <posx>223</posx>
                 <posy>104</posy>
                 <width>1474</width>
@@ -279,7 +279,7 @@
                                 <visible>!IsEmpty(ListItem.LastPlayed) + !StringCompare(ListItem.LastPlayed,01/01/1601)</visible>
                             </item>
                             <item>
-                                <label>Last Updated:</label>
+                                <label>$LOCALIZE[31508]:</label>
                                 <label2>$INFO[ListItem.Property(lastupdated)]</label2>
                                 <onclick>-</onclick>
                                 <visible>!IsEmpty(ListItem.Property(lastupdated))</visible>
@@ -345,7 +345,7 @@
                                 <width>1131</width>
                                 <texture border="3">list/bg_facade_nofocus.png</texture>
                             </control>
-                            <control type="label" description="Label">
+                            <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -354,7 +354,7 @@
                                 <textcolor>ListNoFocusColor</textcolor>
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ]</label>
                             </control>
-                            <control type="label" description="Label2">
+                            <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -372,7 +372,7 @@
                                 <width>1131</width>
                                 <include>FacadeFocus</include>
                             </control>
-                            <control type="label" description="Label">
+                            <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -381,7 +381,7 @@
                                 <textcolor>ListFocusColor</textcolor>
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, $LOCALIZE[20347] ]</label>
                             </control>
-                            <control type="label" description="Label2">
+                            <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>39</posy>
                                 <height>28</height>

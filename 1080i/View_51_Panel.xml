@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="View_51_Panel">
-        <control type="group" description="Grid view">
+        <control type="group">
             <visible>Control.IsVisible(51)</visible>
             <control type="group">
                 <!-- CLEAR ART -->
@@ -37,8 +37,8 @@
                 <height>73</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="group" description="Container and frame">
-                <control type="panel" id="51" description="Grid">
+            <control type="group">
+                <control type="panel" id="51">
                     <viewtype label="31090">Panel</viewtype>
                     <posx>693</posx>
                     <posy>406</posy>

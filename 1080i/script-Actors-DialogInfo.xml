@@ -23,9 +23,9 @@
         </control>
         <control type="group">
             <!-- default group -->
-            <visible>![Window.IsVisible(FileBrowser) | Window.IsVisible(script-Actors-Browser.xml) | [Window.IsVisible(DialogSelect.xml)]</visible>
+            <visible>![Window.IsVisible(FileBrowser) | Window.IsVisible(script-Actors-Browser.xml) | Window.IsVisible(DialogSelect.xml)]</visible>
             <posy>-4</posy>
-            <control type="button" description="Quit">
+            <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1737</posx>
                 <posy>21</posy>
@@ -36,14 +36,14 @@
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
-            <control type="image" description="Menu BG">
+            <control type="image">
                 <posx>133</posx>
                 <posy>25</posy>
                 <width>1654</width>
                 <height>1036</height>
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <posx>223</posx>
                 <posy>104</posy>
                 <width>1474</width>
@@ -247,7 +247,7 @@
                                 <width>1131</width>
                                 <texture border="3">list/bg_facade_nofocus.png</texture>
                             </control>
-                            <control type="label" description="Label">
+                            <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -256,7 +256,7 @@
                                 <textcolor>ListNoFocusColor</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
-                            <control type="label" description="Label2">
+                            <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -290,7 +290,7 @@
                                 <width>1131</width>
                                 <include>FacadeFocus</include>
                             </control>
-                            <control type="label" description="Label">
+                            <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -299,7 +299,7 @@
                                 <textcolor>ListFocusColor</textcolor>
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
-                            <control type="label" description="Label2">
+                            <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -335,7 +335,7 @@
                         <onright>9000</onright>
                     </control>
                 </control>
-                <control type="group" id="2500" description="THUMBS">
+                <control type="group" id="2500">
                     <visible>[Control.HasFocus(10) + IntegerGreaterThan(Container(250).NumItems,0)] | ControlGroup(2500).HasFocus</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>

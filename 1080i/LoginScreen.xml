@@ -15,7 +15,7 @@
             <include>WindowTitleSub</include>
             <label>$LOCALIZE[13200]</label>
         </control>
-        <control type="button" id="11" description="Quit xbmc">
+        <control type="button" id="11">
             <posx>1387</posx>
             <posy>266</posy>
             <height>50</height>
@@ -37,7 +37,7 @@
         <control type="group">
             <posx>528</posx>
             <posy>307</posy>
-            <control type="label" description="Heading">
+            <control type="label">
                 <posx>45</posx>
                 <posy>5</posy>
                 <width>774</width>
@@ -105,7 +105,7 @@
                         <width>600</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <posx>25</posx>
                         <height>71</height>
                         <width>530</width>
@@ -122,7 +122,7 @@
                         <width>600</width>
                         <include>FacadeFocus</include>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <posx>25</posx>
                         <height>71</height>
                         <width>530</width>

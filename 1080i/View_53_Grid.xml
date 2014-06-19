@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="View_53_Grid">
-        <control type="group" description="Grid view">
+        <control type="group">
             <visible>Control.IsVisible(53)</visible>
             <include>FooterInfo</include>
             <control type="group">
@@ -31,7 +31,7 @@
                 <height>860</height>
                 <texture border="90">common/bg_tvguide.png</texture>
             </control>
-            <control type="panel" id="53" description="Grid">
+            <control type="panel" id="53">
                 <viewtype label="536">Grid</viewtype>
                 <posx>15</posx>
                 <posy>150</posy>

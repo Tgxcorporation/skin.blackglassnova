@@ -9,7 +9,7 @@
             <control type="group">
                 <posx>0</posx>
                 <posy>-175</posy>
-                <control type="button" description="Quit">
+                <control type="button">
                     <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                     <posx>1487</posx>
                     <posy>276</posy>
@@ -30,7 +30,7 @@
                 <control type="group">
                     <posx>428</posx>
                     <posy>317</posy>
-                    <control type="label" id="311" description="Heading">
+                    <control type="label" id="311">
                         <posx>45</posx>
                         <posy>18</posy>
                         <width>974</width>
@@ -57,7 +57,7 @@
                 <control type="group">
                     <posx>0</posx>
                     <posy>150</posy>
-                    <control type="label" id="310" description="Edit Text">
+                    <control type="label" id="310">
                         <posx>490</posx>
                         <posy>316</posy>
                         <width>945</width>
@@ -69,7 +69,7 @@
                     <control type="group">
                         <posx>460</posx>
                         <posy>400</posy>
-                        <control type="group" description="1st row">
+                        <control type="group">
                             <control type="button" id="65">
                                 <description>A button</description>
                                 <posx>0</posx>
@@ -131,7 +131,7 @@
                                 <include>KeyboardButtons</include>
                             </control>
                         </control>
-                        <control type="group" description="2nd row">
+                        <control type="group">
                             <posy>72</posy>
                             <control type="button" id="71">
                                 <description>G button</description>
@@ -194,7 +194,7 @@
                                 <include>KeyboardButtons</include>
                             </control>
                         </control>
-                        <control type="group" description="3rd row">
+                        <control type="group">
                             <posy>144</posy>
                             <control type="button" id="77">
                                 <description>M button</description>
@@ -257,7 +257,7 @@
                                 <include>KeyboardButtons</include>
                             </control>
                         </control>
-                        <control type="group" description="4th row">
+                        <control type="group">
                             <posy>216</posy>
                             <control type="button" id="83">
                                 <description>S button</description>
@@ -320,7 +320,7 @@
                                 <include>KeyboardButtons</include>
                             </control>
                         </control>
-                        <control type="group" description="5th row">
+                        <control type="group">
                             <posy>288</posy>
                             <control type="button" id="89">
                                 <description>Y button</description>
@@ -383,7 +383,7 @@
                                 <include>KeyboardButtons</include>
                             </control>
                         </control>
-                        <control type="group" description="6th row">
+                        <control type="group">
                             <posy>360</posy>
                             <control type="button" id="52">
                                 <description>4 button</description>
@@ -446,7 +446,7 @@
                                 <include>KeyboardButtons</include>
                             </control>
                         </control>
-                        <control type="group" description="7th row">
+                        <control type="group">
                             <posy>442</posy>
                             <control type="button" id="32">
                                 <description>SPACE button</description>
@@ -461,7 +461,7 @@
                                 <include>KeyboardButtons</include>
                             </control>
                         </control>
-                        <control type="group" description="Column 2">
+                        <control type="group">
                             <posx>605</posx>
                             <control type="button" id="8">
                                 <description>BACKSPACE button</description>
@@ -474,7 +474,7 @@
                                 <width>120</width>
                                 <include>KeyboardButtons</include>
                             </control>
-                            <control type="image" description="Delete Backspace img">
+                            <control type="image">
                                 <posx>9</posx>
                                 <posy>2</posy>
                                 <width>99</width>
@@ -542,7 +542,7 @@
                                 <altlabel>[UPPERCASE]$LOCALIZE[20179][/UPPERCASE]</altlabel>
                                 <include>KeyboardButtons</include>
                             </control>
-                            <control type="togglebutton" id="302" description="Shift">
+                            <control type="togglebutton" id="302">
                                 <posx>0</posx>
                                 <posy>288</posy>
                                 <width>400</width>
@@ -554,7 +554,7 @@
                                 <altlabel>[UPPERCASE]$LOCALIZE[20178][/UPPERCASE]</altlabel>
                                 <include>KeyboardButtons</include>
                             </control>
-                            <control type="button" id="300" description="DONE button">
+                            <control type="button" id="300">
                                 <posx>0</posx>
                                 <posy>442</posy>
                                 <width>400</width>

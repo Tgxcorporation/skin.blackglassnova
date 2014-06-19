@@ -9,7 +9,7 @@
     </coordinates>
     <controls>
         <include>DimBG</include>
-        <control type="button" description="Quit">
+        <control type="button">
             <visible>Skin.HasSetting(WindowClosingIcon)</visible>
             <posx>1087</posx>
             <posy>376</posy>
@@ -20,7 +20,7 @@
             <onclick>back</onclick>
             <label>-</label>
         </control>
-        <control type="image" description="Menu BG">
+        <control type="image">
             <posx>470</posx>
             <posy>380</posy>
             <width>667</width>

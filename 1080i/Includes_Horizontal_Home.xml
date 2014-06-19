@@ -38,7 +38,7 @@
         <font>HomeItemFont</font>
         <textcolor>MainColor</textcolor>
     </include>
-    <include name="Horizontal_HomeMenu" description="Horizontal Main Menu">
+    <include name="Horizontal_HomeMenu">
         <animation effect="fade" time="200" start="100" end="65" reversible="true" condition="Control.HasFocus(9001)|Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
         <animation effect="slide" tween="circle" time="200" start="0,0" end="0,500" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
         <posx>-15</posx>
@@ -56,7 +56,7 @@
         <scrolltime tween="sine" easing="out">300</scrolltime>
         <orientation>horizontal</orientation>
         <itemlayout height="262" width="374">
-            <control type="image" description="Thumb">
+            <control type="image">
                 <posx>15</posx>
                 <posy>11</posy>
                 <width>384</width>
@@ -65,7 +65,7 @@
                 <include>ThumbBorder</include>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <posx>42</posx>
                 <posy>255</posy>
                 <width>330</width>
@@ -73,7 +73,7 @@
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.ActualIcon]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <posx>15</posx>
                 <posy>228</posy>
                 <width>384</width>
@@ -83,7 +83,7 @@
             </control>
         </itemlayout>
         <focusedlayout height="262" width="414">
-            <control type="image" description="Thumb">
+            <control type="image">
                 <posx>15</posx>
                 <posy>0</posy>
                 <width>424</width>
@@ -91,14 +91,14 @@
                 <texture>$INFO[ListItem.ActualIcon]</texture>
                 <include>ThumbBorderOverlay</include>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <posx>42</posx>
                 <posy>270</posy>
                 <width>370</width>
                 <height>208</height>
                 <texture flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.ActualIcon]</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <posx>15</posx>
                 <posy>243</posy>
                 <width>424</width>
@@ -110,18 +110,18 @@
             <include>Home.Main.Menu.Items</include>
         </content>
     </include>
-    <include name="Horizontal_Fixed_HomeMenu" description="FixedList for home menus">
-        <control type="fixedlist" id="300" description="Main Bar">
+    <include name="Horizontal_Fixed_HomeMenu">
+        <control type="fixedlist" id="300">
             <include>Horizontal_HomeMenu</include>
         </control>
     </include>
-    <include name="Horizontal_Wrapped_HomeMenu" description="Wraplist for home menus">
-        <control type="wraplist" id="300" description="Main Bar">
+    <include name="Horizontal_Wrapped_HomeMenu">
+        <control type="wraplist" id="300">
             <include>Horizontal_HomeMenu</include>
         </control>
     </include>
     <include name="Horizontal_Home_Layout">
-        <control type="group" description="HORIZONTAL HOME">
+        <control type="group">
             <control type="image">
                 <posx>-200</posx>
                 <posy>633</posy>
@@ -149,7 +149,7 @@
                 <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">Recommended.Albums.List</include>
                 <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)">Plexbmc_Shelf</include>
             </control>
-            <control type="image" description="Arrow XBMC only">
+            <control type="image">
                 <animation effect="slide" tween="circle" time="200" start="0,0" end="0,500" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
                 <visible>!Skin.HasSetting(plexbmc)+[[[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|[[IntegerGreaterThan(Container(211).NumItems,0)]+Container(300).HasFocus(2)]|[[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+Container(300).HasFocus(4)]|[[IntegerGreaterThan(Container(514).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+Container(300).HasFocus(5)]|[[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+Container(300).HasFocus(6)]|[[IntegerGreaterThan(Container(512).NumItems,0)]+Container(300).HasFocus(13)]]</visible>
                 <include>VisibleFadeEffectDelayShelf</include>
@@ -159,7 +159,7 @@
                 <height>50</height>
                 <texture>topbar/topbar_channel_up_focus.png</texture>
             </control>
-            <control type="image" description="Arrow Plexbmc only">
+            <control type="image">
                 <animation effect="slide" tween="circle" time="200" start="0,0" end="0,500" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
                 <visible>Skin.HasSetting(plexbmc)+[[[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|[[IntegerGreaterThan(Container(900).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),photo)]|[[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),movie)]|[[IntegerGreaterThan(Container(511).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),artist)]|[[IntegerGreaterThan(Container(212).NumItems,0)]+Container(300).HasFocus(50)]|[[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),show)]]</visible>
                 <include>VisibleFadeEffectDelayShelf</include>
@@ -185,7 +185,7 @@
                     <textcolor>MainColor</textcolor>
                     <label>$INFO[Container(300).ListItem.Label]</label>
                 </control>
-                <control type="fixedlist" id="9001" description="Submenu Bar">
+                <control type="fixedlist" id="9001">
                     <animation effect="slide" tween="circle" time="200" start="0,0" end="0,500" reversible="true" condition="Control.HasFocus(900)|Control.HasFocus(901)|Control.HasFocus(311)|Control.HasFocus(312)|Control.HasFocus(511)|Control.HasFocus(212)|Control.HasFocus(411)|Control.HasFocus(413)|Control.HasFocus(111)|Control.HasFocus(211)|Control.HasFocus(514)|Control.HasFocus(515)|Control.HasFocus(513)|Control.HasFocus(512)">Conditional</animation>
                     <include>VisibleFadeEffect</include>
                     <animation effect="slide" start="0,0" end="-128,0" time="0" condition="StringCompare(Container(9001).NumItems,2) | StringCompare(Container(9001).NumItems,4) | StringCompare(Container(9001).NumItems,6)">conditional</animation>
@@ -251,7 +251,7 @@
                     </content>
                 </control>
             </control>
-            <control type="group" description="RSS">
+            <control type="group">
                 <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
                 <control type="image">
                     <posx>0</posx>
@@ -274,7 +274,7 @@
                     <height>41</height>
                     <texture border="3">list/bg_facade_focus_white.png</texture>
                 </control>
-                <control type="rss" description="RSS Feed">
+                <control type="rss">
                     <posx>TextMargin</posx>
                     <posy>1041</posy>
                     <width>1830</width>

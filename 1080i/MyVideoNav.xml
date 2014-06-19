@@ -16,7 +16,7 @@
             <include>WindowTitleSub</include>
             <label>$VAR[GlobalSubTitles]</label>
         </control>
-        <control type="group" description="Fix for Plexbmc">
+        <control type="group">
             <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
             <include>View_50</include>
             <include>View_51_Panel</include>
@@ -28,7 +28,7 @@
             <include>View_59_Showcase</include>
             <include>View_5050_CardList</include>
             <!-- COMMON -->
-            <control type="group" id="81257" description="COMMON">
+            <control type="group" id="81257">
                 <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(5050)|Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)|Control.IsVisible(56)]+![!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]]|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)+[Control.IsVisible(50)|Control.IsVisible(52)|Control.IsVisible(56)|Control.IsVisible(54)]]</visible>
                 <include>Icon_Fade</include>
                 <posy>219</posy>
@@ -45,7 +45,7 @@
                         <include>Animation_ViewsCDart</include>
                     </control>
                 </control>
-                <control type="image" description="Thumb">
+                <control type="image">
                     <posx>18</posx>
                     <posy>411</posy>
                     <width>440</width>
@@ -56,12 +56,12 @@
                 </control>
             </control>
             <!-- LIST 50 -->
-            <control type="group" description="MediaInfo">
+            <control type="group">
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
                 <visible>Control.IsVisible(50)+[!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]</visible>
                 <include>Icon_Fade</include>
-                <control type="image" description="fa overlay">
+                <control type="image">
                     <posx>-795</posx>
                     <posy>350</posy>
                     <width>2058</width>
@@ -96,7 +96,7 @@
                         <include>Animation_ViewsCDart</include>
                     </control>
                 </control>
-                <control type="image" description="Thumb">
+                <control type="image">
                     <posx>18</posx>
                     <posy>411</posy>
                     <width>470</width>
@@ -105,10 +105,10 @@
                     <include>EpisodeThumb</include>
                     <include>ThumbBorder</include>
                 </control>
-                <control type="group" description="Media info">
+                <control type="group">
                     <posx>495</posx>
                     <posy>426</posy>
-                    <control type="label" description="Title">
+                    <control type="label">
                         <posx>TextMargin</posx>
                         <posy>-12</posy>
                         <width>631</width>
@@ -128,12 +128,12 @@
                     </control>
                     <control type="group">
                         <visible>!Container.Content(Addons)</visible>
-                        <control type="image" description="Stars">
+                        <control type="image">
                             <posx>TextMargin</posx>
                             <posy>92</posy>
                             <include>Stars</include>
                         </control>
-                        <control type="label" description="Rating">
+                        <control type="label">
                             <posx>245</posx>
                             <posy>73</posy>
                             <width>460</width>
@@ -146,7 +146,7 @@
                     </control>
                     <control type="group">
                         <visible>Container.Content(Addons)</visible>
-                        <control type="label" description="Version">
+                        <control type="label">
                             <posx>TextMargin</posx>
                             <posy>73</posy>
                             <width>631</width>
@@ -157,7 +157,7 @@
                             <label fallback="416">$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                         </control>
                     </control>
-                    <control type="label" description="Season">
+                    <control type="label">
                         <visible>[Container.Content(episodes)]</visible>
                         <posx>675</posx>
                         <posy>73</posy>
@@ -176,7 +176,7 @@
                         <height>73</height>
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
-                    <control type="label" description="Details">
+                    <control type="label">
                         <posx>TextMargin</posx>
                         <posy>146</posy>
                         <width>631</width>
@@ -193,7 +193,7 @@
                         <height>73</height>
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
-                    <control type="textbox" description="Plot51">
+                    <control type="textbox">
                         <visible>IsEmpty(ListItem.VideoResolution)</visible>
                         <posx>TextMargin</posx>
                         <posy>230</posy>
@@ -205,7 +205,7 @@
                     </control>
                     <control type="group">
                         <visible>!IsEmpty(ListItem.VideoResolution)</visible>
-                        <control type="textbox" description="Plot51">
+                        <control type="textbox">
                             <posx>TextMargin</posx>
                             <posy>234</posy>
                             <width>631</width>
@@ -221,7 +221,7 @@
                             <height>73</height>
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
-                        <control type="grouplist" description="Flags">
+                        <control type="grouplist">
                             <posx>35</posx>
                             <posy>563</posy>
                             <width min="90" max="967">auto</width>
@@ -236,19 +236,19 @@
                 </control>
             </control>
             <!-- LIST 51 Panel -->
-            <control type="group" description="Media info">
+            <control type="group">
                 <visible>Control.IsVisible(51)+[!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]</visible>
                 <include>Icon_Fade</include>
                 <posx>5</posx>
                 <posy>426</posy>
-                <control type="image" description="fa overlay">
+                <control type="image">
                     <posx>-1367</posx>
                     <posy>-76</posy>
                     <width>2058</width>
                     <height>900</height>
                     <texture border="90">common/bg_tvguide.png</texture>
                 </control>
-                <control type="label" description="Title">
+                <control type="label">
                     <posx>TextMargin</posx>
                     <posy>-12</posy>
                     <width>560</width>
@@ -268,12 +268,12 @@
                 </control>
                 <control type="group">
                     <visible>!Container.Content(Addons)</visible>
-                    <control type="image" description="Stars">
+                    <control type="image">
                         <posx>TextMargin</posx>
                         <posy>92</posy>
                         <include>Stars</include>
                     </control>
-                    <control type="label" description="Rating">
+                    <control type="label">
                         <posx>245</posx>
                         <posy>73</posy>
                         <width>370</width>
@@ -286,7 +286,7 @@
                 </control>
                 <control type="group">
                     <visible>Container.Content(Addons)</visible>
-                    <control type="label" description="Version">
+                    <control type="label">
                         <posx>TextMargin</posx>
                         <posy>73</posy>
                         <width>560</width>
@@ -297,7 +297,7 @@
                         <label fallback="416">$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                     </control>
                 </control>
-                <control type="label" description="Season">
+                <control type="label">
                     <visible>[Container.Content(episodes)]</visible>
                     <posx>605</posx>
                     <posy>73</posy>
@@ -316,7 +316,7 @@
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="label" description="Details">
+                <control type="label">
                     <posx>TextMargin</posx>
                     <posy>146</posy>
                     <width>560</width>
@@ -333,7 +333,7 @@
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="textbox" description="Plot51">
+                <control type="textbox">
                     <visible>IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>TextMargin</posx>
                     <posy>230</posy>
@@ -345,7 +345,7 @@
                 </control>
                 <control type="group">
                     <visible>!IsEmpty(ListItem.VideoResolution)</visible>
-                    <control type="textbox" description="Plot51">
+                    <control type="textbox">
                         <posx>TextMargin</posx>
                         <posy>234</posy>
                         <width>560</width>
@@ -361,7 +361,7 @@
                         <height>73</height>
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
-                    <control type="grouplist" description="Flags">
+                    <control type="grouplist">
                         <posx>35</posx>
                         <posy>563</posy>
                         <width min="90" max="967">auto</width>
@@ -375,13 +375,13 @@
                 </control>
             </control>
             <!-- LIST 52 BigList -->
-            <control type="group" description="MediaInfo">
+            <control type="group">
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
                 <visible>Control.IsVisible(52)+[!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]</visible>
                 <include>Icon_Fade</include>
                 <posy>37</posy>
-                <control type="image" description="fa overlay">
+                <control type="image">
                     <posx>-795</posx>
                     <posy>94</posy>
                     <width>2058</width>
@@ -416,7 +416,7 @@
                         <include>Animation_ViewsCDart</include>
                     </control>
                 </control>
-                <control type="image" description="Thumb">
+                <control type="image">
                     <posx>18</posx>
                     <posy>151</posy>
                     <width>470</width>
@@ -425,10 +425,10 @@
                     <include>PosterThumb</include>
                     <include>ThumbBorder</include>
                 </control>
-                <control type="group" description="Media info">
+                <control type="group">
                     <posx>495</posx>
                     <posy>166</posy>
-                    <control type="label" description="Title">
+                    <control type="label">
                         <posx>TextMargin</posx>
                         <posy>-12</posy>
                         <width>630</width>
@@ -448,12 +448,12 @@
                     </control>
                     <control type="group">
                         <visible>!Container.Content(Addons)</visible>
-                        <control type="image" description="Stars">
+                        <control type="image">
                             <posx>TextMargin</posx>
                             <posy>92</posy>
                             <include>Stars</include>
                         </control>
-                        <control type="label" description="Rating">
+                        <control type="label">
                             <posx>245</posx>
                             <posy>73</posy>
                             <width>460</width>
@@ -466,7 +466,7 @@
                     </control>
                     <control type="group">
                         <visible>Container.Content(Addons)</visible>
-                        <control type="label" description="Version">
+                        <control type="label">
                             <posx>TextMargin</posx>
                             <posy>73</posy>
                             <width>631</width>
@@ -477,7 +477,7 @@
                             <label fallback="416">$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                         </control>
                     </control>
-                    <control type="label" description="Season">
+                    <control type="label">
                         <visible>[Container.Content(episodes)]</visible>
                         <posx>675</posx>
                         <posy>73</posy>
@@ -496,7 +496,7 @@
                         <height>73</height>
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
-                    <control type="label" description="Details">
+                    <control type="label">
                         <posx>TextMargin</posx>
                         <posy>146</posy>
                         <width>630</width>
@@ -513,7 +513,7 @@
                         <height>73</height>
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
-                    <control type="textbox" description="Plot51">
+                    <control type="textbox">
                         <visible>IsEmpty(ListItem.VideoResolution)</visible>
                         <posx>TextMargin</posx>
                         <posy>230</posy>
@@ -525,7 +525,7 @@
                     </control>
                     <control type="group">
                         <visible>!IsEmpty(ListItem.VideoResolution)</visible>
-                        <control type="textbox" description="Plot51">
+                        <control type="textbox">
                             <posx>TextMargin</posx>
                             <posy>225</posy>
                             <width>631</width>
@@ -541,7 +541,7 @@
                             <height>73</height>
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
-                        <control type="grouplist" description="Flags">
+                        <control type="grouplist">
                             <posx>35</posx>
                             <posy>791</posy>
                             <width min="90" max="967">auto</width>
@@ -556,18 +556,18 @@
                 </control>
             </control>
             <!-- GRID 53 -->
-            <control type="group" description="53">
+            <control type="group">
                 <include>OpenClose</include>
             </control>
             <!-- LIST 54 Low List -->
-            <control type="group" description="MediaInfo">
+            <control type="group">
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
                 <visible>Control.IsVisible(54)+[!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]</visible>
                 <include>Icon_Fade</include>
-                <control type="group" description="Movies and shows">
+                <control type="group">
                     <posy>219</posy>
-                    <control type="image" description="fa overlay">
+                    <control type="image">
                         <posx>-795</posx>
                         <posy>350</posy>
                         <width>2058</width>
@@ -602,7 +602,7 @@
                             <include>Animation_ViewsCDart</include>
                         </control>
                     </control>
-                    <control type="image" description="Thumb">
+                    <control type="image">
                         <posx>18</posx>
                         <posy>411</posy>
                         <width>318</width>
@@ -611,10 +611,10 @@
                         <include>PosterThumb</include>
                         <include>ThumbBorder</include>
                     </control>
-                    <control type="group" description="Media info">
+                    <control type="group">
                         <posx>343</posx>
                         <posy>426</posy>
-                        <control type="label" description="Title">
+                        <control type="label">
                             <posx>TextMargin</posx>
                             <posy>-12</posy>
                             <width>780</width>
@@ -634,12 +634,12 @@
                         </control>
                         <control type="group">
                             <visible>!Container.Content(Addons)</visible>
-                            <control type="image" description="Stars">
+                            <control type="image">
                                 <posx>TextMargin</posx>
                                 <posy>92</posy>
                                 <include>Stars</include>
                             </control>
-                            <control type="label" description="Rating">
+                            <control type="label">
                                 <posx>245</posx>
                                 <posy>73</posy>
                                 <width>612</width>
@@ -652,7 +652,7 @@
                         </control>
                         <control type="group">
                             <visible>Container.Content(Addons)</visible>
-                            <control type="label" description="Version">
+                            <control type="label">
                                 <posx>TextMargin</posx>
                                 <posy>73</posy>
                                 <width>631</width>
@@ -663,7 +663,7 @@
                                 <label fallback="416">$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                             </control>
                         </control>
-                        <control type="label" description="Details">
+                        <control type="label">
                             <visible>!Container.Content(Addons)</visible>
                             <posx>825</posx>
                             <posy>73</posy>
@@ -682,7 +682,7 @@
                             <height>73</height>
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
-                        <control type="textbox" description="Plot51">
+                        <control type="textbox">
                             <visible>IsEmpty(ListItem.VideoResolution)</visible>
                             <posx>TextMargin</posx>
                             <posy>155</posy>
@@ -694,7 +694,7 @@
                         </control>
                         <control type="group">
                             <visible>!IsEmpty(ListItem.VideoResolution)</visible>
-                            <control type="textbox" description="Plot51">
+                            <control type="textbox">
                                 <posx>TextMargin</posx>
                                 <posy>150</posy>
                                 <width>780</width>
@@ -710,7 +710,7 @@
                                 <height>73</height>
                                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
                             </control>
-                            <control type="grouplist" description="Flags">
+                            <control type="grouplist">
                                 <posx>38</posx>
                                 <posy>353</posy>
                                 <width min="90" max="967">auto</width>
@@ -726,19 +726,19 @@
                 </control>
             </control>
             <!-- LIST 55 Big Panel -->
-            <control type="group" description="MediaInfo">
+            <control type="group">
                 <visible>Control.IsVisible(55)+[!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]</visible>
                 <include>Icon_Fade</include>
                 <posx>5</posx>
                 <posy>170</posy>
-                <control type="image" description="fa overlay">
+                <control type="image">
                     <posx>-1367</posx>
                     <posy>-76</posy>
                     <width>2058</width>
                     <height>1160</height>
                     <texture border="90">common/bg_tvguide.png</texture>
                 </control>
-                <control type="label" description="Title">
+                <control type="label">
                     <posx>TextMargin</posx>
                     <posy>-12</posy>
                     <width>560</width>
@@ -758,12 +758,12 @@
                 </control>
                 <control type="group">
                     <visible>!Container.Content(Addons)</visible>
-                    <control type="image" description="Stars">
+                    <control type="image">
                         <posx>TextMargin</posx>
                         <posy>92</posy>
                         <include>Stars</include>
                     </control>
-                    <control type="label" description="Rating">
+                    <control type="label">
                         <posx>245</posx>
                         <posy>73</posy>
                         <width>370</width>
@@ -776,7 +776,7 @@
                 </control>
                 <control type="group">
                     <visible>Container.Content(Addons)</visible>
-                    <control type="label" description="Version">
+                    <control type="label">
                         <posx>TextMargin</posx>
                         <posy>73</posy>
                         <width>560</width>
@@ -787,7 +787,7 @@
                         <label fallback="416">$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                     </control>
                 </control>
-                <control type="label" description="Season">
+                <control type="label">
                     <visible>[Container.Content(episodes)]</visible>
                     <posx>605</posx>
                     <posy>73</posy>
@@ -806,7 +806,7 @@
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="label" description="Details">
+                <control type="label">
                     <posx>TextMargin</posx>
                     <posy>146</posy>
                     <width>560</width>
@@ -823,7 +823,7 @@
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="textbox" description="Plot51">
+                <control type="textbox">
                     <visible>IsEmpty(ListItem.VideoResolution)</visible>
                     <posx>TextMargin</posx>
                     <posy>230</posy>
@@ -835,7 +835,7 @@
                 </control>
                 <control type="group">
                     <visible>!IsEmpty(ListItem.VideoResolution)</visible>
-                    <control type="textbox" description="Plot51">
+                    <control type="textbox">
                         <posx>TextMargin</posx>
                         <posy>241</posy>
                         <width>560</width>
@@ -853,7 +853,7 @@
                             <height>73</height>
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
-                        <control type="grouplist" description="Flags">
+                        <control type="grouplist">
                             <posx>35</posx>
                             <posy>569</posy>
                             <width min="90" max="967">auto</width>
@@ -868,19 +868,19 @@
                 </control>
             </control>
             <!-- LIST 56 Banner List -->
-            <control type="group" description="MediaInfo">
+            <control type="group">
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
                 <visible>Control.IsVisible(56)+[!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]</visible>
                 <include>Icon_Fade</include>
-                <control type="image" description="fa overlay">
+                <control type="image">
                     <posx>-795</posx>
                     <posy>350</posy>
                     <width>2058</width>
                     <height>900</height>
                     <texture border="90">common/bg_tvguide.png</texture>
                 </control>
-                <control type="image" description="Thumb">
+                <control type="image">
                     <posx>18</posx>
                     <posy>401</posy>
                     <width>1195</width>
@@ -889,10 +889,10 @@
                     <aspectratio aligny="bottom">scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
-                <control type="group" description="Media info">
+                <control type="group">
                     <posx>0</posx>
                     <posy>645</posy>
-                    <control type="label" description="Title">
+                    <control type="label">
                         <posx>TextMargin</posx>
                         <posy/>
                         <width>1126</width>
@@ -910,12 +910,12 @@
                         <height>73</height>
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
-                    <control type="image" description="Stars">
+                    <control type="image">
                         <posx>TextMargin</posx>
                         <posy>92</posy>
                         <include>Stars</include>
                     </control>
-                    <control type="label" description="Rating">
+                    <control type="label">
                         <posx>245</posx>
                         <posy>73</posy>
                         <width>480</width>
@@ -925,7 +925,7 @@
                         <scroll>false</scroll>
                         <label fallback="416">$INFO[ListItem.Rating]</label>
                     </control>
-                    <control type="label" description="Details">
+                    <control type="label">
                         <posx>1171</posx>
                         <posy>73</posy>
                         <width>500</width>
@@ -943,7 +943,7 @@
                         <height>73</height>
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
-                    <control type="textbox" description="Plot51">
+                    <control type="textbox">
                         <posx>TextMargin</posx>
                         <posy>157</posy>
                         <width>1126</width>
@@ -955,12 +955,12 @@
                 </control>
             </control>
             <!-- LIST 57,58,59 Fanart -->
-            <control type="group" description="Fanart View">
+            <control type="group">
                 <include>OpenClose</include>
             </control>
         </control>
         <!-- SIDE MENU -->
-        <control type="group" description="Side menu 9000 group">
+        <control type="group">
             <include>LeftMenu</include>
             <control type="label">
                 <include>LeftMenuTitleLabel</include>
@@ -974,15 +974,15 @@
                 <ondown>9000</ondown>
                 <onback>50</onback>
                 <include>9000GrouplistParameters</include>
-                <control type="togglebutton" id="14" description="Toggle Watched">
+                <control type="togglebutton" id="14">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[535]: $LOCALIZE[16100]</label>
                     <altlabel>$LOCALIZE[535]: $LOCALIZE[16101]</altlabel>
                 </control>
-                <control type="button" id="3" description="Sort">
+                <control type="button" id="3">
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="togglebutton" id="4" description="Sort direction">
+                <control type="togglebutton" id="4">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[21429]:  $LOCALIZE[21430]</label>
                     <altlabel>$LOCALIZE[21429]:  $LOCALIZE[21431]</altlabel>
@@ -1015,7 +1015,7 @@
                     <onclick>right</onclick>
                     <onclick>Filter</onclick>
                 </control>
-                <control type="button" id="8" description="Search">
+                <control type="button" id="8">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[137]</label>
                 </control>
@@ -1026,13 +1026,13 @@
                     <include>LeftMenuButton</include>
                     <visible>Container.Content(MusicVideos)</visible>
                 </control>
-                <control type="togglebutton" id="20" description="Library update">
+                <control type="togglebutton" id="20">
                     <include>LeftMenuButton</include>
                     <label>653</label>
                     <altlabel>13353</altlabel>
                     <usealttexture>library.isscanningvideo</usealttexture>
                 </control>
-                <control type="button" id="699" description="Playing">
+                <control type="button" id="699">
                     <enable>Player.HasMedia</enable>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[16003]</label>

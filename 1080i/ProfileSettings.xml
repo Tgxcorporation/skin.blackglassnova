@@ -4,11 +4,11 @@
     <include>OpenClose</include>
     <controls>
         <include>DimBG</include>
-        <control type="group" description="Content">
+        <control type="group">
             <include>DialogOpenClose</include>
             <posx>0</posx>
             <posy>0</posy>
-            <control type="button" description="Quit">
+            <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1387</posx>
                 <posy>230</posy>
@@ -29,7 +29,7 @@
             <control type="group">
                 <posx>528</posx>
                 <posy>271</posy>
-                <control type="label" id="1000" description="Profile name">
+                <control type="label" id="1000">
                     <posx>45</posx>
                     <posy>5</posy>
                     <width>774</width>
@@ -38,7 +38,7 @@
                     <textcolor>MainColor</textcolor>
                     <align>center</align>
                 </control>
-                <control type="label" id="1001" description="Profile Directory">
+                <control type="label" id="1001">
                     <posx>45</posx>
                     <posy>65</posy>
                     <width>774</width>
@@ -68,7 +68,7 @@
                     <height>300</height>
                     <texture>list/bg_facade_vertical.png</texture>
                 </control>
-                <control type="image" description="Profile image">
+                <control type="image">
                     <visible>!Container(2).HasThumb</visible>
                     <posx>600</posx>
                     <posy>117</posy>
@@ -78,7 +78,7 @@
                     <aspectratio>scale</aspectratio>
                     <include>ThumbBorder</include>
                 </control>
-                <control type="image" id="2" description="Profile image">
+                <control type="image" id="2">
                     <posx>600</posx>
                     <posy>117</posy>
                     <width>264</width>
@@ -129,11 +129,11 @@
                     <aligny>bottom</aligny>
                     <align>center</align>
                     <orientation>horizontal</orientation>
-                    <control type="button" id="28" description="OK">
+                    <control type="button" id="28">
                         <onup>5</onup>
                         <label>$LOCALIZE[186]</label>
                     </control>
-                    <control type="button" id="29" description="Cancel">
+                    <control type="button" id="29">
                         <onup>5</onup>
                         <label>$LOCALIZE[222]</label>
                     </control>

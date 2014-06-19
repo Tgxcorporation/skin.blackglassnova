@@ -21,8 +21,8 @@
             <height>1160</height>
             <texture border="90">common/bg_tvguide.png</texture>
         </control>
-        <control type="group" description="Grid view">
-            <control type="panel" id="450" description="Grid">
+        <control type="group">
+            <control type="panel" id="450">
                 <posx>30</posx>
                 <posy>150</posy>
                 <width>1890</width>

@@ -3,7 +3,7 @@
     <defaultcontrol always="true">9000</defaultcontrol>
     <include>OSDFade</include>
     <controls>
-        <control type="button" id="9000" description="Quit">
+        <control type="button" id="9000">
             <visible>Skin.HasSetting(WindowClosingIcon)</visible>
             <posx>1637</posx>
             <posy>479</posy>
@@ -93,7 +93,7 @@
         </control>
         <control type="group">
             <posx>400</posx>
-            <control type="label" description="Heading">
+            <control type="label">
                 <posx>273</posx>
                 <posy>562</posy>
                 <height>36</height>
@@ -119,7 +119,7 @@
                 <height>90</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="grouplist" description="Flags">
+            <control type="grouplist">
                 <posx>273</posx>
                 <posy>865</posy>
                 <width>1006</width>

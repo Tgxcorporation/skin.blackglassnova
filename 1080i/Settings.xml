@@ -18,7 +18,7 @@
         </control>
         <control type="group">
             <posy>-189</posy>
-            <control type="button" description="Quit">
+            <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1787</posx>
                 <posy>240</posy>
@@ -43,7 +43,7 @@
                 <height>90</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="label" description="XBMC settings">
+            <control type="label">
                 <posx>173</posx>
                 <posy>323</posy>
                 <height>36</height>
@@ -156,7 +156,7 @@
                         <width>433</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <posx>TextMargin</posx>
                         <height>69</height>
                         <width>343</width>
@@ -173,7 +173,7 @@
                         <width>433</width>
                         <include>FacadeFocus</include>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <posx>TextMargin</posx>
                         <height>69</height>
                         <width>343</width>
@@ -183,53 +183,53 @@
                     </control>
                 </focusedlayout>
                 <content>
-                    <item id="2" description="Appearance">
+                    <item id="2">
                         <label>$LOCALIZE[480]</label>
                         <label2>special://skin/backgrounds/Favourites.jpg</label2>
                         <onclick>activatewindow(AppearanceSettings)</onclick>
                     </item>
-                    <item id="3" description="Videos">
+                    <item id="3">
                         <label>$LOCALIZE[3]</label>
                         <label2>special://skin/backgrounds/Videos.jpg</label2>
                         <onclick>activatewindow(VideosSettings)</onclick>
                     </item>
-                    <item id="4" description="Music">
+                    <item id="4">
                         <label>$LOCALIZE[2]</label>
                         <label2>special://skin/backgrounds/Music.jpg</label2>
                         <onclick>activatewindow(MusicSettings)</onclick>
                     </item>
-                    <item id="5" description="Pictures">
+                    <item id="5">
                         <label>$LOCALIZE[1]</label>
                         <label2>special://skin/backgrounds/Pictures.jpg</label2>
                         <onclick>activatewindow(PicturesSettings)</onclick>
                     </item>
-                    <item id="11" description="PVR">
+                    <item id="11">
                         <label>$LOCALIZE[31500]</label>
                         <label2>special://skin/backgrounds/Pvr.jpg</label2>
                         <onclick>activateWindow(PVRSettings)</onclick>
                     </item>
-                    <item id="1" description="Addons">
+                    <item id="1">
                         <label>$LOCALIZE[24001]</label>
                         <label2>special://skin/backgrounds/Addons.jpg</label2>
                         <onclick>ActivateWindow(AddonBrowser,root)</onclick>
                     </item>
-                    <item id="8" description="Service">
+                    <item id="8">
                         <label>$LOCALIZE[14036]</label>
                         <label2>special://skin/backgrounds/Settings.jpg</label2>
                         <onclick>activatewindow(ServiceSettings)</onclick>
                     </item>
-                    <item id="9" description="System">
+                    <item id="9">
                         <label>$LOCALIZE[13000]</label>
                         <label2>special://skin/backgrounds/Quit.jpg</label2>
                         <onclick>activatewindow(SystemSettings)</onclick>
                     </item>
-                    <item id="7" description="Plexbmc config">
+                    <item id="7">
                         <visible>System.HasAddon(plugin.video.plexbmc)</visible>
                         <label>PleXBMC</label>
                         <label2>special://skin/backgrounds/Channels.jpg</label2>
                         <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
                     </item>
-                    <item id="8" description="Skin config">
+                    <item id="8">
                         <label>$LOCALIZE[20077]</label>
                         <label2>special://skin/fanart.jpg</label2>
                         <onclick>activatewindow(skinsettings)</onclick>

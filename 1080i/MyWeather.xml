@@ -25,7 +25,7 @@
         <control type="group">
             <posx>0</posx>
             <posy>479</posy>
-            <control type="image" description="fa overlay">
+            <control type="image">
                 <posx>-795</posx>
                 <posy>90</posy>
                 <width>2058</width>
@@ -47,7 +47,7 @@
                 <height>600</height>
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <posx>18</posx>
                 <posy>151</posy>
                 <width>440</width>
@@ -56,10 +56,10 @@
                 <texture>$INFO[Window(Weather).Property(Current.FanartCode),special://skin/backgrounds/weather/,.jpg]</texture>
                 <include>ThumbBorder</include>
             </control>
-            <control type="group" description="Media info">
+            <control type="group">
                 <posx>465</posx>
                 <posy>166</posy>
-                <control type="label" description="Title">
+                <control type="label">
                     <posx>TextMargin</posx>
                     <posy>-12</posy>
                     <width>660</width>
@@ -69,7 +69,7 @@
                     <align>left</align>
                     <label>$INFO[Weather.Location]</label>
                 </control>
-                <control type="label" id="11" description="Refresh">
+                <control type="label" id="11">
                     <posx>TextMargin</posx>
                     <posy>30</posy>
                     <width>660</width>
@@ -85,7 +85,7 @@
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="label" description="Details">
+                <control type="label">
                     <posx>TextMargin</posx>
                     <posy>73</posy>
                     <width>660</width>
@@ -101,7 +101,7 @@
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="label" description="Feels like label">
+                <control type="label">
                     <posx>TextMargin</posx>
                     <posy>146</posy>
                     <width>660</width>
@@ -110,7 +110,7 @@
                     <textcolor>MainColor</textcolor>
                     <label>$LOCALIZE[143] $INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="label" description="Feels like label">
+                <control type="label">
                     <posx>705</posx>
                     <posy>146</posy>
                     <width>660</width>
@@ -127,7 +127,7 @@
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="label" description="Details">
+                <control type="label">
                     <posx>TextMargin</posx>
                     <posy>219</posy>
                     <width>660</width>
@@ -136,7 +136,7 @@
                     <textcolor>AlternateColor</textcolor>
                     <label>$LOCALIZE[405]: $INFO[Window.Property(Current.DewPoint)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="label" description="Feels like label">
+                <control type="label">
                     <posx>705</posx>
                     <posy>219</posy>
                     <width>660</width>
@@ -153,7 +153,7 @@
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="label" description="Details">
+                <control type="label">
                     <posx>TextMargin</posx>
                     <posy>292</posy>
                     <width>660</width>
@@ -162,7 +162,7 @@
                     <textcolor>MainColor</textcolor>
                     <label>$LOCALIZE[403]: $INFO[Window.Property(Current.UVIndex)]</label>
                 </control>
-                <control type="label" description="Feels like label">
+                <control type="label">
                     <posx>705</posx>
                     <posy>292</posy>
                     <width>660</width>
@@ -201,7 +201,7 @@
             <control type="group">
                 <posx>0</posx>
                 <posy>0</posy>
-                <control type="label" description="Day 0 label">
+                <control type="label">
                     <posx>30</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -210,7 +210,7 @@
                     <textcolor>AlternateColor</textcolor>
                     <label>$LOCALIZE[33006]</label>
                 </control>
-                <control type="label" description="Day 0 label">
+                <control type="label">
                     <posx>280</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -219,7 +219,7 @@
                     <textcolor>MainColor</textcolor>
                     <label>$INFO[Window.Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="label" description="Day 0 label">
+                <control type="label">
                     <posx>420</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -228,7 +228,7 @@
                     <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="image" description="Day 0 icon">
+                <control type="image">
                     <posx>540</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -247,7 +247,7 @@
             <control type="group">
                 <posx>0</posx>
                 <posy>73</posy>
-                <control type="label" description="Day 1 label">
+                <control type="label">
                     <posx>30</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -256,7 +256,7 @@
                     <textcolor>AlternateColor</textcolor>
                     <label>$LOCALIZE[33007]</label>
                 </control>
-                <control type="label" description="Day 1 label">
+                <control type="label">
                     <posx>280</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -265,7 +265,7 @@
                     <textcolor>MainColor</textcolor>
                     <label>$INFO[Window.Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="label" description="Day 1 label">
+                <control type="label">
                     <posx>420</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -274,7 +274,7 @@
                     <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="image" description="Day 1 icon">
+                <control type="image">
                     <posx>540</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -293,7 +293,7 @@
             <control type="group">
                 <posx>0</posx>
                 <posy>146</posy>
-                <control type="label" description="Day 2 label">
+                <control type="label">
                     <posx>30</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -302,7 +302,7 @@
                     <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day2.Title)]</label>
                 </control>
-                <control type="label" description="Day 2 label">
+                <control type="label">
                     <posx>280</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -311,7 +311,7 @@
                     <textcolor>MainColor</textcolor>
                     <label>$INFO[Window.Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="label" description="Day 2 label">
+                <control type="label">
                     <posx>420</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -320,7 +320,7 @@
                     <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="image" description="Day 2 icon">
+                <control type="image">
                     <posx>540</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -339,7 +339,7 @@
             <control type="group">
                 <posx>0</posx>
                 <posy>219</posy>
-                <control type="label" description="Day 3 label">
+                <control type="label">
                     <posx>30</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -348,7 +348,7 @@
                     <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day3.Title)]</label>
                 </control>
-                <control type="label" description="Day 3 label">
+                <control type="label">
                     <posx>280</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -357,7 +357,7 @@
                     <textcolor>MainColor</textcolor>
                     <label>$INFO[Window.Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="label" description="Day 3 label">
+                <control type="label">
                     <posx>420</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -366,7 +366,7 @@
                     <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="image" description="Day 3 icon">
+                <control type="image">
                     <posx>540</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -385,7 +385,7 @@
             <control type="group">
                 <posx>0</posx>
                 <posy>292</posy>
-                <control type="label" description="Day 4 label">
+                <control type="label">
                     <posx>30</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -394,7 +394,7 @@
                     <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day4.Title)]</label>
                 </control>
-                <control type="label" description="Day 4 label">
+                <control type="label">
                     <posx>280</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -403,7 +403,7 @@
                     <textcolor>MainColor</textcolor>
                     <label>$INFO[Window.Property(Day4.HighTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="label" description="Day 4 label">
+                <control type="label">
                     <posx>420</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -412,7 +412,7 @@
                     <textcolor>AlternateColor</textcolor>
                     <label>$INFO[Window.Property(Day4.LowTemp)]$INFO[System.TemperatureUnits]</label>
                 </control>
-                <control type="image" description="Day 4 icon">
+                <control type="image">
                     <posx>540</posx>
                     <posy>0</posy>
                     <height>71</height>
@@ -430,7 +430,7 @@
             </control>
         </control>
         <!-- SIDE MENU -->
-        <control type="group" description="Side menu 9000 group">
+        <control type="group">
             <include>LeftMenu</include>
             <control type="label">
                 <include>LeftMenuTitleLabel</include>
@@ -443,15 +443,15 @@
                 <onup>9000</onup>
                 <ondown>9000</ondown>
                 <onback>50</onback>
-                <control type="button" id="2" description="Refresh">
+                <control type="button" id="2">
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="button" id="4" description="Settings">
+                <control type="button" id="4">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[5]</label>
                     <onclick>ActivateWindow(MyWeatherSettings)</onclick>
                 </control>
-                <control type="spincontrolex" id="3" description="Location">
+                <control type="spincontrolex" id="3">
                     <label>21873</label>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[396]</label>

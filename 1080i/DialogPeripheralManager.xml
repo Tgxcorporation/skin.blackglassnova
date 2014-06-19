@@ -4,7 +4,7 @@
     <include>DialogOpenClose</include>
     <controls>
         <include>DimBG</include>
-        <control type="button" description="Quit">
+        <control type="button">
             <visible>Skin.HasSetting(WindowClosingIcon)</visible>
             <posx>1537</posx>
             <posy>159</posy>
@@ -25,7 +25,7 @@
         <control type="group">
             <posx>378</posx>
             <posy>200</posy>
-            <control type="label" id="1" description="Heading">
+            <control type="label" id="1">
                 <posx>45</posx>
                 <posy>18</posy>
                 <width>1074</width>
@@ -60,7 +60,7 @@
                         <width>1164</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
-                    <control type="label" description="Name">
+                    <control type="label">
                         <posx>25</posx>
                         <height>42</height>
                         <width>1114</width>
@@ -68,7 +68,7 @@
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Product ID Vendor ID">
+                    <control type="label">
                         <posx>25</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -77,7 +77,7 @@
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$LOCALIZE[35504]: $INFO[ListItem.Property(Product)]  •  $LOCALIZE[35503]: $INFO[ListItem.Property(Vendor)]</label>
                     </control>
-                    <control type="label" description="class">
+                    <control type="label">
                         <posx>25</posx>
                         <posy>67</posy>
                         <height>28</height>
@@ -95,7 +95,7 @@
                         <width>1164</width>
                         <include>FacadeFocus</include>
                     </control>
-                    <control type="label" description="Name">
+                    <control type="label">
                         <posx>25</posx>
                         <height>42</height>
                         <width>1114</width>
@@ -103,7 +103,7 @@
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Product ID Vendor ID">
+                    <control type="label">
                         <posx>25</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -112,7 +112,7 @@
                         <textcolor>SublistFocusColor</textcolor>
                         <label>$LOCALIZE[35504]: $INFO[ListItem.Property(Product)]  •  $LOCALIZE[35503]: $INFO[ListItem.Property(Vendor)]</label>
                     </control>
-                    <control type="label" description="class">
+                    <control type="label">
                         <posx>25</posx>
                         <posy>67</posy>
                         <height>28</height>
@@ -123,7 +123,7 @@
                     </control>
                 </itemlayout>
             </control>
-            <control type="label" description="Item count">
+            <control type="label">
                 <posx>5816</posx>
                 <posy>780</posy>
                 <width>846</width>

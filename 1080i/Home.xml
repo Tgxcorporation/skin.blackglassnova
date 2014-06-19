@@ -34,7 +34,7 @@
             <include>WindowTitleSub</include>
             <label>$INFO[Container(300).ListItem.Label]</label>
         </control>
-        <control type="group" description="Content">
+        <control type="group">
             <animation effect="fade" start="0" end="100" time="1000" condition="Window.Previous(Startup.xml)">Conditional</animation>
             <animation effect="fade" start="0" end="100" time="200" condition="!Window.Previous(Startup.xml)">Conditional</animation>
             <include condition="Skin.HasSetting(VerticalHome)">Vertical_Home_Layout</include>

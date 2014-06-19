@@ -15,7 +15,7 @@
             <include>WindowTitleSub</include>
             <label>$VAR[GlobalSubTitles]</label>
         </control>
-        <control type="group" description="Fix for Plexbmc">
+        <control type="group">
             <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
             <include>View_50</include>
             <include>View_51_Panel</include>
@@ -32,10 +32,10 @@
             <include>Addons_Info_54</include>
             <include>Addons_Info_55</include>
             <!-- COMMON -->
-            <control type="group" description="Generic Thumb">
+            <control type="group">
                 <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(5050)|Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+IsEmpty(ListItem.Property(Addon.Description))]|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)+[Control.IsVisible(50)|Control.IsVisible(52)|Control.IsVisible(54)]]</visible>
                 <posy>219</posy>
-                <control type="image" description="Thumb">
+                <control type="image">
                     <posx>18</posx>
                     <posy>411</posy>
                     <width>435</width>
@@ -47,7 +47,7 @@
             </control>
         </control>
         <!-- SIDE MENU -->
-        <control type="group" description="Side menu 9000 group">
+        <control type="group">
             <include>LeftMenu</include>
             <control type="label">
                 <include>LeftMenuTitleLabel</include>
@@ -61,10 +61,10 @@
                 <ondown>9000</ondown>
                 <onback>50</onback>
                 <include>9000GrouplistParameters</include>
-                <control type="button" id="3" description="Sort">
+                <control type="button" id="3">
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="togglebutton" id="4" description="SortMode">
+                <control type="togglebutton" id="4">
                     <alttexturenofocus>-</alttexturenofocus>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
@@ -97,7 +97,7 @@
                     <onclick>right</onclick>
                     <onclick>Filter</onclick>
                 </control>
-                <control type="button" id="699" description="Playing">
+                <control type="button" id="699">
                     <enable>Player.HasMedia</enable>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[16003]</label>

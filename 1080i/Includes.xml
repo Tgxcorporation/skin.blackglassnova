@@ -34,7 +34,7 @@
     <include file="View_5050_CardList.xml"/>
     <include file="View_PVR.xml"/>
     <include name="Player_Show">
-        <control type="image" description="fa overlay">
+        <control type="image">
             <visible>[[Player.HasVideo]] + Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
             <posx>0</posx>
             <posy>0</posy>
@@ -42,7 +42,7 @@
             <height>1080</height>
             <texture>common/BlackDot.png</texture>
         </control>
-        <control type="multiimage" description="Slideshow">
+        <control type="multiimage">
             <visible>Player.HasAudio + Skin.HasSetting(Show_Player) + Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>KenBurns</include>
             <include>Dimensions_Fullscreen</include>
@@ -54,7 +54,7 @@
             <animation effect="fade" start="0" end="100" time="250">Visible</animation>
             <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
         </control>
-        <control type="image" description="Fanart only">
+        <control type="image">
             <visible>Player.HasAudio + Skin.HasSetting(Show_Player) + Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>Dimensions_Fullscreen</include>
             <include>KenBurns</include>
@@ -170,7 +170,7 @@
             <texturefocus>-</texturefocus>
             <visible>true</visible>
         </control>
-        <control type="group" description="TOPBAR">
+        <control type="group">
             <visible>!Window.isvisible(DialogVideoInfo.xml)</visible>
             <animation effect="slide" start="0,0" end="0,130" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+[[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]">Conditional</animation>
             <animation effect="slide" start="0,0" end="0,85" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+![[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo]">Conditional</animation>
@@ -381,10 +381,10 @@
                 <width>2220</width>
                 <height>240</height>
             </control>
-            <control type="group" description="Fix for Plexbmc">
+            <control type="group">
                 <include>PlexbmcFixTrick</include>
                 <include>TopBar</include>
-                <control type="group" description="Playing Content">
+                <control type="group">
                     <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]|Player.HasVideo</visible>
                     <animation effect="slide" start="0,-88" end="0,0" time="200">Visible</animation>
                     <animation effect="slide" start="0,0" end="0,-88" time="200">Hidden</animation>
@@ -396,7 +396,7 @@
                         <height>417</height>
                         <texture>common/bg_dialog.png</texture>
                     </control>
-                    <control type="label" description="Message">
+                    <control type="label">
                         <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]</visible>
                         <posx>460</posx>
                         <posy>0</posy>
@@ -408,7 +408,7 @@
                         <textcolor>MainColor</textcolor>
                         <label>$INFO[MusicPlayer.Artist,,  •  ]$INFO[MusicPlayer.Title,[COLOR=AlternateColor],[/COLOR]]</label>
                     </control>
-                    <control type="label" description="Message">
+                    <control type="label">
                         <visible>[Player.HasAudio + !SubString(Window(videolibrary).Property(TvTunesIsAlive),True)]</visible>
                         <posx>1455</posx>
                         <posy>0</posy>
@@ -420,7 +420,7 @@
                         <textcolor>MainColor</textcolor>
                         <label>$INFO[MusicPlayer.TimeSpeed] - $INFO[MusicPlayer.Duration]</label>
                     </control>
-                    <control type="label" description="Message">
+                    <control type="label">
                         <visible>Player.hasvideo</visible>
                         <posx>460</posx>
                         <posy>0</posy>
@@ -430,10 +430,9 @@
                         <align>left</align>
                         <font>NotificationFont</font>
                         <textcolor>MainColor</textcolor>
-                        <scroll>false</scroll>
                         <label>$INFO[VideoPlayer.Title]</label>
                     </control>
-                    <control type="label" description="Message">
+                    <control type="label">
                         <visible>Player.hasvideo</visible>
                         <posx>1455</posx>
                         <posy>0</posy>
@@ -443,7 +442,6 @@
                         <align>right</align>
                         <font>NotificationFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <scroll>false</scroll>
                         <label>$INFO[VideoPlayer.TimeSpeed] - $INFO[VideoPlayer.Duration]</label>
                     </control>
                 </control>
@@ -493,16 +491,6 @@
         <shadowcolor>ShadowColor</shadowcolor>
         <animation effect="fade" time="50">VisibleChange</animation>
     </include>
-    <include name="OSDSeekbarLabels">
-        <posx>440</posx>
-        <posy>21</posy>
-        <height>40</height>
-        <width>600</width>
-        <align>center</align>
-        <font>ListDetails</font>
-        <shadowcolor>ShadowColor</shadowcolor>
-        <animation effect="fade" time="50">VisibleChange</animation>
-    </include>
     <include name="Stars">
         <!-- <visible>!IsEmpty(ListItem.StarRating)</visible> -->
         <height>36</height>
@@ -531,7 +519,7 @@
                 <texture>$VAR[Overlay]</texture>
                 <aspectratio aligny="center">keep</aspectratio>
             </control>
-            <control type="label" description="l2">
+            <control type="label">
                 <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
                 <posx>30r</posx>
                 <height>71</height>
@@ -565,7 +553,7 @@
                 <colordiffuse>aaffffff</colordiffuse>
                 <aspectratio aligny="center">keep</aspectratio>
             </control>
-            <control type="label" description="l2">
+            <control type="label">
                 <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
                 <posx>30r</posx>
                 <height>71</height>
@@ -594,10 +582,10 @@
         <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
     </include>
     <include name="9000GrouplistParameters">
-        <control type="button" id="2" description="View as">
+        <control type="button" id="2">
             <include>LeftMenuButton</include>
         </control>
-        <control type="radiobutton" id="9156" description="View 53 Banners">
+        <control type="radiobutton" id="9156">
             <visible>Control.IsVisible(53) + [Container.Content(TVShows)|Container.Content(movies)]</visible>
             <font>LeftMenuSubButtonFont</font>
             <textwidth>450</textwidth>
@@ -606,7 +594,7 @@
             <selected>Skin.HasSetting(53_UseBanners)</selected>
             <label>$LOCALIZE[31992]</label>
         </control>
-        <control type="radiobutton" id="9157" description="View 53 Bigger">
+        <control type="radiobutton" id="9157">
             <visible>Control.IsVisible(53)+!Skin.HasSetting(53_UseBanners)+!Container.Content(episodes)</visible>
             <font>LeftMenuSubButtonFont</font>
             <textwidth>450</textwidth>
@@ -615,7 +603,7 @@
             <selected>Skin.HasSetting(53_BigGrid)</selected>
             <label>$LOCALIZE[538]</label>
         </control>
-        <control type="radiobutton" id="9160" description="View 55 Banners">
+        <control type="radiobutton" id="9160">
             <visible>Control.IsVisible(55) + Container.Content(TVShows)</visible>
             <font>LeftMenuSubButtonFont</font>
             <textwidth>450</textwidth>
@@ -624,7 +612,7 @@
             <selected>Skin.HasSetting(55_UseBanners)</selected>
             <label>$LOCALIZE[31992]</label>
         </control>
-        <control type="radiobutton" id="9162" description="View 57 Enable gallery for EPISODES">
+        <control type="radiobutton" id="9162">
             <visible>Control.IsVisible(57) + container.content(episodes)</visible>
             <font>LeftMenuSubButtonFont</font>
             <textwidth>450</textwidth>
@@ -633,7 +621,7 @@
             <selected>Skin.HasSetting(Episodes_Gallery)</selected>
             <label>$LOCALIZE[31970]</label>
         </control>
-        <control type="radiobutton" id="9165" description="View 58 Enable gallery for MUSIC">
+        <control type="radiobutton" id="9165">
             <visible>Control.IsVisible(58) + ![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(tvshows) | container.content(seasons)|container.content(episodes)]</visible>
             <font>LeftMenuSubButtonFont</font>
             <textwidth>450</textwidth>
@@ -642,7 +630,7 @@
             <selected>Skin.HasSetting(Music_Gallery)</selected>
             <label>$LOCALIZE[31970]</label>
         </control>
-        <control type="radiobutton" id="9168" description="View 59 Enable gallery for POSTERS">
+        <control type="radiobutton" id="9168">
             <visible>Control.IsVisible(59) + [[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(tvshows) | container.content(seasons)]</visible>
             <font>LeftMenuSubButtonFont</font>
             <textwidth>450</textwidth>
@@ -677,7 +665,7 @@
         <include>KeybaordAltTextureFocus</include>
         <alttexturenofocus border="27">buttons/bg_button_nofocus.png</alttexturenofocus>
     </include>
-    <include name="List_9009_Commons" description="Video Info metadata container">
+    <include name="List_9009_Commons">
         <posx>0</posx>
         <posy>0</posy>
         <width>1131</width>
@@ -695,7 +683,7 @@
                 <width>1131</width>
                 <texture border="3">list/bg_facade_nofocus.png</texture>
             </control>
-            <control type="label" description="Label2">
+            <control type="label">
                 <posx>TextMargin</posx>
                 <posy>2</posy>
                 <height>28</height>
@@ -704,7 +692,7 @@
                 <textcolor>SublistFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <posx>TextMargin</posx>
                 <posy>26</posy>
                 <height>42</height>
@@ -722,7 +710,7 @@
                 <width>1131</width>
                 <include>FacadeFocus</include>
             </control>
-            <control type="label" description="Label2">
+            <control type="label">
                 <posx>TextMargin</posx>
                 <posy>2</posy>
                 <height>28</height>
@@ -731,7 +719,7 @@
                 <textcolor>SublistFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <posx>TextMargin</posx>
                 <posy>26</posy>
                 <height>42</height>
@@ -747,7 +735,7 @@
         <animation effect="slide" start="-10,-10" end="20,20" time="7000" tween="cubic" easing="inout" pulse="true" condition="Skin.HasSetting(KenBurnsEffect)">Conditional</animation>
     </include>
     <include name="Fanart_Art">
-        <control type="multiimage" description="FA fullscreen">
+        <control type="multiimage">
             <include>KenBurns</include>
             <posx>0</posx>
             <posy>0</posy>
@@ -759,7 +747,7 @@
             <aspectratio aligny="top">scale</aspectratio>
             <imagepath background="true">$VAR[Fanart.Art]</imagepath>
         </control>
-        <control type="multiimage" description="Extra FA fullscreen">
+        <control type="multiimage">
             <visible>Skin.HasSetting(EnableExtraFanart)</visible>
             <include>KenBurns</include>
             <posx>0</posx>
@@ -775,14 +763,14 @@
     </include>
     <include name="Home.Main.Menu.Items">
         <include condition="Skin.HasSetting(plexbmc)">Plexbmc.Items</include>
-        <item id="21" description="Custom1">
+        <item id="21">
             <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.1.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.1.Path)]</onclick>
         </item>
-        <item id="1" description="Pictures">
+        <item id="1">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Pictures.Hide)</visible>
             <label>$LOCALIZE[1]</label>
@@ -790,28 +778,28 @@
             <icon fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Icon)]</icon>
             <onclick>ActivateWindow(Pictures,root)</onclick>
         </item>
-        <item id="22" description="Custom2">
+        <item id="22">
             <visible>!IsEmpty(Skin.String(CustomHome.2.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.2.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.2.Path)]</onclick>
         </item>
-        <item id="2" description="Addons">
+        <item id="2">
             <visible>!Skin.HasSetting(Addons.Hide)</visible>
             <label>$LOCALIZE[24001]</label>
             <thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Icon)]</icon>
             <onclick>ActivateWindow(1119)</onclick>
         </item>
-        <item id="23" description="Custom3">
+        <item id="23">
             <visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.3.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.3.Path)]</onclick>
         </item>
-        <item id="3" description="Videos">
+        <item id="3">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Videos.Hide)</visible>
             <label>$LOCALIZE[3]</label>
@@ -819,14 +807,14 @@
             <icon fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Icon)]</icon>
             <onclick>ActivateWindow(Videos,root)</onclick>
         </item>
-        <item id="24" description="Custom.4">
+        <item id="24">
             <visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.4.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.4.Path)]</onclick>
         </item>
-        <item id="4" description="MyMovies">
+        <item id="4">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
             <label>$LOCALIZE[20342]</label>
@@ -834,14 +822,14 @@
             <icon fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Icon)]</icon>
             <onclick>$VAR[MovieEntryPoint]</onclick>
         </item>
-        <item id="25" description="Custom.5">
+        <item id="25">
             <visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.5.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.5.Path)]</onclick>
         </item>
-        <item id="5" description="MyTV">
+        <item id="5">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
             <label>$LOCALIZE[20343]</label>
@@ -849,14 +837,14 @@
             <icon fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Icon)]</icon>
             <onclick>ActivateWindow(VideoLibrary,TVShowTitles,return)</onclick>
         </item>
-        <item id="26" description="Custom.6">
+        <item id="26">
             <visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.6.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.6.Path)]</onclick>
         </item>
-        <item id="6" description="Music">
+        <item id="6">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Music.Hide)</visible>
             <label>$LOCALIZE[2]</label>
@@ -866,14 +854,14 @@
             <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,root)</onclick>
             <onclick condition="Library.HasContent(Music) + Skin.HasSetting(ArtistView)">ActivateWindow(MusicLibrary,Artists)</onclick>
         </item>
-        <item id="27" description="Custom.7">
+        <item id="27">
             <visible>!IsEmpty(Skin.String(CustomHome.7.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.7.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.7.Path)]</onclick>
         </item>
-        <item id="13" description="Clips">
+        <item id="13">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>Skin.HasSetting(Clips.Show) + Library.HasContent(MusicVideos)</visible>
             <label>$LOCALIZE[31972]</label>
@@ -882,7 +870,7 @@
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/")</onclick>
             <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/")</onclick>
         </item>
-        <item id="14" description="Concerts">
+        <item id="14">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>Skin.HasSetting(Concerts.Show) + Library.HasContent(MusicVideos)</visible>
             <label>$LOCALIZE[31971]</label>
@@ -890,35 +878,35 @@
             <icon fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Icon)]</icon>
             <onclick>ActivateWindow(VideoLibrary,MusicVideoTitles,return)</onclick>
         </item>
-        <item id="28" description="Custom.8">
+        <item id="28">
             <visible>!IsEmpty(Skin.String(CustomHome.8.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.8.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.8.Path)]</onclick>
         </item>
-        <item id="300" description="PVR">
+        <item id="300">
             <visible>System.GetBool(pvrmanager.enabled)</visible>
             <label>$LOCALIZE[31500]</label>
             <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Icon)]</icon>
             <onclick>ActivateWindowAndFocus(PVR)</onclick>
         </item>
-        <item id="7" description="Favorites">
+        <item id="7">
             <visible>!Skin.HasSetting(Favourites.Hide)</visible>
             <label>$LOCALIZE[1036]</label>
             <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favourites.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favourites.Icon)]</icon>
             <onclick>ActivateWindow(Favourites)</onclick>
         </item>
-        <item id="29" description="Custom.9">
+        <item id="29">
             <visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>
             <label>$INFO[Skin.String(CustomHome.9.Label)]</label>
             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Icon)]</icon>
             <onclick>$INFO[Skin.String(CustomHome.9.Path)]</onclick>
         </item>
-        <item id="8" description="DVD">
+        <item id="8">
             <visible>System.HasMediaDVD + !Skin.HasSetting(DVD.Hide)</visible>
             <label>$LOCALIZE[427]</label>
             <thumb fallback="special://skin/backgrounds/Dvds.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
@@ -926,21 +914,21 @@
             <onclick condition="System.HasMediaDvd">PlayDVD()</onclick>
             <onclick condition="!System.HasMediaDvd">Notification($LOCALIZE[164],$LOCALIZE[219],5,DefaultIconWarning.png)</onclick>
         </item>
-        <item id="15" description="Weather">
+        <item id="15">
             <visible>!Skin.HasSetting(Weather.Hide)</visible>
             <label>$LOCALIZE[8]</label>
             <thumb fallback="special://skin/backgrounds/Weather.jpg">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</thumb>
             <icon fallback="special://skin/backgrounds/Weather.jpg">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</icon>
             <onclick>ActivateWindow(Weather)</onclick>
         </item>
-        <item id="10" description="Settings">
+        <item id="10">
             <visible>!Skin.HasSetting(QuitMenu_Show_Settings)</visible>
             <label>$LOCALIZE[5]</label>
             <thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
             <icon fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Icon)]</icon>
             <onclick>ActivateWindow(Settings)</onclick>
         </item>
-        <item id="11" description="Quit">
+        <item id="11">
             <visible>!Skin.HasSetting(Quit.Hide)</visible>
             <label fallback="13009">$VAR[QuitLabel2]</label>
             <thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
@@ -949,209 +937,209 @@
         </item>
     </include>
     <include name="Home.Submenu.Items">
-        <item id="0" description="Update Library">
+        <item id="0">
             <visible>!Skin.HasSetting(Hide.LibraryUpdate.Button)</visible>
             <visible>Container(300).HasFocus(3) | Container(300).HasFocus(4) | Container(300).HasFocus(5) | Container(300).HasFocus(13) | Container(300).HasFocus(14)</visible>
             <label>$LOCALIZE[653]</label>
             <onclick>UpdateLibrary(video)</onclick>
         </item>
-        <item id="0" description="Update Library">
+        <item id="0">
             <visible>!Skin.HasSetting(Hide.LibraryUpdate.Button)</visible>
             <visible>Container(300).HasFocus(6)</visible>
             <label>$LOCALIZE[653]</label>
             <onclick>UpdateLibrary(music)</onclick>
         </item>
-        <item id="1" description="DVD eject">
+        <item id="1">
             <visible>Container(300).HasFocus(8)</visible>
             <label>$LOCALIZE[13391]</label>
             <onclick>EjectTray()</onclick>
         </item>
-        <item id="2" description="Program apps">
+        <item id="2">
             <visible>Container(300).HasFocus(2) + !Skin.HasSetting(Addons2)</visible>
             <label>$LOCALIZE[0]</label>
             <onclick>XBMC.ActivateWindow(Programs,Addons,return)</onclick>
         </item>
-        <item id="3" description="Video apps">
+        <item id="3">
             <visible>Container(300).HasFocus(2) + !Skin.HasSetting(Addons4)</visible>
             <label>$LOCALIZE[157]</label>
             <onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
         </item>
-        <item id="4" description="Music apps">
+        <item id="4">
             <visible>Container(300).HasFocus(2) + !Skin.HasSetting(Addons5)</visible>
             <label>$LOCALIZE[2]</label>
             <onclick condition="Library.HasContent(Music)">ActivateWindow(MusicLibrary,Addons,return)</onclick>
             <onclick condition="!Library.HasContent(Music)">ActivateWindow(MusicFiles,Addons,return)</onclick>
         </item>
-        <item id="5" description="Picture apps">
+        <item id="5">
             <visible>Container(300).HasFocus(2) + !Skin.HasSetting(Addons3)</visible>
             <label>$LOCALIZE[1]</label>
             <onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
         </item>
-        <item id="501" description="Addon Browser">
+        <item id="501">
             <visible>Container(300).HasFocus(2)</visible>
             <label>$LOCALIZE[10040]</label>
             <onclick>XBMC.ActivateWindow(addonbrowser)</onclick>
         </item>
-        <item id="6" description="MyTV">
+        <item id="6">
             <visible>Container(300).HasFocus(5)</visible>
             <label>$LOCALIZE[136]</label>
             <onclick>ActivateWindow(Videos,playlists,return)</onclick>
         </item>
-        <item id="7" description="RA TV">
+        <item id="7">
             <visible>Container(300).HasFocus(5)</visible>
             <label>$LOCALIZE[575]</label>
             <onclick>ActivateWindow(Videos,"library://video/inprogressshows.xml/",return)</onclick>
         </item>
-        <item id="8" description="RA TV">
+        <item id="8">
             <visible>Container(300).HasFocus(5)</visible>
             <label>$LOCALIZE[31020]</label>
             <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</onclick>
         </item>
-        <item id="9" description="Library">
+        <item id="9">
             <visible>Container(300).HasFocus(5)</visible>
             <label>$LOCALIZE[1024]</label>
             <onclick>ActivateWindow(Videolibrary,root)</onclick>
         </item>
-        <item id="10" description="Search">
+        <item id="10">
             <visible>Container(300).HasFocus(5)</visible>
             <label>$LOCALIZE[137]</label>
             <onclick>ActivateWindow(VideoLibrary)</onclick>
             <onclick>SendClick(8)</onclick>
         </item>
-        <item id="11" description="MyMovies">
+        <item id="11">
             <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies1)</visible>
             <label>$LOCALIZE[136]</label>
             <onclick>ActivateWindow(Videos,playlists,return)</onclick>
         </item>
-        <item id="11" description="MyMovies">
+        <item id="11">
             <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies1)</visible>
             <label>$LOCALIZE[135]</label>
             <onclick>ActivateWindow(Videos,Moviegenres,return)</onclick>
         </item>
-        <item id="12" description="RA Movies">
+        <item id="12">
             <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies2)</visible>
             <label>$LOCALIZE[20434]</label>
             <onclick>ActivateWindow(Videos,Moviesets,return)</onclick>
         </item>
-        <item id="13" description="RA Movies">
+        <item id="13">
             <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies2)</visible>
             <label>$LOCALIZE[31020]</label>
             <onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
         </item>
-        <item id="14" description="RA Movies">
+        <item id="14">
             <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies2)</visible>
             <label>$LOCALIZE[20459]</label>
             <onclick>ActivateWindow(Videos,MovieTags,return)</onclick>
         </item>
-        <item id="15" description="Library">
+        <item id="15">
             <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies4)</visible>
             <label>$LOCALIZE[14022]</label>
             <onclick>ActivateWindow(Videolibrary,root)</onclick>
         </item>
-        <item id="16" description="Search">
+        <item id="16">
             <visible>Container(300).HasFocus(4) + !Skin.HasSetting(Movies5)</visible>
             <label>$LOCALIZE[137]</label>
             <onclick>ActivateWindow(VideoLibrary)</onclick>
             <onclick>SendClick(8)</onclick>
         </item>
-        <item id="17" description="Videos">
+        <item id="17">
             <visible>Container(300).HasFocus(3)</visible>
             <label>$LOCALIZE[136]</label>
             <onclick>ActivateWindow(Videos,playlists,return)</onclick>
         </item>
-        <item id="18" description="Music Videos">
+        <item id="18">
             <visible>Container(300).HasFocus(3) + Library.HasContent(MusicVideos)</visible>
             <label>$LOCALIZE[31971]</label>
             <onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
         </item>
-        <item id="19" description="Files Videos">
+        <item id="19">
             <visible>Container(300).HasFocus(3) + !Skin.HasSetting(Movies4)</visible>
             <label>$LOCALIZE[744]</label>
             <onclick>ActivateWindow(Videos,files,return)</onclick>
         </item>
-        <item id="20" description="Search">
+        <item id="20">
             <visible>Container(300).HasFocus(3) + !Skin.HasSetting(Movies5)</visible>
             <label>$LOCALIZE[137]</label>
             <onclick>ActivateWindow(VideoLibrary)</onclick>
             <onclick>SendClick(8)</onclick>
         </item>
-        <item id="21" description="Music Videos">
+        <item id="21">
             <visible>Container(300).HasFocus(6) + !Skin.HasSetting(Music2) + Library.HasContent(Music)</visible>
             <label>$LOCALIZE[132]</label>
             <onclick>ActivateWindow(MusicLibrary,Albums)</onclick>
         </item>
-        <item id="22" description="Artists">
+        <item id="22">
             <visible>Container(300).HasFocus(6) + !Skin.HasSetting(Music1) + Library.HasContent(Music)</visible>
             <label>$LOCALIZE[133]</label>
             <onclick>ActivateWindow(MusicLibrary,Artists)</onclick>
         </item>
-        <item id="23" description="Top 100">
+        <item id="23">
             <visible>Container(300).HasFocus(6) + !Skin.HasSetting(Music1) + Library.HasContent(Music)</visible>
             <label>$LOCALIZE[271]</label>
             <onclick>ActivateWindow(MusicLibrary,top100,return)</onclick>
         </item>
-        <item id="23" description="Music Videos">
+        <item id="23">
             <visible>Container(300).HasFocus(6) + Library.HasContent(MusicVideos)</visible>
             <label>$LOCALIZE[31972]</label>
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/")</onclick>
             <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/")</onclick>
         </item>
-        <item id="24" description="Recently added">
+        <item id="24">
             <visible>Container(300).HasFocus(6) + !Skin.HasSetting(Music1) + Library.HasContent(Music)</visible>
             <label>$LOCALIZE[31020]</label>
             <onclick>ActivateWindow(MusicLibrary,recentlyaddedalbums,return)</onclick>
         </item>
-        <item id="25" description="Files">
+        <item id="25">
             <visible>Container(300).HasFocus(6) + !Skin.HasSetting(Music4)</visible>
             <label>$LOCALIZE[744]</label>
             <onclick>ActivateWindow(MusicFiles,root)</onclick>
         </item>
-        <item id="26" description="Search">
+        <item id="26">
             <visible>Container(300).HasFocus(6) + !Skin.HasSetting(Music5) + Library.HasContent(Music)</visible>
             <label>$LOCALIZE[137]</label>
             <onclick>ActivateWindow(MusicLibrary,root)</onclick>
             <onclick>SendClick(8)</onclick>
         </item>
-        <item id="27" description="Master mode button">
+        <item id="27">
             <visible>Container(300).HasFocus(8)</visible>
             <visible>System.HasLocks + System.IsMaster</visible>
             <label>$LOCALIZE[12332]</label>
             <onclick>xbmc.mastermode</onclick>
         </item>
-        <item id="28" description="Master mode button">
+        <item id="28">
             <visible>Container(300).HasFocus(8)</visible>
             <visible>System.HasLocks + !System.IsMaster</visible>
             <label>$LOCALIZE[12333]</label>
             <onclick>xbmc.mastermode</onclick>
         </item>
-        <item id="29" description="Concerts artists">
+        <item id="29">
             <visible>Container(300).HasFocus(14)</visible>
             <label>$LOCALIZE[133]</label>
             <onclick>ActivateWindow(Videos,MusicVideoArtists,return)</onclick>
         </item>
-        <item id="29" description="Recent concerts">
+        <item id="29">
             <visible>Container(300).HasFocus(14)</visible>
             <label>$LOCALIZE[31020]</label>
             <onclick>ActivateWindow(Videos,RecentlyAddedMusicVideos,return)</onclick>
         </item>
-        <item id="29" description="Concerts genres">
+        <item id="29">
             <visible>Container(300).HasFocus(14)</visible>
             <label>$LOCALIZE[135]</label>
             <onclick>ActivateWindow(Videos,MusicVideoGenres,return)</onclick>
         </item>
-        <item id="30" description="Clips albums">
+        <item id="30">
             <visible>Container(300).HasFocus(13)</visible>
             <label>$LOCALIZE[132]</label>
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/5")</onclick>
             <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/5")</onclick>
         </item>
-        <item id="30" description="Clips artists">
+        <item id="30">
             <visible>Container(300).HasFocus(13)</visible>
             <label>$LOCALIZE[133]</label>
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/4")</onclick>
             <onclick condition="!Library.HasContent(music)">ActivateWindow(10502,"videodb://musicvideos/4")</onclick>
         </item>
-        <item id="30" description="Clips genres">
+        <item id="30">
             <visible>Container(300).HasFocus(13)</visible>
             <label>$LOCALIZE[135]</label>
             <onclick condition="Library.HasContent(music)">ActivateWindow(10501,"videodb://musicvideos/1")</onclick>
@@ -1187,42 +1175,42 @@
             <label>$LOCALIZE[19069]</label>
             <onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
         </item>
-        <item id="90148" description="Skin Settings">
+        <item id="90148">
             <visible>Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[20077]</label>
             <onclick>activatewindow(skinsettings)</onclick>
         </item>
-        <item id="90145" description="SysInfo">
+        <item id="90145">
             <visible>Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[130]</label>
             <onclick>activatewindow(systeminfo)</onclick>
         </item>
-        <item id="90146" description="Profiles">
+        <item id="90146">
             <visible>Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[13200]</label>
             <onclick>activatewindow(Profiles)</onclick>
         </item>
-        <item id="90147" description="File Manager">
+        <item id="90147">
             <visible>Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[10003]</label>
             <onclick>activatewindow(filemanager)</onclick>
         </item>
-        <item id="50" description="Reload skin">
+        <item id="50">
             <visible>Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[20183]</label>
             <onclick>XBMC.ReloadSkin()</onclick>
         </item>
-        <item id="90200" description="Weather">
+        <item id="90200">
             <visible>Container(300).HasFocus(15)</visible>
             <label>$INFO[Weather.Location]</label>
             <onclick>activatewindow(weather)</onclick>
         </item>
-        <item id="90201" description="Weather">
+        <item id="90201">
             <visible>Container(300).HasFocus(15)</visible>
             <label>$INFO[Weather.Conditions]</label>
             <onclick>activatewindow(weather)</onclick>
         </item>
-        <item id="90202" description="Weather">
+        <item id="90202">
             <visible>Container(300).HasFocus(15)</visible>
             <label>$INFO[Weather.Temperature]</label>
             <onclick>activatewindow(weather)</onclick>
@@ -1375,7 +1363,7 @@
         <orientation>horizontal</orientation>
         <height>42</height>
     </include>
-    <include name="List_9009_Commons_Actors" description="Video Info metadata container">
+    <include name="List_9009_Commons_Actors">
         <onleft>8</onleft>
         <onright>8</onright>
         <onup>8</onup>
@@ -1426,16 +1414,16 @@
             </control>
         </focusedlayout>
     </include>
-    <include name="SlideView" description="View slides to the left">
+    <include name="SlideView">
         <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="control.hasfocus(60)+[!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))|!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+Skin.HasSetting(SlideListToLeft)">Conditional</animation>
     </include>
-    <include name="HideMediaInfo" description="Hide Media Info">
+    <include name="HideMediaInfo">
         <animation effect="fade" time="150" start="100" end="0" condition="control.hasfocus(60)+[!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))|!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]+Skin.HasSetting(SlideListToLeft)">Conditional</animation>
     </include>
-    <include name="SlideViewUnknown" description="View slides to the left">
+    <include name="SlideViewUnknown">
         <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="![!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))|!IsEmpty(ListItem.Property(Artist_Description))|!IsEmpty(ListItem.Property(Album_Description))|!IsEmpty(ListItem.Plot)]">Conditional</animation>
     </include>
-    <include name="SlideViewScroller" description="Vertical scroller always visible">
+    <include name="SlideViewScroller">
         <showonepage>true</showonepage>
     </include>
     <include name="SlideViewLabelWidth">

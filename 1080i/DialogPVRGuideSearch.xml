@@ -7,7 +7,7 @@
     <include>DialogOpenClose</include>
     <controls>
         <include>DimBG</include>
-        <control type="button" description="Quit">
+        <control type="button">
             <visible>Skin.HasSetting(WindowClosingIcon)</visible>
             <posx>1737</posx>
             <posy>48</posy>
@@ -28,7 +28,7 @@
         <control type="group">
             <posx>178</posx>
             <posy>89</posy>
-            <control type="label" description="Heading">
+            <control type="label">
                 <posx>45</posx>
                 <posy>5</posy>
                 <width>1474</width>
@@ -54,7 +54,7 @@
                 <height>79</height>
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="edit" id="9" description="Search string">
+            <control type="edit" id="9">
                 <posx>TextMargin</posx>
                 <posy>130</posy>
                 <width>1474</width>
@@ -91,7 +91,7 @@
                 <height>568</height>
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
-            <control type="grouplist" description="Left panel">
+            <control type="grouplist">
                 <posx>0</posx>
                 <posy>214</posy>
                 <itemgap>0</itemgap>
@@ -195,7 +195,7 @@
                     <ondown>26</ondown>
                 </control>
             </control>
-            <control type="grouplist" description="Left panel">
+            <control type="grouplist">
                 <posx>782</posx>
                 <posy>214</posy>
                 <itemgap>0</itemgap>
@@ -296,7 +296,6 @@
             <control type="image">
                 <posx>0</posx>
                 <posy>703</posy>
-                <posy>340</posy>
                 <width>1564</width>
                 <height>79</height>
                 <texture>list/bg_facade_nofocus_top.png</texture>

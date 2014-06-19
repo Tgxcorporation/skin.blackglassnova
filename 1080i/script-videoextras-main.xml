@@ -19,9 +19,9 @@
             <include>WindowTitleSub</include>
             <label>$INFO[ListItem.Title]</label>
         </control>
-        <control type="group" description="COMMON">
+        <control type="group">
             <posy>219</posy>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <posx>18</posx>
                 <posy>411</posy>
                 <width>440</width>
@@ -31,7 +31,7 @@
                 <include>ThumbBorder</include>
             </control>
         </control>
-        <control type="group" description="Default View on the right">
+        <control type="group">
             <control type="group">
                 <posx>-780</posx>
                 <control type="image">

@@ -14,8 +14,8 @@
             <include>WindowTitleSub</include>
             <label>$LOCALIZE[342]</label>
         </control>
-        <control type="group" description="MENU">
-            <control type="button" description="Quit">
+        <control type="group">
+            <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1265</posx>
                 <posy>193</posy>
@@ -26,14 +26,14 @@
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
-            <control type="image" description="Menu BG">
+            <control type="image">
                 <posx>605</posx>
                 <posy>197</posy>
                 <width>710</width>
                 <height>686</height>
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
-            <control type="label" description="Heading">
+            <control type="label">
                 <posx>695</posx>
                 <posy>252</posy>
                 <width>530</width>
@@ -50,7 +50,7 @@
                 <height>79</height>
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="grouplist" id="9000" description="Movie entry points">
+            <control type="grouplist" id="9000">
                 <posx>650</posx>
                 <posy>351</posy>
                 <width>620</width>
@@ -62,7 +62,7 @@
                 <itemgap>0</itemgap>
                 <scrolltime>280</scrolltime>
                 <defaultcontrol always="true">701</defaultcontrol>
-                <control type="radiobutton" id="701" description="All Movies">
+                <control type="radiobutton" id="701">
                     <width>620</width>
                     <radioposx>520</radioposx>
                     <textwidth>460</textwidth>
@@ -73,7 +73,7 @@
                     <onclick>Skin.Reset(movie_entries)</onclick>
                     <selected>IsEmpty(Skin.String(movie_entries)) + IsEmpty(Skin.String(CustomMovie.1.Path))</selected>
                 </control>
-                <control type="radiobutton" id="702" description="Playlists">
+                <control type="radiobutton" id="702">
                     <width>620</width>
                     <radioposx>520</radioposx>
                     <textwidth>460</textwidth>
@@ -84,7 +84,7 @@
                     <onclick>Skin.SetString(movie_entries,playlists)</onclick>
                     <selected>StringCompare(Skin.String(movie_entries),playlists)</selected>
                 </control>
-                <control type="radiobutton" id="703" description="Files">
+                <control type="radiobutton" id="703">
                     <width>620</width>
                     <radioposx>520</radioposx>
                     <textwidth>460</textwidth>
@@ -95,7 +95,7 @@
                     <onclick>Skin.SetString(movie_entries,files)</onclick>
                     <selected>StringCompare(Skin.String(movie_entries),files)</selected>
                 </control>
-                <control type="radiobutton" id="704" description="Library">
+                <control type="radiobutton" id="704">
                     <width>620</width>
                     <radioposx>520</radioposx>
                     <textwidth>460</textwidth>
@@ -106,7 +106,7 @@
                     <onclick>Skin.SetString(movie_entries,library)</onclick>
                     <selected>StringCompare(Skin.String(movie_entries),library)</selected>
                 </control>
-                <control type="radiobutton" id="705" description="Custom">
+                <control type="radiobutton" id="705">
                     <visible>IsEmpty(Skin.String(CustomMovie.1.Path))</visible>
                     <width>620</width>
                     <radioposx>520</radioposx>
@@ -117,7 +117,7 @@
                     <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomMovie.1)</onclick>
                     <selected>false</selected>
                 </control>
-                <control type="radiobutton" id="706" description="Custom">
+                <control type="radiobutton" id="706">
                     <visible>!IsEmpty(Skin.String(CustomMovie.1.Path))</visible>
                     <width>620</width>
                     <radioposx>520</radioposx>

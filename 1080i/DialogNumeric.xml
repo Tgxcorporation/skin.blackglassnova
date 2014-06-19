@@ -7,7 +7,7 @@
             <posx>0</posx>
             <posy>-65</posy>
             <include>DimBG</include>
-            <control type="button" description="Quit">
+            <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1337</posx>
                 <posy>276</posy>
@@ -28,7 +28,7 @@
             <control type="group">
                 <posx>528</posx>
                 <posy>317</posy>
-                <control type="label" id="1" description="Heading">
+                <control type="label" id="1">
                     <posx>95</posx>
                     <posy>18</posy>
                     <width>674</width>
@@ -55,7 +55,7 @@
             <control type="group">
                 <posx>150</posx>
                 <posy>150</posy>
-                <control type="label" id="4" description="Edit Text">
+                <control type="label" id="4">
                     <posx>490</posx>
                     <posy>316</posy>
                     <width>945</width>
@@ -177,7 +177,7 @@
                         <ondown>12</ondown>
                         <include>KeyboardButtons</include>
                     </control>
-                    <control type="group" description="Column 2">
+                    <control type="group">
                         <posx>305</posx>
                         <control type="button" id="23">
                             <description>BACKSPACE button</description>
@@ -190,7 +190,7 @@
                             <width>120</width>
                             <include>KeyboardButtons</include>
                         </control>
-                        <control type="image" description="Delete Backspace img">
+                        <control type="image">
                             <posx>9</posx>
                             <posy>2</posy>
                             <width>99</width>
@@ -220,7 +220,7 @@
                             <ondown>21</ondown>
                             <include>KeyboardButtons</include>
                         </control>
-                        <control type="button" id="21" description="DONE button">
+                        <control type="button" id="21">
                             <posx>0</posx>
                             <posy>216</posy>
                             <width>400</width>

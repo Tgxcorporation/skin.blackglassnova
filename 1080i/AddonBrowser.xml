@@ -16,12 +16,12 @@
             <label>$VAR[GlobalSubTitles]</label>
         </control>
         <!-- COMMON -->
-        <control type="group" description="COMMON">
+        <control type="group">
             <visible>[StringCompare(ListItem.Label,..)]|[Control.IsVisible(50)+IsEmpty(ListItem.Property(Addon.Description))]|[control.hasfocus(60)+Skin.HasSetting(SlideListToLeft)+Control.IsVisible(50)]</visible>
             <posx>0</posx>
             <posy>479</posy>
             <include>Icon_Fade</include>
-            <control type="image" description="Thumb">
+            <control type="image">
                 <posx>18</posx>
                 <posy>151</posy>
                 <width>440</width>
@@ -31,7 +31,7 @@
                 <include>ThumbBorder</include>
             </control>
         </control>
-        <control type="group" description="Content">
+        <control type="group">
             <include>SlideView</include>
             <include>HideMediaInfo</include>
             <visible>Control.IsVisible(50)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
@@ -39,7 +39,7 @@
             <control type="group">
                 <posx>0</posx>
                 <posy>260</posy>
-                <control type="image" description="fa overlay">
+                <control type="image">
                     <posx>-795</posx>
                     <posy>90</posy>
                     <width>2058</width>
@@ -61,7 +61,7 @@
                     <height>700</height>
                     <texture>list/bg_facade_vertical.png</texture>
                 </control>
-                <control type="image" description="Thumb">
+                <control type="image">
                     <posx>18</posx>
                     <posy>151</posy>
                     <width>470</width>
@@ -71,10 +71,10 @@
                     <include>ThumbBorder</include>
                 </control>
             </control>
-            <control type="group" description="Media info">
+            <control type="group">
                 <posx>495</posx>
                 <posy>426</posy>
-                <control type="label" description="Title">
+                <control type="label">
                     <posx>TextMargin</posx>
                     <posy>-12</posy>
                     <width>630</width>
@@ -99,7 +99,7 @@
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="label" description="Details">
+                <control type="label">
                     <posx>TextMargin</posx>
                     <posy>73</posy>
                     <width>630</width>
@@ -109,7 +109,7 @@
                     <scroll>false</scroll>
                     <label>$VAR[Details]</label>
                 </control>
-                <control type="textbox" description="Plot51">
+                <control type="textbox">
                     <posx>TextMargin</posx>
                     <posy>157</posy>
                     <width>630</width>
@@ -144,7 +144,7 @@
                 <height>73</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="list" id="50" description="No Thumbs">
+            <control type="list" id="50">
                 <viewtype label="List">list</viewtype>
                 <posx>1260</posx>
                 <posy>426</posy>
@@ -163,7 +163,7 @@
                         <width>1440</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>[StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>25</posx>
                         <height>71</height>
@@ -173,7 +173,7 @@
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>25</posx>
                         <height>42</height>
@@ -183,7 +183,7 @@
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Label2">
+                    <control type="label">
                         <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>25</posx>
                         <posy>39</posy>
@@ -193,7 +193,7 @@
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$VAR[Details]</label>
                     </control>
-                    <control type="label" description="Label2">
+                    <control type="label">
                         <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>630</posx>
                         <posy>39</posy>
@@ -213,7 +213,7 @@
                         <width>1440</width>
                         <include>FacadeFocus</include>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>[StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>25</posx>
                         <height>71</height>
@@ -223,7 +223,7 @@
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Main Label">
+                    <control type="label">
                         <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>25</posx>
                         <height>42</height>
@@ -233,7 +233,7 @@
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
-                    <control type="label" description="Label2">
+                    <control type="label">
                         <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>25</posx>
                         <posy>39</posy>
@@ -243,7 +243,7 @@
                         <textcolor>SublistFocusColor</textcolor>
                         <label>$VAR[Details]</label>
                     </control>
-                    <control type="label" description="Label2">
+                    <control type="label">
                         <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
                         <posx>630</posx>
                         <posy>39</posy>
@@ -273,7 +273,7 @@
             <onright>9000</onright>
         </control>
         <!-- SIDE MENU -->
-        <control type="group" description="Side menu 9000 group">
+        <control type="group">
             <include>LeftMenu</include>
             <control type="label">
                 <include>LeftMenuTitleLabel</include>

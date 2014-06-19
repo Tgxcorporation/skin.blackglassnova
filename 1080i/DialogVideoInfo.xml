@@ -23,7 +23,7 @@
         </control>
         <control type="group">
             <posy>-4</posy>
-            <control type="button" description="Quit">
+            <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1737</posx>
                 <posy>21</posy>
@@ -34,14 +34,14 @@
                 <onclick>back</onclick>
                 <label>-</label>
             </control>
-            <control type="image" description="Menu BG">
+            <control type="image">
                 <posx>133</posx>
                 <posy>25</posy>
                 <width>1654</width>
                 <height>1036</height>
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <posx>223</posx>
                 <posy>104</posy>
                 <width>1474</width>
@@ -111,7 +111,7 @@
                         <include>Animation_ViewsCDart</include>
                     </control>
                 </control>
-                <control type="image" description="Thumb">
+                <control type="image">
                     <visible>![Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)| Control.HasFocus(9014)]</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>1142</posx>
@@ -122,7 +122,7 @@
                     <include>PosterThumb</include>
                     <include>ThumbBorder</include>
                 </control>
-                <control type="image" description="Actor">
+                <control type="image">
                     <visible>[Control.HasFocus(50)| Control.HasFocus(61)| Control.HasFocus(9012)| Control.HasFocus(9014)]</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>1142</posx>
@@ -133,7 +133,7 @@
                     <include>ThumbBorder</include>
                     <aspectratio>keep</aspectratio>
                 </control>
-                <control type="textbox" description="Plot">
+                <control type="textbox">
                     <visible>[Control.HasFocus(9013)]</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>TextMargin</posx>
@@ -155,7 +155,7 @@
                         <height>8</height>
                         <texture>list/bg_facade_separator.png</texture>
                     </control>
-                    <control type="grouplist" description="Flags">
+                    <control type="grouplist">
                         <visible>!IsEmpty(ListItem.VideoResolution)</visible>
                         <posx>45</posx>
                         <posy>753</posy>
@@ -270,7 +270,7 @@
                             </item>
                         </content>
                     </control>
-                    <control type="group" description="TV Shows">
+                    <control type="group">
                         <visible>Container.Content(TVShows)</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <control type="panel" id="9009">
@@ -315,7 +315,7 @@
                             </content>
                         </control>
                     </control>
-                    <control type="group" description="Episodes">
+                    <control type="group">
                         <visible>container.content(episodes)</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <control type="panel" id="9009">
@@ -420,7 +420,7 @@
                             </content>
                         </control>
                     </control>
-                    <control type="group" description="Music Videos">
+                    <control type="group">
                         <visible>SubString(Container.FolderPath,videodb://musicvideos,left)</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <control type="panel" id="9009">
@@ -529,14 +529,14 @@
                 <onback>50</onback>
                 <itemgap>0</itemgap>
                 <pagecontrol>62</pagecontrol>
-                <control type="togglebutton" id="8" description="Play/browse to Show">
+                <control type="togglebutton" id="8">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[208]</label>
                     <altlabel>$LOCALIZE[1024]</altlabel>
                     <usealttexture>Container.Content(TVShows)</usealttexture>
                     <onleft>9009</onleft>
                 </control>
-                <control type="button" id="299" description="Cinema">
+                <control type="button" id="299">
                     <visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience)</visible>
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[31005]</label>
@@ -545,61 +545,61 @@
                     <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
                     <onleft>9009</onleft>
                 </control>
-                <control type="button" id="11" description="Trailer">
+                <control type="button" id="11">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[20410]</label>
                     <visible>!IsEmpty(ListItem.Trailer)</visible>
                     <onleft>9009</onleft>
                 </control>
-                <control type="togglebutton" id="9013" description="Plot">
+                <control type="togglebutton" id="9013">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[207]</label>
                 </control>
-                <control type="togglebutton" id="9012" description="Actors">
+                <control type="togglebutton" id="9012">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[344]</label>
                     <onclick>Control.SetFocus(50)</onclick>
                     <onleft>Control.SetFocus(50)</onleft>
                 </control>
-                <control type="button" id="9014" description="Actor Info">
+                <control type="button" id="9014">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[31015]</label>
                     <visible>System.HasAddon(script.metadata.actors)</visible>
                     <onclick>RunScript(script.metadata.actors,$INFO[Container(50).Listitem.Label])</onclick>
                     <onleft>Control.SetFocus(50)</onleft>
                 </control>
-                <control type="button" id="9015" description="Director Info">
+                <control type="button" id="9015">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[31016]</label>
                     <visible>System.HasAddon(script.metadata.actors)+!IsEmpty(ListItem.Director)</visible>
                     <onclick>RunScript(script.metadata.actors,$INFO[ListItem.Director])</onclick>
                     <onleft>9009</onleft>
                 </control>
-                <control type="button" id="9016" description="Writer Info">
+                <control type="button" id="9016">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[31017]</label>
                     <visible>System.HasAddon(script.metadata.actors)+!IsEmpty(ListItem.Writer)</visible>
                     <onclick>RunScript(script.metadata.actors,$INFO[ListItem.Writer])</onclick>
                     <onleft>9009</onleft>
                 </control>
-                <control type="button" id="6" description="Refresh">
+                <control type="button" id="6">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[184]</label>
                     <onleft>9009</onleft>
                 </control>
-                <control type="togglebutton" id="10" description="Get Art">
+                <control type="togglebutton" id="10">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[13511]</label>
                     <onleft>9009</onleft>
                 </control>
-                <control type="button" id="105" description="Extras">
+                <control type="button" id="105">
                     <include>RightDialogButton</include>
-                    <label>Extras</label>
+                    <label>$LOCALIZE[31509]</label>
                     <onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
                     <visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
                     <onleft>9009</onleft>
                 </control>
-                <control type="togglebutton" id="100" description="TvTunes">
+                <control type="togglebutton" id="100">
                     <visible>Container.Content(TVShows) + System.HasAddon(script.tvtunes) + Skin.HasSetting(TVTunes.Enabled)</visible>
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[31956]</label>

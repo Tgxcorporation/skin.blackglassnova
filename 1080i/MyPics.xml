@@ -15,7 +15,7 @@
             <include>WindowTitleSub</include>
             <label>$VAR[GlobalSubTitles]</label>
         </control>
-        <control type="group" description="Fix for Plexbmc">
+        <control type="group">
             <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
             <include>View_50</include>
             <include>View_51_Panel</include>
@@ -32,12 +32,12 @@
             <include>Addons_Info_54</include>
             <include>Addons_Info_55</include>
             <!-- COMMON -->
-            <control type="group" description="COMMON">
+            <control type="group">
                 <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(5050)|Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)|Control.IsVisible(56)]+![!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]]</visible>
                 <posx>0</posx>
                 <posy>479</posy>
                 <include>Icon_Fade</include>
-                <control type="image" description="Thumb">
+                <control type="image">
                     <posx>18</posx>
                     <posy>151</posy>
                     <width>440</width>
@@ -49,7 +49,7 @@
             </control>
         </control>
         <!-- SIDE MENU -->
-        <control type="group" description="Side menu 9000 group">
+        <control type="group">
             <include>LeftMenu</include>
             <control type="label">
                 <include>LeftMenuTitleLabel</include>
@@ -63,10 +63,10 @@
                 <ondown>9000</ondown>
                 <onback>50</onback>
                 <include>9000GrouplistParameters</include>
-                <control type="button" id="3" description="Sort">
+                <control type="button" id="3">
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="togglebutton" id="4" description="SortMode">
+                <control type="togglebutton" id="4">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[21429]: $LOCALIZE[21430]</label>
                     <altlabel>$LOCALIZE[21429]: $LOCALIZE[21431]</altlabel>
@@ -83,17 +83,17 @@
                     <height>2</height>
                     <texture border="0,0,0,2">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="button" id="6" description="Slideshow">
+                <control type="button" id="6">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[108]</label>
                     <visible>!ListItem.IsFolder</visible>
                 </control>
-                <control type="button" id="7" description="Recursive slideshow">
+                <control type="button" id="7">
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[13318]</label>
                     <visible>ListItem.IsFolder</visible>
                 </control>
-                <control type="radiobutton" id="9" description="Randomize">
+                <control type="radiobutton" id="9">
                     <textwidth>450</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[13319]</label>
@@ -113,7 +113,7 @@
                     <onclick>right</onclick>
                     <onclick>Filter</onclick>
                 </control>
-                <control type="button" id="699" description="Playing">
+                <control type="button" id="699">
                     <enable>Player.HasMedia</enable>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[16003]</label>

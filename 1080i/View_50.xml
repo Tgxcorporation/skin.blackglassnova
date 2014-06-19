@@ -9,7 +9,7 @@
                 <width>1440</width>
                 <texture border="3">list/bg_facade_nofocus.png</texture>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <visible>StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>71</height>
@@ -18,7 +18,7 @@
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>42</height>
@@ -27,7 +27,7 @@
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="label" description="Label2">
+            <control type="label">
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <posy>39</posy>
@@ -46,7 +46,7 @@
                 <width>1440</width>
                 <include>FacadeFocus</include>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <visible>StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>71</height>
@@ -55,7 +55,7 @@
                 <textcolor>ListFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>42</height>
@@ -64,7 +64,7 @@
                 <textcolor>ListFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="label" description="Label2">
+            <control type="label">
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <posy>39</posy>
@@ -83,7 +83,7 @@
                 <width>1440</width>
                 <texture border="3">list/bg_facade_nofocus.png</texture>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <visible>StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>71</height>
@@ -93,7 +93,7 @@
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>42</height>
@@ -103,7 +103,7 @@
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="label" description="Label2">
+            <control type="label">
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <posy>39</posy>
@@ -124,7 +124,7 @@
                 <width>1440</width>
                 <include>FacadeFocus</include>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <visible>StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>71</height>
@@ -134,7 +134,7 @@
                 <textcolor>ListFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="label" description="Main Label">
+            <control type="label">
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>42</height>
@@ -144,7 +144,7 @@
                 <textcolor>ListFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
-            <control type="label" description="Label2">
+            <control type="label">
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <posy>39</posy>
@@ -159,7 +159,7 @@
         </focusedlayout>
     </include>
     <include name="View_50">
-        <control type="group" description="Default View on the right">
+        <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
             <control type="group">

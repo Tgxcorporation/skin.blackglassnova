@@ -11,7 +11,7 @@
         <include>TopBar</include>
         <control type="group">
             <posy>-129</posy>
-            <control type="button" id="9000" description="Quit">
+            <control type="button" id="9000">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1637</posx>
                 <posy>240</posy>
@@ -36,7 +36,7 @@
                 <height>90</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="label" description="Upper Path Name Label">
+            <control type="label">
                 <posx>323</posx>
                 <posy>323</posy>
                 <height>36</height>
