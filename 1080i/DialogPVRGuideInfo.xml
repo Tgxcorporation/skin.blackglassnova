@@ -5,6 +5,7 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1637</posx>
@@ -91,9 +92,18 @@
                         <posy>278</posy>
                         <width>1274</width>
                         <height>210</height>
-                        <pagecontrol>-</pagecontrol>
                         <textcolor>AlternateColor</textcolor>
                         <label>$INFO[ListItem.Plot]</label>
+                        <pagecontrol>6060</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6060">
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>1333</posx>
+                        <posy>278</posy>
+                        <height>210</height>
+                        <include>VerticalScroller</include>
+                        <onleft>5</onleft>
+                        <onright>5</onright>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -111,6 +121,10 @@
                         <aligny>bottom</aligny>
                         <align>center</align>
                         <orientation>horizontal</orientation>
+                        <onup>6060</onup>
+                        <ondown>6060</ondown>
+                        <onleft>6060</onleft>
+                        <onright>6060</onright>
                         <control type="button" id="5">
                             <label>$LOCALIZE[19165]</label>
                         </control>

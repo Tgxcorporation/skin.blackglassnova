@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="false">602</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
     <zorder>2</zorder>
     <include>OSDFade</include>
     <controls>

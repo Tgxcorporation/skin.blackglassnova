@@ -1,116 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <include name="FooterInfo">
-        <control type="image">
-            <visible>Control.IsVisible(53)</visible>
-            <posx>-100</posx>
-            <posy>750</posy>
-            <width>2400</width>
-            <height>330</height>
-            <texture>common/HomeGradient.png</texture>
-        </control>
+    <include name="InfoBackground">
+        <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
         <control type="group">
-            <visible>![StringCompare(ListItem.Label,..)]</visible>
-            <animation effect="slide" time="0" start="0,0" end="0,40" condition="[IsEmpty(control.getlabel(45742))]">Conditional</animation>
-            <control type="label">
-                <posx>52</posx>
-                <posy>933</posy>
-                <width>1830</width>
-                <height>45</height>
-                <align>center</align>
-                <font>InfoTitleFont</font>
-                <textcolor>MainColor</textcolor>
-                <shadowcolor>ShadowColor</shadowcolor>
-                <label>$INFO[ListItem.Label]</label>
+            <include condition="!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
+            <control type="image">
+                <visible>Control.hasfocus(505050)</visible>
+                <posx>0</posx>
+                <posy>750</posy>
+                <width>1920</width>
+                <height>330</height>
+                <texture border="10" flipy="true">common/basichome_upper_gradient.png</texture>
             </control>
-            <control type="label" id="45742">
-                <visible>![Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]+!Control.isvisible(45741)</visible>
-                <posx>407</posx>
-                <posy>1010</posy>
-                <height>33</height>
-                <width>1120</width>
-                <align>center</align>
-                <font>InfoDetailsFont</font>
-                <textcolor>AlternateColor</textcolor>
-                <scroll>false</scroll>
-                <label>$VAR[Fanart_Details]</label>
+            <control type="image">
+                <visible>!Control.hasfocus(505050)+[Control.IsVisible(53)|control.IsVisible(57)|control.IsVisible(58)|control.IsVisible(59)]</visible>
+                <posx>0</posx>
+                <posy>750</posy>
+                <width>1920</width>
+                <height>330</height>
+                <texture border="10">common/HomeGradient.png</texture>
             </control>
-            <control type="label">
-                <visible>![Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]+Control.isvisible(45741)</visible>
-                <posx>52</posx>
-                <posy>1010</posy>
-                <height>33</height>
-                <width>1120</width>
-                <align>left</align>
-                <font>InfoDetailsFont</font>
-                <textcolor>AlternateColor</textcolor>
-                <scroll>false</scroll>
-                <label>$VAR[Fanart_Details]</label>
-            </control>
-            <control type="group" id="45741">
-                <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible>
-                <control type="image">
-                    <posx>1715</posx>
-                    <posy>1009</posy>
-                    <align>right</align>
-                    <include>Stars</include>
-                </control>
+        </control>
+    </include>
+    <include name="FooterInfo">
+        <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
+            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]]+!Skin.HasSetting(DisableSlidingAnimations)+Skin.HasSetting(BlackGlassMode)">conditional</animation>
+            <include>Icon_Fade</include>
+            <visible>Control.hasfocus(505050)|control.hasfocus(57)|control.hasfocus(58)|control.hasfocus(59)|control.hasfocus(53)|[[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]]|[control.hasfocus(60)+[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]]</visible>
+            <control type="group">
+                <visible>![StringCompare(ListItem.Label,..)]</visible>
+                <animation effect="slide" time="0" start="0,0" end="0,40" condition="[IsEmpty(control.getlabel(45742))]">Conditional</animation>
                 <control type="label">
-                    <posx>1690</posx>
+                    <posx>52</posx>
+                    <posy>933</posy>
+                    <width>1830</width>
+                    <height>45</height>
+                    <align>center</align>
+                    <font>InfoTitleFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <shadowcolor>ShadowColor</shadowcolor>
+                    <label>$INFO[ListItem.Label]</label>
+                </control>
+                <control type="label" id="45742">
+                    <visible>![Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]+!Control.isvisible(45741)</visible>
+                    <posx>407</posx>
                     <posy>1010</posy>
                     <height>33</height>
                     <width>1120</width>
-                    <align>right</align>
+                    <align>center</align>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
                     <scroll>false</scroll>
-                    <label fallback="416">$INFO[ListItem.Rating]</label>
+                    <label>$VAR[Fanart_Details]</label>
                 </control>
-            </control>
-            <control type="grouplist">
-                <visible>[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]+!IsEmpty(ListItem.VideoResolution)</visible>
-                <posx>52</posx>
-                <posy>998</posy>
-                <width>1830</width>
-                <height>90</height>
-                <itemgap>10</itemgap>
-                <orientation>horizontal</orientation>
-                <align>center</align>
-                <aligny>center</aligny>
-                <include>CodecsView</include>
-            </control>
-            <control type="label">
-                <visible>[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]</visible>
-                <posx>52</posx>
-                <posy>1010</posy>
-                <height>33</height>
-                <width>1120</width>
-                <align>left</align>
-                <font>InfoDetailsFont</font>
-                <textcolor>AlternateColor</textcolor>
-                <scroll>false</scroll>
-                <label>$VAR[Fanart_Details]</label>
+                <control type="label">
+                    <visible>![Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]+Control.isvisible(45741)</visible>
+                    <posx>52</posx>
+                    <posy>1010</posy>
+                    <height>33</height>
+                    <width>1120</width>
+                    <align>left</align>
+                    <font>InfoDetailsFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <scroll>false</scroll>
+                    <label>$VAR[Fanart_Details]</label>
+                </control>
+                <control type="group" id="45741">
+                    <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible>
+                    <control type="image">
+                        <posx>1715</posx>
+                        <posy>1009</posy>
+                        <align>right</align>
+                        <include>Stars</include>
+                    </control>
+                    <control type="label">
+                        <posx>1690</posx>
+                        <posy>1010</posy>
+                        <height>33</height>
+                        <width>1120</width>
+                        <align>right</align>
+                        <font>InfoDetailsFont</font>
+                        <textcolor>AlternateColor</textcolor>
+                        <scroll>false</scroll>
+                        <label fallback="416">$INFO[ListItem.Rating]</label>
+                    </control>
+                </control>
+                <control type="grouplist">
+                    <visible>[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]+!IsEmpty(ListItem.VideoResolution)</visible>
+                    <posx>52</posx>
+                    <posy>998</posy>
+                    <width>1830</width>
+                    <height>90</height>
+                    <itemgap>10</itemgap>
+                    <orientation>horizontal</orientation>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <include>CodecsView</include>
+                </control>
+                <control type="label">
+                    <visible>[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]</visible>
+                    <posx>52</posx>
+                    <posy>1010</posy>
+                    <height>33</height>
+                    <width>1120</width>
+                    <align>left</align>
+                    <font>InfoDetailsFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <scroll>false</scroll>
+                    <label>$VAR[Fanart_Details]</label>
+                </control>
             </control>
         </control>
     </include>
     <include name="View_59_Showcase">
-        <control type="image">
-            <include>Icon_Fade</include>
-            <visible>!Control.hasfocus(7000)+[Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59)]</visible>
-            <posx>-100</posx>
-            <posy>750</posy>
-            <width>2400</width>
-            <height>330</height>
-            <texture>common/HomeGradient.png</texture>
-        </control>
         <control type="group">
             <visible>Control.IsVisible(59)</visible>
+            <include>Icon_Fade</include>
+            <control type="image">
+                <include>Icon_Fade</include>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
+                <posx>-100</posx>
+                <posy>569</posy>
+                <width>2258</width>
+                <height>900</height>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
+            </control>
             <control type="fixedlist" id="59">
                 <visible>[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)</visible>
-                <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
-                <posx>-242</posx>
+                <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)|Control.hasfocus(6069)">Conditional</animation>
+                <posx>-510</posx>
                 <posy>366</posy>
-                <width>2360</width>
+                <width>2588</width>
                 <height>650</height>
                 <onleft>59</onleft>
                 <onright>59</onright>
@@ -121,7 +143,7 @@
                 <pagecontrol>60</pagecontrol>
                 <orientation>horizontal</orientation>
                 <focusposition>4</focusposition>
-                <movement>3</movement>
+                <movement>2</movement>
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="out">300</scrolltime>
                 <itemlayout height="550" width="268">
@@ -140,7 +162,7 @@
                             <posy>399</posy>
                             <width>220</width>
                             <height>263</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
+                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                             <colordiffuse>UnfocusedIconColor</colordiffuse>
                         </control>
                         <control type="image">
@@ -189,7 +211,7 @@
                             <posy>399</posy>
                             <width>220</width>
                             <height>263</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
+                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -210,15 +232,23 @@
             </control>
             <control type="group">
                 <visible>Skin.HasSetting(Posters_Gallery)</visible>
-                <visible allowhiddenfocus="true">Control.HasFocus(7000)</visible>
+                <visible allowhiddenfocus="true">Control.HasFocus(7000)|Control.hasfocus(6069)</visible>
                 <include>Icon_Fade</include>
+                <animation effect="slide" start="0,0" end="0,1800" time="0" reversible="true" condition="!Skin.HasSetting(Posters_Gallery)">Conditional</animation>
                 <control type="button" id="7000">
-                    <include>HiddenButton</include>
+                    <posx>100</posx>
+                    <posy>900</posy>
+                    <width>1820</width>
+                    <height>140</height>
+                    <label>-</label>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
                     <onup>59</onup>
-                    <ondown>59</ondown>
+                    <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
+                    <onright condition="Skin.HasSetting(ManualScroll)">6069</onright>
+                    <onright condition="!Skin.HasSetting(ManualScroll)">Control.Move(59,1)</onright>
                     <onclick>Control.SetFocus(59)</onclick>
                     <onleft>Control.Move(59,-1)</onleft>
-                    <onright>Control.Move(59,1)</onright>
                 </control>
                 <control type="group">
                     <!-- CLEAR ART -->
@@ -239,15 +269,6 @@
                         <texture>$INFO[ListItem.Art(clearart)]</texture>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
                     </control>
-                </control>
-                <control type="image">
-                    <include>Icon_Fade</include>
-                    <visible>Control.hasfocus(7000)+[Control.IsVisible(59)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
-                    <posx>-100</posx>
-                    <posy>569</posy>
-                    <width>2258</width>
-                    <height>900</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
                 </control>
                 <control type="group">
                     <posy>219</posy>
@@ -378,6 +399,19 @@
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
+                        <pagecontrol>6069</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6069">
+                        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
+                        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>1555</posx>
+                        <posy>230</posy>
+                        <height>166</height>
+                        <showonepage>true</showonepage>
+                        <include>VerticalScroller</include>
+                        <onleft>7000</onleft>
+                        <onright>Control.Move(59,1)</onright>
                     </control>
                 </control>
             </control>
@@ -389,17 +423,28 @@
                 <width>1830</width>
                 <include>HorizontalScroller</include>
                 <onup>59</onup>
-                <onright>noop</onright>
+                <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
             </control>
         </control>
         <control type="group">
             <visible>Control.IsVisible(58)</visible>
+            <include>Icon_Fade</include>
+            <control type="image">
+                <include>Icon_Fade</include>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
+                <posx>-100</posx>
+                <posy>629</posy>
+                <width>2258</width>
+                <height>900</height>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
+            </control>
             <control type="fixedlist" id="58">
                 <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
-                <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
-                <posx>-342</posx>
+                <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)|Control.hasfocus(6069)">Conditional</animation>
+                <posx>-717</posx>
                 <posy>386</posy>
-                <width>2255</width>
+                <width>2630</width>
                 <height>653</height>
                 <onleft>58</onleft>
                 <onright>58</onright>
@@ -410,7 +455,7 @@
                 <pagecontrol>60</pagecontrol>
                 <orientation>horizontal</orientation>
                 <focusposition>3</focusposition>
-                <movement>2</movement>
+                <movement>1</movement>
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="out">300</scrolltime>
                 <itemlayout height="553" width="375">
@@ -430,7 +475,7 @@
                             <posy>374</posy>
                             <width>310</width>
                             <height>270</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
+                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                             <colordiffuse>UnfocusedIconColor</colordiffuse>
                         </control>
                         <control type="image">
@@ -473,7 +518,7 @@
                             <posy>374</posy>
                             <width>310</width>
                             <height>270</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
+                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -487,15 +532,23 @@
             </control>
             <control type="group">
                 <visible>Skin.HasSetting(Music_Gallery)</visible>
-                <visible allowhiddenfocus="true">Control.HasFocus(7000)</visible>
+                <visible allowhiddenfocus="true">Control.HasFocus(7000)|Control.hasfocus(6069)</visible>
                 <include>Icon_Fade</include>
+                <animation effect="slide" start="0,0" end="0,1800" time="0" reversible="true" condition="!Skin.HasSetting(Posters_Gallery)">Conditional</animation>
                 <control type="button" id="7000">
-                    <include>HiddenButton</include>
+                    <posx>100</posx>
+                    <posy>900</posy>
+                    <width>1820</width>
+                    <height>140</height>
+                    <label>-</label>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
                     <onup>58</onup>
-                    <ondown>58</ondown>
+                    <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
+                    <onright condition="Skin.HasSetting(ManualScroll)">6069</onright>
+                    <onright condition="!Skin.HasSetting(ManualScroll)">Control.Move(58,1)</onright>
                     <onclick>Control.SetFocus(58)</onclick>
                     <onleft>Control.Move(58,-1)</onleft>
-                    <onright>Control.Move(58,1)</onright>
                 </control>
                 <control type="group">
                     <!-- CLEAR ART -->
@@ -516,15 +569,6 @@
                         <texture>$INFO[ListItem.Art(clearart)]</texture>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
                     </control>
-                </control>
-                <control type="image">
-                    <include>Icon_Fade</include>
-                    <visible>Control.hasfocus(7000)+[Control.IsVisible(58)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
-                    <posx>-100</posx>
-                    <posy>629</posy>
-                    <width>2258</width>
-                    <height>900</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
                 </control>
                 <control type="group">
                     <posy>279</posy>
@@ -631,6 +675,19 @@
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
+                        <pagecontrol>6069</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6069">
+                        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
+                        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>1493</posx>
+                        <posy>157</posy>
+                        <height>166</height>
+                        <showonepage>true</showonepage>
+                        <include>VerticalScroller</include>
+                        <onleft>7000</onleft>
+                        <onright>Control.Move(58,1)</onright>
                     </control>
                 </control>
                 <control type="group">
@@ -663,6 +720,19 @@
                         <font>InfoPlotFont</font>
                         <textcolor>AlternateBrightColor</textcolor>
                         <label>$VAR[Plots]</label>
+                        <pagecontrol>6069</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6069">
+                        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
+                        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>1493</posx>
+                        <posy>84</posy>
+                        <height>250</height>
+                        <showonepage>true</showonepage>
+                        <include>VerticalScroller</include>
+                        <onleft>7000</onleft>
+                        <onright>Control.Move(58,1)</onright>
                     </control>
                 </control>
                 <control type="group">
@@ -713,6 +783,19 @@
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
+                        <pagecontrol>6069</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6069">
+                        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
+                        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>1493</posx>
+                        <posy>157</posy>
+                        <height>166</height>
+                        <showonepage>true</showonepage>
+                        <include>VerticalScroller</include>
+                        <onleft>7000</onleft>
+                        <onright>Control.Move(58,1)</onright>
                     </control>
                 </control>
             </control>
@@ -724,18 +807,29 @@
                 <width>1830</width>
                 <include>HorizontalScroller</include>
                 <onup>58</onup>
-                <onright>noop</onright>
+                <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
             </control>
         </control>
         <control type="group">
             <visible>Control.IsVisible(57)</visible>
+            <include>Icon_Fade</include>
+            <control type="image">
+                <include>Icon_Fade</include>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
+                <posx>-100</posx>
+                <posy>629</posy>
+                <width>2258</width>
+                <height>900</height>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
+            </control>
             <control type="fixedlist" id="57">
                 <visible>container.content(episodes)</visible>
-                <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)">Conditional</animation>
-                <posx>15</posx>
-                <posy>609</posy>
-                <width>1950</width>
-                <height>500</height>
+                <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)|Control.hasfocus(6069)">Conditional</animation>
+                <posx>-357</posx>
+                <posy>386</posy>
+                <width>2355</width>
+                <height>653</height>
                 <onleft>57</onleft>
                 <onright>57</onright>
                 <onup>9000</onup>
@@ -744,88 +838,102 @@
                 <viewtype label="20445">Fanart</viewtype>
                 <pagecontrol>60</pagecontrol>
                 <orientation>horizontal</orientation>
-                <focusposition>1</focusposition>
-                <movement>2</movement>
+                <focusposition>3</focusposition>
+                <movement>1</movement>
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="out">300</scrolltime>
-                <itemlayout height="400" width="474">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>480</width>
-                        <height>294</height>
-                        <aspectratio>scale</aspectratio>
-                        <include>EpisodeThumb</include>
-                        <include>ThumbBorder</include>
-                    </control>
-                    <control type="image">
-                        <posx>27</posx>
-                        <posy>304</posy>
-                        <width>426</width>
-                        <height>200</height>
-                        <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
-                        <colordiffuse>UnfocusedIconColor</colordiffuse>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>277</posy>
-                        <width>480</width>
-                        <height>294</height>
-                        <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
-                        <colordiffuse>UnfocusedIconColor</colordiffuse>
-                    </control>
-                    <control type="image">
-                        <posx>422</posx>
-                        <posy>236</posy>
-                        <width>28</width>
-                        <height>28</height>
-                        <texture>$VAR[Overlay]</texture>
+                <itemlayout height="553" width="375">
+                    <control type="group">
+                        <posy>153</posy>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>394</width>
+                            <height>364</height>
+                            <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
+                            <include>EpisodeThumb</include>
+                            <include>ThumbBorder</include>
+                        </control>
+                        <control type="image">
+                            <posx>27</posx>
+                            <posy>374</posy>
+                            <width>340</width>
+                            <height>270</height>
+                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                            <colordiffuse>UnfocusedIconColor</colordiffuse>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>347</posy>
+                            <width>394</width>
+                            <height>364</height>
+                            <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                            <colordiffuse>UnfocusedIconColor</colordiffuse>
+                        </control>
+                        <control type="image">
+                            <posx>339</posx>
+                            <posy>309</posy>
+                            <width>28</width>
+                            <height>28</height>
+                            <texture>$VAR[Overlay]</texture>
+                        </control>
                     </control>
                 </itemlayout>
-                <focusedlayout height="400" width="474">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>480</width>
-                        <height>294</height>
-                        <aspectratio>scale</aspectratio>
-                        <include>EpisodeThumb</include>
-                        <include>ThumbBorderOverlay</include>
-                    </control>
-                    <control type="image">
-                        <posx>27</posx>
-                        <posy>304</posy>
-                        <width>426</width>
-                        <height>200</height>
-                        <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="common/BlackDotT.png">$VAR[Thumbs]</texture>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>277</posy>
-                        <width>480</width>
-                        <height>294</height>
-                        <include>ThumbOverlay</include>
-                    </control>
-                    <control type="image">
-                        <posx>422</posx>
-                        <posy>236</posy>
-                        <width>28</width>
-                        <height>28</height>
-                        <texture>$VAR[Overlay]</texture>
+                <focusedlayout height="553" width="375">
+                    <control type="group">
+                        <posy>153</posy>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>394</width>
+                            <height>364</height>
+                            <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
+                            <include>SquareThumb</include>
+                            <include>ThumbBorderOverlay</include>
+                        </control>
+                        <control type="image">
+                            <posx>27</posx>
+                            <posy>374</posy>
+                            <width>340</width>
+                            <height>270</height>
+                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>347</posy>
+                            <width>394</width>
+                            <height>364</height>
+                            <include>ThumbOverlay</include>
+                        </control>
+                        <control type="image">
+                            <posx>339</posx>
+                            <posy>309</posy>
+                            <width>28</width>
+                            <height>28</height>
+                            <texture>$VAR[Overlay]</texture>
+                        </control>
                     </control>
                 </focusedlayout>
             </control>
             <control type="group">
                 <visible>Skin.HasSetting(Episodes_Gallery)</visible>
-                <visible allowhiddenfocus="true">Control.HasFocus(7000)</visible>
+                <visible allowhiddenfocus="true">Control.HasFocus(7000)|Control.hasfocus(6069)</visible>
                 <include>Icon_Fade</include>
+                <animation effect="slide" start="0,0" end="0,1800" time="0" reversible="true" condition="!Skin.HasSetting(Posters_Gallery)">Conditional</animation>
                 <control type="button" id="7000">
-                    <include>HiddenButton</include>
-                    <onup>57</onup>
-                    <ondown>57</ondown>
+                    <posx>100</posx>
+                    <posy>900</posy>
+                    <width>1820</width>
+                    <height>140</height>
+                    <label>-</label>
+                    <texturenofocus>-</texturenofocus>
+                    <texturefocus>-</texturefocus>
+                    <onup>58</onup>
+                    <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
+                    <onright condition="Skin.HasSetting(ManualScroll)">6069</onright>
+                    <onright condition="!Skin.HasSetting(ManualScroll)">Control.Move(57,1)</onright>
                     <onclick>Control.SetFocus(57)</onclick>
                     <onleft>Control.Move(57,-1)</onleft>
-                    <onright>Control.Move(57,1)</onright>
                 </control>
                 <control type="group">
                     <!-- CLEAR ART -->
@@ -846,15 +954,6 @@
                         <texture>$INFO[ListItem.Art(clearart)]</texture>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
                     </control>
-                </control>
-                <control type="image">
-                    <include>Icon_Fade</include>
-                    <visible>Control.hasfocus(7000)+[Control.IsVisible(57)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
-                    <posx>-100</posx>
-                    <posy>629</posy>
-                    <width>2258</width>
-                    <height>900</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
                 </control>
                 <control type="group">
                     <posy>279</posy>
@@ -955,6 +1054,19 @@
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
+                        <pagecontrol>6069</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6069">
+                        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
+                        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>1248</posx>
+                        <posy>157</posy>
+                        <height>166</height>
+                        <showonepage>true</showonepage>
+                        <include>VerticalScroller</include>
+                        <onleft>7000</onleft>
+                        <onright>Control.Move(57,1)</onright>
                     </control>
                 </control>
             </control>
@@ -966,13 +1078,8 @@
                 <width>1830</width>
                 <include>HorizontalScroller</include>
                 <onup>57</onup>
-                <onright>noop</onright>
+                <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
             </control>
-        </control>
-        <control type="group">
-            <include>Icon_Fade</include>
-            <visible>!Control.hasfocus(7000)+[Control.IsVisible(57) | Control.IsVisible(58) | Control.IsVisible(59)]</visible>
-            <include>FooterInfo</include>
         </control>
     </include>
 </includes>

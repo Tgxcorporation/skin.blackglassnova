@@ -2,20 +2,23 @@
 <window>
     <defaultcontrol always="true">9001</defaultcontrol>
     <backgroundcolor>0</backgroundcolor>
-    <include>OpenClose</include>
+    <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">OpenClose</include>
     <controls>
-        <include>Fanart_Art</include>
+        <include condition="!Skin.HasSetting(BlackGlassMode)|!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
         <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitle</include>
             <label>$LOCALIZE[130]</label>
         </control>
         <control type="label">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitleSub</include>
             <label>$LOCALIZE[5]</label>
         </control>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-269</posy>
             <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>

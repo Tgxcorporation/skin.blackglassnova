@@ -5,6 +5,7 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-219</posy>
             <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
@@ -149,10 +150,11 @@
                     <posy>0</posy>
                     <width>1131</width>
                     <height>365</height>
-                    <onleft>60</onleft>
-                    <onright>9000</onright>
+                    <onleft>9000</onleft>
+                    <onright>60</onright>
                     <onup>50</onup>
-                    <ondown>50</ondown>
+                    <ondown condition="control.IsVisible(4)">6060</ondown>
+                    <ondown condition="!control.IsVisible(4)">50</ondown>
                     <pagecontrol>60</pagecontrol>
                     <scrolltime>200</scrolltime>
                     <itemlayout height="73" width="1131">
@@ -285,8 +287,8 @@
                     <posy>0</posy>
                     <width>1131</width>
                     <height>365</height>
-                    <onleft>60</onleft>
-                    <onright>9000</onright>
+                    <onleft>9000</onleft>
+                    <onright>60</onright>
                     <onup>50</onup>
                     <ondown>50</ondown>
                     <pagecontrol>60</pagecontrol>
@@ -422,6 +424,7 @@
                     <texture>list/bg_facade_separator.png</texture>
                 </control>
                 <control type="textbox" id="4">
+                    <visible>!Control.IsVisible(50)</visible>
                     <description>Description</description>
                     <posx>TextMargin</posx>
                     <posy>390</posy>
@@ -430,17 +433,25 @@
                     <font>InfoPlotFont</font>
                     <align>justify</align>
                     <textcolor>MainColor</textcolor>
-                    <pagecontrol>-</pagecontrol>
-                    <visible>!Control.IsVisible(50)</visible>
+                    <pagecontrol>6060</pagecontrol>
+                </control>
+                <control type="scrollbar" id="6060">
+                    <visible>!Control.IsVisible(50)+Skin.HasSetting(ManualScroll)</visible>
+                    <posx>1100</posx>
+                    <posy>390</posy>
+                    <height>410</height>
+                    <include>VerticalScroller</include>
+                    <onleft>49</onleft>
+                    <onright>9000</onright>
                 </control>
                 <control type="panel" id="50">
                     <posx>0</posx>
                     <posy>371</posy>
                     <width>1131</width>
                     <height>438</height>
-                    <onleft>61</onleft>
-                    <onright>9000</onright>
-                    <onup>9000</onup>
+                    <onleft>9000</onleft>
+                    <onright>61</onright>
+                    <onup>49</onup>
                     <ondown>9000</ondown>
                     <viewtype label="">list</viewtype>
                     <pagecontrol>61</pagecontrol>
@@ -459,7 +470,7 @@
                             <height>42</height>
                             <width>1041</width>
                             <font>FacadeListMainFont</font>
-                            <textcolor>ListNoFocusColor</textcolor>
+                            <textcolor>ListFocusColor</textcolor>
                             <label>$INFO[ListItem.TrackNumber] - $INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
@@ -468,7 +479,7 @@
                             <height>28</height>
                             <width>1041</width>
                             <font>FacadeListSubFont</font>
-                            <textcolor>SublistNoFocusColor</textcolor>
+                            <textcolor>SublistFocusColor</textcolor>
                             <label>$INFO[ListItem.Duration]</label>
                         </control>
                     </itemlayout>

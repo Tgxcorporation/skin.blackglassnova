@@ -10,6 +10,7 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>12</posy>
             <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
@@ -62,7 +63,7 @@
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <onleft>noop</onleft>
-                <onright>9000</onright>
+                <onright>9001</onright>
                 <onup>450</onup>
                 <ondown>450</ondown>
                 <itemlayout height="73" width="931">
@@ -161,7 +162,7 @@
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <onleft>noop</onleft>
-                <onright>9000</onright>
+                <onright>9001</onright>
                 <onup>451</onup>
                 <ondown>451</ondown>
                 <itemlayout height="73" width="931">
@@ -275,7 +276,7 @@
                 <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
                 <colordiffuse>90ffffff</colordiffuse>
             </control>
-            <control type="grouplist" id="9000">
+            <control type="grouplist" id="9001">
                 <posx>1209</posx>
                 <posy>382</posy>
                 <width>433</width>

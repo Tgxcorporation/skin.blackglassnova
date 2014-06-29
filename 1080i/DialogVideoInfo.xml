@@ -8,20 +8,11 @@
         <posy>0</posy>
     </coordinates>
     <zorder>0</zorder>
-    <include>OpenClose</include>
+    <include>DialogOpenClose</include>
     <controls>
-        <include>Fanart_Art</include>
-        <include>Player_Show</include>
-        <include>Time</include>
-        <control type="label">
-            <include>WindowTitle</include>
-            <label>$LOCALIZE[3]</label>
-        </control>
-        <control type="label">
-            <include>WindowTitleSub</include>
-            <label>$VAR[GlobalSubTitles]</label>
-        </control>
+        <include>DimBG</include>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-4</posy>
             <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
@@ -84,8 +75,8 @@
                     <width>1131</width>
                     <height>803</height>
                     <pagecontrol>61</pagecontrol>
-                    <onleft>61</onleft>
-                    <onright>9000</onright>
+                    <onleft>9001</onleft>
+                    <onright>61</onright>
                     <include>List_9009_Commons_Actors</include>
                 </control>
                 <control type="scrollbar" id="61">
@@ -95,11 +86,11 @@
                     <height>803</height>
                     <include>VerticalScroller</include>
                     <onleft>50</onleft>
-                    <onright>9000</onright>
+                    <onright>9001</onright>
                 </control>
                 <control type="group">
                     <!-- CDART -->
-                    <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+![Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)| Control.HasFocus(9014)]+[Container.content(movies)|Container.content(musicvideos)]</visible>
+                    <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+![Control.hasfocus(50)| Control.HasFocus(61)|Control.hasfocus(9012)|Control.HasFocus(9014)]+[Container.content(movies)|Container.content(musicvideos)]</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="image">
                         <posx>1290</posx>
@@ -112,7 +103,7 @@
                     </control>
                 </control>
                 <control type="image">
-                    <visible>![Control.hasfocus(50)|Control.hasfocus(9012)| Control.HasFocus(60)| Control.HasFocus(9014)]</visible>
+                    <visible>![Control.hasfocus(50)|Control.hasfocus(9012)|Control.HasFocus(9014)]</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>1142</posx>
                     <posy>365</posy>
@@ -134,7 +125,7 @@
                     <aspectratio>keep</aspectratio>
                 </control>
                 <control type="textbox">
-                    <visible>[Control.HasFocus(9013)]</visible>
+                    <visible>[Control.HasFocus(9013)|control.hasfocus(6060)]</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>TextMargin</posx>
                     <posy>10</posy>
@@ -142,11 +133,21 @@
                     <height>820</height>
                     <align>justify</align>
                     <font>InfoDetailsFontBig</font>
-                    <autoscroll delay="15000" time="5000" repeat="10000">true</autoscroll>
                     <label>$VAR[Plots]</label>
+                    <pagecontrol>6060</pagecontrol>
+                </control>
+                <control type="scrollbar" id="6060">
+                    <visible>[Control.HasFocus(9013)|control.hasfocus(6060)]+Skin.HasSetting(ManualScroll)</visible>
+                    <include>VisibleFadeEffectDelay</include>
+                    <posx>1100</posx>
+                    <posy>10</posy>
+                    <height>820</height>
+                    <include>VerticalScroller</include>
+                    <onleft>49</onleft>
+                    <onright>9001</onright>
                 </control>
                 <control type="group">
-                    <visible>![Control.HasFocus(9013) |Control.HasFocus(9012) | Control.HasFocus(50) | Control.HasFocus(61)| Control.HasFocus(9014)]</visible>
+                    <visible>![Control.HasFocus(9013) |Control.HasFocus(9012) | Control.HasFocus(50) | Control.HasFocus(61)| Control.HasFocus(9014)|control.hasfocus(6060)]</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <control type="image">
                         <posx>0</posx>
@@ -513,19 +514,19 @@
                         <height>730</height>
                         <include>VerticalScroller</include>
                         <onleft>49</onleft>
-                        <onright>9000</onright>
+                        <onright>9001</onright>
                     </control>
                 </control>
             </control>
-            <control type="grouplist" id="9000">
+            <control type="grouplist" id="9001">
                 <posx>1309</posx>
                 <posy>163</posy>
                 <width>433</width>
                 <height>365</height>
                 <onleft>9009</onleft>
                 <onright>62</onright>
-                <onup>9000</onup>
-                <ondown>9000</ondown>
+                <onup>9001</onup>
+                <ondown>9001</ondown>
                 <onback>50</onback>
                 <itemgap>0</itemgap>
                 <pagecontrol>62</pagecontrol>
@@ -554,6 +555,8 @@
                 <control type="togglebutton" id="9013">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[207]</label>
+                    <onclick>Control.SetFocus(6060)</onclick>
+                    <onleft>Control.SetFocus(6060)</onleft>
                 </control>
                 <control type="togglebutton" id="9012">
                     <include>RightDialogButton</include>
@@ -612,8 +615,8 @@
                 <posy>163</posy>
                 <height>365</height>
                 <include>VerticalScroller</include>
-                <onleft>9000</onleft>
-                <onright>9000</onright>
+                <onleft>9001</onleft>
+                <onright>9001</onright>
             </control>
         </control>
     </controls>

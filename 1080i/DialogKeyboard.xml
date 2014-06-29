@@ -7,6 +7,7 @@
             <visible>!Window.IsVisible(numericinput)</visible>
             <include>DimBG</include>
             <control type="group">
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
                 <posx>0</posx>
                 <posy>-175</posy>
                 <control type="button">

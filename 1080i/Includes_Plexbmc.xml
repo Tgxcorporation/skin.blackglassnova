@@ -13,8 +13,10 @@
                     <onright>900</onright>
                     <ondown>300</ondown>
                     <onback>300</onback>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-                    <include>RecentlyAdded_Addons</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Addons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Addons_BG</include>
                     <content>
                         <item id="1">
                             <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))</visible>
@@ -125,13 +127,16 @@
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(900)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                    <include>Square_Header</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Square_Header</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Square_Header_BG</include>
                     <label>$INFO[Container(900).ListItem.Property(ItemType)]</label>
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(900)+!Skin.HasSetting(VerticalHome)</visible>
-                    <include>Horizontal_BigLabel_Commons</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                     <label>$INFO[Container(900).ListItem.Label]</label>
                 </control>
             </control>
@@ -146,8 +151,10 @@
                     <onright>900</onright>
                     <ondown>300</ondown>
                     <onback>300</onback>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-                    <include>RecentlyAdded_Addons</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Addons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Addons_BG</include>
                     <content>
                         <item id="1">
                             <visible>!IsEmpty(Window.Property(Plexbmc.Queue.1.Path))</visible>
@@ -258,13 +265,16 @@
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(901)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                    <include>Square_Header</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Square_Header</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Square_Header_BG</include>
                     <label>$INFO[Container(901).ListItem.Property(ItemType)]</label>
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(901)+!Skin.HasSetting(VerticalHome)</visible>
-                    <include>Horizontal_BigLabel_Commons</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                     <label>$INFO[Container(901).ListItem.Label]</label>
                 </control>
             </control>
@@ -279,8 +289,10 @@
                     <ondown>300</ondown>
                     <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                     <onleft condition="!Skin.HasSetting(VerticalHome)">311</onleft>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
-                    <include>RecentlyAdded_Posters</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Posters</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Posters_BG</include>
                     <content>
                         <item id="1">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
@@ -406,13 +418,16 @@
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(311)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                    <include>Poster_Header</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Poster_Header</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Poster_Header_BG</include>
                     <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(311)+!Skin.HasSetting(VerticalHome)</visible>
-                    <include>Horizontal_BigLabel_Commons</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                     <label>$INFO[Container(311).ListItem.Label]</label>
                 </control>
             </control>
@@ -427,8 +442,10 @@
                     <ondown>300</ondown>
                     <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                     <onleft condition="!Skin.HasSetting(VerticalHome)">312</onleft>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
-                    <include>Recommended_Posters</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Recommended_Posters</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Recommended_Posters_BG</include>
                     <content>
                         <item id="1">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.1.Path))</visible>
@@ -554,13 +571,16 @@
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(312)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                    <include>Poster_Header</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Poster_Header</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Poster_Header_BG</include>
                     <label>$INFO[Container(312).ListItem.Property(ItemType)]</label>
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(312)+!Skin.HasSetting(VerticalHome)</visible>
-                    <include>Horizontal_BigLabel_Commons</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                     <label>$INFO[Container(312).ListItem.Label]</label>
                 </control>
             </control>
@@ -575,8 +595,10 @@
                     <onright>511</onright>
                     <ondown>300</ondown>
                     <onback>300</onback>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-                    <include>RecentlyAdded_Albums</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Albums</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Albums_BG</include>
                     <content>
                         <item id="1">
                             <visible>!IsEmpty(Window(Home).Property(plexbmc.LatestAlbum.1.Title))</visible>
@@ -682,13 +704,16 @@
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(511)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                    <include>Square_Header</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Square_Header</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Square_Header_BG</include>
                     <label>$INFO[Container(511).ListItem.Property(ItemType)]</label>
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(511)+!Skin.HasSetting(VerticalHome)</visible>
-                    <include>Horizontal_BigLabel_Commons</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                     <label>$INFO[Container(511).ListItem.Label]  •  $INFO[Container(511).ListItem.Label2]</label>
                 </control>
             </control>
@@ -703,8 +728,10 @@
                     <onright>212</onright>
                     <ondown>300</ondown>
                     <onback>300</onback>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-                    <include>RecentlyAdded_Addons</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Addons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Addons_BG</include>
                     <content>
                         <item id="1">
                             <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))</visible>
@@ -780,13 +807,16 @@
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(212)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                    <include>Square_Header</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Square_Header</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Square_Header_BG</include>
                     <label>$INFO[Container(212).ListItem.Property(ItemType)]</label>
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(212)+!Skin.HasSetting(VerticalHome)</visible>
-                    <include>Horizontal_BigLabel_Commons</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                     <label>$INFO[Container(212).ListItem.Label]</label>
                 </control>
             </control>
@@ -801,8 +831,10 @@
                     <ondown>300</ondown>
                     <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                     <onleft condition="!Skin.HasSetting(VerticalHome)">411</onleft>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
-                    <include>RecentlyAdded_Episodes</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Episodes</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Episodes_BG</include>
                     <content>
                         <item id="1">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
@@ -958,13 +990,16 @@
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(411)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                    <include>Poster_Header</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Poster_Header</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Poster_Header_BG</include>
                     <label>$INFO[Container(411).ListItem.Property(ItemType)]</label>
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(411)+!Skin.HasSetting(VerticalHome)</visible>
-                    <include>Horizontal_BigLabel_Commons</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                     <label>$INFO[Container(411).ListItem.Label]  •  $INFO[Container(411).ListItem.Label2]</label>
                 </control>
             </control>
@@ -979,8 +1014,10 @@
                     <ondown>300</ondown>
                     <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                     <onleft condition="!Skin.HasSetting(VerticalHome)">413</onleft>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
-                    <include>Recommended_Episodes</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Recommended_Episodes</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Recommended_Episodes_BG</include>
                     <content>
                         <item id="1">
                             <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))</visible>
@@ -1121,13 +1158,16 @@
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(413)</visible>
-                    <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                    <include>Poster_Header</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons_BG</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Poster_Header</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Poster_Header_BG</include>
                     <label>$INFO[Container(413).ListItem.Property(ItemType)]</label>
                 </control>
                 <control type="label">
                     <visible>Control.IsVisible(413)+!Skin.HasSetting(VerticalHome)</visible>
-                    <include>Horizontal_BigLabel_Commons</include>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                     <label>$INFO[Container(413).ListItem.Label]  •  $INFO[Container(413).ListItem.Property(SeasonEpisode)]</label>
                 </control>
             </control>
@@ -1593,7 +1633,7 @@
             <label>$LOCALIZE[31007]</label>
             <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
         </item> -->
-        <item id="55">
+        <!-- <item id="55">
             <visible>System.HasAddon(plugin.video.plexbmc) + !Skin.HasSetting(plexbmc)</visible>
             <visible>Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[31008]</label>
@@ -1606,7 +1646,7 @@
             <label>$LOCALIZE[31009]</label>
             <onclick>Skin.ToggleSetting(plexbmc)</onclick>
             <onclick>XBMC.ReloadSkin()</onclick>
-        </item>
+        </item> -->
         <!-- <item id="57">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
             <visible>Container(300).HasFocus(10)</visible>

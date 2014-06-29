@@ -5,7 +5,6 @@
             <include>SlideView</include>
             <include>HideMediaInfo</include>
             <visible>Control.IsVisible(50)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
-            <include>OpenClose</include>
             <include>Icon_Fade</include>
             <control type="group">
                 <posx>0</posx>
@@ -15,7 +14,8 @@
                     <posy>90</posy>
                     <width>2058</width>
                     <height>1160</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                 </control>
                 <control type="image">
                     <posx>242</posx>
@@ -103,6 +103,16 @@
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
+                        <pagecontrol>6060</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6060">
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>689</posx>
+                        <posy>230</posy>
+                        <height>370</height>
+                        <include>VerticalScroller</include>
+                        <onleft>9000</onleft>
+                        <onright>50</onright>
                     </control>
                 </control>
             </control>
@@ -111,7 +121,6 @@
     <include name="Addons_Info_51">
         <control type="group">
             <visible>Control.IsVisible(51)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
-            <include>OpenClose</include>
             <include>Icon_Fade</include>
             <posx>-567</posx>
             <posy>260</posy>
@@ -120,7 +129,8 @@
                 <posy>90</posy>
                 <width>2058</width>
                 <height>1160</height>
-                <texture border="90">common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="group">
                 <posx>570</posx>
@@ -182,6 +192,16 @@
                     <font>InfoPlotFont</font>
                     <textcolor>MainColor</textcolor>
                     <label>$VAR[Plots]</label>
+                    <pagecontrol>6061</pagecontrol>
+                </control>
+                <control type="scrollbar" id="6061">
+                    <visible>Skin.HasSetting(ManualScroll)</visible>
+                    <posx>613</posx>
+                    <posy>230</posy>
+                    <height>370</height>
+                    <include>VerticalScroller</include>
+                    <onleft>9000</onleft>
+                    <onright>51</onright>
                 </control>
             </control>
         </control>
@@ -191,7 +211,6 @@
             <include>SlideView</include>
             <include>HideMediaInfo</include>
             <visible>Control.IsVisible(52)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
-            <include>OpenClose</include>
             <include>Icon_Fade</include>
             <posy>37</posy>
             <control type="group">
@@ -200,7 +219,8 @@
                     <posy>94</posy>
                     <width>2058</width>
                     <height>1160</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                 </control>
                 <control type="image">
                     <posx>242</posx>
@@ -286,6 +306,16 @@
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
+                        <pagecontrol>6062</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6062">
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>689</posx>
+                        <posy>230</posy>
+                        <height>610</height>
+                        <include>VerticalScroller</include>
+                        <onleft>9000</onleft>
+                        <onright>52</onright>
                     </control>
                 </control>
             </control>
@@ -296,7 +326,6 @@
             <include>SlideView</include>
             <include>HideMediaInfo</include>
             <visible>Control.IsVisible(54)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
-            <include>OpenClose</include>
             <include>Icon_Fade</include>
             <control type="group">
                 <posx>0</posx>
@@ -306,7 +335,8 @@
                     <posy>90</posy>
                     <width>2058</width>
                     <height>1160</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                 </control>
                 <control type="image">
                     <posx>312</posx>
@@ -392,6 +422,16 @@
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
+                        <pagecontrol>6064</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6064">
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>719</posx>
+                        <posy>230</posy>
+                        <height>170</height>
+                        <include>VerticalScroller</include>
+                        <onleft>9000</onleft>
+                        <onright>54</onright>
                     </control>
                 </control>
             </control>
@@ -400,7 +440,6 @@
     <include name="Addons_Info_55">
         <control type="group">
             <visible>Control.IsVisible(55)+!IsEmpty(ListItem.Property(Addon.Description))</visible>
-            <include>OpenClose</include>
             <include>Icon_Fade</include>
             <control type="group">
                 <posx>-567</posx>
@@ -410,7 +449,8 @@
                     <posy>90</posy>
                     <width>2058</width>
                     <height>1160</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                 </control>
                 <control type="group">
                     <posx>570</posx>
@@ -472,6 +512,16 @@
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
+                        <pagecontrol>6065</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6065">
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>613</posx>
+                        <posy>230</posy>
+                        <height>610</height>
+                        <include>VerticalScroller</include>
+                        <onleft>9000</onleft>
+                        <onright>55</onright>
                     </control>
                 </control>
             </control>

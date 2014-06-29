@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
     <defaultcontrol always="true">5</defaultcontrol>
-    <include>OpenClose</include>
+    <include>DialogOpenClose</include>
     <controls>
         <include>DimBG</include>
         <control type="group">
-            <include>DialogOpenClose</include>
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posx>0</posx>
             <posy>0</posy>
             <control type="button">
@@ -96,7 +96,7 @@
                     <itemgap>0</itemgap>
                     <orientation>vertical</orientation>
                     <onleft>noop</onleft>
-                    <onright>9000</onright>
+                    <onright>9001</onright>
                     <onup>5</onup>
                     <ondown>28</ondown>
                 </control>
@@ -120,7 +120,7 @@
                     <height>79</height>
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="grouplist" id="9000">
+                <control type="grouplist" id="9001">
                     <posx>0</posx>
                     <posy>426</posy>
                     <width>864</width>

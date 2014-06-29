@@ -10,6 +10,7 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1637</posx>
@@ -105,7 +106,7 @@
                 <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
                 <colordiffuse>90ffffff</colordiffuse>
             </control>
-            <control type="grouplist" id="9000">
+            <control type="grouplist" id="9001">
                 <posx>1209</posx>
                 <posy>382</posy>
                 <width>433</width>

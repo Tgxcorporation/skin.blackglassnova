@@ -2,8 +2,8 @@
 <includes>
     <include name="PVROSDChannelListSmall">
         <control type="group">
-            <include>DialogOpenClose</include>
-            <control type="button" id="9000">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
+            <control type="button" id="9001">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1635</posx>
                 <posy>487</posy>
@@ -266,9 +266,9 @@
     </include>
     <include name="PVROSDChannelListBig">
         <control type="group">
-            <include>DialogOpenClose</include>
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-450</posy>
-            <control type="button" id="9000">
+            <control type="button" id="9001">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1635</posx>
                 <posy>487</posy>
@@ -531,8 +531,8 @@
     </include>
     <include name="PVROSDChannelListSmallGuide">
         <control type="group">
-            <include>DialogOpenClose</include>
-            <control type="button" id="9000">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
+            <control type="button" id="9001">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1635</posx>
                 <posy>487</posy>
@@ -727,9 +727,9 @@
     </include>
     <include name="PVROSDChannelListBigGuide">
         <control type="group">
-            <include>DialogOpenClose</include>
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-450</posy>
-            <control type="button" id="9000">
+            <control type="button" id="9001">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1635</posx>
                 <posy>487</posy>

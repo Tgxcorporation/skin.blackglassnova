@@ -100,7 +100,19 @@ msgctxt "#31025"
 msgid "Items"
 msgstr ""
 
-#empty strings from id 31026 to 31034
+msgctxt "#31026"
+msgid "Enable manual scrolling for plot & review"
+msgstr ""
+
+msgctxt "#31027"
+msgid "Go Black Glass"
+msgstr ""
+
+msgctxt "#31028"
+msgid "Go Black Glass Nova"
+msgstr ""
+
+#empty strings from id 31029 to 31034
 
 msgctxt "#31035"
 msgid "Fuchsia"
@@ -361,8 +373,16 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr ""
 
-#empty strings from id 31905 to 31948
+#empty strings from id 31905 to 31946
 #BLACK GLASS NOVA
+
+msgctxt "#31947"
+msgid "Resulting sub menu"
+msgstr ""
+
+msgctxt "#31948"
+msgid "Home sub menu"
+msgstr ""
 
 msgctxt "#31949"
 msgid "Enable window closing icon"

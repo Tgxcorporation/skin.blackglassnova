@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <onload condition="Skin.HasSetting(Use_Artist_Slideshow) + system.hasaddon(script.artistslideshow)">RunScript(script.artistslideshow)</onload>
+    <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">OpenClose</include>
     <controls>
         <control type="group">
-            <include>Fanart_Art</include>
-            <include>OpenClose</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)|!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
             <include>Player_Show</include>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1920</width>
+                <height>1080</height>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableFanart)">BgOverlayFanart</include>
+                <include>OverlayBG</include>
+            </control>
             <control type="progress" id="23">
                 <visible>true</visible>
                 <posx>-2000</posx>
@@ -16,8 +24,8 @@
             </control>
             <control type="group">
                 <visible>[Player.ShowInfo | Window.IsActive(MusicOSD) | !Visualisation.Enabled] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
-                <animation effect="fade" time="500">Visible</animation>
-                <animation effect="fade" time="200">Hidden</animation>
+                <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">MusicOSDFade</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">MusicOSDSlideRight</include>
                 <control type="group">
                     <posy>55</posy>
                     <animation type="Conditional" condition="!IntegerGreaterThan(Control.GetLabel(23),0)" reversible="false">

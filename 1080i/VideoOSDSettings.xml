@@ -4,6 +4,7 @@
     <include>OSDFade</include>
     <controls>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posx>-50</posx>
             <posy>355</posy>
             <animation effect="fade" start="100" end="0" time="50" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>

@@ -2,20 +2,23 @@
 <window>
     <defaultcontrol always="true">20</defaultcontrol>
     <backgroundcolor>0</backgroundcolor>
-    <include>OpenClose</include>
+    <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">OpenClose</include>
     <controls>
-        <include>Fanart_Art</include>
+        <include condition="!Skin.HasSetting(BlackGlassMode)|!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
         <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitle</include>
             <label>$LOCALIZE[5]</label>
         </control>
         <control type="label">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitleSub</include>
             <label>$LOCALIZE[7]</label>
         </control>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-10</posy>
             <control type="image">
                 <posx>3</posx>
@@ -58,30 +61,38 @@
                         <width>864</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
+                    <control type="image">
+                        <posx>15</posx>
+                        <posy>0</posy>
+                        <width>73</width>
+                        <height>73</height>
+                        <include>SquareThumb</include>
+                        <colordiffuse>NoFocusedColor</colordiffuse>
+                    </control>
                     <control type="label">
                         <visible>IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <height>71</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <height>42</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <posy>39</posy>
                         <height>28</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label2]</label>
@@ -95,30 +106,37 @@
                         <width>864</width>
                         <include>FacadeFocus</include>
                     </control>
+                    <control type="image">
+                        <posx>15</posx>
+                        <posy>0</posy>
+                        <width>73</width>
+                        <height>73</height>
+                        <include>SquareThumb</include>
+                    </control>
                     <control type="label">
                         <visible>IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <height>71</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <height>42</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <posy>39</posy>
                         <height>28</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistFocusColor</textcolor>
                         <label>$INFO[ListItem.Label2]</label>
@@ -152,6 +170,7 @@
             </control>
         </control>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posx>960</posx>
             <posy>-10</posy>
             <control type="image">
@@ -195,30 +214,38 @@
                         <width>864</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
+                    <control type="image">
+                        <posx>15</posx>
+                        <posy>0</posy>
+                        <width>73</width>
+                        <height>73</height>
+                        <include>SquareThumb</include>
+                        <colordiffuse>NoFocusedColor</colordiffuse>
+                    </control>
                     <control type="label">
                         <visible>IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <height>71</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <height>42</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <posy>39</posy>
                         <height>28</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label2]</label>
@@ -232,30 +259,37 @@
                         <width>864</width>
                         <include>FacadeFocus</include>
                     </control>
+                    <control type="image">
+                        <posx>15</posx>
+                        <posy>0</posy>
+                        <width>73</width>
+                        <height>73</height>
+                        <include>SquareThumb</include>
+                    </control>
                     <control type="label">
                         <visible>IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <height>71</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <height>42</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
                         <visible>!IsEmpty(ListItem.Label2)</visible>
-                        <posx>TextMargin</posx>
+                        <posx>100</posx>
                         <posy>39</posy>
                         <height>28</height>
-                        <width>774</width>
+                        <width>720</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistFocusColor</textcolor>
                         <label>$INFO[ListItem.Label2]</label>

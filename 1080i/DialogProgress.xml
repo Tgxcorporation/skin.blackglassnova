@@ -5,6 +5,7 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <control type="image">
                 <posx>483</posx>
                 <posy>280</posy>
@@ -63,7 +64,16 @@
                     <label>-</label>
                     <font>InfoDetailsFont</font>
                     <textcolor>MainColor</textcolor>
-                    <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+                    <pagecontrol>6060</pagecontrol>
+                </control>
+                <control type="scrollbar" id="6060">
+                    <visible>Skin.HasSetting(ManualScroll)</visible>
+                    <posx>832</posx>
+                    <posy>135</posy>
+                    <height>170</height>
+                    <include>VerticalScroller</include>
+                    <onleft>10</onleft>
+                    <onright>10</onright>
                 </control>
                 <control type="image">
                     <posx>0</posx>
@@ -81,6 +91,10 @@
                     <aligny>bottom</aligny>
                     <align>center</align>
                     <orientation>horizontal</orientation>
+                    <onup>6060</onup>
+                    <ondown>6060</ondown>
+                    <onleft>6060</onleft>
+                    <onright>6060</onright>
                     <control type="button" id="10">
                         <label>$LOCALIZE[222]</label>
                     </control>

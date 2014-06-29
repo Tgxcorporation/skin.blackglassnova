@@ -3,7 +3,6 @@
     <include name="View_53_Grid">
         <control type="group">
             <visible>Control.IsVisible(53)</visible>
-            <include>FooterInfo</include>
             <control type="group">
                 <!-- CLEAR ART -->
                 <visible>Skin.HasSetting(EnableClearArt)</visible>
@@ -25,11 +24,12 @@
                 </control>
             </control>
             <control type="image">
-                <posx>-100</posx>
+                <posx>-50</posx>
                 <posy>94</posy>
-                <width>2258</width>
+                <width>2200</width>
                 <height>860</height>
-                <texture border="90">common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="panel" id="53">
                 <viewtype label="536">Grid</viewtype>
@@ -233,7 +233,7 @@
                 <height>740</height>
                 <include>VerticalScroller</include>
                 <onleft>53</onleft>
-                <onright>53</onright>
+                <onright condition="Skin.HasSetting(BlackGlassMode)">505050</onright>
             </control>
         </control>
     </include>

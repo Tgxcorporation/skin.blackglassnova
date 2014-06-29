@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<window>
+<window type="dialog">
     <defaultcontrol always="true">20</defaultcontrol>
     <include>DialogOpenClose</include>
     <controls>
-        <include>Fanart_Art</include>
-        <include>Player_Show</include>
-        <include>Time</include>
-        <control type="label">
-            <include>WindowTitle</include>
-            <label>$LOCALIZE[19199]</label>
-        </control>
-        <control type="label">
-            <visible>IsEmpty(Window.Property(IsRadio))</visible>
-            <include>WindowTitleSub</include>
-            <label>$LOCALIZE[19023]</label>
-        </control>
-        <control type="label">
-            <visible>!IsEmpty(Window.Property(IsRadio))</visible>
-            <include>WindowTitleSub</include>
-            <label>$LOCALIZE[19024]</label>
-        </control>
+        <include>DimBG</include>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-10</posy>
             <control type="button">
                 <posx>1867</posx>
@@ -157,7 +142,7 @@
                 <posy>238</posy>
                 <height>781</height>
                 <include>VerticalScroller</include>
-                <onleft>9000</onleft>
+                <onleft>9001</onleft>
                 <onright>20</onright>
             </control>
             <control type="group">
@@ -183,7 +168,7 @@
                     <width>695</width>
                     <height>781</height>
                     <onleft>20</onleft>
-                    <onright>9000</onright>
+                    <onright>9001</onright>
                     <onup>9002</onup>
                     <ondown>9002</ondown>
                     <itemgap>0</itemgap>
@@ -263,14 +248,14 @@
                     <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
                     <colordiffuse>90ffffff</colordiffuse>
                 </control>
-                <control type="grouplist" id="9000">
+                <control type="grouplist" id="9001">
                     <posx>0</posx>
                     <width>433</width>
                     <height>729</height>
                     <onleft>9002</onleft>
                     <onright>20</onright>
-                    <onup>9000</onup>
-                    <ondown>9000</ondown>
+                    <onup>9001</onup>
+                    <ondown>9001</ondown>
                     <itemgap>0</itemgap>
                     <control type="button" id="4">
                         <label>$LOCALIZE[186]</label>

@@ -27,11 +27,20 @@
         </control>
         <include>Fanart_Art</include>
         <control type="image">
+            <visible>!Skin.HasSetting(BlackGlassMode)</visible>
             <posx>606</posx>
             <posy>308</posy>
             <width>707</width>
             <height>464</height>
             <texture>startup.png</texture>
+        </control>
+        <control type="image">
+            <visible>Skin.HasSetting(BlackGlassMode)</visible>
+            <posx>702</posx>
+            <posy>308</posy>
+            <width>515</width>
+            <height>464</height>
+            <texture>startup2.png</texture>
         </control>
         <control type="group">
             <control type="label">

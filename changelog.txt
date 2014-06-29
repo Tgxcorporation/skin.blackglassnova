@@ -1,5 +1,12 @@
-1.3.0
-Added pause, ff, rw big icons in OSD
+2.0.0
+Merged 2 skins in one: Black Glass and Black Glass Nova.
+Black Glass has a different approach and philosophy. Its main focus is contents, showing way larger list views, making the skin more readable and putting fanarts into the background.
+BG: Added Sliding eye-catching animation system, which can be disabled in settings
+BG: Fanarts can be disabled
+BG: 8 color themes available
+Added support for script.skinshortcuts: now it's possible to customize home submenus
+Added scrollers for textboxes. Must be enabled in settings.
+Added pause, ff, rw big icons in OSD. Can be enabled in settings.
 Added "back" button in Video and Music OSD
 Added Startup screen
 Added additional media info in DialogVideoInfo

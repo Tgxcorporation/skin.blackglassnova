@@ -12,21 +12,26 @@
                 <ondown>300</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                 <onleft condition="!Skin.HasSetting(VerticalHome)">111</onleft>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-                <include>RecentlyAdded_Addons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Addons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Addons_BG</include>
                 <content>
                     <include>FavouriteContent</include>
                 </content>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(111)</visible>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                <include>Square_Header</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Square_Header</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Square_Header_BG</include>
                 <label>$INFO[Container(111).ListItem.Property(ItemType)]</label>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(111)+!Skin.HasSetting(VerticalHome)</visible>
-                <include>Horizontal_BigLabel_Commons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                 <label>$INFO[Container(111).ListItem.Label]</label>
             </control>
         </control>
@@ -43,21 +48,26 @@
                 <ondown>300</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                 <onleft condition="!Skin.HasSetting(VerticalHome)">211</onleft>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-                <include>RecentlyAdded_Addons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Addons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Addons_BG</include>
                 <content>
                     <include>AddonContent</include>
                 </content>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(211)</visible>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                <include>Square_Header</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Square_Header</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Square_Header_BG</include>
                 <label>$INFO[Container(211).ListItem.Property(ItemType)]</label>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(211)+!Skin.HasSetting(VerticalHome)</visible>
-                <include>Horizontal_BigLabel_Commons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                 <label>$INFO[Container(211).ListItem.Label]</label>
             </control>
         </control>
@@ -74,21 +84,26 @@
                 <ondown>300</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                 <onleft condition="!Skin.HasSetting(VerticalHome)">311</onleft>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
-                <include>RecentlyAdded_Posters</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Posters</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Posters_BG</include>
                 <content>
                     <include>RecentMovieContent</include>
                 </content>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(311)</visible>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                <include>Poster_Header</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Poster_Header</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Poster_Header_BG</include>
                 <label>$INFO[Container(311).ListItem.Property(ItemType)]</label>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(311)+!Skin.HasSetting(VerticalHome)</visible>
-                <include>Horizontal_BigLabel_Commons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                 <label>$INFO[Container(311).ListItem.Label]</label>
             </control>
         </control>
@@ -105,8 +120,10 @@
                 <ondown>300</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                 <onleft condition="!Skin.HasSetting(VerticalHome)">312</onleft>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
-                <include>Recommended_Posters</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Recommended_Posters</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Recommended_Posters_BG</include>
                 <content>
                     <include condition="SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)">RecommendedMovieContent</include>
                     <include condition="SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)">RandomMovieContent</include>
@@ -114,13 +131,16 @@
             </control>
             <control type="label">
                 <visible>Control.IsVisible(312)</visible>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                <include>Poster_Header</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Poster_Header</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Poster_Header_BG</include>
                 <label>$INFO[Container(312).ListItem.Property(ItemType)]</label>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(312)+!Skin.HasSetting(VerticalHome)</visible>
-                <include>Horizontal_BigLabel_Commons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                 <label>$INFO[Container(312).ListItem.Label]</label>
             </control>
         </control>
@@ -137,21 +157,26 @@
                 <ondown>300</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                 <onleft condition="!Skin.HasSetting(VerticalHome)">514</onleft>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
-                <include>RecentlyAdded_Posters</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Posters</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Posters_BG</include>
                 <content>
                     <include>RecentMusicVideoContent</include>
                 </content>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(514)</visible>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                <include>Poster_Header</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Poster_Header</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Poster_Header_BG</include>
                 <label>$INFO[Container(514).ListItem.Property(ItemType)]</label>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(514)+!Skin.HasSetting(VerticalHome)</visible>
-                <include>Horizontal_BigLabel_Commons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                 <label>$INFO[Container(514).ListItem.Label]</label>
             </control>
         </control>
@@ -168,21 +193,26 @@
                 <ondown>300</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                 <onleft condition="!Skin.HasSetting(VerticalHome)">514</onleft>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
-                <include>Recommended_Posters</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Recommended_Posters</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Recommended_Posters_BG</include>
                 <content>
                     <include>RecommendedMusicVideoContent</include>
                 </content>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(515)</visible>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                <include>Poster_Header</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Poster_Header</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Poster_Header_BG</include>
                 <label>$INFO[Container(515).ListItem.Property(ItemType)]</label>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(515)+!Skin.HasSetting(VerticalHome)</visible>
-                <include>Horizontal_BigLabel_Commons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                 <label>$INFO[Container(515).ListItem.Label]</label>
             </control>
         </control>
@@ -199,21 +229,26 @@
                 <ondown>300</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                 <onleft condition="!Skin.HasSetting(VerticalHome)">411</onleft>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
-                <include>RecentlyAdded_Episodes</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Episodes</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Episodes_BG</include>
                 <content>
                     <include>RecentEpisodeContent</include>
                 </content>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(411)</visible>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                <include>Poster_Header</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Poster_Header</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Poster_Header_BG</include>
                 <label>$INFO[Container(411).ListItem.Property(ItemType)]</label>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(411)+!Skin.HasSetting(VerticalHome)</visible>
-                <include>Horizontal_BigLabel_Commons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                 <label>$INFO[Container(411).ListItem.Label]  •  $INFO[Container(411).ListItem.Property(SeasonEpisode)]</label>
             </control>
         </control>
@@ -230,21 +265,26 @@
                 <ondown>300</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                 <onleft condition="!Skin.HasSetting(VerticalHome)">413</onleft>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
-                <include>Recommended_Episodes</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Recommended_Episodes</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Recommended_Episodes_BG</include>
                 <content>
                     <include>RecommendedEpisodeContent</include>
                 </content>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(413)</visible>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
-                <include>Poster_Header</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Poster_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Poster_Header</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Poster_Header_BG</include>
                 <label>$INFO[Container(413).ListItem.Property(ItemType)]</label>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(413)+!Skin.HasSetting(VerticalHome)</visible>
-                <include>Horizontal_BigLabel_Commons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                 <label>$INFO[Container(413).ListItem.Label]  •  $INFO[Container(413).ListItem.Property(SeasonEpisode)]</label>
             </control>
         </control>
@@ -261,21 +301,26 @@
                 <ondown>300</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                 <onleft condition="!Skin.HasSetting(VerticalHome)">511</onleft>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-                <include>RecentlyAdded_Albums</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Albums</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Albums_BG</include>
                 <content>
                     <include>RecentAlbumContent</include>
                 </content>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(511)</visible>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                <include>Square_Header</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Square_Header</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Square_Header_BG</include>
                 <label>$INFO[Container(511).ListItem.Property(ItemType)]</label>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(511)+!Skin.HasSetting(VerticalHome)</visible>
-                <include>Horizontal_BigLabel_Commons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                 <label>$INFO[Container(511).ListItem.Label]  •  $INFO[Container(511).ListItem.Label2]</label>
             </control>
         </control>
@@ -292,21 +337,26 @@
                 <ondown>300</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                 <onleft condition="!Skin.HasSetting(VerticalHome)">513</onleft>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-                <include>Recommended_Albums</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Recommended_Albums</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Recommended_Albums_BG</include>
                 <content>
                     <include>RecommendedAlbumContent</include>
                 </content>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(513)</visible>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                <include>Square_Header</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Square_Header</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Square_Header_BG</include>
                 <label>$INFO[Container(513).ListItem.Property(ItemType)]</label>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(513)+!Skin.HasSetting(VerticalHome)</visible>
-                <include>Horizontal_BigLabel_Commons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                 <label>$INFO[Container(513).ListItem.Label]  •  $INFO[Container(513).ListItem.Label2]</label>
             </control>
         </control>
@@ -323,21 +373,26 @@
                 <ondown>300</ondown>
                 <onleft condition="Skin.HasSetting(VerticalHome)">300</onleft>
                 <onleft condition="!Skin.HasSetting(VerticalHome)">512</onleft>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
-                <include>RecentlyAdded_Albums</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Shelf_Square_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Albums</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">RecentlyAdded_Albums_BG</include>
                 <content>
                     <include>RecentMusicVideoContent</include>
                 </content>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(512)</visible>
-                <include condition="!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
-                <include>Square_Header</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">Horizontal_Label_Square_Commons_BG</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Square_Header</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Square_Header_BG</include>
                 <label>$INFO[Container(512).ListItem.Property(ItemType)]</label>
             </control>
             <control type="label">
                 <visible>Control.IsVisible(512)+!Skin.HasSetting(VerticalHome)</visible>
-                <include>Horizontal_BigLabel_Commons</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Horizontal_BigLabel_Commons_BG</include>
                 <label>$INFO[Container(512).ListItem.Label]</label>
             </control>
         </control>

@@ -26,7 +26,8 @@
                         <posy>0</posy>
                         <width>1683</width>
                         <height>586</height>
-                        <texture border="90">common/bg_tvguide.png</texture>
+                        <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                        <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                     </control>
                     <control type="image">
                         <posx>242</posx>
@@ -136,6 +137,7 @@
                             <font>InfoPlotFont</font>
                             <textcolor>MainColor</textcolor>
                             <label>$VAR[Plots]</label>
+                            <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                         </control>
                     </control>
                 </control>
@@ -166,7 +168,8 @@
                         <posy>0</posy>
                         <width>1683</width>
                         <height>586</height>
-                        <texture border="90">common/bg_tvguide.png</texture>
+                        <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                        <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                     </control>
                     <control type="image">
                         <posx>242</posx>
@@ -289,6 +292,7 @@
                             <font>InfoPlotFont</font>
                             <textcolor>MainColor</textcolor>
                             <label>$VAR[Plots]</label>
+                            <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                         </control>
                     </control>
                 </control>
@@ -317,7 +321,8 @@
                         <posy>0</posy>
                         <width>1683</width>
                         <height>770</height>
-                        <texture border="90">common/bg_tvguide.png</texture>
+                        <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                        <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                     </control>
                     <control type="image">
                         <posx>242</posx>
@@ -390,16 +395,15 @@
                             <label>$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                         </control>
                         <control type="label">
-                            <visible>[Container.Content(episodes)]</visible>
-                            <posx>1075</posx>
+                            <posx>1076</posx>
                             <posy>73</posy>
-                            <width>630</width>
+                            <width>700</width>
                             <height>71</height>
-                            <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
                             <align>right</align>
+                            <font>InfoDetailsFont</font>
+                            <textcolor>AlternateColor</textcolor>
                             <scroll>false</scroll>
-                            <label>S$INFO[ListItem.Season]  •  E$INFO[ListItem.Episode]</label>
+                            <label>$INFO[ListItem.Genre]</label>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -454,6 +458,7 @@
                             <font>InfoPlotFont</font>
                             <textcolor>MainColor</textcolor>
                             <label>$VAR[Plots]</label>
+                            <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                         </control>
                         <control type="group">
                             <visible>!IsEmpty(ListItem.VideoResolution)</visible>
@@ -465,6 +470,7 @@
                                 <font>InfoPlotFont</font>
                                 <textcolor>MainColor</textcolor>
                                 <label>$VAR[Plots]</label>
+                                <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -506,7 +512,8 @@
                         <posy>0</posy>
                         <width>1683</width>
                         <height>770</height>
-                        <texture border="90">common/bg_tvguide.png</texture>
+                        <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                        <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                     </control>
                     <control type="image">
                         <posx>242</posx>
@@ -583,7 +590,7 @@
                         </control>
                         <control type="label">
                             <visible>[Container.Content(episodes)]</visible>
-                            <posx>1075</posx>
+                            <posx>1076</posx>
                             <posy>73</posy>
                             <width>630</width>
                             <height>71</height>
@@ -592,6 +599,18 @@
                             <align>right</align>
                             <scroll>false</scroll>
                             <label>S$INFO[ListItem.Season]  •  E$INFO[ListItem.Episode]</label>
+                        </control>
+                        <control type="label">
+                            <visible>![Container.Content(episodes)]</visible>
+                            <posx>1076</posx>
+                            <posy>73</posy>
+                            <width>700</width>
+                            <height>71</height>
+                            <align>right</align>
+                            <font>InfoDetailsFont</font>
+                            <textcolor>AlternateColor</textcolor>
+                            <scroll>false</scroll>
+                            <label>$INFO[ListItem.Genre]</label>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -646,6 +665,7 @@
                             <font>InfoPlotFont</font>
                             <textcolor>MainColor</textcolor>
                             <label>$VAR[Plots]</label>
+                            <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                         </control>
                         <control type="group">
                             <visible>!IsEmpty(ListItem.VideoResolution)</visible>
@@ -657,6 +677,7 @@
                                 <font>InfoPlotFont</font>
                                 <textcolor>MainColor</textcolor>
                                 <label>$VAR[Plots]</label>
+                                <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                             </control>
                             <control type="image">
                                 <posx>0</posx>
@@ -724,6 +745,7 @@
                 <include>HorizontalScroller</include>
                 <onup>5050</onup>
                 <onright>noop</onright>
+                <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
             </control>
             <control type="button">
                 <posx>1720</posx>

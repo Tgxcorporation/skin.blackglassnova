@@ -5,6 +5,7 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posx>0</posx>
             <posy>104</posy>
             <control type="button">
@@ -79,7 +80,7 @@
                         <include>LeftMenuButton</include>
                         <hinttext>21420</hinttext>
                         <onup>16</onup>
-                        <ondown>9000</ondown>
+                        <ondown>9001</ondown>
                     </control>
                 </control>
                 <control type="group">
@@ -92,7 +93,7 @@
                         <height>79</height>
                         <texture>list/bg_facade_nofocus_top.png</texture>
                     </control>
-                    <control type="grouplist" id="9000">
+                    <control type="grouplist" id="9001">
                         <posx>0</posx>
                         <posy>336</posy>
                         <width>1164</width>

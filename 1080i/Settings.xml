@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol always="true">9000</defaultcontrol>
+    <defaultcontrol always="true">9001</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <animation effect="fade" time="150" condition="![Window.Previous(SettingsCategory.xml)|Window.Previous(SkinSettings.xml)]">WindowOpen</animation>
     <animation effect="fade" time="150" condition="![Window.Next(SettingsCategory.xml)|Window.Next(SkinSettings.xml)]">WindowClose</animation>
     <controls>
-        <include>Fanart_Art</include>
+        <include condition="!Skin.HasSetting(BlackGlassMode)|!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
         <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitle</include>
             <label>$LOCALIZE[5]</label>
         </control>
         <control type="label">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitleSub</include>
             <label>$LOCALIZE[10008]</label>
         </control>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-189</posy>
             <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
@@ -75,7 +78,7 @@
                 <height>771</height>
                 <aspectratio>scale</aspectratio>
                 <fadetime>400</fadetime>
-                <imagepath background="true">$INFO[Container(9000).ListItem.Label2]</imagepath>
+                <imagepath background="true">$INFO[Container(9001).ListItem.Label2]</imagepath>
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
@@ -117,6 +120,7 @@
                     <texture>common/logo.png</texture>
                 </control>
                 <control type="label">
+                    <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                     <posx>158</posx>
                     <posy>880</posy>
                     <height>36</height>
@@ -125,6 +129,17 @@
                     <font>HomeItemFont</font>
                     <textcolor>MainColor</textcolor>
                     <label>Black Glass Nova</label>
+                </control>
+                <control type="label">
+                    <visible>Skin.HasSetting(BlackGlassMode)</visible>
+                    <posx>158</posx>
+                    <posy>880</posy>
+                    <height>36</height>
+                    <width>1173</width>
+                    <align>center</align>
+                    <font>HomeItemFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <label>Black Glass</label>
                 </control>
                 <control type="label">
                     <posx>158</posx>
@@ -137,15 +152,15 @@
                     <label>by Tgx</label>
                 </control>
             </control>
-            <control type="list" id="9000">
+            <control type="list" id="9001">
                 <posx>1359</posx>
                 <posy>382</posy>
                 <width>433</width>
                 <height>803</height>
                 <onleft>9110</onleft>
                 <onright>9110</onright>
-                <onup>9000</onup>
-                <ondown>9000</ondown>
+                <onup>9001</onup>
+                <ondown>9001</ondown>
                 <pagecontrol>-</pagecontrol>
                 <scrolltime>280</scrolltime>
                 <itemlayout width="433" height="71">
@@ -184,8 +199,15 @@
                 </focusedlayout>
                 <content>
                     <item id="2">
+                        <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                         <label>$LOCALIZE[480]</label>
                         <label2>special://skin/backgrounds/Favourites.jpg</label2>
+                        <onclick>activatewindow(AppearanceSettings)</onclick>
+                    </item>
+                    <item id="2">
+                        <visible>Skin.HasSetting(BlackGlassMode)</visible>
+                        <label>$LOCALIZE[480]</label>
+                        <label2>special://skin/backgrounds/Favourites2.jpg</label2>
                         <onclick>activatewindow(AppearanceSettings)</onclick>
                     </item>
                     <item id="3">
@@ -224,14 +246,43 @@
                         <onclick>activatewindow(SystemSettings)</onclick>
                     </item>
                     <item id="7">
-                        <visible>System.HasAddon(plugin.video.plexbmc)</visible>
-                        <label>PleXBMC</label>
+                        <visible>System.HasAddon(plugin.video.plexbmc) + !Skin.HasSetting(plexbmc)</visible>
+                        <label>$LOCALIZE[31008]</label>
+                        <onclick>Skin.ToggleSetting(plexbmc)</onclick>
+                        <onclick>XBMC.ReloadSkin()</onclick>
                         <label2>special://skin/backgrounds/Channels.jpg</label2>
-                        <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
+                    </item>
+                    <item id="7">
+                        <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
+                        <label>$LOCALIZE[31009]</label>
+                        <onclick>Skin.ToggleSetting(plexbmc)</onclick>
+                        <onclick>XBMC.ReloadSkin()</onclick>
+                        <label2>special://skin/backgrounds/Channels.jpg</label2>
+                    </item>
+                    <item id="13">
+                        <visible>!Skin.HasSetting(BlackGlassMode)</visible>
+                        <label>$LOCALIZE[31027]</label>
+                        <onclick>Skin.ToggleSetting(BlackGlassMode)</onclick>
+                        <onclick>XBMC.ReloadSkin()</onclick>
+                        <label2>special://skin/backgrounds/Favourites2.jpg</label2>
+                    </item>
+                    <item id="13">
+                        <visible>Skin.HasSetting(BlackGlassMode)</visible>
+                        <label>$LOCALIZE[31028]</label>
+                        <onclick>Skin.ToggleSetting(BlackGlassMode)</onclick>
+                        <onclick>XBMC.ReloadSkin()</onclick>
+                        <label2>special://skin/backgrounds/Favourites.jpg</label2>
                     </item>
                     <item id="8">
+                        <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                         <label>$LOCALIZE[20077]</label>
-                        <label2>special://skin/fanart.jpg</label2>
+                        <label2>special://skin/backgrounds/Favourites.jpg</label2>
+                        <onclick>activatewindow(skinsettings)</onclick>
+                    </item>
+                    <item id="8">
+                        <visible>Skin.HasSetting(BlackGlassMode)</visible>
+                        <label>$LOCALIZE[20077]</label>
+                        <label2>special://skin/backgrounds/Favourites2.jpg</label2>
                         <onclick>activatewindow(skinsettings)</onclick>
                     </item>
                 </content>

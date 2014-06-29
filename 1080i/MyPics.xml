@@ -2,35 +2,39 @@
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
     <views>50,51,52,53,54,55,57,58,59,5050</views>
-    <include>OpenClose</include>
+    <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">OpenClose</include>
     <controls>
-        <include>Fanart_Art</include>
+        <include condition="!Skin.HasSetting(BlackGlassMode)|!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
         <include>Player_Show</include>
         <include>Time</include>
+        <include>InfoBackground</include>
         <control type="label">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitle</include>
             <label>$LOCALIZE[1]</label>
         </control>
         <control type="label">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitleSub</include>
             <label>$VAR[GlobalSubTitles]</label>
         </control>
+        <!-- BGN -->
         <control type="group">
-            <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
-            <include>View_50</include>
-            <include>View_51_Panel</include>
-            <include>View_52_BigList</include>
-            <include>View_53_Grid</include>
-            <include>View_54_LowList</include>
-            <include>View_55_BigPanel</include>
-            <include>View_56_BannerList</include>
-            <include>View_59_Showcase</include>
-            <include>View_5050_CardList</include>
-            <include>Addons_Info_50</include>
-            <include>Addons_Info_51</include>
-            <include>Addons_Info_52</include>
-            <include>Addons_Info_54</include>
-            <include>Addons_Info_55</include>
+            <visible>!Skin.HasSetting(BlackGlassMode)</visible>
+            <include condition="!Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">View_50</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">View_51_Panel</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">View_52_BigList</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">View_53_Grid</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">View_54_LowList</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">View_55_BigPanel</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">View_59_Showcase</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">View_5050_CardList</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">Addons_Info_50</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">Addons_Info_51</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">Addons_Info_52</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">Addons_Info_54</include>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">Addons_Info_55</include>
             <!-- COMMON -->
             <control type="group">
                 <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(5050)|Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|[[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)|Control.IsVisible(56)]+![!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]]</visible>
@@ -48,6 +52,38 @@
                 </control>
             </control>
         </control>
+        <!-- BG -->
+        <control type="group">
+            <visible>Skin.HasSetting(BlackGlassMode)</visible>
+            <include condition="!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
+            <control type="group">
+                <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+!Skin.HasSetting(DisableSlidingAnimations)">conditional</animation>
+                <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="-2090,0" condition="Control.HasFocus(505050)">conditional</animation>
+                <include condition="Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">View_50_BG</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">View_53_Grid</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">View_55_BigPanel_BG</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">View_59_Showcase</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">View_5050_CardList</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">Addons_Info_50_BG</include>
+                <!-- COMMON -->
+                <control type="group">
+                    <visible>[StringCompare(ListItem.Label,..)+![Control.IsVisible(5050)|Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|[[Control.IsVisible(50)|Control.IsVisible(55)|Control.IsVisible(56)]+![!IsEmpty(ListItem.Plot)|!IsEmpty(ListItem.Property(Addon.Description))]]</visible>
+                    <include>Icon_Slide</include>
+                    <posy>219</posy>
+                    <control type="image">
+                        <posx>18</posx>
+                        <posy>333</posy>
+                        <width>704</width>
+                        <height>518</height>
+                        <aspectratio align="left" aligny="bottom" scalediffuse="false">keep</aspectratio>
+                        <texture fallback="defaultPictureBig.png">$VAR[Thumbs]</texture>
+                        <include>ThumbBorder</include>
+                    </control>
+                </control>
+            </control>
+        </control>
+        <include>FooterInfo</include>
         <!-- SIDE MENU -->
         <control type="group">
             <include>LeftMenu</include>

@@ -11,6 +11,7 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-182</posy>
             <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
@@ -77,10 +78,10 @@
                 <posy>382</posy>
                 <width>1131</width>
                 <height>657</height>
-                <onleft>9000</onleft>
+                <onleft>9001</onleft>
                 <onright>60</onright>
                 <onup>450</onup>
-                <ondown>9000</ondown>
+                <ondown>9001</ondown>
                 <pagecontrol>60</pagecontrol>
                 <itemlayout height="73" width="1131">
                     <control type="image">
@@ -123,7 +124,7 @@
                 <posy>382</posy>
                 <width>1131</width>
                 <height>657</height>
-                <onleft>9000</onleft>
+                <onleft>9001</onleft>
                 <onright>60</onright>
                 <onup>451</onup>
                 <ondown>451</ondown>
@@ -169,7 +170,7 @@
                 <height>657</height>
                 <include>VerticalScroller</include>
                 <onleft>450</onleft>
-                <onright>9000</onright>
+                <onright>9001</onright>
             </control>
             <control type="image">
                 <posx>178</posx>
@@ -178,7 +179,7 @@
                 <height>79</height>
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="grouplist" id="9000">
+            <control type="grouplist" id="9001">
                 <posx>178</posx>
                 <posy>1046</posy>
                 <width>1564</width>

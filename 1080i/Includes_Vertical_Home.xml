@@ -18,6 +18,24 @@
         <textcolor>AlternateColor</textcolor>
         <font>FacadeListSubFont</font>
     </include>
+    <include name="Poster_Header_BG">
+        <posx>520</posx>
+        <align>left</align>
+        <posy>285</posy>
+        <height>45</height>
+        <width>1920</width>
+        <textcolor>AlternateColor</textcolor>
+        <font>FacadeListSubFont</font>
+    </include>
+    <include name="Square_Header_BG">
+        <posx>520</posx>
+        <align>left</align>
+        <posy>315</posy>
+        <height>45</height>
+        <width>1920</width>
+        <textcolor>AlternateColor</textcolor>
+        <font>FacadeListSubFont</font>
+    </include>
     <include name="Vertical_HomeSubMenu">
         <posx>-430</posx>
         <posy>78</posy>
@@ -68,7 +86,9 @@
             </control>
         </focusedlayout>
         <content>
-            <include>Home.Submenu.Items</include>
+            <include>skinshortcuts-submenu</include>
+            <include>default-submenu</include>
+            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
         </content>
     </include>
     <include name="Vertical_Fixed_HomeSubMenu">
@@ -147,6 +167,7 @@
         </control>
     </include>
     <include name="Vertical_Home_Layout">
+        <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideLeft</include>
         <control type="image">
             <visible>!Skin.HasSetting(plexbmc)+[[[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|[[IntegerGreaterThan(Container(211).NumItems,0)]+Container(300).HasFocus(2)]|[[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)]+Container(300).HasFocus(4)]|[[IntegerGreaterThan(Container(514).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)]+Container(300).HasFocus(14)]|[[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+Container(300).HasFocus(5)]|[[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+Container(300).HasFocus(6)]|[[IntegerGreaterThan(Container(512).NumItems,0)]+Container(300).HasFocus(13)]]</visible>
             <include>VisibleFadeEffectDelayShelf</include>
@@ -169,7 +190,7 @@
             <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
             <include condition="Skin.HasSetting(Shelf.Delay)">Shelf_Delay</include>
             <control type="image">
-                <visible>!Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | Control.Hasfocus(311)  | Control.Hasfocus(312) | Control.Hasfocus(411) | Control.Hasfocus(413) | Control.Hasfocus(511) | Control.Hasfocus(513) | Control.Hasfocus(514) | Control.Hasfocus(515) | Control.Hasfocus(412) | Control.Hasfocus(512)]</visible>
+                <visible>!Skin.HasSetting(BlackGlassMode) + !Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | Control.Hasfocus(311)  | Control.Hasfocus(312) | Control.Hasfocus(411) | Control.Hasfocus(413) | Control.Hasfocus(511) | Control.Hasfocus(513) | Control.Hasfocus(514) | Control.Hasfocus(515) | Control.Hasfocus(412) | Control.Hasfocus(512)]</visible>
                 <animation effect="fade" time="100" start="100" end="0">hidden</animation>
                 <animation effect="fade" time="100" start="0" end="100">visible</animation>
                 <posx>400</posx>
@@ -179,13 +200,33 @@
                 <texture border="83">common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <visible>Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | [IntegerGreaterThan(Container(311).NumItems,0) + Control.Hasfocus(311)] | [IntegerGreaterThan(Container(312).NumItems,0) + Control.Hasfocus(312)] | [IntegerGreaterThan(Container(411).NumItems,0) + Control.Hasfocus(411)] | [IntegerGreaterThan(Container(413).NumItems,0) + Control.Hasfocus(413)] | Control.Hasfocus(511) | Control.Hasfocus(900)]</visible>
+                <visible>!Skin.HasSetting(BlackGlassMode) + Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | [IntegerGreaterThan(Container(311).NumItems,0) + Control.Hasfocus(311)] | [IntegerGreaterThan(Container(312).NumItems,0) + Control.Hasfocus(312)] | [IntegerGreaterThan(Container(411).NumItems,0) + Control.Hasfocus(411)] | [IntegerGreaterThan(Container(413).NumItems,0) + Control.Hasfocus(413)] | Control.Hasfocus(511) | Control.Hasfocus(900)]</visible>
                 <animation effect="fade" time="100" start="100" end="0">hidden</animation>
                 <animation effect="fade" time="100" start="0" end="100">visible</animation>
                 <posx>400</posx>
                 <posy>280</posy>
                 <width>2320</width>
                 <height>520</height>
+                <texture border="83">common/bg_dialog.png</texture>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(BlackGlassMode) + !Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | Control.Hasfocus(311)  | Control.Hasfocus(312) | Control.Hasfocus(411) | Control.Hasfocus(413) | Control.Hasfocus(511) | Control.Hasfocus(513) | Control.Hasfocus(514) | Control.Hasfocus(515) | Control.Hasfocus(412) | Control.Hasfocus(512)]</visible>
+                <animation effect="fade" time="100" start="100" end="0">hidden</animation>
+                <animation effect="fade" time="100" start="0" end="100">visible</animation>
+                <posx>400</posx>
+                <posy>220</posy>
+                <width>2320</width>
+                <height>640</height>
+                <texture border="83">common/bg_dialog.png</texture>
+            </control>
+            <control type="image">
+                <visible>Skin.HasSetting(BlackGlassMode) + Skin.HasSetting(plexbmc) + [Control.Hasfocus(111) | Control.Hasfocus(211) | Control.Hasfocus(212) | [IntegerGreaterThan(Container(311).NumItems,0) + Control.Hasfocus(311)] | [IntegerGreaterThan(Container(312).NumItems,0) + Control.Hasfocus(312)] | [IntegerGreaterThan(Container(411).NumItems,0) + Control.Hasfocus(411)] | [IntegerGreaterThan(Container(413).NumItems,0) + Control.Hasfocus(413)] | Control.Hasfocus(511) | Control.Hasfocus(900)]</visible>
+                <animation effect="fade" time="100" start="100" end="0">hidden</animation>
+                <animation effect="fade" time="100" start="0" end="100">visible</animation>
+                <posx>400</posx>
+                <posy>220</posy>
+                <width>2320</width>
+                <height>640</height>
                 <texture border="83">common/bg_dialog.png</texture>
             </control>
             <control type="image">

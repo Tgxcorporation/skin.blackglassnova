@@ -28,7 +28,8 @@
                 <posy>350</posy>
                 <width>2058</width>
                 <height>900</height>
-                <texture border="90">common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="image">
                 <posx>693</posx>
@@ -45,7 +46,7 @@
                     <width>1227</width>
                     <height>602</height>
                     <orientation>vertical</orientation>
-                    <onleft>9000</onleft>
+                    <onleft>6061</onleft>
                     <onright>60</onright>
                     <onup>51</onup>
                     <ondown>51</ondown>

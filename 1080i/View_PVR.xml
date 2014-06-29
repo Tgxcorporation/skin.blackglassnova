@@ -58,7 +58,8 @@
                     <posy>565</posy>
                     <width>2058</width>
                     <height>900</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                 </control>
                 <control type="group">
                     <posx>0</posx>
@@ -143,9 +144,18 @@
                         <posy>282</posy>
                         <width>1123</width>
                         <height>175</height>
-                        <pagecontrol>-</pagecontrol>
                         <textcolor>AlternateColor</textcolor>
                         <label>$INFO[Container(11).ListItem.Plot]</label>
+                        <pagecontrol>6061</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6061">
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>1182</posx>
+                        <posy>282</posy>
+                        <height>175</height>
+                        <include>VerticalScroller</include>
+                        <onleft>9000</onleft>
+                        <onright>11</onright>
                     </control>
                 </control>
             </control>
@@ -154,7 +164,8 @@
                 <posy>565</posy>
                 <width>2058</width>
                 <height>900</height>
-                <texture border="90">common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="image">
                 <posx>1260</posx>
@@ -187,7 +198,7 @@
                 <posy>645</posy>
                 <width>660</width>
                 <height>365</height>
-                <onleft>32</onleft>
+                <onleft>6061</onleft>
                 <onright>70</onright>
                 <onup>11</onup>
                 <ondown>11</ondown>
@@ -371,7 +382,8 @@
                     <posy>565</posy>
                     <width>2058</width>
                     <height>900</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                 </control>
                 <control type="group">
                     <posx>0</posx>
@@ -397,7 +409,7 @@
                         <posy>27</posy>
                         <width>187</width>
                         <height>154</height>
-                        <texture fallback="defaultRadio.png">$INFO[Container(12).ListItem.Icon]</texture>
+                        <texture fallback="DefaultRadioBig.png">$INFO[Container(12).ListItem.Icon]</texture>
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
@@ -456,9 +468,18 @@
                         <posy>282</posy>
                         <width>1123</width>
                         <height>175</height>
-                        <pagecontrol>-</pagecontrol>
                         <textcolor>AlternateColor</textcolor>
                         <label>$INFO[Container(12).ListItem.Plot]</label>
+                        <pagecontrol>6062</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6062">
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>1182</posx>
+                        <posy>282</posy>
+                        <height>175</height>
+                        <include>VerticalScroller</include>
+                        <onleft>9000</onleft>
+                        <onright>12</onright>
                     </control>
                 </control>
             </control>
@@ -467,7 +488,8 @@
                 <posy>565</posy>
                 <width>2058</width>
                 <height>900</height>
-                <texture border="90">common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="image">
                 <posx>1260</posx>
@@ -500,7 +522,7 @@
                 <posy>645</posy>
                 <width>660</width>
                 <height>365</height>
-                <onleft>33</onleft>
+                <onleft>6062</onleft>
                 <onright>71</onright>
                 <onup>12</onup>
                 <ondown>12</ondown>
@@ -549,7 +571,7 @@
                         <posx>15</posx>
                         <height>71</height>
                         <width>73</width>
-                        <texture fallback="defaultRadio.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
                         <colordiffuse>NoFocusedColor</colordiffuse>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -624,7 +646,7 @@
                         <posx>15</posx>
                         <height>71</height>
                         <width>73</width>
-                        <texture fallback="defaultRadio.png">$INFO[ListItem.Icon]</texture>
+                        <texture fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
@@ -685,7 +707,8 @@
                     <posy>565</posy>
                     <width>2058</width>
                     <height>900</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                 </control>
                 <control type="group">
                     <posx>0</posx>
@@ -775,9 +798,18 @@
                         <posy>282</posy>
                         <width>1123</width>
                         <height>175</height>
-                        <pagecontrol>-</pagecontrol>
                         <textcolor>AlternateColor</textcolor>
                         <label>$INFO[Container(13).ListItem.Plot]</label>
+                        <pagecontrol>6063</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6063">
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>1182</posx>
+                        <posy>282</posy>
+                        <height>175</height>
+                        <include>VerticalScroller</include>
+                        <onleft>9000</onleft>
+                        <onright>13</onright>
                     </control>
                 </control>
             </control>
@@ -786,7 +818,8 @@
                 <posy>565</posy>
                 <width>2058</width>
                 <height>900</height>
-                <texture border="90">common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="image">
                 <posx>1260</posx>
@@ -819,7 +852,7 @@
                 <posy>645</posy>
                 <width>660</width>
                 <height>365</height>
-                <onleft>34</onleft>
+                <onleft>6063</onleft>
                 <onright>72</onright>
                 <onup>13</onup>
                 <ondown>13</ondown>
@@ -930,7 +963,8 @@
                 <posy>93</posy>
                 <width>1921</width>
                 <height>675</height>
-                <texture>common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="image">
                 <posx>TextMargin</posx>
@@ -1095,7 +1129,8 @@
                 <posy>725</posy>
                 <width>1921</width>
                 <height>675</height>
-                <texture>common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="image">
                 <posx>115</posx>
@@ -1175,9 +1210,9 @@
                     <posy>930</posy>
                     <width>1320</width>
                     <height>130</height>
-                    <pagecontrol>-</pagecontrol>
                     <textcolor>MainColor</textcolor>
                     <label>$INFO[ListItem.Plot]</label>
+                    <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                 </control>
             </control>
         </control>
@@ -1197,7 +1232,8 @@
                 <posy>522</posy>
                 <width>1921</width>
                 <height>675</height>
-                <texture>common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="image">
                 <posx>TextMargin</posx>
@@ -1422,7 +1458,8 @@
                 <posy>522</posy>
                 <width>1921</width>
                 <height>675</height>
-                <texture>common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="image">
                 <posx>TextMargin</posx>
@@ -1711,7 +1748,8 @@
                     <posy>565</posy>
                     <width>2058</width>
                     <height>900</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                 </control>
                 <control type="group">
                     <posx>0</posx>
@@ -1785,9 +1823,18 @@
                         <posy>282</posy>
                         <width>1123</width>
                         <height>175</height>
-                        <pagecontrol>-</pagecontrol>
                         <textcolor>AlternateColor</textcolor>
                         <label>$INFO[Container(15).ListItem.Plot]</label>
+                        <pagecontrol>6065</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6065">
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>1182</posx>
+                        <posy>282</posy>
+                        <height>175</height>
+                        <include>VerticalScroller</include>
+                        <onleft>9000</onleft>
+                        <onright>15</onright>
                     </control>
                 </control>
             </control>
@@ -1796,7 +1843,8 @@
                 <posy>565</posy>
                 <width>2058</width>
                 <height>900</height>
-                <texture border="90">common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="image">
                 <posx>1260</posx>
@@ -1829,7 +1877,7 @@
                 <posy>645</posy>
                 <width>660</width>
                 <height>365</height>
-                <onleft>31</onleft>
+                <onleft>6065</onleft>
                 <onright>75</onright>
                 <onup>15</onup>
                 <ondown>15</ondown>
@@ -1941,7 +1989,8 @@
                     <posy>565</posy>
                     <width>2058</width>
                     <height>900</height>
-                    <texture border="90">common/bg_tvguide.png</texture>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
                 </control>
                 <control type="group">
                     <posx>0</posx>
@@ -2015,9 +2064,18 @@
                         <posy>282</posy>
                         <width>1123</width>
                         <height>175</height>
-                        <pagecontrol>-</pagecontrol>
                         <textcolor>AlternateColor</textcolor>
                         <label>$INFO[Container(16).ListItem.Plot]</label>
+                        <pagecontrol>6066</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6066">
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>1182</posx>
+                        <posy>282</posy>
+                        <height>175</height>
+                        <include>VerticalScroller</include>
+                        <onleft>9000</onleft>
+                        <onright>16</onright>
                     </control>
                 </control>
             </control>
@@ -2026,7 +2084,8 @@
                 <posy>565</posy>
                 <width>2058</width>
                 <height>900</height>
-                <texture border="90">common/bg_tvguide.png</texture>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
             </control>
             <control type="image">
                 <posx>1260</posx>
@@ -2059,7 +2118,7 @@
                 <posy>645</posy>
                 <width>660</width>
                 <height>365</height>
-                <onleft>31</onleft>
+                <onleft>6066</onleft>
                 <onright>76</onright>
                 <onup>16</onup>
                 <ondown>16</ondown>

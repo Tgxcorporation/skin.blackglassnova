@@ -23,7 +23,7 @@
         <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Property(Icon))">$INFO[ListItem.Property(Icon)]</value>
         <value condition="!IsEmpty(ListItem.thumb)">$INFO[ListItem.thumb]</value>
-        <value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(MyPVR.xml)]">defaultChannelTvBig_Wide.png</value>
+        <value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(MyPVR.xml)+!Control.isvisible(12)]">defaultChannelTvBig_Wide.png</value>
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyVideoPlaylist.xml)]">DefaultFolderBackEpisode.png</value>
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)]">DefaultFolderBackPoster.png</value>
         <value condition="StringCompare(ListItem.Label,..)">DefaultFolderBack.png</value>
@@ -38,8 +38,8 @@
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Addons)|Container.content(plugins)]">defaultExtensionBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Artists)|Container.content(Actors)|Container.content(directors)]">defaultArtistBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Albums)|Container.content(songs)]">defaultAudioBig.png</value>
-        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]">DefaultFolderBig.png</value>
-        <value>$INFO[ListItem.Art(thumb)]</value>
+        <value condition="ListItem.IsFolder">DefaultFolderBig.png</value>
+        <value condition="!IsEmpty(ListItem.Art(thumb))">$INFO[ListItem.Art(thumb)]</value>
     </variable>
     <variable name="GlobalSubTitles">
         <value condition="Skin.hassetting(plexbmc) + !Window.IsActive(Home) + !IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading)]</value>
@@ -93,13 +93,13 @@
     <variable name="PVROverlayFocus">
         <value condition="ListItem.IsRecording">list/tvguide_button_recording_focus.png</value>
         <value condition="ListItem.HasTimer">list/tvguide_button_timer_focus.png</value>
-        <value condition="Skin.HasSetting(Highilighted.Color.Yellow)">list/bg_facade_focus_yellow.png</value>
-        <value condition="Skin.HasSetting(Highilighted.Color.Violet)">list/bg_facade_focus_violet.png</value>
-        <value condition="Skin.HasSetting(Highilighted.Color.Red)">list/bg_facade_focus_red.png</value>
-        <value condition="Skin.HasSetting(Highilighted.Color.Green)">list/bg_facade_focus_green.png</value>
-        <value condition="Skin.HasSetting(Highilighted.Color.Blue)">list/bg_facade_focus_blue.png</value>
-        <value condition="Skin.HasSetting(Highilighted.Color.Azure)">list/bg_facade_focus_azure.png</value>
-        <value condition="Skin.HasSetting(Highilighted.Color.Fuchsia)">list/bg_facade_focus_fuchsia.png</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Yellow)">list/bg_facade_focus_yellow.png</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Violet)">list/bg_facade_focus_violet.png</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Red)">list/bg_facade_focus_red.png</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Green)">list/bg_facade_focus_green.png</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Blue)">list/bg_facade_focus_blue.png</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Azure)">list/bg_facade_focus_azure.png</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Fuchsia)">list/bg_facade_focus_fuchsia.png</value>
         <value>list/bg_facade_focus_white.png</value>
     </variable>
     <variable name="PVROverlayNoFocus">
@@ -153,7 +153,8 @@
     </variable>
     <variable name="Default.Art">
         <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
-        <value>special://skin/backgrounds/default/</value>
+        <value condition="Skin.HasSetting(BlackGlassMode)">special://skin/backgrounds/default/default2.jpg</value>
+        <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Videos.Art">
         <value condition="!IsEmpty(Skin.String(Videos.Background))">$INFO[Skin.String(Videos.Background)]</value>
@@ -175,7 +176,7 @@
         <value condition="!IsEmpty(Skin.String(Addons.Background))">$INFO[Skin.String(Addons.Background)]</value>
         <value>special://skin/backgrounds/Addons.jpg</value>
     </variable>
-   <!--  <variable name="Concerts.Art">
+    <!--  <variable name="Concerts.Art">
         <value condition="!IsEmpty(Skin.String(Concerts.Background))">$INFO[Skin.String(Concerts.Background)]</value>
         <value>special://skin/backgrounds/Addons.jpg</value>
     </variable> -->
@@ -185,6 +186,7 @@
     </variable>
     <variable name="Favourites.Art">
         <value condition="!IsEmpty(Skin.String(Favourites.Background))">$INFO[Skin.String(Favourites.Background)]</value>
+        <value condition="Skin.HasSetting(BlackGlassMode)">special://skin/backgrounds/Favourites2.jpg</value>
         <value>special://skin/backgrounds/Favourites.jpg</value>
     </variable>
     <variable name="Settings.Art">

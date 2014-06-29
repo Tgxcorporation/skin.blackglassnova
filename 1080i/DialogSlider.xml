@@ -4,9 +4,10 @@
     <include>DialogOpenClose</include>
     <controls>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posx>735</posx>
             <posy>105</posy>
-            <control type="button" id="9000">
+            <control type="button" id="9001">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>400</posx>
                 <posy>-36</posy>

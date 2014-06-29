@@ -6,18 +6,21 @@
     <animation effect="fade" time="150" condition="![Window.Previous(Settings.xml)|Window.Previous(SkinSettings.xml)]">WindowOpen</animation>
     <animation effect="fade" time="150" condition="![Window.Next(Settings.xml)|Window.Next(SkinSettings.xml)]">WindowClose</animation>
     <controls>
-        <include>Fanart_Art</include>
+        <include condition="!Skin.HasSetting(BlackGlassMode)|!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
         <include>Player_Show</include>
         <include>Time</include>
         <control type="label">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitle</include>
             <label>$LOCALIZE[5]</label>
         </control>
         <control type="label">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitleSub</include>
             <label>$INFO[Control.GetLabel(2)]</label>
         </control>
         <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-189</posy>
             <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
