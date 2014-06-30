@@ -443,10 +443,12 @@
                     <texturenofocus>-</texturenofocus>
                     <onright>50</onright>
                     <onleft>50</onleft>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
                     <!-- <onclick>SendClick(10025,50)</onclick> -->
                     <onclick>Control.SetFocus(50)</onclick>
-                    <onup>Control.Move(50,-1)</onup>
-                    <ondown>Control.Move(50,1)</ondown>
+                    <!-- <onup>Control.Move(50,-1)</onup>
+                    <ondown>Control.Move(50,1)</ondown> -->
                 </control>
                 <include>TopBar</include>
                 <control type="group" id="495678">

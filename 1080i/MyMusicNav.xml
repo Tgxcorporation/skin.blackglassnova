@@ -18,10 +18,11 @@
             <include>WindowTitleSub</include>
             <label>$VAR[GlobalSubTitles]</label>
         </control>
-        <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
         <!-- BGN -->
         <control type="group">
             <visible>!Skin.HasSetting(BlackGlassMode)</visible>
+            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="-2690,0" condition="Control.HasFocus(505050)">conditional</animation>
+            <include condition="!Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
             <include condition="!Skin.HasSetting(BlackGlassMode)">View_50</include>
             <include condition="!Skin.HasSetting(BlackGlassMode)">View_51_Panel</include>
             <include condition="!Skin.HasSetting(BlackGlassMode)">View_52_BigList</include>
@@ -729,10 +730,11 @@
         <!-- BG -->
         <control type="group">
             <visible>Skin.HasSetting(BlackGlassMode)</visible>
+            <include condition="!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <control type="group">
                 <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+!Skin.HasSetting(DisableSlidingAnimations)">conditional</animation>
                 <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="-2090,0" condition="Control.HasFocus(505050)">conditional</animation>
-                <include condition="!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)">View_50_BG</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)">View_53_Grid</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)">View_55_BigPanel_BG</include>

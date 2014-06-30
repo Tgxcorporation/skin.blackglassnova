@@ -5,6 +5,7 @@
         <control type="group">
             <include condition="!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <control type="image">
+                <include>VisibleFadeEffect</include>
                 <visible>Control.hasfocus(505050)</visible>
                 <posx>0</posx>
                 <posy>750</posy>
@@ -13,6 +14,7 @@
                 <texture border="10" flipy="true">common/basichome_upper_gradient.png</texture>
             </control>
             <control type="image">
+                <include>VisibleFadeEffect</include>
                 <visible>!Control.hasfocus(505050)+[Control.IsVisible(53)|control.IsVisible(57)|control.IsVisible(58)|control.IsVisible(59)]</visible>
                 <posx>0</posx>
                 <posy>750</posy>
@@ -244,7 +246,7 @@
                     <texturenofocus>-</texturenofocus>
                     <texturefocus>-</texturefocus>
                     <onup>59</onup>
-                    <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
+                    <ondown>505050</ondown>
                     <onright condition="Skin.HasSetting(ManualScroll)">6069</onright>
                     <onright condition="!Skin.HasSetting(ManualScroll)">Control.Move(59,1)</onright>
                     <onclick>Control.SetFocus(59)</onclick>
@@ -423,7 +425,7 @@
                 <width>1830</width>
                 <include>HorizontalScroller</include>
                 <onup>59</onup>
-                <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
+                <ondown>505050</ondown>
             </control>
         </control>
         <control type="group">
@@ -544,7 +546,7 @@
                     <texturenofocus>-</texturenofocus>
                     <texturefocus>-</texturefocus>
                     <onup>58</onup>
-                    <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
+                    <ondown>505050</ondown>
                     <onright condition="Skin.HasSetting(ManualScroll)">6069</onright>
                     <onright condition="!Skin.HasSetting(ManualScroll)">Control.Move(58,1)</onright>
                     <onclick>Control.SetFocus(58)</onclick>
@@ -807,7 +809,7 @@
                 <width>1830</width>
                 <include>HorizontalScroller</include>
                 <onup>58</onup>
-                <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
+                <ondown>505050</ondown>
             </control>
         </control>
         <control type="group">
@@ -929,7 +931,7 @@
                     <texturenofocus>-</texturenofocus>
                     <texturefocus>-</texturefocus>
                     <onup>58</onup>
-                    <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
+                    <ondown>505050</ondown>
                     <onright condition="Skin.HasSetting(ManualScroll)">6069</onright>
                     <onright condition="!Skin.HasSetting(ManualScroll)">Control.Move(57,1)</onright>
                     <onclick>Control.SetFocus(57)</onclick>
@@ -1078,7 +1080,7 @@
                 <width>1830</width>
                 <include>HorizontalScroller</include>
                 <onup>57</onup>
-                <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
+                <ondown>505050</ondown>
             </control>
         </control>
     </include>

@@ -25,6 +25,7 @@
         <!-- BGN -->
         <control type="group">
             <visible>!Skin.HasSetting(BlackGlassMode)</visible>
+            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="-2690,0" condition="Control.HasFocus(505050)">conditional</animation>
             <include condition="!Skin.HasSetting(BlackGlassMode)">View_50_VideoExtras</include>
             <!-- COMMON -->
             <control type="group">

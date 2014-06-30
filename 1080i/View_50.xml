@@ -288,7 +288,7 @@
                 <control type="image">
                     <posx>1224</posx>
                     <posy>350</posy>
-                    <width>2058</width>
+                    <width>1522</width>
                     <height>900</height>
                     <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
                     <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
@@ -336,7 +336,7 @@
                 <include condition="Skin.HasSetting(SlideListToLeft)">SlideViewScroller</include>
                 <include>VerticalScroller</include>
                 <onleft>50</onleft>
-                <onright>50</onright>
+                <onright>505050</onright>
             </control>
         </control>
     </include>
@@ -346,7 +346,7 @@
             <control type="image">
                 <posx>1224</posx>
                 <posy>350</posy>
-                <width>2058</width>
+                <width>1522</width>
                 <height>900</height>
                 <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
@@ -443,7 +443,7 @@
             <height>586</height>
             <include>VerticalScroller</include>
             <onleft>50</onleft>
-            <onright>9000</onright>
+            <onright>505050</onright>
         </control>
     </include>
     <include name="View_50_VideoExtras">
@@ -452,7 +452,7 @@
             <control type="image">
                 <posx>1224</posx>
                 <posy>350</posy>
-                <width>2058</width>
+                <width>1522</width>
                 <height>900</height>
                 <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
@@ -498,7 +498,7 @@
             <height>586</height>
             <include>VerticalScroller</include>
             <onleft>51</onleft>
-            <onright>51</onright>
+            <onright>505050</onright>
         </control>
     </include>
 </includes>

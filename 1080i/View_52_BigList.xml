@@ -30,7 +30,7 @@
                 <control type="image">
                     <posx>1224</posx>
                     <posy>131</posy>
-                    <width>2058</width>
+                    <width>1522</width>
                     <height>1160</height>
                     <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
                     <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
@@ -78,7 +78,7 @@
                 <include condition="Skin.HasSetting(SlideListToLeft)">SlideViewScroller</include>
                 <include>VerticalScroller</include>
                 <onleft>52</onleft>
-                <onright>52</onright>
+                <onright>505050</onright>
             </control>
         </control>
     </include>

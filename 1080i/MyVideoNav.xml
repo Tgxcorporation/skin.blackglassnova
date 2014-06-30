@@ -22,6 +22,7 @@
         <!-- BGN -->
         <control type="group">
             <visible>!Skin.HasSetting(BlackGlassMode)</visible>
+            <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="-2690,0" condition="Control.HasFocus(505050)">conditional</animation>
             <include condition="!Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
             <include condition="!Skin.HasSetting(BlackGlassMode)">View_50</include>
             <include condition="!Skin.HasSetting(BlackGlassMode)">View_51_Panel</include>

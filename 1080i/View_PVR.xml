@@ -162,7 +162,7 @@
             <control type="image">
                 <posx>1224</posx>
                 <posy>565</posy>
-                <width>2058</width>
+                <width>1522</width>
                 <height>900</height>
                 <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
@@ -362,7 +362,7 @@
                 <height>365</height>
                 <include>VerticalScroller</include>
                 <onleft>11</onleft>
-                <onright>32</onright>
+                <onright>505050</onright>
             </control>
         </control>
     </include>
@@ -486,7 +486,7 @@
             <control type="image">
                 <posx>1224</posx>
                 <posy>565</posy>
-                <width>2058</width>
+                <width>1522</width>
                 <height>900</height>
                 <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
@@ -686,7 +686,7 @@
                 <height>365</height>
                 <include>VerticalScroller</include>
                 <onleft>12</onleft>
-                <onright>33</onright>
+                <onright>505050</onright>
             </control>
         </control>
     </include>
@@ -816,7 +816,7 @@
             <control type="image">
                 <posx>1224</posx>
                 <posy>565</posy>
-                <width>2058</width>
+                <width>1522</width>
                 <height>900</height>
                 <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
@@ -944,7 +944,7 @@
                 <height>365</height>
                 <include>VerticalScroller</include>
                 <onleft>13</onleft>
-                <onright>34</onright>
+                <onright>505050</onright>
             </control>
         </control>
     </include>
@@ -1395,7 +1395,7 @@
                 <height>365</height>
                 <include>VerticalScroller</include>
                 <onleft>14</onleft>
-                <onright>35</onright>
+                <onright>505050</onright>
             </control>
             <control type="group">
                 <posx>TextMargin</posx>
@@ -1683,7 +1683,7 @@
                 <height>365</height>
                 <include>VerticalScroller</include>
                 <onleft>17</onleft>
-                <onright>36</onright>
+                <onright>505050</onright>
             </control>
             <control type="group">
                 <posx>TextMargin</posx>
@@ -1841,7 +1841,7 @@
             <control type="image">
                 <posx>1224</posx>
                 <posy>565</posy>
-                <width>2058</width>
+                <width>1522</width>
                 <height>900</height>
                 <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
@@ -1968,7 +1968,7 @@
                 <height>365</height>
                 <include>VerticalScroller</include>
                 <onleft>15</onleft>
-                <onright>31</onright>
+                <onright>505050</onright>
             </control>
         </control>
     </include>
@@ -2082,7 +2082,7 @@
             <control type="image">
                 <posx>1224</posx>
                 <posy>565</posy>
-                <width>2058</width>
+                <width>1522</width>
                 <height>900</height>
                 <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
@@ -2284,7 +2284,7 @@
                 <height>365</height>
                 <include>VerticalScroller</include>
                 <onleft>16</onleft>
-                <onright>31</onright>
+                <onright>505050</onright>
             </control>
         </control>
     </include>

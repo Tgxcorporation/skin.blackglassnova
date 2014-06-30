@@ -745,7 +745,7 @@
                 <include>HorizontalScroller</include>
                 <onup>5050</onup>
                 <onright>noop</onright>
-                <ondown condition="Skin.HasSetting(BlackGlassMode)">505050</ondown>
+                <ondown>505050</ondown>
             </control>
             <control type="button">
                 <posx>1720</posx>

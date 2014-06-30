@@ -26,7 +26,7 @@
             <control type="image">
                 <posx>-50</posx>
                 <posy>94</posy>
-                <width>2200</width>
+                <width>2800</width>
                 <height>860</height>
                 <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
@@ -80,7 +80,7 @@
                         <texture>$VAR[Overlay]</texture>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="246" width="188">
+                <itemlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="246" width="188">
                     <control type="image">
                         <posx>0</posx>
                         <posy>-3</posy>
@@ -97,7 +97,7 @@
                         <texture>$VAR[Overlay]</texture>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="246" width="188">
+                <focusedlayout condition="!Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="246" width="188">
                     <control type="image">
                         <posx>0</posx>
                         <posy>-3</posy>
@@ -114,7 +114,7 @@
                         <texture>$VAR[Overlay]</texture>
                     </control>
                 </focusedlayout>
-                <itemlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="372" width="268">
+                <itemlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="372" width="268">
                     <control type="image">
                         <posx>0</posx>
                         <posy>-2</posy>
@@ -131,7 +131,7 @@
                         <texture>$VAR[Overlay]</texture>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(seasons)]" height="372" width="268">
+                <focusedlayout condition="Skin.HasSetting(53_BigGrid) + !Skin.HasSetting(53_UseBanners) + [Container.content(actors) | Container.Content(musicvideos) | container.content(movies) | container.content(TVshows) | container.content(seasons)]" height="372" width="268">
                     <control type="image">
                         <posx>0</posx>
                         <posy>-2</posy>
@@ -233,7 +233,7 @@
                 <height>740</height>
                 <include>VerticalScroller</include>
                 <onleft>53</onleft>
-                <onright condition="Skin.HasSetting(BlackGlassMode)">505050</onright>
+                <onright>505050</onright>
             </control>
         </control>
     </include>
