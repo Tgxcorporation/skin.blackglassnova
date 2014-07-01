@@ -359,10 +359,6 @@
                     <font>-</font>
                     <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
-                    <onleft>606</onleft>
-                    <onright>608</onright>
-                    <onup>9000</onup>
-                    <ondown>9000</ondown>
                     <onclick>VolumeDown</onclick>
                 </control>
                 <control type="image" id="617">
@@ -375,10 +371,6 @@
                     <font>-</font>
                     <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
-                    <onleft>607</onleft>
-                    <onright>609</onright>
-                    <onup>9000</onup>
-                    <ondown>9000</ondown>
                     <onclick>VolumeUp</onclick>
                 </control>
                 <control type="image" id="619">
@@ -386,16 +378,22 @@
                     <include>FakeTopbarButton</include>
                 </control>
                 <control type="button" id="620">
+                    <visible>Player.HasMedia</visible>
+                    <width>50</width>
+                    <height>50</height>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_fullscreen_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_fullscreen_nofocus.png</texturenofocus>
+                    <label>$LOCALIZE[16003]</label>
+                    <onclick>fullscreen</onclick>
+                </control>
+                <control type="button" id="621">
                     <width>50</width>
                     <height>50</height>
                     <label>$LOCALIZE[13005]</label>
                     <font>-</font>
                     <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
-                    <onleft>608</onleft>
-                    <onright>9000</onright>
-                    <onup>9000</onup>
-                    <ondown>9000</ondown>
                     <onclick>$VAR[QuitAction]</onclick>
                 </control>
             </control>
