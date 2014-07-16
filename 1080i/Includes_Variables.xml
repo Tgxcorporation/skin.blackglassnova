@@ -109,7 +109,7 @@
     </variable>
     <variable name="Details">
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,,  •  ]$INFO[ListItem.Size]</value>
-        <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album) + !IsEmpty(ListItem.Year)">$INFO[ListItem.Artist]$INFO[ListItem.Year,  •  ]$INFO[ListItem.Genre  •  ]</value>
+        <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album) + !IsEmpty(ListItem.Year)">$INFO[ListItem.Artist]$INFO[ListItem.Year,  •  ]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album)">$INFO[ListItem.Artist]</value>
         <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
         <value condition="Container.Content(Addons) + !IsEmpty(ListItem.Property(Addon.Creator))">$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]</value>
