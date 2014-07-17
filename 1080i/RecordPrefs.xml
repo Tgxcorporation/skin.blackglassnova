@@ -21,7 +21,7 @@
                 <posx>483</posx>
                 <posy>170</posy>
                 <width>954</width>
-                <height>739</height>
+                <height>734</height>
                 <texture border="94">common/bg_dialog.png</texture>
             </control>
             <control type="group">
@@ -49,91 +49,72 @@
                     <posy>117</posy>
                     <height>71</height>
                     <width>774</width>
-                    <label>-</label>
+                    <!-- <label>-</label> -->
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
                 </control>
-                <control type="group" id="9001">
+                <control type="group">
                     <posy>0</posy>
                     <control type="radiobutton" id="10">
-                        <posx>45</posx>
-                        <posy>187</posy>
-                        <height>73</height>
-                        <width>774</width>
-                        <label>-</label>
-                        <font>InfoDetailsFont</font>
-                        <textcolor>MainColor</textcolor>
+                        <posx>0</posx>
+                        <posy>188</posy>
+                        <width>864</width>
                         <label>$ADDON[pvr.wmc 30101]</label>
-                        <textoffsetx>0</textoffsetx>
-                        <radioposx>700</radioposx>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <textwidth>702</textwidth>
+                        <radioposx>760</radioposx>
+                        <include>LeftMenuButton</include>
                         <onup>1</onup>
                         <ondown>11</ondown>
                     </control>
                     <control type="radiobutton" id="11">
-                        <posx>45</posx>
-                        <posy>256</posy>
-                        <height>73</height>
-                        <width>774</width>
-                        <label>-</label>
-                        <font>InfoDetailsFont</font>
-                        <textcolor>AlternateColor</textcolor>
+                        <posx>0</posx>
+                        <posy>259</posy>
+                        <width>864</width>
                         <label>$ADDON[pvr.wmc 30102]</label>
-                        <textoffsetx>0</textoffsetx>
-                        <radioposx>700</radioposx>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <textwidth>702</textwidth>
+                        <radioposx>760</radioposx>
+                        <include>LeftMenuButton</include>
                         <onup>10</onup>
                         <ondown>12</ondown>
                     </control>
                     <control type="spincontrolex" id="12">
-                        <posx>45</posx>
-                        <posy>329</posy>
-                        <height>73</height>
-                        <width>774</width>
+                        <posx>0</posx>
+                        <posy>330</posy>
+                        <width>864</width>
                         <onup>11</onup>
                         <ondown>13</ondown>
                         <label>$ADDON[pvr.wmc 30103]</label>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
-                        <textoffsetx>0</textoffsetx>
+                        <include>LeftMenuButton</include>
                     </control>
                     <control type="spincontrolex" id="13">
-                        <posx>45</posx>
-                        <posy>402</posy>
-                        <height>73</height>
-                        <width>774</width>
+                        <posx>0</posx>
+                        <posy>401</posy>
+                        <width>864</width>
                         <onup>12</onup>
                         <ondown>14</ondown>
                         <label>$ADDON[pvr.wmc 30107]</label>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
-                        <textoffsetx>0</textoffsetx>
+                        <include>LeftMenuButton</include>
                     </control>
                     <control type="spincontrolex" id="14">
-                        <posx>45</posx>
-                        <posy>475</posy>
-                        <height>73</height>
-                        <width>774</width>
+                        <posx>0</posx>
+                        <posy>472</posy>
+                        <width>864</width>
                         <onup>13</onup>
                         <ondown>1</ondown>
                         <label>$ADDON[pvr.wmc 30110]</label>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
-                        <textoffsetx>0</textoffsetx>
+                        <include>LeftMenuButton</include>
                     </control>
                 </control>
                 <control type="image">
                     <posx>0</posx>
-                    <posy>469</posy>
+                    <posy>464</posy>
                     <width>864</width>
                     <height>79</height>
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="grouplist" id="9001">
                     <posx>0</posx>
-                    <posy>555</posy>
+                    <posy>550</posy>
                     <width>864</width>
                     <height>90</height>
                     <itemgap>30</itemgap>
