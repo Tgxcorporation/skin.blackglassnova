@@ -433,6 +433,7 @@
             <control type="group">
                 <include>PlexbmcFixTrick</include>
                 <control type="button" id="505050">
+                    <visible>[!Skin.HasSetting(BlackGlassMode)+!window.isactive(home)]|[Skin.HasSetting(BlackGlassMode)+!window.isactive(home)+!Skin.HasSetting(DisableFanart)]</visible>
                     <posx>1820</posx>
                     <posy>0</posy>
                     <width>100</width>
