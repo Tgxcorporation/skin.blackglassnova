@@ -8,7 +8,7 @@
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
-                <posx>1387</posx>
+                <posx>1587</posx>
                 <posy>166</posy>
                 <height>50</height>
                 <width>50</width>
@@ -18,19 +18,19 @@
                 <label>-</label>
             </control>
             <control type="image">
-                <posx>483</posx>
+                <posx>283</posx>
                 <posy>170</posy>
-                <width>954</width>
+                <width>1354</width>
                 <height>734</height>
                 <texture border="94">common/bg_dialog.png</texture>
             </control>
             <control type="group">
-                <posx>528</posx>
+                <posx>328</posx>
                 <posy>207</posy>
                 <control type="label">
                     <posx>45</posx>
                     <posy>18</posy>
-                    <width>774</width>
+                    <width>1174</width>
                     <height>100</height>
                     <font>InfoTitleFont</font>
                     <textcolor>MainColor</textcolor>
@@ -40,7 +40,7 @@
                 <control type="image">
                     <posx>0</posx>
                     <posy>38</posy>
-                    <width>864</width>
+                    <width>1264</width>
                     <height>79</height>
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
@@ -48,7 +48,7 @@
                     <posx>45</posx>
                     <posy>117</posy>
                     <height>71</height>
-                    <width>774</width>
+                    <width>1174</width>
                     <!-- <label>-</label> -->
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
@@ -58,10 +58,10 @@
                     <control type="radiobutton" id="10">
                         <posx>0</posx>
                         <posy>188</posy>
-                        <width>864</width>
+                        <width>1264</width>
+                        <textwidth>1102</textwidth>
+                        <radioposx>1160</radioposx>
                         <label>$ADDON[pvr.wmc 30101]</label>
-                        <textwidth>702</textwidth>
-                        <radioposx>760</radioposx>
                         <include>LeftMenuButton</include>
                         <onup>1</onup>
                         <ondown>11</ondown>
@@ -69,10 +69,10 @@
                     <control type="radiobutton" id="11">
                         <posx>0</posx>
                         <posy>259</posy>
-                        <width>864</width>
+                        <width>1264</width>
+                        <textwidth>1102</textwidth>
+                        <radioposx>1160</radioposx>
                         <label>$ADDON[pvr.wmc 30102]</label>
-                        <textwidth>702</textwidth>
-                        <radioposx>760</radioposx>
                         <include>LeftMenuButton</include>
                         <onup>10</onup>
                         <ondown>12</ondown>
@@ -80,42 +80,45 @@
                     <control type="spincontrolex" id="12">
                         <posx>0</posx>
                         <posy>330</posy>
-                        <width>864</width>
-                        <onup>11</onup>
-                        <ondown>13</ondown>
+                        <width>1264</width>
+                        <textwidth>1102</textwidth>
                         <label>$ADDON[pvr.wmc 30103]</label>
                         <include>LeftMenuButton</include>
+                        <onup>11</onup>
+                        <ondown>13</ondown>
                     </control>
                     <control type="spincontrolex" id="13">
                         <posx>0</posx>
                         <posy>401</posy>
-                        <width>864</width>
-                        <onup>12</onup>
-                        <ondown>14</ondown>
+                        <width>1264</width>
+                        <textwidth>1102</textwidth>
                         <label>$ADDON[pvr.wmc 30107]</label>
                         <include>LeftMenuButton</include>
+                        <onup>12</onup>
+                        <ondown>14</ondown>
                     </control>
                     <control type="spincontrolex" id="14">
                         <posx>0</posx>
                         <posy>472</posy>
-                        <width>864</width>
-                        <onup>13</onup>
-                        <ondown>1</ondown>
+                        <width>1264</width>
+                        <textwidth>1102</textwidth>
                         <label>$ADDON[pvr.wmc 30110]</label>
                         <include>LeftMenuButton</include>
+                        <onup>13</onup>
+                        <ondown>1</ondown>
                     </control>
                 </control>
                 <control type="image">
                     <posx>0</posx>
                     <posy>464</posy>
-                    <width>864</width>
+                    <width>1264</width>
                     <height>79</height>
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="grouplist" id="9001">
                     <posx>0</posx>
                     <posy>550</posy>
-                    <width>864</width>
+                    <width>1264</width>
                     <height>90</height>
                     <itemgap>30</itemgap>
                     <aligny>bottom</aligny>
