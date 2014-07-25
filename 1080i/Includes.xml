@@ -260,10 +260,12 @@
                     <onclick>back</onclick>
                 </control>
                 <control type="image" id="601">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <width>60</width>
                     <include>FakeTopbarButton</include>
                 </control>
                 <control type="button" id="602">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <width>50</width>
                     <height>50</height>
                     <label>$LOCALIZE[210]</label>
@@ -273,9 +275,11 @@
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="image" id="603">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <include>FakeTopbarButton</include>
                 </control>
                 <control type="button" id="604">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <width>50</width>
                     <height>50</height>
                     <label>$LOCALIZE[31354]</label>
@@ -285,9 +289,11 @@
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="image" id="605">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <include>FakeTopbarButton</include>
                 </control>
                 <control type="togglebutton" id="606">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <width>50</width>
                     <height>50</height>
                     <label>$LOCALIZE[31351]</label>
@@ -301,9 +307,11 @@
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="image" id="607">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <include>FakeTopbarButton</include>
                 </control>
                 <control type="button" id="608">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <width>50</width>
                     <height>50</height>
                     <label>$LOCALIZE[31352]</label>
@@ -313,9 +321,11 @@
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="image" id="609">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <include>FakeTopbarButton</include>
                 </control>
                 <control type="button" id="610">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <width>50</width>
                     <height>50</height>
                     <label>$LOCALIZE[31353]</label>
@@ -325,9 +335,11 @@
                     <onclick>PlayerControl(Forward)</onclick>
                 </control>
                 <control type="image" id="611">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <include>FakeTopbarButton</include>
                 </control>
                 <control type="button" id="612">
+                    <visible>[player.hasaudio|player.hasvideo]</visible>
                     <width>50</width>
                     <height>50</height>
                     <label>$LOCALIZE[209]</label>
