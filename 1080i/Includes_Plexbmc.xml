@@ -5,7 +5,7 @@
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[!Control.HasFocus(900)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="panel" id="900">
+                <control type="fixedlist" id="900">
                     <visible>!IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),photo)</visible>
                     <onleft condition="!Skin.HasSetting(VerticalHome)">900</onleft>
@@ -143,7 +143,7 @@
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[!Control.HasFocus(901)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="panel" id="901">
+                <control type="fixedlist" id="901">
                     <visible>!IsEmpty(Window.Property(Plexbmc.Queue.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Label,$LOCALIZE[31010])</visible>
                     <onleft condition="!Skin.HasSetting(VerticalHome)">900</onleft>
@@ -281,7 +281,7 @@
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(312)|!Control.HasFocus(311)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="panel" id="311">
+                <control type="fixedlist" id="311">
                     <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),movie)</visible>
                     <onright>311</onright>
@@ -626,7 +626,7 @@
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(311)|!Control.HasFocus(312)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="panel" id="312">
+                <control type="fixedlist" id="312">
                     <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),movie)</visible>
                     <onright>312</onright>
@@ -779,7 +779,7 @@
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[!Control.HasFocus(511)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="panel" id="511">
+                <control type="fixedlist" id="511">
                     <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),artist)</visible>
                     <onleft condition="!Skin.HasSetting(VerticalHome)">511</onleft>
@@ -912,7 +912,7 @@
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[!Control.HasFocus(212)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="panel" id="212">
+                <control type="fixedlist" id="212">
                     <visible>!IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))</visible>
                     <visible>Container(300).HasFocus(50)</visible>
                     <onleft condition="!Skin.HasSetting(VerticalHome)">212</onleft>
@@ -1015,7 +1015,7 @@
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(413)|!Control.HasFocus(411)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="panel" id="411">
+                <control type="fixedlist" id="411">
                     <visible>!IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),show)</visible>
                     <onright>411</onright>
@@ -1198,7 +1198,7 @@
             <control type="group">
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(411)|!Control.HasFocus(413)]">Conditional</animation>
                 <animation effect="fade" time="100" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)]">Conditional</animation>
-                <control type="panel" id="413">
+                <control type="fixedlist" id="413">
                     <visible>!IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))</visible>
                     <visible>StringCompare(Container(300).ListItem.Property(type),show)</visible>
                     <onright>413</onright>

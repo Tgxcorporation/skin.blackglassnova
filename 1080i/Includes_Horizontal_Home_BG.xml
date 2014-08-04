@@ -7,7 +7,8 @@
         <height>600</height>
         <onup>9001</onup>
         <onback>300</onback>
-        <movement>6</movement>
+        <focusposition>2</focusposition>
+        <movement>1</movement>
     </include>
     <include name="Horizontal_Shelf_Square_Commons_BG">
         <posx>153</posx>
@@ -16,7 +17,8 @@
         <height>600</height>
         <onup>9001</onup>
         <onback>300</onback>
-        <movement>6</movement>
+        <focusposition>2</focusposition>
+        <movement>1</movement>
     </include>
     <include name="Horizontal_Label_Poster_Commons_BG">
         <posx>45</posx>

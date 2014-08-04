@@ -193,7 +193,8 @@
     <include name="FakeTopbarButton">
         <width>10</width>
         <height>50</height>
-        <texture>-</texture>
+        <texturenofocus>-</texturenofocus>
+        <texturefocus>-</texturefocus>
     </include>
     <include name="BgOverlayFanart">
         <colordiffuse>b0ffffff</colordiffuse>
@@ -259,7 +260,7 @@
                     <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
                     <onclick>back</onclick>
                 </control>
-                <control type="image" id="601">
+                <control type="button" id="601">
                     <visible>[player.hasaudio|player.hasvideo]</visible>
                     <width>60</width>
                     <include>FakeTopbarButton</include>
@@ -274,7 +275,7 @@
                     <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
-                <control type="image" id="603">
+                <control type="button" id="603">
                     <visible>[player.hasaudio|player.hasvideo]</visible>
                     <include>FakeTopbarButton</include>
                 </control>
@@ -288,7 +289,7 @@
                     <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
-                <control type="image" id="605">
+                <control type="button" id="605">
                     <visible>[player.hasaudio|player.hasvideo]</visible>
                     <include>FakeTopbarButton</include>
                 </control>
@@ -306,7 +307,7 @@
                     <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
-                <control type="image" id="607">
+                <control type="button" id="637">
                     <visible>[player.hasaudio|player.hasvideo]</visible>
                     <include>FakeTopbarButton</include>
                 </control>
@@ -320,7 +321,7 @@
                     <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
-                <control type="image" id="609">
+                <control type="button" id="639">
                     <visible>[player.hasaudio|player.hasvideo]</visible>
                     <include>FakeTopbarButton</include>
                 </control>
@@ -334,7 +335,7 @@
                     <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Forward)</onclick>
                 </control>
-                <control type="image" id="611">
+                <control type="button" id="611">
                     <visible>[player.hasaudio|player.hasvideo]</visible>
                     <include>FakeTopbarButton</include>
                 </control>
@@ -348,7 +349,7 @@
                     <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
-                <control type="image" id="613">
+                <control type="button" id="613">
                     <width>60</width>
                     <include>FakeTopbarButton</include>
                 </control>
@@ -361,7 +362,7 @@
                     <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
                     <onclick>Mute</onclick>
                 </control>
-                <control type="image" id="615">
+                <control type="button" id="615">
                     <include>FakeTopbarButton</include>
                 </control>
                 <control type="button" id="616">
@@ -373,7 +374,7 @@
                     <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
                     <onclick>VolumeDown</onclick>
                 </control>
-                <control type="image" id="617">
+                <control type="button" id="617">
                     <include>FakeTopbarButton</include>
                 </control>
                 <control type="button" id="618">
@@ -385,7 +386,7 @@
                     <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
                     <onclick>VolumeUp</onclick>
                 </control>
-                <control type="image" id="619">
+                <control type="button" id="619">
                     <width>60</width>
                     <include>FakeTopbarButton</include>
                 </control>
@@ -671,7 +672,7 @@
             <include>LeftMenuButton</include>
         </control>
         <control type="radiobutton" id="9156">
-            <visible>Control.IsVisible(53) + [Container.Content(TVShows)|Container.Content(movies)]</visible>
+            <visible>Control.IsVisible(53) + [Container.Content(TVShows)|[Container.Content(movies) + !skin.hassetting(plexbmc)]]</visible>
             <font>LeftMenuSubButtonFont</font>
             <textwidth>450</textwidth>
             <include>LeftMenuButton</include>
@@ -689,7 +690,7 @@
             <label>$LOCALIZE[538]</label>
         </control>
         <control type="radiobutton" id="9160">
-            <visible>Control.IsVisible(55) + Container.Content(TVShows)</visible>
+            <visible>Control.IsVisible(55) + [Container.Content(TVShows)|[Container.Content(movies) + !skin.hassetting(plexbmc)]]</visible>
             <font>LeftMenuSubButtonFont</font>
             <textwidth>450</textwidth>
             <include>LeftMenuButton</include>
