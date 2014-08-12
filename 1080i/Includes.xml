@@ -262,6 +262,19 @@
                 </control>
                 <control type="button" id="601">
                     <!-- <visible>Player.HasMedia</visible> -->
+                    <include>FakeTopbarButton</include>
+                </control>
+                <control type="button" id="622">
+                    <width>50</width>
+                    <height>50</height>
+                    <label>-</label>
+                    <font>-</font>
+                    <texturefocus>topbar/topbar_home_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_home_nofocus.png</texturenofocus>
+                    <onclick>ActivateWindow(home)</onclick>
+                </control>
+                <control type="button" id="623">
+                    <!-- <visible>Player.HasMedia</visible> -->
                     <width>60</width>
                     <include>FakeTopbarButton</include>
                 </control>
