@@ -295,9 +295,9 @@
                     <texture border="3">list/bg_facade_focus_white.png</texture>
                 </control>
                 <control type="rss">
-                    <posx>TextMargin</posx>
+                    <posx>0</posx>
                     <posy>1041</posy>
-                    <width>1830</width>
+                    <width>1920</width>
                     <height>40</height>
                     <font>rss</font>
                     <urlset>1</urlset>
