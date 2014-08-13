@@ -249,6 +249,7 @@
                 <onleft>9000</onleft>
                 <onright>9000</onright>
                 <onup>9000</onup>
+                <ondown condition="Window.IsActive(Home.xml)">300</ondown>
                 <ondown>9000</ondown>
                 <align>center</align>
                 <control type="button" id="600">
