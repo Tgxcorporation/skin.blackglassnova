@@ -188,6 +188,7 @@
         <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
         <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
         <textoffsetx>20</textoffsetx>
+        <pulseonselect>false</pulseonselect>
     </default>
     <default type="sliderex">
         <align>left</align>
@@ -207,6 +208,7 @@
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
         <textoffsetx>20</textoffsetx>
+        <pulseonselect>false</pulseonselect>
     </default>
     <default type="scrollbar">
         <posx>0</posx>
