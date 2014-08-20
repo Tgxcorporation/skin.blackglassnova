@@ -75,7 +75,7 @@
         <height>60</height>
         <align>left</align>
         <aligny>center</aligny>
-        <font>size22</font>
+        <font>InfoDetailsFont</font>
         <textoffsetx>20</textoffsetx>
         <textcolor>AlternateColor</textcolor>
         <shadowcolor>ShadowColor</shadowcolor>
