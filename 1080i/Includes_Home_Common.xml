@@ -228,7 +228,7 @@
                 <textcolor>ListNoFocusColor</textcolor>
                 <font>ShelfFont</font>
                 <scroll>false</scroll>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
             </control>
         </itemlayout>
         <focusedlayout height="550" width="274">
@@ -266,7 +266,7 @@
                 <textcolor>ListFocusColor</textcolor>
                 <font>ShelfFont</font>
                 <scroll>false</scroll>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
             </control>
         </focusedlayout>
     </include>
@@ -318,7 +318,7 @@
                 <textcolor>ListNoFocusColor</textcolor>
                 <font>ShelfFont</font>
                 <scroll>false</scroll>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
             </control>
         </itemlayout>
         <focusedlayout height="550" width="274">
@@ -356,7 +356,7 @@
                 <textcolor>ListFocusColor</textcolor>
                 <font>ShelfFont</font>
                 <scroll>false</scroll>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Property(SeasonEpisode)]</label>
             </control>
         </focusedlayout>
     </include>
