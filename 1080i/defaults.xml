@@ -43,7 +43,7 @@
         <disabledcolor>DisabledColor</disabledcolor>
         <pagecontrol>61</pagecontrol>
         <pulseonselect>false</pulseonselect>
-        <autoscroll delay="5000" time="2500" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
+        <autoscroll delay="5000" time="2500" repeat="10001">Skin.HasSetting(AutoScroll)</autoscroll>
     </default>
     <default type="image">
         <align>center</align>
