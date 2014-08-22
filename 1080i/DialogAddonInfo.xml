@@ -65,9 +65,10 @@
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <onleft>6060</onleft>
-                <onright>6060</onright>
+                <onright>60</onright>
                 <onup>9001</onup>
                 <ondown>9001</ondown>
+                <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <control type="button" id="9">
                     <label>$LOCALIZE[5]</label>
@@ -105,6 +106,20 @@
                     <height>73</height>
                     <include>LeftMenuButton</include>
                 </control>
+                <control type="button" id="12">
+                    <label>$LOCALIZE[518]</label>
+                    <width>433</width>
+                    <height>73</height>
+                    <include>LeftMenuButton</include>
+                </control>
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>1711</posx>
+                <posy>382</posy>
+                <height>438</height>
+                <include>VerticalScroller</include>
+                <onleft>9001</onleft>
+                <onright>9001</onright>
             </control>
             <control type="image">
                 <posx>1342</posx>

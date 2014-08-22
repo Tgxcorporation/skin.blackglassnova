@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol always="true">3</defaultcontrol>
+    <defaultcontrol always="true">20</defaultcontrol>
     <coordinates>
         <system>1</system>
         <posx>0</posx>
@@ -47,7 +47,7 @@
                 <textcolor>MainColor</textcolor>
                 <label>$LOCALIZE[20344]</label>
             </control>
-            <control type="spincontrolex" id="3">
+            <control type="spincontrolex" id="20">
                 <description>Content Picker</description>
                 <posx>278</posx>
                 <posy>398</posy>
@@ -57,8 +57,8 @@
                 <include>LeftMenuButton</include>
                 <onup>28</onup>
                 <ondown>5</ondown>
-                <onleft>4</onleft>
-                <onright>4</onright>
+                <onleft>21</onleft>
+                <onright>21</onright>
                 <subtype>text</subtype>
             </control>
             <control type="grouplist" id="5">
@@ -68,10 +68,10 @@
                 <width>931</width>
                 <height>657</height>
                 <itemgap>0</itemgap>
-                <onup>3</onup>
+                <onup>20</onup>
                 <ondown>28</ondown>
-                <onleft>4</onleft>
-                <onright>4</onright>
+                <onleft>21</onleft>
+                <onright>21</onright>
             </control>
             <control type="button" id="7">
                 <description>Default Button</description>
@@ -118,14 +118,14 @@
                     <align>left</align>
                     <textcolor>AlternateColor</textcolor>
                 </control>
-                <control type="panel" id="4">
+                <control type="panel" id="21">
                     <posx>1209</posx>
                     <posy>382</posy>
                     <width>433</width>
                     <height>292</height>
                     <onup>28</onup>
                     <ondown>28</ondown>
-                    <onleft>3</onleft>
+                    <onleft>20</onleft>
                     <onright>60</onright>
                     <scrolltime>200</scrolltime>
                     <pagecontrol>60</pagecontrol>
@@ -170,8 +170,8 @@
                     <height>292</height>
                     <include condition="Skin.HasSetting(SlideListToLeft)">SlideViewScroller</include>
                     <include>VerticalScroller</include>
-                    <onleft>4</onleft>
-                    <onright>4</onright>
+                    <onleft>21</onleft>
+                    <onright>21</onright>
                 </control>
             </control>
             <control type="image">
@@ -201,26 +201,26 @@
                     <aligny>bottom</aligny>
                     <align>center</align>
                     <orientation>horizontal</orientation>
-                    <control type="button" id="6">
+                    <control type="button" id="22">
                         <label>$LOCALIZE[5]</label>
                         <onleft>29</onleft>
                         <onright>28</onright>
-                        <onup>3</onup>
-                        <ondown>3</ondown>
+                        <onup>20</onup>
+                        <ondown>20</ondown>
                     </control>
                     <control type="button" id="28">
                         <label>$LOCALIZE[186]</label>
-                        <onleft>6</onleft>
+                        <onleft>22</onleft>
                         <onright>29</onright>
-                        <onup>3</onup>
-                        <ondown>3</ondown>
+                        <onup>20</onup>
+                        <ondown>20</ondown>
                     </control>
                     <control type="button" id="29">
                         <label>$LOCALIZE[222]</label>
                         <onleft>28</onleft>
-                        <onright>6</onright>
-                        <onup>3</onup>
-                        <ondown>3</ondown>
+                        <onright>22</onright>
+                        <onup>20</onup>
+                        <ondown>20</ondown>
                     </control>
                 </control>
             </control>
