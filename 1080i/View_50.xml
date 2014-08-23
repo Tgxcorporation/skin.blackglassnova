@@ -41,8 +41,8 @@
             </control>
             <control type="label">
                 <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
-                <posx>630</posx>
-                <posy>39</posy>
+                <left>430</left>
+                <top>39</top>
                 <height>28</height>
                 <width>200</width>
                 <align>right</align>
@@ -91,8 +91,8 @@
             </control>
             <control type="label">
                 <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
-                <posx>630</posx>
-                <posy>39</posy>
+                <left>430</left>
+                <top>39</top>
                 <height>28</height>
                 <width>200</width>
                 <align>right</align>
