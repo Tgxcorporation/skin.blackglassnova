@@ -17,7 +17,7 @@
                 <width>605</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Label]$INFO[ListItem.Property(Addon.Version),  •  ]</label>
             </control>
             <control type="label">
                 <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
@@ -27,7 +27,7 @@
                 <width>605</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Label]$INFO[ListItem.Property(Addon.Version),  •  ]</label>
             </control>
             <control type="label">
                 <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
@@ -67,7 +67,7 @@
                 <width>605</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListFocusColor</textcolor>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Label]$INFO[ListItem.Property(Addon.Version),  •  ]</label>
             </control>
             <control type="label">
                 <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
@@ -77,7 +77,7 @@
                 <width>605</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListFocusColor</textcolor>
-                <label>$INFO[ListItem.Label]</label>
+                <label>$INFO[ListItem.Label]$INFO[ListItem.Property(Addon.Version),  •  ]</label>
             </control>
             <control type="label">
                 <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
