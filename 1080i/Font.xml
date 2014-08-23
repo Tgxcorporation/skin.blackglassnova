@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <fonts>
-    <fontset id="Default" unicode="true" idloc="31390">
+    <fontset id="Default" idloc="31390">
         <font>
             <name>WindowTitleFont</name>
             <filename>Sansation_Regular.ttf</filename>
@@ -180,7 +180,7 @@
         </font>
     </fontset>
 
-    <fontset id="Condensed" unicode="true" idloc="31391">
+    <fontset id="Condensed" idloc="31391">
         <font>
             <name>WindowTitleFont</name>
             <filename>Sansation_Regular.ttf</filename>
@@ -386,7 +386,7 @@
             <aspect>0.85</aspect>
         </font>
     </fontset>
-    <fontset id="Asap" idloc="31392" unicode="true">
+    <fontset id="Asap" idloc="31392">
         <font>
             <name>WindowTitleFont</name>
             <filename>Asap-Regular.ttf</filename>
