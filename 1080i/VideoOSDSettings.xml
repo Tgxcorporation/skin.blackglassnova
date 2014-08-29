@@ -69,7 +69,7 @@
                 <control type="spincontrolex" id="9">
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="sliderex" id="10">
+                <control type="sliderex" id="13">
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="scrollbar" id="60">

@@ -58,7 +58,7 @@
                 <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
             </control>
             <control type="label">
-                <posx>TextMarginR</posx>
+                <posx>395r</posx>
                 <height>69</height>
                 <width>350</width>
                 <align>right</align>
@@ -76,7 +76,7 @@
                 <include>FlippedFacadeFocus</include>
             </control>
             <control type="label">
-                <posx>TextMarginR</posx>
+                <posx>395r</posx>
                 <height>69</height>
                 <width>350</width>
                 <align>right</align>
@@ -125,7 +125,7 @@
                 <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
             </control>
             <control type="label">
-                <posx>TextMarginR</posx>
+                <posx>532r</posx>
                 <height>69</height>
                 <width>487</width>
                 <align>right</align>
@@ -143,7 +143,7 @@
                 <include>FlippedFacadeFocus</include>
             </control>
             <control type="label">
-                <posx>TextMarginR</posx>
+                <posx>532r</posx>
                 <height>69</height>
                 <width>487</width>
                 <align>right</align>

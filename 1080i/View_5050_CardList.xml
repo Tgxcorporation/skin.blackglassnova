@@ -395,7 +395,7 @@
                             <label>$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
                         </control>
                         <control type="label">
-                            <posx>1076</posx>
+                            <posx>376</posx>
                             <posy>73</posy>
                             <width>700</width>
                             <height>71</height>
@@ -433,7 +433,7 @@
                         </control>
                         <control type="label">
                             <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-                            <posx>1076</posx>
+                            <posx>776</posx>
                             <posy>146</posy>
                             <height>71</height>
                             <width>300</width>
@@ -590,7 +590,7 @@
                         </control>
                         <control type="label">
                             <visible>[Container.Content(episodes)]</visible>
-                            <posx>1076</posx>
+                            <posx>446</posx>
                             <posy>73</posy>
                             <width>630</width>
                             <height>71</height>
@@ -602,7 +602,7 @@
                         </control>
                         <control type="label">
                             <visible>![Container.Content(episodes)]</visible>
-                            <posx>1076</posx>
+                            <posx>376</posx>
                             <posy>73</posy>
                             <width>700</width>
                             <height>71</height>
@@ -640,7 +640,7 @@
                         </control>
                         <control type="label">
                             <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
-                            <posx>1076</posx>
+                            <posx>776</posx>
                             <posy>146</posy>
                             <height>71</height>
                             <width>300</width>

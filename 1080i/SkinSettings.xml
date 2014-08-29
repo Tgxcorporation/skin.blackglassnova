@@ -3,7 +3,7 @@
     <backgroundcolor>0</backgroundcolor>
     <allowoverlay>no</allowoverlay>
     <defaultcontrol always="true">9000</defaultcontrol>
-    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;group=CustomGroupName1|pictures|CustomGroupName2|addons|CustomGroupName3|videos|CustomGroupName4|movies|CustomGroupName5|tvshows|CustomGroupName6|music|CustomGroupName7|clips|concerts|CustomGroupName8|livetv|favourites|CustomGroupName9|dvd|weather|settings|quit)</onunload>
+    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;group=CustomGroupName1|pictures|CustomGroupName2|addons|CustomGroupName3|videos|CustomGroupName4|movies|CustomGroupName5|tvshows|CustomGroupName6|music|CustomGroupName7|clips|concerts|CustomGroupName8|livetv|radio|favourites|CustomGroupName9|dvd|weather|settings|quit)</onunload>
     <animation effect="fade" time="150" condition="![Window.Previous(SettingsCategory.xml)|Window.Previous(Settings.xml)|Window.Previous(script-skinshortcuts.xml)]">WindowOpen</animation>
     <animation effect="fade" time="150" condition="![Window.Next(SettingsCategory.xml)|Window.Next(Settings.xml)|Window.Next(script-skinshortcuts.xml)]">WindowClose</animation>
     <controls>
@@ -211,9 +211,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -247,9 +247,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -544,9 +544,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <left>886</left>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>300</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -570,9 +570,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <left>886</left>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>300</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -796,6 +796,34 @@
                             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.8)</onclick>
                         </item>
+                        <item id="31">
+                            <visible>!Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>
+                            <label>[COLOR=SelectedColor]$LOCALIZE[31500][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Tv.jpg">$INFO[Skin.String(Tv.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Tv.Hide)</onclick>
+                        </item>
+                        <item id="31">
+                            <visible>Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>
+                            <label>[COLOR=DisabledColor]$LOCALIZE[31500][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Tv.jpg">$INFO[Skin.String(Tv.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Tv.Hide)</onclick>
+                        </item>
+                        <item id="32">
+                            <visible>!Skin.HasSetting(Radio.Hide)+System.GetBool(pvrmanager.enabled)</visible>
+                            <label>[COLOR=SelectedColor]$LOCALIZE[19021][/COLOR]</label>
+                            <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
+                            <thumb fallback="special://skin/backgrounds/Radio.jpg">$INFO[Skin.String(Radio.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Radio.Hide)</onclick>
+                        </item>
+                        <item id="32">
+                            <visible>Skin.HasSetting(Radio.Hide)+System.GetBool(pvrmanager.enabled)</visible>
+                            <label>[COLOR=DisabledColor]$LOCALIZE[19021][/COLOR]</label>
+                            <label2>$LOCALIZE[1223]</label2>
+                            <thumb fallback="special://skin/backgrounds/Radio.jpg">$INFO[Skin.String(Radio.Background)]</thumb>
+                            <onclick>Skin.ToggleSetting(Radio.Hide)</onclick>
+                        </item>
                         <item id="7">
                             <visible>!Skin.HasSetting(Favourites.Hide)</visible>
                             <label>[COLOR=SelectedColor]$LOCALIZE[1036][/COLOR]</label>
@@ -911,9 +939,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -937,9 +965,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -1027,6 +1055,16 @@
                             <label>$INFO[Skin.String(CustomHome.8.Label)]</label>
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=CustomGroupName8)</onclick>
                         </item>
+                        <item id="16">
+                            <visible>!Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>
+                            <label>$LOCALIZE[31500]</label>
+                            <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=livetv)</onclick>
+                        </item>
+                        <item id="17">
+                            <visible>!Skin.HasSetting(Radio.Hide)+System.GetBool(pvrmanager.enabled)</visible>
+                            <label>$LOCALIZE[19021]</label>
+                            <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=radio)</onclick>
+                        </item>
                         <item id="7">
                             <visible>!Skin.HasSetting(Favourites.Hide)</visible>
                             <label>$LOCALIZE[1036]</label>
@@ -1036,11 +1074,6 @@
                             <visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>
                             <label>$INFO[Skin.String(CustomHome.9.Label)]</label>
                             <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=CustomGroupName9)</onclick>
-                        </item>
-                        <item id="16">
-                            <visible>System.GetBool(pvrmanager.enabled)</visible>
-                            <label>$LOCALIZE[31500]</label>
-                            <onclick>RunScript(script.skinshortcuts,type=manage&amp;group=livetv)</onclick>
                         </item>
                         <item id="8">
                             <visible>!Skin.HasSetting(DVD.Hide)</visible>
@@ -1115,7 +1148,7 @@
                                 <label>$LOCALIZE[31110]</label>
                             </control>
                             <control type="label">
-                                <posx>100r</posx>
+                                <posx>630r</posx>
                                 <height>71</height>
                                 <width>530</width>
                                 <font>FacadeListMainFont</font>
@@ -1224,11 +1257,18 @@
                                 <thumb>$INFO[Skin.String(Quit.Background)]</thumb>
                             </item>
                             <item id="12">
-                                <visible>System.GetBool(pvrmanager.enabled)</visible>
+                                <visible>!Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>
                                 <label>31500</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
-                                <icon>special://skin/backgrounds/Pvr.jpg</icon>
-                                <thumb>$INFO[Skin.String(Pvr.Background)]</thumb>
+                                <icon>special://skin/backgrounds/Tv.jpg</icon>
+                                <thumb>$INFO[Skin.String(Tv.Background)]</thumb>
+                            </item>
+                            <item id="15">
+                                <visible>!Skin.HasSetting(Radio.Hide)+System.GetBool(pvrmanager.enabled)</visible>
+                                <label>19021</label>
+                                <onclick>Control.Move(9004,-1)</onclick>
+                                <icon>special://skin/backgrounds/Radio.jpg</icon>
+                                <thumb>$INFO[Skin.String(Radio.Background)]</thumb>
                             </item>
                             <item id="21">
                                 <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
@@ -1468,7 +1508,8 @@
                             <onclick condition="Container(9004).HasFocus(9)">Skin.SetImage(Settings.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(10)">Skin.SetImage(DVD.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(11)">Skin.SetImage(Quit.Background)</onclick>
-                            <onclick condition="Container(9004).HasFocus(12)">Skin.SetImage(Pvr.Background)</onclick>
+                            <onclick condition="Container(9004).HasFocus(12)">Skin.SetImage(Tv.Background)</onclick>
+                            <onclick condition="Container(9004).HasFocus(15)">Skin.SetImage(Radio.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(13)">Skin.SetImage(Clips.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(14)">Skin.SetImage(Concerts.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(21)">Skin.SetImage(CustomHome.1.Background)</onclick>
@@ -1507,7 +1548,8 @@
                             <onclick condition="Container(9004).HasFocus(9)">Skin.SetPath(Settings.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(10)">Skin.SetPath(DVD.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(11)">Skin.SetPath(Quit.Background)</onclick>
-                            <onclick condition="Container(9004).HasFocus(12)">Skin.SetPath(Pvr.Background)</onclick>
+                            <onclick condition="Container(9004).HasFocus(12)">Skin.SetPath(Tv.Background)</onclick>
+                            <onclick condition="Container(9004).HasFocus(15)">Skin.SetPath(Radio.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(13)">Skin.SetPath(Clips.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(14)">Skin.SetPath(Concerts.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(21)">Skin.SetPath(CustomHome.1.Background)</onclick>
@@ -1547,7 +1589,8 @@
                             <onclick condition="Container(9004).HasFocus(9)">Skin.Reset(Settings.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(10)">Skin.Reset(DVD.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(11)">Skin.Reset(Quit.Background)</onclick>
-                            <onclick condition="Container(9004).HasFocus(12)">Skin.Reset(Pvr.Background)</onclick>
+                            <onclick condition="Container(9004).HasFocus(12)">Skin.Reset(Tv.Background)</onclick>
+                            <onclick condition="Container(9004).HasFocus(15)">Skin.Reset(Radio.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(13)">Skin.Reset(Clips.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(14)">Skin.Reset(Concerts.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(21)">Skin.Reset(CustomHome.1.Background)</onclick>
@@ -1615,7 +1658,7 @@
                                 <label>$LOCALIZE[513] - $LOCALIZE[20019]</label>
                             </control>
                             <control type="label">
-                                <posx>100r</posx>
+                                <posx>630r</posx>
                                 <height>71</height>
                                 <width>530</width>
                                 <font>FacadeListMainFont</font>
@@ -1725,11 +1768,18 @@
                                 <thumb>$INFO[Skin.String(Quit.Icon)]</thumb>
                             </item>
                             <item id="12">
-                                <visible>System.GetBool(pvrmanager.enabled)</visible>
+                                <visible>!Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>
                                 <label>31500</label>
                                 <onclick>Control.Move(9010,-1)</onclick>
-                                <icon>special://skin/backgrounds/Pvr.jpg</icon>
-                                <thumb>$INFO[Skin.String(Pvr.Icon)]</thumb>
+                                <icon>special://skin/backgrounds/Tv.jpg</icon>
+                                <thumb>$INFO[Skin.String(Tv.Icon)]</thumb>
+                            </item>
+                            <item id="15">
+                                <visible>!Skin.HasSetting(Radio.Hide)+System.GetBool(pvrmanager.enabled)</visible>
+                                <label>19021</label>
+                                <onclick>Control.Move(9010,-1)</onclick>
+                                <icon>special://skin/backgrounds/Radio.jpg</icon>
+                                <thumb>$INFO[Skin.String(Radio.Icon)]</thumb>
                             </item>
                             <item id="21">
                                 <visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>
@@ -1969,7 +2019,8 @@
                             <onclick condition="Container(9010).HasFocus(9)">Skin.SetImage(Settings.Icon)</onclick>
                             <onclick condition="Container(9010).HasFocus(10)">Skin.SetImage(DVD.Icon)</onclick>
                             <onclick condition="Container(9010).HasFocus(11)">Skin.SetImage(Quit.Icon)</onclick>
-                            <onclick condition="Container(9010).HasFocus(12)">Skin.SetImage(Pvr.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(12)">Skin.SetImage(Tv.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(15)">Skin.SetImage(Radio.Icon)</onclick>
                             <onclick condition="Container(9010).HasFocus(13)">Skin.SetImage(Clips.Icon)</onclick>
                             <onclick condition="Container(9010).HasFocus(14)">Skin.SetImage(Concerts.Icon)</onclick>
                             <onclick condition="Container(9010).HasFocus(21)">Skin.SetImage(CustomHome.1.Icon)</onclick>
@@ -2009,7 +2060,8 @@
                             <onclick condition="Container(9010).HasFocus(9)">Skin.Reset(Settings.Icon)</onclick>
                             <onclick condition="Container(9010).HasFocus(10)">Skin.Reset(DVD.Icon)</onclick>
                             <onclick condition="Container(9010).HasFocus(11)">Skin.Reset(Quit.Icon)</onclick>
-                            <onclick condition="Container(9010).HasFocus(12)">Skin.Reset(Pvr.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(12)">Skin.Reset(Tv.Icon)</onclick>
+                            <onclick condition="Container(9010).HasFocus(15)">Skin.Reset(Radio.Icon)</onclick>
                             <onclick condition="Container(9010).HasFocus(13)">Skin.Reset(Clips.Icon)</onclick>
                             <onclick condition="Container(9010).HasFocus(14)">Skin.Reset(Concerts.Icon)</onclick>
                             <onclick condition="Container(9010).HasFocus(21)">Skin.Reset(CustomHome.1.Icon)</onclick>
@@ -2065,9 +2117,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -2101,9 +2153,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -2292,9 +2344,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -2328,9 +2380,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -2416,9 +2468,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -2452,9 +2504,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -2593,9 +2645,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -2629,9 +2681,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -2743,9 +2795,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -2769,9 +2821,9 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMarginR</posx>
+                            <posx>645r</posx>
                             <height>71</height>
-                            <width>1041</width>
+                            <width>600</width>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>

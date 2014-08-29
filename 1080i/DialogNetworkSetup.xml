@@ -44,58 +44,45 @@
                     <height>79</height>
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="group" id="9001">
+                <control type="grouplist" id="9002">
                     <posy>117</posy>
+                    <posy>0</posy>
+                    <itemgap>0</itemgap>
+                    <pagecontrol>60</pagecontrol>
+                    <onright>60</onright>
+                    <ondown>9001</ondown>
                     <control type="spincontrolex" id="10">
+                        <description>Protocol SpinControl</description>
                         <label>$LOCALIZE[1008]</label>
-                        <posy>0</posy>
                         <width>1164</width>
-                        <onright>9001</onright>
-                        <onup>18</onup>
-                        <ondown>11</ondown>
                         <include>LeftMenuButton</include>
                     </control>
-                    <control type="button" id="11">
-                        <posy>71</posy>
+                    <control type="edit" id="11">
+                        <description>Server Address Button</description>
                         <width>1164</width>
-                        <onright>9001</onright>
-                        <onup>10</onup>
-                        <ondown>16</ondown>
                         <include>LeftMenuButton</include>
                     </control>
-                    <control type="button" id="16">
-                        <posy>142</posy>
+                    <control type="edit" id="16">
+                        <description>Remote path Button</description>
                         <width>1164</width>
-                        <onright>12</onright>
-                        <onup>11</onup>
-                        <ondown>13</ondown>
                         <include>LeftMenuButton</include>
                     </control>
-                    <control type="button" id="13">
+                    <control type="edit" id="13">
+                        <description>Port Button</description>
                         <label>$LOCALIZE[1013]</label>
-                        <posy>213</posy>
                         <width>1164</width>
-                        <onright>9001</onright>
-                        <onup>16</onup>
-                        <ondown>14</ondown>
                         <include>LeftMenuButton</include>
                     </control>
-                    <control type="button" id="14">
+                    <control type="edit" id="14">
+                        <description>Username Button</description>
                         <label>$LOCALIZE[1014]</label>
-                        <posy>284</posy>
                         <width>1164</width>
-                        <onright>19</onright>
-                        <onup>13</onup>
-                        <ondown>15</ondown>
                         <include>LeftMenuButton</include>
                     </control>
-                    <control type="button" id="15">
+                    <control type="edit" id="15">
+                        <description>Password Button</description>
                         <label>$LOCALIZE[15052]</label>
-                        <posy>355</posy>
                         <width>1164</width>
-                        <onright>18</onright>
-                        <onup>14</onup>
-                        <ondown>18</ondown>
                         <include>LeftMenuButton</include>
                     </control>
                 </control>
@@ -118,8 +105,8 @@
                         <aligny>bottom</aligny>
                         <align>center</align>
                         <orientation>horizontal</orientation>
-                        <onup>15</onup>
-                        <ondown>15</ondown>
+                        <onup>9002</onup>
+                        <ondown>9001</ondown>
                         <control type="button" id="12">
                             <width>360</width>
                             <label>$LOCALIZE[1024]</label>

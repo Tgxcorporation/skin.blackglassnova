@@ -73,7 +73,7 @@
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="label">
-                        <posx>40</posx>
+                        <posx>0</posx>
                         <height>69</height>
                         <width>80</width>
                         <align>center</align>
@@ -109,7 +109,7 @@
                         <include>FacadeFocus</include>
                     </control>
                     <control type="label">
-                        <posx>40</posx>
+                        <posx>0</posx>
                         <height>69</height>
                         <width>80</width>
                         <align>center</align>

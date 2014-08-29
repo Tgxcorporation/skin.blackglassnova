@@ -126,18 +126,32 @@
                 <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
             </control>
             <control type="button" id="7">
+                <description>Default Button</description>
                 <width>1231</width>
                 <include>LeftMenuButton</include>
             </control>
             <control type="radiobutton" id="8">
+                <description>Default RadioButton</description>
                 <width>1231</width>
                 <radioposx>1128</radioposx>
                 <textwidth>1070</textwidth>
                 <include>LeftMenuButton</include>
             </control>
             <control type="spincontrolex" id="9">
+                <description>Default SpinControlex</description>
                 <width>1231</width>
                 <include>LeftMenuButton</include>
+            </control>
+            <control type="sliderex" id="13">
+                <description>Default Slider</description>
+                <width>1231</width>
+                <include>LeftMenuButton</include>
+            </control>
+            <control type="image" id="11">
+                <description>separator image</description>
+                <width>1231</width>
+                <height>8</height>
+                <texture>list/bg_facade_separator.png</texture>
             </control>
             <control type="label">
                 <posx>1359</posx>

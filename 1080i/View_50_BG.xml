@@ -39,10 +39,10 @@
             </control>
             <control type="label">
                 <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
-                <posx>1150</posx>
+                <posx>750</posx>
                 <posy>39</posy>
                 <height>28</height>
-                <width>300</width>
+                <width>400</width>
                 <align>right</align>
                 <font>FacadeListSubFont</font>
                 <textcolor>SublistNoFocusColor</textcolor>
@@ -87,10 +87,10 @@
             </control>
             <control type="label">
                 <visible>![StringCompare(ListItem.Property(Addon.Creator),)+IsEmpty(ListItem.Label2)]</visible>
-                <posx>1150</posx>
+                <posx>750</posx>
                 <posy>39</posy>
                 <height>28</height>
-                <width>300</width>
+                <width>400</width>
                 <align>right</align>
                 <font>FacadeListSubFont</font>
                 <textcolor>SublistFocusColor</textcolor>

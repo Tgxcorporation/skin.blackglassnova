@@ -27,7 +27,7 @@
             <control type="group">
                 <posx>528</posx>
                 <posy>139</posy>
-                <control type="label">
+                <control type="label" id="2">
                     <posx>45</posx>
                     <posy>18</posy>
                     <width>774</width>

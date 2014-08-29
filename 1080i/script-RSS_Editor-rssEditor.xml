@@ -45,8 +45,7 @@
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
-
-                 </control>
+            </control>
             <control type="image">
                 <posx>1209</posx>
                 <posy>382</posy>

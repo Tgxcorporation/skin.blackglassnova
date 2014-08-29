@@ -60,7 +60,7 @@
         <ondown>700</ondown>
         <itemlayout width="384" height="50">
             <control type="label">
-                <posx>192</posx>
+                <posx>17</posx>
                 <posy>0</posy>
                 <height>50</height>
                 <width>350</width>
@@ -75,7 +75,7 @@
         <focusedlayout width="384" height="50">
             <control type="label">
                 <visible>!Control.HasFocus(9001)</visible>
-                <posx>192</posx>
+                <posx>17</posx>
                 <posy>0</posy>
                 <height>50</height>
                 <width>350</width>
@@ -87,7 +87,7 @@
             </control>
             <control type="label">
                 <visible>Control.HasFocus(9001)</visible>
-                <posx>192</posx>
+                <posx>17</posx>
                 <posy>0</posy>
                 <height>50</height>
                 <width>350</width>

@@ -98,7 +98,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="label">
-                            <posx>204</posx>
+                            <posx>27</posx>
                             <posy>235</posy>
                             <width>353</width>
                             <height>70</height>
@@ -127,7 +127,7 @@
                             <include>ThumbBorderOverlay</include>
                         </control>
                         <control type="label">
-                            <posx>204</posx>
+                            <posx>27</posx>
                             <posy>235</posy>
                             <width>353</width>
                             <height>70</height>
@@ -155,7 +155,7 @@
                             <include>ThumbBorder</include>
                         </control>
                         <control type="label">
-                            <posx>166</posx>
+                            <posx>41</posx>
                             <posy>235</posy>
                             <width>249</width>
                             <height>70</height>
@@ -176,7 +176,7 @@
                             <include>ThumbBorderOverlay</include>
                         </control>
                         <control type="label">
-                            <posx>166</posx>
+                            <posx>41</posx>
                             <posy>235</posy>
                             <width>249</width>
                             <height>70</height>

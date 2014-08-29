@@ -70,9 +70,9 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="label">
-                        <posx>230</posx>
+                        <posx>0</posx>
                         <posy>280</posy>
-                        <width>461</width>
+                        <width>460</width>
                         <height>22</height>
                         <align>center</align>
                         <font>FacadePanelFont</font>
@@ -89,9 +89,9 @@
                         <include>ThumbBorderOverlay</include>
                     </control>
                     <control type="label">
-                        <posx>230</posx>
+                        <posx>0</posx>
                         <posy>280</posy>
-                        <width>461</width>
+                        <width>460</width>
                         <height>22</height>
                         <align>center</align>
                         <font>FacadePanelFont</font>

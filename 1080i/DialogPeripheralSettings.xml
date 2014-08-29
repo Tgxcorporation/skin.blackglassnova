@@ -72,7 +72,7 @@
                     <width>1164</width>
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="sliderex" id="10">
+                <control type="sliderex" id="13">
                     <width>1164</width>
                     <include>LeftMenuButton</include>
                 </control>

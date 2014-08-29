@@ -40,7 +40,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>137</posx>
+                <posx>15</posx>
                 <posy>370</posy>
                 <width>244</width>
                 <height>70</height>
@@ -78,7 +78,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>137</posx>
+                <posx>15</posx>
                 <posy>370</posy>
                 <width>244</width>
                 <height>70</height>
@@ -130,7 +130,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>137</posx>
+                <posx>15</posx>
                 <posy>370</posy>
                 <width>244</width>
                 <height>70</height>
@@ -168,7 +168,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>137</posx>
+                <posx>15</posx>
                 <posy>370</posy>
                 <width>244</width>
                 <height>70</height>
@@ -220,7 +220,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>137</posx>
+                <posx>15</posx>
                 <posy>370</posy>
                 <width>244</width>
                 <height>70</height>
@@ -258,7 +258,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>137</posx>
+                <posx>15</posx>
                 <posy>370</posy>
                 <width>244</width>
                 <height>70</height>
@@ -310,7 +310,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>137</posx>
+                <posx>15</posx>
                 <posy>370</posy>
                 <width>244</width>
                 <height>70</height>
@@ -348,7 +348,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>137</posx>
+                <posx>15</posx>
                 <posy>370</posy>
                 <width>244</width>
                 <height>70</height>
@@ -400,7 +400,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>192</posx>
+                <posx>15</posx>
                 <posy>345</posy>
                 <width>354</width>
                 <height>70</height>
@@ -412,7 +412,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>192</posx>
+                <posx>15</posx>
                 <posy>375</posy>
                 <width>354</width>
                 <height>70</height>
@@ -451,7 +451,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>192</posx>
+                <posx>15</posx>
                 <posy>345</posy>
                 <width>354</width>
                 <height>70</height>
@@ -463,7 +463,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>192</posx>
+                <posx>15</posx>
                 <posy>375</posy>
                 <width>354</width>
                 <height>70</height>
@@ -515,7 +515,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>192</posx>
+                <posx>15</posx>
                 <posy>345</posy>
                 <width>354</width>
                 <height>70</height>
@@ -527,7 +527,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>192</posx>
+                <posx>15</posx>
                 <posy>375</posy>
                 <width>354</width>
                 <height>70</height>
@@ -566,7 +566,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>192</posx>
+                <posx>15</posx>
                 <posy>345</posy>
                 <width>354</width>
                 <height>70</height>
@@ -578,7 +578,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>192</posx>
+                <posx>15</posx>
                 <posy>375</posy>
                 <width>354</width>
                 <height>70</height>
@@ -630,7 +630,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>192</posx>
+                <posx>15</posx>
                 <posy>360</posy>
                 <width>354</width>
                 <height>70</height>
@@ -669,7 +669,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>192</posx>
+                <posx>15</posx>
                 <posy>360</posy>
                 <width>354</width>
                 <height>70</height>
@@ -703,7 +703,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -725,7 +725,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -759,7 +759,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -781,7 +781,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -815,7 +815,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -837,7 +837,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -871,7 +871,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -893,7 +893,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -927,7 +927,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>295</posy>
                 <width>260</width>
                 <height>70</height>
@@ -939,7 +939,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>325</posy>
                 <width>260</width>
                 <height>70</height>
@@ -961,7 +961,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>295</posy>
                 <width>260</width>
                 <height>70</height>
@@ -973,7 +973,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>325</posy>
                 <width>260</width>
                 <height>70</height>
@@ -1007,7 +1007,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>295</posy>
                 <width>260</width>
                 <height>70</height>
@@ -1019,7 +1019,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>325</posy>
                 <width>260</width>
                 <height>70</height>
@@ -1041,7 +1041,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>295</posy>
                 <width>260</width>
                 <height>70</height>
@@ -1053,7 +1053,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>325</posy>
                 <width>260</width>
                 <height>70</height>
@@ -1088,7 +1088,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>300</posy>
                 <width>260</width>
                 <height>70</height>
@@ -1111,7 +1111,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>175</posx>
+                <posx>45</posx>
                 <posy>300</posy>
                 <width>260</width>
                 <height>70</height>
@@ -1264,12 +1264,20 @@
             <property name="submenuVisibility">CustomGroupName8</property>
         </item>
         <item id="300">
-            <visible>System.GetBool(pvrmanager.enabled)</visible>
+            <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(Tv.Hide)</visible>
             <label>$LOCALIZE[31500]</label>
-            <thumb fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Background)]</thumb>
-            <icon fallback="special://skin/backgrounds/Pvr.jpg">$INFO[Skin.String(Pvr.Icon)]</icon>
-            <onclick>ActivateWindowAndFocus(PVR)</onclick>
+            <thumb fallback="special://skin/backgrounds/Tv.jpg">$INFO[Skin.String(Tv.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Tv.jpg">$INFO[Skin.String(Tv.Icon)]</icon>
+            <onclick>ActivateWindow(TVChannels)</onclick>
             <property name="submenuVisibility">livetv</property>
+        </item>
+        <item id="301">
+            <visible>System.GetBool(pvrmanager.enabled) + !Skin.HasSetting(Radio.Hide)</visible>
+            <label>$LOCALIZE[19021]</label>
+            <thumb fallback="special://skin/backgrounds/Radio.jpg">$INFO[Skin.String(Radio.Background)]</thumb>
+            <icon fallback="special://skin/backgrounds/Radio.jpg">$INFO[Skin.String(Radio.Icon)]</icon>
+            <onclick>ActivateWindow(RadioChannels)</onclick>
+            <property name="submenuVisibility">radio</property>
         </item>
         <item id="7">
             <visible>!Skin.HasSetting(Favourites.Hide)+!Skin.HasSetting(BlackGlassMode)</visible>
@@ -1367,13 +1375,13 @@
             <visible>Container(300).HasFocus(2) + !Skin.HasSetting(Addons3)</visible>
             <label>$LOCALIZE[1]</label>
             <onclick>XBMC.ActivateWindow(Pictures,Addons,return)</onclick>
-        </item> -->
+        </item>
         <item id="501">
             <visible>Container(300).HasFocus(2)</visible>
             <label>$LOCALIZE[10040]</label>
             <onclick>XBMC.ActivateWindow(addonbrowser)</onclick>
         </item>
-        <!-- <item id="6">
+        <item id="6">
             <visible>Container(300).HasFocus(5)</visible>
             <label>$LOCALIZE[136]</label>
             <onclick>ActivateWindow(Videos,playlists,return)</onclick>
@@ -1541,33 +1549,33 @@
         <item id="90142">
             <visible>Container(300).HasFocus(300)</visible>
             <label>$LOCALIZE[19023]</label>
-            <onclick>ActivateWindowAndFocus(MyPVR, 32,0, 11,0)</onclick>
+            <onclick>ActivateWindow(TVChannels)</onclick>
         </item>
         <item id="90143">
             <visible>Container(300).HasFocus(300)</visible>
             <label>$LOCALIZE[19024]</label>
-            <onclick>ActivateWindowAndFocus(MyPVR, 33,0, 12,0)</onclick>
+            <onclick>ActivateWindow(RadioChannels)</onclick>
         </item>
         <item id="90145">
             <visible>Container(300).HasFocus(300)</visible>
             <label>$LOCALIZE[19163]</label>
-            <onclick>ActivateWindowAndFocus(MyPVR, 34,0, 13,0)</onclick>
+            <onclick>ActivateWindow(TVRecordings)</onclick>
         </item>
         <item id="90146">
             <visible>Container(300).HasFocus(300)</visible>
             <label>$LOCALIZE[19040]</label>
-            <onclick>ActivateWindowAndFocus(MyPVR, 35,0, 14,0)</onclick>
-        </item> -->
+            <onclick>ActivateWindow(TVTimers)</onclick>
+        </item>
         <item id="90147">
             <visible>Container(300).HasFocus(300)</visible>
             <label>$LOCALIZE[137]</label>
-            <onclick>ActivateWindowAndFocus(MyPVR, 36,0, 17,0)</onclick>
+            <onclick>ActivateWindow(TVSearch)</onclick>
         </item>
-        <!-- <item id="90144">
+        <item id="90144">
             <visible>Container(300).HasFocus(300)</visible>
             <label>$LOCALIZE[19069]</label>
-            <onclick>ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
-        </item> -->
+            <onclick>ActivateWindow(TVGuide)</onclick>
+        </item>
         <item id="90200">
             <visible>Container(300).HasFocus(15)</visible>
             <label>$INFO[Weather.Location]</label>
@@ -1582,7 +1590,7 @@
             <visible>Container(300).HasFocus(15)</visible>
             <label>$INFO[Weather.Temperature]</label>
             <onclick>activatewindow(weather)</onclick>
-        </item>
+        </item> -->
         <item id="90203">
             <visible>System.HasAddon(plugin.video.plexbmc) + !Skin.HasSetting(plexbmc) + Container(300).HasFocus(10)</visible>
             <label>$LOCALIZE[31008]</label>

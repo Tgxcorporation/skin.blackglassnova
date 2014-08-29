@@ -29,7 +29,7 @@
             <control type="group">
                 <posx>528</posx>
                 <posy>271</posy>
-                <control type="label" id="1000">
+                <control type="label" id="102">
                     <posx>45</posx>
                     <posy>5</posy>
                     <width>774</width>
@@ -38,7 +38,7 @@
                     <textcolor>MainColor</textcolor>
                     <align>center</align>
                 </control>
-                <control type="label" id="1001">
+                <control type="label" id="103">
                     <posx>45</posx>
                     <posy>65</posy>
                     <width>774</width>
@@ -68,7 +68,7 @@
                     <height>300</height>
                     <texture>list/bg_facade_vertical.png</texture>
                 </control>
-                <control type="image" id="2">
+                <control type="image" id="101">
                     <posx>600</posx>
                     <posy>117</posy>
                     <width>264</width>
@@ -129,6 +129,14 @@
                     </control>
                 </control>
             </control>
+        </control>
+        <control type="label" id="2">
+            <description>header label</description>
+            <left>4000</left>
+            <top>20</top>
+            <width>620</width>
+            <height>30</height>
+            <label>-</label>
         </control>
     </controls>
 </window>
