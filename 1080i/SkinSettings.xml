@@ -796,28 +796,28 @@
                             <thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>
                             <onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.8)</onclick>
                         </item>
-                        <item id="31">
+                        <item id="32">
                             <visible>!Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>
                             <label>[COLOR=SelectedColor]$LOCALIZE[31500][/COLOR]</label>
                             <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Tv.jpg">$INFO[Skin.String(Tv.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Tv.Hide)</onclick>
                         </item>
-                        <item id="31">
+                        <item id="32">
                             <visible>Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>
                             <label>[COLOR=DisabledColor]$LOCALIZE[31500][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
                             <thumb fallback="special://skin/backgrounds/Tv.jpg">$INFO[Skin.String(Tv.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Tv.Hide)</onclick>
                         </item>
-                        <item id="32">
+                        <item id="33">
                             <visible>!Skin.HasSetting(Radio.Hide)+System.GetBool(pvrmanager.enabled)</visible>
                             <label>[COLOR=SelectedColor]$LOCALIZE[19021][/COLOR]</label>
                             <label2>[COLOR=SelectedColor]$LOCALIZE[305][/COLOR]</label2>
                             <thumb fallback="special://skin/backgrounds/Radio.jpg">$INFO[Skin.String(Radio.Background)]</thumb>
                             <onclick>Skin.ToggleSetting(Radio.Hide)</onclick>
                         </item>
-                        <item id="32">
+                        <item id="33">
                             <visible>Skin.HasSetting(Radio.Hide)+System.GetBool(pvrmanager.enabled)</visible>
                             <label>[COLOR=DisabledColor]$LOCALIZE[19021][/COLOR]</label>
                             <label2>$LOCALIZE[1223]</label2>
