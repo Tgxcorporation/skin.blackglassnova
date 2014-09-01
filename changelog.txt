@@ -1,3 +1,9 @@
+2.5.0
+Made the skin Helix compatible.
+Added version info in AddonBrowser.
+Enabled TvTunes add-on for movies and music videos too.
+Bugs fixed.
+
 2.1.0
 BGN: added sliding animation to reveal fullscreen fan art.
 Added fullscreen button in topbar.
