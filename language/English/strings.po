@@ -116,6 +116,10 @@ msgctxt "#31029"
 msgid "Disable auto sliding animations of list views"
 msgstr ""
 
+msgctxt "#31030"
+msgid "Enlarge list views to the right"
+msgstr ""
+
 #empty strings from id 31030 to 31034
 
 msgctxt "#31035"
@@ -595,5 +599,5 @@ msgid "Use fixed list on Home Menu"
 msgstr ""
 
 msgctxt "#31999"
-msgid "Enlarge list views to the right"
+msgid "Slide to left animations of list views"
 msgstr ""
