@@ -733,7 +733,7 @@
                             <visible>!Container.Content(Addons)</visible>
                             <posx>825</posx>
                             <posy>73</posy>
-                            <width>780</width>
+                            <width>480</width>
                             <height>71</height>
                             <align>right</align>
                             <font>InfoDetailsFont</font>
