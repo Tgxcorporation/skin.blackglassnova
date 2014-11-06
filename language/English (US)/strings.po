@@ -108,6 +108,18 @@ msgctxt "#31028"
 msgid "Go Black Glass Nova"
 msgstr "Go Black Glass Nova"
 
+msgctxt "#31029"
+msgid "Disable auto sliding animations of list views"
+msgstr "Disable auto sliding animations of list views"
+
+msgctxt "#31030"
+msgid "Enlarge list views to the right"
+msgstr "Enlarge list views to the right"
+
+msgctxt "#31032"
+msgid "Enable Kiosk Mode"
+msgstr "Enable Kiosk Mode"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fuchsia"

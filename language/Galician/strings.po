@@ -76,6 +76,18 @@ msgctxt "#31014"
 msgid "On Deck"
 msgstr "En progreso"
 
+msgctxt "#31015"
+msgid "Actor Info"
+msgstr "Info. do Actor"
+
+msgctxt "#31016"
+msgid "Director Info"
+msgstr "Info. do Director"
+
+msgctxt "#31017"
+msgid "Writer Info"
+msgstr "Info. do Guionista"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Engadido recentemente"
@@ -83,6 +95,10 @@ msgstr "Engadido recentemente"
 msgctxt "#31025"
 msgid "Items"
 msgstr "Elementos"
+
+msgctxt "#31032"
+msgid "Enable Kiosk Mode"
+msgstr "Activar o modo Quiosco"
 
 msgctxt "#31035"
 msgid "Fuchsia"
@@ -191,6 +207,10 @@ msgstr "Descargar Subtítulos"
 msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "subtítulos locais dispoñíbeis"
+
+msgctxt "#31392"
+msgid "(3/3) Asap (Fixed Width)"
+msgstr "(3/3) Asap (Largo Fixo)"
 
 msgctxt "#31500"
 msgid "Live TV"
@@ -308,6 +328,10 @@ msgctxt "#31976"
 msgid "Home shelf"
 msgstr "Andel principal"
 
+msgctxt "#31977"
+msgid "Fast start"
+msgstr "Inicio rápido"
+
 msgctxt "#31979"
 msgid "Loading..."
 msgstr "Cargando..."
@@ -336,6 +360,10 @@ msgctxt "#31988"
 msgid "Menu"
 msgstr "Menú"
 
+msgctxt "#31989"
+msgid "Home menu quit button function"
+msgstr "Función do botón saír do menú principal"
+
 msgctxt "#31990"
 msgid "Quit Menu"
 msgstr "Menú Saír"
@@ -347,6 +375,10 @@ msgstr "Pancarta en miniatura (amplss) "
 msgctxt "#31993"
 msgid "Not used - click to customize"
 msgstr "Sen usar - faga clic para personalizar"
+
+msgctxt "#31994"
+msgid "Use vertical main menu on Home screen"
+msgstr "Usar o menú vertical na pantalla principal"
 
 msgctxt "#31996"
 msgid "Big Channel List in OSD"

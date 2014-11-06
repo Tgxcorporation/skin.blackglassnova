@@ -108,6 +108,10 @@ msgctxt "#31028"
 msgid "Go Black Glass Nova"
 msgstr "Pergi ke Black Glass Nova"
 
+msgctxt "#31032"
+msgid "Enable Kiosk Mode"
+msgstr "Benarkan Mod Kiosk"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fuksia"

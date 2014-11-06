@@ -96,6 +96,30 @@ msgctxt "#31025"
 msgid "Items"
 msgstr "Einträge"
 
+msgctxt "#31026"
+msgid "Enable manual scrolling for plot & review"
+msgstr "Manuelles durchblättern für Handlung & Zusammenfassung aktivieren"
+
+msgctxt "#31027"
+msgid "Go Black Glass"
+msgstr "Go Black Glass"
+
+msgctxt "#31028"
+msgid "Go Black Glass Nova"
+msgstr "Go Black Glass Nova"
+
+msgctxt "#31029"
+msgid "Disable auto sliding animations of list views"
+msgstr "Schiebe-Animation in der Listenansicht deaktivieren"
+
+msgctxt "#31030"
+msgid "Enlarge list views to the right"
+msgstr "Listenansicht auf der rechten Seite vergrößern"
+
+msgctxt "#31032"
+msgid "Enable Kiosk Mode"
+msgstr "Kiosk-Modus aktivieren"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fuchsienfarbig"
@@ -119,6 +143,14 @@ msgstr "Stammordner der Musikbibliothek"
 msgctxt "#31040"
 msgid "Enable CdArt"
 msgstr "CdArt aktivieren"
+
+msgctxt "#31041"
+msgid "Enable Extra Fanart"
+msgstr "Extra Fanart aktivieren"
+
+msgctxt "#31042"
+msgid "Enable Clear Art"
+msgstr "ClearArt aktivieren"
 
 msgctxt "#31043"
 msgid "Root Folder of cdART Manager library"
@@ -292,6 +324,14 @@ msgctxt "#31510"
 msgid "Timer Set"
 msgstr "Timer gesetzt"
 
+msgctxt "#31511"
+msgid "Artwork Downloader Solo"
+msgstr "Artwork Downloader für dieses Element starten"
+
+msgctxt "#31512"
+msgid "Artwork Downloader Gui"
+msgstr "Artwork Downloader GUI starten"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "36-Stunden-Prognose"
@@ -315,6 +355,22 @@ msgstr "Entstehendes Untermenü"
 msgctxt "#31948"
 msgid "Home sub menu"
 msgstr "Hauptuntermenü"
+
+msgctxt "#31949"
+msgid "Enable window closing icon"
+msgstr "Symbol zum Schließen des Fensters einblenden"
+
+msgctxt "#31950"
+msgid "Disable Fanart Backdrops"
+msgstr "Fankunst-Hintergrundbilder deaktivieren"
+
+msgctxt "#31951"
+msgid "Disable Sliding Animations"
+msgstr "Schiebeanimationen deaktivieren"
+
+msgctxt "#31952"
+msgid "Disable Pause, FF, RW icons in OSD"
+msgstr "Symbole für Pause, Vorlauf und Zurückspulen im OSD deaktivieren."
 
 msgctxt "#31953"
 msgid "Large List"
@@ -468,6 +524,10 @@ msgctxt "#31990"
 msgid "Quit Menu"
 msgstr "Beenden-Funktion"
 
+msgctxt "#31991"
+msgid "Enable background music visualization/video player"
+msgstr "Musik-Visualisierung und Video im Hintergrund aktivieren"
+
 msgctxt "#31992"
 msgid "Banner (wide) thumbs"
 msgstr "Banner (breite) Thumbs"
@@ -488,6 +548,14 @@ msgctxt "#31996"
 msgid "Big Channel List in OSD"
 msgstr "Große Senderliste im OSD"
 
+msgctxt "#31997"
+msgid "Ken Burns Effect on backdrops"
+msgstr "Ken-Burns-Effekt für den Hintergrund"
+
 msgctxt "#31998"
 msgid "Use fixed list on Home Menu"
 msgstr "Feste Liste im Hauptmenü verwenden"
+
+msgctxt "#31999"
+msgid "Slide to left animations of list views"
+msgstr "Nach-links-Verschiebeanimationen in der Listenansicht"

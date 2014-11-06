@@ -108,6 +108,18 @@ msgctxt "#31028"
 msgid "Go Black Glass Nova"
 msgstr "Pirmyn Black Glass Nova"
 
+msgctxt "#31029"
+msgid "Disable auto sliding animations of list views"
+msgstr "Išjungti sąrašo rodinių automatinio slinkimo animacijas"
+
+msgctxt "#31030"
+msgid "Enlarge list views to the right"
+msgstr "Išdidinti sąrašo rodinius į dešinę"
+
+msgctxt "#31032"
+msgid "Enable Kiosk Mode"
+msgstr "Įjungti kiosko režimą"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fuksija"

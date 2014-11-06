@@ -28,6 +28,10 @@ msgctxt "#31051"
 msgid "Sort: Descending"
 msgstr "క్రమం: అవరోహణ"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "అంశాలు"
+
 msgctxt "#31509"
 msgid "Extras"
 msgstr "అదనపు"
