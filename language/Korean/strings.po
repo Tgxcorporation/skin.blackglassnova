@@ -46,7 +46,7 @@ msgstr "공유"
 
 msgctxt "#31007"
 msgid "PleKodi settings"
-msgstr "PlexKodi 설정"
+msgstr "PleKodi 설정"
 
 msgctxt "#31008"
 msgid "Go Plex"
@@ -107,6 +107,18 @@ msgstr "Black Glass 가기"
 msgctxt "#31028"
 msgid "Go Black Glass Nova"
 msgstr "Black Glass Nova 가기"
+
+msgctxt "#31029"
+msgid "Disable auto sliding animations of list views"
+msgstr "목록 보기에서 자동 슬라이딩 애니메이션 사용 안 함"
+
+msgctxt "#31030"
+msgid "Enlarge list views to the right"
+msgstr "오른쪽 목록 보기 크게"
+
+msgctxt "#31032"
+msgid "Enable Kiosk Mode"
+msgstr "전시모드 사용"
 
 msgctxt "#31035"
 msgid "Fuchsia"
@@ -335,6 +347,10 @@ msgstr "주말 예보"
 msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "10일 예보"
+
+msgctxt "#31947"
+msgid "Resulting sub menu"
+msgstr "하위 메뉴 미리보기"
 
 msgctxt "#31948"
 msgid "Home sub menu"

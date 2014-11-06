@@ -64,6 +64,14 @@ msgctxt "#31133"
 msgid "Subtitle Add-on"
 msgstr "Altyazı Eklentisi"
 
+msgctxt "#31292"
+msgid "items"
+msgstr "Öğeler"
+
+msgctxt "#31297"
+msgid "min"
+msgstr "dakika"
+
 msgctxt "#31309"
 msgid "Memory Used:"
 msgstr "Kullanılan Bellek:"
