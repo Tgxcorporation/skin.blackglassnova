@@ -137,6 +137,7 @@
                 <textcolor>SublistNoFocusColor</textcolor>
                 <label>$VAR[Details]</label>
             </control>
+            <!-- <include>ListWatchedOverlayNoFocus</include> -->
         </itemlayout>
         <focusedlayout condition="!Window.IsVisible(AddonBrowser.xml)+![Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)|container.content(artists)|container.content(albums)|container.content(addons)]" height="73" width="1440">
             <control type="image">
@@ -174,6 +175,7 @@
                 <textcolor>SublistFocusColor</textcolor>
                 <label>$VAR[Details]</label>
             </control>
+            <!-- <include>ListWatchedOverlayFocus</include> -->
         </focusedlayout>
         <itemlayout condition="!Window.IsVisible(AddonBrowser.xml)+[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(episodes) | Container.Content(seasons)|container.content(artists)|container.content(albums)|container.content(addons)]" height="73" width="1440">
             <control type="image">
@@ -278,7 +280,7 @@
                     <posy>150</posy>
                     <width>300</width>
                     <height>235</height>
-                    <texture>$INFO[ListItem.Art(clearlogo)]</texture>
+                    <texture>$INFO[ListItem.Art(clearart)]</texture>
                     <aspectratio align="right" aligny="bottom">keep</aspectratio>
                 </control>
             </control>
