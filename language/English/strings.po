@@ -128,7 +128,11 @@ msgctxt "#31032"
 msgid "Enable Kiosk Mode"
 msgstr ""
 
-#empty strings from id 31033 to 31034
+msgctxt "#31033"
+msgid "Auto hide music playing infos"
+msgstr ""
+
+#empty strings from id 31034 to 31034
 
 msgctxt "#31035"
 msgid "Fuchsia"

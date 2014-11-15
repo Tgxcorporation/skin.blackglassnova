@@ -32,6 +32,9 @@
                     <animation type="Conditional" condition="!IntegerGreaterThan(Control.GetLabel(23),0)" reversible="false">
                         <effect type="fade" start="0" end="100" time="500"/>
                     </animation>
+                    <animation type="Conditional" condition="IntegerGreaterThan(Control.GetLabel(23),0)+![Window.IsVisible(MusicOSD) | Window.IsVisible(script-XBMC_Lyrics-main.xml)]+Skin.HasSetting(HidePlayingMusicInfo)" reversible="false">
+                        <effect type="fade" start="100" end="0" time="300" delay="5000"/>
+                    </animation>
                     <control type="group">
                         <!-- CLEAR ART -->
                         <visible>Skin.HasSetting(EnableClearArt)</visible>
