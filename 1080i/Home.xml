@@ -24,10 +24,10 @@
         <control type="image">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <visible>![window.IsActive(DialogVolumeBar.xml)|window.IsActive(DialogMuteBug.xml)]+!Skin.HasSetting(VerticalHome)</visible>
-            <posx>42</posx>
-            <posy>14</posy>
-            <width>102</width>
-            <height>60</height>
+            <posx>47</posx>
+            <posy>24</posy>
+            <width>178</width>
+            <height>44</height>
             <texture>common/logo.png</texture>
             <colordiffuse>WindowTitleColor</colordiffuse>
         </control>
