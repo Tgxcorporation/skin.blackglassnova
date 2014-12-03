@@ -108,9 +108,25 @@ msgctxt "#31028"
 msgid "Go Black Glass Nova"
 msgstr "Χρήση Black Glass Nova"
 
+msgctxt "#31029"
+msgid "Disable auto sliding animations of list views"
+msgstr "Απενεργοποίηση εφέ κύλισης για λίστες"
+
+msgctxt "#31030"
+msgid "Enlarge list views to the right"
+msgstr "Μεγέθυνση λιστών στα δεξιά"
+
+msgctxt "#31031"
+msgid "Art Management"
+msgstr "Διαχείριση Εικόνων"
+
 msgctxt "#31032"
 msgid "Enable Kiosk Mode"
 msgstr "Ενεργοποίηση Λειτουργίας Kiosk"
+
+msgctxt "#31033"
+msgid "Auto hide music playing infos"
+msgstr "Αυτόματη απόκρυψη πληροφοριών μουσικής"
 
 msgctxt "#31035"
 msgid "Fuchsia"

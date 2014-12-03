@@ -116,9 +116,17 @@ msgctxt "#31030"
 msgid "Enlarge list views to the right"
 msgstr "Vergroot lijst vertoning naar rechts"
 
+msgctxt "#31031"
+msgid "Art Management"
+msgstr "Art Management"
+
 msgctxt "#31032"
 msgid "Enable Kiosk Mode"
 msgstr "Kioskmodus activeren (geen zij menu's)"
+
+msgctxt "#31033"
+msgid "Auto hide music playing infos"
+msgstr "Automatisch muziek afspeelinformatie verbergen"
 
 msgctxt "#31035"
 msgid "Fuchsia"
