@@ -116,6 +116,10 @@ msgctxt "#31030"
 msgid "Enlarge list views to the right"
 msgstr "Aumentar visulização em lista para direita"
 
+msgctxt "#31031"
+msgid "Art Management"
+msgstr "Gerir artes"
+
 msgctxt "#31032"
 msgid "Enable Kiosk Mode"
 msgstr "Ativar Modo Quiosque"
