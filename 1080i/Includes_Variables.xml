@@ -23,7 +23,6 @@
         <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Property(Icon))">$INFO[ListItem.Property(Icon)]</value>
         <value condition="!IsEmpty(ListItem.thumb)">$INFO[ListItem.thumb]</value>
-        <value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(MyPVR.xml)+!Control.isvisible(12)]">defaultChannelTvBig_Wide.png</value>
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyVideoPlaylist.xml)]">DefaultFolderBackEpisode.png</value>
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)]">DefaultFolderBackPoster.png</value>
         <value condition="StringCompare(ListItem.Label,..)">DefaultFolderBack.png</value>
