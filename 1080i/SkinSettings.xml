@@ -1431,7 +1431,7 @@
                             </item>
                             <item id="12">
                                 <visible>!Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>
-                                <label>31500</label>
+                                <label>19020</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Tv.jpg</icon>
                                 <thumb>$INFO[Skin.String(Tv.Background)]</thumb>
@@ -1942,7 +1942,7 @@
                             </item>
                             <item id="12">
                                 <visible>!Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>
-                                <label>31500</label>
+                                <label>19020</label>
                                 <onclick>Control.Move(9010,-1)</onclick>
                                 <icon>special://skin/backgrounds/Tv.jpg</icon>
                                 <thumb>$INFO[Skin.String(Tv.Icon)]</thumb>

@@ -116,9 +116,17 @@ msgctxt "#31030"
 msgid "Enlarge list views to the right"
 msgstr "Enlarge list views to the right"
 
+msgctxt "#31031"
+msgid "Art Management"
+msgstr "Art Management"
+
 msgctxt "#31032"
 msgid "Enable Kiosk Mode"
 msgstr "Enable Kiosk Mode"
+
+msgctxt "#31033"
+msgid "Auto hide music playing infos"
+msgstr "Auto hide music playing infos"
 
 msgctxt "#31035"
 msgid "Fuchsia"

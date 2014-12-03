@@ -120,6 +120,10 @@ msgctxt "#31032"
 msgid "Enable Kiosk Mode"
 msgstr "Kiosk-Modus aktivieren"
 
+msgctxt "#31033"
+msgid "Auto hide music playing infos"
+msgstr "Musikwiedergabeinformationen automatisch ausblenden"
+
 msgctxt "#31035"
 msgid "Fuchsia"
 msgstr "Fuchsienfarbig"
@@ -146,7 +150,7 @@ msgstr "CdArt aktivieren"
 
 msgctxt "#31041"
 msgid "Enable Extra Fanart"
-msgstr "Extra Fanart aktivieren"
+msgstr "Zusätzliche Fankunst aktivieren"
 
 msgctxt "#31042"
 msgid "Enable Clear Art"
@@ -402,7 +406,7 @@ msgstr "Musikwiedergabe im Vollbild"
 
 msgctxt "#31960"
 msgid "Music opens artists"
-msgstr "Musik öffnet Künstler"
+msgstr "Musik öffnet Interpreten"
 
 msgctxt "#31961"
 msgid "Recently added"
@@ -438,7 +442,7 @@ msgstr "Info anzeigen"
 
 msgctxt "#31969"
 msgid "Artist slideshow (requires Artist slideshow add-on)"
-msgstr "Interpreten Slideshow (benötigt das Interpreten Add-on)"
+msgstr "Interpreten-Diashow (benötigt das Interpreten Add-on)"
 
 msgctxt "#31970"
 msgid "Push down for Gallery"

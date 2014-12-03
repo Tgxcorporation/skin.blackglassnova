@@ -108,9 +108,17 @@ msgctxt "#31028"
 msgid "Go Black Glass Nova"
 msgstr "Ir a Black Glass Nova"
 
+msgctxt "#31031"
+msgid "Art Management"
+msgstr "Gestión del Arte"
+
 msgctxt "#31032"
 msgid "Enable Kiosk Mode"
 msgstr "Activa Modo Kiosko"
+
+msgctxt "#31033"
+msgid "Auto hide music playing infos"
+msgstr "Ocultar automáticamente la información de la música en reproducción"
 
 msgctxt "#31035"
 msgid "Fuchsia"
