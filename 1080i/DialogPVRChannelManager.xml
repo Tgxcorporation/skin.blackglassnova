@@ -80,7 +80,7 @@
                         <aligny>center</aligny>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <info>ListItem.ChannelNumber</info>
+                        <info>ListItem.ChannelNumberLabel</info>
                     </control>
                     <control type="label">
                         <posx>80</posx>
@@ -116,7 +116,7 @@
                         <aligny>center</aligny>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistFocusColor</textcolor>
-                        <info>ListItem.ChannelNumber</info>
+                        <info>ListItem.ChannelNumberLabel</info>
                     </control>
                     <control type="label">
                         <posx>80</posx>
