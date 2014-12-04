@@ -101,7 +101,7 @@
                 <label>$INFO[ListItem.Label2]</label>
             </control>
         </focusedlayout>
-        <itemlayout condition="!Window.IsVisible(AddonBrowser.xml)+![Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes) | Container.Content(seasons)|container.content(artists)|container.content(albums)|container.content(addons)]" height="73" width="1440">
+        <itemlayout condition="!Window.IsVisible(AddonBrowser.xml)" height="73" width="1440">
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -113,7 +113,7 @@
                 <visible>StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>71</height>
-                <width>1385</width>
+                <width>1340</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
@@ -122,7 +122,7 @@
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>42</height>
-                <width>1385</width>
+                <width>1340</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
@@ -132,93 +132,14 @@
                 <posx>25</posx>
                 <posy>39</posy>
                 <height>28</height>
-                <width>1385</width>
-                <font>FacadeListSubFont</font>
-                <textcolor>SublistNoFocusColor</textcolor>
-                <label>$VAR[Details]</label>
-            </control>
-            <!-- <include>ListWatchedOverlayNoFocus</include> -->
-        </itemlayout>
-        <focusedlayout condition="!Window.IsVisible(AddonBrowser.xml)+![Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)|container.content(artists)|container.content(albums)|container.content(addons)]" height="73" width="1440">
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <height>73</height>
-                <width>1440</width>
-                <include>FacadeFocus</include>
-            </control>
-            <control type="label">
-                <visible>StringCompare(ListItem.Label2,)</visible>
-                <posx>25</posx>
-                <height>71</height>
-                <width>1385</width>
-                <font>FacadeListMainFont</font>
-                <textcolor>ListFocusColor</textcolor>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label">
-                <visible>!StringCompare(ListItem.Label2,)</visible>
-                <posx>25</posx>
-                <height>42</height>
-                <width>1385</width>
-                <font>FacadeListMainFont</font>
-                <textcolor>ListFocusColor</textcolor>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label">
-                <visible>!StringCompare(ListItem.Label2,)</visible>
-                <posx>25</posx>
-                <posy>39</posy>
-                <height>28</height>
-                <width>1385</width>
-                <font>FacadeListSubFont</font>
-                <textcolor>SublistFocusColor</textcolor>
-                <label>$VAR[Details]</label>
-            </control>
-            <!-- <include>ListWatchedOverlayFocus</include> -->
-        </focusedlayout>
-        <itemlayout condition="!Window.IsVisible(AddonBrowser.xml)+[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(episodes) | Container.Content(seasons)|container.content(artists)|container.content(albums)|container.content(addons)]" height="73" width="1440">
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <height>73</height>
-                <width>1440</width>
-                <texture border="3">list/bg_facade_nofocus.png</texture>
-            </control>
-            <control type="label">
-                <visible>StringCompare(ListItem.Label2,)</visible>
-                <posx>25</posx>
-                <height>71</height>
-                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
-                <width>555</width>
-                <font>FacadeListMainFont</font>
-                <textcolor>ListNoFocusColor</textcolor>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label">
-                <visible>!StringCompare(ListItem.Label2,)</visible>
-                <posx>25</posx>
-                <height>42</height>
-                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
-                <width>555</width>
-                <font>FacadeListMainFont</font>
-                <textcolor>ListNoFocusColor</textcolor>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label">
-                <visible>!StringCompare(ListItem.Label2,)</visible>
-                <posx>25</posx>
-                <posy>39</posy>
-                <height>28</height>
-                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
-                <width>605</width>
+                <width>1340</width>
                 <font>FacadeListSubFont</font>
                 <textcolor>SublistNoFocusColor</textcolor>
                 <label>$VAR[Details]</label>
             </control>
             <include>ListWatchedOverlayNoFocus</include>
         </itemlayout>
-        <focusedlayout condition="!Window.IsVisible(AddonBrowser.xml)+[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(episodes) | Container.Content(seasons)|container.content(artists)|container.content(albums)|container.content(addons)]" height="73" width="1440">
+        <focusedlayout condition="!Window.IsVisible(AddonBrowser.xml)" height="73" width="1440">
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -230,8 +151,7 @@
                 <visible>StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>71</height>
-                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
-                <width>555</width>
+                <width>1340</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
@@ -240,8 +160,7 @@
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>42</height>
-                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
-                <width>555</width>
+                <width>1340</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
@@ -251,8 +170,7 @@
                 <posx>25</posx>
                 <posy>39</posy>
                 <height>28</height>
-                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
-                <width>605</width>
+                <width>1340</width>
                 <font>FacadeListSubFont</font>
                 <textcolor>SublistFocusColor</textcolor>
                 <label>$VAR[Details]</label>

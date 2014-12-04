@@ -270,12 +270,21 @@
                         <control type="label">
                             <posx>TextMargin</posx>
                             <posy>146</posy>
-                            <width>1031</width>
+                            <width>981</width>
                             <height>71</height>
                             <font>InfoDetailsFont</font>
                             <textcolor>AlternateColor</textcolor>
                             <scroll>false</scroll>
                             <label>$VAR[Details]</label>
+                        </control>
+                        <control type="image">
+                            <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
+                            <posx>1048</posx>
+                            <posy>148</posy>
+                            <width>30</width>
+                            <height>72</height>
+                            <texture>$VAR[Overlay]</texture>
+                            <aspectratio aligny="center">keep</aspectratio>
                         </control>
                         <control type="image">
                             <posx>0</posx>
