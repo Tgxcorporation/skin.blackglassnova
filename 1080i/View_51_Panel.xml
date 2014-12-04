@@ -160,7 +160,7 @@
                             <width>180</width>
                             <height>70</height>
                             <align>center</align>
-                            <textcolor>ListFocusColor</textcolor>
+                            <textcolor>ListNoFocusColor</textcolor>
                             <font>FacadePanelFont</font>
                             <scroll>false</scroll>
                             <label>$INFO[ListItem.Label]</label>
