@@ -605,7 +605,10 @@
         <control type="group">
             <animation effect="slide" time="0" start="0,0" end="-780,0" condition="[[!Skin.HasSetting(FixedShortListUnknown)+!Skin.HasSetting(WideLists)+!control.IsVisible(81257)]|[!Skin.HasSetting(FixedShortListUnknown)+Skin.HasSetting(WideLists)+[!control.IsVisible(81257)+!control.hasfocus(60)]]|[Skin.HasSetting(FixedShortListUnknown)+Skin.HasSetting(WideLists)+!control.hasfocus(60)]|[Skin.HasSetting(FixedShortListUnknown)+!Skin.HasSetting(WideLists)]]+!Window.IsVisible(mypvr)+!Skin.HasSetting(BlackGlassMode)">Conditional</animation>
             <control type="image">
-                <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]+![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]+Skin.HasSetting(WideLists)+!Skin.HasSetting(BlackGlassMode)</visible>
+                <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]</visible>
+                <visible>![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]</visible>
+                <visible>Skin.HasSetting(WideLists)</visible>
+                <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                 <posx>90r</posx>
                 <posy>0</posy>
                 <width>90</width>
@@ -638,7 +641,10 @@
         <control type="group">
             <animation effect="slide" time="0" start="0,0" end="-780,0" condition="[[!Skin.HasSetting(FixedShortListUnknown)+!Skin.HasSetting(WideLists)+!control.IsVisible(81257)]|[!Skin.HasSetting(FixedShortListUnknown)+Skin.HasSetting(WideLists)+[!control.IsVisible(81257)+!control.hasfocus(60)]]|[Skin.HasSetting(FixedShortListUnknown)+Skin.HasSetting(WideLists)+!control.hasfocus(60)]|[Skin.HasSetting(FixedShortListUnknown)+!Skin.HasSetting(WideLists)]]+!Window.IsVisible(mypvr)+!Skin.HasSetting(BlackGlassMode)">Conditional</animation>
             <control type="image">
-                <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]+![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]+Skin.HasSetting(WideLists)+!Skin.HasSetting(BlackGlassMode)</visible>
+                <visible>[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | container.content(episodes)| Container.Content(seasons)]</visible>
+                <visible>![Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)]</visible>
+                <visible>Skin.HasSetting(WideLists)</visible>
+                <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                 <posx>90r</posx>
                 <posy>0</posy>
                 <width>90</width>

@@ -33,10 +33,19 @@
             <control type="group">
                 <visible>![StringCompare(ListItem.Label,..)]</visible>
                 <animation effect="slide" time="0" start="0,0" end="0,40" condition="[IsEmpty(control.getlabel(45742))]">Conditional</animation>
-                <control type="label">
-                    <posx>52</posx>
+                <control type="image">
+                    <visible>![Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]</visible>
+                    <posx>30</posx>
                     <posy>933</posy>
-                    <width>1830</width>
+                    <width>30</width>
+                    <height>45</height>
+                    <texture>$VAR[Overlay]</texture>
+                    <aspectratio aligny="center">keep</aspectratio>
+                </control>
+                <control type="label">
+                    <posx>72</posx>
+                    <posy>933</posy>
+                    <width>1790</width>
                     <height>45</height>
                     <align>center</align>
                     <font>InfoTitleFont</font>
@@ -762,7 +771,7 @@
                     <control type="label">
                         <posx>TextMargin</posx>
                         <posy>73</posy>
-                        <width>950</width>
+                        <width>1425</width>
                         <height>71</height>
                         <align>left</align>
                         <font>InfoDetailsFont</font>
@@ -770,6 +779,14 @@
                         <scroll>false</scroll>
                         <label>$VAR[Details]</label>
                     </control>
+                    <!-- <control type="image">
+                        <posx>1440</posx>
+                        <posy>73</posy>
+                        <width>30</width>
+                        <height>72</height>
+                        <texture>$VAR[Overlay]</texture>
+                        <aspectratio aligny="center">keep</aspectratio>
+                    </control> -->
                     <control type="image">
                         <posx>0</posx>
                         <posy>73</posy>
