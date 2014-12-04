@@ -536,7 +536,7 @@
                 <visible>Skin.HasSetting(Music_Gallery)</visible>
                 <visible allowhiddenfocus="true">Control.HasFocus(7000)|Control.hasfocus(6069)</visible>
                 <include>Icon_Fade</include>
-                <animation effect="slide" start="0,0" end="0,1800" time="0" reversible="true" condition="!Skin.HasSetting(Posters_Gallery)">Conditional</animation>
+                <animation effect="slide" start="0,0" end="0,1800" time="0" reversible="true" condition="!Skin.HasSetting(Music_Gallery)">Conditional</animation>
                 <control type="button" id="7000">
                     <posx>100</posx>
                     <posy>900</posy>
@@ -575,7 +575,7 @@
                 <control type="group">
                     <posy>279</posy>
                     <control type="group">
-                        <visible>!StringCompare(ListItem.Title,)+!StringCompare(ListItem.Label,..)</visible>
+                        <visible>!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
                         <control type="image">
                             <posx>152</posx>
                             <posy>399</posy>
@@ -921,7 +921,7 @@
                 <visible>Skin.HasSetting(Episodes_Gallery)</visible>
                 <visible allowhiddenfocus="true">Control.HasFocus(7000)|Control.hasfocus(6069)</visible>
                 <include>Icon_Fade</include>
-                <animation effect="slide" start="0,0" end="0,1800" time="0" reversible="true" condition="!Skin.HasSetting(Posters_Gallery)">Conditional</animation>
+                <animation effect="slide" start="0,0" end="0,1800" time="0" reversible="true" condition="!Skin.HasSetting(Episodes_Gallery)">Conditional</animation>
                 <control type="button" id="7000">
                     <posx>100</posx>
                     <posy>900</posy>
