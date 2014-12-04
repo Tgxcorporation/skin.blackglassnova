@@ -527,7 +527,7 @@
                         <align>left</align>
                         <font>NotificationFont</font>
                         <textcolor>MainColor</textcolor>
-                        <label>$INFO[VideoPlayer.Title]</label>
+                        <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.ChannelNumber,,  •  ]$INFO[VideoPlayer.ChannelName,,  •  ]$INFO[VideoPlayer.Artist,,  •  ]$INFO[VideoPlayer.Album,,  •  ]$INFO[VideoPlayer.Season,  •  $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,  •  ]$INFO[VideoPlayer.Title]$VAR[ChapterLabel]</label>
                     </control>
                     <control type="label">
                         <visible>Player.hasvideo</visible>
