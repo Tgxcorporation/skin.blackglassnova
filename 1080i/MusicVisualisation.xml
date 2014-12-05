@@ -165,7 +165,7 @@
                             <width>910</width>
                             <font>InfoDetailsFont</font>
                             <textcolor>AlternateColor</textcolor>
-                            <label>$INFO[MusicPlayer.TimeSpeed] / $INFO[MusicPlayer.Duration]</label>
+                            <label>$INFO[MusicPlayer.TimeSpeed,, / ]$INFO[MusicPlayer.Duration]</label>
                         </control>
                         <control type="label">
                             <visible>!Skin.HasSetting(plexbmc)</visible>
@@ -176,7 +176,7 @@
                             <align>right</align>
                             <font>InfoDetailsFont</font>
                             <textcolor>AlternateColor</textcolor>
-                            <label>$INFO[MusicPlayer.PlaylistPosition] / $INFO[MusicPlayer.PlaylistLength]</label>
+                            <label>$INFO[MusicPlayer.PlaylistPosition,, / ]$INFO[MusicPlayer.PlaylistLength]</label>
                         </control>
                         <control type="image">
                             <posx>0</posx>
