@@ -113,7 +113,8 @@
                 <visible>StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>71</height>
-                <width>1340</width>
+                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
+                <width>565</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
@@ -122,7 +123,8 @@
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>42</height>
-                <width>1340</width>
+                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
+                <width>565</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
@@ -132,7 +134,8 @@
                 <posx>25</posx>
                 <posy>39</posy>
                 <height>28</height>
-                <width>1340</width>
+                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
+                <width>565</width>
                 <font>FacadeListSubFont</font>
                 <textcolor>SublistNoFocusColor</textcolor>
                 <label>$VAR[Details]</label>
@@ -151,7 +154,8 @@
                 <visible>StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>71</height>
-                <width>1340</width>
+                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
+                <width>565</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
@@ -160,7 +164,8 @@
                 <visible>!StringCompare(ListItem.Label2,)</visible>
                 <posx>25</posx>
                 <height>42</height>
-                <width>1340</width>
+                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
+                <width>565</width>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
@@ -170,7 +175,8 @@
                 <posx>25</posx>
                 <posy>39</posy>
                 <height>28</height>
-                <width>1340</width>
+                <include condition="Skin.HasSetting(WideLists)">SlideViewLabelWidth</include>
+                <width>565</width>
                 <font>FacadeListSubFont</font>
                 <textcolor>SublistFocusColor</textcolor>
                 <label>$VAR[Details]</label>
