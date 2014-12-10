@@ -1757,42 +1757,30 @@
                             <onclick condition="Container(9004).HasFocus(70)">Skin.SetPath(Plexbmc.10.Background)</onclick>
                         </control>
                         <control type="radiobutton" id="303">
-                            <visible>Container(9004).HasFocus(1)</visible>
+                            <visible>System.HasAddon(script.grab.fanart)+Container(9004).HasFocus(1)</visible>
                             <selected>Skin.HasSetting(Videos.Background.EnableRandomFanart)</selected>
-                            <radioposx>215</radioposx>
                             <include>SkinSettingsButton</include>
-                            <description>SCRIPT GRAB FANART</description>
-                            <!-- <width>450</width> -->
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Videos.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="304">
-                            <visible>Container(9004).HasFocus(2)</visible>
+                            <visible>System.HasAddon(script.grab.fanart)+Container(9004).HasFocus(2)</visible>
                             <selected>Skin.HasSetting(Movies.Background.EnableRandomFanart)</selected>
-                            <radioposx>215</radioposx>
                             <include>SkinSettingsButton</include>
-                            <description>SCRIPT GRAB FANART</description>
-                            <!-- <width>450</width> -->
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Movies.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="305">
-                            <visible>Container(9004).HasFocus(3)</visible>
+                            <visible>System.HasAddon(script.grab.fanart)+Container(9004).HasFocus(3)</visible>
                             <selected>Skin.HasSetting(TVShows.Background.EnableRandomFanart)</selected>
-                            <radioposx>215</radioposx>
                             <include>SkinSettingsButton</include>
-                            <description>SCRIPT GRAB FANART</description>
-                            <!-- <width>450</width> -->
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(TVShows.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="306">
-                            <visible>Container(9004).HasFocus(4)</visible>
+                            <visible>System.HasAddon(script.grab.fanart)+Container(9004).HasFocus(4)</visible>
                             <selected>Skin.HasSetting(Music.Background.EnableRandomFanart)</selected>
-                            <radioposx>215</radioposx>
                             <include>SkinSettingsButton</include>
-                            <description>SCRIPT GRAB FANART</description>
-                            <!-- <width>450</width> -->
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Music.Background.EnableRandomFanart)</onclick>
                         </control>
@@ -1806,10 +1794,10 @@
                             <onclick condition="Container(9004).HasFocus(2)">Skin.Reset(Movies.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(3)">Skin.Reset(TVShows.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(4)">Skin.Reset(Music.Background)</onclick>
-                            <onclick condition="Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)">Skin.ToggleSetting(Videos.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)">Skin.ToggleSetting(Movies.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)">Skin.ToggleSetting(TVShows.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)">Skin.ToggleSetting(Music.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(1)+System.HasAddon(script.grab.fanart)+Skin.HasSetting(Videos.Background.EnableRandomFanart)">Skin.ToggleSetting(Videos.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(2)+System.HasAddon(script.grab.fanart)+Skin.HasSetting(Movies.Background.EnableRandomFanart)">Skin.ToggleSetting(Movies.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(3)+System.HasAddon(script.grab.fanart)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)">Skin.ToggleSetting(TVShows.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(4)+System.HasAddon(script.grab.fanart)+Skin.HasSetting(Music.Background.EnableRandomFanart)">Skin.ToggleSetting(Music.Background.EnableRandomFanart)</onclick>
                             <onclick condition="Container(9004).HasFocus(5)">Skin.Reset(Pictures.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(6)">Skin.Reset(Favourites.Background)</onclick>
                             <!-- <onclick condition="Container(9004).HasFocus(7)">Skin.Reset(Weather.Background)</onclick> -->
