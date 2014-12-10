@@ -1626,10 +1626,10 @@
                         <onup>9004</onup>
                         <ondown>9004</ondown>
                         <control type="button" id="300">
-                            <visible>![Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)]|
+                            <visible>![[Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)]|
-                                [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]</visible>
+                                [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]]</visible>
                             <include>SkinSettingsButton</include>
                             <description>Single Image button</description>
                             <!-- <width>450</width> -->
@@ -1671,10 +1671,10 @@
                             <onclick condition="Container(9004).HasFocus(70)">Skin.SetImage(Plexbmc.10.Background)</onclick>
                         </control>
                         <control type="button" id="301">
-                            <visible>![Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)]|
+                            <visible>![[Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)]|
-                                [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]</visible>
+                                [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]]</visible>
                             <include>SkinSettingsButton</include>
                             <description>Multi Image button</description>
                             <label>$LOCALIZE[31114]</label>
