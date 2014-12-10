@@ -1096,4 +1096,20 @@
     <include name="bg_tvguide_BG">
         <texture border="90">common/bg_tvguide2.png</texture>
     </include>
+    <include name="SkinSettingsButton">
+        <width>300</width>
+        <height>90</height>
+        <align>center</align>
+        <aligny>center</aligny>
+        <font>ExtraSmallButtonFont</font>
+        <textoffsetx>0</textoffsetx>
+        <textcolor>AlternateColor</textcolor>
+        <shadowcolor>ShadowColor</shadowcolor>
+        <focusedcolor>MainColor</focusedcolor>
+        <selectedcolor>SelectedColor</selectedcolor>
+        <disabledcolor>DisabledColor</disabledcolor>
+        <include>ButtonTextureFocus</include>
+        <texturenofocus border="30">buttons/bg_button_nofocus.png</texturenofocus>
+        <pulseonselect>false</pulseonselect>
+    </include>
 </includes>
