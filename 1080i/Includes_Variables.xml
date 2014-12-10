@@ -157,7 +157,7 @@
         <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Videos.Art">
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
         <value condition="!IsEmpty(Skin.String(Videos.Background))">$INFO[Skin.String(Videos.Background)]</value>
         <value>special://skin/backgrounds/Videos.jpg</value>
     </variable>
@@ -170,17 +170,17 @@
         <value>special://skin/backgrounds/Quit.jpg</value>
     </variable>
     <variable name="Movies.Art">
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
         <value condition="!IsEmpty(Skin.String(Movies.Background))">$INFO[Skin.String(Movies.Background)]</value>
         <value>special://skin/backgrounds/Movies.jpg</value>
     </variable>
     <variable name="TVShows.Art">
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
         <value condition="!IsEmpty(Skin.String(TVShows.Background))">$INFO[Skin.String(TVShows.Background)]</value>
         <value>special://skin/backgrounds/TVShows.jpg</value>
     </variable>
     <variable name="Music.Art">
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
         <value condition="!IsEmpty(Skin.String(Music.Background))">$INFO[Skin.String(Music.Background)]</value>
         <value>special://skin/backgrounds/Music.jpg</value>
     </variable>
@@ -242,17 +242,17 @@
         <value condition="Window.IsActive(MyMusicSongs.xml)">$INFO[ListItem.Path]cdart.png</value>
     </variable>
     <variable name="SkinSettings.RandomBackground.Art">
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(2)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(3)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(4)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(2)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(3)">$INFO[Window(Home).Property(script.grab.fanart.TV.FanArt)]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(4)">$INFO[Window(Home).Property(script.grab.fanart.Music.FanArt)]</value>
         <value>$INFO[Container(9004).ListItem.Icon]</value>
     </variable>
     <variable name="SkinSettings.RandomBackground.Label">
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(2)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(3)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(4)">$LOCALIZE[590]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$LOCALIZE[590]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(2)">$LOCALIZE[590]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(3)">$LOCALIZE[590]</value>
+        <value condition="System.HasAddon(script.grab.fanart)+Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(4)">$LOCALIZE[590]</value>
         <value>$INFO[Container(9004).ListItem.Thumb]</value>
     </variable>
 </includes>
