@@ -26,7 +26,7 @@
                 <posy>394</posy>
                 <width>220</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
@@ -66,7 +66,7 @@
                 <posy>394</posy>
                 <width>220</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
             </control>
             <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
@@ -116,7 +116,7 @@
                 <posy>394</posy>
                 <width>220</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
@@ -156,7 +156,7 @@
                 <posy>394</posy>
                 <width>220</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
             </control>
             <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
@@ -206,7 +206,7 @@
                 <posy>394</posy>
                 <width>220</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
@@ -246,7 +246,7 @@
                 <posy>394</posy>
                 <width>220</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
             </control>
             <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
@@ -296,7 +296,7 @@
                 <posy>394</posy>
                 <width>220</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
@@ -336,7 +336,7 @@
                 <posy>394</posy>
                 <width>220</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
             </control>
             <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
@@ -386,7 +386,7 @@
                 <posy>372</posy>
                 <width>310</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
@@ -439,7 +439,7 @@
                 <posy>372</posy>
                 <width>310</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
             </control>
             <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
@@ -501,7 +501,7 @@
                 <posy>372</posy>
                 <width>310</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
@@ -554,7 +554,7 @@
                 <posy>372</posy>
                 <width>310</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
             </control>
             <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
@@ -616,7 +616,7 @@
                 <posy>372</posy>
                 <width>310</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
@@ -657,7 +657,7 @@
                 <posy>372</posy>
                 <width>310</width>
                 <height>200</height>
-                <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
             </control>
             <control type="image">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>

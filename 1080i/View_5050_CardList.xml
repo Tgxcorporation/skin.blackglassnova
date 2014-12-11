@@ -194,7 +194,7 @@
                             <posy>-127</posy>
                             <width>404</width>
                             <height>404</height>
-                            <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
@@ -319,14 +319,14 @@
                         <width>300</width>
                         <height>150</height>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture>$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
+                        <texture background="true">$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
                     </control>
                     <control type="image">
                         <posx>1350</posx>
                         <posy>-116</posy>
                         <width>300</width>
                         <height>150</height>
-                        <texture>$INFO[ListItem.Art(clearart)]</texture>
+                        <texture background="true">$INFO[ListItem.Art(clearart)]</texture>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
                     </control>
                 </control>
@@ -587,7 +587,7 @@
                             <posy>-127</posy>
                             <width>404</width>
                             <height>404</height>
-                            <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
