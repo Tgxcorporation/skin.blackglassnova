@@ -44,14 +44,14 @@
                             <width>300</width>
                             <height>235</height>
                             <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                            <texture>$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
+                            <texture background="true">$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
                         </control>
                         <control type="image">
                             <posx>645r</posx>
                             <posy>283</posy>
                             <width>300</width>
                             <height>235</height>
-                            <texture>$INFO[MusicPlayer.Art(clearart)]</texture>
+                            <texture background="true">$INFO[MusicPlayer.Art(clearart)]</texture>
                             <aspectratio align="right" aligny="bottom">keep</aspectratio>
                         </control>
                     </control>
@@ -85,7 +85,7 @@
                             <posy>565</posy>
                             <width>321</width>
                             <height>321</height>
-                            <texture diffuse="common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[MusicPlayer.Artist]/$INFO[MusicPlayer.Album]/cdart.png</texture>
+                            <texture background="true" diffuse="common/cdart_diffuse.png">$INFO[Skin.String(MusicPath)]$INFO[MusicPlayer.Artist]/$INFO[MusicPlayer.Album]/cdart.png</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control> -->
@@ -94,7 +94,7 @@
                             <posy>565</posy>
                             <width>321</width>
                             <height>321</height>
-                            <texture diffuse="common/cdart_diffuse.png">$INFO[Player.FolderPath]cdart.png</texture>
+                            <texture background="true" diffuse="common/cdart_diffuse.png">$INFO[Player.FolderPath]cdart.png</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
@@ -104,7 +104,7 @@
                         <posy>538</posy>
                         <width>375</width>
                         <height>375</height>
-                        <texture fallback="defaultAudioBig.png">$INFO[MusicPlayer.Cover]</texture>
+                        <texture background="true" fallback="defaultAudioBig.png">$INFO[MusicPlayer.Cover]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio aligny="top" align="center">keep</aspectratio>
                     </control>

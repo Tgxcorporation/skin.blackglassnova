@@ -174,7 +174,7 @@
                             <posy>399</posy>
                             <width>220</width>
                             <height>263</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                            <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                             <colordiffuse>UnfocusedIconColor</colordiffuse>
                         </control>
                         <control type="image">
@@ -203,7 +203,7 @@
                             <posy>0</posy>
                             <width>220</width>
                             <height>333</height>
-                            <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
@@ -223,7 +223,7 @@
                             <posy>399</posy>
                             <width>220</width>
                             <height>263</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                            <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -271,14 +271,14 @@
                         <width>300</width>
                         <height>235</height>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture>$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
+                        <texture background="true">$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
                     </control>
                     <control type="image">
                         <posx>345r</posx>
                         <posy>369</posy>
                         <width>300</width>
                         <height>235</height>
-                        <texture>$INFO[ListItem.Art(clearart)]</texture>
+                        <texture background="true">$INFO[ListItem.Art(clearart)]</texture>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
                     </control>
                 </control>
@@ -310,7 +310,7 @@
                             <posy>293</posy>
                             <width>264</width>
                             <height>264</height>
-                            <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
@@ -487,7 +487,7 @@
                             <posy>374</posy>
                             <width>310</width>
                             <height>270</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                            <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                             <colordiffuse>UnfocusedIconColor</colordiffuse>
                         </control>
                         <control type="image">
@@ -509,7 +509,7 @@
                             <posy>12</posy>
                             <width>310</width>
                             <height>310</height>
-                            <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
@@ -530,7 +530,7 @@
                             <posy>374</posy>
                             <width>310</width>
                             <height>270</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                            <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -610,7 +610,7 @@
                             <posy>264</posy>
                             <width>321</width>
                             <height>321</height>
-                            <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
+                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
@@ -879,7 +879,7 @@
                             <posy>374</posy>
                             <width>340</width>
                             <height>270</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                            <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                             <colordiffuse>UnfocusedIconColor</colordiffuse>
                         </control>
                         <control type="image">
@@ -887,7 +887,7 @@
                             <posy>347</posy>
                             <width>394</width>
                             <height>364</height>
-                            <texture border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
+                            <texture background="true" border="37" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
                             <colordiffuse>UnfocusedIconColor</colordiffuse>
                         </control>
                         <control type="image">
@@ -916,7 +916,7 @@
                             <posy>374</posy>
                             <width>340</width>
                             <height>270</height>
-                            <texture flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                            <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
                         </control>
                         <control type="image">
                             <posx>0</posx>

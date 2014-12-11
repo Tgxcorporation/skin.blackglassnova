@@ -98,7 +98,7 @@
                             <posy>392</posy>
                             <width>429</width>
                             <height>429</height>
-                            <texture fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
+                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                             <include>Animation_ViewsCDart</include>
                         </control>
@@ -121,7 +121,7 @@
                         <posy>365</posy>
                         <width>410</width>
                         <height>483</height>
-                        <texture fallback="defaultArtistBig.png">$INFO[Container(50).ListItem.Thumb]</texture>
+                        <texture background="true" fallback="defaultArtistBig.png">$INFO[Container(50).ListItem.Thumb]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -568,7 +568,7 @@
                             <width>1111</width>
                             <height>828</height>
                             <aspectratio>keep</aspectratio>
-                            <texture fallback="defaultPictureBig.png" background="true">$INFO[Listitem.Property(Fanart_Image)]</texture>
+                            <texture background="true" fallback="defaultPictureBig.png" background="true">$INFO[Listitem.Property(Fanart_Image)]</texture>
                             <include>ThumbBorder</include>
                         </control>
                     </control>

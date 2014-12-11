@@ -72,7 +72,7 @@
                         <posy>365</posy>
                         <width>410</width>
                         <height>483</height>
-                        <texture fallback="defaultArtistBig.png">$INFO[Container(50).ListItem.Thumb]</texture>
+                        <texture background="true" fallback="defaultArtistBig.png">$INFO[Container(50).ListItem.Thumb]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -180,7 +180,7 @@
                         <posy>365</posy>
                         <width>410</width>
                         <height>483</height>
-                        <texture fallback="DefaultVideoBig.png">$INFO[Container(150).Listitem.Icon]</texture>
+                        <texture background="true" fallback="DefaultVideoBig.png">$INFO[Container(150).Listitem.Icon]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -292,7 +292,7 @@
                         <posy>365</posy>
                         <width>410</width>
                         <height>483</height>
-                        <texture fallback="DefaultVideoBig.png">$INFO[Container(250).Listitem.Icon]</texture>
+                        <texture background="true" fallback="DefaultVideoBig.png">$INFO[Container(250).Listitem.Icon]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -404,7 +404,7 @@
                         <posy>365</posy>
                         <width>410</width>
                         <height>483</height>
-                        <texture fallback="DefaultVideoBig.png">$INFO[Container(350).Listitem.Icon]</texture>
+                        <texture background="true" fallback="DefaultVideoBig.png">$INFO[Container(350).Listitem.Icon]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -516,7 +516,7 @@
                         <posy>365</posy>
                         <width>410</width>
                         <height>483</height>
-                        <texture fallback="DefaultVideoBig.png">$INFO[Container(450).Listitem.Icon]</texture>
+                        <texture background="true" fallback="DefaultVideoBig.png">$INFO[Container(450).Listitem.Icon]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
