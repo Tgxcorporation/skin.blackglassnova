@@ -92,13 +92,29 @@ msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Ostatnio dodane"
 
+msgctxt "#31021"
+msgid "Info"
+msgstr "Informacje"
+
+msgctxt "#31022"
+msgid "Extended Info"
+msgstr "Dodatkowe informacje"
+
+msgctxt "#31023"
+msgid "Similar Movies"
+msgstr "Filmy podobne"
+
+msgctxt "#31024"
+msgid "MovieDB Users"
+msgstr "Użytkownicy MovieDB"
+
 msgctxt "#31025"
 msgid "Items"
 msgstr "Pozycje"
 
 msgctxt "#31026"
 msgid "Enable manual scrolling for plot & review"
-msgstr "Aktywuj manualne przewijanie fabuły i recenzji"
+msgstr "Przewijaj fabułę i recenzję maualnie"
 
 msgctxt "#31027"
 msgid "Go Black Glass"
@@ -482,7 +498,7 @@ msgstr "Szybkie uruchomienie"
 
 msgctxt "#31978"
 msgid "Show library info on Home (totals, unwatched...)"
-msgstr "Pokazuj statystyki na ekranie startowym (statystyki, stany)"
+msgstr "Pokazuj statystyki na ekranie startowym (liczniki, nieobejrzane,...)"
 
 msgctxt "#31979"
 msgid "Loading..."
@@ -490,11 +506,11 @@ msgstr "Wczytywanie..."
 
 msgctxt "#31980"
 msgid "Hide unwatched and partialy watched marks"
-msgstr "Ukrywaj etykiety stanu oglądania"
+msgstr "Ukrywaj etykiety stanu obejrzenia"
 
 msgctxt "#31981"
 msgid "Hide watched marks"
-msgstr "Ukrywaj etykiety oglądania"
+msgstr "Ukrywaj etykiety stanu obejrzenia"
 
 msgctxt "#31982"
 msgid "Shelf items populate more slowly on some systems. By default, skin waits for them to be ready and presents Home screen afterwards.[CR][CR]This option skips this step and presents Home page immediately. Shelf items will appear with a delay, depending on a speed of your system."
@@ -558,7 +574,7 @@ msgstr "Duża lista kanałów w menu ekranowym"
 
 msgctxt "#31997"
 msgid "Ken Burns Effect on backdrops"
-msgstr "Używaj efektu zbliżania i przeciągana obrazów tła"
+msgstr "Używaj efektu Kena Burnsa dla obrazów tła"
 
 msgctxt "#31998"
 msgid "Use fixed list on Home Menu"
