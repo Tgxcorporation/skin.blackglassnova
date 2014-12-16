@@ -1627,7 +1627,7 @@
                         <posx>15</posx>
                         <height>71</height>
                         <width>73</width>
-                        <texture background="true" background="true"fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
+                        <texture background="true" fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
