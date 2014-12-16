@@ -568,7 +568,7 @@
                             <width>1111</width>
                             <height>828</height>
                             <aspectratio>keep</aspectratio>
-                            <texture background="true" fallback="defaultPictureBig.png" background="true">$INFO[Listitem.Property(Fanart_Image)]</texture>
+                            <texture background="true" fallback="defaultPictureBig.png">$INFO[Listitem.Property(Fanart_Image)]</texture>
                             <include>ThumbBorder</include>
                         </control>
                     </control>
