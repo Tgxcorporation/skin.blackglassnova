@@ -191,6 +191,8 @@
     </include>
     <include name="Horizontal_Fixed_HomeMenu_BG">
         <control type="fixedlist" id="300">
+            <focusposition>1</focusposition>
+            <movement>0</movement>
             <include>Horizontal_HomeMenu_BG</include>
         </control>
     </include>
