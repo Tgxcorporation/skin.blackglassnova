@@ -106,16 +106,16 @@
     </include>
     <include name="Horizontal_Fixed_HomeSubMenu">
         <control type="fixedlist" id="9001">
-            <animation effect="slide" start="0,0" end="-192,0" time="0" condition="StringCompare(Container(9001).NumItems,2) | StringCompare(Container(9001).NumItems,4) | StringCompare(Container(9001).NumItems,6)">conditional</animation>
+            <animation effect="slide" start="0,0" end="-161,0" time="0" condition="StringCompare(Container(9001).NumItems,2) | StringCompare(Container(9001).NumItems,4)">conditional</animation>
             <focusposition>2</focusposition>
-            <movement>1</movement>
+            <movement>2</movement>
             <include>Horizontal_HomeSubMenu</include>
         </control>
     </include>
     <include name="Horizontal_Wrapped_HomeSubMenu">
         <control type="wraplist" id="9001">
             <focusposition>2</focusposition>
-            <movement>1</movement>
+            <movement>2</movement>
             <include>Horizontal_HomeSubMenu</include>
         </control>
     </include>
