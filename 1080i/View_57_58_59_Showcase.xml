@@ -32,9 +32,9 @@
             <visible>Control.hasfocus(505050)|control.hasfocus(57)|control.hasfocus(58)|control.hasfocus(59)|control.hasfocus(53)|[[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]]|[control.hasfocus(60)+[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]]</visible>
             <control type="group">
                 <visible>![StringCompare(ListItem.Label,..)]</visible>
-                <animation effect="slide" time="0" start="0,0" end="0,40" condition="[IsEmpty(control.getlabel(45743))+!control.isvisible(45742)]">Conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,40" condition="[!control.isvisible(45743)+!control.isvisible(45742)]">Conditional</animation>
                 <control type="image">
-                    <posx>30</posx>
+                    <posx>50</posx>
                     <posy>933</posy>
                     <width>30</width>
                     <height>45</height>
@@ -42,9 +42,9 @@
                     <aspectratio aligny="center">keep</aspectratio>
                 </control>
                 <control type="label">
-                    <posx>72</posx>
+                    <posx>92</posx>
                     <posy>933</posy>
-                    <width>1790</width>
+                    <width>1750</width>
                     <height>45</height>
                     <align>center</align>
                     <font>InfoTitleFont</font>
@@ -53,7 +53,7 @@
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label" id="45743">
-                    <visible>!Control.isvisible(45741)+!Control.isvisible(45742)</visible>
+                    <visible>![Control.isvisible(45741)|Control.isvisible(45742)]+!Window.isActive(MyPVRChannels.xml)</visible>
                     <posx>407</posx>
                     <posy>1010</posy>
                     <height>33</height>
@@ -65,7 +65,7 @@
                     <label>$VAR[Fanart_Details]</label>
                 </control>
                 <control type="label" id="45744">
-                    <visible>Control.isvisible(45741)|Control.isvisible(45742)</visible>
+                    <visible>[Control.isvisible(45741)|Control.isvisible(45742)]+!Window.isActive(MyPVRChannels.xml)</visible>
                     <posx>52</posx>
                     <posy>1010</posy>
                     <height>33</height>

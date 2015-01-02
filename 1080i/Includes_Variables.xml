@@ -32,8 +32,10 @@
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Window.IsActive(script-videoextras-main.xml)]">defaultVideoBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Genres)]">defaultGenreBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Playlists)]">defaultPlaylistBig.png</value>
-        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(movies)|Container.content(musicvideos)]">defaultVideoBig.png</value>
-        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(tvshows)|Container.content(episodes)|Container.Content(Seasons)|Container.content(LiveTV)]">defaultChannelTvBig.png</value>
+        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(tvshows)|Container.content(episodes)|Container.Content(Seasons)|Container.content(movies)|Container.content(musicvideos)]">defaultVideoBig.png</value>
+        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Window.isActive(MyPVRChannels.xml)|Window.isActive(MyPVRRecordings.xml)|Window.isActive(MyPVRGuide.xml)]+!IsEmpty(Window.Property(IsRadio))">DefaultRadioBig.png</value>
+        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Window.isActive(MyPVRChannels.xml)|Window.isActive(MyPVRRecordings.xml)|Window.isActive(MyPVRGuide.xml)]+IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig.png</value>
+        <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(LiveTV)]">defaultChannelTvBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Addons)|Container.content(plugins)]">defaultExtensionBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Artists)|Container.content(Actors)|Container.content(directors)]">defaultArtistBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(Albums)|Container.content(songs)]">defaultAudioBig.png</value>

@@ -873,10 +873,6 @@
     </include>
     <constant name="TextMargin">45</constant>
     <constant name="TextMarginR">45r</constant>
-    <include name="FacadeOverlay">
-        <texture>-</texture>
-        <colordiffuse>FacadeOverlayColor</colordiffuse>
-    </include>
     <include name="WindowTitle">
         <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">conditional</animation>
         <visible>![window.IsActive(DialogVolumeBar.xml)|window.IsActive(DialogMuteBug.xml)]</visible>

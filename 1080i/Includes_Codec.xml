@@ -51,7 +51,7 @@
         <value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,not Rated)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,not Rated)]">badges/content_rating/notrated.png</value>
         <value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,Not rated)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,Not rated)]">badges/content_rating/notrated.png</value>
         <value condition="[!IsEmpty(ListItem.mpaa) + SubString(ListItem.mpaa,not rated)] | [IsEmpty(ListItem.mpaa) + SubString(VideoPlayer.mpaa,not rated)]">badges/content_rating/notrated.png</value>
-        <!-- <value>badges/content_rating/norating.png</value> -->
+         <value>badges/content_rating/norating.png</value>
     </variable>
     <variable name="MediaFlag_MPAAOSD">
         <!-- US (IMDB) -->
@@ -104,7 +104,7 @@
         <value condition="[!IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,not Rated)] | [IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,not Rated)]">badges/content_rating/notrated.png</value>
         <value condition="[!IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,Not rated)] | [IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,Not rated)]">badges/content_rating/notrated.png</value>
         <value condition="[!IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,not rated)] | [IsEmpty(VideoPlayer.mpaa) + SubString(VideoPlayer.mpaa,not rated)]">badges/content_rating/notrated.png</value>
-        <!-- <value>badges/content_rating/norating.png</value> -->
+         <value>badges/content_rating/norating.png</value>
     </variable>
     <variable name="videocodec">
         <value condition="[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]">bluray</value>
