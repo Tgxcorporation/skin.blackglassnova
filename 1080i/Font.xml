@@ -20,7 +20,7 @@
         <font>
             <name>HomeItemFont</name>
             <filename>Sansation_Regular.ttf</filename>
-            <size>55</size>
+            <size>50</size>
             <style>bold</style>
             <aspect>1</aspect>
         </font>
@@ -207,7 +207,7 @@
         <font>
             <name>HomeItemFont</name>
             <filename>Sansation_Regular.ttf</filename>
-            <size>55</size>
+            <size>50</size>
             <style>bold</style>
             <aspect>0.85</aspect>
         </font>
@@ -422,7 +422,7 @@
         <font>
             <name>HomeItemFont</name>
             <filename>Asap-Regular.ttf</filename>
-            <size>55</size>
+            <size>50</size>
             <style>bold</style>
             <linespacing>1.03</linespacing>
             <aspect>1.10</aspect>
