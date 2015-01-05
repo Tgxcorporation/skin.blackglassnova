@@ -51,7 +51,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="list" id="56">
-                    <visible>Container.Content(TVShows)|Container.Content(movies)</visible>
+                    <visible>Container.Content(tvshows)|[Container.Content(movies)+!Skin.HasSetting(plexbmc)]</visible>
                     <viewtype label="31094">Banner List</viewtype>
                     <posx>1260</posx>
                     <posy>426</posy>

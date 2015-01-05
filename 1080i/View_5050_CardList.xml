@@ -414,25 +414,15 @@
                             <label fallback="416">$INFO[ListItem.Rating]</label>
                         </control>
                         <control type="label">
-                            <posx>TextMargin</posx>
-                            <posy>73</posy>
-                            <width>1031</width>
-                            <height>71</height>
-                            <font>InfoDetailsFont</font>
-                            <textcolor>AlternateColor</textcolor>
-                            <scroll>false</scroll>
-                            <label>$INFO[ListItem.Label2,$LOCALIZE[19114]: ]</label>
-                        </control>
-                        <control type="label">
                             <posx>376</posx>
                             <posy>73</posy>
                             <width>700</width>
                             <height>71</height>
                             <align>right</align>
                             <font>InfoDetailsFont</font>
-                            <textcolor>AlternateColor</textcolor>
+                            <textcolor>MainColor</textcolor>
                             <scroll>false</scroll>
-                            <label>$INFO[ListItem.Genre]</label>
+                            <label>$VAR[Details2]</label>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -638,28 +628,15 @@
                             <label fallback="416">$INFO[ListItem.Rating]</label>
                         </control>
                         <control type="label">
-                            <visible>[Container.Content(episodes)]</visible>
-                            <posx>446</posx>
-                            <posy>73</posy>
-                            <width>630</width>
-                            <height>71</height>
-                            <font>InfoDetailsFont</font>
-                            <textcolor>MainColor</textcolor>
-                            <align>right</align>
-                            <scroll>false</scroll>
-                            <label>S$INFO[ListItem.Season]  •  E$INFO[ListItem.Episode]</label>
-                        </control>
-                        <control type="label">
-                            <visible>![Container.Content(episodes)]</visible>
                             <posx>376</posx>
                             <posy>73</posy>
                             <width>700</width>
                             <height>71</height>
                             <align>right</align>
                             <font>InfoDetailsFont</font>
-                            <textcolor>AlternateColor</textcolor>
+                            <textcolor>MainColor</textcolor>
                             <scroll>false</scroll>
-                            <label>$INFO[ListItem.Genre]</label>
+                            <label>$VAR[Details2]</label>
                         </control>
                         <control type="image">
                             <posx>0</posx>

@@ -141,6 +141,18 @@
         <value condition="!IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2]</value>
         <value>$LOCALIZE[416]</value>
     </variable>
+    <variable name="Details2">
+        <!--<value condition="Container.Content(Artists)">$INFO[ListItem.Property(Artist_Mood)]</value>-->
+        <!--<value condition="Container.Content(Songs)">$INFO[ListItem.Album]</value>-->
+        <!--<value condition="Container.Content(Albums)">$INFO[ListItem.Genre]</value>-->
+        <!--<value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Type)]</value>-->
+        <value condition="Container.Content(Movies)">$INFO[ListItem.Genre]</value>
+        <value condition="Container.Content(TVShows)">$INFO[ListItem.Genre]</value>
+        <value condition="Container.Content(Seasons)">$INFO[ListItem.Genre]</value>
+        <value condition="Container.Content(Episodes)">$INFO[ListItem.Season,S,  •  ]$INFO[ListItem.Episode,E,  •  ]$INFO[ListItem.TVShowTitle]</value>
+        <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Genre]</value>
+        <!--<value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.PictureResolution]</value>-->
+    </variable>
     <variable name="Fanart_Details">
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Size,,  •  ]$INFO[ListItem.Date]</value>
         <value condition="Container.content(Albums)">$INFO[ListItem.Artist,,  •  ]$INFO[ListItem.Year]</value>
