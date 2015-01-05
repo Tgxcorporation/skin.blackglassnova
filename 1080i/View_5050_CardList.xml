@@ -430,9 +430,9 @@
                             <height>71</height>
                             <align>right</align>
                             <font>InfoDetailsFont</font>
-                            <textcolor>AlternateColor</textcolor>
+                            <textcolor>MainColor</textcolor>
                             <scroll>false</scroll>
-                            <label>$INFO[ListItem.Genre]</label>
+                            <label>$VAR[Details2]</label>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -657,9 +657,9 @@
                             <height>71</height>
                             <align>right</align>
                             <font>InfoDetailsFont</font>
-                            <textcolor>AlternateColor</textcolor>
+                            <textcolor>MainColor</textcolor>
                             <scroll>false</scroll>
-                            <label>$INFO[ListItem.Genre]</label>
+                            <label>$VAR[Details2]</label>
                         </control>
                         <control type="image">
                             <posx>0</posx>

@@ -32,7 +32,7 @@
             <visible>Control.hasfocus(505050)|control.hasfocus(57)|control.hasfocus(58)|control.hasfocus(59)|control.hasfocus(53)|[[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]]|[control.hasfocus(60)+[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]]</visible>
             <control type="group">
                 <visible>![StringCompare(ListItem.Label,..)]</visible>
-                <animation effect="slide" time="0" start="0,0" end="0,40" condition="[IsEmpty(control.getlabel(45743))+!control.isvisible(45742)]">Conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,40" condition="[!control.isvisible(45741)+!control.isvisible(45742)+!control.isvisible(45743)+!control.isvisible(45744)]">Conditional</animation>
                 <control type="image">
                     <posx>30</posx>
                     <posy>933</posy>
