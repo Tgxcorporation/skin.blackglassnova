@@ -42,6 +42,7 @@
                     <aspectratio aligny="center">keep</aspectratio>
                 </control>
                 <control type="label">
+                    <visible>!Container.Content(Addons)</visible>
                     <posx>92</posx>
                     <posy>933</posy>
                     <width>1750</width>
@@ -52,12 +53,24 @@
                     <shadowcolor>ShadowColor</shadowcolor>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
+                <control type="label">
+                    <visible>Container.Content(Addons)</visible>
+                    <posx>92</posx>
+                    <posy>933</posy>
+                    <width>1750</width>
+                    <height>45</height>
+                    <align>center</align>
+                    <font>InfoTitleFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <shadowcolor>ShadowColor</shadowcolor>
+                    <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
+                </control>
                 <control type="label" id="45743">
                     <visible>![Control.isvisible(45741)|Control.isvisible(45742)]+!Window.isActive(MyPVRChannels.xml)</visible>
-                    <posx>407</posx>
+                    <posx>92</posx>
                     <posy>1010</posy>
                     <height>33</height>
-                    <width>1120</width>
+                    <width>1750</width>
                     <align>center</align>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
@@ -183,6 +196,7 @@
                 <focusedlayout height="550" width="268">
                     <control type="group">
                         <!-- CDART -->
+                        <visible>!Skin.HasSetting(plexbmc)</visible>
                         <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
                         <control type="image">
                             <posx>27</posx>
@@ -290,6 +304,7 @@
                     </control>
                     <control type="group">
                         <!-- CDART -->
+                        <visible>!Skin.HasSetting(plexbmc)</visible>
                         <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
                         <control type="image">
                             <posx>45</posx>
@@ -489,6 +504,7 @@
                 <focusedlayout height="553" width="375">
                     <control type="group">
                         <!-- CDART -->
+                        <visible>!Skin.HasSetting(plexbmc)</visible>
                         <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|Window.IsActive(MyMusicSongs.xml)]</visible>
                         <control type="image">
                             <posx>27</posx>
@@ -590,6 +606,7 @@
                     </control>
                     <control type="group">
                         <!-- CDART -->
+                        <visible>!Skin.HasSetting(plexbmc)</visible>
                         <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|Window.IsActive(MyMusicSongs.xml)]</visible>
                         <control type="image">
                             <posx>45</posx>
