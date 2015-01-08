@@ -91,6 +91,7 @@
                     </control>
                     <control type="group">
                         <!-- CDART -->
+                        <visible>!Skin.HasSetting(plexbmc)</visible>
                         <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+![Control.hasfocus(50)| Control.HasFocus(61)|Control.hasfocus(9012)|Control.HasFocus(9014)]+[Container.content(movies)|Container.content(musicvideos)]</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <control type="image">
