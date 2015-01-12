@@ -408,7 +408,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>158</posx>
+                <posx>175</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -430,7 +430,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>158</posx>
+                <posx>175</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -464,7 +464,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>158</posx>
+                <posx>175</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -486,7 +486,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>158</posx>
+                <posx>175</posx>
                 <posy>412</posy>
                 <width>260</width>
                 <height>70</height>
@@ -520,7 +520,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>158</posx>
+                <posx>175</posx>
                 <posy>295</posy>
                 <width>260</width>
                 <height>70</height>
@@ -532,7 +532,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>158</posx>
+                <posx>175</posx>
                 <posy>325</posy>
                 <width>260</width>
                 <height>70</height>
@@ -554,7 +554,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>158</posx>
+                <posx>175</posx>
                 <posy>295</posy>
                 <width>260</width>
                 <height>70</height>
@@ -566,7 +566,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>158</posx>
+                <posx>175</posx>
                 <posy>325</posy>
                 <width>260</width>
                 <height>70</height>
@@ -601,7 +601,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>158</posx>
+                <posx>175</posx>
                 <posy>300</posy>
                 <width>260</width>
                 <height>70</height>
@@ -624,7 +624,7 @@
             </control>
             <control type="label">
                 <visible>Skin.HasSetting(VerticalHome)</visible>
-                <posx>158</posx>
+                <posx>175</posx>
                 <posy>300</posy>
                 <width>260</width>
                 <height>70</height>
