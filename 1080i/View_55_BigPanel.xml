@@ -331,7 +331,7 @@
                             <posy>0</posy>
                             <width>1011</width>
                             <height>224</height>
-                            <texture background="true">$VAR[Banner]</texture>
+                            <texture background="true" fallback="common/BlackDotT.png">$VAR[Banner]</texture>
                             <aspectratio>stretch</aspectratio>
                             <include>ThumbBorder</include>
                         </control>
@@ -353,7 +353,7 @@
                             <posy>0</posy>
                             <width>1011</width>
                             <height>224</height>
-                            <texture background="true">$VAR[Banner]</texture>
+                            <texture background="true" fallback="common/BlackDotT.png">$VAR[Banner]</texture>
                             <aspectratio>stretch</aspectratio>
                             <include>ThumbBorderOverlay</include>
                         </control>
