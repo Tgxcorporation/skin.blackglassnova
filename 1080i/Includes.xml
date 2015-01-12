@@ -24,6 +24,7 @@
     <include file="Includes_Horizontal_Home_BG.xml"/>
     <include file="Includes_Vertical_Home.xml"/>
     <include file="Includes_Shelf_Contents.xml"/>
+    <include file="Includes_Weather.xml"/>
     <include file="View_50.xml"/>
     <include file="View_50_BG.xml"/>
     <include file="View_51_Panel.xml"/>
@@ -363,7 +364,7 @@
     <include name="Time">
         <control type="group">
             <control type="image">
-                <visible>!Control.HasFocus(505050)+Skin.HasSetting(BlackGlassMode)</visible>
+                <visible>!Control.HasFocus(505050)+Skin.HasSetting(BlackGlassMode)+!Skin.String(WeatherType,Map)</visible>
                 <include>Icon_Fade</include>
                 <posx>0</posx>
                 <posy>0</posy>

@@ -598,4 +598,94 @@
             <onright>505050</onright>
         </control>
     </include>
+    <include name="List_Layout_Weather">
+        <itemlayout height="73" width="660">
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>73</height>
+                <width>660</width>
+                <texture border="3">list/bg_facade_nofocus.png</texture>
+            </control>
+            <control type="label">
+                <posx>30</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListNoFocusColor</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label">
+                <posx>280</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListNoFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(Property1)]</label>
+            </control>
+            <control type="label">
+                <posx>420</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListNoFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(Property2)]</label>
+            </control>
+            <control type="image">
+                <posx>540</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>71</width>
+                <texture>$INFO[ListItem.Property(Icon)]</texture>
+                <aspectratio>keep</aspectratio>
+            </control>
+        </itemlayout>
+        <focusedlayout height="73" width="660">
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>73</height>
+                <width>660</width>
+                <include>FacadeFocus</include>
+            </control>
+            <control type="label">
+                <posx>30</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListFocusColor</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label">
+                <posx>280</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(Property1)]</label>
+            </control>
+            <control type="label">
+                <posx>420</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(Property2)]</label>
+            </control>
+            <control type="image">
+                <posx>540</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>71</width>
+                <texture>$INFO[ListItem.Property(Icon)]</texture>
+                <aspectratio>keep</aspectratio>
+            </control>
+        </focusedlayout>
+    </include>
 </includes>

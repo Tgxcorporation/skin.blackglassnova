@@ -614,7 +614,7 @@
                         <posy>365</posy>
                         <width>410</width>
                         <height>483</height>
-                        <texture background="true" fallback="DefaultVideoBig.png">$INFO[Container(450).Listitem.Icon]</texture>
+                        <texture background="true" fallback="DefaultArtistBig.png">$INFO[Container(450).Listitem.Icon]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -636,7 +636,7 @@
                                 <posy>-3</posy>
                                 <width>197</width>
                                 <height>273</height>
-                                <texture fallback="defaultIconBig.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
                                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                                 <include>ThumbBorder</include>
                             </control>
@@ -647,7 +647,7 @@
                                 <posy>-3</posy>
                                 <width>197</width>
                                 <height>273</height>
-                                <texture fallback="defaultIconBig.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="defaultArtistBig.png">$INFO[ListItem.Icon]</texture>
                                 <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
                                 <include>ThumbBorderOverlay</include>
                             </control>

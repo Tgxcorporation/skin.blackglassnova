@@ -576,4 +576,354 @@
             <onright>51</onright>
         </control>
     </include>
+    <include name="Info_50_Weather_BG">
+        <control type="group">
+            <posx>145</posx>
+            <posy>115</posy>
+            <control type="image">
+                <posx>-21</posx>
+                <posy>0</posy>
+                <width>1683</width>
+                <height>950</height>
+                <texture border="90">common/bg_tvguide.png</texture>
+            </control>
+            <control type="image">
+                <posx>212</posx>
+                <posy>49</posy>
+                <height>855</height>
+                <width>250</width>
+                <texture>list/bg_strip_horizontal_left.png</texture>
+                <colordiffuse>90ffffff</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>463</posx>
+                <posy>49</posy>
+                <width>2</width>
+                <height>855</height>
+                <texture>list/bg_facade_vertical.png</texture>
+            </control>
+            <control type="image">
+                <posx>18</posx>
+                <posy>61</posy>
+                <width>440</width>
+                <height>833</height>
+                <aspectratio>scale</aspectratio>
+                <texture background="true">$INFO[Container(50).ListItem.Thumb]</texture>
+                <include>ThumbBorder</include>
+            </control>
+        </control>
+        <control type="group">
+            <posx>609</posx>
+            <posy>186</posy>
+            <control type="label">
+                <posx>TextMargin</posx>
+                <posy>-12</posy>
+                <width>660</width>
+                <height>42</height>
+                <font>InfoTitleFont</font>
+                <textcolor>MainColor</textcolor>
+                <align>left</align>
+                <label>$INFO[Weather.Location]</label>
+            </control>
+            <control type="label" id="11">
+                <posx>TextMargin</posx>
+                <posy>30</posy>
+                <width>660</width>
+                <height>40</height>
+                <font>InfoTitleSubFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <align>left</align>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1152</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="label">
+                <posx>TextMargin</posx>
+                <posy>73</posy>
+                <width>660</width>
+                <height>71</height>
+                <font>InfoDetailsFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[Container(50).ListItem.Property(Property3)]</label>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>73</posy>
+                <width>576</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="label">
+                <visible>![IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible><posx>TextMargin</posx>
+                <posy>146</posy>
+                <width>660</width>
+                <height>71</height>
+                <font>InfoDetailsFont</font>
+                <textcolor>MainColor</textcolor>
+                <label>$INFO[Container(50).ListItem.Property(Property4)]</label>
+            </control>
+            <control type="label">
+                <visible>[IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible><posx>TextMargin</posx>
+                <posx>TextMargin</posx>
+                <posy>146</posy>
+                <width>660</width>
+                <height>71</height>
+                <font>InfoDetailsFont</font>
+                <textcolor>MainColor</textcolor>
+                <label>$INFO[Container(50).ListItem.Property(Property1),$LOCALIZE[393]: ]</label>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>146</posy>
+                <width>576</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="label">
+                <visible>![IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible><posx>TextMargin</posx>
+                <posx>TextMargin</posx>
+                <posy>219</posy>
+                <width>660</width>
+                <height>71</height>
+                <font>InfoDetailsFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[Container(50).ListItem.Property(Property8)]</label>
+            </control>
+            <control type="label">
+                <visible>[IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible><posx>TextMargin</posx>
+                <posx>TextMargin</posx>
+                <posy>219</posy>
+                <width>660</width>
+                <height>71</height>
+                <font>InfoDetailsFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[Container(50).ListItem.Property(Property2),$LOCALIZE[391]: ]</label>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>219</posy>
+                <width>576</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="label">
+                <posx>TextMargin</posx>
+                <posy>292</posy>
+                <width>660</width>
+                <height>71</height>
+                <font>InfoDetailsFont</font>
+                <textcolor>MainColor</textcolor>
+                <label>$INFO[Container(50).ListItem.Property(Property9)]</label>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>292</posy>
+                <width>576</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="label">
+                <posx>TextMargin</posx>
+                <posy>365</posy>
+                <width>660</width>
+                <height>71</height>
+                <font>InfoDetailsFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[Container(50).ListItem.Property(Property5)]</label>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>365</posy>
+                <width>576</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="label">
+                <posx>TextMargin</posx>
+                <posy>438</posy>
+                <width>660</width>
+                <height>71</height>
+                <font>InfoDetailsFont</font>
+                <textcolor>MainColor</textcolor>
+                <label>$INFO[Container(50).ListItem.Property(Property7)]</label>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>438</posy>
+                <width>576</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="label">
+                <posx>TextMargin</posx>
+                <posy>511</posy>
+                <width>660</width>
+                <height>71</height>
+                <font>InfoDetailsFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$INFO[Container(50).ListItem.Property(Property10)]</label>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>511</posy>
+                <width>576</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="label">
+                <posx>TextMargin</posx>
+                <posy>584</posy>
+                <width>660</width>
+                <height>71</height>
+                <font>InfoDetailsFont</font>
+                <textcolor>MainColor</textcolor>
+                <label>$INFO[Container(50).ListItem.Property(Property11)]</label>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>584</posy>
+                <width>576</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+        </control>
+    </include>
+    <include name="List_Layout_Weather_BG">
+        <itemlayout height="146" width="576">
+            <control type="image">
+                <posx>0</posx>
+                <posy>73</posy>
+                <width>576</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus.png</texture>
+            </control>
+            <control type="label">
+                <posx>30</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListNoFocusColor</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label">
+                <posx>30</posx>
+                <posy>73</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>SublistNoFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(Property1)]</label>
+            </control>
+            <control type="label">
+                <posx>230</posx>
+                <posy>73</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListNoFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(Property2)]</label>
+            </control>
+            <control type="image">
+                <posx>410</posx>
+                <posy>0</posy>
+                <height>144</height>
+                <width>144</width>
+                <texture>$INFO[ListItem.Property(Icon)]</texture>
+                <aspectratio>keep</aspectratio>
+            </control>
+        </itemlayout>
+        <focusedlayout height="146" width="576">
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>146</height>
+                <width>576</width>
+                <include>FacadeFocus</include>
+            </control>
+            <control type="label">
+                <posx>30</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListFocusColor</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label">
+                <posx>30</posx>
+                <posy>73</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>SublistFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(Property1)]</label>
+            </control>
+            <control type="label">
+                <posx>230</posx>
+                <posy>73</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(Property2)]</label>
+            </control>
+            <control type="image">
+                <posx>410</posx>
+                <posy>0</posy>
+                <height>144</height>
+                <width>144</width>
+                <texture>$INFO[ListItem.Property(Icon)]</texture>
+                <aspectratio>keep</aspectratio>
+            </control>
+        </focusedlayout>
+    </include>
+    <include name="View_50_Weather_BG">
+        <control type="group">
+            <posx>1185</posx>
+            <posy>259</posy>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>760</height>
+                <width>250</width>
+                <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
+                <colordiffuse>90ffffff</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>2</width>
+                <height>760</height>
+                <texture>list/bg_facade_vertical.png</texture>
+            </control>
+            <control type="list" id="50">
+                <viewtype label="31092">Low List</viewtype>
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>576</width>
+                <height>730</height>
+                <onleft>9000</onleft>
+                <onright>60</onright>
+                <onup>50</onup>
+                <ondown>50</ondown>
+                <pagecontrol>60</pagecontrol>
+                <preloaditems>4</preloaditems>
+                <include>List_Layout_Weather_BG</include>
+                <include>WeatherContent</include>
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>545</posx>
+                <posy>0</posy>
+                <height>730</height>
+                <include>VerticalScroller</include>
+                <onleft>50</onleft>
+                <onright>505050</onright>
+            </control>
+        </control>
+    </include>
 </includes>
