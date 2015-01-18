@@ -152,6 +152,10 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "10 Days توقعات طقس"
 
+msgctxt "#31910"
+msgid "Maps"
+msgstr "الخرائط"
+
 msgctxt "#31954"
 msgid "S"
 msgstr "جنوب"

@@ -348,6 +348,10 @@ msgctxt "#31512"
 msgid "Artwork Downloader Gui"
 msgstr "Gestor de Descargas Artwork Gráfico"
 
+msgctxt "#31513"
+msgid "All Music"
+msgstr "Toda la Música"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Pronóstico de 36 hs"
@@ -363,6 +367,10 @@ msgstr "Pronóstico semanal"
 msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "Pronóstico de 10 días"
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Mapas"
 
 msgctxt "#31947"
 msgid "Resulting sub menu"

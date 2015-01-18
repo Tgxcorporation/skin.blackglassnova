@@ -248,6 +248,10 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "10 paivän ennuste"
 
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Kartat"
+
 msgctxt "#31954"
 msgid "S"
 msgstr "Etelästä"

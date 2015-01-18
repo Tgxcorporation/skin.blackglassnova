@@ -152,6 +152,10 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "Прогноз на 10 днів"
 
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Карти"
+
 msgctxt "#31954"
 msgid "S"
 msgstr "Пд"

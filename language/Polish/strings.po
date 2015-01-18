@@ -356,6 +356,14 @@ msgctxt "#31512"
 msgid "Artwork Downloader Gui"
 msgstr "Artwork Downloader interfejs"
 
+msgctxt "#31513"
+msgid "All Music"
+msgstr "Wszystkie utwory muzyczne"
+
+msgctxt "#31514"
+msgid "Music homescreen button opens:"
+msgstr "Przycisk Muzyka ekranu startowego otwiera:"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Prognoza 36 godzinna"
@@ -371,6 +379,10 @@ msgstr "Prognoza na weekend"
 msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "Prognoza 10 dniowa"
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Mapy"
 
 msgctxt "#31947"
 msgid "Resulting sub menu"
@@ -566,7 +578,7 @@ msgstr "Używaj pionowego menu startowego"
 
 msgctxt "#31995"
 msgid "Home layout"
-msgstr "Układ ekranu startowego"
+msgstr "Kompozycja ekranu startowego"
 
 msgctxt "#31996"
 msgid "Big Channel List in OSD"
