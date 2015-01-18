@@ -416,7 +416,7 @@ msgid "Weekend Forecast"
 msgstr ""
 
 msgctxt "#31904"
-msgid "10 Day Forecast"
+msgid "Daily Forecast"
 msgstr ""
 
 #empty strings from id 31905 to 31909
