@@ -240,6 +240,10 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "10 daga veðurspá"
 
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Kort"
+
 msgctxt "#31953"
 msgid "Large List"
 msgstr "Stór listi"

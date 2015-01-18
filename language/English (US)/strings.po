@@ -356,6 +356,14 @@ msgctxt "#31512"
 msgid "Artwork Downloader Gui"
 msgstr "Artwork Downloader GUI"
 
+msgctxt "#31513"
+msgid "All Music"
+msgstr "All Music"
+
+msgctxt "#31514"
+msgid "Music homescreen button opens:"
+msgstr "Music homescreen button opens:"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "36 Hour Forecast"
@@ -371,6 +379,10 @@ msgstr "Weekend Forecast"
 msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "10 Day Forecast"
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Maps"
 
 msgctxt "#31947"
 msgid "Resulting sub menu"

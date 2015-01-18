@@ -356,6 +356,10 @@ msgctxt "#31512"
 msgid "Artwork Downloader Gui"
 msgstr "Λήψη Εικόνων Μαζικά"
 
+msgctxt "#31513"
+msgid "All Music"
+msgstr "Όλη η Μουσική"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "36ωρη Πρόγνωση"
@@ -371,6 +375,10 @@ msgstr "Πρόγνωση Σαββατοκύριακου"
 msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "Πρόγνωση 10 ημερών"
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Χάρτες"
 
 msgctxt "#31947"
 msgid "Resulting sub menu"

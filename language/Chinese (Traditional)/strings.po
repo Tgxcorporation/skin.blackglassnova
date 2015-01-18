@@ -168,6 +168,10 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "10天預報"
 
+msgctxt "#31910"
+msgid "Maps"
+msgstr "地圖"
+
 msgctxt "#31954"
 msgid "S"
 msgstr "南"

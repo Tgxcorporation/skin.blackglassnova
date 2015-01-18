@@ -334,7 +334,7 @@ msgstr "Groupes[CR]disponibles"
 
 msgctxt "#31507"
 msgid "Movies homescreen button opens:"
-msgstr "Le bouton Films sur l'écran d'accueil ouvre :"
+msgstr "Le bouton Films de l'écran d'accueil ouvre :"
 
 msgctxt "#31508"
 msgid "Last Updated"
@@ -356,6 +356,14 @@ msgctxt "#31512"
 msgid "Artwork Downloader Gui"
 msgstr "Téléchargeur d'illustrations - IUG"
 
+msgctxt "#31513"
+msgid "All Music"
+msgstr "Toute la musique"
+
+msgctxt "#31514"
+msgid "Music homescreen button opens:"
+msgstr "Le bouton Musique de l'écran d'accueil ouvre :"
+
 msgctxt "#31901"
 msgid "36 Hour Forecast"
 msgstr "Prévisions 36 heures"
@@ -371,6 +379,10 @@ msgstr "Prévisions pour la fin de semaine"
 msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "Prévisions sur 10 jours"
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Cartes"
 
 msgctxt "#31947"
 msgid "Resulting sub menu"

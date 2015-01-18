@@ -152,6 +152,10 @@ msgctxt "#31904"
 msgid "10 Day Forecast"
 msgstr "Previziune pe 10 zile"
 
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Hărți"
+
 msgctxt "#31954"
 msgid "S"
 msgstr "S"
