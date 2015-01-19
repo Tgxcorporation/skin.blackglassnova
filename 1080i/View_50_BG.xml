@@ -416,6 +416,75 @@
             </control>
         </control>
     </include>
+    <include name="View_50_BG_ExtendedInfo">
+        <control type="group">
+            <control type="group">
+                <control type="image">
+                    <posx>704</posx>
+                    <posy>125</posy>
+                    <width>1445</width>
+                    <height>1160</height>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
+                </control>
+                <control type="image">
+                    <posx>740</posx>
+                    <posy>134</posy>
+                    <width>1180</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="image">
+                    <visible>!IntegerGreaterThan(Container(500).NumItems,10)</visible>
+                    <posx>740</posx>
+                    <posy>937</posy>
+                    <width>1180</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="list" id="500">
+                    <viewtype label="535">Large List</viewtype>
+                    <posx>740</posx>
+                    <posy>207</posy>
+                    <width>1180</width>
+                    <height>803</height>
+                    <pagecontrol>60</pagecontrol>
+                    <onleft>9000</onleft>
+                    <onright>60</onright>
+                    <onup>700</onup>
+                    <ondown>600</ondown>
+                    <preloaditems>4</preloaditems>
+                    <include>List_Layout_BG</include>
+                </control>
+                <control type="button" id="600">
+                    <onfocus>SetFocus(500)</onfocus>
+                    <width>1</width>
+                    <height>1</height>
+                    <posx>-1000</posx>
+                </control>
+                <control type="button" id="700">
+                    <onfocus>SetFocus(500)</onfocus>
+                    <width>1</width>
+                    <height>1</height>
+                    <posx>-1000</posx>
+                </control>
+            </control>
+            <control type="label">
+                <include>FacadeNumItems</include>
+                <label>$INFO[Window.Property(TotalItems)] $LOCALIZE[31025]</label>
+            </control>
+            <control type="scrollbar" id="60">
+                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
+                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <posx>1899</posx>
+                <posy>207</posy>
+                <height>803</height>
+                <include>VerticalScroller</include>
+                <onleft>500</onleft>
+                <onright>500</onright>
+            </control>
+        </control>
+    </include>
     <include name="View_50_Custom_Addons_BG">
         <control type="group">
             <control type="image">
@@ -805,7 +874,7 @@
                 <posx>30</posx>
                 <posy>0</posy>
                 <height>71</height>
-                <width>255</width>
+                <width>350</width>
                 <font>InfoDetailsFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
@@ -849,7 +918,7 @@
                 <posx>30</posx>
                 <posy>0</posy>
                 <height>71</height>
-                <width>255</width>
+                <width>350</width>
                 <font>InfoDetailsFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
