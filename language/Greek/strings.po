@@ -292,18 +292,6 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "Υπάρχει διαθέσιμος υπότιτλος τοπικά"
 
-msgctxt "#31390"
-msgid "(1/3) Sansation (Default)"
-msgstr "(1/3) Sansation (Προεπιλογή)"
-
-msgctxt "#31391"
-msgid "(2/3) Sansation (Condensed)"
-msgstr "(2/3) Sansation (Στενά)"
-
-msgctxt "#31392"
-msgid "(3/3) Asap (Fixed Width)"
-msgstr "(3/3) Asap (Ορισμένο Πλάτος)"
-
 msgctxt "#31500"
 msgid "Live TV"
 msgstr "Live TV"
@@ -371,10 +359,6 @@ msgstr "Ωριαία Πρόγνωση"
 msgctxt "#31903"
 msgid "Weekend Forecast"
 msgstr "Πρόγνωση Σαββατοκύριακου"
-
-msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "Πρόγνωση 10 ημερών"
 
 msgctxt "#31910"
 msgid "Maps"
