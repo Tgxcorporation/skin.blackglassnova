@@ -292,18 +292,6 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "Legenda local disponível"
 
-msgctxt "#31390"
-msgid "(1/3) Sansation (Default)"
-msgstr "(1/3) Sansation (Padrão)"
-
-msgctxt "#31391"
-msgid "(2/3) Sansation (Condensed)"
-msgstr "(2/3) Sansation (Condensada)"
-
-msgctxt "#31392"
-msgid "(3/3) Asap (Fixed Width)"
-msgstr "(3/3) Asap (Largura Fixa)"
-
 msgctxt "#31500"
 msgid "Live TV"
 msgstr "TV ao Vivo"
@@ -375,10 +363,6 @@ msgstr "Previsão por hora"
 msgctxt "#31903"
 msgid "Weekend Forecast"
 msgstr "Previsão fim de semana"
-
-msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "Previsão 10 Dias"
 
 msgctxt "#31910"
 msgid "Maps"

@@ -292,18 +292,6 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "로컬 자막 있음"
 
-msgctxt "#31390"
-msgid "(1/3) Sansation (Default)"
-msgstr "(1/3) Sansation (Default)"
-
-msgctxt "#31391"
-msgid "(2/3) Sansation (Condensed)"
-msgstr "(2/3) Sansation (Condensed)"
-
-msgctxt "#31392"
-msgid "(3/3) Asap (Fixed Width)"
-msgstr "(3/3) Asap (Fixed Width)"
-
 msgctxt "#31500"
 msgid "Live TV"
 msgstr "TV 시청"
@@ -375,10 +363,6 @@ msgstr "시간별 예보"
 msgctxt "#31903"
 msgid "Weekend Forecast"
 msgstr "주말 예보"
-
-msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "10일 예보"
 
 msgctxt "#31910"
 msgid "Maps"

@@ -260,10 +260,6 @@ msgctxt "#31903"
 msgid "Weekend Forecast"
 msgstr "Previsioni per il Weekend"
 
-msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "Previsioni a 10 giorni"
-
 msgctxt "#31910"
 msgid "Maps"
 msgstr "Mappe"

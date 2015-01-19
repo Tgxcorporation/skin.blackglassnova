@@ -264,10 +264,6 @@ msgctxt "#31357"
 msgid "Local subtitle available"
 msgstr "Local subtitle available"
 
-msgctxt "#31392"
-msgid "(3/3) Asap (Fixed Width)"
-msgstr "(3/3) Asap (Fixed Width)"
-
 msgctxt "#31500"
 msgid "Live TV"
 msgstr "Live TV"
@@ -331,10 +327,6 @@ msgstr "Hourly Forecast"
 msgctxt "#31903"
 msgid "Weekend Forecast"
 msgstr "Weekend Forecast"
-
-msgctxt "#31904"
-msgid "10 Day Forecast"
-msgstr "10 Day Forecast"
 
 msgctxt "#31910"
 msgid "Maps"
