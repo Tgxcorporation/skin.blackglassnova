@@ -354,4 +354,8 @@
         <value condition="!IsEmpty(Skin.String(CustomHome.9.Icon))">$INFO[Skin.String(CustomHome.9.Icon)]</value>
         <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
+    <variable name="YouTubeContent">
+        <value condition="Container.Content(albums)">plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Album]</value>
+        <value>plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] Music</value>
+    </variable>
 </includes>
