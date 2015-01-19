@@ -437,6 +437,78 @@
             </control>
         </control>
     </include>
+    <include name="View_50_ExtendedInfo">
+        <control type="group">
+            <control type="group">
+                <include>SlideViewUnknown</include>
+                <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="true">Conditional</animation>
+                <control type="image">
+                    <posx>1224</posx>
+                    <posy>350</posy>
+                    <width>1522</width>
+                    <height>900</height>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
+                </control>
+                <control type="image">
+                    <posx>1260</posx>
+                    <posy>353</posy>
+                    <width>1440</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="image">
+                    <visible>!IntegerGreaterThan(Container(500).NumItems,7)</visible>
+                    <posx>1260</posx>
+                    <posy>939</posy>
+                    <width>1440</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="list" id="500">
+                    <viewtype label="535">List</viewtype>
+                    <posx>1260</posx>
+                    <posy>426</posy>
+                    <width>1440</width>
+                    <height>584</height>
+                    <pagecontrol>60</pagecontrol>
+                    <onleft>9000</onleft>
+                    <onright>60</onright>
+                    <onup>700</onup>
+                    <ondown>600</ondown>
+                    <preloaditems>4</preloaditems>
+                    <include>List_Layout</include>
+                </control>
+                <control type="button" id="600">
+                    <onfocus>SetFocus(500)</onfocus>
+                    <width>1</width>
+                    <height>1</height>
+                    <posx>-1000</posx>
+                </control>
+                <control type="button" id="700">
+                    <onfocus>SetFocus(500)</onfocus>
+                    <width>1</width>
+                    <height>1</height>
+                    <posx>-1000</posx>
+                </control>
+            </control>
+            <control type="label">
+                <include>FacadeNumItems</include>
+                <label>$INFO[Window.Property(TotalItems)] $LOCALIZE[31025]</label>
+            </control>
+            <control type="scrollbar" id="60">
+                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
+                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <posx>1899</posx>
+                <posy>421</posy>
+                <height>586</height>
+                <include>SlideViewScroller</include>
+                <include>VerticalScroller</include>
+                <onleft>500</onleft>
+                <onright>500</onright>
+            </control>
+        </control>
+    </include>
     <include name="View_50_Custom_Addons">
         <control type="group">
             <posx>-780</posx>
@@ -599,7 +671,7 @@
         </control>
     </include>
     <include name="List_Layout_Weather">
-        <itemlayout height="73" width="660">
+        <itemlayout condition="!Skin.String(WeatherType,Hourly)" height="73" width="660">
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -643,7 +715,7 @@
                 <aspectratio>keep</aspectratio>
             </control>
         </itemlayout>
-        <focusedlayout height="73" width="660">
+        <focusedlayout condition="!Skin.String(WeatherType,Hourly)" height="73" width="660">
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
@@ -677,6 +749,76 @@
                 <font>InfoDetailsFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <label>$INFO[ListItem.Property(Property2)]</label>
+            </control>
+            <control type="image">
+                <posx>540</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>71</width>
+                <texture>$INFO[ListItem.Property(Icon)]</texture>
+                <aspectratio>keep</aspectratio>
+            </control>
+        </focusedlayout>
+        <itemlayout condition="Skin.String(WeatherType,Hourly)" height="73" width="660">
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>73</height>
+                <width>660</width>
+                <texture border="3">list/bg_facade_nofocus.png</texture>
+            </control>
+            <control type="label">
+                <posx>30</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>495</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListNoFocusColor</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label">
+                <posx>420</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListNoFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(Property1)]</label>
+            </control>
+            <control type="image">
+                <posx>540</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>71</width>
+                <texture>$INFO[ListItem.Property(Icon)]</texture>
+                <aspectratio>keep</aspectratio>
+            </control>
+        </itemlayout>
+        <focusedlayout condition="Skin.String(WeatherType,Hourly)" height="73" width="660">
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>73</height>
+                <width>660</width>
+                <include>FacadeFocus</include>
+            </control>
+            <control type="label">
+                <posx>30</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>495</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListFocusColor</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+            </control>
+            <control type="label">
+                <posx>420</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>255</width>
+                <font>InfoDetailsFont</font>
+                <textcolor>ListFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(Property1)]</label>
             </control>
             <control type="image">
                 <posx>540</posx>
