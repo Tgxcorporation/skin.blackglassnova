@@ -25,7 +25,7 @@
         <value condition="!IsEmpty(ListItem.thumb)">$INFO[ListItem.thumb]</value>
         <value condition="StringCompare(ListItem.thumb,)+[Window.IsActive(MyPVR.xml)+!Control.isvisible(12)]">defaultChannelTvBig_Wide.png</value>
         <value condition="StringCompare(ListItem.Label,..)+[Container.content(episodes)|Window.IsActive(MyPics.xml)|Window.IsActive(MyVideoPlaylist.xml)]">DefaultFolderBackEpisode.png</value>
-        <value condition="StringCompare(ListItem.Label,..)+[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)]">DefaultFolderBackPoster.png</value>
+        <value condition="StringCompare(ListItem.Label,..)+[Container.content(actors)|Container.content(movies)|Container.content(musicvideos)|Container.content(tvshows)|Container.Content(Seasons)|Container.Content(sets)]">DefaultFolderBackPoster.png</value>
         <value condition="StringCompare(ListItem.Label,..)">DefaultFolderBack.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(files)]">defaultHardDiskBig.png</value>
         <value condition="[StringCompare(ListItem.Art(thumb),)|IsEmpty(ListItem.thumb)]+[Container.content(years)]">defaultYearBig.png</value>
@@ -134,6 +134,8 @@
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_genre))">$INFO[ListItem.Property(artist_genre)]</value>
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_style))">$INFO[ListItem.Property(artist_style)]</value>
         <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</value>
+        <value condition="Container.Content(Sets)+!Control.isvisible(5050)">$INFO[ListItem.Year]$INFO[ListItem.Rating,  •  ]</value>
+        <value condition="Container.Content(Sets)+Control.isvisible(5050)">$INFO[ListItem.Year]</value>
         <value condition="Container.Content(Movies)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]$INFO[ListItem.MPAA,  •  ]</value>
         <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]+!IsEmpty(ListItem.MPAA)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.MPAA]</value>
         <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]+IsEmpty(ListItem.MPAA)+!IsEmpty(ListItem.Year)">$INFO[ListItem.Year]</value>
@@ -179,6 +181,7 @@
         <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Version),$LOCALIZE[19114]: ,  •  ]$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]$INFO[ListItem.Property(Addon.Type),  •  $LOCALIZE[146] ]</value>
         <value condition="Container.Content(songs)">$INFO[ListItem.Duration]</value>
         <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</value>
+        <value condition="Container.Content(Sets)">$INFO[ListItem.Year]</value>
         <value condition="Container.Content(Movies)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</value>
         <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]+!IsEmpty(ListItem.MPAA)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.MPAA]</value>
         <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]+IsEmpty(ListItem.MPAA)">$INFO[ListItem.Year]</value>
