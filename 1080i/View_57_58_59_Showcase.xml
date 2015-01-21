@@ -29,7 +29,8 @@
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]]+!Skin.HasSetting(DisableSlidingAnimations)+Skin.HasSetting(BlackGlassMode)">conditional</animation>
             <include>Icon_Fade</include>
-            <visible>Control.hasfocus(505050)|control.hasfocus(57)|control.hasfocus(58)|control.hasfocus(59)|control.hasfocus(53)|[[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]]|[control.hasfocus(60)+[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]]</visible>
+            <visible>![Control.HasFocus(7000)|Control.hasfocus(6069)]</visible>
+            <visible>Control.hasfocus(505050)|[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]</visible>
             <control type="group">
                 <visible>![StringCompare(ListItem.Label,..)]</visible>
                 <animation effect="slide" time="0" start="0,0" end="0,40" condition="[!control.isvisible(45741)+!control.isvisible(45742)+!control.isvisible(45743)+!control.isvisible(45744)]">Conditional</animation>
@@ -154,7 +155,7 @@
                 <pagecontrol>60</pagecontrol>
                 <orientation>horizontal</orientation>
                 <focusposition>5</focusposition>
-                <movement>2</movement>
+                <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="out">300</scrolltime>
                 <itemlayout height="550" width="268">
@@ -241,6 +242,24 @@
                         </control>
                     </control>
                 </focusedlayout>
+            </control>
+            <control type="button">
+                <posx>0</posx>
+                <posy>386</posy>
+                <width>804</width>
+                <height>753</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(59,-1)</onclick>
+            </control>
+            <control type="button">
+                <posx>1116</posx>
+                <posy>386</posy>
+                <width>804</width>
+                <height>753</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(59,1)</onclick>
             </control>
             <control type="group">
                 <visible>Skin.HasSetting(Posters_Gallery)</visible>
@@ -468,7 +487,7 @@
                 <pagecontrol>60</pagecontrol>
                 <orientation>horizontal</orientation>
                 <focusposition>4</focusposition>
-                <movement>1</movement>
+                <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="out">300</scrolltime>
                 <itemlayout height="553" width="375">
@@ -543,6 +562,24 @@
                         </control>
                     </control>
                 </focusedlayout>
+            </control>
+            <control type="button">
+                <posx>0</posx>
+                <posy>386</posy>
+                <width>750</width>
+                <height>753</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(58,-1)</onclick>
+            </control>
+            <control type="button">
+                <posx>1170</posx>
+                <posy>386</posy>
+                <width>750</width>
+                <height>753</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(58,1)</onclick>
             </control>
             <control type="group">
                 <visible>Skin.HasSetting(Music_Gallery)</visible>
@@ -862,7 +899,7 @@
                 <pagecontrol>60</pagecontrol>
                 <orientation>horizontal</orientation>
                 <focusposition>3</focusposition>
-                <movement>1</movement>
+                <movement>0</movement>
                 <preloaditems>4</preloaditems>
                 <scrolltime tween="sine" easing="out">300</scrolltime>
                 <itemlayout height="553" width="375">
@@ -937,6 +974,24 @@
                         </control>
                     </control>
                 </focusedlayout>
+            </control>
+            <control type="button">
+                <posx>0</posx>
+                <posy>386</posy>
+                <width>750</width>
+                <height>753</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(57,-1)</onclick>
+            </control>
+            <control type="button">
+                <posx>1170</posx>
+                <posy>386</posy>
+                <width>750</width>
+                <height>753</height>
+                <texturefocus>-</texturefocus>
+                <texturenofocus>-</texturenofocus>
+                <onclick>Control.Move(57,1)</onclick>
             </control>
             <control type="group">
                 <visible>Skin.HasSetting(Episodes_Gallery)</visible>
