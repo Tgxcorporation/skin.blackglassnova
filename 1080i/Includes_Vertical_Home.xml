@@ -12,6 +12,18 @@
         <width>546</width>
         <height>800</height>
     </include>
+    <include name="HomeShelfCursorNavButtonLeft_Vertical_BG">
+        <posx>536</posx>
+        <posy>120</posy>
+        <width>546</width>
+        <height>800</height>
+    </include>
+    <include name="HomeShelfCursorNavButtonRight_Vertical_BG">
+        <posx>1374</posx>
+        <posy>120</posy>
+        <width>546</width>
+        <height>800</height>
+    </include>
     <include name="Poster_Header">
         <visible>ControlGroup(701).HasFocus</visible>
         <posx>586</posx>
