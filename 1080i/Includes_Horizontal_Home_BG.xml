@@ -310,7 +310,6 @@
                 <include condition="!Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Wrapped_HomeSubMenu_BG</include>
                 <control type="group" id="700">
                     <!--<animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>-->
-                    <include condition="Skin.HasSetting(Shelf.Delay)">Shelf_Delay</include>
                     <posy>-1185</posy>
                     <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
                     <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
