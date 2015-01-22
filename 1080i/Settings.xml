@@ -264,25 +264,25 @@
                         <label>$LOCALIZE[31027]</label>
                         <onclick>Skin.ToggleSetting(BlackGlassMode)</onclick>
                         <onclick>XBMC.ReloadSkin()</onclick>
-                        <label2>$VAR[Favourites.Art]</label2>
+                        <label2>special://skin/backgrounds/Favourites.jpg</label2>
                     </item>
                     <item id="13">
                         <visible>Skin.HasSetting(BlackGlassMode)</visible>
                         <label>$LOCALIZE[31028]</label>
                         <onclick>Skin.ToggleSetting(BlackGlassMode)</onclick>
                         <onclick>XBMC.ReloadSkin()</onclick>
-                        <label2>$VAR[Favourites.Art]</label2>
+                        <label2>special://skin/backgrounds/Favourites2.jpg</label2>
                     </item>
                     <item id="8">
                         <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                         <label>$LOCALIZE[20077]</label>
-                        <label2>$VAR[Favourites.Art]</label2>
+                        <label2>$VAR[Default.Art]</label2>
                         <onclick>activatewindow(skinsettings)</onclick>
                     </item>
                     <item id="8">
                         <visible>Skin.HasSetting(BlackGlassMode)</visible>
                         <label>$LOCALIZE[20077]</label>
-                        <label2>$VAR[Favourites.Art]</label2>
+                        <label2>$VAR[Default.Art]</label2>
                         <onclick>activatewindow(skinsettings)</onclick>
                     </item>
                 </content>
