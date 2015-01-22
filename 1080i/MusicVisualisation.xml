@@ -24,7 +24,7 @@
                 <visible>true</visible>
             </control>
             <control type="group">
-                <visible>[Player.Paused |Player.ShowInfo | Window.IsActive(MusicOSD) | Window.IsVisible(script-cu-lrclyrics-main.xml)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
+                <visible>[Player.Paused |Player.ShowInfo | Window.IsActive(MusicOSD) | Window.IsVisible(script-XBMC_Lyrics-main)] + ![Window.IsVisible(AddonSettings) | Window.IsVisible(SelectDialog) | Window.IsVisible(VisualisationPresetList)]</visible>
                 <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">MusicOSDFade</include>
                 <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">MusicOSDSlideRight</include>
                 <control type="group">
