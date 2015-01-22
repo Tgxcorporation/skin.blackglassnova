@@ -284,7 +284,6 @@
             <control type="group" id="700">
                 <!--<animation effect="fade" time="200" start="100" end="50" reversible="true" condition="!ControlGroup(700).HasFocus">Conditional</animation>-->
                 <posy>-1460</posy>
-                <include condition="Skin.HasSetting(Shelf.Delay)">Shelf_Delay</include>
                 <include condition="!Skin.HasSetting(Hide.Favourites)">Favourite.List</include>
                 <include condition="Skin.HasSetting(Shelf.Addons)">Addons.List</include>
                 <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + !Skin.HasSetting(plexbmc) + SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)">Recent.Movies.List</include>
