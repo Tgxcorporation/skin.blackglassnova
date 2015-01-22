@@ -18,12 +18,15 @@
     <include file="Includes_PVR.xml"/>
     <include file="Includes_Animations.xml"/>
     <include file="defaults.xml"/>
-    <include file="Includes_Plexbmc.xml"/>
     <include file="Includes_Home_Common.xml"/>
+    <include file="Includes_Home_Common_Plexbmc.xml"/>
     <include file="Includes_Horizontal_Home.xml"/>
     <include file="Includes_Horizontal_Home_BG.xml"/>
     <include file="Includes_Vertical_Home.xml"/>
+    <include file="Includes_Shelf.xml"/>
     <include file="Includes_Shelf_Contents.xml"/>
+    <include file="Includes_Shelf_Plexbmc.xml"/>
+    <include file="Includes_Shelf_Plexbmc_Contents.xml"/>
     <include file="Includes_Weather.xml"/>
     <include file="View_50.xml"/>
     <include file="View_50_BG.xml"/>
@@ -364,7 +367,7 @@
     <include name="Time">
         <control type="group">
             <control type="image">
-                <visible>!Control.HasFocus(505050)+Skin.HasSetting(BlackGlassMode)+!Skin.String(WeatherType,Map)</visible>
+                <visible>!Window.isvisible(Home.xml)+!Control.HasFocus(505050)+Skin.HasSetting(BlackGlassMode)+!Skin.String(WeatherType,Map)</visible>
                 <include>Icon_Fade</include>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -374,6 +377,7 @@
                 <include>OverlayBG</include>
             </control>
             <control type="image">
+                <visible>!Window.isvisible(Home.xml)</visible>
                 <posx>0</posx>
                 <posy>-3</posy>
                 <texture border="10">common/basichome_upper_gradient.png</texture>
