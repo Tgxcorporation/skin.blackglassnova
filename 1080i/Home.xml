@@ -20,7 +20,6 @@
             <aspectratio aligny="top">scale</aspectratio>
         </control>
         <include>Player_Show</include>
-        <include>Time</include>
         <control type="image">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <visible>![window.IsActive(DialogVolumeBar.xml)|window.IsActive(DialogMuteBug.xml)]+!Skin.HasSetting(VerticalHome)</visible>
@@ -45,5 +44,6 @@
             <include condition="!Skin.HasSetting(VerticalHome)+!Skin.HasSetting(BlackGlassMode)">Horizontal_Home_Layout</include>
             <include condition="!Skin.HasSetting(VerticalHome)+Skin.HasSetting(BlackGlassMode)">Horizontal_Home_Layout_BG</include>
         </control>
+        <include>Time</include>
     </controls>
 </window>
