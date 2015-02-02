@@ -14,6 +14,7 @@
                 <posy>0</posy>
                 <width>100</width>
                 <height>100</height>
+                <colordiffuse>WindowTitleColor</colordiffuse>
                 <texture>volume/Volume.png</texture>
             </control>
             <control type="image">
@@ -22,6 +23,7 @@
                 <posy>0</posy>
                 <width>100</width>
                 <height>100</height>
+                <colordiffuse>WindowTitleColor</colordiffuse>
                 <texture>volume/VolumeMuted.png</texture>
             </control>
             <control type="group">
@@ -43,7 +45,8 @@
                     <width>353</width>
                     <height>100</height>
                     <font>WindowTitleFont</font>
-                    <textcolor>AlternateColor</textcolor>
+                    <textcolor>WindowTitleColor</textcolor>
+                    <shadowcolor>-</shadowcolor>
                     <label>$INFO[Control.GetLabel(20)]</label>
                 </control>
             </control>
