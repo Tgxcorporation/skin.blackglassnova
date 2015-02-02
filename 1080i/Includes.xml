@@ -390,7 +390,9 @@
                 <include>OverlayBG</include>
             </control>
             <control type="image">
+                <visible>!Skin.HasSetting(BlackGlassMode)|control.hasfocus(505050)</visible>
                 <visible>!Window.isvisible(Home.xml)</visible>
+                <include>VisibleFadeEffect</include>
                 <posx>0</posx>
                 <posy>-3</posy>
                 <texture border="10">common/basichome_upper_gradient.png</texture>
