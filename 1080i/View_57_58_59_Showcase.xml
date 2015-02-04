@@ -37,7 +37,7 @@
                 <control type="image">
                     <visible>![container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)| container.content(episodes)]</visible>
                     <posx>50</posx>
-                    <posy>933</posy>
+                    <posy>925</posy>
                     <width>30</width>
                     <height>45</height>
                     <texture>$VAR[Overlay]</texture>
@@ -46,7 +46,7 @@
                 <control type="label">
                     <visible>!Container.Content(Addons)</visible>
                     <posx>92</posx>
-                    <posy>933</posy>
+                    <posy>925</posy>
                     <width>1750</width>
                     <height>45</height>
                     <align>center</align>
@@ -66,6 +66,14 @@
                     <textcolor>MainColor</textcolor>
                     <shadowcolor>ShadowColor</shadowcolor>
                     <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
+                </control>
+                <control type="image">
+                    <visible>![!control.isvisible(45741)+!control.isvisible(45742)+!control.isvisible(45743)+!control.isvisible(45744)]</visible>
+                    <posx>0</posx>
+                    <posy>911</posy>
+                    <width>1920</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label" id="45743">
                     <visible>!Control.isvisible(45741)+!Control.isvisible(45742)</visible>
