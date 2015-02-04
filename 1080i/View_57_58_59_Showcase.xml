@@ -35,6 +35,7 @@
                 <visible>![StringCompare(ListItem.Label,..)]</visible>
                 <animation effect="slide" time="0" start="0,0" end="0,40" condition="[!control.isvisible(45741)+!control.isvisible(45742)+!control.isvisible(45743)+!control.isvisible(45744)]">Conditional</animation>
                 <control type="image">
+                    <visible>![container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)| container.content(episodes)]</visible>
                     <posx>50</posx>
                     <posy>933</posy>
                     <width>30</width>
