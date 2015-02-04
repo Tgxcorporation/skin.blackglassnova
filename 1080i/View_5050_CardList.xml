@@ -453,7 +453,6 @@
                             <label>$VAR[Details]</label>
                         </control>
                         <control type="image">
-                            <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
                             <posx>1048</posx>
                             <posy>148</posy>
                             <width>30</width>
@@ -681,7 +680,6 @@
                             <label>$VAR[Details]</label>
                         </control>
                         <control type="image">
-                            <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
                             <posx>1048</posx>
                             <posy>148</posy>
                             <width>30</width>
