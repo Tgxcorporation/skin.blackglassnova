@@ -69,6 +69,7 @@
                 </control>
                 <control type="image">
                     <visible>![!control.isvisible(45741)+!control.isvisible(45742)+!control.isvisible(45743)+!control.isvisible(45744)]</visible>
+                    <include>VisibleFadeEffect</include>
                     <posx>0</posx>
                     <posy>911</posy>
                     <width>1920</width>
