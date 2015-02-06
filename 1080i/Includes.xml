@@ -380,7 +380,7 @@
     <include name="Time">
         <control type="group">
             <control type="image">
-                <visible>!Window.isvisible(Home.xml)+!Control.HasFocus(505050)+Skin.HasSetting(BlackGlassMode)+!Skin.String(WeatherType,Map)</visible>
+                <visible>[!Window.isvisible(Home.xml)+!Control.HasFocus(505050)+Skin.HasSetting(BlackGlassMode)+!Window.isvisible(MyWeather.xml)]|[!Skin.String(WeatherType,Map)+Window.isvisible(MyWeather.xml)]</visible>
                 <include>Icon_Fade</include>
                 <posx>0</posx>
                 <posy>0</posy>
@@ -392,7 +392,7 @@
             <control type="image">
                 <visible>!Skin.HasSetting(BlackGlassMode)|control.hasfocus(505050)</visible>
                 <visible>!Window.isvisible(Home.xml)</visible>
-                <include>VisibleFadeEffect</include>
+                <!--<include>VisibleFadeEffect</include>-->
                 <posx>0</posx>
                 <posy>-3</posy>
                 <texture border="10">common/basichome_upper_gradient.png</texture>
