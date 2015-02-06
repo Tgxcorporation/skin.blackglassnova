@@ -380,7 +380,7 @@
     <include name="Time">
         <control type="group">
             <control type="image">
-                <visible>[!Window.isvisible(Home.xml)+!Control.HasFocus(505050)+Skin.HasSetting(BlackGlassMode)+!Window.isvisible(MyWeather.xml)]|[!Skin.String(WeatherType,Map)+Window.isvisible(MyWeather.xml)]</visible>
+                <visible>[!Control.HasFocus(505050)+Skin.HasSetting(BlackGlassMode)+!Window.isvisible(Home.xml)]+[[!Window.isvisible(MyWeather.xml)]|[!Skin.String(WeatherType,Map)+Window.isvisible(MyWeather.xml)]]</visible>
                 <include>Icon_Fade</include>
                 <posx>0</posx>
                 <posy>0</posy>
