@@ -2,15 +2,15 @@
 <includes>
     <include name="HomeShelfCursorNavButtonLeft_Horizontal">
         <posx>0</posx>
-        <posy>120</posy>
+        <posy>470</posy>
         <width>800</width>
-        <height>800</height>
+        <height>450</height>
     </include>
     <include name="HomeShelfCursorNavButtonRight_Horizontal">
         <posx>1120</posx>
-        <posy>120</posy>
+        <posy>470</posy>
         <width>800</width>
-        <height>800</height>
+        <height>450</height>
     </include>
     <include name="Horizontal_Shelf_Poster_Commons">
         <posx>0</posx>
