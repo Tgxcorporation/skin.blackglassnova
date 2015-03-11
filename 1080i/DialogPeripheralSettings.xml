@@ -27,7 +27,7 @@
             <control type="group">
                 <posx>378</posx>
                 <posy>210</posy>
-                <control type="label">
+                <control type="label" id="2">
                     <posx>45</posx>
                     <posy>18</posy>
                     <width>1074</width>
@@ -35,7 +35,7 @@
                     <font>InfoTitleFont</font>
                     <textcolor>MainColor</textcolor>
                     <align>center</align>
-                    <label>$LOCALIZE[5] - $LOCALIZE[35000]</label>
+                    <label>-</label>
                 </control>
                 <control type="image">
                     <posx>0</posx>

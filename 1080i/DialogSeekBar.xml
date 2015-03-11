@@ -143,10 +143,8 @@
                 <label>32 X</label>
             </control>
             <control type="label">
-                <visible>![player.forwarding | player.rewinding]</visible>
-                <visible>Player.DisplayAfterSeek</visible>
                 <include>SeekbarLabels</include>
-                <label>$INFO[Player.SeekOffset,$LOCALIZE[773] ]</label>
+                <label>$VAR[SeekLabel]</label>
             </control>
             <control type="image">
                 <visible>player.rewinding</visible>
