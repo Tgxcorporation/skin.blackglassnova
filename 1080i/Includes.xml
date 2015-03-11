@@ -956,57 +956,6 @@
         <orientation>horizontal</orientation>
         <height>42</height>
     </include>
-    <include name="List_9009_Commons_Actors">
-        <onleft>8</onleft>
-        <onright>8</onright>
-        <onup>8</onup>
-        <ondown>50</ondown>
-        <viewtype label="">list</viewtype>
-        <scrolltime>200</scrolltime>
-        <orientation>vertical</orientation>
-        <itemlayout height="73" width="1131">
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <height>73</height>
-                <width>1131</width>
-                <texture border="3">list/bg_facade_nofocus.png</texture>
-            </control>
-            <control type="label">
-                <posx>TextMargin</posx>
-                <posy>0</posy>
-                <width>1041</width>
-                <height>71</height>
-                <font>InfoDetailsFont</font>
-                <align>left</align>
-                <aligny>center</aligny>
-                <textcolor>ListNoFocusColor</textcolor>
-                <scroll>false</scroll>
-                <info>ListItem.Label</info>
-            </control>
-        </itemlayout>
-        <focusedlayout height="73" width="1131">
-            <control type="image">
-                <posx>0</posx>
-                <posy>0</posy>
-                <height>73</height>
-                <width>1131</width>
-                <include>FacadeFocus</include>
-            </control>
-            <control type="label">
-                <posx>TextMargin</posx>
-                <posy>0</posy>
-                <width>1041</width>
-                <height>71</height>
-                <font>InfoDetailsFont</font>
-                <align>left</align>
-                <aligny>center</aligny>
-                <textcolor>ListFocusColor</textcolor>
-                <scroll>false</scroll>
-                <info>ListItem.Label</info>
-            </control>
-        </focusedlayout>
-    </include>
     <include name="bg_tvguide">
         <texture border="90">common/bg_tvguide.png</texture>
     </include>
