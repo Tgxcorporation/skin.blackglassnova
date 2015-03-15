@@ -4,9 +4,7 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
-            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">
-                OpenCloseSlideRight
-            </include>
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <control type="button">
                 <visible>Skin.HasSetting(WindowClosingIcon)</visible>
                 <posx>1537</posx>
