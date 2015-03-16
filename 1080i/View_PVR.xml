@@ -397,7 +397,7 @@
                     <control type="label">
                         <posx>1168</posx>
                         <posy>190</posy>
-                        <width>850</width>
+                        <width>750</width>
                         <height>73</height>
                         <align>right</align>
                         <font>InfoDetailsFont</font>
@@ -573,7 +573,7 @@
                     <control type="label">
                         <posx>1168</posx>
                         <posy>190</posy>
-                        <width>850</width>
+                        <width>750</width>
                         <height>73</height>
                         <align>right</align>
                         <font>InfoDetailsFont</font>
@@ -749,7 +749,7 @@
                     <control type="label">
                         <posx>1168</posx>
                         <posy>190</posy>
-                        <width>850</width>
+                        <width>750</width>
                         <height>73</height>
                         <align>right</align>
                         <font>InfoDetailsFont</font>
@@ -1525,7 +1525,6 @@
                 <posy>0</posy>
                 <width>455</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.Label</info>
@@ -1535,7 +1534,6 @@
                 <posy>0</posy>
                 <width>530</width>
                 <height>73</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.Date</info>
@@ -1545,7 +1543,6 @@
                 <posy>0</posy>
                 <width>380</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.ChannelName</info>
@@ -1555,7 +1552,6 @@
                 <posy>0</posy>
                 <width>280</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.Comment</info>
@@ -1590,7 +1586,6 @@
                 <posy>0</posy>
                 <width>455</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <info>ListItem.Label</info>
@@ -1600,7 +1595,6 @@
                 <posy>0</posy>
                 <width>530</width>
                 <height>73</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <info>ListItem.Date</info>
@@ -1610,7 +1604,6 @@
                 <posy>0</posy>
                 <width>380</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <info>ListItem.ChannelName</info>
@@ -1620,7 +1613,6 @@
                 <posy>0</posy>
                 <width>280</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <info>ListItem.Comment</info>
@@ -1979,7 +1971,6 @@
                 <posy>0</posy>
                 <width>455</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.Label</info>
@@ -1989,7 +1980,6 @@
                 <posy>0</posy>
                 <width>530</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.Date</info>
@@ -1999,7 +1989,6 @@
                 <posy>0</posy>
                 <width>380</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.ChannelName</info>
@@ -2009,7 +1998,6 @@
                 <posy>0</posy>
                 <width>280</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$LOCALIZE[19043]</label>
@@ -2020,7 +2008,6 @@
                 <posy>0</posy>
                 <width>280</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$LOCALIZE[31510]</label>
@@ -2074,7 +2061,6 @@
                 <posy>0</posy>
                 <width>455</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <info>ListItem.Label</info>
@@ -2084,7 +2070,6 @@
                 <posy>0</posy>
                 <width>530</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <info>ListItem.Date</info>
@@ -2094,7 +2079,6 @@
                 <posy>0</posy>
                 <width>380</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <info>ListItem.ChannelName</info>
@@ -2104,7 +2088,6 @@
                 <posy>0</posy>
                 <width>280</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <label>$LOCALIZE[19043]</label>
@@ -2115,7 +2098,6 @@
                 <posy>0</posy>
                 <width>280</width>
                 <height>71</height>
-                <scroll>false</scroll>
                 <font>TvGuideItemFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <label>$LOCALIZE[31510]</label>
@@ -2623,8 +2605,8 @@
                         <width>25</width>
                         <height>70</height>
                         <font>TvGuideItemFont</font>
-                        <scroll>false</scroll>
                         <textcolor>ListNoFocusColor</textcolor>
+                        <scroll>false</scroll>
                         <info>ListItem.Label</info>
                     </control>
                 </itemlayout>
@@ -2644,6 +2626,7 @@
                         <height>70</height>
                         <font>TvGuideItemFont</font>
                         <textcolor>ListFocusColor</textcolor>
+                        <scroll>false</scroll>
                         <info>ListItem.Label</info>
                     </control>
                 </focusedlayout>
@@ -2701,7 +2684,6 @@
                     <aligny>top</aligny>
                     <align>left</align>
                     <font>InfoTitleFont</font>
-                    <scroll>false</scroll>
                     <label>$INFO[ListItem.Label]</label>
                 </control>
                 <control>
@@ -2719,7 +2701,6 @@
                     <height>73</height>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
-                    <scroll>false</scroll>
                     <label>$INFO[ListItem.Duration]$INFO[ListItem.StartTime,  •  ]$INFO[ListItem.EndTime, / ]</label>
                 </control>
                 <control type="label">
@@ -2729,7 +2710,6 @@
                     <height>73</height>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
-                    <scroll>false</scroll>
                     <align>right</align>
                     <label>$INFO[ListItem.Genre]</label>
                 </control>
@@ -2967,7 +2947,6 @@
                         <posx>103</posx>
                         <height>42</height>
                         <width>530</width>
-                        <scroll>false</scroll>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -3041,7 +3020,6 @@
                         <posx>103</posx>
                         <height>42</height>
                         <width>530</width>
-                        <scroll>false</scroll>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -3253,7 +3231,6 @@
                         <posx>103</posx>
                         <height>42</height>
                         <width>530</width>
-                        <scroll>false</scroll>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -3297,7 +3274,6 @@
                         <posx>103</posx>
                         <height>42</height>
                         <width>530</width>
-                        <scroll>false</scroll>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -3491,7 +3467,6 @@
                         <posx>15</posx>
                         <height>42</height>
                         <width>530</width>
-                        <scroll>false</scroll>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
@@ -3519,7 +3494,6 @@
                         <posx>15</posx>
                         <height>42</height>
                         <width>530</width>
-                        <scroll>false</scroll>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>

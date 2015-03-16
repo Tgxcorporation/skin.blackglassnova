@@ -39,7 +39,6 @@
         <width>1830</width>
         <height>60</height>
         <align>center</align>
-        <scroll>true</scroll>
         <font>InfoTitleFont</font>
         <textcolor>AlternateColor</textcolor>
     </include>
@@ -50,7 +49,6 @@
         <width>1830</width>
         <height>60</height>
         <align>center</align>
-        <scroll>true</scroll>
         <font>InfoTitleFont</font>
         <textcolor>AlternateColor</textcolor>
     </include>
@@ -60,7 +58,6 @@
         <width>1830</width>
         <height>60</height>
         <align>center</align>
-        <scroll>true</scroll>
         <font>InfoTitleFont</font>
         <textcolor>MainColor</textcolor>
     </include>

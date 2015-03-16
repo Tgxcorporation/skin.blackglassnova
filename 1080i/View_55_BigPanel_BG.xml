@@ -67,7 +67,6 @@
                         <height>71</height>
                         <font>InfoRatingFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <scroll>false</scroll>
                         <label fallback="416">$INFO[ListItem.Rating]</label>
                     </control>
                 </control>
@@ -81,7 +80,6 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>MainColor</textcolor>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </control>
@@ -95,7 +93,6 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>MainColor</textcolor>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </control>
@@ -106,7 +103,6 @@
                     <height>71</height>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
-                    <scroll>false</scroll>
                     <label>$VAR[Details]</label>
                 </control>
                 <control type="textbox">
@@ -313,7 +309,6 @@
                         <align>center</align>
                         <textcolor>ListNoFocusColor</textcolor>
                         <font>FacadePanelFont</font>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image">
@@ -342,7 +337,6 @@
                         <align>center</align>
                         <textcolor>ListFocusColor</textcolor>
                         <font>FacadePanelFont</font>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image">
@@ -370,7 +364,6 @@
                         <align>center</align>
                         <textcolor>ListNoFocusColor</textcolor>
                         <font>FacadePanelFont</font>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image">
@@ -398,7 +391,6 @@
                         <align>center</align>
                         <textcolor>ListFocusColor</textcolor>
                         <font>FacadePanelFont</font>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image">
