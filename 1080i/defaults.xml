@@ -12,7 +12,7 @@
         <focusedcolor>MainColor</focusedcolor>
         <selectedcolor>SelectedColor</selectedcolor>
         <disabledcolor>DisabledColor</disabledcolor>
-        <scroll>false</scroll>
+        <scroll>true</scroll>
         <scrollspeed>50</scrollspeed>
         <scrollsuffix>  •  </scrollsuffix>
     </default>

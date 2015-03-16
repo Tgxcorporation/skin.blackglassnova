@@ -45,7 +45,6 @@
                     <height>71</height>
                     <font>InfoRatingFont</font>
                     <textcolor>AlternateColor</textcolor>
-                    <scroll>false</scroll>
                     <label fallback="416">$INFO[ListItem.Rating]</label>
                 </control>
                 <control type="label">
@@ -56,7 +55,6 @@
                     <align>right</align>
                     <font>InfoDetailsFont</font>
                     <textcolor>MainColor</textcolor>
-                    <scroll>false</scroll>
                     <label>$VAR[Details]</label>
                 </control>
                 <control type="image">
@@ -73,7 +71,6 @@
                     <height>71</height>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
-                    <scroll>false</scroll>
                     <label fallback="416">$VAR[Details2]</label>
                 </control>
                 <control type="image">

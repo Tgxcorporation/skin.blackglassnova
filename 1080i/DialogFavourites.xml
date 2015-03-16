@@ -57,7 +57,6 @@
                             <align>center</align>
                             <textcolor>ListFocusColor</textcolor>
                             <font>FacadePanelFont</font>
-                            <scroll>false</scroll>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </itemlayout>
@@ -78,7 +77,6 @@
                             <align>center</align>
                             <textcolor>ListFocusColor</textcolor>
                             <font>FacadePanelFont</font>
-                            <scroll>false</scroll>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                     </focusedlayout>

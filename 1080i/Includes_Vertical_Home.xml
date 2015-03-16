@@ -31,7 +31,6 @@
         <width>1304</width>
         <height>60</height>
         <align>center</align>
-        <scroll>true</scroll>
         <font>InfoTitleFont</font>
         <textcolor>AlternateColor</textcolor>
     </include>
@@ -41,7 +40,6 @@
         <posy>710</posy>
         <width>1304</width>
         <height>60</height>
-        <scroll>true</scroll>
         <align>center</align>
         <font>InfoTitleFont</font>
         <textcolor>AlternateColor</textcolor>
@@ -51,7 +49,6 @@
         <posy>710</posy>
         <width>1304</width>
         <height>60</height>
-        <scroll>true</scroll>
         <align>center</align>
         <font>InfoTitleFont</font>
         <textcolor>MainColor</textcolor>

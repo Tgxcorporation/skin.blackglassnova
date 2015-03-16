@@ -766,7 +766,6 @@
                 <font>FacadeListSubFont</font>
                 <textcolor>SublistFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
-                <scroll>true</scroll>
             </control>
             <control type="label">
                 <posx>TextMargin</posx>
@@ -776,7 +775,6 @@
                 <font>FacadeListMainFont</font>
                 <textcolor>ListFocusColor</textcolor>
                 <label>$INFO[ListItem.Label2]</label>
-                <scroll>true</scroll>
             </control>
         </focusedlayout>
     </include>

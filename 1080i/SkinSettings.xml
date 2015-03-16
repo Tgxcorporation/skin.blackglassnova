@@ -237,7 +237,6 @@
                             <posx>TextMargin</posx>
                             <height>71</height>
                             <width>1041</width>
-                            <scroll>true</scroll>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListFocusColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
@@ -247,7 +246,6 @@
                             <visible>!StringCompare(ListItem.Label,)</visible>
                             <height>71</height>
                             <width>600</width>
-                            <scroll>true</scroll>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -259,7 +257,6 @@
                             <posy>10</posy>
                             <height>78</height>
                             <width>900</width>
-                            <scroll>true</scroll>
                             <font>LeftMenuTitleFont</font>
                             <textcolor>MainColor</textcolor>
                             <label>$INFO[ListItem.Label2]</label>
@@ -751,7 +748,6 @@
                             <posx>TextMargin</posx>
                             <height>71</height>
                             <width>1041</width>
-                            <scroll>true</scroll>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListFocusColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
@@ -760,7 +756,6 @@
                             <left>886</left>
                             <height>71</height>
                             <width>300</width>
-                            <scroll>true</scroll>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -1155,7 +1150,6 @@
                             <posx>TextMargin</posx>
                             <height>71</height>
                             <width>1041</width>
-                            <scroll>true</scroll>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListFocusColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
@@ -1164,7 +1158,6 @@
                             <posx>645r</posx>
                             <height>71</height>
                             <width>600</width>
-                            <scroll>true</scroll>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -1340,7 +1333,6 @@
                                 <posx>TextMargin</posx>
                                 <height>71</height>
                                 <width>730</width>
-                                <scroll>true</scroll>
                                 <font>FacadeListMainFont</font>
                                 <textcolor>ListNoFocusColor</textcolor>
                                 <label>$LOCALIZE[31110]</label>
@@ -1349,7 +1341,6 @@
                                 <posx>630r</posx>
                                 <height>71</height>
                                 <width>530</width>
-                                <scroll>true</scroll>
                                 <font>FacadeListMainFont</font>
                                 <textcolor>MainColor</textcolor>
                                 <align>right</align>
@@ -2380,7 +2371,6 @@
                             <posx>TextMargin</posx>
                             <height>71</height>
                             <width>1041</width>
-                            <scroll>true</scroll>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListFocusColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
@@ -2389,7 +2379,6 @@
                             <posx>645r</posx>
                             <height>71</height>
                             <width>600</width>
-                            <scroll>true</scroll>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -2575,7 +2564,6 @@
                             <posx>TextMargin</posx>
                             <height>71</height>
                             <width>1041</width>
-                            <scroll>true</scroll>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListFocusColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
@@ -2584,7 +2572,6 @@
                             <posx>645r</posx>
                             <height>71</height>
                             <width>600</width>
-                            <scroll>true</scroll>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>
@@ -2720,7 +2707,6 @@
                             <posx>TextMargin</posx>
                             <height>71</height>
                             <width>1041</width>
-                            <scroll>true</scroll>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListFocusColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
@@ -2729,7 +2715,6 @@
                             <posx>645r</posx>
                             <height>71</height>
                             <width>600</width>
-                            <scroll>true</scroll>
                             <align>right</align>
                             <font>FacadeListMainFont</font>
                             <textcolor>MainColor</textcolor>

@@ -85,7 +85,6 @@
                     <align>center</align>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
-                    <scroll>false</scroll>
                     <label>$VAR[Fanart_Details]</label>
                 </control>
                 <control type="label" id="45744">
@@ -97,7 +96,6 @@
                     <align>left</align>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
-                    <scroll>false</scroll>
                     <label>$VAR[Fanart_Details]</label>
                 </control>
                 <control type="group" id="45741">
@@ -116,7 +114,6 @@
                         <align>right</align>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <scroll>false</scroll>
                         <label fallback="416">$INFO[ListItem.Rating]</label>
                     </control>
                 </control>
@@ -373,7 +370,6 @@
                         <font>InfoTitleFont</font>
                         <textcolor>MainColor</textcolor>
                         <align>left</align>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Title]</label>
                     </control>
                     <control type="image">
@@ -395,8 +391,7 @@
                         <height>71</height>
                         <font>InfoRatingFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <scroll>false</scroll>
-                        <label fallback="416">$INFO[ListItem.Rating]</label>
+                         <label fallback="416">$INFO[ListItem.Rating]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -412,7 +407,6 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <scroll>false</scroll>
                         <label>$VAR[Details]</label>
                     </control>
                     <control type="label">
@@ -423,7 +417,6 @@
                         <align>right</align>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Genre]</label>
                     </control>
                     <control type="image">
@@ -686,7 +679,6 @@
                         <font>InfoTitleFont</font>
                         <textcolor>MainColor</textcolor>
                         <align>left</align>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image">
@@ -708,7 +700,6 @@
                         <height>71</height>
                         <font>InfoRatingFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <scroll>false</scroll>
                         <label fallback="416">$INFO[ListItem.Rating]</label>
                     </control>
                     <control type="image">
@@ -726,7 +717,6 @@
                         <align>right</align>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <scroll>false</scroll>
                         <label>$VAR[Details]</label>
                     </control>
                     <control type="textbox">
@@ -764,7 +754,6 @@
                         <font>InfoTitleFont</font>
                         <textcolor>MainColor</textcolor>
                         <align>left</align>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image">
@@ -809,7 +798,6 @@
                         <font>InfoTitleFont</font>
                         <textcolor>MainColor</textcolor>
                         <align>left</align>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="image">
@@ -827,7 +815,6 @@
                         <align>left</align>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <scroll>false</scroll>
                         <label>$VAR[Details]</label>
                     </control>
                     <!-- <control type="image">
@@ -1091,7 +1078,6 @@
                         <font>InfoTitleFont</font>
                         <textcolor>MainColor</textcolor>
                         <align>left</align>
-                        <scroll>false</scroll>
                         <label>$INFO[ListItem.Title]</label>
                     </control>
                     <control type="image">
@@ -1113,7 +1099,6 @@
                         <height>71</height>
                         <font>InfoRatingFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <scroll>false</scroll>
                         <label fallback="416">$INFO[ListItem.Rating]</label>
                     </control>
                     <control type="image">
@@ -1131,7 +1116,6 @@
                         <align>right</align>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <scroll>false</scroll>
                         <label>$VAR[Details]</label>
                     </control>
                     <control type="textbox">
