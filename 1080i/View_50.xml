@@ -284,6 +284,7 @@
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <visible>!StringCompare(ListItem.Label2,)</visible>
@@ -294,6 +295,7 @@
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <visible>!StringCompare(ListItem.Label2,)</visible>
@@ -305,6 +307,7 @@
                 <font>FacadeListSubFont</font>
                 <textcolor>SublistNoFocusColor</textcolor>
                 <label>$VAR[Details]</label>
+                <scroll>false</scroll>
             </control>
             <include>ListWatchedOverlayNoFocus</include>
         </itemlayout>
@@ -682,6 +685,7 @@
                 <font>InfoDetailsFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>280</posx>
@@ -691,6 +695,7 @@
                 <font>InfoDetailsFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Property(Property1)]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>420</posx>
@@ -700,6 +705,7 @@
                 <font>InfoDetailsFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Property(Property2)]</label>
+                <scroll>false</scroll>
             </control>
             <control type="image">
                 <posx>540</posx>
@@ -770,6 +776,7 @@
                 <font>InfoDetailsFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>420</posx>
@@ -779,6 +786,7 @@
                 <font>InfoDetailsFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Property(Property1)]</label>
+                <scroll>false</scroll>
             </control>
             <control type="image">
                 <posx>540</posx>
