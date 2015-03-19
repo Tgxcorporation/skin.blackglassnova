@@ -204,6 +204,7 @@
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <visible>!IsEmpty(ListItem.Title)</visible>
@@ -213,6 +214,7 @@
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>103</posx>
@@ -222,6 +224,7 @@
                 <font>FacadeListSubFont</font>
                 <textcolor>SublistNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Title]</label>
+                <scroll>false</scroll>
             </control>
         </itemlayout>
         <focusedlayout height="73" width="660">
@@ -879,6 +882,7 @@
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>103</posx>
@@ -888,6 +892,7 @@
                 <font>FacadeListSubFont</font>
                 <textcolor>SublistNoFocusColor</textcolor>
                 <label>$INFO[ListItem.ChannelName]  •  $INFO[ListItem.Date]</label>
+                <scroll>false</scroll>
             </control>
             <include>ListWatchedOverlayNoFocus</include>
         </itemlayout>
@@ -1528,6 +1533,7 @@
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.Label</info>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>580</posx>
@@ -1537,6 +1543,7 @@
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.Date</info>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>1130</posx>
@@ -1546,6 +1553,7 @@
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.ChannelName</info>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>1530</posx>
@@ -1555,6 +1563,7 @@
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.Comment</info>
+                <scroll>false</scroll>
             </control>
         </itemlayout>
         <focusedlayout height="73">
@@ -1974,6 +1983,7 @@
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.Label</info>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>580</posx>
@@ -1983,6 +1993,7 @@
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.Date</info>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>1130</posx>
@@ -1992,6 +2003,7 @@
                 <font>TvGuideItemFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <info>ListItem.ChannelName</info>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>1530</posx>
@@ -2002,6 +2014,7 @@
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$LOCALIZE[19043]</label>
                 <visible>ListItem.IsRecording</visible>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>1530</posx>
@@ -2012,6 +2025,7 @@
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$LOCALIZE[31510]</label>
                 <visible>ListItem.HasTimer+!ListItem.IsRecording</visible>
+                <scroll>false</scroll>
             </control>
             <control type="image">
                 <posx>1815</posx>
@@ -2608,6 +2622,7 @@
                         <textcolor>ListNoFocusColor</textcolor>
                         <scroll>false</scroll>
                         <info>ListItem.Label</info>
+                        <scroll>false</scroll>
                     </control>
                 </itemlayout>
                 <focusedlayout height="70" width="60">
@@ -2950,6 +2965,7 @@
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
+                        <scroll>false</scroll>
                     </control>
                     <control type="label">
                         <posx>103</posx>
@@ -2959,6 +2975,7 @@
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$INFO[ListItem.ChannelName]$INFO[ListItem.StartTime,  •  ]$INFO[ListItem.EndTime, - ]</label>
+                        <scroll>false</scroll>
                     </control>
                 </itemlayout>
                 <focusedlayout height="73" width="660">
@@ -3234,6 +3251,7 @@
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
+                        <scroll>false</scroll>
                     </control>
                     <control type="label">
                         <posx>103</posx>
@@ -3243,6 +3261,7 @@
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$INFO[ListItem.ChannelName]$INFO[ListItem.StartTime,  •  ]$INFO[ListItem.EndTime, - ]</label>
+                        <scroll>false</scroll>
                     </control>
                 </itemlayout>
                 <focusedlayout height="73" width="660">
@@ -3470,6 +3489,7 @@
                         <font>FacadeListMainFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label]</label>
+                        <scroll>false</scroll>
                     </control>
                     <control type="label">
                         <posx>15</posx>
@@ -3479,6 +3499,7 @@
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$INFO[ListItem.ChannelName]$INFO[ListItem.StartTime,  •  ]$INFO[ListItem.EndTime, - ]</label>
+                        <scroll>false</scroll>
                     </control>
                 </itemlayout>
                 <focusedlayout height="73" width="660">

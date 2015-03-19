@@ -207,6 +207,7 @@
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <visible>
@@ -229,6 +230,7 @@
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <visible>
@@ -252,6 +254,7 @@
                 <font>FacadeListSubFont</font>
                 <textcolor>SublistNoFocusColor</textcolor>
                 <label>$VAR[Details_BG]</label>
+                <scroll>false</scroll>
             </control>
             <include>ListWatchedOverlayNoFocus</include>
         </itemlayout>
@@ -875,6 +878,7 @@
                 <font>InfoDetailsFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>30</posx>
@@ -884,6 +888,7 @@
                 <font>InfoDetailsFont</font>
                 <textcolor>SublistNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Property(Property1)]</label>
+                <scroll>false</scroll>
             </control>
             <control type="label">
                 <posx>230</posx>
@@ -893,6 +898,7 @@
                 <font>InfoDetailsFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
                 <label>$INFO[ListItem.Property(Property2)]</label>
+                <scroll>false</scroll>
             </control>
             <control type="image">
                 <posx>410</posx>

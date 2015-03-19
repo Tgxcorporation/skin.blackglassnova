@@ -317,6 +317,7 @@
                             <textcolor>ListNoFocusColor</textcolor>
                             <font>FacadePanelFont</font>
                             <label>$INFO[ListItem.Label]</label>
+                            <scroll>false</scroll>
                         </control>
                         <control type="image">
                             <posx>350</posx>
@@ -372,6 +373,7 @@
                             <textcolor>ListNoFocusColor</textcolor>
                             <font>FacadePanelFont</font>
                             <label>$INFO[ListItem.Label]</label>
+                            <scroll>false</scroll>
                         </control>
                         <control type="image">
                             <posx>40</posx>
