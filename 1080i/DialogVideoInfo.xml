@@ -834,8 +834,6 @@
                             <pagecontrol>61</pagecontrol>
                             <onleft>9014</onleft>
                             <onright>61</onright>
-                            <onleft>8</onleft>
-                            <onright>8</onright>
                             <onup>8</onup>
                             <ondown>50</ondown>
                             <viewtype label="">list</viewtype>
