@@ -272,6 +272,33 @@
                             <label2>$LOCALIZE[128]</label2>
                             <onclick>noop</onclick>
                         </item>
+                        <item id="29">
+                            <visible>Skin.HasSetting(DefaultView50)|[!Skin.HasSetting(DefaultView52)+!Skin.HasSetting(DefaultView54)]</visible>
+                            <label>$LOCALIZE[13377]</label>
+                            <label2>$LOCALIZE[535]</label2>
+                            <onclick>Skin.Reset(DefaultView50)</onclick>
+                            <onclick>Skin.Reset(DefaultView52)</onclick>
+                            <onclick>Skin.Reset(DefaultView54)</onclick>
+                            <onclick>Skin.ToggleSetting(DefaultView52)</onclick>
+                        </item>
+                        <item id="29">
+                            <visible>Skin.HasSetting(DefaultView52)</visible>
+                            <label>$LOCALIZE[13377]</label>
+                            <label2>$LOCALIZE[31091]</label2>
+                            <onclick>Skin.Reset(DefaultView50)</onclick>
+                            <onclick>Skin.Reset(DefaultView52)</onclick>
+                            <onclick>Skin.Reset(DefaultView54)</onclick>
+                            <onclick>Skin.ToggleSetting(DefaultView54)</onclick>
+                        </item>
+                        <item id="29">
+                            <visible>Skin.HasSetting(DefaultView54)</visible>
+                            <label>$LOCALIZE[13377]</label>
+                            <label2>$LOCALIZE[31092]</label2>
+                            <onclick>Skin.Reset(DefaultView50)</onclick>
+                            <onclick>Skin.Reset(DefaultView52)</onclick>
+                            <onclick>Skin.Reset(DefaultView54)</onclick>
+                            <onclick>Skin.ToggleSetting(DefaultView50)</onclick>
+                        </item>
                         <item id="0">
                             <visible>Skin.HasSetting(Hide_Watched_Marks)</visible>
                             <label>$LOCALIZE[31981]</label>
