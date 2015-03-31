@@ -994,7 +994,7 @@
                         <label>$LOCALIZE[208]</label>
                         <altlabel>$LOCALIZE[502]</altlabel>
                         <usealttexture>Container.Content(tvshows) | Container.Content(seasons)</usealttexture>
-                        <onright>9009</onright>
+                        <onleft>9009</onleft>
                     </control>
                     <control type="button" id="299">
                         <visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience)</visible>
