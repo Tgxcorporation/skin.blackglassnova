@@ -992,9 +992,9 @@
                         <description>play</description>
                         <include>RightDialogButton</include>
                         <label>$LOCALIZE[208]</label>
-                        <altlabel>$LOCALIZE[31021]</altlabel>
-                        <usealttexture>Container.Content(TVShows)</usealttexture>
-                        <onleft>9009</onleft>
+                        <altlabel>$LOCALIZE[502]</altlabel>
+                        <usealttexture>Container.Content(tvshows) | Container.Content(seasons)</usealttexture>
+                        <onright>9009</onright>
                     </control>
                     <control type="button" id="299">
                         <visible>Container.Content(Movies) + system.hasaddon(script.cinema.experience)</visible>
