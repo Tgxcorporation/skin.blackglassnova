@@ -180,7 +180,7 @@
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
-                <posx>42</posx>
+                <posx>38</posx>
                 <posy>241</posy>
                 <width>305</width>
                 <height>171</height>
@@ -207,7 +207,7 @@
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="image">
-                <posx>42</posx>
+                <posx>30</posx>
                 <posy>250</posy>
                 <width>336</width>
                 <height>189</height>
