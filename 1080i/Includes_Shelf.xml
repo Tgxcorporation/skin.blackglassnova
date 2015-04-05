@@ -98,6 +98,7 @@
     </include>
     <include name="Recent.Movies.List">
         <control type="group" id="3110">
+            <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(3110).HasFocus|control.hasfocus(702)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(3110).HasFocus|control.hasfocus(702)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -147,6 +148,7 @@
     </include>
     <include name="Recommended.Movies.List">
         <control type="group" id="3120">
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(3120).HasFocus|control.hasfocus(703)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(3120).HasFocus|control.hasfocus(703)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -196,6 +198,7 @@
     </include>
     <include name="Random.Movies.List">
         <control type="group" id="3130">
+            <visible>SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(3130).HasFocus|control.hasfocus(704)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(3130).HasFocus|control.hasfocus(704)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -245,6 +248,7 @@
     </include>
     <include name="Recent.Concerts.List">
         <control type="group" id="3140">
+            <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(3140).HasFocus|control.hasfocus(702)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(3140).HasFocus|control.hasfocus(702)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -294,6 +298,7 @@
     </include>
     <include name="Recommended.Concerts.List">
         <control type="group" id="3150">
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(3150).HasFocus|control.hasfocus(703)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(3150).HasFocus|control.hasfocus(703)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -342,6 +347,7 @@
     </include>
     <include name="Random.Concerts.List">
         <control type="group" id="3160">
+            <visible>SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(3160).HasFocus|control.hasfocus(704)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(3160).HasFocus|control.hasfocus(704)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -390,6 +396,7 @@
     </include>
     <include name="Recent.Episodes.List">
         <control type="group" id="4110">
+            <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(4110).HasFocus|control.hasfocus(702)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(4110).HasFocus|control.hasfocus(702)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -439,6 +446,7 @@
     </include>
     <include name="Recommended.Episodes.List">
         <control type="group" id="4120">
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(4120).HasFocus|control.hasfocus(703)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(4120).HasFocus|control.hasfocus(703)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -488,6 +496,7 @@
     </include>
     <include name="Random.Episodes.List">
         <control type="group" id="4130">
+            <visible>SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(4130).HasFocus|control.hasfocus(704)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(4130).HasFocus|control.hasfocus(704)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -537,6 +546,7 @@
     </include>
     <include name="Recent.Albums.List">
         <control type="group" id="5110">
+            <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(5110).HasFocus|control.hasfocus(702)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(5110).HasFocus|control.hasfocus(702)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -586,6 +596,7 @@
     </include>
     <include name="Recommended.Albums.List">
         <control type="group" id="5120">
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(5120).HasFocus|control.hasfocus(703)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(5120).HasFocus|control.hasfocus(703)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -635,6 +646,7 @@
     </include>
     <include name="Random.Albums.List">
         <control type="group" id="5130">
+            <visible>SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(5130).HasFocus|control.hasfocus(704)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(5130).HasFocus|control.hasfocus(704)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -684,6 +696,7 @@
     </include>
     <include name="Recent.Clips.List">
         <control type="group" id="5140">
+            <visible>SubString(Window(Home).Property(SkinWidgets_RecentItems),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(5140).HasFocus|control.hasfocus(702)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(5140).HasFocus|control.hasfocus(702)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -733,6 +746,7 @@
     </include>
     <include name="Recommended.Clips.List">
         <control type="group" id="5150">
+            <visible>SubString(Window(Home).Property(SkinWidgets_Recommended),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(5150).HasFocus|control.hasfocus(703)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(5150).HasFocus|control.hasfocus(703)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
@@ -782,6 +796,7 @@
     </include>
     <include name="Random.Clips.List">
         <control type="group" id="5160">
+            <visible>SubString(Window(Home).Property(SkinWidgets_RandomItems),t,left)</visible>
             <animation effect="slide" time="0" start="0,0" end="0,1080" reversible="true" condition="[ControlGroup(5160).HasFocus|control.hasfocus(704)]">Conditional</animation>
             <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[ControlGroup(5160).HasFocus|control.hasfocus(704)]">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="false" condition="[Control.HasFocus(300)|Control.HasFocus(9001)]">Conditional</animation>
