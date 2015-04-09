@@ -152,22 +152,26 @@
             <include>Icon_Fade</include>
             <control type="group">
                 <!-- CLEAR ART -->
-                <visible>Skin.HasSetting(EnableClearArt)</visible>
                 <control type="image">
+                    <visible>Skin.HasSetting(EnableClearArt)</visible>
+                    <fadetime>250</fadetime>
                     <posx>345r</posx>
                     <posy>150</posy>
                     <width>300</width>
                     <height>235</height>
                     <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <texture background="true">$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</texture>
+                    <texture background="true">$VAR[DefaultClearArt]</texture>
                 </control>
+                <!-- CLEAR LOGO -->
                 <control type="image">
-                    <posx>345r</posx>
+                    <visible>Skin.HasSetting(EnableClearLogo)</visible>
+                    <fadetime>250</fadetime>
+                    <posx>45</posx>
                     <posy>150</posy>
                     <width>300</width>
                     <height>235</height>
-                    <texture background="true">$INFO[ListItem.Art(clearart)]</texture>
-                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
+                    <texture background="true">$VAR[DefaultClearLogo]</texture>
                 </control>
             </control>
             <control type="group">
