@@ -118,9 +118,9 @@
             </control>
         </focusedlayout>
         <content>
+            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
             <include>skinshortcuts-submenu</include>
             <include>default-submenu</include>
-            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
         </content>
     </include>
     <include name="Horizontal_Fixed_HomeSubMenu">
@@ -147,14 +147,14 @@
         <onleft>300</onleft>
         <onright>300</onright>
         <ondown>9001</ondown>
-        <onup condition="[[IntegerGreaterThan(Container(211).NumItems,0)]+Container(300).HasFocus(2)]|
-        [[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|
+        <onup condition="[[IntegerGreaterThan(Container(211).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Addon)]|
+        [[IntegerGreaterThan(Container(111).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Favourite)]|
         [!Skin.HasSetting(plexbmc)+[
-        [[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)|IntegerGreaterThan(Container(313).NumItems,0)]+Container(300).HasFocus(4)]|
-        [[IntegerGreaterThan(Container(314).NumItems,0)|IntegerGreaterThan(Container(315).NumItems,0)|IntegerGreaterThan(Container(316).NumItems,0)]+Container(300).HasFocus(14)]|
-        [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+Container(300).HasFocus(5)]|
-        [[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(512).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+Container(300).HasFocus(6)]|
-        [[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)|IntegerGreaterThan(Container(516).NumItems,0)]+Container(300).HasFocus(13)]]
+        [[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)|IntegerGreaterThan(Container(313).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Movie)]|
+        [[IntegerGreaterThan(Container(314).NumItems,0)|IntegerGreaterThan(Container(315).NumItems,0)|IntegerGreaterThan(Container(316).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Concert)]|
+        [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Episode)]|
+        [[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(512).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Music)]|
+        [[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)|IntegerGreaterThan(Container(516).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Clip)]]
         ]|
         [Skin.HasSetting(plexbmc)+[
         [[IntegerGreaterThan(Container(900).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),photo)]|
@@ -174,7 +174,7 @@
                 <posy>9</posy>
                 <width>359</width>
                 <height>225</height>
-                <texture background="true">$INFO[ListItem.ActualIcon]</texture>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
                 <aspectratio>scale</aspectratio>
                 <include>ThumbBorder</include>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
@@ -184,7 +184,7 @@
                 <posy>241</posy>
                 <width>305</width>
                 <height>171</height>
-                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.ActualIcon]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Icon]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
@@ -203,7 +203,7 @@
                 <width>390</width>
                 <height>243</height>
                 <aspectratio>scale</aspectratio>
-                <texture background="true">$INFO[ListItem.ActualIcon]</texture>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="image">
@@ -211,7 +211,7 @@
                 <posy>250</posy>
                 <width>336</width>
                 <height>189</height>
-                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.ActualIcon]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Icon]</texture>
             </control>
             <control type="image">
                 <posx>3</posx>
@@ -222,7 +222,8 @@
             </control>
         </focusedlayout>
         <content>
-            <include>Home.Main.Menu.Items</include>
+            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Items</include>
+            <include>skinshortcuts-mainmenu</include>
         </content>
     </include>
     <include name="Horizontal_Fixed_HomeMenu">

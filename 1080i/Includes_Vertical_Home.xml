@@ -172,7 +172,8 @@
             </control>
         </focusedlayout>
         <content>
-            <include>Home.Main.Menu.Items</include>
+            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Items</include>
+            <include>skinshortcuts-mainmenu</include>
         </content>
     </include>
     <include name="Vertical_Fixed_HomeMenu">
@@ -303,7 +304,7 @@
                     <texture flipx="true">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,12)+Skin.HasSetting(Fixed_HomeMenu)</visible>
+                    <visible>IntegerGreaterThan(Container(300).NumItems,-1)+!IntegerGreaterThan(Container(300).NumItems,12)+Skin.HasSetting(Fixed_HomeMenu)</visible>
                     <posx>0</posx>
                     <posy>78</posy>
                     <width>577</width>
@@ -311,7 +312,7 @@
                     <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,10)+Skin.HasSetting(Fixed_HomeMenu)</visible>
+                    <visible>IntegerGreaterThan(Container(300).NumItems,-1)+!IntegerGreaterThan(Container(300).NumItems,10)+Skin.HasSetting(Fixed_HomeMenu)</visible>
                     <posx>0</posx>
                     <posy>149</posy>
                     <width>577</width>
@@ -319,7 +320,7 @@
                     <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,8)+Skin.HasSetting(Fixed_HomeMenu)</visible>
+                    <visible>IntegerGreaterThan(Container(300).NumItems,-1)+!IntegerGreaterThan(Container(300).NumItems,8)+Skin.HasSetting(Fixed_HomeMenu)</visible>
                     <posx>0</posx>
                     <posy>220</posy>
                     <width>577</width>
@@ -327,7 +328,7 @@
                     <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,6)+Skin.HasSetting(Fixed_HomeMenu)</visible>
+                    <visible>IntegerGreaterThan(Container(300).NumItems,-1)+!IntegerGreaterThan(Container(300).NumItems,6)+Skin.HasSetting(Fixed_HomeMenu)</visible>
                     <posx>0</posx>
                     <posy>291</posy>
                     <width>577</width>
@@ -335,7 +336,7 @@
                     <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,4)+Skin.HasSetting(Fixed_HomeMenu)</visible>
+                    <visible>IntegerGreaterThan(Container(300).NumItems,-1)+!IntegerGreaterThan(Container(300).NumItems,4)+Skin.HasSetting(Fixed_HomeMenu)</visible>
                     <posx>0</posx>
                     <posy>362</posy>
                     <width>577</width>
@@ -343,7 +344,7 @@
                     <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,2)+Skin.HasSetting(Fixed_HomeMenu)</visible>
+                    <visible>IntegerGreaterThan(Container(300).NumItems,-1)+!IntegerGreaterThan(Container(300).NumItems,2)+Skin.HasSetting(Fixed_HomeMenu)</visible>
                     <posx>0</posx>
                     <posy>433</posy>
                     <width>577</width>
@@ -351,7 +352,7 @@
                     <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,1)+Skin.HasSetting(Fixed_HomeMenu)</visible>
+                    <visible>IntegerGreaterThan(Container(300).NumItems,-1)+!IntegerGreaterThan(Container(300).NumItems,1)+Skin.HasSetting(Fixed_HomeMenu)</visible>
                     <posx>0</posx>
                     <posy>575</posy>
                     <width>577</width>
@@ -359,7 +360,7 @@
                     <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,3)+Skin.HasSetting(Fixed_HomeMenu)</visible>
+                    <visible>IntegerGreaterThan(Container(300).NumItems,-1)+!IntegerGreaterThan(Container(300).NumItems,3)+Skin.HasSetting(Fixed_HomeMenu)</visible>
                     <posx>0</posx>
                     <posy>646</posy>
                     <width>577</width>
@@ -367,7 +368,7 @@
                     <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,5)+Skin.HasSetting(Fixed_HomeMenu)</visible>
+                    <visible>IntegerGreaterThan(Container(300).NumItems,-1)+!IntegerGreaterThan(Container(300).NumItems,5)+Skin.HasSetting(Fixed_HomeMenu)</visible>
                     <posx>0</posx>
                     <posy>717</posy>
                     <width>577</width>
@@ -375,7 +376,7 @@
                     <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,7)+Skin.HasSetting(Fixed_HomeMenu)</visible>
+                    <visible>IntegerGreaterThan(Container(300).NumItems,-1)+!IntegerGreaterThan(Container(300).NumItems,7)+Skin.HasSetting(Fixed_HomeMenu)</visible>
                     <posx>0</posx>
                     <posy>788</posy>
                     <width>577</width>
@@ -383,7 +384,7 @@
                     <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
                 </control>
                 <control type="image">
-                    <visible>IntegerGreaterThan(Container(300).NumItems,0)+!IntegerGreaterThan(Container(300).NumItems,9)+Skin.HasSetting(Fixed_HomeMenu)</visible>
+                    <visible>IntegerGreaterThan(Container(300).NumItems,-1)+!IntegerGreaterThan(Container(300).NumItems,9)+Skin.HasSetting(Fixed_HomeMenu)</visible>
                     <posx>0</posx>
                     <posy>859</posy>
                     <width>577</width>
