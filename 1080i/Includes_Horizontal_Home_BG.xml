@@ -117,9 +117,9 @@
             </control>
         </focusedlayout>
         <content>
+            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
             <include>skinshortcuts-submenu</include>
             <include>default-submenu</include>
-            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
         </content>
     </include>
     <include name="Horizontal_Fixed_HomeSubMenu_BG">
@@ -145,14 +145,14 @@
         <onleft>300</onleft>
         <onright>300</onright>
         <ondown>9001</ondown>
-        <onup condition="[[IntegerGreaterThan(Container(211).NumItems,0)]+Container(300).HasFocus(2)]|
-        [[IntegerGreaterThan(Container(111).NumItems,0)]+Container(300).HasFocus(7)]|
+        <onup condition="[[IntegerGreaterThan(Container(211).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Addon)]|
+        [[IntegerGreaterThan(Container(111).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Favourite)]|
         [!Skin.HasSetting(plexbmc)+[
-        [[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)|IntegerGreaterThan(Container(313).NumItems,0)]+Container(300).HasFocus(4)]|
-        [[IntegerGreaterThan(Container(314).NumItems,0)|IntegerGreaterThan(Container(315).NumItems,0)|IntegerGreaterThan(Container(316).NumItems,0)]+Container(300).HasFocus(14)]|
-        [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+Container(300).HasFocus(5)]|
-        [[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(512).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+Container(300).HasFocus(6)]|
-        [[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)|IntegerGreaterThan(Container(516).NumItems,0)]+Container(300).HasFocus(13)]]
+        [[IntegerGreaterThan(Container(311).NumItems,0)|IntegerGreaterThan(Container(312).NumItems,0)|IntegerGreaterThan(Container(313).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Movie)]|
+        [[IntegerGreaterThan(Container(314).NumItems,0)|IntegerGreaterThan(Container(315).NumItems,0)|IntegerGreaterThan(Container(316).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Concert)]|
+        [[IntegerGreaterThan(Container(411).NumItems,0)|IntegerGreaterThan(Container(412).NumItems,0)|IntegerGreaterThan(Container(413).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Episode)]|
+        [[IntegerGreaterThan(Container(511).NumItems,0)|IntegerGreaterThan(Container(512).NumItems,0)|IntegerGreaterThan(Container(513).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Music)]|
+        [[IntegerGreaterThan(Container(514).NumItems,0)|IntegerGreaterThan(Container(515).NumItems,0)|IntegerGreaterThan(Container(516).NumItems,0)]+StringCompare(Container(300).ListItem.Property(widget),Clip)]]
         ]|
         [Skin.HasSetting(plexbmc)+[
         [[IntegerGreaterThan(Container(900).NumItems,0)]+StringCompare(Container(300).ListItem.Property(type),photo)]|
@@ -173,7 +173,7 @@
                     <posy>0</posy>
                     <width>1683</width>
                     <height>940</height>
-                    <texture background="true" diffuse="common/bg_panel_home_diffuse.png">$INFO[ListItem.ActualIcon]</texture>
+                    <texture background="true" diffuse="common/bg_panel_home_diffuse.png">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
                     <posx>-27</posx>
@@ -213,7 +213,7 @@
                     <posy>0</posy>
                     <width>1683</width>
                     <height>940</height>
-                    <texture background="true" diffuse="common/bg_panel_home_diffuse.png">$INFO[ListItem.ActualIcon]</texture>
+                    <texture background="true" diffuse="common/bg_panel_home_diffuse.png">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
                     <posx>-27</posx>
@@ -270,7 +270,8 @@
             </control>
         </focusedlayout>
         <content>
-            <include>Home.Main.Menu.Items</include>
+            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Items</include>
+            <include>skinshortcuts-mainmenu</include>
         </content>
     </include>
     <include name="Horizontal_Fixed_HomeMenu_BG">
