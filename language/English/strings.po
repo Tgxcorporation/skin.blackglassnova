@@ -88,7 +88,13 @@ msgctxt "#31017"
 msgid "Writer Info"
 msgstr ""
 
-#empty strings from id 31018 to 31019
+msgctxt "#31018"
+msgid "Startup"
+msgstr ""
+
+msgctxt "#31019"
+msgid "Startup Screen Type"
+msgstr ""
 
 msgctxt "#31020"
 msgid "Recently Added"
@@ -273,7 +279,19 @@ msgctxt "#31066"
 msgid "Move right"
 msgstr ""
 
-#empty strings from id 31061 to 31089
+msgctxt "#31067"
+msgid "Custom Image"
+msgstr ""
+
+msgctxt "#31068"
+msgid "Custom Video"
+msgstr ""
+
+msgctxt "#31069"
+msgid "Startup Playlist"
+msgstr ""
+
+#empty strings from id 31069 to 31089
 #Viewtype
 
 msgctxt "#31090"
