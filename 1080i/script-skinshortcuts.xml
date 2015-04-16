@@ -97,15 +97,13 @@
                     <description>Move shortcut up</description>
                     <include>RightDialogButton</include>
                     <onclick>noop</onclick>
-                    <include condition="Skin.HasSetting(VerticalHome)">MoveUpLabel</include>
-                    <include condition="!Skin.HasSetting(VerticalHome)">MoveLeftLabel</include>
+                    <label>$VAR[SkinShortcutsMoveUpLabel]</label>
                 </control>
                 <control type="button" id="304">
                     <description>Move shortcut down</description>
                     <include>RightDialogButton</include>
                     <onclick>noop</onclick>
-                    <include condition="Skin.HasSetting(VerticalHome)">MoveDownLabel</include>
-                    <include condition="!Skin.HasSetting(VerticalHome)">MoveRightLabel</include>
+                    <label>$VAR[SkinShortcutsMoveDownLabel]</label>
                 </control>
                 <control type="button" id="305">
                     <description>Change shortcut label</description>
