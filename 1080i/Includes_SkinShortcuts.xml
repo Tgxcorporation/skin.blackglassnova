@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <include name="MoveUpLabel">
-        <label>$ADDON[script.skinshortcuts 32002]</label>
-    </include>
-    <include name="MoveDownLabel">
-        <label>$ADDON[script.skinshortcuts 32003]</label>
-    </include>
-    <include name="MoveLeftLabel">
-        <label>$LOCALIZE[31065]</label>
-    </include>
-    <include name="MoveRightLabel">
-        <label>$LOCALIZE[31066]</label>
-    </include>
     <include name="SkinShortcuts_Vertical_Item_Separator">
         <posx>128</posx>
         <posy>424</posy>

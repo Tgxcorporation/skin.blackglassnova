@@ -1265,11 +1265,6 @@
                     <scrolltime>280</scrolltime>
                     <include>SkinSettings_DefaultLayout</include>
                     <content>
-                        <!--<item id="1">-->
-                            <!--<label>$LOCALIZE[31989]</label>-->
-                            <!--<label2 fallback="31988">$VAR[QuitLabel2]</label2>-->
-                            <!--<onclick>ActivateWindow(1114)</onclick>-->
-                        <!--</item>-->
                         <item id="2">
                             <visible>IsEmpty(Skin.String(shutdown))</visible>
                             <visible>!Skin.HasSetting(QuitMenu_Hide_Quit)</visible>
