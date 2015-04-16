@@ -9,7 +9,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.0.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.0.path)]</onclick>
             <thumb background="true">$VAR[Plex.0.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.0.Background)]</icon>
+            <icon background="true">$VAR[Plex.0.Background.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.0.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.0.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.0.partialpath)]</property>
@@ -30,7 +30,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.1.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.1.path)]</onclick>
             <thumb background="true">$VAR[Plex.1.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.1.Background)]</icon>
+            <icon background="true">$VAR[Plex.1.Background.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.1.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.1.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.1.partialpath)]</property>
@@ -50,7 +50,7 @@
             <label>$VAR[Plex.2.Label.Management]</label>
             <label2>$INFO[Window(Home).Property(plexbmc.2.subtitle)]</label2>
             <thumb background="true">$VAR[Plex.2.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.2.Background)]</icon>
+            <icon background="true">$VAR[Plex.2.Background.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.2.uuid)]</property>
             <onclick>$INFO[Window(Home).Property(plexbmc.2.path)]</onclick>
             <property name="type">$INFO[Window(Home).Property(plexbmc.2.type)]</property>
@@ -72,7 +72,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.3.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.3.path)]</onclick>
             <thumb background="true">$VAR[Plex.3.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.3.Background)]</icon>
+            <icon background="true">$VAR[Plex.3.Background.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.3.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.3.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.3.partialpath)]</property>
@@ -93,7 +93,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.4.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.4.path)]</onclick>
             <thumb background="true">$VAR[Plex.4.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.4.Background)]</icon>
+            <icon background="true">$VAR[Plex.4.Background.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.4.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.4.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.4.partialpath)]</property>
@@ -114,7 +114,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.5.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.5.path)]</onclick>
             <thumb background="true">$VAR[Plex.5.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.5.Background)]</icon>
+            <icon background="true">$VAR[Plex.5.Background.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.5.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.5.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.5.partialpath)]</property>
@@ -135,7 +135,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.6.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.6.path)]</onclick>
             <thumb background="true">$VAR[Plex.6.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.6.Background)]</icon>
+            <icon background="true">$VAR[Plex.6.Background.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.6.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.6.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.6.partialpath)]</property>
@@ -156,7 +156,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.7.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.7.path)]</onclick>
             <thumb background="true">$VAR[Plex.7.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.7.Background)]</icon>
+            <icon background="true">$VAR[Plex.7.Background.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.7.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.7.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.7.partialpath)]</property>
@@ -177,7 +177,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.8.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.8.path)]</onclick>
             <thumb background="true">$VAR[Plex.8.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.8.Background)]</icon>
+            <icon background="true">$VAR[Plex.8.Background.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.8.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.8.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.8.partialpath)]</property>
@@ -198,7 +198,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.9.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.9.path)]</onclick>
             <thumb background="true">$VAR[Plex.9.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.9.Background)]</icon>
+            <icon background="true">$VAR[Plex.9.Background.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.9.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.9.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.9.partialpath)]</property>
@@ -219,7 +219,7 @@
             <label2>$INFO[Window(Home).Property(plexbmc.10.subtitle)]</label2>
             <onclick>$INFO[Window(Home).Property(plexbmc.10.path)]</onclick>
             <thumb background="true">$VAR[Plex.10.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.10.Background)]</icon>
+            <icon background="true">$VAR[Plex.10.Background.Management]</icon>
             <property name="uuid">$INFO[Window(Home).Property(plexbmc.10.uuid)]</property>
             <property name="type">$INFO[Window(Home).Property(plexbmc.10.type)]</property>
             <property name="partial">$INFO[Window(Home).Property(plexbmc.10.partialpath)]</property>
@@ -426,7 +426,7 @@
             <label>$VAR[Plex.Channels.Label.Management]</label>
             <property name="uuid">Channels</property>
             <thumb background="true">$VAR[Plex.Channels.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.Channels.Background)]</icon>
+            <icon background="true">$VAR[Plex.Channels.Background.Management]</icon>
             <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
         </item>
         <item id="51">
@@ -434,7 +434,7 @@
             <label>$VAR[Plex.Queue.Label.Management]</label>
             <property name="uuid">Queue</property>
             <thumb background="true">$VAR[Plex.Queue.Icon.Management]</thumb>
-            <icon background="true">$INFO[Skin.String(Plexbmc.Queue.Background)]</icon>
+            <icon background="true">$VAR[Plex.Queue.Background.Management]</icon>
             <onclick>$INFO[Window(Home).Property(plexbmc.queue)]</onclick>
             <visible>!IsEmpty(Window(Home).Property(plexbmc.myplex))</visible>
         </item>
@@ -448,7 +448,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.0.subtitle)]</label2>
                 <onclick>noop</onclick>
                 <thumb background="true">$VAR[Plex.0.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.0.Background)]</icon>
+                <icon background="true">$VAR[Plex.0.Background.Management]</icon>
                 <property name="uuid">$INFO[Window(Home).Property(plexbmc.0.uuid)]</property>
                 <property name="type">$INFO[Window(Home).Property(plexbmc.0.type)]</property>
                 <property name="hide">$INFO[Skin.HasSetting(hide.plexbmc.0.title)]</property>
@@ -460,7 +460,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.1.subtitle)]</label2>
                 <onclick>noop</onclick>
                 <thumb background="true">$VAR[Plex.1.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.1.Background)]</icon>
+                <icon background="true">$VAR[Plex.1.Background.Management]</icon>
                 <property name="uuid">$INFO[Window(Home).Property(plexbmc.1.uuid)]</property>
                 <property name="type">$INFO[Window(Home).Property(plexbmc.1.type)]</property>
                 <property name="hide">$INFO[Skin.HasSetting(hide.plexbmc.1.title)]</property>
@@ -472,7 +472,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.2.subtitle)]</label2>
                 <onclick>noop</onclick>
                 <thumb background="true">$VAR[Plex.2.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.2.Background)]</icon>
+                <icon background="true">$VAR[Plex.2.Background.Management]</icon>
                 <property name="uuid">$INFO[Window(Home).Property(plexbmc.2.uuid)]</property>
                 <property name="type">$INFO[Window(Home).Property(plexbmc.2.type)]</property>
                 <property name="hide">$INFO[Skin.HasSetting(hide.plexbmc.2.title)]</property>
@@ -484,7 +484,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.3.subtitle)]</label2>
                 <onclick>noop</onclick>
                 <thumb background="true">$VAR[Plex.3.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.3.Background)]</icon>
+                <icon background="true">$VAR[Plex.3.Background.Management]</icon>
                 <property name="uuid">$INFO[Window(Home).Property(plexbmc.3.uuid)]</property>
                 <property name="type">$INFO[Window(Home).Property(plexbmc.3.type)]</property>
                 <property name="hide">$INFO[Skin.HasSetting(hide.plexbmc.3.title)]</property>
@@ -496,7 +496,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.4.subtitle)]</label2>
                 <onclick>noop</onclick>
                 <thumb background="true">$VAR[Plex.4.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.4.Background)]</icon>
+                <icon background="true">$VAR[Plex.4.Background.Management]</icon>
                 <property name="uuid">$INFO[Window(Home).Property(plexbmc.4.uuid)]</property>
                 <property name="type">$INFO[Window(Home).Property(plexbmc.4.type)]</property>
                 <property name="hide">$INFO[Skin.HasSetting(hide.plexbmc.4.title)]</property>
@@ -508,7 +508,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.5.subtitle)]</label2>
                 <onclick>noop</onclick>
                 <thumb background="true">$VAR[Plex.5.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.5.Background)]</icon>
+                <icon background="true">$VAR[Plex.5.Background.Management]</icon>
                 <property name="uuid">$INFO[Window(Home).Property(plexbmc.5.uuid)]</property>
                 <property name="type">$INFO[Window(Home).Property(plexbmc.5.type)]</property>
                 <property name="hide">$INFO[Skin.HasSetting(hide.plexbmc.5.title)]</property>
@@ -520,7 +520,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.6.subtitle)]</label2>
                 <onclick>noop</onclick>
                 <thumb background="true">$VAR[Plex.6.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.6.Background)]</icon>
+                <icon background="true">$VAR[Plex.6.Background.Management]</icon>
                 <property name="uuid">$INFO[Window(Home).Property(plexbmc.6.uuid)]</property>
                 <property name="type">$INFO[Window(Home).Property(plexbmc.6.type)]</property>
                 <property name="hide">$INFO[Skin.HasSetting(hide.plexbmc.6.title)]</property>
@@ -532,7 +532,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.7.subtitle)]</label2>
                 <onclick>noop</onclick>
                 <thumb background="true">$VAR[Plex.7.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.7.Background)]</icon>
+                <icon background="true">$VAR[Plex.7.Background.Management]</icon>
                 <property name="uuid">$INFO[Window(Home).Property(plexbmc.7.uuid)]</property>
                 <property name="type">$INFO[Window(Home).Property(plexbmc.7.type)]</property>
                 <property name="hide">$INFO[Skin.HasSetting(hide.plexbmc.7.title)]</property>
@@ -544,7 +544,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.8.subtitle)]</label2>
                 <onclick>noop</onclick>
                 <thumb background="true">$VAR[Plex.8.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.8.Background)]</icon>
+                <icon background="true">$VAR[Plex.8.Background.Management]</icon>
                 <property name="uuid">$INFO[Window(Home).Property(plexbmc.8.uuid)]</property>
                 <property name="type">$INFO[Window(Home).Property(plexbmc.8.type)]</property>
                 <property name="hide">$INFO[Skin.HasSetting(hide.plexbmc.8.title)]</property>
@@ -556,7 +556,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.9.subtitle)]</label2>
                 <onclick>noop</onclick>
                 <thumb background="true">$VAR[Plex.9.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.9.Background)]</icon>
+                <icon background="true">$VAR[Plex.9.Background.Management]</icon>
                 <property name="uuid">$INFO[Window(Home).Property(plexbmc.9.uuid)]</property>
                 <property name="type">$INFO[Window(Home).Property(plexbmc.9.type)]</property>
                 <property name="hide">$INFO[Skin.HasSetting(hide.plexbmc.9.title)]</property>
@@ -568,7 +568,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.10.subtitle)]</label2>
                 <onclick>noop</onclick>
                 <thumb background="true">$VAR[Plex.10.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.10.Background)]</icon>
+                <icon background="true">$VAR[Plex.10.Background.Management]</icon>
                 <property name="uuid">$INFO[Window(Home).Property(plexbmc.10.uuid)]</property>
                 <property name="type">$INFO[Window(Home).Property(plexbmc.10.type)]</property>
                 <property name="hide">$INFO[Skin.HasSetting(hide.plexbmc.10.title)]</property>
@@ -576,7 +576,7 @@
             <item id="50">
                 <label>$VAR[Plex.Channels.Label.Management]</label>
                 <thumb background="true">$VAR[Plex.Channels.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.Channels.Background)]</icon>
+                <icon background="true">$VAR[Plex.Channels.Background.Management]</icon>
                 <property name="uuid">Channels</property>
                 <onclick>noop</onclick>
                 <property name="hide">$INFO[Skin.HasSetting(Channels.Hide)]</property>
@@ -585,7 +585,7 @@
                 <visible>!IsEmpty(Window(Home).Property(plexbmc.myplex))</visible>
                 <label>$VAR[Plex.Queue.Label.Management]</label>
                 <thumb background="true">$VAR[Plex.Queue.Icon.Management]</thumb>
-                <icon background="true">$INFO[Skin.String(Plexbmc.Queue.Background)]</icon>
+                <icon background="true">$VAR[Plex.Queue.Background.Management]</icon>
                 <property name="uuid">Queue</property>
                 <onclick>noop</onclick>
                 <property name="hide">$INFO[Skin.HasSetting(Queue.Hide)]</property>
@@ -609,32 +609,6 @@
             <onclick condition="!Library.HasContent(music)">ActivateWindow(MusicFiles,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
             <onclick condition="Library.HasContent(music)">ActivateWindow(MusicLibrary,"plugin://plugin.video.plexbmc/?url=http://music&amp;mode=22",return)</onclick>
         </item>
-        <!--         <item id="54">
-            <visible>System.HasAddon(plugin.video.plexbmc)</visible>
-            <visible>Container(300).HasFocus(10)</visible>
-            <label>$LOCALIZE[31007]</label>
-            <onclick>XBMC.RunScript(plugin.video.plexbmc,setting)</onclick>
-        </item> -->
-        <!-- <item id="55">
-            <visible>System.HasAddon(plugin.video.plexbmc) + !Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(10)</visible>
-            <label>$LOCALIZE[31008]</label>
-            <onclick>Skin.ToggleSetting(plexbmc)</onclick>
-            <onclick>XBMC.ReloadSkin()</onclick>
-        </item>
-        <item id="56">
-            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(10)</visible>
-            <label>$LOCALIZE[31009]</label>
-            <onclick>Skin.ToggleSetting(plexbmc)</onclick>
-            <onclick>XBMC.ReloadSkin()</onclick>
-        </item> -->
-        <!-- <item id="57">
-            <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-            <visible>Container(300).HasFocus(10)</visible>
-            <label>$LOCALIZE[184]</label>
-            <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>
-        </item> -->
         <item id="58">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
             <visible>Container(300).HasFocus(30) | Container(300).HasFocus(31) | Container(300).HasFocus(32) | Container(300).HasFocus(33) | Container(300).HasFocus(34) | Container(300).HasFocus(35) | Container(300).HasFocus(36) | Container(300).HasFocus(37) | Container(300).HasFocus(38) | Container(300).HasFocus(39) | Container(300).HasFocus(40)</visible>
