@@ -175,7 +175,7 @@
                     <label>-</label>
                     <font>-</font>
                     <texturefocus>topbar/topbar_home_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_home_focus.png</texturenofocus>
+                    <texturenofocus>topbar/topbar_home_nofocus.png</texturenofocus>
                     <onleft>20</onleft>
                     <onright>600</onright>
                     <onup>87</onup>
