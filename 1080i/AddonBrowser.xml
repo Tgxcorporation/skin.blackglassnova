@@ -157,6 +157,15 @@
                     <label>$LOCALIZE[24034]</label>
                 </control>
             </control>
+            <control type="label">
+                <posx>-600</posx>
+                <posy>1010</posy>
+                <textoffsety>0</textoffsety>
+                <height>69</height>
+                <include>LeftMenuTitleLabel</include>
+                <include>LeftMenuButton</include>
+                <label>$LOCALIZE[31508]: $INFO[Window.Property(Updated)]</label>
+            </control>
         </control>
     </controls>
 </window>
