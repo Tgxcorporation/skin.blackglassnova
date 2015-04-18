@@ -3,6 +3,7 @@
     <!--<defaultcontrol always="true">9000</defaultcontrol>-->
     <include>DialogOpenClose</include>
     <controls>
+        <control type="group" id="100">
         <include>DimBG</include>
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
@@ -115,7 +116,7 @@
                     <texture flipx="true">list/bg_strip_horizontal_left.png</texture>
                     <colordiffuse>90ffffff</colordiffuse>
                 </control>
-                <control type="group" id="100">
+
                     <control type="list" id="9000">
                         <posx>1309</posx>
                         <posy>163</posy>
@@ -224,7 +225,7 @@
                                 <visible>Control.IsVisible(189)</visible>
                             </item>
                             <item id="11">
-                                <label>$INFO[Control.GetLabel(198)][/COLOR]</label>
+                                <label>$INFO[Control.GetLabel(198)]</label>
                                 <label2>$LOCALIZE[31207]</label2>
                                 <onclick>Control.Setfocus(9000,0)</onclick>
                                 <onclick>SendClick(198)</onclick>
@@ -1839,7 +1840,6 @@
                             </control>
                         </control>
                     </control>
-
                 </control>
             </control>
         </control>

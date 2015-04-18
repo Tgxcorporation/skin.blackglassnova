@@ -84,7 +84,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <!--EPG-->
-                    <control type="list" id="200">
+                    <control type="panel" id="200">
                         <onleft>200</onleft>
                         <height>365</height>
                         <onright>2006</onright>
@@ -141,7 +141,7 @@
                         <onright>190</onright>
                     </control>
                     <!--MOVIE-->
-                    <control type="list" id="110">
+                    <control type="panel" id="110">
                         <onleft>110</onleft>
                         <height>365</height>
                         <onright>2006</onright>
@@ -234,7 +234,7 @@
                         <onright>190</onright>
                     </control>
                     <!--TVSHOW-->
-                    <control type="list" id="120">
+                    <control type="panel" id="120">
                         <onleft>120</onleft>
                         <height>365</height>
                         <onright>2006</onright>
@@ -309,7 +309,7 @@
                         <onright>190</onright>
                     </control>
                     <!--SEASON-->
-                    <control type="list" id="130">
+                    <control type="panel" id="130">
                         <onleft>130</onleft>
                         <height>365</height>
                         <onright>2006</onright>
@@ -354,7 +354,7 @@
                         <onright>190</onright>
                     </control>
                     <!--EPISODE-->
-                    <control type="list" id="140">
+                    <control type="panel" id="140">
                         <onleft>140</onleft>
                         <height>365</height>
                         <onright>2006</onright>
@@ -435,7 +435,7 @@
                         <onright>190</onright>
                     </control>
                     <!--MUSIC VIDEO-->
-                    <control type="list" id="150">
+                    <control type="panel" id="150">
                         <onleft>150</onleft>
                         <height>365</height>
                         <onright>2006</onright>
@@ -510,7 +510,7 @@
                         <onright>190</onright>
                     </control>
                     <!--ARTIST-->
-                    <control type="list" id="160">
+                    <control type="panel" id="160">
                         <onleft>160</onleft>
                         <height>365</height>
                         <onright>2006</onright>
@@ -585,7 +585,7 @@
                         <onright>190</onright>
                     </control>
                     <!--ALBUM-->
-                    <control type="list" id="170">
+                    <control type="panel" id="170">
                         <onleft>170</onleft>
                         <height>365</height>
                         <onright>2006</onright>
@@ -666,7 +666,7 @@
                         <onright>190</onright>
                     </control>
                     <!--SONG-->
-                    <control type="list" id="180">
+                    <control type="panel" id="180">
                         <onleft>180</onleft>
                         <height>365</height>
                         <onright>2006</onright>
@@ -901,7 +901,6 @@
                     </control>
                     <control type="button" id="193">
                         <label>-</label>
-                        <font>font12</font>
                         <include>RightDialogButton</include>
                     </control>
                 </control>
