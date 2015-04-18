@@ -59,12 +59,20 @@
                         <control type="label">
                             <posx>TextMargin</posx>
                             <posy>-12</posy>
-                            <width>1031</width>
+                            <width>980</width>
                             <height>71</height>
                             <font>InfoTitleFont</font>
                             <textcolor>MainColor</textcolor>
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="image">
+                            <posx>1048</posx>
+                            <posy>-12</posy>
+                            <width>30</width>
+                            <height>71</height>
+                            <texture>$VAR[Overlay]</texture>
+                            <aspectratio aligny="center">keep</aspectratio>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -211,12 +219,20 @@
                         <control type="label">
                             <posx>TextMargin</posx>
                             <posy>-12</posy>
-                            <width>1031</width>
+                            <width>980</width>
                             <height>71</height>
                             <font>InfoTitleFont</font>
                             <textcolor>MainColor</textcolor>
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="image">
+                            <posx>1048</posx>
+                            <posy>-12</posy>
+                            <width>30</width>
+                            <height>71</height>
+                            <texture>$VAR[Overlay]</texture>
+                            <aspectratio aligny="center">keep</aspectratio>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -269,15 +285,6 @@
                             <font>InfoDetailsFont</font>
                             <textcolor>AlternateColor</textcolor>
                             <label>$VAR[Details_BG]</label>
-                        </control>
-                        <control type="image">
-                            <visible>![Container.Content(TVShows) | Container.Content(Seasons)]</visible>
-                            <posx>1048</posx>
-                            <posy>148</posy>
-                            <width>30</width>
-                            <height>72</height>
-                            <texture>$VAR[Overlay]</texture>
-                            <aspectratio aligny="center">keep</aspectratio>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -356,13 +363,21 @@
                         <control type="label">
                             <posx>TextMargin</posx>
                             <posy>-12</posy>
-                            <width>1031</width>
+                            <width>980</width>
                             <height>71</height>
                             <font>InfoTitleFont</font>
                             <textcolor>MainColor</textcolor>
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
                         </control>
+                        <control type="image">
+                        <posx>1048</posx>
+                        <posy>-12</posy>
+                        <width>30</width>
+                        <height>71</height>
+                        <texture>$VAR[Overlay]</texture>
+                        <aspectratio aligny="center">keep</aspectratio>
+                    </control>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -409,14 +424,6 @@
                             <font>InfoDetailsFont</font>
                             <textcolor>AlternateColor</textcolor>
                             <label>$VAR[Details]</label>
-                        </control>
-                        <control type="image">
-                            <posx>1048</posx>
-                            <posy>148</posy>
-                            <width>30</width>
-                            <height>72</height>
-                            <texture>$VAR[Overlay]</texture>
-                            <aspectratio aligny="center">keep</aspectratio>
                         </control>
                         <control type="label">
                             <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
@@ -570,12 +577,20 @@
                         <control type="label">
                             <posx>TextMargin</posx>
                             <posy>-12</posy>
-                            <width>1031</width>
+                            <width>980</width>
                             <height>71</height>
                             <font>InfoTitleFont</font>
                             <textcolor>MainColor</textcolor>
                             <align>left</align>
                             <label>$INFO[ListItem.Label]</label>
+                        </control>
+                        <control type="image">
+                            <posx>1048</posx>
+                            <posy>-12</posy>
+                            <width>30</width>
+                            <height>71</height>
+                            <texture>$VAR[Overlay]</texture>
+                            <aspectratio aligny="center">keep</aspectratio>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -623,14 +638,6 @@
                             <font>InfoDetailsFont</font>
                             <textcolor>AlternateColor</textcolor>
                             <label>$VAR[Details]</label>
-                        </control>
-                        <control type="image">
-                            <posx>1048</posx>
-                            <posy>148</posy>
-                            <width>30</width>
-                            <height>72</height>
-                            <texture>$VAR[Overlay]</texture>
-                            <aspectratio aligny="center">keep</aspectratio>
                         </control>
                         <control type="label">
                             <visible>[Container.Content(TVShows) | Container.Content(Seasons)] + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0)</visible>
