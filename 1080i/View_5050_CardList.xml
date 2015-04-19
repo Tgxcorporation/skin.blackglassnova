@@ -490,7 +490,6 @@
                     <!-- CLEAR ART / LOGO-->
                     <control type="image">
                         <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
-                        <fadetime>250</fadetime>
                         <posx>1350</posx>
                         <posy>-116</posy>
                         <width>300</width>

@@ -617,7 +617,6 @@
         </control>
     </include>
     <include name="ThumbBorder">
-        <fadetime>250</fadetime>
         <bordertexture border="27">common/JewelCase.png</bordertexture>
         <bordersize>27</bordersize>
     </include>

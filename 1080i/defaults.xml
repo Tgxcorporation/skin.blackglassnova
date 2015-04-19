@@ -46,9 +46,13 @@
         <autoscroll delay="5000" time="2500" repeat="10000">Skin.HasSetting(AutoScroll)</autoscroll>
     </default>
     <default type="image">
+        <fadetime>200</fadetime>
         <align>center</align>
         <aligny>center</aligny>
         <aspectratio>stretch</aspectratio>
+    </default>
+    <default type="multiimage">
+        <fadetime>200</fadetime>
     </default>
     <default type="button">
         <posx>0</posx>
