@@ -289,27 +289,16 @@
                     <onleft>Control.Move(59,-1)</onleft>
                 </control>
                 <control type="group">
-                    <!-- CLEAR ART -->
+                    <!-- CLEAR ART / LOGO-->
                     <control type="image">
-                        <visible>Skin.HasSetting(EnableClearArt)</visible>
+                        <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                         <fadetime>250</fadetime>
                         <posx>345r</posx>
                         <posy>369</posy>
                         <width>300</width>
                         <height>235</height>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[DefaultClearArt]</texture>
-                    </control>
-                    <!-- CLEAR LOGO -->
-                    <control type="image">
-                        <visible>Skin.HasSetting(EnableClearLogo)</visible>
-                        <fadetime>250</fadetime>
-                        <posx>45</posx>
-                        <posy>369</posy>
-                        <width>300</width>
-                        <height>235</height>
-                        <aspectratio align="left" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[DefaultClearLogo]</texture>
+                        <texture background="true">$VAR[DefaultClearArtLogo]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -609,27 +598,16 @@
                     <onleft>Control.Move(58,-1)</onleft>
                 </control>
                 <control type="group">
-                    <!-- CLEAR ART -->
+                    <!-- CLEAR ART / LOGO-->
                     <control type="image">
-                        <visible>Skin.HasSetting(EnableClearArt)</visible>
+                        <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                         <fadetime>250</fadetime>
                         <posx>345r</posx>
                         <posy>429</posy>
                         <width>300</width>
                         <height>235</height>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[DefaultClearArt]</texture>
-                    </control>
-                    <!-- CLEAR LOGO -->
-                    <control type="image">
-                        <visible>Skin.HasSetting(EnableClearLogo)</visible>
-                        <fadetime>250</fadetime>
-                        <posx>45</posx>
-                        <posy>429</posy>
-                        <width>300</width>
-                        <height>235</height>
-                        <aspectratio align="left" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[DefaultClearLogo]</texture>
+                        <texture background="true">$VAR[DefaultClearArtLogo]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -1019,27 +997,16 @@
                     <onleft>Control.Move(57,-1)</onleft>
                 </control>
                 <control type="group">
-                    <!-- CLEAR ART -->
+                    <!-- CLEAR ART / LOGO-->
                     <control type="image">
-                        <visible>Skin.HasSetting(EnableClearArt)</visible>
+                        <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                         <fadetime>250</fadetime>
                         <posx>345r</posx>
                         <posy>429</posy>
                         <width>300</width>
                         <height>235</height>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[DefaultClearArt]</texture>
-                    </control>
-                    <!-- CLEAR LOGO -->
-                    <control type="image">
-                        <visible>Skin.HasSetting(EnableClearLogo)</visible>
-                        <fadetime>250</fadetime>
-                        <posx>45</posx>
-                        <posy>429</posy>
-                        <width>300</width>
-                        <height>235</height>
-                        <aspectratio align="left" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[DefaultClearLogo]</texture>
+                        <texture background="true">$VAR[DefaultClearArtLogo]</texture>
                     </control>
                 </control>
                 <control type="group">

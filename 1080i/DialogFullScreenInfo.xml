@@ -23,25 +23,15 @@
                 <onfocus>noop</onfocus>
             </control>
             <control type="group">
-                <!-- CLEAR ART -->
+                <!-- CLEAR ART / LOGO-->
                 <control type="image">
-                    <visible>Skin.HasSetting(EnableClearArt)</visible>
+                    <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                     <posx>645r</posx>
                     <posy>283</posy>
                     <width>300</width>
                     <height>235</height>
                     <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <texture background="true">$VAR[VideoPlayerClearArt]</texture>
-                </control>
-                <!-- CLEAR LOGO -->
-                <control type="image">
-                    <visible>Skin.HasSetting(EnableClearLogo)</visible>
-                    <posx>308</posx>
-                    <posy>283</posy>
-                    <width>300</width>
-                    <height>235</height>
-                    <aspectratio aligny="bottom">keep</aspectratio>
-                    <texture background="true">$VAR[VideoPlayerClearLogo]</texture>
+                    <texture background="true">$VAR[VideoPlayerClearArtLogo]</texture>
                 </control>
             </control>
             <control type="image">

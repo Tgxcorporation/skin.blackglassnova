@@ -30,25 +30,15 @@
                 <control type="group">
                     <posy>55</posy>
                     <control type="group">
-                        <!-- CLEAR ART -->
+                        <!-- CLEAR ART / LOGO-->
                         <control type="image">
-                            <visible>Skin.HasSetting(EnableClearArt)</visible>
+                            <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                             <posx>645r</posx>
                             <posy>283</posy>
                             <width>300</width>
                             <height>235</height>
                             <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                            <texture background="true">$VAR[MusicPlayerClearArt]</texture>
-                        </control>
-                        <!-- CLEAR LOGO -->
-                        <control type="image">
-                            <visible>Skin.HasSetting(EnableClearLogo)</visible>
-                            <posx>318</posx>
-                            <posy>283</posy>
-                            <width>300</width>
-                            <height>235</height>
-                            <aspectratio aligny="bottom">keep</aspectratio>
-                            <texture background="true">$INFO[Player.Art(clearlogo)]</texture>
+                            <texture background="true">$VAR[MusicPlayerClearArtLogo]</texture>
                         </control>
                     </control>
                     <control type="image">
