@@ -292,7 +292,6 @@
                     <!-- CLEAR ART / LOGO-->
                     <control type="image">
                         <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
-                        <fadetime>250</fadetime>
                         <posx>345r</posx>
                         <posy>369</posy>
                         <width>300</width>
@@ -601,7 +600,6 @@
                     <!-- CLEAR ART / LOGO-->
                     <control type="image">
                         <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
-                        <fadetime>250</fadetime>
                         <posx>345r</posx>
                         <posy>429</posy>
                         <width>300</width>
@@ -1000,7 +998,6 @@
                     <!-- CLEAR ART / LOGO-->
                     <control type="image">
                         <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
-                        <fadetime>250</fadetime>
                         <posx>345r</posx>
                         <posy>429</posy>
                         <width>300</width>
