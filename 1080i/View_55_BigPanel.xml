@@ -217,27 +217,16 @@
         <control type="group">
             <visible>Control.IsVisible(55)</visible>
             <control type="group">
-                <!-- CLEAR ART -->
+                <!-- CLEAR ART / LOGO-->
                 <control type="image">
-                    <visible>Skin.HasSetting(EnableClearArt)</visible>
+                    <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                     <fadetime>250</fadetime>
                     <posx>645r</posx>
                     <posy>10</posy>
                     <width>300</width>
                     <height>118</height>
                     <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <texture background="true">$VAR[DefaultClearArt]</texture>
-                </control>
-                <!-- CLEAR LOGO -->
-                <control type="image">
-                    <visible>Skin.HasSetting(EnableClearLogo)</visible>
-                    <fadetime>250</fadetime>
-                    <posx>920</posx>
-                    <posy>10</posy>
-                    <width>300</width>
-                    <height>118</height>
-                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
-                    <texture background="true">$VAR[DefaultClearLogo]</texture>
+                    <texture background="true">$VAR[DefaultClearArtlogo]</texture>
                 </control>
             </control>
             <control type="image">
