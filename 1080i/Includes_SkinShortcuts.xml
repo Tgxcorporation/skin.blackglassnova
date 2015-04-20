@@ -268,7 +268,6 @@
                 <colordiffuse>90ffffff</colordiffuse>
                 <aspectratio>scale</aspectratio>
                 <include>ThumbBorder</include>
-                <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
                 <posx>56</posx>
@@ -494,6 +493,4 @@
         </focusedlayout>
         <include condition="Skin.HasSetting(plexbmc)+Window.isactive(CustomPlexHomeSettings.xml)">Plexbmc.Items.SkinSettings</include>
     </include>
-
-
 </includes>

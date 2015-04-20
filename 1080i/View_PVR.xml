@@ -2622,7 +2622,6 @@
                         <textcolor>ListNoFocusColor</textcolor>
                         <scroll>false</scroll>
                         <info>ListItem.Label</info>
-                        <scroll>false</scroll>
                     </control>
                 </itemlayout>
                 <focusedlayout height="70" width="60">

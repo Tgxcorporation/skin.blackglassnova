@@ -1254,7 +1254,6 @@
                         <height>70</height>
                         <font>TvGuideItemFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
-                        <scroll>false</scroll>
                         <info>ListItem.Label</info>
                         <scroll>false</scroll>
                     </control>

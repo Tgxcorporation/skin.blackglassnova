@@ -86,7 +86,6 @@
                 <scroll>false</scroll>
                 <label>$INFO[ListItem.Label]</label>
                 <textcolor>ListNoFocusColor</textcolor>
-                <scroll>false</scroll>
             </control>
         </itemlayout>
         <focusedlayout width="640" height="50">

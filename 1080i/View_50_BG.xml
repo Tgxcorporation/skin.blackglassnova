@@ -719,7 +719,8 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
-                <visible>![IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible><posx>TextMargin</posx>
+                <visible>![IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
+                <posx>TextMargin</posx>
                 <posy>146</posy>
                 <width>660</width>
                 <height>71</height>
@@ -728,7 +729,7 @@
                 <label>$INFO[Container(50).ListItem.Property(Property4)]</label>
             </control>
             <control type="label">
-                <visible>[IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible><posx>TextMargin</posx>
+                <visible>[IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
                 <posx>TextMargin</posx>
                 <posy>146</posy>
                 <width>660</width>
@@ -745,7 +746,7 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
-                <visible>![IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible><posx>TextMargin</posx>
+                <visible>![IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
                 <posx>TextMargin</posx>
                 <posy>219</posy>
                 <width>660</width>
@@ -755,7 +756,7 @@
                 <label>$INFO[Container(50).ListItem.Property(Property8)]</label>
             </control>
             <control type="label">
-                <visible>[IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible><posx>TextMargin</posx>
+                <visible>[IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
                 <posx>TextMargin</posx>
                 <posy>219</posy>
                 <width>660</width>
