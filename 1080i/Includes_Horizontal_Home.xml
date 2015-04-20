@@ -174,7 +174,7 @@
                 <posy>9</posy>
                 <width>359</width>
                 <height>225</height>
-                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <aspectratio>scale</aspectratio>
                 <include>ThumbBorder</include>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
@@ -184,7 +184,7 @@
                 <posy>241</posy>
                 <width>305</width>
                 <height>171</height>
-                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Icon]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
@@ -203,7 +203,7 @@
                 <width>390</width>
                 <height>243</height>
                 <aspectratio>scale</aspectratio>
-                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="image">
@@ -211,7 +211,7 @@
                 <posy>250</posy>
                 <width>336</width>
                 <height>189</height>
-                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png">$INFO[ListItem.Icon]</texture>
+                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
             </control>
             <control type="image">
                 <posx>3</posx>
