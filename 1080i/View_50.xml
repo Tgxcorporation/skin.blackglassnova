@@ -443,7 +443,6 @@
             </control>
             <control type="group">
                 <include>SlideViewUnknown</include>
-                <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="true">Conditional</animation>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>350</posy>
