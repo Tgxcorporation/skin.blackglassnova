@@ -220,7 +220,7 @@
                             <onclick>Skin.ToggleSetting(Hide_Unwatched_Marks)</onclick>
                         </item>
                         <item id="29">
-                            <visible>Skin.HasSetting(DefaultView50)|[!Skin.HasSetting(DefaultView52)+!Skin.HasSetting(DefaultView54)]</visible>
+                            <visible>!Skin.HasSetting(BlackGlassMode)+[Skin.HasSetting(DefaultView50)|[!Skin.HasSetting(DefaultView52)+!Skin.HasSetting(DefaultView54)]]</visible>
                             <label>$LOCALIZE[13377]</label>
                             <label2>$LOCALIZE[535]</label2>
                             <onclick>Skin.Reset(DefaultView50)</onclick>
@@ -229,7 +229,7 @@
                             <onclick>Skin.ToggleSetting(DefaultView52)</onclick>
                         </item>
                         <item id="29">
-                            <visible>Skin.HasSetting(DefaultView52)</visible>
+                            <visible>!Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(DefaultView52)</visible>
                             <label>$LOCALIZE[13377]</label>
                             <label2>$LOCALIZE[31091]</label2>
                             <onclick>Skin.Reset(DefaultView50)</onclick>
@@ -238,7 +238,7 @@
                             <onclick>Skin.ToggleSetting(DefaultView54)</onclick>
                         </item>
                         <item id="29">
-                            <visible>Skin.HasSetting(DefaultView54)</visible>
+                            <visible>!Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(DefaultView54)</visible>
                             <label>$LOCALIZE[13377]</label>
                             <label2>$LOCALIZE[31092]</label2>
                             <onclick>Skin.Reset(DefaultView50)</onclick>

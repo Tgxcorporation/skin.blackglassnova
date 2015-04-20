@@ -403,6 +403,9 @@
             <property name="isSubmenu">True</property>
             <property name="group">settings</property>
             <onclick>Skin.ToggleSetting(BlackGlassMode)</onclick>
+            <onclick>Skin.Reset(DefaultView50)</onclick>
+            <onclick>Skin.Reset(DefaultView52)</onclick>
+            <onclick>Skin.Reset(DefaultView54)</onclick>
             <onclick>XBMC.ReloadSkin()</onclick>
         </item>
         <item id="90204">

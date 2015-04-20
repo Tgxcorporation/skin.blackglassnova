@@ -264,6 +264,9 @@
                         <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                         <label>$LOCALIZE[31027]</label>
                         <onclick>Skin.ToggleSetting(BlackGlassMode)</onclick>
+                        <onclick>Skin.Reset(DefaultView50)</onclick>
+                        <onclick>Skin.Reset(DefaultView52)</onclick>
+                        <onclick>Skin.Reset(DefaultView54)</onclick>
                         <onclick>XBMC.ReloadSkin()</onclick>
                         <label2>special://skin/backgrounds/Favourites.jpg</label2>
                     </item>
