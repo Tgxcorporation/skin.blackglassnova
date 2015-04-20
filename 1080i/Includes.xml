@@ -8,7 +8,6 @@
     _1118 Custom_FullscreenMusic * start fullscreen audio playback
     _1119 CustomAddons * browse addons united under the same roof
     _1120 CustomStartupWindow.xml * define startup window
-    _50 Custom_Debug dialog * my favourite one
 
    -->
     <include file="Includes_Variables.xml"/>
