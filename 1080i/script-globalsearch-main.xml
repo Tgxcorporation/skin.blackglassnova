@@ -1263,7 +1263,7 @@
                                             <font>FacadeListSubFont</font>
                                             <textcolor>ListNoFocusColor</textcolor>
                                             <label>$INFO[ListItem.Property(Year)]</label>
-                                            <autoscroll>false</autoscroll>
+                                            <scroll>false</scroll>
                                         </control>
                                         <control type="label">
                                             <posx>174</posx>
@@ -1732,7 +1732,7 @@
                                             <font>FacadeListSubFont</font>
                                             <textcolor>ListNoFocusColor</textcolor>
                                             <label>$INFO[ListItem.Property(Genre)]</label>
-                                            <autoscroll>false</autoscroll>
+                                            <scroll>false</scroll>
                                         </control>
                                         <control type="label">
                                             <posx>174</posx>
