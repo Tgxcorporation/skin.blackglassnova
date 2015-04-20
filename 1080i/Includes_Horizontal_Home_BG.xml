@@ -173,7 +173,7 @@
                     <posy>0</posy>
                     <width>1683</width>
                     <height>940</height>
-                    <texture background="true" diffuse="common/bg_panel_home_diffuse.png">$INFO[ListItem.Icon]</texture>
+                    <texture background="true" diffuse="common/bg_panel_home_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
                     <posx>-27</posx>
@@ -213,7 +213,7 @@
                     <posy>0</posy>
                     <width>1683</width>
                     <height>940</height>
-                    <texture background="true" diffuse="common/bg_panel_home_diffuse.png">$INFO[ListItem.Icon]</texture>
+                    <texture background="true" diffuse="common/bg_panel_home_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
                     <posx>-27</posx>
