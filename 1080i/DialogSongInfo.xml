@@ -22,7 +22,7 @@
             </control>
             <control type="image">
                 <posx>133</posx>
-				<posy>244</posy>
+                <posy>244</posy>
 				<width>1654</width>
                 <height>1029</height>
                 <texture border="90">common/bg_dialog.png</texture>
