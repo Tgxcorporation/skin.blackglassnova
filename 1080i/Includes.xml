@@ -1062,4 +1062,85 @@
             </control>
         </focusedlayout>
     </include>
+    <include name="TVNextAiredListCommonLayout">
+        <posx>0</posx>
+        <width>1420</width>
+        <height>71</height>
+        <scrolltime>200</scrolltime>
+        <orientation>horizontal</orientation>
+        <onleft>9000</onleft>
+        <itemlayout height="73" width="568">
+            <control type="label">
+                <posx>25</posx>
+                <height>42</height>
+                <width>518</width>
+                <font>FacadeListMainFont</font>
+                <textcolor>ListNoFocusColor</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
+            </control>
+            <control type="label">
+                <visible>!ListItem.Property(SecondWeek)</visible>
+                <posx>25</posx>
+                <posy>39</posy>
+                <height>28</height>
+                <width>518</width>
+                <font>FacadeListSubFont</font>
+                <textcolor>SublistNoFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(Network),  •  ]</label>
+                <scroll>false</scroll>
+            </control>
+            <control type="label">
+                <visible>ListItem.Property(SecondWeek)</visible>
+                <posx>25</posx>
+                <posy>39</posy>
+                <height>28</height>
+                <width>518</width>
+                <font>FacadeListSubFont</font>
+                <textcolor>SublistNoFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(NextDay),  •  ]$INFO[ListItem.Property(Network),  •  ]</label>
+                <scroll>false</scroll>
+            </control>
+        </itemlayout>
+        <focusedlayout height="73" width="1440">
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>71</height>
+                <width>568</width>
+                <include>FacadeFocus</include>
+            </control>
+            <control type="label">
+                <posx>25</posx>
+                <height>42</height>
+                <width>518</width>
+                <font>FacadeListMainFont</font>
+                <textcolor>ListFocusColor</textcolor>
+                <label>$INFO[ListItem.Label]</label>
+                <scroll>false</scroll>
+            </control>
+            <control type="label">
+                <visible>!ListItem.Property(SecondWeek)</visible>
+                <posx>25</posx>
+                <posy>39</posy>
+                <height>28</height>
+                <width>518</width>
+                <font>FacadeListSubFont</font>
+                <textcolor>SublistFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(Network),  •  ]</label>
+                <scroll>false</scroll>
+            </control>
+            <control type="label">
+                <visible>ListItem.Property(SecondWeek)</visible>
+                <posx>25</posx>
+                <posy>39</posy>
+                <height>28</height>
+                <width>518</width>
+                <font>FacadeListSubFont</font>
+                <textcolor>SublistFocusColor</textcolor>
+                <label>$INFO[ListItem.Property(ShortTime)]$INFO[ListItem.Property(NextDay),  •  ]$INFO[ListItem.Property(Network),  •  ]</label>
+                <scroll>false</scroll>
+            </control>
+        </focusedlayout>
+    </include>
 </includes>
