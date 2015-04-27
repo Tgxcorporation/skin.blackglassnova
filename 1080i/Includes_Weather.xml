@@ -6,7 +6,7 @@
             <item>
                 <visible>!Weather.IsFetched</visible>
                 <label>$LOCALIZE[416]</label>
-                <thumb>special://skin/backgrounds/weather/na.jpg</thumb>
+                <thumb>$VAR[WeatherFanartPath]na.jpg</thumb>
                 <onclick>noop</onclick>
             </item>
             <!--7 DAYS-->
