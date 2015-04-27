@@ -579,6 +579,16 @@
                             <label2>$LOCALIZE[305]</label2>
                             <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
                         </item>
+                        <item id="93">
+                            <label>$LOCALIZE[31519]</label>
+                            <label2>$INFO[Skin.String(weatherArtPath)]</label2>
+                            <onclick>Skin.SetPath(weatherArtPath)</onclick>
+                        </item>
+                        <item id="94">
+                            <label>$LOCALIZE[31520]</label>
+                            <label2>$INFO[Skin.String(weatherIconPath)]</label2>
+                            <onclick>Skin.SetPath(weatherIconPath)</onclick>
+                        </item>
                     </content>
                 </control>
                 <control type="scrollbar" id="503">
