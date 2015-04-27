@@ -638,6 +638,13 @@
                             <visible>StringCompare(Skin.String(startup-screentype),image)</visible>
                             <label>$LOCALIZE[31019]</label>
                             <label2>$LOCALIZE[31067]</label2>
+                            <onclick>Skin.SetString(startup-screentype,multiimage)</onclick>
+                        </item>
+                        <!--Custom MULTI IMAGE STARTUP-->
+                        <item id="208">
+                            <visible>StringCompare(Skin.String(startup-screentype),multiimage)</visible>
+                            <label>$LOCALIZE[31019]</label>
+                            <label2>$LOCALIZE[31518]</label2>
                             <onclick>Skin.SetString(startup-screentype,video)</onclick>
                         </item>
                         <!--Custom VIDEO STARTUP-->
@@ -654,7 +661,14 @@
                             <label2>$INFO[Skin.String(startup-imagepath)]</label2>
                             <onclick>Skin.SetImage(startup-imagepath)</onclick>
                         </item>
-                        <!--Custom Image Selector-->
+                        <!--Custom Multi Image Selector-->
+                        <item id="209">
+                            <visible>StringCompare(Skin.String(startup-screentype),multiimage)</visible>
+                            <label>$LOCALIZE[31518] - $LOCALIZE[21801]</label>
+                            <label2>$INFO[Skin.String(startup-multiimagepath)]</label2>
+                            <onclick>Skin.SetPath(startup-multiimagepath)</onclick>
+                        </item>
+                        <!--Custom Video Selector-->
                         <item id="204">
                             <visible>StringCompare(Skin.String(startup-screentype),video)</visible>
                             <label>$LOCALIZE[31068] - $LOCALIZE[21801]</label>
