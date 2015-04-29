@@ -45,10 +45,10 @@ Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?ti
 ### Install from GitHub
 If you can't wait for the official skin update in Kodi add-on repository, you can manually install the latest skin revision from GitHub. Here is how:
 
-1. Switch to the "Confluence" skin in Settings.
-2. Uninstall "Black Glass Nova" from installed Addons
-3. Close Kodi
-4. Go into your "packages" folder:
+- Switch to the "Confluence" skin in Settings.
+- Uninstall "Black Glass Nova" from installed Addons
+- Close Kodi
+- Go into your "packages" folder:
 
 * Android -> Android/data/org.xbmc.kodi/files/.kodi/addons/packages/
 * iOS -> /private/var/mobile/Library/Preferences/kodi/addons/packages/
@@ -59,8 +59,8 @@ If you can't wait for the official skin update in Kodi add-on repository, you ca
 
 and delete every file starting with "skin.blackglassnova"
 
-5. Download the zipped skin for KODI 15 ISENGARD from https://github.com/Tgxcorporation/skin.blackglassnova/archive/master.zip
-6. Start Kodi and go to Settings -> Add-ons and select "Install from zipped file". Browse for the file downloaded in point n. 5 and press "ok". The updated skin should install.
+- Download the zipped skin for KODI 15 ISENGARD from https://github.com/Tgxcorporation/skin.blackglassnova/archive/master.zip
+- Start Kodi and go to Settings -> Add-ons and select "Install from zipped file". Browse for the file downloaded in point n. 5 and press "ok". The updated skin should install.
 
 
 
