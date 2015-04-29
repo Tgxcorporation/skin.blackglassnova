@@ -2,7 +2,9 @@
 Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.
 
 ### Screenshots
-Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?tid=199343)
+Some pictures of the skin:
+- [Black Glass Nova Mode](https://github.com/Tgxcorporation/skin.blackglassnova/wiki/Screenshots-BGN)
+- [Black Glass Mode](https://github.com/Tgxcorporation/skin.blackglassnova/wiki/Screenshots-BG)
 
 ### Update Log
 [Changelog](https://github.com/Tgxcorporation/skin.blackglassnova/blob/master/changelog.txt)
