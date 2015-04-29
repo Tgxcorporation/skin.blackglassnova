@@ -33,7 +33,7 @@
             <onfocus condition="!IsEmpty(Skin.String(StartupWindow))+IsEmpty(Skin.String(StartupWindowOption))">ReplaceWindow($INFO[Skin.String(StartupWindow)])</onfocus>
             <onfocus condition="!IsEmpty(Skin.String(StartupWindow))+!IsEmpty(Skin.String(StartupWindowOption))">ReplaceWindow($INFO[Skin.String(StartupWindow)],$INFO[Skin.String(StartupWindowOption)])</onfocus>
         </control>
-        <include condition="!Skin.HasSetting(BlackGlassMode)|!Skin.HasSetting(DisableFanart)">Fanart_Art</include>
+        <include>Fanart_Art</include>
         <!--CUSTOM STARTUP IMAGE-->
         <control type="image">
             <visible>StringCompare(Skin.String(startup-screentype),image)+!IsEmpty(Skin.String(startup-imagepath))</visible>
