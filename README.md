@@ -9,9 +9,6 @@ Some pictures of the skin:
 #### Update Log
 [Changelog](https://github.com/Tgxcorporation/skin.blackglassnova/blob/master/changelog.txt)
 
-#### Transifex Translations
-[![Transifex](https://www.transifex.com/projects/p/xbmc-skins/resource/skin-blackglassnova/chart/image_png)](https://www.transifex.com/projects/p/xbmc-skins/resource/skin-blackglassnova/)
-
 #### Thanks
 All the Kodi/XBMC team and addon developers.
 
