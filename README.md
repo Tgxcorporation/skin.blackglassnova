@@ -1,5 +1,4 @@
-### Thanks
-All the Kodi/XBMC team and addon developers.
+## Black Glass Nova skin for Kodi 15 Isengard
 
 
 
@@ -61,6 +60,11 @@ and delete every file starting with "skin.blackglassnova"
 
 5. Download the zipped skin for KODI 14 HELIX from https://github.com/Tgxcorporation/skin.blackglassnova/archive/helix.zip
 6. Start Kodi and go to Settings -> Add-ons and select "Install from zipped file". Browse for the file downloaded in point n. 5 and press "ok". The updated skin should install.
+
+
+
+### Thanks
+All the Kodi/XBMC team and addon developers.
 
 
 
