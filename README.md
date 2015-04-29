@@ -1,4 +1,5 @@
 ## Black Glass Nova skin for Kodi 14 Helix
+Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.
 
 
 
