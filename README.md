@@ -1,18 +1,19 @@
-## Black Glass Nova skin for Kodi 15 Isengard
+## Black Glass Nova skin for Kodi 15 ISENGARD
 Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.
 
 ![](http://i.imgur.com/bNT9T4C.jpg)
 
 ![](http://i.imgur.com/NxPPyDE.jpg)
 
-
-#### Screenshots
-Some pictures of the skin:
+#### Some pictures of the skin:
 - [Black Glass Nova Mode](https://github.com/Tgxcorporation/skin.blackglassnova/wiki/Screenshots-BGN)
 - [Black Glass Mode](https://github.com/Tgxcorporation/skin.blackglassnova/wiki/Screenshots-BG)
 
-#### Update Log
-[Changelog](https://github.com/Tgxcorporation/skin.blackglassnova/blob/master/changelog.txt)
+#### [Wiki](https://github.com/Tgxcorporation/skin.blackglassnova/wiki)
+
+#### [Changelog](https://github.com/Tgxcorporation/skin.blackglassnova/blob/master/changelog.txt)
+
+#### [Download from GitHub](https://github.com/Tgxcorporation/skin.blackglassnova/wiki/Install-from-GitHub)
 
 #### Thanks
 All the Kodi/XBMC team and addon developers.
