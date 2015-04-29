@@ -1,73 +1,17 @@
-## Black Glass Nova skin for Kodi 15 Isengard
+## Black Glass Nova skin for Kodi
 Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.
-
-
 
 ### Screenshots
 Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?tid=199343)
 
-
-
 ### Update Log
 [Changelog](https://github.com/Tgxcorporation/skin.blackglassnova/blob/master/changelog.txt)
-
-
-
-### Special features & Supported Plugins
-
-* PleXBMC - http://wiki.xbmc.org/?title=Add-on:PleXBMC
-* Custom home items: Script.skinshortcuts - http://forum.xbmc.org/showthread.php?tid=178294
-* CdArt for Movies, TV Series, MusicVideos: Artwork Downloader - http://wiki.xbmc.org/index.php?title=Add-on:Artwork_Downloader
-* CdArt for Music: CdArt Manager - http://wiki.xbmc.org/index.php?title=Add-on:CdART_Manager
-* ClearArt and ClearLogo for Movies, TV Series, MusicVideos: Artwork Downloader - http://wiki.xbmc.org/index.php?title=Add-on:Artwork_Downloader
-* ClearArt and ClearLogo for Music: CdArt Manager - http://wiki.xbmc.org/index.php?title=Add-on:CdART_Manager
-* Extra Fanart for Movies, TV Series, MusicVideos: Artwork Downloader - http://wiki.xbmc.org/index.php?title=Add-on:Artwork_Downloader
-* Global Search - http://kodi.wiki/view/Add-on:Global_Search
-* TV Show Next Aired - http://kodi.wiki/view/Add-on:TV_Show_-_Next_Aired
-* TvTunes - http://wiki.xbmc.org/index.php?title=Add-on:TvTunes
-* Recently added/Recommended/Random items: Skin Widgets - http://wiki.xbmc.org/index.php?title=Add-on:Skin_Widgets
-* Extended Info for Movies/TvShows/Music/LiveTv: Script Extended Info - https://github.com/phil65/script.extendedinfo
-* Cinema Experience - http://wiki.xbmc.org/index.php?title=Add-on:Cinema_Experience
-* Music playing screen: Artist Slideshow - http://wiki.xbmc.org/index.php?title=Add-on:Artist_Slideshow
-* VideoExtras - http://wiki.xbmc.org/index.php?title=Add-on:VideoExtras
-* Random fanart for Home items: Script Grab Fanart - https://github.com/robweber/script.grab.fanart/
-* Live TV/PVR
-* Touch support
-* Mouse support
-
-
 
 ### Transifex Translations
 [![Transifex](https://www.transifex.com/projects/p/xbmc-skins/resource/skin-blackglassnova/chart/image_png)](https://www.transifex.com/projects/p/xbmc-skins/resource/skin-blackglassnova/)
 
-
-
-### Install from GitHub
-If you can't wait for the official skin update in Kodi add-on repository, you can manually install the latest skin revision from GitHub. Here is how:
-
-- Switch to the "Confluence" skin in Settings.
-- Uninstall "Black Glass Nova" from installed Addons
-- Close Kodi
-- Go into your "packages" folder:
-
-* Android -> Android/data/org.xbmc.kodi/files/.kodi/addons/packages/
-* iOS -> /private/var/mobile/Library/Preferences/kodi/addons/packages/
-* Linux -> ~/.kodi/addons/packages/
-* Mac OS X -> /Users/<your_user_name>/Library/Application Support/kodi/addons/packages/
-* OpenELEC -> /storage/.kodi/addons/packages/
-* Windows XP, 7, 8 -> %appdata%\kodi\addons\packages\
-
-and delete every file starting with "skin.blackglassnova"
-
-- Download the zipped skin for KODI 15 ISENGARD from https://github.com/Tgxcorporation/skin.blackglassnova/archive/master.zip
-- Start Kodi and go to Settings -> Add-ons and select "Install from zipped file". Browse for the file downloaded in point n. 5 and press "ok". The updated skin should install.
-
-
-
 ### Thanks
 All the Kodi/XBMC team and addon developers.
-
-
 
 ### Donations
 If you like this skin so much that you want to help a little bit, you can donate here (much appreciated):
