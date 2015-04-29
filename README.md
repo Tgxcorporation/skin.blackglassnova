@@ -9,6 +9,8 @@ Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented 
 - [Black Glass Nova Mode](https://github.com/Tgxcorporation/skin.blackglassnova/wiki/Screenshots-BGN)
 - [Black Glass Mode](https://github.com/Tgxcorporation/skin.blackglassnova/wiki/Screenshots-BG)
 
+#### [Wiki](https://github.com/Tgxcorporation/skin.blackglassnova/wiki)
+
 #### [Changelog](https://github.com/Tgxcorporation/skin.blackglassnova/blob/master/changelog.txt)
 
 #### [Download from GitHub](https://github.com/Tgxcorporation/skin.blackglassnova/wiki/Install-from-GitHub)
