@@ -8,7 +8,7 @@ Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?ti
 
 
 
-### Changelog
+### Update Log
 [Changelog](https://github.com/Tgxcorporation/skin.blackglassnova/blob/master/changelog.txt)
 
 
