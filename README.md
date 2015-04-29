@@ -8,6 +8,11 @@ Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?ti
 
 
 
+### Changelog
+[Changelog](https://github.com/Tgxcorporation/skin.blackglassnova/blob/master/changelog.txt)
+
+
+
 ### Special features & Supported Plugins
 
 * PleXBMC - http://wiki.xbmc.org/?title=Add-on:PleXBMC
@@ -29,6 +34,11 @@ Some pictures of the skin: [Screenshots](http://forum.xbmc.org/showthread.php?ti
 * Live TV/PVR
 * Touch support
 * Mouse support
+
+
+
+### Transifex Translations
+[![Transifex](https://www.transifex.com/projects/p/xbmc-skins/resource/skin-blackglassnova/chart/image_png)](https://www.transifex.com/projects/p/xbmc-skins/resource/skin-blackglassnova/)
 
 
 
