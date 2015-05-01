@@ -68,7 +68,7 @@
                     <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
                 </control>
                 <control type="label">
-                    <visible>[Container.Content(Seasons) | Container.Content(TVShows)]</visible>
+                    <visible>[Container.Content(Seasons) | Container.Content(TVShows)]+!Control.isvisible(45743)</visible>
                     <posx>92</posx>
                     <posy>1010</posy>
                     <height>33</height>
@@ -110,7 +110,6 @@
                     <label>$VAR[Fanart_Details]</label>
                 </control>
                 <control type="group" id="45741">
-                    <visible>[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible>
                     <control type="image">
                         <posx>1715</posx>
                         <posy>1009</posy>
@@ -118,6 +117,7 @@
                         <include>Stars</include>
                     </control>
                     <control type="label">
+                        <visible>[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible>
                         <posx>1690</posx>
                         <posy>1010</posy>
                         <height>33</height>
