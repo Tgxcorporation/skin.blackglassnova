@@ -67,6 +67,17 @@
                     <shadowcolor>ShadowColor</shadowcolor>
                     <label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
                 </control>
+                <control type="label">
+                    <visible>[Container.Content(Seasons) | Container.Content(TVShows)]</visible>
+                    <posx>92</posx>
+                    <posy>1010</posy>
+                    <height>33</height>
+                    <width>1750</width>
+                    <align>center</align>
+                    <font>InfoDetailsFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <label>$INFO[ListItem.Property(UnWatchedEpisodes),$LOCALIZE[16101]: ]</label>
+                </control>
                 <control type="image">
                     <visible>![!control.isvisible(45741)+!control.isvisible(45742)+!control.isvisible(45743)+!control.isvisible(45744)]</visible>
                     <include>VisibleFadeEffect</include>
