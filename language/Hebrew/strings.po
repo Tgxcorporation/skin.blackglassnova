@@ -88,6 +88,10 @@ msgctxt "#31017"
 msgid "Writer Info"
 msgstr "פרטי כותב"
 
+msgctxt "#31018"
+msgid "Startup"
+msgstr "הפעלה"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "נוסף לאחרונה"
@@ -211,6 +215,10 @@ msgstr "רקע"
 msgctxt "#31060"
 msgid "Widgets"
 msgstr "יישומוניפ"
+
+msgctxt "#31067"
+msgid "Custom Image"
+msgstr "תמונה מותאמת אישית"
 
 msgctxt "#31090"
 msgid "Panel"

@@ -88,6 +88,10 @@ msgctxt "#31017"
 msgid "Writer Info"
 msgstr "Πληροφορίες Σεναριογράφου"
 
+msgctxt "#31018"
+msgid "Startup"
+msgstr "Εκκίνηση"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Προστέθηκαν Πρόσφατα"

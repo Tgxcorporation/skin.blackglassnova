@@ -88,6 +88,10 @@ msgctxt "#31017"
 msgid "Writer Info"
 msgstr "Infó az íróról"
 
+msgctxt "#31018"
+msgid "Startup"
+msgstr "Indítás"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Nemrég hozzáadva"

@@ -76,6 +76,10 @@ msgctxt "#31014"
 msgid "On Deck"
 msgstr "В коллекции"
 
+msgctxt "#31018"
+msgid "Startup"
+msgstr "При запуске"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Недавно добавленные"
