@@ -88,6 +88,10 @@ msgctxt "#31017"
 msgid "Writer Info"
 msgstr "Writer Info"
 
+msgctxt "#31018"
+msgid "Startup"
+msgstr "Startup"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Recently Added"

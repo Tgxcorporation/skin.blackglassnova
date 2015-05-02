@@ -76,6 +76,10 @@ msgctxt "#31014"
 msgid "On Deck"
 msgstr "Da Terminare"
 
+msgctxt "#31018"
+msgid "Startup"
+msgstr "Avvio"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Aggiunti di recente"

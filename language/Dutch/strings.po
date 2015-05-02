@@ -88,6 +88,10 @@ msgctxt "#31017"
 msgid "Writer Info"
 msgstr "Schrijverinformatie"
 
+msgctxt "#31018"
+msgid "Startup"
+msgstr "Opstarten"
+
 msgctxt "#31020"
 msgid "Recently Added"
 msgstr "Onlangs toegevoegd"
@@ -215,6 +219,14 @@ msgstr "Achtergrond"
 msgctxt "#31060"
 msgid "Widgets"
 msgstr "Widgets"
+
+msgctxt "#31067"
+msgid "Custom Image"
+msgstr "Aangepaste afbeelding"
+
+msgctxt "#31068"
+msgid "Custom Video"
+msgstr "Aangepaste video"
 
 msgctxt "#31090"
 msgid "Panel"
