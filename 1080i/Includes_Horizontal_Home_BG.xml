@@ -173,6 +173,7 @@
                     <width>1683</width>
                     <height>940</height>
                     <texture background="true" diffuse="common/bg_panel_home_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
+                    <fadetime>0</fadetime>
                 </control>
                 <control type="image">
                     <posx>-27</posx>
@@ -213,6 +214,7 @@
                     <width>1683</width>
                     <height>940</height>
                     <texture background="true" diffuse="common/bg_panel_home_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
+                    <fadetime>0</fadetime>
                 </control>
                 <control type="image">
                     <posx>-27</posx>
