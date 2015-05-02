@@ -270,20 +270,20 @@
                             <label2>$LOCALIZE[106]</label2>
                             <onclick>Skin.ToggleSetting(ManualScroll)</onclick>
                         </item>
-                        <item id="17">
-                            <visible>!Skin.HasSetting(BlackGlassMode)</visible>
-                            <visible>Skin.HasSetting(WideLists)</visible>
-                            <label>$LOCALIZE[31030]</label>
-                            <label2>$LOCALIZE[107]</label2>
-                            <onclick>Skin.ToggleSetting(WideLists)</onclick>
-                        </item>
-                        <item id="17">
-                            <visible>!Skin.HasSetting(BlackGlassMode)</visible>
-                            <visible>!Skin.HasSetting(WideLists)</visible>
-                            <label>$LOCALIZE[31030]</label>
-                            <label2>$LOCALIZE[106]</label2>
-                            <onclick>Skin.ToggleSetting(WideLists)</onclick>
-                        </item>
+                        <!--<item id="17">-->
+                            <!--<visible>!Skin.HasSetting(BlackGlassMode)</visible>-->
+                            <!--<visible>Skin.HasSetting(WideLists)</visible>-->
+                            <!--<label>$LOCALIZE[31030]</label>-->
+                            <!--<label2>$LOCALIZE[107]</label2>-->
+                            <!--<onclick>Skin.ToggleSetting(WideLists)</onclick>-->
+                        <!--</item>-->
+                        <!--<item id="17">-->
+                            <!--<visible>!Skin.HasSetting(BlackGlassMode)</visible>-->
+                            <!--<visible>!Skin.HasSetting(WideLists)</visible>-->
+                            <!--<label>$LOCALIZE[31030]</label>-->
+                            <!--<label2>$LOCALIZE[106]</label2>-->
+                            <!--<onclick>Skin.ToggleSetting(WideLists)</onclick>-->
+                        <!--</item>-->
                         <item id="27">
                             <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                             <visible>Skin.HasSetting(FixedShortListUnknown)</visible>
