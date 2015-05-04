@@ -437,7 +437,7 @@
                 </control>
                 <control type="rss">
                     <posx>0</posx>
-                    <posy>1041</posy>
+                    <posy>1045</posy>
                     <width>1920</width>
                     <height>40</height>
                     <font>rss</font>
