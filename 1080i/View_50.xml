@@ -36,23 +36,25 @@
         </control>
     </include>
     <include name="ConditionLargeList">
-        <visible>control.hasfocus(60)|control.isvisible(45438)</visible>
+        <visible>control.hasfocus(60)|
+            [!Skin.HasSetting(FixedShortListUnknown)+
+            ![
+            !IsEmpty(ListItem.Property(Addon.Description))|
+            !IsEmpty(ListItem.Property(Artist_Description))|
+            !IsEmpty(ListItem.Property(Album_Description))|
+            !IsEmpty(ListItem.Plot)
+            ]]</visible>
     </include>
     <include name="ConditionShortList">
-        <visible>![control.hasfocus(60)|control.isvisible(45438)]</visible>
-    </include>
-    <include name="DummiesForListLength">
-        <control type="label" id="45438">
-            <visible>!Skin.HasSetting(FixedShortListUnknown)+
-                ![
-                !IsEmpty(ListItem.Property(Addon.Description))|
-                !IsEmpty(ListItem.Property(Artist_Description))|
-                !IsEmpty(ListItem.Property(Album_Description))|
-                !IsEmpty(ListItem.Plot)
-                ]</visible>
-            <posx>5000</posx>
-            <label>-</label>
-        </control>
+        <visible>![control.hasfocus(60)|
+            [!Skin.HasSetting(FixedShortListUnknown)+
+            ![
+            !IsEmpty(ListItem.Property(Addon.Description))|
+            !IsEmpty(ListItem.Property(Artist_Description))|
+            !IsEmpty(ListItem.Property(Album_Description))|
+            !IsEmpty(ListItem.Plot)
+            ]]
+            ]</visible>
     </include>
     <include name="Info_50_List">
         <control type="group">
@@ -476,7 +478,6 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
-            <include>DummiesForListLength</include>
             <control type="group">
                 <!-- CLEAR ART / LOGO -->
                 <control type="image">
@@ -548,7 +549,6 @@
     </include>
     <include name="View_50_ExtendedInfo">
         <control type="group">
-            <include>DummiesForListLength</include>
             <control type="group">
                 <!-- CLEAR ART / LOGO-->
                 <control type="image">
@@ -631,7 +631,6 @@
         </control>
     </include>
     <include name="View_50_Custom_Addons">
-        <include>DummiesForListLength</include>
         <control type="group">
             <include>SlideViewUnknown</include>
             <include>SlideView</include>
@@ -739,7 +738,6 @@
         </control>
     </include>
     <include name="View_50_VideoExtras">
-        <include>DummiesForListLength</include>
         <control type="group">
             <include>SlideViewUnknown</include>
             <include>SlideView</include>
