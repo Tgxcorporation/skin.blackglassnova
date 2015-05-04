@@ -97,9 +97,6 @@
         !IsEmpty(ListItem.Plot)
         ]">Conditional</animation>
     </include>
-    <include name="SlideViewLabelWidth">
-        <width>1385</width>
-    </include>
     <include name="Animation_ViewsCDart">
         <animation effect="rotate" end="-360" center="auto" time="5000" loop="true" reversible="false" condition="[[Player.HasAudio|Player.HasVideo] + !Player.Paused]">Conditional</animation>
         <animation effect="rotate" start="0" end="-360" center="auto" time="40000" loop="true" reversible="false" condition="!Player.HasVideo">Conditional</animation>
