@@ -400,16 +400,6 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
-            <control type="label" id="45438">
-                <visible>!Skin.HasSetting(FixedShortListUnknown)+
-                    ![
-                    !IsEmpty(Container(50).ListItem.Plot)|
-                    !IsEmpty(Container(50).ListItem.Genre)|
-                    !IsEmpty(Container(50).ListItem.StartTime)
-                    ]</visible>
-                <posx>5000</posx>
-                <label>-</label>
-            </control>
             <control type="group">
                 <posy>-215</posy>
                 <visible>!IsEmpty(Container(50).ListItem.Plot)</visible>
@@ -593,16 +583,6 @@
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
             <include>Icon_Fade</include>
-            <control type="label" id="45438">
-                <visible>!Skin.HasSetting(FixedShortListUnknown)+
-                    ![
-                    !IsEmpty(Container(52).ListItem.Plot)|
-                    !IsEmpty(Container(52).ListItem.Genre)|
-                    !IsEmpty(Container(52).ListItem.StartTime)
-                    ]</visible>
-                <posx>5000</posx>
-                <label>-</label>
-            </control>
             <control type="group">
                 <visible>!IsEmpty(Container(52).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
@@ -785,16 +765,6 @@
         <control type="group">
             <visible>Control.IsVisible(54)</visible>
             <include>Icon_Fade</include>
-            <control type="label" id="45438">
-                <visible>!Skin.HasSetting(FixedShortListUnknown)+
-                    ![
-                    !IsEmpty(Container(54).ListItem.Plot)|
-                    !IsEmpty(Container(54).ListItem.Genre)|
-                    !IsEmpty(Container(54).ListItem.StartTime)
-                    ]</visible>
-                <posx>5000</posx>
-                <label>-</label>
-            </control>
             <control type="group">
                 <visible>!IsEmpty(Container(54).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
@@ -1136,16 +1106,6 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
-            <control type="label" id="45438">
-                <visible>!Skin.HasSetting(FixedShortListUnknown)+
-                    ![
-                    !IsEmpty(Container(50).ListItem.Plot)|
-                    !IsEmpty(Container(50).ListItem.ChannelName)|
-                    !IsEmpty(Container(50).ListItem.Duration)
-                    ]</visible>
-                <posx>5000</posx>
-                <label>-</label>
-            </control>
             <control type="group">
                 <visible>!IsEmpty(Container(50).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
@@ -1341,16 +1301,6 @@
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
-                <control type="label" id="45438">
-                    <visible>!Skin.HasSetting(FixedShortListUnknown)+
-                        ![
-                        !IsEmpty(Container(52).ListItem.Plot)|
-                        !IsEmpty(Container(52).ListItem.ChannelName)|
-                        !IsEmpty(Container(52).ListItem.Duration)
-                        ]</visible>
-                    <posx>5000</posx>
-                    <label>-</label>
-                </control>
                 <control type="image">
                     <posx>-795</posx>
                     <posy>131</posy>
@@ -1536,16 +1486,6 @@
             <visible>Control.IsVisible(54)</visible>
             <include>Icon_Fade</include>
             <include>Icon_Fade</include>
-            <control type="label" id="45438">
-                <visible>!Skin.HasSetting(FixedShortListUnknown)+
-                    ![
-                    !IsEmpty(Container(54).ListItem.Plot)|
-                    !IsEmpty(Container(54).ListItem.ChannelName)|
-                    !IsEmpty(Container(54).ListItem.Duration)
-                    ]</visible>
-                <posx>5000</posx>
-                <label>-</label>
-            </control>
             <control type="group">
                 <visible>!IsEmpty(Container(54).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
@@ -2986,16 +2926,6 @@
         <control type="group">
             <visible>Control.IsVisible(11)</visible>
             <include>Icon_Fade</include>
-            <control type="label" id="45438">
-                <visible>!Skin.HasSetting(FixedShortListUnknown)+
-                    ![
-                    !IsEmpty(Container(11).ListItem.Plot)|
-                    !IsEmpty(Container(11).ListItem.Genre)|
-                    !IsEmpty(Container(11).ListItem.StartTime)
-                    ]</visible>
-                <posx>5000</posx>
-                <label>-</label>
-            </control>
             <control type="group">
                 <posy>-215</posy>
                 <visible>!IsEmpty(Container(11).ListItem.Plot)</visible>
@@ -3408,16 +3338,6 @@
         <control type="group">
             <visible>Control.IsVisible(12)</visible>
             <include>Icon_Fade</include>
-            <control type="label" id="45438">
-                <visible>!Skin.HasSetting(FixedShortListUnknown)+
-                    ![
-                    !IsEmpty(Container(12).ListItem.Plot)|
-                    !IsEmpty(Container(12).ListItem.Genre)|
-                    !IsEmpty(Container(12).ListItem.StartTime)
-                    ]</visible>
-                <posx>5000</posx>
-                <label>-</label>
-            </control>
             <control type="group">
                 <posy>-215</posy>
                 <visible>!IsEmpty(Container(12).ListItem.Plot)</visible>
@@ -3830,16 +3750,6 @@
         <control type="group">
             <visible>Control.IsVisible(13)</visible>
             <include>Icon_Fade</include>
-            <control type="label" id="45438">
-                <visible>!Skin.HasSetting(FixedShortListUnknown)+
-                    ![
-                    !IsEmpty(Container(13).ListItem.Plot)|
-                    !IsEmpty(Container(13).ListItem.Genre)|
-                    !IsEmpty(Container(13).ListItem.StartTime)
-                    ]</visible>
-                <posx>5000</posx>
-                <label>-</label>
-            </control>
             <control type="group">
                 <posy>-215</posy>
                 <visible>!IsEmpty(Container(13).ListItem.Plot)</visible>
