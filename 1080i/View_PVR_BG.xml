@@ -124,9 +124,9 @@
                     </control>
                     <control type="textbox">
                         <posx>TextMargin</posx>
-                        <posy>645</posy>
+                        <posy>650</posy>
                         <width>635</width>
-                        <height>250</height>
+                        <height>240</height>
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$INFO[Container(50).ListItem.Plot]</label>
@@ -135,8 +135,8 @@
                     <control type="scrollbar" id="6061">
                         <visible>Skin.HasSetting(ManualScroll)</visible>
                         <posx>680</posx>
-                        <posy>645</posy>
-                        <height>250</height>
+                        <posy>650</posy>
+                        <height>240</height>
                         <include>VerticalScroller</include>
                         <onleft>9000</onleft>
                         <onright>50</onright>
@@ -394,9 +394,9 @@
                     </control>
                     <control type="textbox">
                         <posx>TextMargin</posx>
-                        <posy>645</posy>
+                        <posy>650</posy>
                         <width>635</width>
-                        <height>250</height>
+                        <height>240</height>
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$INFO[Container(50).ListItem.Plot]</label>
@@ -405,8 +405,8 @@
                     <control type="scrollbar" id="6063">
                         <visible>Skin.HasSetting(ManualScroll)</visible>
                         <posx>680</posx>
-                        <posy>635</posy>
-                        <height>250</height>
+                        <posy>650</posy>
+                        <height>240</height>
                         <include>VerticalScroller</include>
                         <onleft>9000</onleft>
                         <onright>50</onright>
@@ -1343,9 +1343,9 @@
                 </control>
                 <control type="textbox">
                     <posx>TextMargin</posx>
-                    <posy>930</posy>
+                    <posy>935</posy>
                     <width>1320</width>
-                    <height>130</height>
+                    <height>120</height>
                     <textcolor>MainColor</textcolor>
                     <label>$INFO[ListItem.Plot]</label>
                     <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
@@ -1405,9 +1405,9 @@
                         </control>
                         <control type="textbox">
                             <posx>TextMargin</posx>
-                            <posy>645</posy>
+                            <posy>650</posy>
                             <width>635</width>
-                            <height>250</height>
+                            <height>240</height>
                             <font>InfoPlotFont</font>
                             <textcolor>MainColor</textcolor>
                             <label>$INFO[Container(11).ListItem.Plot]</label>
@@ -1416,8 +1416,8 @@
                         <control type="scrollbar" id="6066">
                             <visible>Skin.HasSetting(ManualScroll)</visible>
                             <posx>680</posx>
-                            <posy>645</posy>
-                            <height>250</height>
+                            <posy>650</posy>
+                            <height>240</height>
                             <include>VerticalScroller</include>
                             <onleft>9000</onleft>
                             <onright>11</onright>
@@ -1679,9 +1679,9 @@
                         </control>
                         <control type="textbox">
                             <posx>TextMargin</posx>
-                            <posy>645</posy>
+                            <posy>650</posy>
                             <width>635</width>
-                            <height>250</height>
+                            <height>240</height>
                             <font>InfoPlotFont</font>
                             <textcolor>MainColor</textcolor>
                             <label>$INFO[Container(12).ListItem.Plot]</label>
@@ -1690,8 +1690,8 @@
                         <control type="scrollbar" id="6066">
                             <visible>Skin.HasSetting(ManualScroll)</visible>
                             <posx>680</posx>
-                            <posy>645</posy>
-                            <height>250</height>
+                            <posy>650</posy>
+                            <height>240</height>
                             <include>VerticalScroller</include>
                             <onleft>9000</onleft>
                             <onright>12</onright>
@@ -1953,9 +1953,9 @@
                         </control>
                         <control type="textbox">
                             <posx>TextMargin</posx>
-                            <posy>645</posy>
+                            <posy>650</posy>
                             <width>635</width>
-                            <height>250</height>
+                            <height>240</height>
                             <font>InfoPlotFont</font>
                             <textcolor>MainColor</textcolor>
                             <label>$INFO[Container(13).ListItem.Plot]</label>
@@ -1964,8 +1964,8 @@
                         <control type="scrollbar" id="6065">
                             <visible>Skin.HasSetting(ManualScroll)</visible>
                             <posx>680</posx>
-                            <posy>645</posy>
-                            <height>250</height>
+                            <posy>650</posy>
+                            <height>240</height>
                             <include>VerticalScroller</include>
                             <onleft>9000</onleft>
                             <onright>13</onright>

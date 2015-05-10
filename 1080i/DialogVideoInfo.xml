@@ -739,9 +739,9 @@
                             <visible>!IsEmpty(ListItem.AudioChannels)</visible>
                             <control type="textbox">
                                 <posx>TextMargin</posx>
-                                <posy>385</posy>
+                                <posy>390</posy>
                                 <width>1041</width>
-                                <height>328</height>
+                                <height>320</height>
                                 <align>justify</align>
                                 <font>InfoDetailsFont</font>
                                 <label>$VAR[Plots]</label>
@@ -750,8 +750,8 @@
                             <control type="scrollbar" id="6060">
                                 <visible>Skin.HasSetting(ManualScroll)</visible>
                                 <posx>1100</posx>
-                                <posy>385</posy>
-                                <height>328</height>
+                                <posy>390</posy>
+                                <height>320</height>
                                 <include>VerticalScroller</include>
                                 <onleft>9009</onleft>
                                 <onright>9001</onright>
@@ -761,9 +761,9 @@
                             <visible>IsEmpty(ListItem.AudioChannels)</visible>
                             <control type="textbox">
                                 <posx>TextMargin</posx>
-                                <posy>385</posy>
+                                <posy>390</posy>
                                 <width>1041</width>
-                                <height>448</height>
+                                <height>440</height>
                                 <align>justify</align>
                                 <font>InfoDetailsFont</font>
                                 <label>$VAR[Plots]</label>
@@ -772,8 +772,8 @@
                             <control type="scrollbar" id="6060">
                                 <visible>Skin.HasSetting(ManualScroll)</visible>
                                 <posx>1100</posx>
-                                <posy>385</posy>
-                                <height>448</height>
+                                <posy>390</posy>
+                                <height>440</height>
                                 <include>VerticalScroller</include>
                                 <onleft>9009</onleft>
                                 <onright>9001</onright>

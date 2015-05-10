@@ -162,9 +162,9 @@
                     </control>
                     <control type="textbox" id="400">
                         <posx>TextMargin</posx>
-                        <posy>458</posy>
+                        <posy>465</posy>
                         <width>1041</width>
-                        <height>370</height>
+                        <height>360</height>
                         <align>justify</align>
                         <font>InfoDetailsFont</font>
                         <label>$INFO[Window.Property(actor.Biography)]</label>
@@ -174,8 +174,8 @@
                         <visible>Skin.HasSetting(ManualScroll)</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <posx>1100</posx>
-                        <posy>458</posy>
-                        <height>370</height>
+                        <posy>465</posy>
+                        <height>360</height>
                         <include>VerticalScroller</include>
                         <onleft>49</onleft>
                         <onright>9001</onright>

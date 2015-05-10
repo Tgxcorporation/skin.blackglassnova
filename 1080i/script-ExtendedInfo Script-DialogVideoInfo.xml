@@ -671,9 +671,9 @@
                         <visible>!IsEmpty(Window.Property(movie.AudioChannels))</visible>
                         <control type="textbox">
                             <posx>TextMargin</posx>
-                            <posy>385</posy>
+                            <posy>390</posy>
                             <width>1041</width>
-                            <height>328</height>
+                            <height>320</height>
                             <align>justify</align>
                             <font>InfoDetailsFont</font>
                             <label fallback="416">$INFO[Window.Property(movie.plot)]</label>
@@ -683,8 +683,8 @@
                             <visible>Skin.HasSetting(ManualScroll)</visible>
                             <include>VisibleFadeEffectDelay</include>
                             <posx>1100</posx>
-                            <posy>385</posy>
-                            <height>328</height>
+                            <posy>390</posy>
+                            <height>320</height>
                             <include>VerticalScroller</include>
                             <onleft>9009</onleft>
                             <onright>9001</onright>
@@ -694,9 +694,9 @@
                         <visible>IsEmpty(Window.Property(movie.AudioChannels))</visible>
                         <control type="textbox">
                             <posx>TextMargin</posx>
-                            <posy>385</posy>
+                            <posy>390</posy>
                             <width>1041</width>
-                            <height>448</height>
+                            <height>440</height>
                             <align>justify</align>
                             <font>InfoDetailsFont</font>
                             <label fallback="416">$INFO[Window.Property(movie.plot)]</label>
@@ -706,8 +706,8 @@
                             <visible>Skin.HasSetting(ManualScroll)</visible>
                             <include>VisibleFadeEffectDelay</include>
                             <posx>1100</posx>
-                            <posy>385</posy>
-                            <height>448</height>
+                            <posy>390</posy>
+                            <height>440</height>
                             <include>VerticalScroller</include>
                             <onleft>9009</onleft>
                             <onright>9001</onright>
@@ -1742,8 +1742,8 @@
                     <control type="textbox">
                         <align>left</align>
                         <posx>1187</posx>
-                        <posy>375</posy>
-                        <height>410</height>
+                        <posy>380</posy>
+                        <height>400</height>
                         <width>320</width>
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
@@ -1792,8 +1792,8 @@
                             </control>
                             <control type="textbox">
                                 <posx>TextMargin</posx>
-                                <posy>80</posy>
-                                <height>250</height>
+                                <posy>85</posy>
+                                <height>240</height>
                                 <width>1041</width>
                                 <font>InfoPlotFont</font>
                                 <textcolor>ListFocusColor</textcolor>
