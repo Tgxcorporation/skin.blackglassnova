@@ -83,9 +83,9 @@
                 <control type="textbox">
                     <visible>IsEmpty(ListItem.AudioChannels)</visible>
                     <posx>TextMargin</posx>
-                    <posy>157</posy>
+                    <posy>162</posy>
                     <width>1126</width>
-                    <height>250</height>
+                    <height>240</height>
                     <font>InfoPlotFont</font>
                     <textcolor>MainColor</textcolor>
                     <label>$VAR[Plots]</label>
@@ -94,8 +94,8 @@
                 <control type="scrollbar" id="6066">
                     <visible>IsEmpty(ListItem.AudioChannels)+Skin.HasSetting(ManualScroll)</visible>
                     <posx>1184</posx>
-                    <posy>157</posy>
-                    <height>250</height>
+                    <posy>162</posy>
+                    <height>240</height>
                     <include>VerticalScroller</include>
                     <onleft>9000</onleft>
                     <onright>56</onright>
@@ -104,9 +104,9 @@
                     <visible>!IsEmpty(ListItem.AudioChannels)</visible>
                     <control type="textbox">
                         <posx>TextMargin</posx>
-                        <posy>157</posy>
+                        <posy>162</posy>
                         <width>1126</width>
-                        <height>165</height>
+                        <height>160</height>
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
@@ -115,8 +115,8 @@
                     <control type="scrollbar" id="6066">
                         <visible>Skin.HasSetting(ManualScroll)</visible>
                         <posx>1184</posx>
-                        <posy>150</posy>
-                        <height>170</height>
+                        <posy>162</posy>
+                        <height>160</height>
                         <include>VerticalScroller</include>
                         <onleft>9000</onleft>
                         <onright>56</onright>

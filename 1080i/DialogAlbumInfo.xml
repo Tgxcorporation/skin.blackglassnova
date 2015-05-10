@@ -526,9 +526,9 @@
                     <control type="textbox" id="4">
                         <description>Description</description>
                         <posx>TextMargin</posx>
-                        <posy>390</posy>
+                        <posy>395</posy>
                         <width>1041</width>
-                        <height>410</height>
+                        <height>400</height>
                         <font>InfoPlotFont</font>
                         <align>justify</align>
                         <textcolor>MainColor</textcolor>
@@ -537,8 +537,8 @@
                     <control type="scrollbar" id="6060">
                         <visible>Skin.HasSetting(ManualScroll)</visible>
                         <posx>1100</posx>
-                        <posy>390</posy>
-                        <height>410</height>
+                        <posy>395</posy>
+                        <height>400</height>
                         <include>VerticalScroller</include>
                         <onleft>49</onleft>
                         <onright>9000</onright>

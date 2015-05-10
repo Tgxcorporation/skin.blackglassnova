@@ -749,9 +749,9 @@
                     <visible>Container(9006).HasFocus(93)+Container(9000).HasFocus(6)</visible>
                     <include>VisibleFadeEffect</include>
                     <posx>213</posx>
-                    <posy>870</posy>
+                    <posy>865</posy>
                     <width>1054</width>
-                    <height>470</height>
+                    <height>480</height>
                     <align>justify</align>
                     <font>InfoPlotFont</font>
                     <label>$LOCALIZE[31982]</label>

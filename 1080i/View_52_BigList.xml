@@ -167,9 +167,9 @@
                     <control type="textbox">
                         <visible>IsEmpty(ListItem.AudioChannels)</visible>
                         <posx>TextMargin</posx>
-                        <posy>305</posy>
+                        <posy>310</posy>
                         <width>631</width>
-                        <height>530</height>
+                        <height>520</height>
                         <font>InfoPlotFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$VAR[Plots]</label>
@@ -178,8 +178,8 @@
                     <control type="scrollbar" id="6062">
                         <visible>IsEmpty(ListItem.AudioChannels)+Skin.HasSetting(ManualScroll)</visible>
                         <posx>689</posx>
-                        <posy>305</posy>
-                        <height>530</height>
+                        <posy>310</posy>
+                        <height>520</height>
                         <include>VerticalScroller</include>
                         <onleft>9000</onleft>
                         <onright>52</onright>
@@ -188,9 +188,9 @@
                         <visible>!IsEmpty(ListItem.AudioChannels)</visible>
                         <control type="textbox">
                             <posx>TextMargin</posx>
-                            <posy>305</posy>
+                            <posy>310</posy>
                             <width>631</width>
-                            <height>450</height>
+                            <height>440</height>
                             <font>InfoPlotFont</font>
                             <textcolor>MainColor</textcolor>
                             <label>$VAR[Plots]</label>
@@ -199,8 +199,8 @@
                         <control type="scrollbar" id="6062">
                             <visible>Skin.HasSetting(ManualScroll)</visible>
                             <posx>689</posx>
-                            <posy>305</posy>
-                            <height>450</height>
+                            <posy>310</posy>
+                            <height>440</height>
                             <include>VerticalScroller</include>
                             <onleft>9000</onleft>
                             <onright>52</onright>
@@ -246,9 +246,9 @@
                     </control>
                     <control type="textbox">
                         <posx>TextMargin</posx>
-                        <posy>84</posy>
+                        <posy>95</posy>
                         <width>630</width>
-                        <height>770</height>
+                        <height>760</height>
                         <font>InfoPlotFont</font>
                         <textcolor>AlternateBrightColor</textcolor>
                         <label>$VAR[Plots]</label>
@@ -257,8 +257,8 @@
                     <control type="scrollbar" id="6062">
                         <visible>Skin.HasSetting(ManualScroll)</visible>
                         <posx>689</posx>
-                        <posy>84</posy>
-                        <height>770</height>
+                        <posy>95</posy>
+                        <height>760</height>
                         <include>VerticalScroller</include>
                         <onleft>9000</onleft>
                         <onright>52</onright>
