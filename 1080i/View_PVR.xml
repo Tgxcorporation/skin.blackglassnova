@@ -999,7 +999,7 @@
             </control>
             <control type="image">
                 <visible>IsEmpty(Window.Property(IsRadio))</visible>
-                <posx>23</posx>
+                <posx>34</posx>
                 <posy>0</posy>
                 <height>71</height>
                 <width>73</width>
@@ -1011,7 +1011,7 @@
             </control>
             <control type="image">
                 <visible>!IsEmpty(Window.Property(IsRadio))</visible>
-                <posx>23</posx>
+                <posx>34</posx>
                 <posy>0</posy>
                 <height>71</height>
                 <width>73</width>
@@ -1021,8 +1021,12 @@
                 <colordiffuse>NoFocusedColor</colordiffuse>
                 <texture background="true" fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
             </control>
-            <include>RecOverlayNoFocus</include>
-            <include>ListWatchedOverlayNoFocus</include>
+            <!--<include>RecOverlayNoFocus</include>-->
+            <control type="image">
+                <height>71</height>
+                <colordiffuse>aaffffff</colordiffuse>
+                <include>ListWatchedOverlay</include>
+            </control>
         </itemlayout>
         <focusedlayout height="73" width="1440">
             <control type="image">
@@ -1078,7 +1082,7 @@
             </control>
             <control type="image">
                 <visible>IsEmpty(Window.Property(IsRadio))</visible>
-                <posx>23</posx>
+                <posx>34</posx>
                 <posy>0</posy>
                 <height>71</height>
                 <width>73</width>
@@ -1089,7 +1093,7 @@
             </control>
             <control type="image">
                 <visible>!IsEmpty(Window.Property(IsRadio))</visible>
-                <posx>23</posx>
+                <posx>34</posx>
                 <posy>0</posy>
                 <height>71</height>
                 <width>73</width>
@@ -1098,8 +1102,11 @@
                 <aspectratio>scale</aspectratio>
                 <texture background="true" fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
             </control>
-            <include>RecOverlayFocus</include>
-            <include>ListWatchedOverlayFocus</include>
+            <!--<include>RecOverlayFocus</include>-->
+            <control type="image">
+                <height>71</height>
+                <include>ListWatchedOverlay</include>
+            </control>
         </focusedlayout>
     </include>
     <include name="50_RecordingsView">

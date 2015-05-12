@@ -32,27 +32,38 @@
             ]
         </visible>
     </include>
+    <include name="ListWatchedOverlay">
+        <posx>1437r</posx>
+        <posy>0</posy>
+        <width>26</width>
+        <texture>$VAR[Overlay]</texture>
+        <aspectratio aligny="center">keep</aspectratio>
+        <fadetime>0</fadetime>
+    </include>
     <include name="ListWatchedOverlayFocus">
         <control type="image">
-            <posx>1454r</posx>
-            <posy>0</posy>
-            <width>33</width>
-            <height>72</height>
-            <texture diffuse="OverlayWatchedUnwatchedMask.png">$VAR[Overlay]</texture>
-            <aspectratio aligny="center">keep</aspectratio>
-            <fadetime>0</fadetime>
+            <include>ConditionDoubleLine</include>
+            <height>42</height>
+            <include>ListWatchedOverlay</include>
+        </control>
+        <control type="image">
+            <include>ConditionSingleLine</include>
+            <height>71</height>
+            <include>ListWatchedOverlay</include>
         </control>
     </include>
     <include name="ListWatchedOverlayNoFocus">
         <control type="image">
-            <posx>1454r</posx>
-            <posy>0</posy>
-            <width>33</width>
-            <height>72</height>
-            <texture diffuse="OverlayWatchedUnwatchedMask.png">$VAR[Overlay]</texture>
+            <include>ConditionDoubleLine</include>
+            <height>42</height>
             <colordiffuse>aaffffff</colordiffuse>
-            <aspectratio aligny="center">keep</aspectratio>
-            <fadetime>0</fadetime>
+            <include>ListWatchedOverlay</include>
+        </control>
+        <control type="image">
+            <include>ConditionSingleLine</include>
+            <height>71</height>
+            <colordiffuse>aaffffff</colordiffuse>
+            <include>ListWatchedOverlay</include>
         </control>
     </include>
     <include name="ConditionLargeList">
