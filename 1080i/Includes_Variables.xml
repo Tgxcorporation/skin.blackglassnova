@@ -111,7 +111,8 @@
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album) + !IsEmpty(ListItem.Year)">$INFO[ListItem.Artist]$INFO[ListItem.Year,  •  ]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album)">$INFO[ListItem.Artist]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]$INFO[ListItem.Season,  •  S, x ]$INFO[ListItem.Episode,E,  •  ]$INFO[ListItem.TVShowTitle]</value>
-        <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Version),$LOCALIZE[19114]: ,  •  ]$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]$INFO[ListItem.Property(Addon.Type),  •  $LOCALIZE[146] ]</value>
+        <value condition="Container.Content(Addons)+!Control.isVisible(5050)">$INFO[ListItem.Property(Addon.Version),$LOCALIZE[19114]: ,  •  ]$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]$INFO[ListItem.Property(Addon.Type),  •  $LOCALIZE[146] ]</value>
+        <value condition="Container.Content(Addons)+Control.isVisible(5050)">$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]$INFO[ListItem.Property(Addon.Type),  •  $LOCALIZE[146] ]</value>
         <value condition="Container.Content(songs) + !IsEmpty(ListItem.Album) + !IsEmpty(ListItem.Year)">$INFO[ListItem.Album]$INFO[ListItem.Year,  •  ]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="Container.Content(songs) + !IsEmpty(ListItem.Album)">$INFO[ListItem.Album]</value>
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_genre))">$INFO[ListItem.Property(artist_genre)]</value>
