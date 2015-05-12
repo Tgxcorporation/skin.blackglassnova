@@ -5,6 +5,7 @@
         <value condition="Player.ChapterCount">  •  $LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
     </variable>
     <variable name="Overlay">
+        <value condition="![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]">-</value>
         <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
         <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$INFO[ListItem.property(overlay)]</value>
         <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)">-</value>
@@ -116,6 +117,7 @@
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_genre))">$INFO[ListItem.Property(artist_genre)]</value>
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_style))">$INFO[ListItem.Property(artist_style)]</value>
         <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]$INFO[ListItem.Genre,  •  ]</value>
+        <value condition="Container.Content(Sets)">$INFO[ListItem.Year]$INFO[ListItem.Rating,  •  ]</value>
         <value condition="Container.Content(Movies)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]$INFO[ListItem.MPAA,  •  ]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]+!IsEmpty(ListItem.MPAA)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.MPAA]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]+IsEmpty(ListItem.MPAA)+!IsEmpty(ListItem.Year)">$INFO[ListItem.Year]$INFO[ListItem.Genre,  •  ]</value>
