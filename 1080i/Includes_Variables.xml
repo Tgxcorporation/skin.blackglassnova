@@ -133,7 +133,8 @@
         <value condition="Container.Content(Movies)">$INFO[ListItem.Genre]</value>
         <value condition="Container.Content(TVShows)">$INFO[ListItem.Genre]</value>
         <value condition="Container.Content(Seasons)">$INFO[ListItem.Genre]</value>
-        <value condition="Container.Content(Episodes)">$INFO[ListItem.Season,S,  •  ]$INFO[ListItem.Episode,E,  •  ]$INFO[ListItem.TVShowTitle]</value>
+        <value condition="Container.Content(Episodes)+!IsEmpty(ListItem.TVShowTitle)">$INFO[ListItem.Season,S,  •  ]$INFO[ListItem.Episode,E,  •  ]$INFO[ListItem.TVShowTitle]</value>
+        <value condition="Container.Content(Episodes)+IsEmpty(ListItem.TVShowTitle)+!IsEmpty(ListItem.Studio)">$INFO[ListItem.Studio]</value>
         <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Genre]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.PictureResolution]</value>
         <value>$LOCALIZE[416]</value>
