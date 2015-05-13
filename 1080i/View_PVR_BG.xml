@@ -1293,6 +1293,7 @@
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
             <control type="image">
+                <visible>IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>95</posx>
                 <posy>798</posy>
                 <width>318</width>
@@ -1301,12 +1302,22 @@
                 <texture background="true" fallback="defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorder</include>
             </control>
+            <control type="image">
+                <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                <posx>95</posx>
+                <posy>798</posy>
+                <width>318</width>
+                <height>254</height>
+                <aspectratio>keep</aspectratio>
+                <texture background="true" fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
+                <include>ThumbBorder</include>
+            </control>
             <control type="group">
                 <posx>465</posx>
                 <posy>0</posy>
                 <control type="label">
                     <posx>TextMargin</posx>
-                    <posy>782</posy>
+                    <posy>792</posy>
                     <width>1320</width>
                     <aligny>top</aligny>
                     <align>left</align>

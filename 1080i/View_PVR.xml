@@ -568,6 +568,7 @@
                 <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
+                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(50).NumItems,8)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -750,6 +751,7 @@
                 <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
+                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(52).NumItems,10)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -932,6 +934,7 @@
                 <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
+                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(54).NumItems,5)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -1288,6 +1291,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
+                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(50).NumItems,8)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -1477,6 +1481,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
+                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(52).NumItems,10)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -1667,6 +1672,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
+                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(54).NumItems,5)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -2874,7 +2880,7 @@
                 <posy>0</posy>
                 <control type="label">
                     <posx>TextMargin</posx>
-                    <posy>782</posy>
+                    <posy>792</posy>
                     <width>1320</width>
                     <aligny>top</aligny>
                     <align>left</align>
@@ -3329,6 +3335,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
+                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(11).NumItems,8)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -3741,6 +3748,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
+                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(12).NumItems,8)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -4069,6 +4077,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
+                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(13).NumItems,8)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
