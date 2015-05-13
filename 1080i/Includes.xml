@@ -882,7 +882,7 @@
         <texturesliderbarfocus border="0,31,0,31">buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
         <textureslidernib>-</textureslidernib>
         <textureslidernibfocus>-</textureslidernibfocus>
-        <showonepage>true</showonepage>
+        <showonepage>false</showonepage>
         <orientation>vertical</orientation>
         <width>42</width>
     </include>
