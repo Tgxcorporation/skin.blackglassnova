@@ -927,7 +927,7 @@
         <scrolltime>200</scrolltime>
         <orientation>horizontal</orientation>
         <onleft>9000</onleft>
-        <itemlayout height="73" width="568">
+        <itemlayout height="71" width="568">
             <control type="label">
                 <posx>25</posx>
                 <height>42</height>
@@ -960,7 +960,7 @@
                 <scroll>false</scroll>
             </control>
         </itemlayout>
-        <focusedlayout height="73" width="1440">
+        <focusedlayout height="71" width="1440">
             <control type="image">
                 <posx>0</posx>
                 <posy>0</posy>
