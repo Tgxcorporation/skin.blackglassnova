@@ -937,6 +937,16 @@
                             <onleft>50</onleft>
                             <onright>9014</onright>
                         </control>
+                        <control type="label">
+                            <posx>1086</posx>
+                            <posy>803</posy>
+                            <height>44</height>
+                            <width>876</width>
+                            <align>right</align>
+                            <font>LeftMenuSubButtonFont</font>
+                            <textcolor>SublistNoFocusColor</textcolor>
+                            <label>$INFO[Container(50).NumItems,,  $LOCALIZE[31025]]</label>
+                        </control>
                     </control>
                     <!-- FANART -->
                     <control type="group" id="90131">
