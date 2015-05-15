@@ -843,6 +843,16 @@
                         <onleft>1000</onleft>
                         <onright>9001</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(1000).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
                 <!--CREW-->
                 <control type="group" id="7500">
@@ -952,6 +962,16 @@
                         <include>VerticalScroller</include>
                         <onleft>750</onleft>
                         <onright>9001</onright>
+                    </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(750).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--RECOMMENDED TMDB-->
@@ -1079,6 +1099,16 @@
                         <onleft>150</onleft>
                         <onright>9001</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(150).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
                 <!--SET MOVIES-->
                 <control type="group" id="2500">
@@ -1205,6 +1235,16 @@
                         <onleft>250</onleft>
                         <onright>9001</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(250).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
                 <!--OFFICIAL VIDEOS-->
                 <control type="group" id="11500">
@@ -1315,6 +1355,16 @@
                         <onleft>1150</onleft>
                         <onright>9001</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(1150).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
                 <!--YOUTUBE-->
                 <control type="group" id="3500">
@@ -1382,6 +1432,16 @@
                         <include>VerticalScroller</include>
                         <onleft>350</onleft>
                         <onright>9001</onright>
+                    </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(350).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--PRODUCTION COMPANIES-->
@@ -1466,6 +1526,16 @@
                         <onleft>550</onleft>
                         <onright>9001</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(550).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
                 <!--NETWORKS STUDIOS-->
                 <control type="group" id="14500">
@@ -1548,6 +1618,16 @@
                         <include>VerticalScroller</include>
                         <onleft>1450</onleft>
                         <onright>9001</onright>
+                    </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(1450).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--RELEASES-->
@@ -1648,6 +1728,16 @@
                         <onleft>650</onleft>
                         <onright>9001</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(650).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
                 <!--GENRES-->
                 <control type="group" id="8500">
@@ -1731,6 +1821,16 @@
                         <onleft>850</onleft>
                         <onright>9001</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(850).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
                 <!--REVIEWS-->
                 <control type="group" id="10500">
@@ -1808,6 +1908,16 @@
                         <include>VerticalScroller</include>
                         <onleft>1050</onleft>
                         <onright>9001</onright>
+                    </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(1050).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--KEYWORDS-->
@@ -1891,6 +2001,16 @@
                         <include>VerticalScroller</include>
                         <onleft>950</onleft>
                         <onright>9001</onright>
+                    </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(950).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--ARTWORK-->
@@ -2146,6 +2266,16 @@
                         <onleft>450</onleft>
                         <onright>9001</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(450).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
                 <!--EPISODE INDEX-->
                 <control type="group" id="20000">
@@ -2255,6 +2385,16 @@
                         <include>VerticalScroller</include>
                         <onleft>2000</onleft>
                         <onright>9001</onright>
+                    </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>803</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(2000).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <control type="grouplist" id="9001">

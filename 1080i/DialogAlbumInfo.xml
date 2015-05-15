@@ -81,7 +81,7 @@
                 <onleft>49</onleft>
                 <onright>50</onright>
                 <onup>50</onup>
-                <ondown>49</ondown>
+                <ondown>9000</ondown>
                 <scrolltime>200</scrolltime>
                 <pagecontrol>9600</pagecontrol>
                 <control type="button" id="500">
@@ -683,6 +683,16 @@
                         <onleft>50</onleft>
                         <onright>9000</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>800</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(50).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
             </control>
             <!--DISCOGRAPHY EXTENDEDINFO-->
@@ -788,6 +798,16 @@
                         <onleft>5041</onleft>
                         <onright>9000</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>800</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(5041).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
             </control>
             <!--CONCERTS EXTENDEDINFO-->
@@ -878,6 +898,16 @@
                         <include>VerticalScroller</include>
                         <onleft>5051</onleft>
                         <onright>9000</onright>
+                    </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>800</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(5051).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
             </control>
@@ -970,6 +1000,16 @@
                         <onleft>5071</onleft>
                         <onright>9000</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>800</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(5071).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
             </control>
             <!--YOUTUBE EXTENDEDINFO-->
@@ -1042,6 +1082,16 @@
                         <onleft>5081</onleft>
                         <onright>9000</onright>
                     </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>800</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(5081).NumItems,,  $LOCALIZE[31025]]</label>
+                    </control>
                 </control>
             </control>
             <!--MOST LOVED TRACKS EXTENDEDINFO-->
@@ -1113,6 +1163,16 @@
                         <include>VerticalScroller</include>
                         <onleft>5091</onleft>
                         <onright>9000</onright>
+                    </control>
+                    <control type="label">
+                        <posx>1086</posx>
+                        <posy>800</posy>
+                        <height>44</height>
+                        <width>876</width>
+                        <align>right</align>
+                        <font>LeftMenuSubButtonFont</font>
+                        <textcolor>SublistNoFocusColor</textcolor>
+                        <label>$INFO[Container(5091).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
             </control>
