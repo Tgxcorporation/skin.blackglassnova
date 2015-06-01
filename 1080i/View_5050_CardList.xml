@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <include name="ScrollOffsetLabel_5050">
+        <control type="group">
+            <animation effect="slide" time="0" start="0,0" end="0,180" condition="![Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(episodes) | Container.Content(seasons)|Container.Content(sets)]">conditional</animation>
+            <left>910</left>
+            <top>170</top>
+            <include>ScrollOffsetLabel</include>
+        </control>
+    </include>
     <include name="CardList_Layout">
         <itemlayout condition="![Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(episodes) | Container.Content(seasons)|Container.Content(sets)]" height="887" width="1683">
             <control type="group">
@@ -690,6 +698,7 @@
         <control type="group">
             <visible>Control.IsVisible(5050)</visible>
             <include>Icon_Fade</include>
+            <include>ScrollOffsetLabel_5050</include>
             <control type="group">
                 <control type="image">
                     <posx>-150</posx>

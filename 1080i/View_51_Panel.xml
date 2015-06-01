@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <include name="ScrollOffsetLabel_51">
+        <control type="group">
+            <left>707</left>
+            <top>280</top>
+            <include>ScrollOffsetLabel</include>
+        </control>
+    </include>
     <include name="Info_51_Panel">
         <!-- LIST 51 Panel -->
         <control type="group">
@@ -226,6 +233,7 @@
                     <texture background="true">$VAR[DefaultClearArtLogo]</texture>
                 </control>
             </control>
+            <include>ScrollOffsetLabel_51</include>
             <control type="image">
                 <posx>657</posx>
                 <posy>350</posy>

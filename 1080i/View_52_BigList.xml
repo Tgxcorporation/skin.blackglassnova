@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <include name="ScrollOffsetLabel_52">
+        <control type="group">
+            <left>1275</left>
+            <top>61</top>
+            <include>ScrollOffsetLabel</include>
+        </control>
+    </include>
     <include name="Info_52_BigList">
         <control type="group">
             <include>SlideView</include>
@@ -286,6 +293,7 @@
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>
+                <include>ScrollOffsetLabel_52</include>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>131</posy>

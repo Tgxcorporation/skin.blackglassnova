@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <include name="ScrollOffsetLabel_55_BG">
+        <control type="group">
+            <left>755</left>
+            <top>55</top>
+            <include>ScrollOffsetLabel</include>
+        </control>
+    </include>
     <include name="Info_55_BigPanel_BG">
         <control type="group">
             <visible>Control.IsVisible(55)+
@@ -152,6 +159,7 @@
     <include name="View_55_BigPanel_BG">
         <control type="group">
             <visible>Control.IsVisible(55)</visible>
+            <include>ScrollOffsetLabel_55_BG</include>
             <control type="group">
                 <!-- CLEAR ART / LOGO-->
                 <control type="image">
@@ -192,44 +200,44 @@
                 <ondown>55</ondown>
                 <preloaditems>4</preloaditems>
                 <pagecontrol>60</pagecontrol>
-                <itemlayout condition="[Container.Content(TVShows)|[Container.Content(movies) + !skin.hassetting(plexbmc)]|Container.Content(sets)] + Skin.HasSetting(55_UseBanners)" height="203" width="1250">
+                <itemlayout condition="[Container.Content(TVShows)|[Container.Content(movies) + !skin.hassetting(plexbmc)]|Container.Content(sets)] + Skin.HasSetting(55_UseBanners)" height="272" width="1250">
                     <control type="group">
-                        <posx>76</posx>
+                        <posx>0</posx>
                         <posy>0</posy>
                         <control type="image">
                             <posx>10</posx>
                             <posy>0</posy>
-                            <width>1011</width>
-                            <height>215</height>
+                            <width>1163</width>
+                            <height>251</height>
                             <texture background="true" fallback="common/BlackDotT.png">$VAR[Banner]</texture>
                             <aspectratio>stretch</aspectratio>
                             <include>ThumbBorder</include>
                         </control>
                         <control type="image">
-                            <posx>963</posx>
-                            <posy>157</posy>
+                            <posx>1115</posx>
+                            <posy>193</posy>
                             <width>28</width>
                             <height>28</height>
                             <texture>$VAR[Overlay]</texture>
                         </control>
                     </control>
                 </itemlayout>
-                <focusedlayout condition="[Container.Content(TVShows)|[Container.Content(movies) + !skin.hassetting(plexbmc)]|Container.Content(sets)] + Skin.HasSetting(55_UseBanners)" height="203" width="1250">
+                <focusedlayout condition="[Container.Content(TVShows)|[Container.Content(movies) + !skin.hassetting(plexbmc)]|Container.Content(sets)] + Skin.HasSetting(55_UseBanners)" height="272" width="1250">
                     <control type="group">
-                        <posx>76</posx>
+                        <posx>0</posx>
                         <posy>0</posy>
                         <control type="image">
                             <posx>10</posx>
                             <posy>0</posy>
-                            <width>1011</width>
-                            <height>215</height>
+                            <width>1163</width>
+                            <height>251</height>
                             <texture background="true" fallback="common/BlackDotT.png">$VAR[Banner]</texture>
                             <aspectratio>stretch</aspectratio>
                             <include>ThumbBorderOverlay</include>
                         </control>
                         <control type="image">
-                            <posx>963</posx>
-                            <posy>157</posy>
+                            <posx>1115</posx>
+                            <posy>193</posy>
                             <width>28</width>
                             <height>28</height>
                             <texture>$VAR[Overlay]</texture>

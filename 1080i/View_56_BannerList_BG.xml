@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <include name="ScrollOffsetLabel_56_BG">
+        <control type="group">
+            <left>755</left>
+            <top>55</top>
+            <include>ScrollOffsetLabel</include>
+        </control>
+    </include>
     <include name="Info_56_BannerList_BG">
         <control type="group">
             <visible>Control.IsVisible(56)+
@@ -125,6 +132,7 @@
         <control type="group">
             <visible>Control.IsVisible(56)</visible>
             <include>Icon_Fade</include>
+            <include>ScrollOffsetLabel_56_BG</include>
             <control type="group">
                 <!-- CLEAR ART / LOGO-->
                 <control type="image">
