@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <include name="ScrollOffsetLabel_57">
+        <control type="group">
+            <animation effect="slide" time="0" start="0,0" end="0,-20" condition="Skin.HasSetting(Posters_Gallery)+Control.HasFocus(7000)">conditional</animation>
+            <left>910</left>
+            <top>565</top>
+            <include>ScrollOffsetLabel</include>
+        </control>
+    </include>
+    <include name="ScrollOffsetLabel_58">
+        <control type="group">
+            <animation effect="slide" time="0" start="0,0" end="0,110" condition="Skin.HasSetting(Posters_Gallery)+Control.HasFocus(7000)">conditional</animation>
+            <left>910</left>
+            <top>440</top>
+            <include>ScrollOffsetLabel</include>
+        </control>
+    </include>
+    <include name="ScrollOffsetLabel_59">
+        <control type="group">
+            <animation effect="slide" time="0" start="0,0" end="0,70" condition="Skin.HasSetting(Posters_Gallery)+Control.HasFocus(7000)">conditional</animation>
+            <left>910</left>
+            <top>420</top>
+            <include>ScrollOffsetLabel</include>
+        </control>
+    </include>
     <include name="InfoBackground">
         <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
         <control type="group">
@@ -147,6 +171,7 @@
         <control type="group">
             <visible>Control.IsVisible(59)</visible>
             <include>Icon_Fade</include>
+            <include>ScrollOffsetLabel_59</include>
             <control type="image">
                 <include>Icon_Fade</include>
                 <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
@@ -467,6 +492,7 @@
         <control type="group">
             <visible>Control.IsVisible(58)</visible>
             <include>Icon_Fade</include>
+            <include>ScrollOffsetLabel_58</include>
             <control type="image">
                 <include>Icon_Fade</include>
                 <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
@@ -865,6 +891,7 @@
         <control type="group">
             <visible>Control.IsVisible(57)</visible>
             <include>Icon_Fade</include>
+            <include>ScrollOffsetLabel_57</include>
             <control type="image">
                 <include>Icon_Fade</include>
                 <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>

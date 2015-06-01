@@ -3,7 +3,7 @@
     <include name="ScrollOffsetLabel_55">
         <control type="group">
             <left>707</left>
-            <top>280</top>
+            <top>24</top>
             <include>ScrollOffsetLabel</include>
         </control>
     </include>
@@ -235,6 +235,7 @@
                     <texture background="true">$VAR[DefaultClearArtLogo]</texture>
                 </control>
             </control>
+            <include>ScrollOffsetLabel_55</include>
             <control type="image">
                 <posx>657</posx>
                 <posy>94</posy>

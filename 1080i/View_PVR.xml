@@ -525,6 +525,7 @@
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>
+                <include>ScrollOffsetLabel_50</include>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>350</posy>
@@ -708,6 +709,7 @@
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>
+                <include>ScrollOffsetLabel_52</include>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>131</posy>
@@ -891,6 +893,7 @@
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>
+                <include>ScrollOffsetLabel_54</include>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>565</posy>
@@ -1248,6 +1251,7 @@
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>
+                <include>ScrollOffsetLabel_50</include>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>350</posy>
@@ -1438,6 +1442,7 @@
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>
+                <include>ScrollOffsetLabel_52</include>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>131</posy>
@@ -1629,6 +1634,7 @@
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>
+                <include>ScrollOffsetLabel_54</include>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>565</posy>
@@ -3053,6 +3059,7 @@
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>
+                <include>ScrollOffsetLabel_50</include>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>350</posy>
@@ -3466,6 +3473,7 @@
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>
+                <include>ScrollOffsetLabel_50</include>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>350</posy>
@@ -3879,6 +3887,7 @@
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>
+                <include>ScrollOffsetLabel_50</include>
                 <control type="image">
                     <posx>1224</posx>
                     <posy>350</posy>

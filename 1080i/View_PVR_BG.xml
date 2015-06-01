@@ -144,6 +144,7 @@
                 </control>
             </control>
         </control>
+        <include>ScrollOffsetLabel_50_BG</include>
         <control type="image">
             <posx>704</posx>
             <posy>125</posy>
@@ -414,6 +415,7 @@
                 </control>
             </control>
         </control>
+        <include>ScrollOffsetLabel_50_BG</include>
         <control type="image">
             <posx>704</posx>
             <posy>125</posy>
@@ -1443,6 +1445,7 @@
                     </control>
                 </control>
             </control>
+            <include>ScrollOffsetLabel_50_BG</include>
             <control type="image">
                 <posx>704</posx>
                 <posy>125</posy>
@@ -1717,6 +1720,7 @@
                     </control>
                 </control>
             </control>
+            <include>ScrollOffsetLabel_50_BG</include>
             <control type="image">
                 <posx>704</posx>
                 <posy>125</posy>
@@ -1991,6 +1995,7 @@
                     </control>
                 </control>
             </control>
+            <include>ScrollOffsetLabel_50_BG</include>
             <control type="image">
                 <posx>704</posx>
                 <posy>125</posy>

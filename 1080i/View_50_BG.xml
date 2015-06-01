@@ -68,6 +68,13 @@
             <include>ListWatchedOverlay_BG</include>
         </control>
     </include>
+    <include name="ScrollOffsetLabel_50_BG">
+        <control type="group">
+            <left>755</left>
+            <top>55</top>
+            <include>ScrollOffsetLabel</include>
+        </control>
+    </include>
     <include name="Info_50_List_BG">
         <control type="group">
             <visible>Control.IsVisible(50)+
@@ -329,6 +336,7 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
+            <include>ScrollOffsetLabel_50_BG</include>
             <control type="group">
                 <!-- CLEAR ART / LOGO-->
                 <control type="image">
@@ -399,6 +407,7 @@
     <include name="View_50_BG_ExtendedInfo">
         <control type="group">
             <control type="group">
+                <include>ScrollOffsetLabel_50_BG</include>
                 <control type="image">
                     <posx>704</posx>
                     <posy>125</posy>
@@ -467,6 +476,7 @@
     </include>
     <include name="View_50_Custom_Addons_BG">
         <control type="group">
+            <include>ScrollOffsetLabel_50_BG</include>
             <control type="image">
                 <posx>704</posx>
                 <posy>125</posy>
@@ -572,6 +582,7 @@
     </include>
     <include name="View_50_VideoExtras_BG">
         <control type="group">
+            <include>ScrollOffsetLabel_50_BG</include>
             <control type="image">
                 <posx>704</posx>
                 <posy>125</posy>
