@@ -495,7 +495,7 @@
             <control type="image">
                 <visible>!IntegerGreaterThan(Container(50).NumItems,10)</visible>
                 <posx>740</posx>
-                <posy>939</posy>
+                <posy>937</posy>
                 <width>1180</width>
                 <height>73</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
@@ -601,7 +601,7 @@
             <control type="image">
                 <visible>!IntegerGreaterThan(Container(51).NumItems,10)</visible>
                 <posx>740</posx>
-                <posy>939</posy>
+                <posy>937</posy>
                 <width>1180</width>
                 <height>73</height>
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
