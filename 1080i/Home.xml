@@ -44,7 +44,7 @@
             <visible>![window.IsActive(DialogVolumeBar.xml)|window.IsActive(DialogMuteBug.xml)]+!Skin.HasSetting(VerticalHome)</visible>
             <posx>88</posx>
             <include>WindowTitleSub</include>
-            <label>$INFO[Container(300).ListItem.Label]</label>
+            <label>$VAR[HomeSubTitles]</label>
         </control>
         <control type="group">
             <animation effect="fade" start="0" end="100" time="1000" condition="Window.Previous(Startup.xml)">Conditional</animation>
