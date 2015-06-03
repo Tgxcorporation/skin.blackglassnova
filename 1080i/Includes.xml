@@ -144,7 +144,7 @@
         <control type="group">
             <visible>!Window.isvisible(DialogVideoInfo.xml)</visible>
             <animation effect="slide" start="0,0" end="0,130" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+control.IsVisible(495678)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="0,85" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+!control.IsVisible(495678)">Conditional</animation>
+            <animation effect="slide" start="0,0" end="0,77" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+!control.IsVisible(495678)">Conditional</animation>
             <animation effect="slide" time="150" end="0,-88">WindowClose</animation>
             <animation effect="slide" tween="circle" easing="out" time="150" start="0,-88" end="0,-50">WindowOpen</animation>
             <posy>0</posy>
