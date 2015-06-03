@@ -68,7 +68,6 @@
                     <!-- INFO -->
                     <control type="group" id="20">
                         <visible>![Control.HasFocus(9012)|
-                            Control.HasFocus(10)|
                             ControlGroup(90120).HasFocus|
                             ControlGroup(90131).HasFocus]</visible>
                         <include>VisibleFadeEffectDelay</include>
@@ -948,45 +947,6 @@
                             <label>$INFO[Container(50).NumItems,,  $LOCALIZE[31025]]</label>
                         </control>
                     </control>
-                    <!-- FANART -->
-                    <control type="group" id="90131">
-                        <visible>Control.HasFocus(10)|ControlGroup(90131).HasFocus</visible>
-                        <include>VisibleFadeEffectDelay</include>
-                        <control type="group">
-                            <!-- CDART -->
-                            <visible>!Skin.HasSetting(plexbmc)</visible>
-                            <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(musicvideos)]</visible>
-                            <include>VisibleFadeEffectDelay</include>
-                            <control type="image">
-                                <posx>1290</posx>
-                                <posy>392</posy>
-                                <width>429</width>
-                                <height>429</height>
-                                <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
-                                <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <include>Animation_ViewsCDart</include>
-                            </control>
-                        </control>
-                        <control type="image">
-                            <posx>1142</posx>
-                            <posy>365</posy>
-                            <width>410</width>
-                            <height>483</height>
-                            <aspectratio>keep</aspectratio>
-                            <include>PosterThumb</include>
-                            <include>ThumbBorder</include>
-                        </control>
-                        <control type="image">
-                            <description>Current Fanart image</description>
-                            <posx>10</posx>
-                            <posy>10</posy>
-                            <width>1111</width>
-                            <height>828</height>
-                            <aspectratio>keep</aspectratio>
-                            <texture background="true" fallback="defaultPictureBig.png">$INFO[Listitem.Property(Fanart_Image)]</texture>
-                            <include>ThumbBorder</include>
-                        </control>
-                    </control>
                 </control>
                 <control type="grouplist" id="9001">
                     <posx>1309</posx>
@@ -1071,7 +1031,17 @@
                         <description>Fanart</description>
                         <include>RightDialogButton</include>
                         <label>$LOCALIZE[13511]</label>
-                        <onleft>noop</onleft>
+                        <onleft>9009</onleft>
+                    </control>
+                    <control type="togglebutton" id="9018">
+                        <visible>System.HasAddon(script.artwork.downloader) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
+                        <description>Artwork Downloader</description>
+                        <include>RightDialogButton</include>
+                        <label>Artwork Downloader</label>
+                        <onclick condition="Container.Content(movies)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=movie, dbid=$INFO[ListItem.DBID])</onclick>
+                        <onclick condition="Container.Content(tvshows)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=tvshow, dbid=$INFO[ListItem.DBID])</onclick>
+                        <onclick condition="Container.Content(musicvideos)">XBMC.RunScript(script.artwork.downloader, mode=gui, mediatype=musicvideos, dbid=$INFO[ListItem.DBID])</onclick>
+                        <onleft>9009</onleft>
                     </control>
                     <control type="button" id="105">
                         <visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
