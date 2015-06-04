@@ -553,6 +553,10 @@ msgstr ""
 #empty strings from id 31911 to 31944
 #BLACK GLASS NOVA
 
+msgctxt "#31943"
+msgid "Show Info Panel in paused video playback"
+msgstr ""
+
 msgctxt "#31944"
 msgid "Reset Home Menu ONLY to default values"
 msgstr ""
