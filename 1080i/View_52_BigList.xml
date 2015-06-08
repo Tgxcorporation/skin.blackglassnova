@@ -8,15 +8,15 @@
         </control>
     </include>
     <include name="Info_52_BigList">
-        <control type="group">
+        <control type="group" id="50100">
             <include>SlideView</include>
             <include>HideMediaInfo</include>
             <visible>Control.IsVisible(52)+
-                [
-                !IsEmpty(ListItem.Property(Artist_Description))|
-                !IsEmpty(ListItem.Property(Addon.Description))|
-                !IsEmpty(ListItem.Property(Album_Description))|
-                !IsEmpty(ListItem.Plot)
+                ![
+                IsEmpty(ListItem.Property(Artist_Description))+
+                IsEmpty(ListItem.Property(Addon.Description))+
+                IsEmpty(ListItem.Property(Album_Description))+
+                IsEmpty(ListItem.Plot)
                 ]
                 +!Container.Content(songs)</visible>
             <include>Icon_Fade</include>
