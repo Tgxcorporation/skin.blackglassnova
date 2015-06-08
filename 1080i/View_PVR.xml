@@ -400,7 +400,7 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
-            <control type="group">
+            <control type="group" id="50100">
                 <posy>-215</posy>
                 <visible>!IsEmpty(Container(50).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
@@ -585,7 +585,7 @@
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
             <include>Icon_Fade</include>
-            <control type="group">
+            <control type="group" id="50100">
                 <visible>!IsEmpty(Container(52).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
@@ -769,7 +769,7 @@
         <control type="group">
             <visible>Control.IsVisible(54)</visible>
             <include>Icon_Fade</include>
-            <control type="group">
+            <control type="group" id="50100">
                 <visible>!IsEmpty(Container(54).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
@@ -1119,7 +1119,7 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
-            <control type="group">
+            <control type="group" id="50100">
                 <visible>!IsEmpty(Container(50).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
@@ -1311,7 +1311,7 @@
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
             <include>Icon_Fade</include>
-            <control type="group">
+            <control type="group" id="50100">
                 <visible>!IsEmpty(Container(52).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
@@ -1503,7 +1503,7 @@
             <visible>Control.IsVisible(54)</visible>
             <include>Icon_Fade</include>
             <include>Icon_Fade</include>
-            <control type="group">
+            <control type="group" id="50100">
                 <visible>!IsEmpty(Container(54).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
@@ -2945,7 +2945,7 @@
         <control type="group">
             <visible>Control.IsVisible(11)</visible>
             <include>Icon_Fade</include>
-            <control type="group">
+            <control type="group" id="50100">
                 <posy>-215</posy>
                 <visible>!IsEmpty(Container(11).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
@@ -3359,7 +3359,7 @@
         <control type="group">
             <visible>Control.IsVisible(12)</visible>
             <include>Icon_Fade</include>
-            <control type="group">
+            <control type="group" id="50100">
                 <posy>-215</posy>
                 <visible>!IsEmpty(Container(12).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
@@ -3773,7 +3773,7 @@
         <control type="group">
             <visible>Control.IsVisible(13)</visible>
             <include>Icon_Fade</include>
-            <control type="group">
+            <control type="group" id="50100">
                 <posy>-215</posy>
                 <visible>!IsEmpty(Container(13).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
