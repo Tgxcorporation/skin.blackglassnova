@@ -68,8 +68,7 @@
                     <!-- INFO -->
                     <control type="group" id="20">
                         <visible>![Control.HasFocus(9012)|
-                            ControlGroup(90120).HasFocus|
-                            ControlGroup(90131).HasFocus]</visible>
+                            ControlGroup(90120).HasFocus]</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <control type="group">
                             <!-- CDART -->
