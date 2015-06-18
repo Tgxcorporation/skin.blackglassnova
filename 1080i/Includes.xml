@@ -566,9 +566,9 @@
         <height>85</height>
         <font>ButtonFont</font>
         <focusedcolor>MainColor</focusedcolor>
-        <include>KeybaordTextureFocus</include>
+        <include>KeyboardTextureFocus</include>
         <texturenofocus border="27">buttons/bg_button_nofocus.png</texturenofocus>
-        <include>KeybaordAltTextureFocus</include>
+        <include>KeyboardAltTextureFocus</include>
         <alttexturenofocus border="27">buttons/bg_button_nofocus.png</alttexturenofocus>
     </include>
     <include name="List_9009_Commons">
