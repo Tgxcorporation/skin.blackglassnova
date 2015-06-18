@@ -176,6 +176,41 @@
         <include condition="Skin.HasSetting(Highlighted.Color.Yellow)">KeyboardAltTextureFocus_yellow</include>
         <include>KeyboardAltTextureFocus_white</include>
     </include>
+    <!-- KEYBOARD SEARCH BUTTON -->
+    <include name="KeyboardSearchTexture_fuchsia">
+        <texture border="27">buttons/bg_button_focus_fuchsia.png</texture>
+    </include>
+    <include name="KeyboardSearchTexture_azure">
+        <texture border="27">buttons/bg_button_focus_azure.png</texture>
+    </include>
+    <include name="KeyboardSearchTexture_blue">
+        <texture border="27">buttons/bg_button_focus_blue.png</texture>
+    </include>
+    <include name="KeyboardSearchTexture_green">
+        <texture border="27">buttons/bg_button_focus_green.png</texture>
+    </include>
+    <include name="KeyboardSearchTexture_red">
+        <texture border="27">buttons/bg_button_focus_red.png</texture>
+    </include>
+    <include name="KeyboardSearchTexture_violet">
+        <texture border="27">buttons/bg_button_focus_violet.png</texture>
+    </include>
+    <include name="KeyboardSearchTexture_white">
+        <texture border="27">buttons/bg_button_focus_white.png</texture>
+    </include>
+    <include name="KeyboardSearchTexture_yellow">
+        <texture border="27">buttons/bg_button_focus_yellow.png</texture>
+    </include>
+    <include name="KeyboardSearchTexture">
+        <include condition="Skin.HasSetting(Highlighted.Color.Fuchsia)">KeyboardSearchTexture_fuchsia</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Azure)">KeyboardSearchTexture_azure</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Blue)">KeyboardSearchTexture_blue</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Green)">KeyboardSearchTexture_green</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Red)">KeyboardSearchTexture_red</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Violet)">KeyboardSearchTexture_violet</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Yellow)">KeyboardSearchTexture_yellow</include>
+        <include>KeyboardSearchTexture_white</include>
+    </include>
     <!-- LEFT MENU BUTTON -->
     <include name="TextureFocus_fuchsia">
         <texturefocus border="4">list/bg_facade_focus_fuchsia.png</texturefocus>
