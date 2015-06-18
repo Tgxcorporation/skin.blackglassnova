@@ -122,6 +122,7 @@
                                 <label>$LOCALIZE[20376]:</label>
                                 <label2>$INFO[Window.Property(movie.OriginalTitle)]</label2>
                                 <onclick>noop</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.OriginalTitle))</visible>
                                 <!--<visible>!IsEmpty(Window.Property(movie.OriginalTitle)) + !stringcompare(Window.Property(movie.OriginalTitle),Window.Property(movie.Title))</visible>-->
                             </item>
                             <item>
@@ -269,6 +270,7 @@
                                 <label2>$INFO[Window.Property(movie.Path)]</label2>
                                 <onclick>Dialog.Close(movieinformation)</onclick>
                                 <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
+                                <visible>!IsEmpty(Window.Property(movie.Path))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21800]:</label>
@@ -2307,35 +2309,13 @@
                                 <texture border="3">list/bg_facade_nofocus.png</texture>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.Episode)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
                                 <width>1041</width>
                                 <font>FacadeListMainFont</font>
                                 <textcolor>ListNoFocusColor</textcolor>
-                                <label>$INFO[ListItem.Label]</label>
-                                <scroll>false</scroll>
-                            </control>
-                            <control type="label">
-                                <visible>!IsEmpty(ListItem.Episode)</visible>
-                                <posx>TextMargin</posx>
-                                <posy>0</posy>
-                                <height>42</height>
-                                <width>1041</width>
-                                <font>FacadeListMainFont</font>
-                                <textcolor>ListNoFocusColor</textcolor>
-                                <label>$INFO[ListItem.Label]</label>
-                                <scroll>false</scroll>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>39</posy>
-                                <height>28</height>
-                                <width>1041</width>
-                                <font>FacadeListSubFont</font>
-                                <textcolor>SublistNoFocusColor</textcolor>
-                                <label>$INFO[ListItem.Episode]</label>
+                                <label>[COLOR=SublistNoFocusColor]$INFO[ListItem.Episode]   [/COLOR]$INFO[ListItem.Label]</label>
                                 <scroll>false</scroll>
                             </control>
                         </itemlayout>
@@ -2348,33 +2328,13 @@
                                 <include>FacadeFocus</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.Episode)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
                                 <width>1041</width>
                                 <font>FacadeListMainFont</font>
                                 <textcolor>ListFocusColor</textcolor>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label">
-                                <visible>!IsEmpty(ListItem.Episode)</visible>
-                                <posx>TextMargin</posx>
-                                <posy>0</posy>
-                                <height>42</height>
-                                <width>1041</width>
-                                <font>FacadeListMainFont</font>
-                                <textcolor>ListFocusColor</textcolor>
-                                <label>$INFO[ListItem.Label]</label>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>39</posy>
-                                <height>28</height>
-                                <width>1041</width>
-                                <font>FacadeListSubFont</font>
-                                <textcolor>SublistFocusColor</textcolor>
-                                <label>$INFO[ListItem.Episode]</label>
+                                <label>[COLOR=SublistFocusColor]$INFO[ListItem.Episode]   [/COLOR]$INFO[ListItem.Label]</label>
                             </control>
                         </focusedlayout>
                     </control>
