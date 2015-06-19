@@ -165,9 +165,9 @@
                             </item>
                             <item>
                                 <label>$LOCALIZE[172]:</label>
-                                <label2>$INFO[Window.Property(movie.ReleaseDate)]</label2>
+                                <label2>$INFO[Window.Property(movie.release_date)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(Window.Property(movie.ReleaseDate))</visible>
+                                <visible>!IsEmpty(Window.Property(movie.release_date))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[2050]:</label>
