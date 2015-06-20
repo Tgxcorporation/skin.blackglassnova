@@ -13,6 +13,8 @@
         <value condition="Skin.HasSetting(Hide_Watched_Marks)">$INFO[ListItem.Overlay,overlay_unwatched/]</value>
         <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
         <value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
+        <value condition="StringCompare(ListItem.Label2,$LOCALIZE[305])+Window.IsVisible(AddonBrowser.xml)">OverlayUnwatched.png</value>
+        <value condition="!IsEmpty(ListItem.Label2)+Window.IsVisible(AddonBrowser.xml)">overlay_inprogress/OverlayUnwatched.png</value>
     </variable>
     <variable name="Banner">
         <value condition="StringCompare(ListItem.Label,..)+[Container.Content(TVShows)|Container.Content(movies)]">DefaultFolderBackBanner.png</value>
