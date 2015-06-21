@@ -325,15 +325,22 @@
                     <onleft>Control.Move(59,-1)</onleft>
                 </control>
                 <control type="group">
-                    <!-- CLEAR ART / LOGO-->
+                    <!-- CLEAR ART / LOGO -->
                     <control type="image">
-                        <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                         <posx>345r</posx>
                         <posy>369</posy>
                         <width>300</width>
                         <height>235</height>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[DefaultClearArtLogo]</texture>
+                        <include>ClearArt</include>
+                    </control>
+                    <control type="image">
+                        <posx>345r</posx>
+                        <posy>369</posy>
+                        <width>300</width>
+                        <height>235</height>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                        <include>ClearLogo</include>
                     </control>
                 </control>
                 <control type="group">
@@ -634,15 +641,22 @@
                     <onleft>Control.Move(58,-1)</onleft>
                 </control>
                 <control type="group">
-                    <!-- CLEAR ART / LOGO-->
+                    <!-- CLEAR ART / LOGO -->
                     <control type="image">
-                        <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                         <posx>345r</posx>
                         <posy>429</posy>
                         <width>300</width>
                         <height>235</height>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[DefaultClearArtLogo]</texture>
+                        <include>ClearArt</include>
+                    </control>
+                    <control type="image">
+                        <posx>345r</posx>
+                        <posy>429</posy>
+                        <width>300</width>
+                        <height>235</height>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                        <include>ClearLogo</include>
                     </control>
                 </control>
                 <control type="group">
@@ -1033,15 +1047,22 @@
                     <onleft>Control.Move(57,-1)</onleft>
                 </control>
                 <control type="group">
-                    <!-- CLEAR ART / LOGO-->
+                    <!-- CLEAR ART / LOGO -->
                     <control type="image">
-                        <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                         <posx>345r</posx>
                         <posy>429</posy>
                         <width>300</width>
                         <height>235</height>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[DefaultClearArtLogo]</texture>
+                        <include>ClearArt</include>
+                    </control>
+                    <control type="image">
+                        <posx>345r</posx>
+                        <posy>429</posy>
+                        <width>300</width>
+                        <height>235</height>
+                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                        <include>ClearLogo</include>
                     </control>
                 </control>
                 <control type="group">
