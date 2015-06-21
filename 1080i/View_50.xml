@@ -544,13 +544,20 @@
             <control type="group">
                 <!-- CLEAR ART / LOGO -->
                 <control type="image">
-                    <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                     <posx>345r</posx>
                     <posy>150</posy>
                     <width>300</width>
                     <height>235</height>
                     <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <texture background="true">$VAR[DefaultClearArtLogo]</texture>
+                    <include>ClearArt</include>
+                </control>
+                <control type="image">
+                    <posx>345r</posx>
+                    <posy>150</posy>
+                    <width>300</width>
+                    <height>235</height>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <include>ClearLogo</include>
                 </control>
             </control>
             <control type="group">
@@ -615,15 +622,22 @@
     <include name="View_50_ExtendedInfo">
         <control type="group">
             <control type="group">
-                <!-- CLEAR ART / LOGO-->
+                <!-- CLEAR ART / LOGO -->
                 <control type="image">
-                    <visible>Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)</visible>
                     <posx>345r</posx>
                     <posy>150</posy>
                     <width>300</width>
                     <height>235</height>
                     <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <texture background="true">$VAR[DefaultClearArtLogo]</texture>
+                    <include>ClearArt</include>
+                </control>
+                <control type="image">
+                    <posx>345r</posx>
+                    <posy>150</posy>
+                    <width>300</width>
+                    <height>235</height>
+                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <include>ClearLogo</include>
                 </control>
             </control>
             <control type="group">
