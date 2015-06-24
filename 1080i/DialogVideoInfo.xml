@@ -125,7 +125,7 @@
                                     <visible>System.HasAddon(script.extendedinfo)</visible>
                                     <label>$LOCALIZE[20339]:</label>
                                     <label2>$INFO[ListItem.Director]</label2>
-                                    <onclick>dialog.close(all,true)</onclick>
+                                    <!-- <onclick>dialog.close(all,true)</onclick> -->
                                     <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Director])</onclick>
                                     <visible>!IsEmpty(ListItem.Director)</visible>
                                 </item>
@@ -133,7 +133,7 @@
                                     <visible>System.HasAddon(script.extendedinfo)</visible>
                                     <label>$LOCALIZE[20417]:</label>
                                     <label2>$INFO[ListItem.Writer]</label2>
-                                    <onclick>dialog.close(all,true)</onclick>
+                                    <!-- <onclick>dialog.close(all,true)</onclick> -->
                                     <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer])</onclick>
                                     <visible>!IsEmpty(ListItem.Writer)</visible>
                                 </item>
@@ -410,7 +410,7 @@
                                         <visible>System.HasAddon(script.extendedinfo)</visible>
                                         <label>$LOCALIZE[20339]:</label>
                                         <label2>$INFO[ListItem.Director]</label2>
-                                        <onclick>dialog.close(all,true)</onclick>
+                                        <!-- <onclick>dialog.close(all,true)</onclick> -->
                                         <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Director])</onclick>
                                         <visible>!IsEmpty(ListItem.Director)</visible>
                                     </item>
@@ -418,7 +418,7 @@
                                         <visible>System.HasAddon(script.extendedinfo)</visible>
                                         <label>$LOCALIZE[20417]:</label>
                                         <label2>$INFO[ListItem.Writer]</label2>
-                                        <onclick>dialog.close(all,true)</onclick>
+                                        <!-- <onclick>dialog.close(all,true)</onclick> -->
                                         <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer])</onclick>
                                         <visible>!IsEmpty(ListItem.Writer)</visible>
                                     </item>
@@ -601,7 +601,7 @@
                                         <visible>System.HasAddon(script.extendedinfo)</visible>
                                         <label>$LOCALIZE[20339]:</label>
                                         <label2>$INFO[ListItem.Director]</label2>
-                                        <onclick>dialog.close(all,true)</onclick>
+                                        <!-- <onclick>dialog.close(all,true)</onclick> -->
                                         <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Director])</onclick>
                                         <visible>!IsEmpty(ListItem.Director)</visible>
                                     </item>
@@ -609,7 +609,7 @@
                                         <visible>System.HasAddon(script.extendedinfo)</visible>
                                         <label>$LOCALIZE[20417]:</label>
                                         <label2>$INFO[ListItem.Writer]</label2>
-                                        <onclick>dialog.close(all,true)</onclick>
+                                        <!-- <onclick>dialog.close(all,true)</onclick> -->
                                         <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[ListItem.Writer])</onclick>
                                         <visible>!IsEmpty(ListItem.Writer)</visible>
                                     </item>
@@ -837,7 +837,7 @@
                             <align>center</align>
                             <include>RightDialogButton</include>
                             <label>$LOCALIZE[31015]</label>
-                            <onclick>dialog.close(all,true)</onclick>
+                            <!-- <onclick>dialog.close(all,true)</onclick> -->
                             <onclick>RunScript(script.extendedinfo,info=extendedactorinfo,name=$INFO[Container(50).ListItem.Label])</onclick>
                             <onleft>50</onleft>
                             <onright>9012</onright>
