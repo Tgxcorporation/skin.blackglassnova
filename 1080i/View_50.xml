@@ -67,7 +67,7 @@
         </control>
     </include>
     <include name="ConditionLargeList">
-        <visible>!Control.isvisible(50100)|
+        <visible>[!Control.isvisible(50100)+!Skin.HasSetting(FixedShortListUnknown)]|
             control.hasfocus(60)|
             [!Skin.HasSetting(FixedShortListUnknown)+
             [
@@ -78,7 +78,7 @@
             ]]</visible>
     </include>
     <include name="ConditionShortList">
-        <visible>![!Control.isvisible(50100)|
+        <visible>![[!Control.isvisible(50100)+!Skin.HasSetting(FixedShortListUnknown)]|
             control.hasfocus(60)|
             [!Skin.HasSetting(FixedShortListUnknown)+
             [
