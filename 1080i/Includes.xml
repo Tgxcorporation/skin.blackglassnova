@@ -1132,7 +1132,7 @@
                     <width>930</width>
                     <height>200</height>
                     <align>justify</align>
-                    <label>$INFO[VideoPlayer.Plot]</label>
+                    <label fallback="416">$INFO[VideoPlayer.Plot]</label>
                     <textcolor>AlternateBrightColor</textcolor>
                     <font>InfoPlotFont</font>
                     <pagecontrol>6060</pagecontrol>
