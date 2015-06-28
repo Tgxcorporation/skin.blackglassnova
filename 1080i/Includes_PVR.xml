@@ -133,7 +133,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <visible>ListItem.HasEpg</visible>
                         <posx>103</posx>
                         <height>42</height>
                         <width>1220</width>
@@ -143,16 +143,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>IsEmpty(ListItem.Title)</visible>
-                        <posx>103</posx>
-                        <height>42</height>
-                        <width>1220</width>
-                        <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
-                        <label>$INFO[ListItem.StartTime]</label>
-                        <scroll>false</scroll>
-                    </control>
-                    <control type="label">
+                        <visible>ListItem.HasEpg</visible>
                         <posx>103</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -160,6 +151,16 @@
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <visible>!ListItem.HasEpg</visible>
+                        <posx>103</posx>
+                        <height>71</height>
+                        <width>1220</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListNoFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
                         <scroll>false</scroll>
                     </control>
                 </itemlayout>
@@ -227,24 +228,17 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <visible>ListItem.HasEpg</visible>
                         <posx>103</posx>
                         <height>42</height>
                         <width>1220</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.StartTime]  •  $INFO[ListItem.Title]</label>
+                        <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>IsEmpty(ListItem.Title)</visible>
-                        <posx>103</posx>
-                        <height>42</height>
-                        <width>1220</width>
-                        <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
-                        <label>$INFO[ListItem.StartTime]</label>
-                    </control>
-                    <control type="label">
+                        <visible>ListItem.HasEpg</visible>
                         <posx>103</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -252,6 +246,17 @@
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistFocusColor</textcolor>
                         <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <visible>!ListItem.HasEpg</visible>
+                        <posx>103</posx>
+                        <height>71</height>
+                        <width>1220</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                        <scroll>false</scroll>
                     </control>
                 </focusedlayout>
             </control>
@@ -401,7 +406,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <visible>ListItem.HasEpg</visible>
                         <posx>103</posx>
                         <height>42</height>
                         <width>1220</width>
@@ -411,16 +416,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>IsEmpty(ListItem.Title)</visible>
-                        <posx>103</posx>
-                        <height>42</height>
-                        <width>1220</width>
-                        <font>FacadeListMainFont</font>
-                        <textcolor>ListNoFocusColor</textcolor>
-                        <label>$INFO[ListItem.StartTime]</label>
-                        <scroll>false</scroll>
-                    </control>
-                    <control type="label">
+                        <visible>ListItem.HasEpg</visible>
                         <posx>103</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -428,6 +424,16 @@
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <visible>!ListItem.HasEpg</visible>
+                        <posx>103</posx>
+                        <height>71</height>
+                        <width>1220</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListNoFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
                         <scroll>false</scroll>
                     </control>
                 </itemlayout>
@@ -495,24 +501,17 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Title)</visible>
+                        <visible>ListItem.HasEpg</visible>
                         <posx>103</posx>
                         <height>42</height>
                         <width>1220</width>
                         <font>FacadeListMainFont</font>
                         <textcolor>ListFocusColor</textcolor>
                         <label>$INFO[ListItem.StartTime]  •  $INFO[ListItem.Title]</label>
+                        <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>IsEmpty(ListItem.Title)</visible>
-                        <posx>103</posx>
-                        <height>42</height>
-                        <width>1220</width>
-                        <font>FacadeListMainFont</font>
-                        <textcolor>ListFocusColor</textcolor>
-                        <label>$INFO[ListItem.StartTime]</label>
-                    </control>
-                    <control type="label">
+                        <visible>ListItem.HasEpg</visible>
                         <posx>103</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -520,6 +519,17 @@
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistFocusColor</textcolor>
                         <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <visible>!ListItem.HasEpg</visible>
+                        <posx>103</posx>
+                        <height>71</height>
+                        <width>1220</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                        <scroll>false</scroll>
                     </control>
                 </focusedlayout>
             </control>
