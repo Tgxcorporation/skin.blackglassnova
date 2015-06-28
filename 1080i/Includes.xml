@@ -339,6 +339,7 @@
                     <onleft condition="Control.isvisible(54)">54</onleft>
                     <onleft condition="Control.isvisible(55)">55</onleft>
                     <onleft condition="Control.isvisible(56)">56</onleft>
+                    <onleft condition="Control.isvisible(500)">500</onleft>
                     <onup condition="Control.isvisible(5050)">5050</onup>
                     <onup condition="Control.isvisible(57)">57</onup>
                     <onup condition="Control.isvisible(58)">58</onup>

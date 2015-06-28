@@ -10,6 +10,7 @@
             [Container.Content(Artists) + [!IsEmpty(ListItem.Property(artist_genre)) | !IsEmpty(ListItem.Property(artist_style))]]|
             [Container.Content(MusicVideos) + !IsEmpty(ListItem.Duration)]|
             [Container.Content(Sets) + !IsEmpty(ListItem.Year)]|
+            [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
             [Container.Content(Movies) + !IsEmpty(ListItem.Duration)]|
             [[Container.Content(Seasons) | Container.Content(TVShows)] + !IsEmpty(ListItem.Year)]|
             [[Container.Content(Seasons) | Container.Content(TVShows)] + !IsEmpty(ListItem.MPAA)]|
@@ -27,6 +28,7 @@
             [Container.Content(Artists) + [!IsEmpty(ListItem.Property(artist_genre)) | !IsEmpty(ListItem.Property(artist_style))]]|
             [Container.Content(MusicVideos) + !IsEmpty(ListItem.Duration)]|
             [Container.Content(Sets) + !IsEmpty(ListItem.Year)]|
+            [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
             [Container.Content(Movies) + !IsEmpty(ListItem.Duration)]|
             [[Container.Content(Seasons) | Container.Content(TVShows)] + !IsEmpty(ListItem.Year)]|
             [[Container.Content(Seasons) | Container.Content(TVShows)] + !IsEmpty(ListItem.MPAA)]|
@@ -411,6 +413,77 @@
             </control>
         </control>
     </include>
+    <include name="Info_50_BG_ExtendedInfo">
+        <control type="group">
+            <visible>Control.IsVisible(500)+!IsEmpty(Container(500).ListItem.Plot)</visible>
+            <include>Icon_Fade</include>
+            <posy>37</posy>
+            <control type="image">
+                <posx>18</posx>
+                <posy>110</posy>
+                <width>704</width>
+                <height>518</height>
+                <aspectratio align="left" aligny="top" scalediffuse="false">keep</aspectratio>
+                <include>PosterThumb</include>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="group">
+                <posx>0</posx>
+                <posy>116</posy>
+                <control type="group">
+                    <control type="group">
+                        <posy>440</posy>
+                        <control type="image">
+                            <posx>TextMargin</posx>
+                            <posy>92</posy>
+                            <texture fallback="rating0.png">$INFO[Container(500).ListItem.StarRating]</texture>
+                            <include>Stars</include>
+                        </control>
+                        <control type="label">
+                            <posx>245</posx>
+                            <posy>73</posy>
+                            <width>460</width>
+                            <height>71</height>
+                            <font>InfoRatingFont</font>
+                            <textcolor>AlternateColor</textcolor>
+                            <label fallback="416">$INFO[Container(500).ListItem.Rating]</label>
+                        </control>
+                    </control>
+                    <control type="label">
+                        <posx>TextMargin</posx>
+                        <posy>573</posy>
+                        <width>630</width>
+                        <height>71</height>
+                        <font>InfoDetailsFont</font>
+                        <textcolor>AlternateColor</textcolor>
+                        <label>$VAR[Details_TVShows_Extended]</label>
+                    </control>
+                    <control type="group">
+                        <posy>420</posy>
+                        <control type="textbox">
+                            <posx>TextMargin</posx>
+                            <posy>230</posy>
+                            <width>635</width>
+                            <height>240</height>
+                            <font>InfoPlotFont</font>
+                            <textcolor>MainColor</textcolor>
+                            <label>$VAR[Plots]</label>
+                            <pagecontrol>6060</pagecontrol>
+                        </control>
+                        <control type="scrollbar" id="6060">
+                            <visible>Skin.HasSetting(ManualScroll)</visible>
+                            <posx>680</posx>
+                            <posy>230</posy>
+                            <height>240</height>
+                            <include>VerticalScroller</include>
+                            <onleft>9000</onleft>
+                            <onright>50</onright>
+                        </control>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </include>
     <include name="View_50_BG_ExtendedInfo">
         <control type="group">
             <control type="group">
@@ -477,7 +550,7 @@
                 <height>803</height>
                 <include>VerticalScroller</include>
                 <onleft>500</onleft>
-                <onright>500</onright>
+                <onright>505050</onright>
             </control>
         </control>
     </include>

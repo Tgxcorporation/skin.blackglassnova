@@ -59,7 +59,8 @@
                 <visible>![StringCompare(ListItem.Label,..)]</visible>
                 <animation effect="slide" time="0" start="0,0" end="0,40" condition="[!control.isvisible(45741)+!control.isvisible(45742)+!control.isvisible(45743)+!control.isvisible(45744)]">Conditional</animation>
                 <control type="image">
-                    <visible>![container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)| container.content(episodes)]</visible>
+                    <visible>Control.HasFocus(505050)</visible>
+                    <!--<visible>![container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)| container.content(episodes)]</visible>-->
                     <posx>50</posx>
                     <posy>925</posy>
                     <width>30</width>
@@ -163,6 +164,83 @@
                     <align>center</align>
                     <aligny>center</aligny>
                     <include>CodecsView</include>
+                </control>
+            </control>
+        </control>
+    </include>
+    <include name="FooterInfo_ExtendedInfo">
+        <control type="group">
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
+            <include>Icon_Fade</include>
+            <visible>Control.hasfocus(505050)</visible>
+            <control type="group">
+                <visible>![StringCompare(Container(500).ListItem.Label,..)]</visible>
+                <control type="image">
+                    <visible>Control.HasFocus(505050)+!IsEmpty(Container(500).ListItem.Property(DBID))</visible>
+                    <posx>50</posx>
+                    <posy>925</posy>
+                    <width>30</width>
+                    <height>45</height>
+                    <texture>OverlayUnwatched.png</texture>
+                    <aspectratio aligny="center">keep</aspectratio>
+                </control>
+                <control type="label">
+                    <posx>92</posx>
+                    <posy>925</posy>
+                    <width>1750</width>
+                    <height>45</height>
+                    <align>center</align>
+                    <font>InfoTitleFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <shadowcolor>ShadowColor</shadowcolor>
+                    <label>$INFO[Container(500).ListItem.Label]</label>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>911</posy>
+                    <width>1920</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="label">
+                    <posx>52</posx>
+                    <posy>1010</posy>
+                    <height>33</height>
+                    <width>200</width>
+                    <align>left</align>
+                    <font>InfoDetailsFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <label>$VAR[Fanart_Details]</label>
+                </control>
+                <control type="label">
+                    <posx>300</posx>
+                    <posy>1010</posy>
+                    <height>33</height>
+                    <width>1320</width>
+                    <align>center</align>
+                    <font>InfoDetailsFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <label>$INFO[Container(500).ListItem.Genre]</label>
+                </control>
+                <control type="group">
+                    <control type="image">
+                        <posx>1715</posx>
+                        <posy>1009</posy>
+                        <align>right</align>
+                        <texture fallback="rating0.png">$INFO[Container(500).ListItem.StarRating]</texture>
+                        <include>Stars</include>
+                    </control>
+                    <control type="label">
+                        <visible>[SubString(Container(500).ListItem.StarRating,rating1)|SubString(Container(500).ListItem.StarRating,rating2)|SubString(Container(500).ListItem.StarRating,rating3)|SubString(Container(500).ListItem.StarRating,rating4)|SubString(Container(500).ListItem.StarRating,rating5)]</visible>
+                        <posx>1690</posx>
+                        <posy>1010</posy>
+                        <height>33</height>
+                        <width>1120</width>
+                        <align>right</align>
+                        <font>InfoDetailsFont</font>
+                        <textcolor>AlternateColor</textcolor>
+                        <label fallback="416">$INFO[Container(500).ListItem.Rating]</label>
+                    </control>
                 </control>
             </control>
         </control>
