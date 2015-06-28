@@ -389,7 +389,7 @@
                         <label>$INFO[MusicPlayer.TimeSpeed] - $INFO[MusicPlayer.Duration]</label>
                     </control>
                     <control type="label">
-                        <visible>Player.hasvideo</visible>
+                        <visible>Player.hasvideo + VideoPlayer.Content(livetv)</visible>
                         <posx>460</posx>
                         <posy>0</posy>
                         <height>46</height>
@@ -398,10 +398,22 @@
                         <align>left</align>
                         <font>NotificationFont</font>
                         <textcolor>MainColor</textcolor>
-                        <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.ChannelNumber,,  •  ]$INFO[VideoPlayer.ChannelName,,  •  ]$INFO[VideoPlayer.Artist,,  •  ]$INFO[VideoPlayer.Album,,  •  ]$INFO[VideoPlayer.Season,  •  $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,  •  ]$INFO[VideoPlayer.Title]</label>
+                        <label>$INFO[VideoPlayer.ChannelNumber,,  •  ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,  •  ]</label>
                     </control>
                     <control type="label">
-                        <visible>Player.hasvideo</visible>
+                        <visible>Player.hasvideo + !VideoPlayer.Content(livetv)</visible>
+                        <posx>460</posx>
+                        <posy>0</posy>
+                        <height>46</height>
+                        <width>650</width>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                        <font>NotificationFont</font>
+                        <textcolor>MainColor</textcolor>
+                        <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist,,  •  ]$INFO[VideoPlayer.Album,,  •  ]$INFO[VideoPlayer.Season,  •  $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,  •  ]$INFO[VideoPlayer.Title]</label>
+                    </control>
+                    <control type="label">
+                        <visible>Player.hasvideo + [[VideoPlayer.HasEpg+VideoPlayer.Content(livetv)]|!VideoPlayer.Content(livetv)]</visible>
                         <posx>1455</posx>
                         <posy>0</posy>
                         <height>46</height>
