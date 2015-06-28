@@ -79,7 +79,7 @@
                 <itemgap>0</itemgap>
                 <orientation>vertical</orientation>
                 <onleft>49</onleft>
-                <onright>50</onright>
+                <onright>9600</onright>
                 <onup>50</onup>
                 <ondown>9000</ondown>
                 <scrolltime>200</scrolltime>
