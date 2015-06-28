@@ -37,7 +37,6 @@
                     <font>InfoTitleFont</font>
                     <textcolor>MainColor</textcolor>
                     <align>center</align>
-                    <label>-</label>
                 </control>
                 <control type="image">
                     <posx>0</posx>
