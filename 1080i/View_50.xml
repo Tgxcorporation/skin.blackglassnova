@@ -10,6 +10,7 @@
             [Container.Content(Artists) + [!IsEmpty(ListItem.Property(artist_genre)) | !IsEmpty(ListItem.Property(artist_style))]]|
             [Container.Content(MusicVideos) + !IsEmpty(ListItem.Duration)]|
             [Container.Content(Sets) + !IsEmpty(ListItem.Year)]|
+            [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
             [Container.Content(Movies) + !IsEmpty(ListItem.Duration)]|
             [[Container.Content(Seasons) | Container.Content(TVShows)] + !IsEmpty(ListItem.Property(UnWatchedEpisodes))]|
             [!IsEmpty(ListItem.Label2)]
@@ -26,6 +27,7 @@
             [Container.Content(Artists) + [!IsEmpty(ListItem.Property(artist_genre)) | !IsEmpty(ListItem.Property(artist_style))]]|
             [Container.Content(MusicVideos) + !IsEmpty(ListItem.Duration)]|
             [Container.Content(Sets) + !IsEmpty(ListItem.Year)]|
+            [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
             [Container.Content(Movies) + !IsEmpty(ListItem.Duration)]|
             [[Container.Content(Seasons) | Container.Content(TVShows)] + !IsEmpty(ListItem.Property(UnWatchedEpisodes))]|
             [!IsEmpty(ListItem.Label2)]
@@ -619,6 +621,142 @@
             </control>
         </control>
     </include>
+    <include name="Info_50_ExtendedInfo">
+        <control type="group" id="50100">
+            <include>SlideView</include>
+            <include>HideMediaInfo</include>
+            <visible>Control.IsVisible(500)+!IsEmpty(Container(500).ListItem.Plot)</visible>
+            <include>Icon_Fade</include>
+            <control type="image">
+                <posx>-795</posx>
+                <posy>350</posy>
+                <width>2058</width>
+                <height>900</height>
+                <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
+            </control>
+            <control type="image">
+                <posx>242</posx>
+                <posy>399</posy>
+                <height>700</height>
+                <width>250</width>
+                <texture>list/bg_strip_horizontal_left.png</texture>
+                <colordiffuse>90ffffff</colordiffuse>
+            </control>
+            <control type="image">
+                <posx>493</posx>
+                <posy>399</posy>
+                <width>2</width>
+                <height>700</height>
+                <texture>list/bg_facade_vertical.png</texture>
+            </control>
+            <control type="image">
+                <posx>18</posx>
+                <posy>411</posy>
+                <width>470</width>
+                <height>654</height>
+                <aspectratio aligny="top" scalediffuse="false">keep</aspectratio>
+                <include>EpisodeThumb</include>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="group">
+                <posx>495</posx>
+                <posy>426</posy>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>-12</posy>
+                    <width>631</width>
+                    <height>71</height>
+                    <font>InfoTitleFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <align>left</align>
+                    <label>$INFO[Container(500).ListItem.Label]</label>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>721</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="group">
+                    <control type="image">
+                        <posx>TextMargin</posx>
+                        <posy>92</posy>
+                        <texture fallback="rating0.png">$INFO[Container(500).ListItem.StarRating]</texture>
+                        <include>Stars</include>
+                    </control>
+                    <control type="label">
+                        <posx>245</posx>
+                        <posy>73</posy>
+                        <width>460</width>
+                        <height>71</height>
+                        <font>InfoRatingFont</font>
+                        <textcolor>AlternateColor</textcolor>
+                        <label fallback="416">$INFO[Container(500).ListItem.Rating]</label>
+                    </control>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>73</posy>
+                    <width>721</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>146</posy>
+                    <width>631</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <label>$VAR[Details_TVShows_Extended]</label>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>146</posy>
+                    <width>721</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="label">
+                    <posx>TextMargin</posx>
+                    <posy>219</posy>
+                    <width>631</width>
+                    <height>71</height>
+                    <font>InfoDetailsFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <label>$VAR[Details2]</label>
+                </control>
+                <control type="image">
+                    <posx>0</posx>
+                    <posy>219</posy>
+                    <width>721</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="textbox">
+                    <posx>TextMargin</posx>
+                    <posy>305</posy>
+                    <width>631</width>
+                    <height>320</height>
+                    <font>InfoPlotFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <label>$VAR[Plots]</label>
+                    <pagecontrol>6060</pagecontrol>
+                </control>
+                <control type="scrollbar" id="6060">
+                    <visible>Skin.HasSetting(ManualScroll)</visible>
+                    <posx>689</posx>
+                    <posy>305</posy>
+                    <height>320</height>
+                    <include>VerticalScroller</include>
+                    <onleft>9000</onleft>
+                    <onright>50</onright>
+                </control>
+             </control>
+        </control>
+    </include>
     <include name="View_50_ExtendedInfo">
         <control type="group">
             <control type="group">
@@ -707,7 +845,7 @@
                 <height>586</height>
                 <include>VerticalScroller</include>
                 <onleft>500</onleft>
-                <onright>500</onright>
+                <onright>505050</onright>
             </control>
         </control>
     </include>
