@@ -1120,6 +1120,7 @@
             <control type="group">
                 <posx>400</posx>
                 <control type="label">
+                    <visible>VideoPlayer.Content(livetv)</visible>
                     <animation effect="slide" time="0" start="0,0" end="0,-15" condition="Player.ChapterCount">Conditional</animation>
                     <posx>273</posx>
                     <posy>562</posy>
@@ -1127,7 +1128,18 @@
                     <width>930</width>
                     <font>InfoTitleFont</font>
                     <textcolor>MainColor</textcolor>
-                    <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Season,  •  $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,  •  ]$INFO[VideoPlayer.ChannelNumber,,.]$INFO[VideoPlayer.ChannelName,,: ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Album,, - ]$INFO[VideoPlayer.Title]</label>
+                    <label>$INFO[VideoPlayer.ChannelNumber,,  •  ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,  •  ]</label>
+                </control>
+                <control type="label">
+                    <visible>!VideoPlayer.Content(livetv)</visible>
+                    <animation effect="slide" time="0" start="0,0" end="0,-15" condition="Player.ChapterCount">Conditional</animation>
+                    <posx>273</posx>
+                    <posy>562</posy>
+                    <height>36</height>
+                    <width>930</width>
+                    <font>InfoTitleFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist,,  •  ]$INFO[VideoPlayer.Album,,  •  ]$INFO[VideoPlayer.Season,  •  $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,  •  ]$INFO[VideoPlayer.Title]</label>
                 </control>
                 <control type="label">
                     <posx>273</posx>
