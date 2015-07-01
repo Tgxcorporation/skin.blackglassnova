@@ -42,7 +42,7 @@
         <value condition="[Window.isActive(MyPVRRecordings.xml)]+!IsEmpty(Window.Property(IsRadio))">DefaultRadioBig_Wide.png</value>
         <value condition="[Window.isActive(MyPVRRecordings.xml)]+IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig_Wide.png</value>
         <value condition="[Container.content(LiveTV)]">defaultChannelTvBig.png</value>
-        <value condition="[Container.content(Addons)|Container.content(plugins)]">defaultExtensionBig.png</value>
+        <value condition="[Container.content(Addons)|Container.content(plugins)|Window.isActive(CustomAddons.xml)]">defaultExtensionBig.png</value>
         <value condition="[Container.content(Artists)|Container.content(Actors)|Container.content(directors)]">defaultArtistBig.png</value>
         <value condition="[Container.content(Albums)|Container.content(songs)]">defaultAudioBig.png</value>
         <value condition="[ListItem.IsFolder]">DefaultFolderBig.png</value>
@@ -108,7 +108,7 @@
         <value>list/bg_facade_nofocus.png</value>
     </variable>
     <variable name="Details">
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[ListItem.Year]</value>
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[ListItem.Year]$INFO[ListItem.Premiered,  •  ]</value>
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml) + !Skin.HasSetting(plexbmc)">$INFO[ListItem.Date]$INFO[ListItem.Size,  •  ]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album) + !IsEmpty(ListItem.Year)">$INFO[ListItem.Artist]$INFO[ListItem.Year,  •  ]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album)">$INFO[ListItem.Artist]</value>
@@ -127,7 +127,7 @@
         <value>$LOCALIZE[416]</value>
     </variable>
     <variable name="Details_TVShows_Extended">
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Year]</value>
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Year]$INFO[Container(500).ListItem.Premiered,  •  ]</value>
         <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]+!IsEmpty(ListItem.Year)+!IsEmpty(ListItem.mpaa)">$INFO[ListItem.Year]$INFO[ListItem.mpaa,  •  ]</value>
         <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]+IsEmpty(ListItem.Year)+!IsEmpty(ListItem.mpaa)">$INFO[ListItem.mpaa]</value>
         <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]+!IsEmpty(ListItem.Year)+IsEmpty(ListItem.mpaa)">$INFO[ListItem.Year]</value>
@@ -390,6 +390,7 @@
         <value>$LOCALIZE[13278]</value>
     </variable>
     <variable name="Cd.Art">
+        <value condition="Window.IsActive(DialogAlbumInfo.xml)|Window.IsActive(DialogSongInfo.xml)|Window.IsActive(MyMusicPlaylist.xml)">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</value>
         <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(albums)+![Control.isvisible(5050)|Control.isvisible(58)]">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Label]/cdart.png</value>
         <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(albums)+[Control.isvisible(5050)|Control.isvisible(58)]">$INFO[ListItem.Path]/cdart.png</value>
         <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(songs)">$INFO[ListItem.Path]/cdart.png</value>

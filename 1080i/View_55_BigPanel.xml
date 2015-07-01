@@ -478,4 +478,31 @@
             </control>
         </control>
     </include>
+    <include name="DetatchedThumb_55">
+        <control type="group">
+            <visible>Control.IsVisible(55)</visible>
+            <include>Icon_Fade</include>
+            <control type="image">
+                <posx>91</posx>
+                <posy>540</posy>
+                <width>506</width>
+                <height>506</height>
+                <include>CdArtAudio</include>
+            </control>
+            <control type="image">
+                <posx>51</posx>
+                <posy>588</posy>
+                <width>374</width>
+                <height>374</height>
+                <include>CdArtVideo</include>
+            </control>
+            <control type="image">
+                <posx>18</posx>
+                <posy>158</posy>
+                <width>660</width>
+                <height>654</height>
+                <include>DetatchedThumb</include>
+            </control>X
+        </control>
+    </include>
 </includes>

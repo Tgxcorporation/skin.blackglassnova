@@ -29,15 +29,13 @@
             <include condition="!Skin.HasSetting(BlackGlassMode)">View_50_VideoExtras</include>
             <!-- COMMON -->
             <control type="group">
-                <posy>219</posy>
+                <include>Icon_Fade</include>
                 <control type="image">
                     <posx>18</posx>
                     <posy>411</posy>
                     <width>440</width>
-                    <height>440</height>
-                    <aspectratio align="left" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                    <include>SquareThumb</include>
-                    <include>ThumbBorder</include>
+                    <height>654</height>
+                    <include>DetatchedThumb</include>
                 </control>
             </control>
         </control>
@@ -51,16 +49,13 @@
                 <include condition="Skin.HasSetting(BlackGlassMode)">View_50_VideoExtras_BG</include>
                 <!-- COMMON -->
                 <control type="group">
-                    <include>Icon_Slide</include>
-                    <posy>219</posy>
+                    <include>Icon_Fade</include>
                     <control type="image">
                         <posx>18</posx>
-                        <posy>333</posy>
+                        <posy>110</posy>
                         <width>704</width>
                         <height>518</height>
-                        <aspectratio align="left" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                        <texture fallback="defaultVideoBig.png">$VAR[Thumbs]</texture>
-                        <include>ThumbBorder</include>
+                        <include>DetatchedThumb</include>
                     </control>
                 </control>
             </control>

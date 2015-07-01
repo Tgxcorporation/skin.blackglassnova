@@ -86,20 +86,12 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
-                        <include>VisibleFadeEffectDelay</include>
-                        <control type="image">
-                            <posx>1290</posx>
-                            <posy>392</posy>
-                            <width>429</width>
-                            <height>429</height>
-                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
+                    <control type="image">
+                        <posx>1290</posx>
+                        <posy>392</posy>
+                        <width>429</width>
+                        <height>429</height>
+                        <include>CdArtVideo_ExtendedInfo</include>
                     </control>
                     <control type="image">
                         <posx>1142</posx>
@@ -1505,20 +1497,12 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
-                        <include>VisibleFadeEffectDelay</include>
-                        <control type="image">
-                            <posx>1290</posx>
-                            <posy>392</posy>
-                            <width>429</width>
-                            <height>429</height>
-                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
+                    <control type="image">
+                        <posx>1290</posx>
+                        <posy>392</posy>
+                        <width>429</width>
+                        <height>429</height>
+                        <include>CdArtVideo_ExtendedInfo</include>
                     </control>
                     <control type="image">
                         <posx>1142</posx>
@@ -1598,20 +1582,12 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
-                        <include>VisibleFadeEffectDelay</include>
-                        <control type="image">
-                            <posx>1290</posx>
-                            <posy>392</posy>
-                            <width>429</width>
-                            <height>429</height>
-                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
+                    <control type="image">
+                        <posx>1290</posx>
+                        <posy>392</posy>
+                        <width>429</width>
+                        <height>429</height>
+                        <include>CdArtVideo_ExtendedInfo</include>
                     </control>
                     <control type="image">
                         <posx>1142</posx>
@@ -1691,20 +1667,12 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
-                        <include>VisibleFadeEffectDelay</include>
-                        <control type="image">
-                            <posx>1290</posx>
-                            <posy>392</posy>
-                            <width>429</width>
-                            <height>429</height>
-                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
+                    <control type="image">
+                        <posx>1290</posx>
+                        <posy>392</posy>
+                        <width>429</width>
+                        <height>429</height>
+                        <include>CdArtVideo_ExtendedInfo</include>
                     </control>
                     <control type="image">
                         <posx>1142</posx>
@@ -1800,20 +1768,12 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
-                        <include>VisibleFadeEffectDelay</include>
-                        <control type="image">
-                            <posx>1290</posx>
-                            <posy>392</posy>
-                            <width>429</width>
-                            <height>429</height>
-                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
+                    <control type="image">
+                        <posx>1290</posx>
+                        <posy>392</posy>
+                        <width>429</width>
+                        <height>429</height>
+                        <include>CdArtVideo_ExtendedInfo</include>
                     </control>
                     <control type="image">
                         <posx>1142</posx>
@@ -1981,20 +1941,12 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
-                        <include>VisibleFadeEffectDelay</include>
-                        <control type="image">
-                            <posx>1290</posx>
-                            <posy>392</posy>
-                            <width>429</width>
-                            <height>429</height>
-                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
+                    <control type="image">
+                        <posx>1290</posx>
+                        <posy>392</posy>
+                        <width>429</width>
+                        <height>429</height>
+                        <include>CdArtVideo_ExtendedInfo</include>
                     </control>
                     <control type="image">
                         <posx>1142</posx>
@@ -2074,20 +2026,12 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
-                        <include>VisibleFadeEffectDelay</include>
-                        <control type="image">
-                            <posx>1290</posx>
-                            <posy>392</posy>
-                            <width>429</width>
-                            <height>429</height>
-                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
+                    <control type="image">
+                        <posx>1290</posx>
+                        <posy>392</posy>
+                        <width>429</width>
+                        <height>429</height>
+                        <include>CdArtVideo_ExtendedInfo</include>
                     </control>
                     <control type="image">
                         <posx>1142</posx>
@@ -2146,20 +2090,12 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="group">
-                        <!-- CDART -->
-                        <visible>!Skin.HasSetting(plexbmc)</visible>
-                        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
-                        <include>VisibleFadeEffectDelay</include>
-                        <control type="image">
-                            <posx>1290</posx>
-                            <posy>392</posy>
-                            <width>429</width>
-                            <height>429</height>
-                            <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-                            <aspectratio align="center" aligny="center">keep</aspectratio>
-                            <include>Animation_ViewsCDart</include>
-                        </control>
+                    <control type="image">
+                        <posx>1290</posx>
+                        <posy>392</posy>
+                        <width>429</width>
+                        <height>429</height>
+                        <include>CdArtVideo_ExtendedInfo</include>
                     </control>
                     <control type="image">
                         <posx>1142</posx>

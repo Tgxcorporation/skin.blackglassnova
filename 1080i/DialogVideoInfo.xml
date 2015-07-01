@@ -70,20 +70,12 @@
                         <visible>![Control.HasFocus(9012)|
                             ControlGroup(90120).HasFocus]</visible>
                         <include>VisibleFadeEffectDelay</include>
-                        <control type="group">
-                            <!-- CDART -->
-                            <visible>!Skin.HasSetting(plexbmc)</visible>
-                            <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(musicvideos)]</visible>
-                            <include>VisibleFadeEffectDelay</include>
-                            <control type="image">
-                                <posx>1290</posx>
-                                <posy>392</posy>
-                                <width>429</width>
-                                <height>429</height>
-                                <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
-                                <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <include>Animation_ViewsCDart</include>
-                            </control>
+                        <control type="image">
+                            <posx>1290</posx>
+                            <posy>392</posy>
+                            <width>429</width>
+                            <height>429</height>
+                            <include>CdArtVideo</include>
                         </control>
                         <control type="image">
                             <posx>1142</posx>
