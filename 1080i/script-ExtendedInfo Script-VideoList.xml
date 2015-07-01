@@ -17,7 +17,7 @@
         <control type="label">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitle</include>
-            <label>ExtendedInfo</label>
+            <label>Extended Info</label>
         </control>
         <control type="label">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
