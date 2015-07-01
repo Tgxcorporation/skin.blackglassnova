@@ -157,33 +157,19 @@
                 <height>700</height>
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
-            <control type="group">
-                <!-- CDART AUDIO -->
-                <visible>!Skin.HasSetting(plexbmc)</visible>
-                <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]</visible>
-                <control type="image">
-                    <posx>51</posx>
-                    <posy>221</posy>
-                    <width>404</width>
-                    <height>404</height>
-                    <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <include>Animation_ViewsCDart</include>
-                </control>
+            <control type="image">
+                <posx>51</posx>
+                <posy>221</posy>
+                <width>404</width>
+                <height>404</height>
+                <include>CdArtAudio</include>
             </control>
-            <control type="group">
-                <!-- CDART VIDEO -->
-                <visible>!Skin.HasSetting(plexbmc)</visible>
-                <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]</visible>
-                <control type="image">
-                    <posx>51</posx>
-                    <posy>221</posy>
-                    <width>404</width>
-                    <height>404</height>
-                    <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <include>Animation_ViewsCDart</include>
-                </control>
+            <control type="image">
+                <posx>51</posx>
+                <posy>221</posy>
+                <width>404</width>
+                <height>404</height>
+                <include>CdArtVideo</include>
             </control>
             <control type="image">
                 <posx>18</posx>
@@ -754,7 +740,7 @@
                     <onleft>9000</onleft>
                     <onright>50</onright>
                 </control>
-             </control>
+            </control>
         </control>
     </include>
     <include name="View_50_ExtendedInfo">
@@ -1180,5 +1166,32 @@
                 <aspectratio>keep</aspectratio>
             </control>
         </focusedlayout>
+    </include>
+    <include name="DetatchedThumb_50">
+        <control type="group">
+            <visible>Control.IsVisible(50)</visible>
+            <include>Icon_Fade</include>
+            <control type="image">
+                <posx>51</posx>
+                <posy>236</posy>
+                <width>374</width>
+                <height>374</height>
+                <include>CdArtAudio</include>
+            </control>
+            <control type="image">
+                <posx>51</posx>
+                <posy>236</posy>
+                <width>374</width>
+                <height>374</height>
+                <include>CdArtVideo</include>
+            </control>
+            <control type="image">
+                <posx>18</posx>
+                <posy>411</posy>
+                <width>440</width>
+                <height>654</height>
+                <include>DetatchedThumb</include>
+            </control>
+        </control>
     </include>
 </includes>

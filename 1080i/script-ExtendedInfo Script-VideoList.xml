@@ -36,15 +36,12 @@
                     IsEmpty(Container(500).ListItem.Plot)|
                     control.hasfocus(60)</visible>
                 <include>Icon_Fade</include>
-                <posy>219</posy>
                 <control type="image">
                     <posx>18</posx>
                     <posy>411</posy>
                     <width>440</width>
-                    <height>440</height>
-                    <aspectratio align="left" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                    <texture background="true" fallback="defaultVideoBig.png">$VAR[Thumbs]</texture>
-                    <include>ThumbBorder</include>
+                    <height>654</height>
+                    <include>DetatchedThumb</include>
                 </control>
             </control>
         </control>
@@ -61,15 +58,12 @@
                 <control type="group">
                     <visible>StringCompare(Container(500).ListItem.Label,..)|IsEmpty(Container(500).ListItem.Plot)</visible>
                     <include>Icon_Fade</include>
-                    <posy>19</posy>
                     <control type="image">
                         <posx>18</posx>
-                        <posy>133</posy>
+                        <posy>110</posy>
                         <width>704</width>
-                        <height>918</height>
-                        <aspectratio align="left" aligny="bottom" scalediffuse="false">keep</aspectratio>
-                        <texture background="true" fallback="defaultVideoBig.png">$VAR[Thumbs]</texture>
-                        <include>ThumbBorder</include>
+                        <height>518</height>
+                        <include>DetatchedThumb</include>
                     </control>
                 </control>
             </control>
