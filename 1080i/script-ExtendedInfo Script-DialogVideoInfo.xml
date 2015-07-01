@@ -263,6 +263,7 @@
                                 <onclick>Dialog.Close(movieinformation)</onclick>
                                 <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
                                 <visible>!IsEmpty(Window.Property(movie.Path))</visible>
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21800]:</label>
@@ -340,6 +341,7 @@
                                     <label2>$INFO[Window.Property(movie.Path)]</label2>
                                     <onclick>Dialog.Close(movieinformation)</onclick>
                                     <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
+                                    <visible>!Skin.HasSetting(plexbmc)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21800]:</label>
@@ -502,6 +504,7 @@
                                     <label2>$INFO[Window.Property(movie.Path)]</label2>
                                     <onclick>Dialog.Close(movieinformation)</onclick>
                                     <onclick>ActivateWindow(Videos,$INFO[Window.Property(movie.Path)],return)</onclick>
+                                    <visible>!Skin.HasSetting(plexbmc)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21800]:</label>
