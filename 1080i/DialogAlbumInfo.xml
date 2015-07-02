@@ -144,7 +144,7 @@
                     <visible>System.HasAddon(script.extendedinfo)</visible>
                     <visible>container.content(artists)</visible>
                     <description>Similar Artists ExtendedInfo</description>
-                    <include>LeftMenuButton</include>
+                    <include>RightDialogButton</include>
                     <label>31942</label>
                     <onright>5061</onright>
                 </control>
