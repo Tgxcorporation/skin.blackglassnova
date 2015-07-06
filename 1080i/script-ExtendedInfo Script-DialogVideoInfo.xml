@@ -2521,7 +2521,7 @@
                         <onleft>2000</onleft>
                     </control>
                     <control type="togglebutton" id="100">
-                        <visible>Skin.HasSetting(TVTunes.Enabled) + System.HasAddon(script.tvtunes)</visible>
+                        <visible>System.HasAddon(script.tvtunes)</visible>
                         <description>Tv Tunes</description>
                         <include>RightDialogButton</include>
                         <label>$LOCALIZE[31956]</label>
