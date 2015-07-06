@@ -2775,6 +2775,7 @@
                         <font>TvGuideChannelFont</font>
                         <textcolor>ListNoFocusColor</textcolor>
                         <label>$INFO[ListItem.ChannelName]</label>
+                        <scroll>false</scroll>
                     </control>
                 </channellayout>
                 <focusedchannellayout height="70" width="420">
