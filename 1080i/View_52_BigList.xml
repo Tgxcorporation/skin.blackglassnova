@@ -2,7 +2,7 @@
 <includes>
     <include name="ScrollOffsetLabel_52">
         <control type="group">
-            <left>1275</left>
+            <left>1110</left>
             <top>61</top>
             <include>ScrollOffsetLabel</include>
         </control>

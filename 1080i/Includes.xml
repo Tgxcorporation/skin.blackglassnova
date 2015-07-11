@@ -1238,4 +1238,28 @@
         <texture background="true">$VAR[Thumbs]</texture>
         <include>ThumbBorder</include>
     </include>
+    <include name="ScrollOffsetLabel">
+        <!--<visible>Container.Scrolling</visible>-->
+        <visible>Skin.HasSetting(ScrollOffsetLabelEnabled)</visible>
+        <visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
+        <include>Icon_Fade</include>
+        <control type="image">
+            <left>0</left>
+            <top>0</top>
+            <width>100</width>
+            <height>100</height>
+            <texture border="27">buttons/bg_button_focus_white.png</texture>
+        </control>
+        <control type="label">
+            <left>0</left>
+            <top>0</top>
+            <width>100</width>
+            <height>100</height>
+            <align>center</align>
+            <aligny>center</aligny>
+            <label>$INFO[ListItem.SortLetter]</label>
+            <textcolor>MainColor</textcolor>
+            <font>InfoTitleFont</font>
+        </control>
+    </include>
 </includes>
