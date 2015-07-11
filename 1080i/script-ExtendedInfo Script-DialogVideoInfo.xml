@@ -2520,7 +2520,7 @@
                         <label>$LOCALIZE[20360]</label>
                         <onleft>2000</onleft>
                     </control>
-                    <control type="togglebutton" id="100">
+                    <control type="togglebutton" id="101">
                         <visible>System.HasAddon(script.tvtunes)</visible>
                         <description>Tv Tunes</description>
                         <include>RightDialogButton</include>
