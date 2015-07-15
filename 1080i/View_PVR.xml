@@ -1041,7 +1041,7 @@
                 <width>73</width>
                 <align>center</align>
                 <aligny>center</aligny>
-                <aspectratio>scale</aspectratio>
+                <aspectratio>keep</aspectratio>
                 <colordiffuse>NoFocusedColor</colordiffuse>
                 <texture background="true" fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
             </control>
@@ -1123,7 +1123,7 @@
                 <width>73</width>
                 <align>center</align>
                 <aligny>center</aligny>
-                <aspectratio>scale</aspectratio>
+                <aspectratio>keep</aspectratio>
                 <texture background="true" fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
             </control>
             <!--<include>RecOverlayFocus</include>-->
