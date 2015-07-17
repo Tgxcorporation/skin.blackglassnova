@@ -32,7 +32,7 @@
                 <control type="label" id="2">
                     <posx>45</posx>
                     <posy>18</posy>
-                    <width>1074</width>
+                    <width>1174</width>
                     <height>100</height>
                     <font>InfoTitleFont</font>
                     <textcolor>MainColor</textcolor>
