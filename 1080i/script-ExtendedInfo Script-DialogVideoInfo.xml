@@ -881,7 +881,7 @@
                                 <texture border="3">list/bg_facade_nofocus.png</texture>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.Property(Job))</visible>
+                                <visible>IsEmpty(ListItem.Property(department))</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
@@ -892,7 +892,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.Property(Job))</visible>
+                                <visible>!IsEmpty(ListItem.Property(department))</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -909,7 +909,7 @@
                                 <width>1041</width>
                                 <font>FacadeListSubFont</font>
                                 <textcolor>SublistNoFocusColor</textcolor>
-                                <label>$INFO[ListItem.Property(Job)]</label>
+                                <label>$INFO[ListItem.Property(department)]$INFO[ListItem.Property(job),  •  ]</label>
                                 <scroll>false</scroll>
                             </control>
                         </itemlayout>
@@ -922,7 +922,7 @@
                                 <include>FacadeFocus</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.Property(Job))</visible>
+                                <visible>IsEmpty(ListItem.Property(department))</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
@@ -932,7 +932,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.Property(Job))</visible>
+                                <visible>!IsEmpty(ListItem.Property(department))</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -948,7 +948,7 @@
                                 <width>1041</width>
                                 <font>FacadeListSubFont</font>
                                 <textcolor>SublistFocusColor</textcolor>
-                                <label>$INFO[ListItem.Property(Job)]</label>
+                                <label>$INFO[ListItem.Property(department)]$INFO[ListItem.Property(job),  •  ]</label>
                             </control>
                         </focusedlayout>
                     </control>
