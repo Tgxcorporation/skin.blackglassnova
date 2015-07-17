@@ -3,17 +3,6 @@
     <defaultcontrol always="true">9090</defaultcontrol>
     <include>DialogOpenClose</include>
     <controls>
-        <control type="button">
-            <visible>Skin.HasSetting(WindowClosingIcon)</visible>
-            <posx>610</posx>
-            <posy>20</posy>
-            <height>50</height>
-            <width>50</width>
-            <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-            <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
-            <onclick>back</onclick>
-            <label>-</label>
-        </control>
         <control type="label">
             <posx>0</posx>
             <include>LeftMenuTitleLabel</include>
@@ -45,7 +34,7 @@
             <top>166</top>
             <width>577</width>
             <height>470</height>
-            <onright>9090</onright>
+            <onright>Close</onright>
             <onleft>9090</onleft>
             <ondown>9091</ondown>
             <onup>9090</onup>
@@ -125,8 +114,8 @@
             <top>646</top>
             <width>577</width>
             <height>355</height>
-            <onleft>9091</onleft>
-            <onright>60</onright>
+            <onleft>60</onleft>
+            <onright>Close</onright>
             <onup>9090</onup>
             <ondown>9091</ondown>
             <onback>noop</onback>
@@ -170,12 +159,23 @@
             </focusedlayout>
         </control>
         <control type="scrollbar" id="60">
-            <posx>546</posx>
+            <animation effect="slide" start="0,0" end="8,0" time="150">Focus</animation>
+            <animation effect="slide" start="8,0" end="0,0" time="300">UnFocus</animation>
+            <posx>-20</posx>
             <posy>646</posy>
             <height>355</height>
             <include>VerticalScroller</include>
-            <onleft>9091</onleft>
-            <onright>60</onright>
+            <onleft>60</onleft>
+            <onright>9091</onright>
+        </control>
+        <control type="button">
+            <posx>710</posx>
+            <posy>183</posy>
+            <width>200</width>
+            <height>800</height>
+            <texturefocus>-</texturefocus>
+            <texturenofocus>-</texturenofocus>
+            <onfocus>Close</onfocus>
         </control>
     </controls>
 </window>
