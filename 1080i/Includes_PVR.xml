@@ -1029,7 +1029,7 @@
             <label>$ADDON[pvr.dvblink 32019]</label>
             <include>LeftMenuButton</include>
         </control>
-        <control type="radiobutton" id="14">
+        <control type="radiobutton" id="15">
             <width>1264</width>
             <textwidth>1102</textwidth>
             <radioposx>1160</radioposx>
