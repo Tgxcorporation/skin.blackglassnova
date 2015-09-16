@@ -1,3 +1,7 @@
+4.4.5
+Updated languages from Transifex.
+Bugs fixed.
+
 4.4.0
 Added complete support for Wmc, NextPvr and Dvblink per clients.
 Added option to disable osd when player is paused.
