@@ -82,6 +82,7 @@
         IsEmpty(ListItem.Property(Addon.Description))+
         IsEmpty(ListItem.Property(Artist_Description))+
         IsEmpty(ListItem.Property(Album_Description))+
+        IsEmpty(ListItem.Property(Event.Description))+
         IsEmpty(ListItem.Plot)+
         IsEmpty(Container(500).ListItem.Plot)
         ]]">Conditional</animation>
@@ -95,6 +96,7 @@
         IsEmpty(ListItem.Property(Addon.Description))+
         IsEmpty(ListItem.Property(Artist_Description))+
         IsEmpty(ListItem.Property(Album_Description))+
+        IsEmpty(ListItem.Property(Event.Description))+
         IsEmpty(ListItem.Plot)+
         IsEmpty(Container(500).ListItem.Plot)
         ]">Conditional</animation>

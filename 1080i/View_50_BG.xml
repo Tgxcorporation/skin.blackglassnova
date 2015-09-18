@@ -1059,6 +1059,106 @@
             </control>
         </control>
     </include>
+    <include name="View_570_EventLog_BG">
+        <control type="group">
+            <include>ScrollOffsetLabel_50_BG</include>
+            <control type="group">
+                <control type="image">
+                    <posx>704</posx>
+                    <posy>125</posy>
+                    <width>1445</width>
+                    <height>1160</height>
+                    <include condition="!Skin.HasSetting(BlackGlassMode)">bg_tvguide</include>
+                    <include condition="Skin.HasSetting(BlackGlassMode)">bg_tvguide_BG</include>
+                </control>
+                <control type="image">
+                    <posx>740</posx>
+                    <posy>134</posy>
+                    <width>1180</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="image">
+                    <visible>!IntegerGreaterThan(Container(570).NumItems,10)</visible>
+                    <posx>740</posx>
+                    <posy>937</posy>
+                    <width>1180</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="list" id="570">
+                    <viewtype label="535">Large List</viewtype>
+                    <posx>740</posx>
+                    <posy>207</posy>
+                    <width>1180</width>
+                    <height>803</height>
+                    <pagecontrol>60</pagecontrol>
+                    <onleft>6060</onleft>
+                    <onright>60</onright>
+                    <onup>570</onup>
+                    <ondown>570</ondown>
+                    <preloaditems>4</preloaditems>
+                    <include>List_Layout_BG</include>
+                </control>
+            </control>
+            <control type="label">
+                <include>FacadeNumItems</include>
+                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+            </control>
+            <control type="scrollbar" id="60">
+                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
+                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <posx>1899</posx>
+                <posy>207</posy>
+                <height>803</height>
+                <include>VerticalScroller</include>
+                <onleft>570</onleft>
+                <onright>505050</onright>
+            </control>
+        </control>
+    </include>
+    <include name="Info_570_EventLog_BG">
+        <control type="group">
+            <visible>!IsEmpty(ListItem.Property(Event.Description))</visible>
+            <include>Icon_Fade</include>
+            <posy>37</posy>
+            <control type="image">
+                <posx>18</posx>
+                <posy>110</posy>
+                <width>704</width>
+                <height>518</height>
+                <aspectratio align="left" aligny="top" scalediffuse="false">keep</aspectratio>
+                <include>PosterThumb</include>
+                <include>ThumbBorder</include>
+            </control>
+            <control type="group">
+                <posx>0</posx>
+                <posy>116</posy>
+                <control type="group">
+                    <posy>420</posy>
+                    <control type="textbox">
+                        <posx>TextMargin</posx>
+                        <posy>130</posy>
+                        <width>635</width>
+                        <height>325</height>
+                        <font>InfoPlotFont</font>
+                        <textcolor>MainColor</textcolor>
+                        <label>$INFO[ListItem.Property(Event.Description)]</label>
+                        <pagecontrol>6060</pagecontrol>
+                    </control>
+                    <control type="scrollbar" id="6060">
+                        <visible>Skin.HasSetting(ManualScroll)</visible>
+                        <posx>680</posx>
+                        <posy>130</posy>
+                        <height>325</height>
+                        <include>VerticalScroller</include>
+                        <onleft>9000</onleft>
+                        <onright>570</onright>
+                    </control>
+                </control>
+            </control>
+        </control>
+    </include>
     <include name="DetatchedThumb_50_BG">
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
