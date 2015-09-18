@@ -131,6 +131,8 @@
         <textureradioofffocus>buttons/RadioOffFO.png</textureradioofffocus>
         <textureradioonnofocus>buttons/RadioOnNF.png</textureradioonnofocus>
         <textureradiooffnofocus>buttons/RadioOffNF.png</textureradiooffnofocus>
+        <textureradioondisabled colordiffuse="90ffffff">buttons/RadioOnNF.png</textureradioondisabled>
+        <textureradiooffdisabled colordiffuse="90ffffff">buttons/RadioOffNF.png</textureradiooffdisabled>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
     </default>
@@ -142,6 +144,8 @@
         <textureupfocus>buttons/SpinUpFO.png</textureupfocus>
         <texturedown>buttons/SpinDownNF.png</texturedown>
         <texturedownfocus>buttons/SpinDownFO.png</texturedownfocus>
+        <textureupdisabled colordiffuse="90ffffff">buttons/SpinUpNF.png</textureupdisabled>
+        <texturedowndisabled colordiffuse="90ffffff">buttons/SpinDownNF.png</texturedowndisabled>
         <include>TextureFocus</include>
         <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus>
         <spinheight>27</spinheight>
@@ -168,6 +172,8 @@
         <textureupfocus>buttons/SpinUpFO.png</textureupfocus>
         <texturedown>buttons/SpinDownNF.png</texturedown>
         <texturedownfocus>buttons/SpinDownFO.png</texturedownfocus>
+        <textureupdisabled colordiffuse="90ffffff">buttons/SpinUpNF.png</textureupdisabled>
+        <texturedowndisabled colordiffuse="90ffffff">buttons/SpinDownNF.png</texturedowndisabled>
         <include>TextureFocus</include>
         <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus>
         <spinheight>27</spinheight>
