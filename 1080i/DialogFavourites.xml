@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="window">
     <defaultcontrol always="true">450</defaultcontrol>
+    <menucontrol>9000</menucontrol>
     <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">OpenClose</include>
     <controls>
         <include>Fanart_Art</include>
