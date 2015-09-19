@@ -47,10 +47,10 @@
             <!--AVAILABLE MODES-->
             <control type="group">
                 <posx>48</posx>
-                <posy>0</posy>
+                <posy>238</posy>
                 <control type="label">
                     <posx>0</posx>
-                    <posy>195</posy>
+                    <posy>-43</posy>
                     <height>40</height>
                     <width>695</width>
                     <align>center</align>
@@ -60,7 +60,7 @@
                 </control>
                 <control type="list" id="20">
                     <posx>0</posx>
-                    <posy>238</posy>
+                    <posy>0</posy>
                     <width>695</width>
                     <height>781</height>
                     <onup>20</onup>
@@ -126,7 +126,7 @@
                 </control>
                 <control type="scrollbar" id="60">
                     <posx>664</posx>
-                    <posy>238</posy>
+                    <posy>0</posy>
                     <height>781</height>
                     <include>VerticalScroller</include>
                     <onleft>20</onleft>
@@ -154,7 +154,7 @@
                 </control>
                 <control type="label">
                     <posx>0</posx>
-                    <posy>195</posy>
+                    <posy>-43</posy>
                     <height>40</height>
                     <width>695</width>
                     <align>center</align>
@@ -229,7 +229,7 @@
                 </control>
                 <control type="scrollbar" id="61">
                     <posx>664</posx>
-                    <posy>238</posy>
+                    <posy>0</posy>
                     <height>781</height>
                     <include>VerticalScroller</include>
                     <onleft>21</onleft>
@@ -258,7 +258,7 @@
                 <!--GROUPS-->
                 <control type="label">
                     <posx>0</posx>
-                    <posy>195</posy>
+                    <posy>-43</posy>
                     <height>40</height>
                     <width>433</width>
                     <align>center</align>
@@ -285,9 +285,9 @@
                             <texture border="3">list/bg_facade_nofocus.png</texture>
                         </control>
                         <control type="label">
-                            <posx>25</posx>
+                            <posx>TextMargin</posx>
                             <height>69</height>
-                            <width>383</width>
+                            <width>343</width>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListNoFocusColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
@@ -303,9 +303,9 @@
                             <include>FacadeFocus</include>
                         </control>
                         <control type="label">
-                            <posx>25</posx>
+                            <posx>TextMargin</posx>
                             <height>69</height>
-                            <width>383</width>
+                            <width>343</width>
                             <font>FacadeListMainFont</font>
                             <textcolor>ListFocusColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
@@ -360,24 +360,24 @@
                     <onup>9060</onup>
                 </control>
                 <control type="textbox">
-                    <posx>25</posx>
+                    <posx>TextMargin</posx>
                     <posy>240</posy>
-                    <width>383</width>
-                    <height>160</height>
-                    <font>InfoDetailsFont</font>
+                    <width>343</width>
+                    <height>290</height>
+                    <font>NotificationFont</font>
                     <textcolor>MainColor</textcolor>
                     <label>$INFO[Container(9000).ListItem.Label2]</label>
                 </control>
                 <control type="image">
                     <posx>0</posx>
-                    <posy>497</posy>
+                    <posy>489</posy>
                     <width>433</width>
                     <height>79</height>
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="grouplist" id="9001">
                     <posx>0</posx>
-                    <posy>418</posy>
+                    <posy>568</posy>
                     <width>433</width>
                     <height>213</height>
                     <itemgap>0</itemgap>
@@ -388,6 +388,8 @@
                     <control type="radiobutton" id="22">
                         <description>Default RadioButton</description>
                         <label>15064</label>
+                        <radioposx>332</radioposx>
+                        <textwidth>272</textwidth>
                         <width>433</width>
                         <include>LeftMenuButton</include>
                     </control>
