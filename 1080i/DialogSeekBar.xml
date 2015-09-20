@@ -111,6 +111,16 @@
                 <info>Player.Progress</info>
                 <visible>true</visible>
             </control>
+            <control type="slider" id="401">
+                <description>Seek Position</description>
+                <posx>0</posx>
+                <posy>985</posy>
+                <width>1920</width>
+                <height>54</height>
+                <texturesliderbar>OSD/osd_progress_empty.png</texturesliderbar>
+                <textureslidernib>buttons/SliderNibFO.png</textureslidernib>
+                <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+            </control>
             <control type="label">
                 <visible>![!VideoPlayer.HasEpg+VideoPlayer.Content(livetv)]</visible>
                 <posx>20</posx>
