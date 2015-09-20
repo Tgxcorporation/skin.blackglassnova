@@ -113,6 +113,9 @@
             </control>
             <control type="slider" id="401">
                 <description>Seek Position</description>
+                <visible>Player.Seeking</visible>
+                <animation effect="fade" start="0" end="100" time="150">Visible</animation>
+                <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
                 <posx>0</posx>
                 <posy>985</posy>
                 <width>1920</width>
