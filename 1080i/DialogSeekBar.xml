@@ -111,6 +111,16 @@
                 <info>Player.Progress</info>
                 <visible>true</visible>
             </control>
+            <control type="progress">
+                <visible>PVR.IsTimeshift</visible>
+                <posx>0</posx>
+                <posy>1001</posy>
+                <width>1920</width>
+                <height>54</height>
+                <texturebg>-</texturebg>
+                <midtexture border="3">OSD/osd_progress_mid54_timeshift.png</midtexture>
+                <info>PVR.TimeshiftProgress</info>
+            </control>
             <control type="slider" id="401">
                 <description>Seek Position</description>
                 <visible>Player.Seeking</visible>
