@@ -72,7 +72,6 @@
                         <scroll>true</scroll>
                         <textcolor>MainColor</textcolor>
                         <align>center</align>
-                        <label>sdsdss</label>
                     </control>
                     <control type="label" id="314">
                         <description>HZLIST label</description>
@@ -84,7 +83,6 @@
                         <scroll>true</scroll>
                         <textcolor>AlternateColor</textcolor>
                         <align>center</align>
-                        <label>sdsdss</label>
                     </control>
                     <control type="image">
                         <posx>178</posx>
