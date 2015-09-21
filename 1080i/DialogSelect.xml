@@ -47,6 +47,15 @@
                 <height>79</height>
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
+            <control type="label" id="4">
+                <description>No Settings Label</description>
+                <posx>70</posx>
+                <posy>154</posy>
+                <width>905</width>
+                <height>71</height>
+                <font>FacadeListMainFont</font>
+                <textcolor>ListNoFocusColor</textcolor>
+            </control>
             <control type="group">
                 <visible>Control.IsVisible(6)</visible>
                 <control type="image">
