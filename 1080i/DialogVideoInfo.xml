@@ -737,52 +737,26 @@
                             <height>8</height>
                             <texture>list/bg_facade_separator.png</texture>
                         </control>
-                        <control type="group">
-                            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
-                            <control type="textbox">
-                                <posx>TextMargin</posx>
-                                <posy>390</posy>
-                                <width>1041</width>
-                                <height>320</height>
-                                <align>justify</align>
-                                <font>InfoDetailsFont</font>
-                                <label>$VAR[Plots]</label>
-                                <pagecontrol>6060</pagecontrol>
-                            </control>
-                            <control type="scrollbar" id="6060">
-                                <visible>Skin.HasSetting(ManualScroll)</visible>
-                                <posx>1100</posx>
-                                <posy>390</posy>
-                                <height>320</height>
-                                <include>VerticalScroller</include>
-                                <onleft>9009</onleft>
-                                <onright>9001</onright>
-                            </control>
+                        <control type="textbox">
+                            <posx>TextMargin</posx>
+                            <posy>390</posy>
+                            <width>1041</width>
+                            <height>320</height>
+                            <align>justify</align>
+                            <font>InfoDetailsFont</font>
+                            <label>$VAR[Plots]</label>
+                            <pagecontrol>6060</pagecontrol>
                         </control>
-                        <control type="group">
-                            <visible>IsEmpty(ListItem.AudioChannels)</visible>
-                            <control type="textbox">
-                                <posx>TextMargin</posx>
-                                <posy>390</posy>
-                                <width>1041</width>
-                                <height>440</height>
-                                <align>justify</align>
-                                <font>InfoDetailsFont</font>
-                                <label>$VAR[Plots]</label>
-                                <pagecontrol>6060</pagecontrol>
-                            </control>
-                            <control type="scrollbar" id="6060">
-                                <visible>Skin.HasSetting(ManualScroll)</visible>
-                                <posx>1100</posx>
-                                <posy>390</posy>
-                                <height>440</height>
-                                <include>VerticalScroller</include>
-                                <onleft>9009</onleft>
-                                <onright>9001</onright>
-                            </control>
+                        <control type="scrollbar" id="6060">
+                            <visible>Skin.HasSetting(ManualScroll)</visible>
+                            <posx>1100</posx>
+                            <posy>390</posy>
+                            <height>320</height>
+                            <include>VerticalScroller</include>
+                            <onleft>9009</onleft>
+                            <onright>9001</onright>
                         </control>
                         <control type="image">
-                            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
                             <posx>0</posx>
                             <posy>730</posy>
                             <width>1131</width>
@@ -790,7 +764,6 @@
                             <texture>list/bg_facade_separator.png</texture>
                         </control>
                         <control type="grouplist">
-                            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
                             <posx>45</posx>
                             <posy>753</posy>
                             <width min="90" max="967">auto</width>

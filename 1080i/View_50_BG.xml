@@ -161,7 +161,7 @@
                     </control>
                     <control type="group">
                         <posy>420</posy>
-                        <visible>IsEmpty(ListItem.AudioChannels)</visible>
+                        <visible>![Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
                         <control type="textbox">
                             <posx>TextMargin</posx>
                             <posy>230</posy>
@@ -184,7 +184,7 @@
                     </control>
                     <control type="group">
                         <posy>420</posy>
-                        <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                        <visible>[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
                         <control type="textbox">
                             <posx>TextMargin</posx>
                             <posy>230</posy>

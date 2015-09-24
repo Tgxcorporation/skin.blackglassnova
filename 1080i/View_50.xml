@@ -249,7 +249,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="textbox">
-                    <visible>IsEmpty(ListItem.AudioChannels)</visible>
+                    <visible>![Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
                     <posx>TextMargin</posx>
                     <posy>305</posy>
                     <width>631</width>
@@ -260,7 +260,7 @@
                     <pagecontrol>6060</pagecontrol>
                 </control>
                 <control type="scrollbar" id="6060">
-                    <visible>IsEmpty(ListItem.AudioChannels)+Skin.HasSetting(ManualScroll)</visible>
+                    <visible>![Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]+Skin.HasSetting(ManualScroll)</visible>
                     <posx>689</posx>
                     <posy>305</posy>
                     <height>320</height>
@@ -269,7 +269,7 @@
                     <onright>50</onright>
                 </control>
                 <control type="group">
-                    <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                    <visible>[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
                     <control type="textbox">
                         <posx>TextMargin</posx>
                         <posy>315</posy>
