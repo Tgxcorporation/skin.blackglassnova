@@ -156,7 +156,7 @@
                     </control>
                 </control>
                 <control type="grouplist" id="45742">
-                    <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                    <visible>[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
                     <posx>52</posx>
                     <posy>998</posy>
                     <width>1830</width>

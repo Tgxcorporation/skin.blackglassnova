@@ -86,7 +86,7 @@
                     <label>$VAR[Details]</label>
                 </control>
                 <control type="textbox">
-                    <visible>IsEmpty(ListItem.AudioChannels)</visible>
+                    <visible>![Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
                     <posx>TextMargin</posx>
                     <posy>650</posy>
                     <width>635</width>
@@ -97,7 +97,7 @@
                     <pagecontrol>6060</pagecontrol>
                 </control>
                 <control type="scrollbar" id="6060">
-                    <visible>IsEmpty(ListItem.AudioChannels)+Skin.HasSetting(ManualScroll)</visible>
+                    <visible>![Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]+Skin.HasSetting(ManualScroll)</visible>
                     <posx>680</posx>
                     <posy>650</posy>
                     <height>240</height>
@@ -107,7 +107,7 @@
                 </control>
                 <control type="group">
                     <posy>420</posy>
-                    <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                    <visible>[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
                     <control type="textbox">
                         <posx>TextMargin</posx>
                         <posy>230</posy>

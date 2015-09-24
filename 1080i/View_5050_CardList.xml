@@ -446,7 +446,7 @@
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="textbox">
-                            <visible>IsEmpty(ListItem.AudioChannels)</visible>
+                            <visible>![Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
                             <posx>TextMargin</posx>
                             <posy>237</posy>
                             <width>1031</width>
@@ -457,7 +457,7 @@
                             <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                         </control>
                         <control type="group">
-                            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                            <visible>[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
                             <control type="textbox">
                                 <posx>TextMargin</posx>
                                 <posy>240</posy>
@@ -648,7 +648,7 @@
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
                         <control type="textbox">
-                            <visible>IsEmpty(ListItem.AudioChannels)</visible>
+                            <visible>![Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
                             <posx>TextMargin</posx>
                             <posy>237</posy>
                             <width>1031</width>
@@ -659,7 +659,7 @@
                             <autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
                         </control>
                         <control type="group">
-                            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
+                            <visible>[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
                             <control type="textbox">
                                 <posx>TextMargin</posx>
                                 <posy>240</posy>
