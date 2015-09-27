@@ -3,17 +3,11 @@
     <include name="PVROSDChannelListSmall">
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-            <control type="button" id="9001">
-                <visible>Skin.HasSetting(WindowClosingIcon)</visible>
-                <posx>1635</posx>
-                <posy>487</posy>
-                <height>50</height>
-                <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
-                <onclick>back</onclick>
-                <label>-</label>
-            </control>
+            <include name="WindowClosingButton">
+                <param name="id" value="9001"/>
+                <param name="x" value="1635"/>
+                <param name="y" value="487"/>
+            </include>
             <control type="image">
                 <posx>233</posx>
                 <posy>483</posy>
@@ -276,17 +270,11 @@
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-450</posy>
-            <control type="button" id="9001">
-                <visible>Skin.HasSetting(WindowClosingIcon)</visible>
-                <posx>1635</posx>
-                <posy>487</posy>
-                <height>50</height>
-                <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
-                <onclick>back</onclick>
-                <label>-</label>
-            </control>
+            <include name="WindowClosingButton">
+                <param name="id" value="9001"/>
+                <param name="x" value="1635"/>
+                <param name="y" value="487"/>
+            </include>
             <control type="image">
                 <posx>233</posx>
                 <posy>483</posy>
@@ -548,17 +536,11 @@
     <include name="PVROSDChannelListSmallGuide">
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-            <control type="button" id="9001">
-                <visible>Skin.HasSetting(WindowClosingIcon)</visible>
-                <posx>1635</posx>
-                <posy>487</posy>
-                <height>50</height>
-                <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
-                <onclick>back</onclick>
-                <label>-</label>
-            </control>
+            <include name="WindowClosingButton">
+                <param name="id" value="9001"/>
+                <param name="x" value="1635"/>
+                <param name="y" value="487"/>
+            </include>
             <control type="image">
                 <posx>233</posx>
                 <posy>483</posy>
@@ -747,17 +729,11 @@
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-450</posy>
-            <control type="button" id="9001">
-                <visible>Skin.HasSetting(WindowClosingIcon)</visible>
-                <posx>1635</posx>
-                <posy>487</posy>
-                <height>50</height>
-                <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
-                <onclick>back</onclick>
-                <label>-</label>
-            </control>
+            <include name="WindowClosingButton">
+                <param name="id" value="0"/>
+                <param name="x" value="1635"/>
+                <param name="y" value="487"/>
+            </include>
             <control type="image">
                 <posx>233</posx>
                 <posy>483</posy>
