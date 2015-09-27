@@ -136,19 +136,19 @@
             <control type="group">
                 <!-- CLEAR ART / LOGO -->
                 <control type="image">
-                    <posx>645r</posx>
+                    <posx>775</posx>
                     <posy>10</posy>
                     <width>300</width>
                     <height>149</height>
-                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
                     <include>ClearArt</include>
                 </control>
                 <control type="image">
-                    <posx>645r</posx>
+                    <posx>775</posx>
                     <posy>10</posy>
                     <width>300</width>
                     <height>149</height>
-                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
+                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
                     <include>ClearLogo</include>
                 </control>
             </control>
