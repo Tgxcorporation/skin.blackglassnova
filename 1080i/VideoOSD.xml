@@ -129,7 +129,7 @@
                 </control>
                 <control type="button" id="307">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
-                    <label>$LOCALIZE[19069]$INFO[VideoPlayer.ChannelName, - ]</label>
+                    <label>$LOCALIZE[19069]$INFO[VideoPlayer.ChannelNumberLabel,  •  ]$INFO[VideoPlayer.ChannelName,  •  ]</label>
                     <include>TopbarButton</include>
                     <texturefocus>topbar/topbar_epg_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_epg_nofocus.png</texturenofocus>
