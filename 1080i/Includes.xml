@@ -1018,23 +1018,11 @@
     <include name="OSDInfoPanel">
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-            <control type="button" id="9001">
-                <visible>Skin.HasSetting(WindowClosingIcon)</visible>
-                <posx>1637</posx>
-                <posy>479</posy>
-                <height>50</height>
-                <width>50</width>
-                <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-                <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
-                <onleft>Dialog.Close(10142)</onleft>
-                <onright>Dialog.Close(10142)</onright>
-                <onup>Dialog.Close(10142)</onup>
-                <ondown>Dialog.Close(10142)</ondown>
-                <onback>Dialog.Close(10142)</onback>
-                <onclick>Dialog.Close(10142)</onclick>
-                <label>-</label>
-                <onfocus>noop</onfocus>
-            </control>
+            <include name="WindowClosingButton">
+                <param name="id" value="9001"/>
+                <param name="x" value="1637"/>
+                <param name="y" value="479"/>
+            </include>
             <control type="group">
                 <!-- CLEAR ART / LOGO -->
                 <control type="image">
@@ -1261,6 +1249,20 @@
             <label>$INFO[ListItem.SortLetter]</label>
             <textcolor>MainColor</textcolor>
             <font>InfoTitleFont</font>
+        </control>
+    </include>
+    <!--INCLUDES WITH PARAMETERS-->
+    <include name="WindowClosingButton">
+        <control type="button" id="$PARAM[id]">
+            <visible>Skin.HasSetting(WindowClosingIcon)</visible>
+            <posx>$PARAM[x]</posx>
+            <posy>$PARAM[y]</posy>
+            <height>50</height>
+            <width>50</width>
+            <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
+            <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
+            <onclick>back</onclick>
+            <label>-</label>
         </control>
     </include>
 </includes>
