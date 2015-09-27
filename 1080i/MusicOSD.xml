@@ -264,7 +264,7 @@
                 </control>
                 <control type="button" id="307">
                     <visible>MusicPlayer.Content(LiveTV)</visible>
-                    <label>$LOCALIZE[19029]$INFO[MusicPlayer.ChannelName, - ]</label>
+                    <label>$LOCALIZE[19029]$INFO[MusicPlayer.ChannelNumberLabel,,  •  ]$INFO[MusicPlayer.ChannelName,  •  ]</label>
                     <include>TopbarButton</include>
                     <texturefocus>topbar/topbar_epg_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_epg_nofocus.png</texturenofocus>

@@ -144,7 +144,7 @@
                         <width>1220</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.ChannelNumberLabel]  •  $INFO[ListItem.Label]</label>
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
@@ -239,7 +239,7 @@
                         <width>1220</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.ChannelNumberLabel]  •  $INFO[ListItem.Label]</label>
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
@@ -411,7 +411,7 @@
                         <width>1220</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.ChannelNumberLabel]  •  $INFO[ListItem.Label]</label>
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
@@ -506,7 +506,7 @@
                         <width>1220</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.Label]</label>
+                        <label>$INFO[ListItem.EndTime]  •  $INFO[ListItem.ChannelNumberLabel]  •  $INFO[ListItem.Label]</label>
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
@@ -563,7 +563,7 @@
                 <width>1000</width>
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
-                <label>[B]$INFO[VideoPlayer.ChannelName][/B]  •  $INFO[Container(11).ListItem.StartDate]</label>
+                <label>[B]$INFO[VideoPlayer.ChannelNumberLabel,,  •  ]$INFO[VideoPlayer.ChannelName][/B]  •  $INFO[Container(11).ListItem.StartDate]</label>
             </control>
             <control type="label">
                 <visible>IsEmpty(Container(11).ListItem.StartDate)</visible>
@@ -573,7 +573,7 @@
                 <width>1000</width>
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
-                <label>[B]$INFO[VideoPlayer.ChannelName][/B]</label>
+                <label>[B]$INFO[VideoPlayer.ChannelNumberLabel,,  •  ]$INFO[VideoPlayer.ChannelName][/B]</label>
             </control>
             <control type="label">
                 <posx>1570</posx>
@@ -756,7 +756,7 @@
                 <width>1000</width>
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
-                <label>[B]$INFO[VideoPlayer.ChannelName][/B]  •  $INFO[Container(11).ListItem.StartDate]</label>
+                <label>[B]$INFO[VideoPlayer.ChannelNumberLabel,,  •  ]$INFO[VideoPlayer.ChannelName][/B]  •  $INFO[Container(11).ListItem.StartDate]</label>
             </control>
             <control type="label">
                 <visible>IsEmpty(Container(11).ListItem.StartDate)</visible>
@@ -766,7 +766,7 @@
                 <width>1000</width>
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
-                <label>[B]$INFO[VideoPlayer.ChannelName][/B]</label>
+                <label>[B]$INFO[VideoPlayer.ChannelNumberLabel,,  •  ]$INFO[VideoPlayer.ChannelName][/B]</label>
             </control>
             <control type="label">
                 <posx>1570</posx>
