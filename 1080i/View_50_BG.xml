@@ -328,25 +328,15 @@
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
             <include>ScrollOffsetLabel_50_BG</include>
-            <control type="group">
-                <!-- CLEAR ART / LOGO -->
-                <control type="image">
-                    <posx>775</posx>
-                    <posy>10</posy>
-                    <width>300</width>
-                    <height>149</height>
-                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
-                    <include>ClearArt</include>
-                </control>
-                <control type="image">
-                    <posx>775</posx>
-                    <posy>10</posy>
-                    <width>300</width>
-                    <height>149</height>
-                    <aspectratio align="left" aligny="bottom">keep</aspectratio>
-                    <include>ClearLogo</include>
-                </control>
-            </control>
+            <include name="ClearArtLogo">
+                <param name="x" value="775"/>
+                <param name="y" value="10"/>
+                <param name="width" value="300"/>
+                <param name="height" value="149"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="left"/>
+                <param name="aligny" value="bottom"/>
+            </include>
             <control type="group">
                 <control type="image">
                     <posx>704</posx>

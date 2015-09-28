@@ -488,25 +488,15 @@
         <focusedlayout condition="[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(episodes) | Container.Content(seasons)|Container.Content(sets)]" height="887" width="1683">
             <control type="group">
                 <posy>127</posy>
-                <control type="group">
-                    <!-- CLEAR ART / LOGO -->
-                    <control type="image">
-                        <posx>1350</posx>
-                        <posy>-116</posy>
-                        <width>300</width>
-                        <height>150</height>
-                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <include>ClearArt</include>
-                    </control>
-                    <control type="image">
-                        <posx>1350</posx>
-                        <posy>-116</posy>
-                        <width>300</width>
-                        <height>150</height>
-                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <include>ClearLogo</include>
-                    </control>
-                </control>
+                <include name="ClearArtLogo">
+                    <param name="x" value="1350"/>
+                    <param name="y" value="-116"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="150"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="right"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
                 <control type="group">
                     <visible>StringCompare(ListItem.Label,..)</visible>
                     <posx>725</posx>
