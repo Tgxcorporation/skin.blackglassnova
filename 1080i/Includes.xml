@@ -1032,7 +1032,8 @@
                     [!IsEmpty(Player.Art(clearart))|!IsEmpty(Player.Art(tvshow.clearart))]">
                         <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
                         <effect type="fade" start="100" end="0" time="500" delay="3000"/>
-                    </animation><posx>645r</posx>
+                    </animation>
+                    <posx>645r</posx>
                     <posy>283</posy>
                     <width>300</width>
                     <height>235</height>
@@ -1046,7 +1047,8 @@
                     [!IsEmpty(Player.Art(clearart))|!IsEmpty(Player.Art(tvshow.clearart))]">
                         <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
                         <effect type="fade" start="0" end="100" time="500" delay="3000"/>
-                    </animation><posx>645r</posx>
+                    </animation>
+                    <posx>645r</posx>
                     <posy>283</posy>
                     <width>300</width>
                     <height>235</height>
@@ -1180,26 +1182,6 @@
             </control>
         </control>
     </include>
-    <include name="ClearArt">
-        <visible>Skin.HasSetting(EnableClearArt)</visible>
-        <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearLogo)+
-                    [!IsEmpty(ListItem.Art(clearlogo))|!IsEmpty(ListItem.Art(tvshow.clearlogo))]+
-                    [!IsEmpty(ListItem.Art(clearart))|!IsEmpty(ListItem.Art(tvshow.clearart))]">
-            <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
-            <effect type="fade" start="100" end="0" time="500" delay="3000"/>
-        </animation>
-        <texture background="true">$VAR[DefaultClearArt]</texture>
-    </include>
-    <include name="ClearLogo">
-        <visible>Skin.HasSetting(EnableClearLogo)</visible>
-        <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearArt)+
-                    [!IsEmpty(ListItem.Art(clearlogo))|!IsEmpty(ListItem.Art(tvshow.clearlogo))]+
-                    [!IsEmpty(ListItem.Art(clearart))|!IsEmpty(ListItem.Art(tvshow.clearart))]">
-            <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
-            <effect type="fade" start="0" end="100" time="500" delay="3000"/>
-        </animation>
-        <texture background="true">$VAR[DefaultClearLogo]</texture>
-    </include>
     <include name="CdArtAudio">
         <visible>!Skin.HasSetting(plexbmc)</visible>
         <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]</visible>
@@ -1263,6 +1245,32 @@
             <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
             <onclick>back</onclick>
             <label>-</label>
+        </control>
+    </include>
+    <include name="ClearArtLogo">
+        <control type="group">
+            <control type="image">
+                <visible>$PARAM[visible]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
+                <include>PulseClearArt</include>
+                <texture background="true">$VAR[DefaultClearArt]</texture>
+            </control>
+            <control type="image">
+                <visible>$PARAM[visible]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
+                <include>PulseClearLogo</include>
+                <texture background="true">$VAR[DefaultClearLogo]</texture>
+            </control>
         </control>
     </include>
 </includes>

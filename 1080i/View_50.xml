@@ -508,25 +508,15 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
-            <control type="group">
-                <!-- CLEAR ART / LOGO -->
-                <control type="image">
-                    <posx>345r</posx>
-                    <posy>150</posy>
-                    <width>300</width>
-                    <height>235</height>
-                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <include>ClearArt</include>
-                </control>
-                <control type="image">
-                    <posx>345r</posx>
-                    <posy>150</posy>
-                    <width>300</width>
-                    <height>235</height>
-                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <include>ClearLogo</include>
-                </control>
-            </control>
+            <include name="ClearArtLogo">
+                <param name="x" value="345r"/>
+                <param name="y" value="150"/>
+                <param name="width" value="300"/>
+                <param name="height" value="235"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="right"/>
+                <param name="aligny" value="bottom"/>
+            </include>
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>
@@ -724,25 +714,15 @@
     </include>
     <include name="View_50_ExtendedInfo">
         <control type="group">
-            <control type="group">
-                <!-- CLEAR ART / LOGO -->
-                <control type="image">
-                    <posx>345r</posx>
-                    <posy>150</posy>
-                    <width>300</width>
-                    <height>235</height>
-                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <include>ClearArt</include>
-                </control>
-                <control type="image">
-                    <posx>345r</posx>
-                    <posy>150</posy>
-                    <width>300</width>
-                    <height>235</height>
-                    <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                    <include>ClearLogo</include>
-                </control>
-            </control>
+            <include name="ClearArtLogo">
+                <param name="x" value="345r"/>
+                <param name="y" value="150"/>
+                <param name="width" value="300"/>
+                <param name="height" value="235"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="right"/>
+                <param name="aligny" value="bottom"/>
+            </include>
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>

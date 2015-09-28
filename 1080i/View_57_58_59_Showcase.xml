@@ -397,25 +397,15 @@
                     <onclick>Control.SetFocus(59)</onclick>
                     <onleft>Control.Move(59,-1)</onleft>
                 </control>
-                <control type="group">
-                    <!-- CLEAR ART / LOGO -->
-                    <control type="image">
-                        <posx>345r</posx>
-                        <posy>369</posy>
-                        <width>300</width>
-                        <height>235</height>
-                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <include>ClearArt</include>
-                    </control>
-                    <control type="image">
-                        <posx>345r</posx>
-                        <posy>369</posy>
-                        <width>300</width>
-                        <height>235</height>
-                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <include>ClearLogo</include>
-                    </control>
-                </control>
+                <include name="ClearArtLogo">
+                    <param name="x" value="345r"/>
+                    <param name="y" value="369"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="235"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="right"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
                 <control type="group">
                     <posy>219</posy>
                     <control type="group">
@@ -700,25 +690,15 @@
                     <onclick>Control.SetFocus(58)</onclick>
                     <onleft>Control.Move(58,-1)</onleft>
                 </control>
-                <control type="group">
-                    <!-- CLEAR ART / LOGO -->
-                    <control type="image">
-                        <posx>345r</posx>
-                        <posy>429</posy>
-                        <width>300</width>
-                        <height>235</height>
-                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <include>ClearArt</include>
-                    </control>
-                    <control type="image">
-                        <posx>345r</posx>
-                        <posy>429</posy>
-                        <width>300</width>
-                        <height>235</height>
-                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <include>ClearLogo</include>
-                    </control>
-                </control>
+                <include name="ClearArtLogo">
+                    <param name="x" value="345r"/>
+                    <param name="y" value="429"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="235"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="right"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
                 <control type="group">
                     <posy>279</posy>
                     <control type="group">
@@ -1100,25 +1080,15 @@
                     <onclick>Control.SetFocus(57)</onclick>
                     <onleft>Control.Move(57,-1)</onleft>
                 </control>
-                <control type="group">
-                    <!-- CLEAR ART / LOGO -->
-                    <control type="image">
-                        <posx>345r</posx>
-                        <posy>429</posy>
-                        <width>300</width>
-                        <height>235</height>
-                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <include>ClearArt</include>
-                    </control>
-                    <control type="image">
-                        <posx>345r</posx>
-                        <posy>429</posy>
-                        <width>300</width>
-                        <height>235</height>
-                        <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <include>ClearLogo</include>
-                    </control>
-                </control>
+                <include name="ClearArtLogo">
+                    <param name="x" value="345r"/>
+                    <param name="y" value="429"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="235"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="right"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
                 <control type="group">
                     <posy>279</posy>
                     <control type="group">
