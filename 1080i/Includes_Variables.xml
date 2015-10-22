@@ -51,9 +51,9 @@
     </variable>
     <variable name="Thumbs">
         <value condition="StringCompare(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
+        <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,Left)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,Left)">$INFO[ListItem.Icon]</value>
         <value condition="!IsEmpty(ListItem.Property(Icon))+!SubString(ListItem.Property(Icon),Default,Left)">$INFO[ListItem.Property(Icon)]</value>
-        <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,Left)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.thumb)+!SubString(ListItem.thumb,Default,Left)">$INFO[ListItem.thumb]</value>
         <value condition="!IsEmpty(ListItem.Art(thumb))+!SubString(ListItem.Art(thumb),Default,Left)">$INFO[ListItem.Art(thumb)]</value>
         <value condition="!IsEmpty(Container(500).ListItem.Icon)+!SubString(Container(500).ListItem.Icon,Default,Left)">$INFO[Container(500).ListItem.Icon]</value>
