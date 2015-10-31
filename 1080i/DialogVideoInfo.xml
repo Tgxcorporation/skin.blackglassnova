@@ -955,6 +955,15 @@
                         <onclick>XBMC.RunScript(script.cinema.experience,movieid=$INFO[ListItem.DBID])</onclick>
                         <onleft>9009</onleft>
                     </control>
+                    <control type="button" id="298">
+                        <visible>System.HasAddon(script.cinemavision) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)]</visible>
+                        <description>Cinema Vision</description>
+                        <include>RightDialogButton</include>
+                        <label>CinemaVision</label>
+                        <onclick>Dialog.Close(MovieInformation)</onclick>
+                        <onclick>RunScript(script.cinemavision,experience)</onclick>
+                        <onleft>9009</onleft>
+                    </control>
                     <control type="button" id="11">
                         <visible>!IsEmpty(ListItem.Trailer)</visible>
                         <label>$LOCALIZE[20410]</label>

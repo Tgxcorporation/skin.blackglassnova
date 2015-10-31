@@ -2327,6 +2327,16 @@
                         <onclick>RunScript(script.cinema.experience)</onclick>
                         <onleft>9009</onleft>
                     </control>
+                    <control type="button" id="21">
+                        <visible>System.HasAddon(script.cinemavision) + !SubString(Container.FolderPath,plugin)</visible>
+                        <visible>!IsEmpty(Window.Property(movie.DBID))</visible>
+                        <description>Cinema Vision</description>
+                        <include>RightDialogButton</include>
+                        <label>CinemaVision</label>
+                        <onclick>Dialog.Close(MovieInformation)</onclick>
+                        <onclick>RunScript(script.cinemavision,experience)</onclick>
+                        <onleft>9009</onleft>
+                    </control>
                     <control type="button" id="1001">
                         <visible>IntegerGreaterThan(Container(1000).NumItems,0)</visible>
                         <description>CAST</description>
