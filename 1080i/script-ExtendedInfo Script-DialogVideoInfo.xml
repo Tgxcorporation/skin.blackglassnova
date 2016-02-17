@@ -80,13 +80,15 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="image">
-                        <posx>1290</posx>
-                        <posy>392</posy>
-                        <width>429</width>
-                        <height>429</height>
-                        <include>CdArtVideo_ExtendedInfo</include>
-                    </control>
+                    <!-- CDART VIDEO -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))"/>
+                        <param name="x" value="1290"/>
+                        <param name="y" value="392"/>
+                        <param name="width" value="429"/>
+                        <param name="height" value="429"/>
+                        <param name="texture" value="$VAR[VideoCdArt]"/>
+                    </include>
                     <control type="image">
                         <posx>1142</posx>
                         <posy>365</posy>
@@ -1437,13 +1439,15 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="image">
-                        <posx>1290</posx>
-                        <posy>392</posy>
-                        <width>429</width>
-                        <height>429</height>
-                        <include>CdArtVideo_ExtendedInfo</include>
-                    </control>
+                    <!-- CDART VIDEO -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))"/>
+                        <param name="x" value="1290"/>
+                        <param name="y" value="392"/>
+                        <param name="width" value="429"/>
+                        <param name="height" value="429"/>
+                        <param name="texture" value="$VAR[VideoCdArt]"/>
+                    </include>
                     <control type="image">
                         <posx>1142</posx>
                         <posy>365</posy>
@@ -1522,13 +1526,15 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="image">
-                        <posx>1290</posx>
-                        <posy>392</posy>
-                        <width>429</width>
-                        <height>429</height>
-                        <include>CdArtVideo_ExtendedInfo</include>
-                    </control>
+                    <!-- CDART VIDEO -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))"/>
+                        <param name="x" value="1290"/>
+                        <param name="y" value="392"/>
+                        <param name="width" value="429"/>
+                        <param name="height" value="429"/>
+                        <param name="texture" value="$VAR[VideoCdArt]"/>
+                    </include>
                     <control type="image">
                         <posx>1142</posx>
                         <posy>365</posy>
@@ -1607,13 +1613,15 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="image">
-                        <posx>1290</posx>
-                        <posy>392</posy>
-                        <width>429</width>
-                        <height>429</height>
-                        <include>CdArtVideo_ExtendedInfo</include>
-                    </control>
+                    <!-- CDART VIDEO -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))"/>
+                        <param name="x" value="1290"/>
+                        <param name="y" value="392"/>
+                        <param name="width" value="429"/>
+                        <param name="height" value="429"/>
+                        <param name="texture" value="$VAR[VideoCdArt]"/>
+                    </include>
                     <control type="image">
                         <posx>1142</posx>
                         <posy>365</posy>
@@ -1708,13 +1716,15 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="image">
-                        <posx>1290</posx>
-                        <posy>392</posy>
-                        <width>429</width>
-                        <height>429</height>
-                        <include>CdArtVideo_ExtendedInfo</include>
-                    </control>
+                    <!-- CDART VIDEO -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))"/>
+                        <param name="x" value="1290"/>
+                        <param name="y" value="392"/>
+                        <param name="width" value="429"/>
+                        <param name="height" value="429"/>
+                        <param name="texture" value="$VAR[VideoCdArt]"/>
+                    </include>
                     <control type="image">
                         <posx>1142</posx>
                         <posy>365</posy>
@@ -1881,13 +1891,15 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="image">
-                        <posx>1290</posx>
-                        <posy>392</posy>
-                        <width>429</width>
-                        <height>429</height>
-                        <include>CdArtVideo_ExtendedInfo</include>
-                    </control>
+                    <!-- CDART VIDEO -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))"/>
+                        <param name="x" value="1290"/>
+                        <param name="y" value="392"/>
+                        <param name="width" value="429"/>
+                        <param name="height" value="429"/>
+                        <param name="texture" value="$VAR[VideoCdArt]"/>
+                    </include>
                     <control type="image">
                         <posx>1142</posx>
                         <posy>365</posy>
@@ -1966,13 +1978,15 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="image">
-                        <posx>1290</posx>
-                        <posy>392</posy>
-                        <width>429</width>
-                        <height>429</height>
-                        <include>CdArtVideo_ExtendedInfo</include>
-                    </control>
+                    <!-- CDART VIDEO -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))"/>
+                        <param name="x" value="1290"/>
+                        <param name="y" value="392"/>
+                        <param name="width" value="429"/>
+                        <param name="height" value="429"/>
+                        <param name="texture" value="$VAR[VideoCdArt]"/>
+                    </include>
                     <control type="image">
                         <posx>1142</posx>
                         <posy>365</posy>
@@ -2030,13 +2044,15 @@
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
-                    <control type="image">
-                        <posx>1290</posx>
-                        <posy>392</posy>
-                        <width>429</width>
-                        <height>429</height>
-                        <include>CdArtVideo_ExtendedInfo</include>
-                    </control>
+                    <!-- CDART VIDEO -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(Window.Property(movie.Poster))"/>
+                        <param name="x" value="1290"/>
+                        <param name="y" value="392"/>
+                        <param name="width" value="429"/>
+                        <param name="height" value="429"/>
+                        <param name="texture" value="$VAR[VideoCdArt]"/>
+                    </include>
                     <control type="image">
                         <posx>1142</posx>
                         <posy>365</posy>

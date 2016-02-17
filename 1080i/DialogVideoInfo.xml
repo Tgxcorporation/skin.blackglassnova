@@ -64,13 +64,15 @@
                         <visible>![Control.HasFocus(9012)|
                             ControlGroup(90120).HasFocus]</visible>
                         <include>VisibleFadeEffectDelay</include>
-                        <control type="image">
-                            <posx>1290</posx>
-                            <posy>392</posy>
-                            <width>429</width>
-                            <height>429</height>
-                            <include>CdArtVideo</include>
-                        </control>
+                        <!-- CDART VIDEO -->
+                        <include name="DiscArt">
+                            <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                            <param name="x" value="1290"/>
+                            <param name="y" value="392"/>
+                            <param name="width" value="429"/>
+                            <param name="height" value="429"/>
+                            <param name="texture" value="$VAR[VideoCdArt]"/>
+                        </include>
                         <control type="image">
                             <posx>1142</posx>
                             <posy>365</posy>
