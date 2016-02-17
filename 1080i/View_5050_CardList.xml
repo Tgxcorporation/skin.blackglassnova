@@ -198,14 +198,15 @@
                         <height>419</height>
                         <texture>list/bg_facade_vertical.png</texture>
                     </control>
-                    <control type="image">
-                        <visible>[[Container.content(songs)+Window.IsActive(MyMusicNav.xml)]|Window.IsActive(MyMusicSongs.xml)]</visible>
-                        <posx>51</posx>
-                        <posy>-127</posy>
-                        <width>404</width>
-                        <height>404</height>
-                        <include>CdArtAudio</include>
-                    </control>
+                    <!-- CDART MUSIC -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                        <param name="x" value="51"/>
+                        <param name="y" value="-127"/>
+                        <param name="width" value="404"/>
+                        <param name="height" value="404"/>
+                        <param name="texture" value="$VAR[MusicCdArt]"/>
+                    </include>
                     <control type="image">
                         <posx>18</posx>
                         <posy>61</posy>
@@ -535,13 +536,15 @@
                         <height>675</height>
                         <texture>list/bg_facade_vertical.png</texture>
                     </control>
-                    <control type="image">
-                        <posx>51</posx>
-                        <posy>-127</posy>
-                        <width>404</width>
-                        <height>404</height>
-                        <include>CdArtVideo</include>
-                    </control>
+                    <!-- CDART VIDEO -->
+                    <include name="DiscArt">
+                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                        <param name="x" value="51"/>
+                        <param name="y" value="-127"/>
+                        <param name="width" value="404"/>
+                        <param name="height" value="404"/>
+                        <param name="texture" value="$VAR[VideoCdArt]"/>
+                    </include>
                     <control type="image">
                         <posx>18</posx>
                         <posy>61</posy>

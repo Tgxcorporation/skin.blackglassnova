@@ -411,13 +411,6 @@
         <value condition="!IsEmpty(Container(211).ListItem.Property(Background))">$INFO[Container(211).ListItem.Property(Background)]</value>
         <value>$LOCALIZE[13278]</value>
     </variable>
-    <variable name="Cd.Art">
-        <value condition="Window.IsActive(DialogAlbumInfo.xml)|Window.IsActive(DialogSongInfo.xml)|Window.IsActive(MyMusicPlaylist.xml)">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Album]/cdart.png</value>
-        <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(albums)+![Control.isvisible(5050)|Control.isvisible(58)]">$INFO[Skin.String(MusicPath)]$INFO[ListItem.Artist]/$INFO[ListItem.Label]/cdart.png</value>
-        <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(albums)+[Control.isvisible(5050)|Control.isvisible(58)]">$INFO[ListItem.Path]/cdart.png</value>
-        <value condition="Window.IsActive(MyMusicNav.xml)+Container.Content(songs)">$INFO[ListItem.Path]/cdart.png</value>
-        <value condition="Window.IsActive(MyMusicSongs.xml)">$INFO[ListItem.Path]cdart.png</value>
-    </variable>
     <variable name="SkinSettings.RandomBackground.Art">
         <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
         <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(2)">$INFO[Window(Home).Property(script.grab.fanart.Movie.FanArt)]</value>
@@ -655,12 +648,33 @@
         <value condition="Skin.HasSetting(EnableClearLogo) + VideoPlayer.Content(episodes)+!IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
         <value condition="Skin.HasSetting(EnableClearLogo)">$INFO[Player.Art(clearlogo)]</value>
     </variable>
+    <variable name="ContentType">
+        <value condition="Container.Content(artists)">artists</value>
+        <value condition="Container.Content(albums)">albums</value>
+        <value condition="Container.Content(songs)">songs</value>
+    </variable>
+    <variable name="VideoCdArt">
+        <value condition="Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml)+!IsEmpty(Window.Property(movie.DiscArt))">$INFO[Window.Property(movie.DiscArt)]</value>
+        <value condition="!IsEmpty(ListItem.Art(discart))">$INFO[ListItem.Art(discart)]</value>
+        <value>$INFO[ListItem.Art(poster)]</value>
+    </variable>
+    <variable name="MusicCdArt">
+        <value condition="!Skin.HasSetting(plexbmc)+!StringCompare(ListItem.Label,..)+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;dbid=$INFO[Listitem.DBID]&amp;type=discart&amp;contenttype=$VAR[ContentType]&amp;fallback=$INFO[ListItem.Thumb]</value>
+    </variable>
+    <variable name="VideoPlayerCdArt">
+        <value condition="!IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
+        <value condition="!VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Cover]</value>
+    </variable>
+    <variable name="MusicPlayerCdArt">
+        <value condition="!IsEmpty(Window(Home).Property(SkinHelper.Player.Music.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</value>
+        <value>$INFO[Player.Art(thumb)]</value>
+    </variable>
     <variable name="MusicPlayerClearArtLogo">
         <value condition="[Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)] + !IsEmpty(MusicPlayer.Art(clearart))">$INFO[MusicPlayer.Art(clearart)]</value>
         <value condition="[Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)]">$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</value>
     </variable>
     <variable name="DefaultClearArt">
-        <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Skin.String(cdartPath)]$INFO[ListItem.Artist,,/logo.png]</value>
+        <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]+!IsEmpty(ListItem.Art(tvshow.clearart))]">$INFO[ListItem.Art(tvshow.clearart)]</value>
         <value condition="Skin.HasSetting(EnableClearArt)">$INFO[ListItem.Art(clearart)]</value>
     </variable>

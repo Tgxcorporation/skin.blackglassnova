@@ -44,20 +44,24 @@
                 <height>1200</height>
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
-            <control type="image">
-                <posx>45</posx>
-                <posy>398</posy>
-                <width>416</width>
-                <height>416</height>
-                <include>CdArtAudio</include>
-            </control>
-            <control type="image">
-                <posx>51</posx>
-                <posy>588</posy>
-                <width>404</width>
-                <height>404</height>
-                <include>CdArtVideo</include>
-            </control>
+            <!-- CDART MUSIC -->
+            <include name="DiscArt">
+                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                <param name="x" value="45"/>
+                <param name="y" value="398"/>
+                <param name="width" value="416"/>
+                <param name="height" value="416"/>
+                <param name="texture" value="$VAR[MusicCdArt]"/>
+            </include>
+            <!-- CDART VIDEO -->
+            <include name="DiscArt">
+                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                <param name="x" value="51"/>
+                <param name="y" value="588"/>
+                <param name="width" value="404"/>
+                <param name="height" value="404"/>
+                <param name="texture" value="$VAR[VideoCdArt]"/>
+            </include>
             <control type="image">
                 <posx>18</posx>
                 <posy>151</posy>
@@ -336,20 +340,24 @@
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
             <include>Icon_Fade</include>
-            <control type="image">
-                <posx>51</posx>
-                <posy>428</posy>
-                <width>374</width>
-                <height>374</height>
-                <include>CdArtAudio</include>
-            </control>
-            <control type="image">
-                <posx>51</posx>
-                <posy>618</posy>
-                <width>374</width>
-                <height>374</height>
-                <include>CdArtVideo</include>
-            </control>
+            <!-- CDART MUSIC -->
+            <include name="DiscArt">
+                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                <param name="x" value="51"/>
+                <param name="y" value="428"/>
+                <param name="width" value="374"/>
+                <param name="height" value="374"/>
+                <param name="texture" value="$VAR[MusicCdArt]"/>
+            </include>
+            <!-- CDART VIDEO -->
+            <include name="DiscArt">
+                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                <param name="x" value="51"/>
+                <param name="y" value="618"/>
+                <param name="width" value="374"/>
+                <param name="height" value="374"/>
+                <param name="texture" value="$VAR[VideoCdArt]"/>
+            </include>
             <control type="image">
                 <posx>18</posx>
                 <posy>188</posy>

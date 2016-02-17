@@ -1086,20 +1086,15 @@
                 <height>408</height>
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
-            <control type="group">
-                <!-- CDART -->
-                <visible>!Skin.HasSetting(plexbmc)</visible>
-                <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(VideoPlayer.Cover)</visible>
-                <control type="image">
-                    <posx>147</posx>
-                    <posy>565</posy>
-                    <width>356</width>
-                    <height>356</height>
-                    <texture background="true" diffuse="common/cdart_diffuse.png">$INFO[Player.Art(discart)]</texture>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
-                    <include>Animation_ViewsCDart</include>
-                </control>
-            </control>
+            <!-- CDART VIDEO -->
+            <include name="DiscArt">
+                <param name="visible" value="!IsEmpty(VideoPlayer.Cover)"/>
+                <param name="x" value="147"/>
+                <param name="y" value="565"/>
+                <param name="width" value="356"/>
+                <param name="height" value="356"/>
+                <param name="texture" value="$VAR[VideoPlayerCdArt]"/>
+            </include>
             <control type="image">
                 <posx>280</posx>
                 <posy>538</posy>
@@ -1183,28 +1178,6 @@
             </control>
         </control>
     </include>
-    <include name="CdArtAudio">
-        <visible>!Skin.HasSetting(plexbmc)</visible>
-        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]</visible>
-        <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$VAR[Cd.Art]</texture>
-        <aspectratio align="center" aligny="center">keep</aspectratio>
-        <include>Animation_ViewsCDart</include>
-    </include>
-    <include name="CdArtVideo">
-        <visible>!Skin.HasSetting(plexbmc)</visible>
-        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]</visible>
-        <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[ListItem.Art(discart)]</texture>
-        <aspectratio align="center" aligny="center">keep</aspectratio>
-        <include>Animation_ViewsCDart</include>
-    </include>
-    <include name="CdArtVideo_ExtendedInfo">
-        <visible>!Skin.HasSetting(plexbmc)</visible>
-        <visible>Skin.HasSetting(EnableCdArt)+!IsEmpty(Window.Property(movie.Poster))</visible>
-        <include>VisibleFadeEffectDelay</include>
-        <texture background="true" fallback="common/cdart_default.png" diffuse="common/cdart_diffuse.png">$INFO[Window.Property(movie.DiscArt)]</texture>
-        <aspectratio align="center" aligny="center">keep</aspectratio>
-        <include>Animation_ViewsCDart</include>
-    </include>
     <include name="DetatchedThumb">
         <aspectratio align="left" aligny="top" scalediffuse="false">keep</aspectratio>
         <texture background="true">$VAR[Thumbs]</texture>
@@ -1271,6 +1244,22 @@
                 <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
                 <include>PulseClearLogo</include>
                 <texture background="true">$VAR[DefaultClearLogo]</texture>
+            </control>
+        </control>
+    </include>
+    <include name="DiscArt">
+        <control type="group">
+            <visible>!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)</visible>
+            <visible>$PARAM[visible]</visible>
+            <include>VisibleFadeEffectDelay</include>
+            <control type="image">
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <texture background="true" diffuse="common/cdart_diffuse.png">$PARAM[texture]</texture>
+                <aspectratio align="center" aligny="center">stretch</aspectratio>
+                <include>Animation_ViewsCDart</include>
             </control>
         </control>
     </include>

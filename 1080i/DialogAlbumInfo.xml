@@ -179,13 +179,6 @@
                     <label>20413</label>
                     <onleft>121</onleft>
                 </control>
-                <control type="button" id="150">
-                    <label>cdART Manager</label>
-                    <include>RightDialogButton</include>
-                    <onclick>RunAddon(script.cdartmanager)</onclick>
-                    <visible>System.HasAddon(script.cdartmanager)</visible>
-                    <onleft>49</onleft>
-                </control>
             </control>
             <control type="scrollbar" id="9600">
                 <posx>1711</posx>
@@ -213,13 +206,15 @@
                     ControlGroup(5080).HasFocus|
                     ControlGroup(5090).HasFocus]</visible>
                 <include>VisibleFadeEffectDelay</include>
-                <control type="image">
-                    <posx>1540</posx>
-                    <posy>865</posy>
-                    <width>316</width>
-                    <height>316</height>
-                    <include>CdArtAudio</include>
-                </control>
+                <!-- CDART MUSIC -->
+                <include name="DiscArt">
+                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                    <param name="x" value="1540"/>
+                    <param name="y" value="865"/>
+                    <param name="width" value="316"/>
+                    <param name="height" value="316"/>
+                    <param name="texture" value="$VAR[MusicCdArt]"/>
+                </include>
                 <control type="image">
                     <posx>1342</posx>
                     <posy>838</posy>
@@ -536,13 +531,15 @@
             <control type="group" id="5020">
                 <visible>Control.HasFocus(502)|Control.HasFocus(503)|ControlGroup(5020).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
-                <control type="image">
-                    <posx>1540</posx>
-                    <posy>865</posy>
-                    <width>316</width>
-                    <height>316</height>
-                    <include>CdArtAudio</include>
-                </control>
+                <!-- CDART MUSIC -->
+                <include name="DiscArt">
+                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                    <param name="x" value="1540"/>
+                    <param name="y" value="865"/>
+                    <param name="width" value="316"/>
+                    <param name="height" value="316"/>
+                    <param name="texture" value="$VAR[MusicCdArt]"/>
+                </include>
                 <control type="image">
                     <posx>1342</posx>
                     <posy>838</posy>
@@ -679,13 +676,15 @@
             <control type="group" id="5040">
                 <visible>Control.HasFocus(504)|ControlGroup(5040).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
-                <control type="image">
-                    <posx>1540</posx>
-                    <posy>865</posy>
-                    <width>316</width>
-                    <height>316</height>
-                    <include>CdArtAudio</include>
-                </control>
+                <!-- CDART MUSIC -->
+                <include name="DiscArt">
+                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                    <param name="x" value="1540"/>
+                    <param name="y" value="865"/>
+                    <param name="width" value="316"/>
+                    <param name="height" value="316"/>
+                    <param name="texture" value="$VAR[MusicCdArt]"/>
+                </include>
                 <control type="image">
                     <posx>1342</posx>
                     <posy>838</posy>

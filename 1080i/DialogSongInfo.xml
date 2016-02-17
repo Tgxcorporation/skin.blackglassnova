@@ -97,13 +97,15 @@
                 <height>36</height>
                 <texture>$INFO[ListItem.StarRating]</texture>
             </control>
-            <control type="image">
-                <posx>1540</posx>
-                <posy>774</posy>
-                <width>316</width>
-                <height>316</height>
-                <include>CdArtAudio</include>
-            </control>
+            <!-- CDART MUSIC -->
+            <include name="DiscArt">
+                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                <param name="x" value="1540"/>
+                <param name="y" value="774"/>
+                <param name="width" value="316"/>
+                <param name="height" value="316"/>
+                <param name="texture" value="$VAR[MusicCdArt]"/>
+            </include>
             <control type="image">
                 <posx>1342</posx>
                 <posy>747</posy>

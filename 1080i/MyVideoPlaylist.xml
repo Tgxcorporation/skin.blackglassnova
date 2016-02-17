@@ -200,13 +200,15 @@
                 <onleft>9001</onleft>
                 <onright>9001</onright>
             </control>
-            <control type="image">
-                <posx>1385</posx>
-                <posy>792</posy>
-                <width>316</width>
-                <height>316</height>
-                <include>CdArtVideo</include>
-            </control>
+            <!-- CDART VIDEO -->
+            <include name="DiscArt">
+                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                <param name="x" value="1385"/>
+                <param name="y" value="792"/>
+                <param name="width" value="316"/>
+                <param name="height" value="316"/>
+                <param name="texture" value="$VAR[VideoCdArt]"/>
+            </include>
             <control type="image">
                 <posx>1242</posx>
                 <posy>765</posy>
