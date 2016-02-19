@@ -1,39 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <!-- Y FLIPPED BORDER IMAGE -->
-    <include name="ThumbOverlay_fuchsia">
-        <texture border="27" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_fuchsia.png</texture>
+    <!-- DIFFUSED BORDER IMAGE -->
+    <include name="ThumbBorderOverlayDiffused_fuchsia">
+        <bordertexture border="27" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_fuchsia.png</bordertexture>
     </include>
-    <include name="ThumbOverlay_azure">
-        <texture border="27" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_azure.png</texture>
+    <include name="ThumbBorderOverlayDiffused_azure">
+        <bordertexture border="27" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_azure.png</bordertexture>
     </include>
-    <include name="ThumbOverlay_blue">
-        <texture border="27" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_blue.png</texture>
+    <include name="ThumbBorderOverlayDiffused_blue">
+        <bordertexture border="27" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_blue.png</bordertexture>
     </include>
-    <include name="ThumbOverlay_green">
-        <texture border="27" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_green.png</texture>
+    <include name="ThumbBorderOverlayDiffused_green">
+        <bordertexture border="27" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_green.png</bordertexture>
     </include>
-    <include name="ThumbOverlay_red">
-        <texture border="27" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_red.png</texture>
+    <include name="ThumbBorderOverlayDiffused_red">
+        <bordertexture border="27" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_red.png</bordertexture>
     </include>
-    <include name="ThumbOverlay_violet">
-        <texture border="27" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_violet.png</texture>
+    <include name="ThumbBorderOverlayDiffused_violet">
+        <bordertexture border="27" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_violet.png</bordertexture>
     </include>
-    <include name="ThumbOverlay_white">
-        <texture border="27" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_white.png</texture>
+    <include name="ThumbBorderOverlayDiffused_white">
+        <bordertexture border="27" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_white.png</bordertexture>
     </include>
-    <include name="ThumbOverlay_yellow">
-        <texture border="27" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_yellow.png</texture>
+    <include name="ThumbBorderOverlayDiffused_yellow">
+        <bordertexture border="27" diffuse="common/Thumb_Mask.png">common/JewelCaseOverlay_yellow.png</bordertexture>
     </include>
-    <include name="ThumbOverlay">
-        <include condition="Skin.HasSetting(Highlighted.Color.Fuchsia)">ThumbOverlay_fuchsia</include>
-        <include condition="Skin.HasSetting(Highlighted.Color.Azure)">ThumbOverlay_azure</include>
-        <include condition="Skin.HasSetting(Highlighted.Color.Blue)">ThumbOverlay_blue</include>
-        <include condition="Skin.HasSetting(Highlighted.Color.Green)">ThumbOverlay_green</include>
-        <include condition="Skin.HasSetting(Highlighted.Color.Red)">ThumbOverlay_red</include>
-        <include condition="Skin.HasSetting(Highlighted.Color.Violet)">ThumbOverlay_violet</include>
-        <include condition="Skin.HasSetting(Highlighted.Color.Yellow)">ThumbOverlay_yellow</include>
-        <include>ThumbOverlay_white</include>
+    <include name="ThumbBorderOverlayDiffused">
+        <include condition="Skin.HasSetting(Highlighted.Color.Fuchsia)">ThumbBorderOverlayDiffused_fuchsia</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Azure)">ThumbBorderOverlayDiffused_azure</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Blue)">ThumbBorderOverlayDiffused_blue</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Green)">ThumbBorderOverlayDiffused_green</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Red)">ThumbBorderOverlayDiffused_red</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Violet)">ThumbBorderOverlayDiffused_violet</include>
+        <include condition="Skin.HasSetting(Highlighted.Color.Yellow)">ThumbBorderOverlayDiffused_yellow</include>
+        <include>ThumbBorderOverlayDiffused_white</include>
+        <bordersize>27</bordersize>
     </include>
     <!-- BORDER -->
     <include name="ThumbBorderOverlay_fuchsia">

@@ -87,17 +87,63 @@
         <value condition="Window.IsActive(CustomAddons.xml)|Window.IsActive(myPrograms.xml)">$LOCALIZE[0]$INFO[Container.FolderName, - ]</value>
         <value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
     </variable>
+    <variable name="HomeTitles">
+        <value condition="Control.hasfocus(900)">$LOCALIZE[20342] - $LOCALIZE[31961]</value>
+        <value condition="Control.hasfocus(901)">$LOCALIZE[20342] - $LOCALIZE[31966]</value>
+        <value condition="Control.hasfocus(311)">$LOCALIZE[20342] - $LOCALIZE[31961]</value>
+        <value condition="Control.hasfocus(312)">$LOCALIZE[20342] - $LOCALIZE[31966]</value>
+        <value condition="Control.hasfocus(511)">$LOCALIZE[132] - $LOCALIZE[31961]</value>
+        <value condition="Control.hasfocus(700011)|Control.hasfocus(700012)|Control.hasfocus(700013)|Control.hasfocus(700014)|Control.hasfocus(700015)">$INFO[Container(300).ListItem.Property(widgetName)]</value>
+        <value condition="Control.hasfocus(700021)|Control.hasfocus(700022)|Control.hasfocus(700023)|Control.hasfocus(700024)|Control.hasfocus(700025)">$INFO[Container(300).ListItem.Property(widgetName.1)]</value>
+        <value condition="Control.hasfocus(700031)|Control.hasfocus(700032)|Control.hasfocus(700033)|Control.hasfocus(700034)|Control.hasfocus(700035)">$INFO[Container(300).ListItem.Property(widgetName.2)]</value>
+        <value condition="Control.hasfocus(700041)|Control.hasfocus(700042)|Control.hasfocus(700043)|Control.hasfocus(700044)|Control.hasfocus(700045)">$INFO[Container(300).ListItem.Property(widgetName.3)]</value>
+        <value condition="Control.hasfocus(700051)|Control.hasfocus(700052)|Control.hasfocus(700053)|Control.hasfocus(700054)|Control.hasfocus(700055)">$INFO[Container(300).ListItem.Property(widgetName.4)]</value>
+        <value>KODI</value>
+    </variable>
     <variable name="HomeSubTitles">
-        <value condition="StringCompare(Container(300).ListItem.Property(labelID),music)+Library.HasContent(Music)">$INFO[Window(Home).Property(Music.ArtistsCount),, $LOCALIZE[31937]]  •  $INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[31938]]  •  $INFO[Window(Home).Property(Music.SongsCount),, $LOCALIZE[31933]]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(labelID),movies)">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[31934]]$INFO[Window(Home).Property(Movies.UnWatched),  •  , $LOCALIZE[16101]]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(labelID),tvshows)">$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[31936]]$INFO[Window(Home).Property(TVShows.UnWatched),  •  , $LOCALIZE[16101]]  /  $INFO[Window(Home).Property(episodes.Count),, $LOCALIZE[31935]]$INFO[Window(Home).Property(episodes.UnWatched),  •  , $LOCALIZE[16101]]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(labelID),livetv)">$ADDON[script.skinshortcuts 32022]$INFO[Pvr.BackendName,  •  ]$INFO[Window(Home).Property(SkinHelper.TotalTVChannels),  •  , $LOCALIZE[19023]]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(labelID),radio)">$ADDON[script.skinshortcuts 32087]$INFO[Pvr.BackendName,  •  ]$INFO[Window(Home).Property(SkinHelper.TotalRadioChannels),  •  , $LOCALIZE[19024]]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(labelID),favourites)">$INFO[Window(Home).Property(favourite.count),, $LOCALIZE[1036]]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[24001])">$INFO[Window(Home).Property(RandomAddon.Count),, $LOCALIZE[20161] $LOCALIZE[24001]]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[13009])">$LOCALIZE[12390]: $INFO[System.Uptime]</value>
-        <value condition="StringCompare(Container(300).ListItem.Property(labelID),settings)">$INFO[System.memory(used.percent),$LOCALIZE[31309] ]$INFO[System.CPUUsage,  •  $LOCALIZE[13271] ]</value>
-        <value condition="Stringcompare(Container(300).ListItem.Property(labelID),weather)">$INFO[Window(Weather).Property(Location),,  •  ]$INFO[Window(Weather).Property(Current.Condition),,  •  ]$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</value>
+        <value condition="Control.hasfocus(900)">$INFO[Container(900).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(901)">$INFO[Container(901).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(212)">$INFO[Container(212).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(311)">$INFO[Container(311).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(312)">$INFO[Container(312).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(411)">$INFO[Container(411).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(412)">$INFO[Container(412).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(511)">$INFO[Container(511).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700011)">$INFO[Container(700011).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700012)">$INFO[Container(700012).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700013)">$INFO[Container(700013).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700014)">$INFO[Container(700014).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700015)">$INFO[Container(700015).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700021)">$INFO[Container(700021).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700022)">$INFO[Container(700022).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700023)">$INFO[Container(700023).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700024)">$INFO[Container(700024).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700025)">$INFO[Container(700025).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700031)">$INFO[Container(700031).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700032)">$INFO[Container(700032).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700033)">$INFO[Container(700033).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700034)">$INFO[Container(700034).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700035)">$INFO[Container(700035).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700041)">$INFO[Container(700041).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700042)">$INFO[Container(700042).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700043)">$INFO[Container(700043).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700044)">$INFO[Container(700044).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700045)">$INFO[Container(700045).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700051)">$INFO[Container(700051).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700052)">$INFO[Container(700052).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700053)">$INFO[Container(700053).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700054)">$INFO[Container(700054).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="Control.hasfocus(700055)">$INFO[Container(700055).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),music)+Library.HasContent(Music)">$INFO[Window(Home).Property(Music.ArtistsCount),, $LOCALIZE[31937]]  •  $INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[31938]]  •  $INFO[Window(Home).Property(Music.SongsCount),, $LOCALIZE[31933]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),movies)">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[31934]]$INFO[Window(Home).Property(Movies.UnWatched),  •  , $LOCALIZE[16101]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),tvshows)">$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[31936]]$INFO[Window(Home).Property(TVShows.UnWatched),  •  , $LOCALIZE[16101]]  /  $INFO[Window(Home).Property(episodes.Count),, $LOCALIZE[31935]]$INFO[Window(Home).Property(episodes.UnWatched),  •  , $LOCALIZE[16101]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),livetv)">$ADDON[script.skinshortcuts 32022]$INFO[Pvr.BackendName,  •  ]$INFO[Window(Home).Property(SkinHelper.TotalTVChannels),  •  , $LOCALIZE[19023]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),radio)">$ADDON[script.skinshortcuts 32087]$INFO[Pvr.BackendName,  •  ]$INFO[Window(Home).Property(SkinHelper.TotalRadioChannels),  •  , $LOCALIZE[19024]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),favourites)">$INFO[Window(Home).Property(favourite.count),, $LOCALIZE[1036]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),$LOCALIZE[24001])">$INFO[Window(Home).Property(RandomAddon.Count),, $LOCALIZE[20161] $LOCALIZE[24001]]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),$LOCALIZE[13009])">$LOCALIZE[12390]: $INFO[System.Uptime]</value>
+        <value condition="StringCompare(Container(300).ListItem.Property(defaultID),settings)">$INFO[System.memory(used.percent),$LOCALIZE[31309] ]$INFO[System.CPUUsage,  •  $LOCALIZE[13271] ]</value>
+        <value condition="Stringcompare(Container(300).ListItem.Property(defaultID),weather)">$INFO[Window(Weather).Property(Location),,  •  ]$INFO[Window(Weather).Property(Current.Condition),,  •  ]$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</value>
         <value>$INFO[Container(300).ListItem.Label]</value>
     </variable>
     <variable name="MusicPlayingFanartLabel2">
@@ -183,23 +229,31 @@
         <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.PictureResolution]</value>
         <value>$LOCALIZE[416]</value>
     </variable>
+    <variable name="Fanart_Title">
+        <value condition="Window.IsVisible(MyWeather.xml)">$INFO[Container(50).ListItem.Label]</value>
+        <value>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</value>
+    </variable>
     <variable name="Fanart_Details">
-        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Year]</value>
-        <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)+!IsEmpty(ListItem.Size)">$INFO[ListItem.Size]$INFO[ListItem.Date,  •  ]</value>
-        <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date]</value>
+        <value condition="Window.IsVisible(MyWeather.xml)">$INFO[Container(50).ListItem.Property(Property3)]</value>
+        <value condition="Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)">$INFO[Container(500).ListItem.Genre]</value>
+        <value condition="Window.IsActive(MyPVRChannels.xml)">$INFO[ListItem.Title]$INFO[ListItem.StartTime,  •  ]$INFO[ListItem.EndTime, / ]</value>
+        <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Size]$INFO[ListItem.Date,       ]</value>
+        <value condition="Container.content(Albums)">$INFO[ListItem.Artist]$INFO[ListItem.Year,  •  ]</value>
+        <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered]$INFO[ListItem.Season,  •  $LOCALIZE[31973],.]$INFO[ListItem.Episode]</value>
+        <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]$INFO[ListItem.Property(Addon.Version),  •  $LOCALIZE[19114]: ]</value>
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_genre))">$INFO[ListItem.Property(artist_genre)]</value>
         <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_style))">$INFO[ListItem.Property(artist_style)]</value>
-        <value condition="Container.content(Albums)">$INFO[ListItem.Artist,,  •  ]$INFO[ListItem.Year]</value>
-        <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
-        <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Version),$LOCALIZE[19114]: ,  •  ]$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863]: ]$INFO[ListItem.Property(Addon.Type),  •  $LOCALIZE[146] ]</value>
         <value condition="Container.Content(songs)">$INFO[ListItem.Duration]</value>
         <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</value>
         <value condition="Container.Content(Sets)">$INFO[ListItem.Year]</value>
-        <value condition="Container.Content(Movies)">$INFO[ListItem.Year]$INFO[ListItem.Duration,  •  , $LOCALIZE[31297]]</value>
-        <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]+!IsEmpty(ListItem.Year)">$INFO[ListItem.Year]$INFO[ListItem.MPAA,  •  ]</value>
-        <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]+IsEmpty(ListItem.Year)">$INFO[ListItem.MPAA]</value>
+        <value condition="Container.Content(Movies)">$INFO[ListItem.Year]$INFO[ListItem.Genre,  •  ]</value>
+        <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]">$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Genre]</value>
         <value condition="!IsEmpty(ListItem.Label2)">$INFO[ListItem.Label2]</value>
-        <value>$LOCALIZE[416]</value>
+        <!--<value>$LOCALIZE[416]</value>-->
+    </variable>
+    <variable name="Fanart_Details2">
+        <value condition="[Container.Content(Seasons) | Container.Content(TVShows)]">$INFO[ListItem.Property(UnWatchedEpisodes),, $LOCALIZE[16101]]</value>
+        <value>$INFO[ListItem.Duration,, $LOCALIZE[31297]]</value>
     </variable>
     <variable name="Plots">
         <value condition="Container.content(addons) + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
@@ -408,6 +462,37 @@
         <value condition="StringCompare(Container(211).ListItem.Property(Background),Search.Art)">$LOCALIZE[13278] / $LOCALIZE[137]</value>
         <value condition="!IsEmpty(Container(211).ListItem.Property(Background))">$INFO[Container(211).ListItem.Property(Background)]</value>
         <value>$LOCALIZE[13278]</value>
+    </variable>
+    <variable name="WidgetsBackgrounds">
+        <value condition="Control.HasFocus(311)">$INFO[Container(311).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(312)">$INFO[Container(312).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(411)">$INFO[Container(411).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(412)">$INFO[Container(412).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700011)">$INFO[Container(700011).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700012)">$INFO[Container(700012).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700013)">$INFO[Container(700013).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700014)">$INFO[Container(700014).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700015)">$INFO[Container(700015).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700021)">$INFO[Container(700021).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700022)">$INFO[Container(700022).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700023)">$INFO[Container(700023).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700024)">$INFO[Container(700024).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700025)">$INFO[Container(700025).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700031)">$INFO[Container(700031).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700032)">$INFO[Container(700032).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700033)">$INFO[Container(700033).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700034)">$INFO[Container(700034).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700035)">$INFO[Container(700035).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700041)">$INFO[Container(700041).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700042)">$INFO[Container(700042).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700043)">$INFO[Container(700043).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700044)">$INFO[Container(700044).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700045)">$INFO[Container(700045).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700051)">$INFO[Container(700051).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700052)">$INFO[Container(700052).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700053)">$INFO[Container(700053).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700054)">$INFO[Container(700054).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(700055)">$INFO[Container(700055).ListItem.Art(fanart)]</value>
     </variable>
     <variable name="SkinSettings.RandomBackground.Art">
         <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$INFO[Window(Home).Property(script.grab.fanart.Video.FanArt)]</value>
@@ -689,5 +774,14 @@
     <variable name="SkinShortcutsMoveDownLabel">
         <value condition="[Skin.HasSetting(VerticalHome)+StringCompare(Window.Property(groupname),mainmenu)]|!StringCompare(Window.Property(groupname),mainmenu)">$ADDON[script.skinshortcuts 32003]</value>
         <value>$LOCALIZE[31066]</value>
+    </variable>
+    <variable name="StartupDelay">
+        <value condition="Skin.HasSetting(StartupDelay0)">00:00</value>
+        <value condition="Skin.HasSetting(StartupDelay1)">00:01</value>
+        <value condition="Skin.HasSetting(StartupDelay2)">00:02</value>
+        <value condition="Skin.HasSetting(StartupDelay3)">00:03</value>
+        <value condition="Skin.HasSetting(StartupDelay5)">00:05</value>
+        <value condition="Skin.HasSetting(StartupDelay10)">00:10</value>
+        <value>00:02</value>
     </variable>
 </includes>

@@ -3,7 +3,7 @@
     <defaultcontrol always="true">20</defaultcontrol>
     <coordinates>
         <system>1</system>
-        <posx>0</posx>
+        <posx>30</posx>
         <posy>-6</posy>
     </coordinates>
     <include>DialogOpenClose</include>

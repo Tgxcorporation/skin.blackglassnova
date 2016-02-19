@@ -121,4 +121,12 @@
             <effect type="fade" start="0" end="100" time="500" delay="3000"/>
         </animation>
     </include>
+    <include name="PulseBasicHidden">
+        <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
+        <effect type="fade" start="0" end="100" time="500" delay="3000"/>
+    </include>
+    <include name="PulseBasicVisible">
+        <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
+        <effect type="fade" start="100" end="0" time="500" delay="3000"/>
+    </include>
 </includes>

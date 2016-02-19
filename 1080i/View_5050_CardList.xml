@@ -489,15 +489,6 @@
         <focusedlayout condition="[Container.content(MusicVideos) | Container.Content(movies) | container.content(tvshows) | Container.Content(episodes) | Container.Content(seasons)|Container.Content(sets)]" height="887" width="1683">
             <control type="group">
                 <posy>127</posy>
-                <include name="ClearArtLogo">
-                    <param name="x" value="1350"/>
-                    <param name="y" value="-116"/>
-                    <param name="width" value="300"/>
-                    <param name="height" value="150"/>
-                    <param name="visible" value="true"/>
-                    <param name="align" value="right"/>
-                    <param name="aligny" value="bottom"/>
-                </include>
                 <control type="group">
                     <visible>StringCompare(ListItem.Label,..)</visible>
                     <posx>725</posx>
@@ -693,6 +684,18 @@
                     <texture flipy="true">common/basichome_upper_gradient.png</texture>
                     <width>2220</width>
                     <height>190</height>
+                </control>
+                <control type="group">
+                    <animation effect="slide" time="0" start="0,0" end="0,184" condition="![Container(5050).content(MusicVideos) | Container(5050).Content(movies) | Container(5050).content(tvshows) | Container(5050).Content(episodes) | Container(5050).Content(seasons)|Container(5050).Content(sets)]">conditional</animation>
+                    <include name="ClearArtLogo">
+                        <param name="x" value="1350"/>
+                        <param name="y" value="139"/>
+                        <param name="width" value="300"/>
+                        <param name="height" value="150"/>
+                        <param name="visible" value="true"/>
+                        <param name="align" value="right"/>
+                        <param name="aligny" value="bottom"/>
+                    </include>
                 </control>
                 <control type="list" id="5050">
                     <viewtype label="31095">biginfo</viewtype>

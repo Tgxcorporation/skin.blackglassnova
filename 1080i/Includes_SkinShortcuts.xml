@@ -279,30 +279,28 @@
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
-                <visible>SubString(ListItem.Property(LabelID),weather,Left)</visible>
-                <posx>56</posx>
-                <posy>241</posy>
-                <width>305</width>
-                <height>171</height>
-                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png">special://skin/backgrounds/Weather.jpg</texture>
-                <colordiffuse>UnfocusedIconColor</colordiffuse>
-            </control>
-            <control type="image">
                 <visible>!SubString(ListItem.Property(LabelID),weather,Left)</visible>
-                <posx>56</posx>
-                <posy>241</posy>
-                <width>305</width>
-                <height>171</height>
-                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
-                <colordiffuse>UnfocusedIconColor</colordiffuse>
-            </control>
-            <control type="image">
+                <animation effect="rotate" start="0" end="180" center="208,224" reversible="false" condition="true">Conditional</animation>
                 <posx>29</posx>
-                <posy>214</posy>
+                <posy>9</posy>
                 <width>359</width>
                 <height>225</height>
-                <texture border="27" flipy="true" diffuse="common/Thumb_Mask.png">common/JewelCase.png</texture>
-                <colordiffuse>UnfocusedIconColor</colordiffuse>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
+                <texture flipx="true" background="true" diffuse="common/Thumb_Mask.png" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
+                <bordertexture diffuse="common/Thumb_Mask.png" border="27">common/JewelCase.png</bordertexture>
+                <bordersize>27</bordersize>
+            </control>
+            <control type="image">
+                <visible>SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <animation effect="rotate" start="0" end="180" center="208,224" reversible="false" condition="true">Conditional</animation>
+                <posx>29</posx>
+                <posy>9</posy>
+                <width>359</width>
+                <height>225</height>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
+                <texture flipx="true" background="true" diffuse="common/Thumb_Mask.png">special://skin/backgrounds/Weather.jpg</texture>
+                <bordertexture diffuse="common/Thumb_Mask.png" border="27">common/JewelCase.png</bordertexture>
+                <bordersize>27</bordersize>
             </control>
         </itemlayout>
         <focusedlayout height="262" width="396">
@@ -338,27 +336,26 @@
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="image">
-                <visible>SubString(ListItem.Property(LabelID),weather,Left)</visible>
-                <posx>30</posx>
-                <posy>250</posy>
-                <width>336</width>
-                <height>189</height>
-                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png">special://skin/backgrounds/Weather.jpg</texture>
-            </control>
-            <control type="image">
                 <visible>!SubString(ListItem.Property(LabelID),weather,Left)</visible>
-                <posx>30</posx>
-                <posy>250</posy>
-                <width>336</width>
-                <height>189</height>
-                <texture background="true" flipy="true" diffuse="common/Thumb_Mask.png" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
-            </control>
-            <control type="image">
+                <animation effect="rotate" start="0" end="180" center="198,233" reversible="false" condition="true">Conditional</animation>
                 <posx>3</posx>
-                <posy>223</posy>
+                <posy>0</posy>
                 <width>390</width>
                 <height>243</height>
-                <include>ThumbOverlay</include>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
+                <texture flipx="true" background="true" diffuse="common/Thumb_Mask.png" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
+                <include>ThumbBorderOverlayDiffused</include>
+            </control>
+            <control type="image">
+                <visible>SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <animation effect="rotate" start="0" end="180" center="198,233" reversible="false" condition="true">Conditional</animation>
+                <posx>3</posx>
+                <posy>0</posy>
+                <width>390</width>
+                <height>243</height>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
+                <texture flipx="true" background="true" diffuse="common/Thumb_Mask.png">special://skin/backgrounds/Weather.jpg</texture>
+                <include>ThumbBorderOverlayDiffused</include>
             </control>
         </focusedlayout>
         <include condition="Skin.HasSetting(plexbmc)+Window.isactive(CustomPlexHomeSettings.xml)">Plexbmc.Items.SkinSettings</include>
@@ -546,5 +543,181 @@
             </control>
         </focusedlayout>
         <include condition="Skin.HasSetting(plexbmc)+Window.isactive(CustomPlexHomeSettings.xml)">Plexbmc.Items.SkinSettings</include>
+    </include>
+    <include name="SkinShortcuts_Widgets_Horizontal">
+        <control type="group">
+            <posx>128</posx>
+            <posy>650</posy>
+            <width>246</width>
+            <height>85</height>
+            <control type="button" id="31200">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>246</width>
+                <height>85</height>
+                <label>-</label>
+                <onclick>SendClick(312)</onclick>
+            </control>
+            <control type="label">
+                <posx>20</posx>
+                <posy>3</posy>
+                <width>206</width>
+                <height>50</height>
+                <align>center</align>
+                <font>LeftMenuTitleFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$ADDON[script.skinshortcuts 32099] 1</label>
+            </control>
+            <control type="label">
+                <posx>20</posx>
+                <posy>32</posy>
+                <width>206</width>
+                <height>50</height>
+                <align>center</align>
+                <font>InfoTitleSubFont</font>
+                <scroll>true</scroll>
+                <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName)]</label>
+            </control>
+        </control>
+        <control type="group">
+            <posx>374</posx>
+            <posy>650</posy>
+            <width>246</width>
+            <height>85</height>
+            <control type="button" id="31201">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>246</width>
+                <height>85</height>
+                <label>-</label>
+                <onclick>SetProperty(widgetID,1)</onclick>
+                <onclick>SendClick(312)</onclick>
+            </control>
+            <control type="label">
+                <posx>20</posx>
+                <posy>3</posy>
+                <width>206</width>
+                <height>50</height>
+                <align>center</align>
+                <font>LeftMenuTitleFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$ADDON[script.skinshortcuts 32099] 2</label>
+            </control>
+            <control type="label">
+                <posx>20</posx>
+                <posy>32</posy>
+                <width>206</width>
+                <height>50</height>
+                <align>center</align>
+                <font>InfoTitleSubFont</font>
+                <scroll>true</scroll>
+                <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.1)]</label>
+            </control>
+        </control>
+        <control type="group">
+            <posx>620</posx>
+            <posy>650</posy>
+            <width>246</width>
+            <height>85</height>
+            <control type="button" id="31202">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>246</width>
+                <height>85</height>
+                <label>-</label>
+                <onclick>SetProperty(widgetID,2)</onclick>
+                <onclick>SendClick(312)</onclick>
+            </control>
+            <control type="label">
+                <posx>20</posx>
+                <posy>3</posy>
+                <width>206</width>
+                <height>50</height>
+                <align>center</align>
+                <font>LeftMenuTitleFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$ADDON[script.skinshortcuts 32099] 3</label>
+            </control>
+            <control type="label">
+                <posx>20</posx>
+                <posy>32</posy>
+                <width>206</width>
+                <height>50</height>
+                <align>center</align>
+                <font>InfoTitleSubFont</font>
+                <scroll>true</scroll>
+                <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.2)]</label>
+            </control>
+        </control>
+        <control type="group">
+            <posx>866</posx>
+            <posy>650</posy>
+            <width>246</width>
+            <height>85</height>
+            <control type="button" id="31203">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>246</width>
+                <height>85</height>
+                <label>-</label>
+                <onclick>SetProperty(widgetID,3)</onclick>
+                <onclick>SendClick(312)</onclick>
+            </control>
+            <control type="label">
+                <posx>20</posx>
+                <posy>3</posy>
+                <width>206</width>
+                <height>50</height>
+                <align>center</align>
+                <font>LeftMenuTitleFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$ADDON[script.skinshortcuts 32099] 4</label>
+            </control>
+            <control type="label">
+                <posx>20</posx>
+                <posy>32</posy>
+                <width>206</width>
+                <height>50</height>
+                <align>center</align>
+                <font>InfoTitleSubFont</font>
+                <scroll>true</scroll>
+                <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.3)]</label>
+            </control>
+        </control>
+        <control type="group">
+            <posx>1112</posx>
+            <posy>650</posy>
+            <width>246</width>
+            <height>85</height>
+            <control type="button" id="31204">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>246</width>
+                <height>85</height>
+                <label>-</label>
+                <onclick>SetProperty(widgetID,4)</onclick>
+                <onclick>SendClick(312)</onclick>
+            </control>
+            <control type="label">
+                <posx>20</posx>
+                <posy>3</posy>
+                <width>206</width>
+                <height>50</height>
+                <align>center</align>
+                <font>LeftMenuTitleFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$ADDON[script.skinshortcuts 32099] 5</label>
+            </control>
+            <control type="label">
+                <posx>20</posx>
+                <posy>32</posy>
+                <width>206</width>
+                <height>50</height>
+                <align>center</align>
+                <font>InfoTitleSubFont</font>
+                <scroll>true</scroll>
+                <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.4)]</label>
+            </control>
+        </control>
     </include>
 </includes>
