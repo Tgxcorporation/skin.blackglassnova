@@ -93,6 +93,7 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="group">
+                <animation effect="slide" time="0" start="0,0" end="0,-37" condition="IntegerGreaterThan(Container(9009).NumItems,10)+!IntegerGreaterThan(Container(9009).NumItems,11)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,0" condition="IntegerGreaterThan(Container(9009).NumItems,9)+!IntegerGreaterThan(Container(9009).NumItems,10)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,36" condition="IntegerGreaterThan(Container(9009).NumItems,8)+!IntegerGreaterThan(Container(9009).NumItems,9)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,73" condition="IntegerGreaterThan(Container(9009).NumItems,7)+!IntegerGreaterThan(Container(9009).NumItems,8)">conditional</animation>
@@ -239,6 +240,13 @@
                             <onclick>dialog.close(all,true)</onclick>
                             <onclick>ActivateWindow(Settings,return)</onclick>
                             <label>$LOCALIZE[5]</label>
+                            <thumb>topbar/topbar_settings_nofocus.png</thumb>
+                            <icon>topbar/topbar_settings_focus.png</icon>
+                        </item>
+                        <item id="22">
+                            <onclick>dialog.close(all,true)</onclick>
+                            <onclick>activatewindow(skinsettings)</onclick>
+                            <label>$LOCALIZE[20077]</label>
                             <thumb>topbar/topbar_settings_nofocus.png</thumb>
                             <icon>topbar/topbar_settings_focus.png</icon>
                         </item>
