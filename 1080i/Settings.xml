@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="true">9001</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <animation effect="fade" time="150" condition="![Window.Previous(SettingsCategory.xml)|Window.Previous(SkinSettings.xml)]">WindowOpen</animation>
     <animation effect="fade" time="150" condition="![Window.Next(SettingsCategory.xml)|Window.Next(SkinSettings.xml)]">WindowClose</animation>
     <controls>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <onload>AlarmClock(StartupDelay,SetFocus(12),$VAR[StartupDelay],silent)</onload>
     <animation effect="fade" time="800">WindowOpen</animation>
     <animation effect="fade" time="200">WindowClose</animation>

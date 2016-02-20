@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
     <defaultcontrol always="true">9001</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <!-- <zorder>1</zorder> -->
     <include>DialogOpenClose</include>
     <controls>

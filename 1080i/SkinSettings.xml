@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <backgroundcolor>0</backgroundcolor>
-    <allowoverlay>no</allowoverlay>
     <defaultcontrol always="true">9000</defaultcontrol>
     <!--<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;group=CustomGroupName1|pictures|CustomGroupName2|addons|CustomGroupName3|videos|CustomGroupName4|movies|CustomGroupName5|tvshows|CustomGroupName6|music|CustomGroupName7|clips|concerts|CustomGroupName8|livetv|radio|favourites|CustomGroupName9|dvd|weather|settings|quit)</onunload>-->
     <!--<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;levels=0)</onunload>-->
