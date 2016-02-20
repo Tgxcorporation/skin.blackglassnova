@@ -227,7 +227,7 @@
                     <height>781</height>
                     <include>VerticalScroller</include>
                     <onleft>21</onleft>
-                    <onright>900</onright>
+                    <onright>9000</onright>
                 </control>
             </control>
             <!-- SIDE MENU -->
