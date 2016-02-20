@@ -2,61 +2,61 @@
 <includes>
     <variable name="MediaFlag_MPAA_ExtendedInfo">
         <!-- US (IMDB) -->
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Rated R,Left)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Rated R,Left)]">badges/content_rating/us/r.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Rated PG-13,Left)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Rated PG-13,Left)]">badges/content_rating/us/pg13.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Rated PG,Left)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Rated PG,Left)]">badges/content_rating/us/pg.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Rated NC,Left)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Rated NC,Left)]">badges/content_rating/us/nc17.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Rated G,Left)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Rated G,Left)]">badges/content_rating/us/g.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Rated R,Left)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Rated R,Left)]">badges/content_rating/us/r.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Rated PG-13,Left)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Rated PG-13,Left)]">badges/content_rating/us/pg13.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Rated PG,Left)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Rated PG,Left)]">badges/content_rating/us/pg.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Rated NC,Left)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Rated NC,Left)]">badges/content_rating/us/nc17.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Rated G,Left)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Rated G,Left)]">badges/content_rating/us/g.png</value>
         <!-- US (TMDB) -->
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + StringCompare(Window.Property(movie.mpaa),R)] | [IsEmpty(Window.Property(movie.mpaa)) + StringCompare(VideoPlayer.mpaa,R)]">badges/content_rating/us/r.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + StringCompare(Window.Property(movie.mpaa),PG-13)] | [IsEmpty(Window.Property(movie.mpaa)) + StringCompare(VideoPlayer.mpaa,PG-13)]">badges/content_rating/us/pg13.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + StringCompare(Window.Property(movie.mpaa),PG)] | [IsEmpty(Window.Property(movie.mpaa)) + StringCompare(VideoPlayer.mpaa,PG)]">badges/content_rating/us/pg.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + StringCompare(Window.Property(movie.mpaa),NC-17)] | [IsEmpty(Window.Property(movie.mpaa)) + StringCompare(VideoPlayer.mpaa,NC-17)]">badges/content_rating/us/nc17.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + StringCompare(Window.Property(movie.mpaa),G)] | [IsEmpty(Window.Property(movie.mpaa)) + StringCompare(VideoPlayer.mpaa,G)]">badges/content_rating/us/mpaa_general.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + StringCompare(Window.Property(mpaa),R)] | [IsEmpty(Window.Property(mpaa)) + StringCompare(VideoPlayer.mpaa,R)]">badges/content_rating/us/r.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + StringCompare(Window.Property(mpaa),PG-13)] | [IsEmpty(Window.Property(mpaa)) + StringCompare(VideoPlayer.mpaa,PG-13)]">badges/content_rating/us/pg13.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + StringCompare(Window.Property(mpaa),PG)] | [IsEmpty(Window.Property(mpaa)) + StringCompare(VideoPlayer.mpaa,PG)]">badges/content_rating/us/pg.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + StringCompare(Window.Property(mpaa),NC-17)] | [IsEmpty(Window.Property(mpaa)) + StringCompare(VideoPlayer.mpaa,NC-17)]">badges/content_rating/us/nc17.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + StringCompare(Window.Property(mpaa),G)] | [IsEmpty(Window.Property(mpaa)) + StringCompare(VideoPlayer.mpaa,G)]">badges/content_rating/us/mpaa_general.png</value>
         <!-- US (TV) -->
-        <value condition="!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),TV-)">badges/content_rating/tv/$INFO[Window.Property(movie.mpaa),,.png]</value>
-        <value condition="IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,TV-)">badges/content_rating/tv/$INFO[VideoPlayer.mpaa,,.png]</value>
+        <value condition="!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),TV-)">badges/content_rating/tv/$INFO[Window.Property(mpaa),,.png]</value>
+        <value condition="IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,TV-)">badges/content_rating/tv/$INFO[VideoPlayer.mpaa,,.png]</value>
         <!-- Germany -->
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Germany:0)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Germany:0)]">badges/content_rating/de/0.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Germany:6)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Germany:6)]">badges/content_rating/de/6.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Germany:12)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Germany:12)]">badges/content_rating/de/12.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Germany:16)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Germany:16)]">badges/content_rating/de/16.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Germany:18)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Germany:18)]">badges/content_rating/de/18.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Germany:0)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Germany:0)]">badges/content_rating/de/0.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Germany:6)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Germany:6)]">badges/content_rating/de/6.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Germany:12)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Germany:12)]">badges/content_rating/de/12.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Germany:16)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Germany:16)]">badges/content_rating/de/16.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Germany:18)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Germany:18)]">badges/content_rating/de/18.png</value>
         <!-- Australia -->
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Australia:R)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Australia:R)]">badges/content_rating/au/r.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Australia:MA)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Australia:MA)]">badges/content_rating/au/ma.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Australia:M)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Australia:M)]">badges/content_rating/au/m.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Australia:PG)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Australia:PG)]">badges/content_rating/au/pg.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Australia:G)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Australia:G)]">badges/content_rating/au/g.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Australia:X)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Australia:X)]">badges/content_rating/au/x.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Australia:R)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Australia:R)]">badges/content_rating/au/r.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Australia:MA)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Australia:MA)]">badges/content_rating/au/ma.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Australia:M)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Australia:M)]">badges/content_rating/au/m.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Australia:PG)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Australia:PG)]">badges/content_rating/au/pg.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Australia:G)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Australia:G)]">badges/content_rating/au/g.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Australia:X)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Australia:X)]">badges/content_rating/au/x.png</value>
         <!-- Italy -->
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Rated All,Left)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Rated All,Left)]">badges/content_rating/it/t.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Rated T,Left)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Rated T,Left)]">badges/content_rating/it/t.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),it/T)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,it/T)]">badges/content_rating/it/t.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),VM14)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,VM14)]">badges/content_rating/it/vm14.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),VM16)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,VM16)]">badges/content_rating/it/vm16.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),VM18)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,VM18)]">badges/content_rating/it/vm18.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Rated All,Left)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Rated All,Left)]">badges/content_rating/it/t.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Rated T,Left)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Rated T,Left)]">badges/content_rating/it/t.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),it/T)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,it/T)]">badges/content_rating/it/t.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),VM14)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,VM14)]">badges/content_rating/it/vm14.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),VM16)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,VM16)]">badges/content_rating/it/vm16.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),VM18)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,VM18)]">badges/content_rating/it/vm18.png</value>
         <!-- United Kingdom -->
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),UK:U)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,UK:U)]">badges/content_rating/uk/u.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),UK:PG)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,UK:PG)]">badges/content_rating/uk/pg.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),UK:12A)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,UK:12A)]">badges/content_rating/uk/12a.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),UK:12)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,UK:12)]">badges/content_rating/uk/12.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),UK:15)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,UK:15)]">badges/content_rating/uk/15.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),UK:18)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,UK:18)]">badges/content_rating/uk/18.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),UK:X)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,UK:X)]">badges/content_rating/uk/r18.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),UK:U)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,UK:U)]">badges/content_rating/uk/u.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),UK:PG)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,UK:PG)]">badges/content_rating/uk/pg.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),UK:12A)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,UK:12A)]">badges/content_rating/uk/12a.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),UK:12)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,UK:12)]">badges/content_rating/uk/12.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),UK:15)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,UK:15)]">badges/content_rating/uk/15.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),UK:18)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,UK:18)]">badges/content_rating/uk/18.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),UK:X)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,UK:X)]">badges/content_rating/uk/r18.png</value>
         <!-- Poland -->
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Bez ograniczeń)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Bez ograniczeń)]">badges/content_rating/pl/bo.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),7 lat)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,7 lat)]">badges/content_rating/pl/7.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),12 lat)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,12 lat)]">badges/content_rating/pl/12.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),16 lat)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,16 lat)]">badges/content_rating/pl/16.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),18 lat)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,18 lat)]">badges/content_rating/pl/18.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Bez ograniczeń)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Bez ograniczeń)]">badges/content_rating/pl/bo.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),7 lat)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,7 lat)]">badges/content_rating/pl/7.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),12 lat)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,12 lat)]">badges/content_rating/pl/12.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),16 lat)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,16 lat)]">badges/content_rating/pl/16.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),18 lat)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,18 lat)]">badges/content_rating/pl/18.png</value>
         <!-- NO RATING -->
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Unrated)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Unrated)]">badges/content_rating/unrated.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),unrated)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,unrated)]">badges/content_rating/unrated.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Not Rated)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Not Rated)]">badges/content_rating/notrated.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),not Rated)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,not Rated)]">badges/content_rating/notrated.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),Not rated)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,Not rated)]">badges/content_rating/notrated.png</value>
-        <value condition="[!IsEmpty(Window.Property(movie.mpaa)) + SubString(Window.Property(movie.mpaa),not rated)] | [IsEmpty(Window.Property(movie.mpaa)) + SubString(VideoPlayer.mpaa,not rated)]">badges/content_rating/notrated.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Unrated)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Unrated)]">badges/content_rating/unrated.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),unrated)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,unrated)]">badges/content_rating/unrated.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Not Rated)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Not Rated)]">badges/content_rating/notrated.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),not Rated)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,not Rated)]">badges/content_rating/notrated.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),Not rated)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,Not rated)]">badges/content_rating/notrated.png</value>
+        <value condition="[!IsEmpty(Window.Property(mpaa)) + SubString(Window.Property(mpaa),not rated)] | [IsEmpty(Window.Property(mpaa)) + SubString(VideoPlayer.mpaa,not rated)]">badges/content_rating/notrated.png</value>
         <!--DEFAULT-->
         <value>badges/content_rating/norating.png</value>
     </variable>
@@ -191,14 +191,14 @@
         <value>$INFO[ListItem.VideoCodec]</value>
     </variable>
     <variable name="videocodecExtendedInfo">
-        <value condition="[SubString(Window.Property(movie.Filenameandpath),bluray) | SubString(Window.Property(movie.Filenameandpath),blu-ray) | SubString(Window.Property(movie.Filenameandpath),bdrip)]">bluray</value>
-        <value condition="SubString(Window.Property(movie.Filenameandpath),web)">webtv</value>
-        <value condition="SubString(Window.Property(movie.Filenameandpath),hdtv)">hdtv</value>
-        <value condition="SubString(Window.Property(movie.Filenameandpath),dvd) | SubString(Window.Property(movie.Filenameandpath),.ifo,Right) | SubString(Window.Property(movie.Filenameandpath),.iso,Right)">dvd</value>
-        <value condition="SubString(Window.Property(movie.Path),videodb://movies/sets,left)">set</value>
-        <value condition="SubString(Window.Property(movie.Filenameandpath),4k)">4kbis</value>
-        <value condition="[substring(Window.Property(movie.VideoCodec),div,left) | stringcompare(Window.Property(movie.VideoCodec),dx50)]">divx</value>
-        <value>$INFO[Window.Property(movie.VideoCodec)]</value>
+        <value condition="[SubString(Window.Property(Filenameandpath),bluray) | SubString(Window.Property(Filenameandpath),blu-ray) | SubString(Window.Property(Filenameandpath),bdrip)]">bluray</value>
+        <value condition="SubString(Window.Property(Filenameandpath),web)">webtv</value>
+        <value condition="SubString(Window.Property(Filenameandpath),hdtv)">hdtv</value>
+        <value condition="SubString(Window.Property(Filenameandpath),dvd) | SubString(Window.Property(Filenameandpath),.ifo,Right) | SubString(Window.Property(Filenameandpath),.iso,Right)">dvd</value>
+        <value condition="SubString(Window.Property(Path),videodb://movies/sets,left)">set</value>
+        <value condition="SubString(Window.Property(Filenameandpath),4k)">4kbis</value>
+        <value condition="[substring(Window.Property(VideoCodec),div,left) | stringcompare(Window.Property(VideoCodec),dx50)]">divx</value>
+        <value>$INFO[Window.Property(VideoCodec)]</value>
     </variable>
     <variable name="videocodecOSD">
         <value condition="[SubString(Player.Filenameandpath,bluray) | SubString(Player.Filenameandpath,blu-ray) | SubString(Player.Filenameandpath,bdrip)]">bluray</value>
@@ -281,15 +281,15 @@
     </include>
     <include name="CodecsExtendedInfo">
         <control type="image">
-            <visible>!IsEmpty(Window.Property(movie.VideoResolution))</visible>
+            <visible>!IsEmpty(Window.Property(VideoResolution))</visible>
             <description>Video rez Image</description>
             <width>120</width>
             <height>80</height>
             <aspectratio>keep</aspectratio>
-            <texture>badges/video/$INFO[Window.Property(movie.VideoResolution),,.png]</texture>
+            <texture>badges/video/$INFO[Window.Property(VideoResolution),,.png]</texture>
         </control>
         <control type="image">
-            <visible>!IsEmpty(Window.Property(movie.VideoCodec))</visible>
+            <visible>!IsEmpty(Window.Property(VideoCodec))</visible>
             <description>Codec Image</description>
             <width>120</width>
             <height>80</height>
@@ -297,20 +297,20 @@
             <texture>$VAR[videocodecExtendedInfo,badges/video/,.png]</texture>
         </control>
         <control type="image">
-            <visible>!IsEmpty(Window.Property(movie.AudioChannels))</visible>
+            <visible>!IsEmpty(Window.Property(AudioChannels))</visible>
             <description>Audio Codec Image</description>
             <width>120</width>
             <height>80</height>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[Window.Property(movie.AudioChannels),badges/audio/,.png]</texture>
+            <texture>$INFO[Window.Property(AudioChannels),badges/audio/,.png]</texture>
         </control>
         <control type="image">
-            <visible>!IsEmpty(Window.Property(movie.AudioCodec))</visible>
+            <visible>!IsEmpty(Window.Property(AudioCodec))</visible>
             <description>Audio Codec Image</description>
             <width>120</width>
             <height>80</height>
             <aspectratio>keep</aspectratio>
-            <texture>$INFO[Window.Property(movie.AudioCodec),badges/audio/,.png]</texture>
+            <texture>$INFO[Window.Property(AudioCodec),badges/audio/,.png]</texture>
         </control>
         <control type="image">
             <description>MPAA Image</description>
@@ -320,7 +320,7 @@
             <texture>$VAR[MediaFlag_MPAA_ExtendedInfo]</texture>
         </control>
         <control type="image">
-            <visible>Window.Property(movie.IsStereoscopic)|SubString(Window.Property(movie.Filenameandpath),.3dbd.) | SubString(Window.Property(movie.Filenameandpath),.3d.)</visible>
+            <visible>Window.Property(IsStereoscopic)|SubString(Window.Property(Filenameandpath),.3dbd.) | SubString(Window.Property(Filenameandpath),.3d.)</visible>
             <description>3D Image</description>
             <width>120</width>
             <height>80</height>
@@ -330,7 +330,7 @@
         <control type="group" id="1">
             <width>120</width>
             <height>80</height>
-            <visible>!IsEmpty(Window.Property(movie.Top250)) + !SubString(Window.Property(movie.Top250),0,Left)</visible>
+            <visible>!IsEmpty(Window.Property(Top250)) + !SubString(Window.Property(Top250),0,Left)</visible>
             <control type="image" id="1">
                 <width>120</width>
                 <height>80</height>
@@ -344,7 +344,7 @@
                 <height>80</height>
                 <font>BadgeFont</font>
                 <align>center</align>
-                <label>$INFO[Window.Property(movie.Top250)]</label>
+                <label>$INFO[Window.Property(Top250)]</label>
                 <textcolor>AlternateBrightColor</textcolor>
             </control>
         </control>
