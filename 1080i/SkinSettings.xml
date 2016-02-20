@@ -353,12 +353,12 @@
                                 <label>$LOCALIZE[31038]</label>
                                 <onclick>RunScript(script.skinshortcuts,type=resetall&amp;warning=false)</onclick>
                                 <onclick>Skin.ResetSettings</onclick>
-                                <onclick>XBMC.ReloadSkin()</onclick>
+                                <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="126">
                                 <label>$LOCALIZE[31944]</label>
                                 <onclick>RunScript(script.skinshortcuts,type=resetall&amp;warning=false)</onclick>
-                                <onclick>XBMC.ReloadSkin()</onclick>
+                                <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="127">
                                 <label>$ADDON[script.skin.helper.service 32028]</label>
@@ -1498,7 +1498,7 @@
                             <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Highlighted.Color.White)|![Skin.HasSetting(Highlighted.Color.Fuchsia)|Skin.HasSetting(Highlighted.Color.Azure)|Skin.HasSetting(Highlighted.Color.Yellow)|Skin.HasSetting(Highlighted.Color.Blue)|Skin.HasSetting(Highlighted.Color.Green)|Skin.HasSetting(Highlighted.Color.Red)|Skin.HasSetting(Highlighted.Color.Violet)]</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- FUCHSIA -->
@@ -1546,7 +1546,7 @@
                             <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Highlighted.Color.Fuchsia)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- AZURE -->
@@ -1594,7 +1594,7 @@
                             <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Highlighted.Color.Azure)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- BLUE -->
@@ -1642,7 +1642,7 @@
                             <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Highlighted.Color.Blue)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- GREEN -->
@@ -1691,7 +1691,7 @@
                             <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Highlighted.Color.Green)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- RED -->
@@ -1740,7 +1740,7 @@
                             <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Highlighted.Color.Red)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- Violet -->
@@ -1789,7 +1789,7 @@
                             <onclick>Skin.ToggleSetting(Highlighted.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Highlighted.Color.Violet)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- Yellow -->
@@ -1838,7 +1838,7 @@
                             <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
                             <onclick>Skin.ToggleSetting(Highlighted.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Highlighted.Color.Yellow)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                 </control>
@@ -1929,7 +1929,7 @@
                             <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Overlay.Color.White)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- FUCHSIA -->
@@ -1964,7 +1964,7 @@
                             <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Overlay.Color.Fuchsia)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- AZURE -->
@@ -1999,7 +1999,7 @@
                             <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Overlay.Color.Azure)|![Skin.HasSetting(Overlay.Color.Fuchsia)|Skin.HasSetting(Overlay.Color.White)|Skin.HasSetting(Overlay.Color.Yellow)|Skin.HasSetting(Overlay.Color.Blue)|Skin.HasSetting(Overlay.Color.Green)|Skin.HasSetting(Overlay.Color.Red)|Skin.HasSetting(Overlay.Color.Violet)]</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- BLUE -->
@@ -2034,7 +2034,7 @@
                             <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Overlay.Color.Blue)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- GREEN -->
@@ -2070,7 +2070,7 @@
                             <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Overlay.Color.Green)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- RED -->
@@ -2106,7 +2106,7 @@
                             <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Overlay.Color.Red)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- Violet -->
@@ -2142,7 +2142,7 @@
                             <onclick>Skin.ToggleSetting(Overlay.Color.Violet)</onclick>
                             <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Overlay.Color.Violet)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                     <!-- Yellow -->
@@ -2178,7 +2178,7 @@
                             <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
                             <onclick>Skin.ToggleSetting(Overlay.Color.Yellow)</onclick>
                             <selected>Skin.HasSetting(Overlay.Color.Yellow)</selected>
-                            <onclick>XBMC.ReloadSkin()</onclick>
+                            <onclick>ReloadSkin()</onclick>
                         </control>
                     </control>
                 </control>

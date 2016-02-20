@@ -227,9 +227,11 @@
                     <onup>211</onup>
                     <ondown>300</ondown>
                 </control>
-                <include>SkinShortcuts_Window_Vertical_Upper_Level</include>
-                <include>SkinShortcuts_Widgets_Horizontal</include>
+                <include condition="Skin.HasSetting(VerticalHome)">SkinShortcuts_Window_Vertical_Upper_Level</include>
                 <include>SkinShortcuts_Window_Navigation</include>
+                <include condition="Skin.HasSetting(VerticalHome)">SkinShortcuts_Widgets_Vertical</include>
+                <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">SkinShortcuts_Widgets_Horizontal</include>
+                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">SkinShortcuts_Widgets_Horizontal_BG</include>
                 <control type="group">
                     <visible>!Skin.HasSetting(VerticalHome)</visible>
                     <control type="label">

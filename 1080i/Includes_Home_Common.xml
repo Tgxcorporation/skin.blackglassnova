@@ -629,7 +629,7 @@
             <property name="isSubmenu">True</property>
             <property name="group">settings</property>
             <onclick>Skin.ToggleSetting(plexbmc)</onclick>
-            <onclick>XBMC.ReloadSkin()</onclick>
+            <onclick>ReloadSkin()</onclick>
         </item>
         <item id="90203">
             <visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(300).ListItem.Property(submenuVisibility),settings)]</visible>
@@ -644,7 +644,7 @@
             <property name="isSubmenu">True</property>
             <property name="group">settings</property>
             <onclick>Skin.ToggleSetting(plexbmc)</onclick>
-            <onclick>XBMC.ReloadSkin()</onclick>
+            <onclick>ReloadSkin()</onclick>
         </item>
         <item id="90204">
             <visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(300).ListItem.Property(submenuVisibility),settings)]</visible>
@@ -662,7 +662,7 @@
             <onclick>Skin.Reset(DefaultView50)</onclick>
             <onclick>Skin.Reset(DefaultView52)</onclick>
             <onclick>Skin.Reset(DefaultView54)</onclick>
-            <onclick>XBMC.ReloadSkin()</onclick>
+            <onclick>ReloadSkin()</onclick>
         </item>
         <item id="90204">
             <visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(300).ListItem.Property(submenuVisibility),settings)]</visible>
@@ -677,7 +677,7 @@
             <property name="isSubmenu">True</property>
             <property name="group">settings</property>
             <onclick>Skin.ToggleSetting(BlackGlassMode)</onclick>
-            <onclick>XBMC.ReloadSkin()</onclick>
+            <onclick>ReloadSkin()</onclick>
         </item>
     </include>
     <include name="WidgetsCollection">
