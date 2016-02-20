@@ -908,7 +908,7 @@
                             </item>
                             <item id="2">
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
-                                <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
+                                <visible>Library.HasContent(Movies)</visible>
                                 <label>$LOCALIZE[20342]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Movies.jpg</icon>
@@ -923,7 +923,7 @@
                             </item>
                             <item id="3">
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
-                                <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
+                                <visible>Library.HasContent(TVShows)</visible>
                                 <label>$LOCALIZE[20343]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/TVShows.jpg</icon>
@@ -938,7 +938,6 @@
                             </item>
                             <item id="4">
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
-                                <visible>!Skin.HasSetting(Music.Hide)</visible>
                                 <label>$LOCALIZE[2]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Music.jpg</icon>
@@ -952,14 +951,16 @@
                                 <thumb>$INFO[Skin.String(Music.Background)]</thumb>
                             </item>
                             <item id="13">
-                                <visible>Skin.HasSetting(Clips.Show)</visible>
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
+                                <visible>Library.HasContent(MusicVideos)</visible>
                                 <label>$LOCALIZE[31972]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Clips.jpg</icon>
                                 <thumb>$INFO[Skin.String(Clips.Background)]</thumb>
                             </item>
                             <item id="14">
-                                <visible>Skin.HasSetting(Concerts.Show)</visible>
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
+                                <visible>Library.HasContent(MusicVideos)</visible>
                                 <label>$LOCALIZE[31971]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Concerts.jpg</icon>
@@ -967,7 +968,6 @@
                             </item>
                             <item id="5">
                                 <visible>!Skin.HasSetting(plexbmc)</visible>
-                                <visible>!Skin.HasSetting(Pictures.Hide)</visible>
                                 <label>$LOCALIZE[1]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Pictures.jpg</icon>
@@ -981,7 +981,6 @@
                                 <thumb>$INFO[Skin.String(Pictures.Background)]</thumb>
                             </item>
                             <item id="6">
-                                <visible>!Skin.HasSetting(Favourites.Hide)</visible>
                                 <label>$LOCALIZE[1036]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>$VAR[Favourites.Art]</icon>
@@ -994,7 +993,6 @@
                                 <thumb>$INFO[Skin.String(Weather.Background)]</thumb>
                             </item> -->
                             <item id="8">
-                                <visible>!Skin.HasSetting(Addons.Hide)</visible>
                                 <label>$LOCALIZE[24001]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Addons.jpg</icon>
@@ -1007,28 +1005,26 @@
                                 <thumb>$INFO[Skin.String(Settings.Background)]</thumb>
                             </item>
                             <item id="10">
-                                <visible>!Skin.HasSetting(DVD.Hide)</visible>
                                 <label>$LOCALIZE[427]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Dvds.jpg</icon>
                                 <thumb>$INFO[Skin.String(DVD.Background)]</thumb>
                             </item>
                             <item id="11">
-                                <visible>!Skin.HasSetting(Quit.Hide)</visible>
                                 <label>$LOCALIZE[13009]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Quit.jpg</icon>
                                 <thumb>$INFO[Skin.String(Quit.Background)]</thumb>
                             </item>
                             <item id="12">
-                                <visible>!Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>
+                                <visible>System.GetBool(pvrmanager.enabled)</visible>
                                 <label>19020</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Tv.jpg</icon>
                                 <thumb>$INFO[Skin.String(Tv.Background)]</thumb>
                             </item>
                             <item id="15">
-                                <visible>!Skin.HasSetting(Radio.Hide)+System.GetBool(pvrmanager.enabled)</visible>
+                                <visible>System.GetBool(pvrmanager.enabled)</visible>
                                 <label>19021</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Radio.jpg</icon>
@@ -1077,7 +1073,7 @@
                         <width>987</width>
                         <height>555</height>
                         <imagepath background="true">$VAR[SkinSettings.RandomBackground.Art]</imagepath>
-                        <timeperimage>6000</timeperimage>
+                        <timeperimage>9000</timeperimage>
                         <randomize>true</randomize>
                         <fadetime>400</fadetime>
                     </control>
@@ -1118,10 +1114,16 @@
                         <onup>9004</onup>
                         <ondown>9004</ondown>
                         <control type="button" id="300">
-                            <visible>![[Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)]|
+                            <visible>![
+                                [Container(9004).HasFocus(0)+Skin.HasSetting(Default.Background.EnableRandomFanart)]|
+                                [Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)]|
-                                [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]]</visible>
+                                [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]|
+                                [Container(9004).HasFocus(5)+Skin.HasSetting(Pictures.Background.EnableRandomFanart)]|
+                                [Container(9004).HasFocus(13)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)]|
+                                [Container(9004).HasFocus(14)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)]
+                                ]</visible>
                             <include>SkinSettingsButton</include>
                             <description>Single Image button</description>
                             <!-- <width>450</width> -->
@@ -1144,10 +1146,16 @@
                             <onclick condition="Container(9004).HasFocus(14)">Skin.SetImage(Concerts.Background)</onclick>
                         </control>
                         <control type="button" id="301">
-                            <visible>![[Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)]|
+                            <visible>![
+                                [Container(9004).HasFocus(0)+Skin.HasSetting(Default.Background.EnableRandomFanart)]|
+                                [Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)]|
                                 [Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)]|
-                                [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]]</visible>
+                                [Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)]|
+                                [Container(9004).HasFocus(5)+Skin.HasSetting(Pictures.Background.EnableRandomFanart)]|
+                                [Container(9004).HasFocus(13)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)]|
+                                [Container(9004).HasFocus(14)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)]
+                                ]</visible>
                             <include>SkinSettingsButton</include>
                             <description>Multi Image button</description>
                             <label>$LOCALIZE[31114]</label>
@@ -1168,33 +1176,61 @@
                             <onclick condition="Container(9004).HasFocus(13)">Skin.SetPath(Clips.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(14)">Skin.SetPath(Concerts.Background)</onclick>
                         </control>
+                        <control type="radiobutton" id="307">
+                            <visible>Container(9004).HasFocus(0)</visible>
+                            <selected>Skin.HasSetting(Default.Background.EnableRandomFanart)</selected>
+                            <include>SkinSettingsButton</include>
+                            <label>$LOCALIZE[590]         </label>
+                            <onclick>Skin.ToggleSetting(Default.Background.EnableRandomFanart)</onclick>
+                        </control>
                         <control type="radiobutton" id="303">
-                            <visible>!Skin.HasSetting(plexbmc) + Container(9004).HasFocus(1)</visible>
+                            <visible>Container(9004).HasFocus(1)</visible>
                             <selected>Skin.HasSetting(Videos.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Videos.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="304">
-                            <visible>!Skin.HasSetting(plexbmc) + Container(9004).HasFocus(2)</visible>
+                            <visible>Container(9004).HasFocus(2)</visible>
                             <selected>Skin.HasSetting(Movies.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Movies.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="305">
-                            <visible>!Skin.HasSetting(plexbmc) + Container(9004).HasFocus(3)</visible>
+                            <visible>Container(9004).HasFocus(3)</visible>
                             <selected>Skin.HasSetting(TVShows.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(TVShows.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="306">
-                            <visible>!Skin.HasSetting(plexbmc) + Container(9004).HasFocus(4)</visible>
+                            <visible>Container(9004).HasFocus(4)</visible>
                             <selected>Skin.HasSetting(Music.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Music.Background.EnableRandomFanart)</onclick>
+                        </control>
+                        <control type="radiobutton" id="308">
+                            <visible>Container(9004).HasFocus(5)</visible>
+                            <selected>Skin.HasSetting(Pictures.Background.EnableRandomFanart)</selected>
+                            <include>SkinSettingsButton</include>
+                            <label>$LOCALIZE[590]         </label>
+                            <onclick>Skin.ToggleSetting(Pictures.Background.EnableRandomFanart)</onclick>
+                        </control>
+                        <control type="radiobutton" id="309">
+                            <visible>Container(9004).HasFocus(13)</visible>
+                            <selected>Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)</selected>
+                            <include>SkinSettingsButton</include>
+                            <label>$LOCALIZE[590]         </label>
+                            <onclick>Skin.ToggleSetting(MusicVideos.Background.EnableRandomFanart)</onclick>
+                        </control>
+                        <control type="radiobutton" id="310">
+                            <visible>Container(9004).HasFocus(14)</visible>
+                            <selected>Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)</selected>
+                            <include>SkinSettingsButton</include>
+                            <label>$LOCALIZE[590]         </label>
+                            <onclick>Skin.ToggleSetting(MusicVideos.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="button" id="302">
                             <include>SkinSettingsButton</include>
@@ -1206,13 +1242,17 @@
                             <onclick condition="Container(9004).HasFocus(2)">Skin.Reset(Movies.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(3)">Skin.Reset(TVShows.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(4)">Skin.Reset(Music.Background)</onclick>
-                            <onclick condition="Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)">Skin.ToggleSetting(Videos.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)">Skin.ToggleSetting(Movies.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)">Skin.ToggleSetting(TVShows.Background.EnableRandomFanart)</onclick>
-                            <onclick condition="Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)">Skin.ToggleSetting(Music.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(0)+Skin.HasSetting(Default.Background.EnableRandomFanart)">Skin.Reset(Default.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(1)+Skin.HasSetting(Videos.Background.EnableRandomFanart)">Skin.Reset(Videos.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(2)+Skin.HasSetting(Movies.Background.EnableRandomFanart)">Skin.Reset(Movies.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(3)+Skin.HasSetting(TVShows.Background.EnableRandomFanart)">Skin.Reset(TVShows.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(4)+Skin.HasSetting(Music.Background.EnableRandomFanart)">Skin.Reset(Music.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(5)+Skin.HasSetting(Pictures.Background.EnableRandomFanart)">Skin.Reset(Pictures.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(13)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)">Skin.Reset(MusicVideos.Background.EnableRandomFanart)</onclick>
+                            <onclick condition="Container(9004).HasFocus(14)+Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)">Skin.Reset(MusicVideos.Background.EnableRandomFanart)</onclick>
                             <onclick condition="Container(9004).HasFocus(5)">Skin.Reset(Pictures.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(6)">Skin.Reset(Favourites.Background)</onclick>
-                            <!--<onclick condition="Container(9004).HasFocus(7)">Skin.Reset(Weather.Background)</onclick> -->
+                            <!-- <onclick condition="Container(9004).HasFocus(7)">Skin.Reset(Weather.Background)</onclick> -->
                             <onclick condition="Container(9004).HasFocus(8)">Skin.Reset(Addons.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(9)">Skin.Reset(Settings.Background)</onclick>
                             <onclick condition="Container(9004).HasFocus(10)">Skin.Reset(DVD.Background)</onclick>
