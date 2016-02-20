@@ -94,6 +94,13 @@
                     <height>73</height>
                     <include>LeftMenuButton</include>
                 </control>
+                <control type="button" id="13">
+                    <description>Auto-update button</description>
+                    <label>$LOCALIZE[21340]</label>
+                    <width>433</width>
+                    <height>73</height>
+                    <include>LeftMenuButton</include>
+                </control>
                 <control type="button" id="12">
                     <label>$LOCALIZE[518]</label>
                     <width>433</width>
