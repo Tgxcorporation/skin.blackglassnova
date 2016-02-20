@@ -156,6 +156,12 @@
                                     <visible>!IsEmpty(ListItem.Duration)</visible>
                                 </item>
                                 <item>
+                                    <label>$LOCALIZE[38018]:</label>
+                                    <label2>$INFO[ListItem.Userrating]</label2>
+                                    <onclick>noop</onclick>
+                                    <visible>!IsEmpty(ListItem.Userrating)</visible>
+                                </item>
+                                <item>
                                     <label>$LOCALIZE[563]:</label>
                                     <label2>$INFO[ListItem.RatingAndVotes]</label2>
                                     <onclick>noop</onclick>
@@ -306,10 +312,16 @@
                                         <visible>!IsEmpty(ListItem.MPAA)</visible>
                                     </item>
                                     <item>
-                                        <label>$LOCALIZE[563]:</label>
-                                        <label2>$INFO[ListItem.Rating]</label2>
+                                        <label>$LOCALIZE[38018]:</label>
+                                        <label2>$INFO[ListItem.Userrating]</label2>
                                         <onclick>noop</onclick>
-                                        <visible>IntegerGreaterThan(ListItem.Rating,0)</visible>
+                                        <visible>!IsEmpty(ListItem.Userrating)</visible>
+                                    </item>
+                                    <item>
+                                        <label>$LOCALIZE[563]:</label>
+                                        <label2>$INFO[ListItem.RatingAndVotes]</label2>
+                                        <onclick>noop</onclick>
+                                        <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[20416]:</label>
@@ -433,10 +445,16 @@
                                         <visible>!IsEmpty(ListItem.Duration)</visible>
                                     </item>
                                     <item>
-                                        <label>$LOCALIZE[563]:</label>
-                                        <label2>$INFO[ListItem.Rating]</label2>
+                                        <label>$LOCALIZE[38018]:</label>
+                                        <label2>$INFO[ListItem.Userrating]</label2>
                                         <onclick>noop</onclick>
-                                        <visible>IntegerGreaterThan(ListItem.Rating,0)</visible>
+                                        <visible>!IsEmpty(ListItem.Userrating)</visible>
+                                    </item>
+                                    <item>
+                                        <label>$LOCALIZE[563]:</label>
+                                        <label2>$INFO[ListItem.RatingAndVotes]</label2>
+                                        <onclick>noop</onclick>
+                                        <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[20416]:</label>
@@ -546,7 +564,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>SubString(Container.FolderPath,videodb://musicvideos,left)</visible>
+                            <visible>container.content(musicvideos)</visible>
                             <include>VisibleFadeEffectDelay</include>
                             <control type="panel" id="9009">
                                 <height>365</height>
@@ -618,6 +636,12 @@
                                         <label2>$INFO[ListItem.Duration] $LOCALIZE[12391]</label2>
                                         <onclick>noop</onclick>
                                         <visible>!IsEmpty(ListItem.Duration)</visible>
+                                    </item>
+                                    <item>
+                                        <label>$LOCALIZE[38018]:</label>
+                                        <label2>$INFO[ListItem.Userrating]</label2>
+                                        <onclick>noop</onclick>
+                                        <visible>!IsEmpty(ListItem.Userrating)</visible>
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[20416]:</label>
@@ -1004,6 +1028,12 @@
                         <include>RightDialogButton</include>
                         <label>$LOCALIZE[13511]</label>
                         <onleft>9009</onleft>
+                    </control>
+                    <control type="button" id="7">
+                        <description>Set my rating</description>
+                        <include>RightDialogButton</include>
+                        <label>$LOCALIZE[38023]</label>
+                        <visible>Control.IsEnabled(7)</visible>
                     </control>
                     <control type="togglebutton" id="9018">
                         <visible>System.HasAddon(script.artwork.downloader) + [Container.Content(tvshows) | Container.Content(movies) | Container.Content(musicvideos)]</visible>
