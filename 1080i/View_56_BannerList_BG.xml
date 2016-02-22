@@ -134,7 +134,7 @@
             <include>Icon_Fade</include>
             <include>ScrollOffsetLabel_56_BG</include>
             <include name="ClearArtLogo">
-                <param name="x" value="775"/>
+                <param name="x" value="875"/>
                 <param name="y" value="10"/>
                 <param name="width" value="300"/>
                 <param name="height" value="149"/>

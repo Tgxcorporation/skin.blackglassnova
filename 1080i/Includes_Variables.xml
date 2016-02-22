@@ -767,10 +767,12 @@
     <variable name="DefaultClearArt">
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]+!IsEmpty(ListItem.Art(tvshow.clearart))]">$INFO[ListItem.Art(tvshow.clearart)]</value>
+        <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(script-ExtendedInfo Script-VideoList.xml)]">$INFO[Container(500).ListItem.Art(clearart)]</value>
         <value condition="Skin.HasSetting(EnableClearArt)">$INFO[ListItem.Art(clearart)]</value>
     </variable>
     <variable name="DefaultClearLogo">
         <value condition="Skin.HasSetting(EnableClearLogo) + Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="Skin.HasSetting(EnableClearLogo) + [Window.IsActive(script-ExtendedInfo Script-VideoList.xml)]">$INFO[Container(500).ListItem.Art(clearlogo)]</value>
         <value condition="Skin.HasSetting(EnableClearLogo)">$INFO[ListItem.Art(clearlogo)]</value>
     </variable>
     <variable name="SkinShortcutsMoveUpLabel">

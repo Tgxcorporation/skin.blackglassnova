@@ -224,7 +224,7 @@
         <control type="group">
             <visible>Control.IsVisible(55)</visible>
             <include name="ClearArtLogo">
-                <param name="x" value="713"/>
+                <param name="x" value="1003"/>
                 <param name="y" value="10"/>
                 <param name="width" value="300"/>
                 <param name="height" value="118"/>

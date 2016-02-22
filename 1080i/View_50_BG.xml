@@ -333,7 +333,7 @@
             <include>Icon_Fade</include>
             <include>ScrollOffsetLabel_50_BG</include>
             <include name="ClearArtLogo">
-                <param name="x" value="775"/>
+                <param name="x" value="875"/>
                 <param name="y" value="10"/>
                 <param name="width" value="300"/>
                 <param name="height" value="149"/>
@@ -471,6 +471,15 @@
         <control type="group">
             <control type="group">
                 <include>ScrollOffsetLabel_50_BG</include>
+                <include name="ClearArtLogo">
+                    <param name="x" value="875"/>
+                    <param name="y" value="10"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="149"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="left"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
                 <control type="image">
                     <posx>704</posx>
                     <posy>125</posy>
