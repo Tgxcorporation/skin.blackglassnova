@@ -10,7 +10,7 @@
     </include>
     <include name="ScrollOffsetLabel_58">
         <control type="group">
-            <!--<animation effect="slide" time="0" start="0,0" end="0,-100" condition="Skin.HasSetting(EnableCdArt)+!Control.HasFocus(7000)">conditional</animation>-->
+            <animation effect="slide" time="0" start="0,0" end="0,-140" condition="Skin.HasSetting(EnableCdArt)+!Control.HasFocus(7000)">conditional</animation>
             <animation effect="slide" time="0" start="0,0" end="0,110" condition="Skin.HasSetting(Posters_Gallery)+Control.HasFocus(7000)">conditional</animation>
             <left>910</left>
             <top>440</top>
@@ -369,6 +369,15 @@
                     <param name="align" value="right"/>
                     <param name="aligny" value="bottom"/>
                 </include>
+                <include name="StudioArt">
+                    <param name="x" value="380"/>
+                    <param name="y" value="464"/>
+                    <param name="width" value="150"/>
+                    <param name="height" value="140"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="left"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
                 <control type="group">
                     <posy>219</posy>
                     <control type="group">
@@ -654,6 +663,15 @@
                     <param name="height" value="235"/>
                     <param name="visible" value="true"/>
                     <param name="align" value="right"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
+                <include name="StudioArt">
+                    <param name="x" value="440"/>
+                    <param name="y" value="524"/>
+                    <param name="width" value="150"/>
+                    <param name="height" value="140"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="left"/>
                     <param name="aligny" value="bottom"/>
                 </include>
                 <control type="group">
@@ -1036,6 +1054,15 @@
                     <param name="height" value="235"/>
                     <param name="visible" value="true"/>
                     <param name="align" value="right"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
+                <include name="StudioArt">
+                    <param name="x" value="680"/>
+                    <param name="y" value="524"/>
+                    <param name="width" value="150"/>
+                    <param name="height" value="140"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="left"/>
                     <param name="aligny" value="bottom"/>
                 </include>
                 <control type="group">

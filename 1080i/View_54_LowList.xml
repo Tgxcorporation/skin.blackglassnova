@@ -258,6 +258,15 @@
                 <param name="align" value="right"/>
                 <param name="aligny" value="bottom"/>
             </include>
+            <include name="StudioArt">
+                <param name="x" value="874"/>
+                <param name="y" value="464"/>
+                <param name="width" value="300"/>
+                <param name="height" value="140"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="right"/>
+                <param name="aligny" value="bottom"/>
+            </include>
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>

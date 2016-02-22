@@ -2,7 +2,7 @@
 <includes>
     <include name="ScrollOffsetLabel_52">
         <control type="group">
-            <left>1110</left>
+            <left>1275</left>
             <top>61</top>
             <include>ScrollOffsetLabel</include>
         </control>
@@ -275,6 +275,15 @@
                 <param name="height" value="155"/>
                 <param name="visible" value="true"/>
                 <param name="align" value="right"/>
+                <param name="aligny" value="bottom"/>
+            </include>
+            <include name="StudioArt">
+                <param name="x" value="1310r"/>
+                <param name="y" value="25"/>
+                <param name="width" value="300"/>
+                <param name="height" value="140"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="left"/>
                 <param name="aligny" value="bottom"/>
             </include>
             <control type="group">

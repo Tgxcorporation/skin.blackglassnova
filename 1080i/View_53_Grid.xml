@@ -11,12 +11,21 @@
         <control type="group">
             <visible>Control.IsVisible(53)</visible>
             <include name="ClearArtLogo">
-                <param name="x" value="0"/>
+                <param name="x" value="715"/>
                 <param name="y" value="10"/>
-                <param name="width" value="1920"/>
+                <param name="width" value="150"/>
                 <param name="height" value="115"/>
                 <param name="visible" value="true"/>
-                <param name="align" value="center"/>
+                <param name="align" value="right"/>
+                <param name="aligny" value="bottom"/>
+            </include>
+            <include name="StudioArt">
+                <param name="x" value="1055"/>
+                <param name="y" value="10"/>
+                <param name="width" value="150"/>
+                <param name="height" value="115"/>
+                <param name="visible" value="true"/>
+                <param name="align" value="left"/>
                 <param name="aligny" value="bottom"/>
             </include>
             <include>ScrollOffsetLabel_53</include>

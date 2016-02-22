@@ -295,7 +295,13 @@ msgctxt "#31069"
 msgid "Startup Playlist"
 msgstr ""
 
-#empty strings from id 31069 to 31089
+#empty strings from id 31069 to 31074
+
+msgctxt "#31075"
+msgid "Enable Studio/Album Label Art"
+msgstr ""
+
+#empty strings from id 31076 to 31089
 #Viewtype
 
 msgctxt "#31090"

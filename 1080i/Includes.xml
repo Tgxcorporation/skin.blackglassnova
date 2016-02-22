@@ -1260,4 +1260,31 @@
             </control>
         </control>
     </include>
+    <include name="StudioArt">
+        <control type="group">
+            <visible>!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableStudioArt)</visible>
+            <control type="image">
+                <animation effect="slide" start="0,0" end="1,1" time="0" reversible="false" condition="true">Conditional</animation>
+                <visible>$PARAM[visible]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
+                <colordiffuse>ff000000</colordiffuse>
+                <texture background="true">$VAR[DefaultStudioArt]</texture>
+            </control>
+            <control type="image">
+                <visible>$PARAM[visible]</visible>
+                <include>Icon_Fade</include>
+                <posx>$PARAM[x]</posx>
+                <posy>$PARAM[y]</posy>
+                <width>$PARAM[width]</width>
+                <height>$PARAM[height]</height>
+                <aspectratio align="$PARAM[align]" aligny="$PARAM[aligny]">keep</aspectratio>
+                <texture background="true">$VAR[DefaultStudioArt]</texture>
+            </control>
+        </control>
+    </include>
 </includes>
