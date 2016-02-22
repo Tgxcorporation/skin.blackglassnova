@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">500</defaultcontrol>
     <menucontrol>9000</menucontrol>
+    <views>500</views>
     <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">OpenClose</include>
     <controls>
         <control type="image">
