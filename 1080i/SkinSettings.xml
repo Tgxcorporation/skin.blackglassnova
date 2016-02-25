@@ -1186,56 +1186,56 @@
                             <onclick condition="Container(9004).HasFocus(14)">Skin.SetPath(Concerts.Background)</onclick>
                         </control>
                         <control type="radiobutton" id="307">
-                            <visible>Container(9004).HasFocus(0)</visible>
+                            <visible>Container(9004).HasFocus(0)+!Skin.HasSetting(plexbmc)</visible>
                             <selected>Skin.HasSetting(Default.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Default.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="303">
-                            <visible>Container(9004).HasFocus(1)</visible>
+                            <visible>Container(9004).HasFocus(1)+!Skin.HasSetting(plexbmc)</visible>
                             <selected>Skin.HasSetting(Videos.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Videos.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="304">
-                            <visible>Container(9004).HasFocus(2)</visible>
+                            <visible>Container(9004).HasFocus(2)+!Skin.HasSetting(plexbmc)</visible>
                             <selected>Skin.HasSetting(Movies.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Movies.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="305">
-                            <visible>Container(9004).HasFocus(3)</visible>
+                            <visible>Container(9004).HasFocus(3)+!Skin.HasSetting(plexbmc)</visible>
                             <selected>Skin.HasSetting(TVShows.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(TVShows.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="306">
-                            <visible>Container(9004).HasFocus(4)</visible>
+                            <visible>Container(9004).HasFocus(4)+!Skin.HasSetting(plexbmc)</visible>
                             <selected>Skin.HasSetting(Music.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Music.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="308">
-                            <visible>Container(9004).HasFocus(5)</visible>
+                            <visible>Container(9004).HasFocus(5)+!Skin.HasSetting(plexbmc)</visible>
                             <selected>Skin.HasSetting(Pictures.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Pictures.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="309">
-                            <visible>Container(9004).HasFocus(13)</visible>
+                            <visible>Container(9004).HasFocus(13)+!Skin.HasSetting(plexbmc)</visible>
                             <selected>Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(MusicVideos.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="310">
-                            <visible>Container(9004).HasFocus(14)</visible>
+                            <visible>Container(9004).HasFocus(14)+!Skin.HasSetting(plexbmc)</visible>
                             <selected>Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
