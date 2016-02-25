@@ -295,7 +295,25 @@ msgctxt "#31069"
 msgid "Startup Playlist"
 msgstr ""
 
-#empty strings from id 31069 to 31074
+msgctxt "#31070"
+msgid "Custom Color"
+msgstr ""
+
+msgctxt "#31071"
+msgid "Random Global Fanart"
+msgstr ""
+
+msgctxt "#31072"
+msgid "Random Picture Fanart"
+msgstr ""
+
+msgctxt "#31073"
+msgid "Random Clip Fanart"
+msgstr ""
+
+msgctxt "#31074"
+msgid "Random Concert Fanart"
+msgstr ""
 
 msgctxt "#31075"
 msgid "Enable Studio/Album Label Art"
