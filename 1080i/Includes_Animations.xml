@@ -10,10 +10,6 @@
         <animation effect="fade" time="300" delay="100">Visible</animation>
         <animation effect="fade" time="0">Hidden</animation>
     </include>
-    <include name="VisibleFadeEffectDelayShelf">
-        <animation effect="fade" time="100">Visible</animation>
-        <animation effect="fade" time="50">Hidden</animation>
-    </include>
     <include name="OSDFade">
         <animation effect="fade" start="0" end="100" time="100">WindowOpen</animation>
         <animation effect="fade" start="100" end="0" time="50">WindowClose</animation>
@@ -70,10 +66,6 @@
         <fadetime>200</fadetime>
         <animation effect="fade" time="200">Visible</animation>
         <!--  <animation effect="fade" time="100">Hidden</animation> -->
-    </include>
-    <include name="Icon_Slide">
-        <animation effect="slide" time="150" start="-400,0" end="0,0" delay="200">Visible</animation>
-        <!-- <animation effect="slide" time="150" start="0,0" end="-400,0">Hidden</animation> -->
     </include>
     <include name="SlideView">
         <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="[control.hasfocus(60)+Skin.HasSetting(FixedShortListUnknown)]|

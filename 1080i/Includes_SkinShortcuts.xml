@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <include name="SkinShortcuts_Vertical_Item_Separator">
-        <posx>128</posx>
-        <posy>424</posy>
-        <width>463</width>
-        <height>65</height>
-        <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
-    </include>
     <include name="SkinShortcuts_Window_Back_Level">
         <control type="multiimage">
             <posx>128</posx>
