@@ -292,7 +292,7 @@
                 <posy>405</posy>
                 <height>27</height>
                 <width>58</width>
-                <texture>buttons/RadioOn.png</texture>
+                <texture>buttons/RadioOnFO.png</texture>
             </control>
             <control type="image">
                 <visible>
@@ -314,7 +314,7 @@
                 <posy>405</posy>
                 <height>27</height>
                 <width>58</width>
-                <texture>buttons/RadioOff.png</texture>
+                <texture>buttons/RadioOffFO.png</texture>
             </control>
             <control type="group">
                 <include>SkinShortcuts_Window_Back_Level</include>

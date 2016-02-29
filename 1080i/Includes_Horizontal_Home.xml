@@ -263,8 +263,7 @@
                     <height>50</height>
                     <width>1920</width>
                     <itemgap>0</itemgap>
-                    <orientation>horizontal</orientation>
-                    <align>center</align>
+                     <align>center</align>
                     <onup condition="control.isvisible(212)+IntegerGreaterThan(Container(212).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">212</onup>
                     <onup condition="control.isvisible(311)+IntegerGreaterThan(Container(311).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">311</onup>
                     <onup condition="control.isvisible(411)+IntegerGreaterThan(Container(411).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">411</onup>
