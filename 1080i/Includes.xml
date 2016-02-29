@@ -1260,4 +1260,21 @@
             </control>
         </control>
     </include>
+    <include name="ProgressBar">
+        <control type="progress" id="$PARAM[id]">
+            <visible>$PARAM[visible]</visible>
+            <posx>$PARAM[x]</posx>
+            <posy>$PARAM[y]</posy>
+            <height>$PARAM[height]</height>
+            <width>$PARAM[width]</width>
+            <texturebg border="$PARAM[borderbg]" colordiffuse="$PARAM[coldiffbg]">$PARAM[texturebg]</texturebg>
+            <lefttexture>-</lefttexture>
+            <midtexture border="$PARAM[border]">$PARAM[gfx]</midtexture>
+            <righttexture>-</righttexture>
+            <overlaytexture>-</overlaytexture>
+            <info>$PARAM[info]</info>
+            <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
+            <reveal>$PARAM[reveal]</reveal>
+        </control>
+    </include>
 </includes>

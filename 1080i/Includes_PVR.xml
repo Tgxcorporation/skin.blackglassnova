@@ -68,36 +68,38 @@
                         <width>1364</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
-                    <control type="progress">
-                        <posx>0</posx>
-                        <posy>-37</posy>
-                        <height>73</height>
-                        <width>1364</width>
-                        <texturebg>-</texturebg>
-                        <reveal>true</reveal>
-                        <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid.png</midtexture>
-                        <righttexture>-</righttexture>
-                        <overlaytexture>-</overlaytexture>
-                        <info>ListItem.Progress</info>
-                        <colordiffuse>NoFocusedProgressColor</colordiffuse>
-                        <visible>!ListItem.IsRecording</visible>
-                    </control>
-                    <control type="progress">
-                        <posx>0</posx>
-                        <posy>-37</posy>
-                        <height>73</height>
-                        <width>1364</width>
-                        <texturebg>-</texturebg>
-                        <reveal>true</reveal>
-                        <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid_red.png</midtexture>
-                        <righttexture>-</righttexture>
-                        <overlaytexture>-</overlaytexture>
-                        <info>ListItem.Progress</info>
-                        <colordiffuse>NoFocusedProgressColor</colordiffuse>
-                        <visible>ListItem.IsRecording</visible>
-                    </control>
+                    <include name="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="!ListItem.IsRecording"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="-37"/>
+                        <param name="width" value="1364"/>
+                        <param name="height" value="73"/>
+                        <param name="texturebg" value="-"/>
+                        <param name="gfx" value="OSD/osd_progress_mid.png"/>
+                        <param name="border" value="0"/>
+                        <param name="borderbg" value="0"/>
+                        <param name="coldiffbg" value="ffffffff"/>
+                        <param name="colordiffuse" value="NoFocusedProgressColor"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="reveal" value="true"/>
+                    </include>
+                    <include name="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="ListItem.IsRecording"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="-37"/>
+                        <param name="width" value="1364"/>
+                        <param name="height" value="73"/>
+                        <param name="texturebg" value="-"/>
+                        <param name="gfx" value="OSD/osd_progress_mid_red.png"/>
+                        <param name="border" value="0"/>
+                        <param name="borderbg" value="0"/>
+                        <param name="coldiffbg" value="ffffffff"/>
+                        <param name="colordiffuse" value="NoFocusedProgressColor"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="reveal" value="true"/>
+                    </include>
                     <control type="image">
                         <posx>1339</posx>
                         <posy>11</posy>
@@ -166,36 +168,38 @@
                         <width>1364</width>
                         <include>FacadeFocus</include>
                     </control>
-                    <control type="progress">
-                        <posx>0</posx>
-                        <posy>-37</posy>
-                        <height>73</height>
-                        <width>1364</width>
-                        <texturebg>-</texturebg>
-                        <reveal>true</reveal>
-                        <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid.png</midtexture>
-                        <righttexture>-</righttexture>
-                        <overlaytexture>-</overlaytexture>
-                        <info>ListItem.Progress</info>
-                        <colordiffuse>FocusedProgressColor</colordiffuse>
-                        <visible>!ListItem.IsRecording</visible>
-                    </control>
-                    <control type="progress">
-                        <posx>0</posx>
-                        <posy>-37</posy>
-                        <height>73</height>
-                        <width>1364</width>
-                        <texturebg>-</texturebg>
-                        <reveal>true</reveal>
-                        <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid_red.png</midtexture>
-                        <righttexture>-</righttexture>
-                        <overlaytexture>-</overlaytexture>
-                        <info>ListItem.Progress</info>
-                        <colordiffuse>FocusedProgressColor</colordiffuse>
-                        <visible>ListItem.IsRecording</visible>
-                    </control>
+                    <include name="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="!ListItem.IsRecording"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="-37"/>
+                        <param name="width" value="1364"/>
+                        <param name="height" value="73"/>
+                        <param name="texturebg" value="-"/>
+                        <param name="gfx" value="OSD/osd_progress_mid.png"/>
+                        <param name="border" value="0"/>
+                        <param name="borderbg" value="0"/>
+                        <param name="coldiffbg" value="ffffffff"/>
+                        <param name="colordiffuse" value="FocusedProgressColor"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="reveal" value="true"/>
+                    </include>
+                    <include name="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="ListItem.IsRecording"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="-37"/>
+                        <param name="width" value="1364"/>
+                        <param name="height" value="73"/>
+                        <param name="texturebg" value="-"/>
+                        <param name="gfx" value="OSD/osd_progress_mid_red.png"/>
+                        <param name="border" value="0"/>
+                        <param name="borderbg" value="0"/>
+                        <param name="coldiffbg" value="ffffffff"/>
+                        <param name="colordiffuse" value="FocusedProgressColor"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="reveal" value="true"/>
+                    </include>
                     <control type="image">
                         <posx>1339</posx>
                         <posy>11</posy>
@@ -335,36 +339,38 @@
                         <width>1364</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
-                    <control type="progress">
-                        <posx>0</posx>
-                        <posy>-37</posy>
-                        <height>73</height>
-                        <width>1364</width>
-                        <texturebg>-</texturebg>
-                        <reveal>true</reveal>
-                        <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid.png</midtexture>
-                        <righttexture>-</righttexture>
-                        <overlaytexture>-</overlaytexture>
-                        <info>ListItem.Progress</info>
-                        <colordiffuse>NoFocusedProgressColor</colordiffuse>
-                        <visible>!ListItem.IsRecording</visible>
-                    </control>
-                    <control type="progress">
-                        <posx>0</posx>
-                        <posy>-37</posy>
-                        <height>73</height>
-                        <width>1364</width>
-                        <texturebg>-</texturebg>
-                        <reveal>true</reveal>
-                        <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid_red.png</midtexture>
-                        <righttexture>-</righttexture>
-                        <overlaytexture>-</overlaytexture>
-                        <info>ListItem.Progress</info>
-                        <colordiffuse>NoFocusedProgressColor</colordiffuse>
-                        <visible>ListItem.IsRecording</visible>
-                    </control>
+                    <include name="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="!ListItem.IsRecording"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="-37"/>
+                        <param name="width" value="1364"/>
+                        <param name="height" value="73"/>
+                        <param name="texturebg" value="-"/>
+                        <param name="gfx" value="OSD/osd_progress_mid.png"/>
+                        <param name="border" value="0"/>
+                        <param name="borderbg" value="0"/>
+                        <param name="coldiffbg" value="ffffffff"/>
+                        <param name="colordiffuse" value="NoFocusedProgressColor"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="reveal" value="true"/>
+                    </include>
+                    <include name="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="ListItem.IsRecording"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="-37"/>
+                        <param name="width" value="1364"/>
+                        <param name="height" value="73"/>
+                        <param name="texturebg" value="-"/>
+                        <param name="gfx" value="OSD/osd_progress_mid_red.png"/>
+                        <param name="border" value="0"/>
+                        <param name="borderbg" value="0"/>
+                        <param name="coldiffbg" value="ffffffff"/>
+                        <param name="colordiffuse" value="NoFocusedProgressColor"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="reveal" value="true"/>
+                    </include>
                     <control type="image">
                         <posx>1339</posx>
                         <posy>11</posy>
@@ -433,36 +439,38 @@
                         <width>1364</width>
                         <include>FacadeFocus</include>
                     </control>
-                    <control type="progress">
-                        <posx>0</posx>
-                        <posy>-37</posy>
-                        <height>73</height>
-                        <width>1364</width>
-                        <texturebg>-</texturebg>
-                        <reveal>true</reveal>
-                        <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid.png</midtexture>
-                        <righttexture>-</righttexture>
-                        <overlaytexture>-</overlaytexture>
-                        <info>ListItem.Progress</info>
-                        <colordiffuse>FocusedProgressColor</colordiffuse>
-                        <visible>!ListItem.IsRecording</visible>
-                    </control>
-                    <control type="progress">
-                        <posx>0</posx>
-                        <posy>-37</posy>
-                        <height>73</height>
-                        <width>1364</width>
-                        <texturebg>-</texturebg>
-                        <reveal>true</reveal>
-                        <lefttexture>-</lefttexture>
-                        <midtexture>OSD/osd_progress_mid_red.png</midtexture>
-                        <righttexture>-</righttexture>
-                        <overlaytexture>-</overlaytexture>
-                        <info>ListItem.Progress</info>
-                        <colordiffuse>FocusedProgressColor</colordiffuse>
-                        <visible>ListItem.IsRecording</visible>
-                    </control>
+                    <include name="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="!ListItem.IsRecording"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="-37"/>
+                        <param name="width" value="1364"/>
+                        <param name="height" value="73"/>
+                        <param name="texturebg" value="-"/>
+                        <param name="gfx" value="OSD/osd_progress_mid.png"/>
+                        <param name="border" value="0"/>
+                        <param name="borderbg" value="0"/>
+                        <param name="coldiffbg" value="ffffffff"/>
+                        <param name="colordiffuse" value="FocusedProgressColor"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="reveal" value="true"/>
+                    </include>
+                    <include name="ProgressBar">
+                        <param name="id" value="0"/>
+                        <param name="visible" value="ListItem.IsRecording"/>
+                        <param name="x" value="0"/>
+                        <param name="y" value="-37"/>
+                        <param name="width" value="1364"/>
+                        <param name="height" value="73"/>
+                        <param name="texturebg" value="-"/>
+                        <param name="gfx" value="OSD/osd_progress_mid_red.png"/>
+                        <param name="border" value="0"/>
+                        <param name="borderbg" value="0"/>
+                        <param name="coldiffbg" value="ffffffff"/>
+                        <param name="colordiffuse" value="FocusedProgressColor"/>
+                        <param name="info" value="ListItem.Progress"/>
+                        <param name="reveal" value="true"/>
+                    </include>
                     <control type="image">
                         <posx>1339</posx>
                         <posy>11</posy>
