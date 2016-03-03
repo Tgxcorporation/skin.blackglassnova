@@ -50,6 +50,13 @@
         <!--<value>defaultIconBig.png</value>-->
     </variable>
     <variable name="Thumbs">
+        <!--EXCEPTIONS-->
+        <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
+        <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.1),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.1),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
+        <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.2),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.2),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
+        <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.3),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.3),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
+        <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.4),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.4),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
+        <!--NORMAL-->
         <value condition="StringCompare(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
         <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,Left)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,Left)">$INFO[ListItem.Icon]</value>
