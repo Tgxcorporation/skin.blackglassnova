@@ -123,7 +123,7 @@
         <texturefocus>-</texturefocus>
     </include>
     <include name="BgOverlayFanart">
-        <colordiffuse>b0ffffff</colordiffuse>
+        <animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableFanart)">Conditional</animation>
     </include>
     <include name="TopBar">
         <control type="button" id="8998">
@@ -307,7 +307,7 @@
                 <posy>0</posy>
                 <width>1920</width>
                 <height>1080</height>
-                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableFanart)">BgOverlayFanart</include>
+                <include>BgOverlayFanart</include>
                 <include>OverlayBG</include>
             </control>
             <control type="image">

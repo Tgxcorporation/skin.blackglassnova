@@ -163,13 +163,6 @@
     <variable name="PVROverlayFocus">
         <value condition="ListItem.IsRecording">list/tvguide_button_recording_focus.png</value>
         <value condition="ListItem.HasTimer">list/tvguide_button_timer_focus.png</value>
-        <value condition="Skin.HasSetting(Highlighted.Color.Yellow)">list/bg_facade_focus_yellow.png</value>
-        <value condition="Skin.HasSetting(Highlighted.Color.Violet)">list/bg_facade_focus_violet.png</value>
-        <value condition="Skin.HasSetting(Highlighted.Color.Red)">list/bg_facade_focus_red.png</value>
-        <value condition="Skin.HasSetting(Highlighted.Color.Green)">list/bg_facade_focus_green.png</value>
-        <value condition="Skin.HasSetting(Highlighted.Color.Blue)">list/bg_facade_focus_blue.png</value>
-        <value condition="Skin.HasSetting(Highlighted.Color.Azure)">list/bg_facade_focus_azure.png</value>
-        <value condition="Skin.HasSetting(Highlighted.Color.Fuchsia)">list/bg_facade_focus_fuchsia.png</value>
         <value>list/bg_facade_focus_white.png</value>
     </variable>
     <variable name="PVROverlayNoFocus">
@@ -811,5 +804,13 @@
         <value condition="Skin.HasSetting(StartupDelay5)">00:05</value>
         <value condition="Skin.HasSetting(StartupDelay10)">00:10</value>
         <value>00:02</value>
+    </variable>
+    <variable name="Picked.Highlight.Color">
+        <value condition="!IsEmpty(Skin.String(PickedColor.Highlight))+Skin.HasSetting(Highlighted.Color.Custom)">$INFO[Skin.String(PickedColor.Highlight)]</value>
+        <value>ffffffff</value>
+    </variable>
+    <variable name="Picked.Overlay.Color">
+        <value condition="!IsEmpty(Skin.String(PickedColor.Overlay))+Skin.HasSetting(Overlay.Color.Custom)">$INFO[Skin.String(PickedColor.Overlay)]</value>
+        <value>ffffffff</value>
     </variable>
 </includes>

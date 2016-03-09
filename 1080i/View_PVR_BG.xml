@@ -1261,6 +1261,7 @@
                         <width>60</width>
                         <height>70</height>
                         <bordersize>0</bordersize>
+                        <colordiffuse>$VAR[Picked.Highlight.Color]</colordiffuse>
                         <texture border="3">$VAR[PVROverlayFocus]</texture>
                     </control>
                     <control type="label" id="1">

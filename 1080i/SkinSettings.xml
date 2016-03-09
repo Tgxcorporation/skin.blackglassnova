@@ -1441,46 +1441,11 @@
                     <posx>128</posx>
                     <posy>382</posy>
                     <control type="image">
-                        <posx>307</posx>
-                        <posy>0</posy>
-                        <width>2</width>
-                        <height>803</height>
-                        <texture>list/bg_facade_vertical.png</texture>
-                    </control>
-                    <control type="image">
                         <posx>615</posx>
                         <posy>0</posy>
                         <width>2</width>
                         <height>803</height>
                         <texture>list/bg_facade_vertical.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>923</posx>
-                        <posy>0</posy>
-                        <width>2</width>
-                        <height>803</height>
-                        <texture>list/bg_facade_vertical.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>328</posy>
-                        <width>1231</width>
-                        <height>73</height>
-                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>258</posy>
-                        <width>1231</width>
-                        <height>73</height>
-                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>104</posy>
-                        <width>1231</width>
-                        <height>73</height>
-                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -1509,386 +1474,115 @@
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
+                            <width>615</width>
+                            <height>579</height>
                             <texture border="27">common/JewelCaseOverlay_white.png</texture>
                         </control>
                         <control type="image">
+                            <visible>!Skin.HasSetting(BlackGlassMode)</visible>
+                            <posx>27</posx>
+                            <posy>27</posy>
+                            <width>561</width>
+                            <height>525</height>
+                            <texture>special://skin/backgrounds/Favourites.jpg</texture>
+                        </control>
+                        <control type="image">
+                            <visible>Skin.HasSetting(BlackGlassMode)</visible>
+                            <posx>27</posx>
+                            <posy>27</posy>
+                            <width>561</width>
+                            <height>525</height>
+                            <texture>special://skin/backgrounds/Favourites2.jpg</texture>
+                        </control>
+                        <control type="image">
                             <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
+                            <posy>579</posy>
+                            <width>615</width>
                             <height>63</height>
                             <texture border="27">list/bg_facade_focus_white.png</texture>
                         </control>
                         <control type="image">
                             <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
+                            <posy>642</posy>
+                            <width>615</width>
                             <height>90</height>
                             <texture border="27">buttons/bg_button_focus_white.png</texture>
                         </control>
                         <control type="radiobutton" id="852801">
                             <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
+                            <posy>733</posy>
+                            <width>615</width>
                             <height>70</height>
                             <label>$LOCALIZE[742]</label>
-                            <radioposx>225</radioposx>
+                            <radioposx>525</radioposx>
                             <font>SmallButtonFont</font>
                             <onright>852802</onright>
                             <onleft>9000</onleft>
                             <ondown>852805</ondown>
                             <onup>852805</onup>
                             <onclick>Skin.ToggleSetting(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.White)|![Skin.HasSetting(Highlighted.Color.Fuchsia)|Skin.HasSetting(Highlighted.Color.Azure)|Skin.HasSetting(Highlighted.Color.Yellow)|Skin.HasSetting(Highlighted.Color.Blue)|Skin.HasSetting(Highlighted.Color.Green)|Skin.HasSetting(Highlighted.Color.Red)|Skin.HasSetting(Highlighted.Color.Violet)]</selected>
-                            <onclick>ReloadSkin()</onclick>
+                            <onclick>Skin.Reset(Highlighted.Color.Custom)</onclick>
+                            <selected>Skin.HasSetting(Highlighted.Color.White)|!Skin.HasSetting(Highlighted.Color.Custom)</selected>
                         </control>
                     </control>
-                    <!-- FUCHSIA -->
+                    <!-- CUSTOM -->
                     <control type="group">
-                        <posx>308</posx>
+                        <posx>616</posx>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="27">common/JewelCaseOverlay_fuchsia.png</texture>
+                            <width>615</width>
+                            <height>579</height>
+                            <texture border="27" colordiffuse="$INFO[Skin.String(PickedColor.Highlight)]">common/JewelCaseOverlay_white.png</texture>
+                        </control>
+                        <control type="image">
+                            <visible>!Skin.HasSetting(BlackGlassMode)</visible>
+                            <posx>27</posx>
+                            <posy>27</posy>
+                            <width>561</width>
+                            <height>525</height>
+                            <texture>special://skin/backgrounds/Favourites.jpg</texture>
+                        </control>
+                        <control type="image">
+                            <visible>Skin.HasSetting(BlackGlassMode)</visible>
+                            <posx>27</posx>
+                            <posy>27</posy>
+                            <width>561</width>
+                            <height>525</height>
+                            <texture>special://skin/backgrounds/Favourites2.jpg</texture>
                         </control>
                         <control type="image">
                             <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
+                            <posy>579</posy>
+                            <width>615</width>
                             <height>63</height>
-                            <texture border="27">list/bg_facade_focus_fuchsia.png</texture>
+                            <colordiffuse>$INFO[Skin.String(PickedColor.Highlight)]</colordiffuse>
+                            <texture border="27">list/bg_facade_focus_white.png</texture>
                         </control>
                         <control type="image">
                             <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
+                            <posy>642</posy>
+                            <width>615</width>
                             <height>90</height>
-                            <texture border="27">buttons/bg_button_focus_fuchsia.png</texture>
+                            <colordiffuse>$INFO[Skin.String(PickedColor.Highlight)]</colordiffuse>
+                            <texture border="27">buttons/bg_button_focus_white.png</texture>
                         </control>
                         <control type="radiobutton" id="852802">
                             <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
+                            <posy>733</posy>
+                            <width>615</width>
                             <height>70</height>
-                            <label>$LOCALIZE[31035]</label>
-                            <radioposx>225</radioposx>
+                            <label>$LOCALIZE[31070]</label>
+                            <radioposx>525</radioposx>
                             <font>SmallButtonFont</font>
-                            <onright>852803</onright>
+                            <onright>9000</onright>
                             <onleft>852801</onleft>
                             <ondown>852806</ondown>
                             <onup>852806</onup>
                             <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Fuchsia)</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- AZURE -->
-                    <control type="group">
-                        <posx>616</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="27">common/JewelCaseOverlay_azure.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="27">list/bg_facade_focus_azure.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="27">buttons/bg_button_focus_azure.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852803">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[765]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852804</onright>
-                            <onleft>852802</onleft>
-                            <ondown>852807</ondown>
-                            <onup>852807</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Azure)</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- BLUE -->
-                    <control type="group">
-                        <posx>924</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="27">common/JewelCaseOverlay_blue.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="27">list/bg_facade_focus_blue.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="27">buttons/bg_button_focus_blue.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852804">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[762]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>9000</onright>
-                            <onleft>852803</onleft>
-                            <ondown>852808</ondown>
-                            <onup>852808</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Blue)</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- GREEN -->
-                    <control type="group">
-                        <posx>0</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="27">common/JewelCaseOverlay_green.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="27">list/bg_facade_focus_green.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="27">buttons/bg_button_focus_green.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852805">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[763]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852806</onright>
-                            <onleft>9000</onleft>
-                            <ondown>852801</ondown>
-                            <onup>852801</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Green)</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- RED -->
-                    <control type="group">
-                        <posx>308</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="27">common/JewelCaseOverlay_red.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="27">list/bg_facade_focus_red.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="27">buttons/bg_button_focus_red.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852806">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[13343]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852807</onright>
-                            <onleft>852805</onleft>
-                            <ondown>852802</ondown>
-                            <onup>852802</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Red)</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- Violet -->
-                    <control type="group">
-                        <posx>616</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="27">common/JewelCaseOverlay_violet.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="27">list/bg_facade_focus_violet.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="27">buttons/bg_button_focus_violet.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852807">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[31036]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852808</onright>
-                            <onleft>852806</onleft>
-                            <ondown>852803</ondown>
-                            <onup>852803</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Violet)</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- Yellow -->
-                    <control type="group">
-                        <posx>924</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>177</height>
-                            <texture border="27">common/JewelCaseOverlay_yellow.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>177</posy>
-                            <width>307</width>
-                            <height>63</height>
-                            <texture border="27">list/bg_facade_focus_yellow.png</texture>
-                        </control>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>240</posy>
-                            <width>307</width>
-                            <height>90</height>
-                            <texture border="27">buttons/bg_button_focus_yellow.png</texture>
-                        </control>
-                        <control type="radiobutton" id="852808">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[743]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>9000</onright>
-                            <onleft>852807</onleft>
-                            <ondown>852804</ondown>
-                            <onup>852804</onup>
-                            <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Highlighted.Color.Violet)</onclick>
-                            <onclick>Skin.ToggleSetting(Highlighted.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Highlighted.Color.Yellow)</selected>
-                            <onclick>ReloadSkin()</onclick>
+                            <onclick>Skin.ToggleSetting(Highlighted.Color.Custom)</onclick>
+                            <selected>Skin.HasSetting(Highlighted.Color.Custom)</selected>
+                            <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=PickedColor.Highlight)</onclick>
                         </control>
                     </control>
                 </control>
@@ -1899,39 +1593,11 @@
                     <posx>128</posx>
                     <posy>382</posy>
                     <control type="image">
-                        <posx>307</posx>
-                        <posy>0</posy>
-                        <width>2</width>
-                        <height>803</height>
-                        <texture>list/bg_facade_vertical.png</texture>
-                    </control>
-                    <control type="image">
                         <posx>615</posx>
                         <posy>0</posy>
                         <width>2</width>
                         <height>803</height>
                         <texture>list/bg_facade_vertical.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>923</posx>
-                        <posy>0</posy>
-                        <width>2</width>
-                        <height>803</height>
-                        <texture>list/bg_facade_vertical.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>328</posy>
-                        <width>1231</width>
-                        <height>73</height>
-                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                    </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>258</posy>
-                        <width>1231</width>
-                        <height>73</height>
-                        <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -1951,284 +1617,92 @@
                     <control type="group">
                         <posx>0</posx>
                         <control type="image">
+                            <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
+                            <width>615</width>
+                            <height>731</height>
+                            <texture>special://skin/backgrounds/Favourites.jpg</texture>
+                        </control>
+                        <control type="image">
+                            <visible>Skin.HasSetting(BlackGlassMode)</visible>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>615</width>
+                            <height>731</height>
+                            <texture>special://skin/backgrounds/Favourites2.jpg</texture>
+                        </control>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>615</width>
+                            <height>731</height>
                             <aspectratio align="left">scale</aspectratio>
+                            <include>BgOverlayFanart</include>
                             <texture>special://skin/backgrounds/default/white.jpg</texture>
                         </control>
                         <control type="radiobutton" id="852801">
                             <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
+                            <posy>733</posy>
+                            <width>615</width>
                             <height>70</height>
-                            <label>$LOCALIZE[353]</label>
-                            <radioposx>225</radioposx>
+                            <label>$LOCALIZE[742]</label>
+                            <radioposx>525</radioposx>
                             <font>SmallButtonFont</font>
                             <onright>852802</onright>
                             <onleft>9000</onleft>
                             <ondown>852805</ondown>
                             <onup>852805</onup>
                             <onclick>Skin.ToggleSetting(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.White)</selected>
-                            <onclick>ReloadSkin()</onclick>
+                            <onclick>Skin.Reset(Overlay.Color.Custom)</onclick>
+                            <selected>Skin.HasSetting(Overlay.Color.White)|!Skin.HasSetting(Overlay.Color.Custom)</selected>
                         </control>
                     </control>
-                    <!-- FUCHSIA -->
+                    <!-- CUSTOM -->
                     <control type="group">
-                        <posx>308</posx>
+                        <posx>616</posx>
+                        <control type="image">
+                            <visible>!Skin.HasSetting(BlackGlassMode)</visible>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>615</width>
+                            <height>731</height>
+                            <texture>special://skin/backgrounds/Favourites.jpg</texture>
+                        </control>
+                        <control type="image">
+                            <visible>Skin.HasSetting(BlackGlassMode)</visible>
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>615</width>
+                            <height>731</height>
+                            <texture>special://skin/backgrounds/Favourites2.jpg</texture>
+                        </control>
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
+                            <width>615</width>
+                            <height>731</height>
                             <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/fuchsia.jpg</texture>
+                            <colordiffuse>$INFO[Skin.String(PickedColor.Overlay)]</colordiffuse>
+                            <include>BgOverlayFanart</include>
+                            <texture>special://skin/backgrounds/default/white.jpg</texture>
                         </control>
                         <control type="radiobutton" id="852802">
                             <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
+                            <posy>733</posy>
+                            <width>615</width>
                             <height>70</height>
-                            <label>$LOCALIZE[31035]</label>
-                            <radioposx>225</radioposx>
+                            <label>$LOCALIZE[31070]</label>
+                            <radioposx>525</radioposx>
                             <font>SmallButtonFont</font>
-                            <onright>852803</onright>
+                            <onright>9000</onright>
                             <onleft>852801</onleft>
                             <ondown>852806</ondown>
                             <onup>852806</onup>
                             <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Fuchsia)</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- AZURE -->
-                    <control type="group">
-                        <posx>616</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/azure.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852803">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[765]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852804</onright>
-                            <onleft>852802</onleft>
-                            <ondown>852807</ondown>
-                            <onup>852807</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Azure)|![Skin.HasSetting(Overlay.Color.Fuchsia)|Skin.HasSetting(Overlay.Color.White)|Skin.HasSetting(Overlay.Color.Yellow)|Skin.HasSetting(Overlay.Color.Blue)|Skin.HasSetting(Overlay.Color.Green)|Skin.HasSetting(Overlay.Color.Red)|Skin.HasSetting(Overlay.Color.Violet)]</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- BLUE -->
-                    <control type="group">
-                        <posx>924</posx>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/blue.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852804">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[762]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>9000</onright>
-                            <onleft>852803</onleft>
-                            <ondown>852808</ondown>
-                            <onup>852808</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Blue)</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- GREEN -->
-                    <control type="group">
-                        <posx>0</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/green.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852805">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[763]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852806</onright>
-                            <onleft>9000</onleft>
-                            <ondown>852801</ondown>
-                            <onup>852801</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Green)</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- RED -->
-                    <control type="group">
-                        <posx>308</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/red.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852806">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[13343]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852807</onright>
-                            <onleft>852805</onleft>
-                            <ondown>852802</ondown>
-                            <onup>852802</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Red)</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- Violet -->
-                    <control type="group">
-                        <posx>616</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/violet.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852807">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[31036]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>852808</onright>
-                            <onleft>852806</onleft>
-                            <ondown>852803</ondown>
-                            <onup>852803</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Violet)</selected>
-                            <onclick>ReloadSkin()</onclick>
-                        </control>
-                    </control>
-                    <!-- Yellow -->
-                    <control type="group">
-                        <posx>924</posx>
-                        <posy>402</posy>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>307</width>
-                            <height>329</height>
-                            <aspectratio align="left">scale</aspectratio>
-                            <texture>special://skin/backgrounds/default/yellow.jpg</texture>
-                        </control>
-                        <control type="radiobutton" id="852808">
-                            <posx>0</posx>
-                            <posy>331</posy>
-                            <width>307</width>
-                            <height>70</height>
-                            <label>$LOCALIZE[743]</label>
-                            <radioposx>225</radioposx>
-                            <font>SmallButtonFont</font>
-                            <onright>9000</onright>
-                            <onleft>852807</onleft>
-                            <ondown>852804</ondown>
-                            <onup>852804</onup>
-                            <onclick>Skin.Reset(Overlay.Color.White)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Fuchsia)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Azure)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Blue)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Green)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Red)</onclick>
-                            <onclick>Skin.Reset(Overlay.Color.Violet)</onclick>
-                            <onclick>Skin.ToggleSetting(Overlay.Color.Yellow)</onclick>
-                            <selected>Skin.HasSetting(Overlay.Color.Yellow)</selected>
-                            <onclick>ReloadSkin()</onclick>
+                            <onclick>Skin.ToggleSetting(Overlay.Color.Custom)</onclick>
+                            <selected>Skin.HasSetting(Overlay.Color.Custom)</selected>
+                            <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=PickedColor.Overlay)</onclick>
                         </control>
                     </control>
                 </control>
