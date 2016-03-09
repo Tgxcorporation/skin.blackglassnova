@@ -1,4 +1,6 @@
 4.10.0
+Added option to choose custom color for themes and highlighted color.
+Added update library command in music screen.
 Improved Media Info Logos management.
 Added backup and restore of skin settings.
 Added skin version info.
