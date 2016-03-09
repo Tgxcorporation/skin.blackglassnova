@@ -1,4 +1,6 @@
 5.5.0
+Added option to choose custom color for themes and highlighted color.
+Added update library command in music screen.
 Improved Media Info Logos management.
 Added backup and restore of skin settings.
 Added skin version info.
@@ -18,6 +20,7 @@ Added font option for Ubuntu Light.
 New progress indicators for list views.
 [Jarvis] Added support for Studio Logos and Music Labels Logos.
 [Jarvis] Skin thinning - Weather image resource addons.
+[Jarvis] Skin thinning - Language Flags image resource addon.
 [Jarvis] User ratings.
 [Jarvis] Updated support for Dvblink, Wmc, NextPvr.
 [Jarvis] Added default sounds.
