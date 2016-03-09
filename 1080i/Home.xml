@@ -84,7 +84,7 @@
             <posy>0</posy>
             <width>1920</width>
             <height>1080</height>
-            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableFanart)">BgOverlayFanart</include>
+            <include>BgOverlayFanart</include>
             <include>OverlayBG</include>
         </control>
         <control type="image">
