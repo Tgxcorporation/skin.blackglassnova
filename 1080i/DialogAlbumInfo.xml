@@ -116,32 +116,32 @@
                     <label>21888</label>
                     <onleft>5041</onleft>
                 </control>
-                <control type="button" id="509">
-                    <visible>System.HasAddon(script.extendedinfo)</visible>
-                    <!--<visible>IntegerGreaterThan(Container(5091).NumItems,0)</visible>-->
-                    <visible>container.content(artists)</visible>
-                    <description>Twitter Shouts ExtendedInfo</description>
-                    <include>RightDialogButton</include>
-                    <label>Twitter</label>
-                    <onleft>5091</onleft>
-                </control>
-                <control type="button" id="505">
-                    <visible>System.HasAddon(script.extendedinfo)</visible>
-                    <!--<visible>IntegerGreaterThan(Container(5051).NumItems,0)</visible>-->
-                    <visible>container.content(artists)</visible>
-                    <description>Concerts ExtendedInfo</description>
-                    <include>RightDialogButton</include>
-                    <label>31971</label>
-                    <onleft>5051</onleft>
-                </control>
-                <control type="button" id="506">
-                    <visible>System.HasAddon(script.extendedinfo)</visible>
-                    <visible>container.content(artists)</visible>
-                    <description>Similar Artists ExtendedInfo</description>
-                    <include>RightDialogButton</include>
-                    <label>31942</label>
-                    <onright>5061</onright>
-                </control>
+                <!--<control type="button" id="509">-->
+                    <!--<visible>System.HasAddon(script.extendedinfo)</visible>-->
+                    <!--&lt;!&ndash;<visible>IntegerGreaterThan(Container(5091).NumItems,0)</visible>&ndash;&gt;-->
+                    <!--<visible>container.content(artists)</visible>-->
+                    <!--<description>Twitter Shouts ExtendedInfo</description>-->
+                    <!--<include>RightDialogButton</include>-->
+                    <!--<label>Twitter</label>-->
+                    <!--<onleft>5091</onleft>-->
+                <!--</control>-->
+                <!--<control type="button" id="505">-->
+                    <!--<visible>System.HasAddon(script.extendedinfo)</visible>-->
+                    <!--&lt;!&ndash;<visible>IntegerGreaterThan(Container(5051).NumItems,0)</visible>&ndash;&gt;-->
+                    <!--<visible>container.content(artists)</visible>-->
+                    <!--<description>Concerts ExtendedInfo</description>-->
+                    <!--<include>RightDialogButton</include>-->
+                    <!--<label>31971</label>-->
+                    <!--<onleft>5051</onleft>-->
+                <!--</control>-->
+                <!--<control type="button" id="506">-->
+                    <!--<visible>System.HasAddon(script.extendedinfo)</visible>-->
+                    <!--<visible>container.content(artists)</visible>-->
+                    <!--<description>Similar Artists ExtendedInfo</description>-->
+                    <!--<include>RightDialogButton</include>-->
+                    <!--<label>31942</label>-->
+                    <!--<onright>5061</onright>-->
+                <!--</control>-->
                 <control type="button" id="507">
                     <visible>System.HasAddon(script.extendedinfo)</visible>
                     <!--<visible>IntegerGreaterThan(Container(5071).NumItems,0)</visible>-->
@@ -160,12 +160,6 @@
                     <label>$ADDON[script.extendedinfo 32118]</label>
                     <onleft>5081</onleft>
                 </control>
-                <control type="button" id="6">
-                    <description>Refresh</description>
-                    <include>RightDialogButton</include>
-                    <label>184</label>
-                    <onleft>49</onleft>
-                </control>
                 <control type="button" id="10">
                     <description>Get Thumb</description>
                     <include>RightDialogButton</include>
@@ -179,6 +173,12 @@
                     <label>20413</label>
                     <onleft>121</onleft>
                 </control>
+                <control type="button" id="6">
+                    <description>Refresh</description>
+                    <include>RightDialogButton</include>
+                    <label>184</label>
+                    <onleft>49</onleft>
+                </control>
             </control>
             <control type="scrollbar" id="9600">
                 <posx>1711</posx>
@@ -190,21 +190,30 @@
             </control>
             <!--BIOGRAPHY REVIEW-->
             <control type="group" id="5000">
+                <!--<visible>![Control.HasFocus(503)|-->
+                    <!--Control.HasFocus(502)|-->
+                    <!--Control.HasFocus(504)|-->
+                    <!--Control.HasFocus(505)|-->
+                    <!--Control.HasFocus(506)|-->
+                    <!--Control.HasFocus(507)|-->
+                    <!--Control.HasFocus(508)|-->
+                    <!--Control.HasFocus(509)|-->
+                    <!--ControlGroup(5020).HasFocus|-->
+                    <!--ControlGroup(5040).HasFocus|-->
+                    <!--ControlGroup(5050).HasFocus|-->
+                    <!--ControlGroup(5060).HasFocus|-->
+                    <!--ControlGroup(5070).HasFocus|-->
+                    <!--ControlGroup(5080).HasFocus|-->
+                    <!--ControlGroup(5090).HasFocus]</visible>-->
                 <visible>![Control.HasFocus(503)|
                     Control.HasFocus(502)|
                     Control.HasFocus(504)|
-                    Control.HasFocus(505)|
-                    Control.HasFocus(506)|
                     Control.HasFocus(507)|
                     Control.HasFocus(508)|
-                    Control.HasFocus(509)|
                     ControlGroup(5020).HasFocus|
                     ControlGroup(5040).HasFocus|
-                    ControlGroup(5050).HasFocus|
-                    ControlGroup(5060).HasFocus|
                     ControlGroup(5070).HasFocus|
-                    ControlGroup(5080).HasFocus|
-                    ControlGroup(5090).HasFocus]</visible>
+                    ControlGroup(5080).HasFocus]</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <!-- CDART MUSIC -->
                 <include name="DiscArt">
@@ -782,189 +791,189 @@
                     </control>
                 </control>
             </control>
-            <!--CONCERTS EXTENDEDINFO-->
-            <control type="group" id="5050">
-                <visible>Control.HasFocus(505)|ControlGroup(5050).HasFocus</visible>
-                <include>VisibleFadeEffectDelay</include>
-                <control type="image">
-                    <posx>1342</posx>
-                    <posy>838</posy>
-                    <width>370</width>
-                    <height>370</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="defaultExtensionBig.png">$INFO[Container(5051).ListItem.Property(GoogleMap)]</texture>
-                    <include>ThumbBorder</include>
-                </control>
-                <control type="group">
-                    <posx>178</posx>
-                    <posy>382</posy>
-                    <control type="panel" id="5051">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1131</width>
-                        <height>803</height>
-                        <onright>5650</onright>
-                        <pagecontrol>5650</pagecontrol>
-                        <scrolltime>200</scrolltime>
-                        <orientation>vertical</orientation>
-                        <itemlayout height="73" width="1131">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>73</height>
-                                <width>1131</width>
-                                <texture border="3">list/bg_facade_nofocus.png</texture>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <height>42</height>
-                                <width>1041</width>
-                                <font>FacadeListMainFont</font>
-                                <textcolor>ListNoFocusColor</textcolor>
-                                <label>$INFO[ListItem.Property(Name)]</label>
-                                <scroll>false</scroll>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>39</posy>
-                                <height>28</height>
-                                <width>1041</width>
-                                <font>FacadeListSubFont</font>
-                                <textcolor>SublistNoFocusColor</textcolor>
-                                <label>$INFO[ListItem.Property(City)]</label>
-                                <scroll>false</scroll>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout height="73" width="1131">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>73</height>
-                                <width>1131</width>
-                                <include>FacadeFocus</include>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <height>42</height>
-                                <width>1041</width>
-                                <font>FacadeListMainFont</font>
-                                <textcolor>ListFocusColor</textcolor>
-                                <label>$INFO[ListItem.Property(Name)]</label>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <posy>39</posy>
-                                <height>28</height>
-                                <width>1041</width>
-                                <font>FacadeListSubFont</font>
-                                <textcolor>SublistFocusColor</textcolor>
-                                <label>$INFO[ListItem.Property(City)]</label>
-                            </control>
-                        </focusedlayout>
-                        <content>plugin://script.extendedinfo?info=artistevents&amp;&amp;artistname=$INFO[ListItem.Artist]</content>
-                    </control>
-                    <control type="scrollbar" id="5650">
-                        <posx>1100</posx>
-                        <posy>0</posy>
-                        <height>803</height>
-                        <include>VerticalScroller</include>
-                        <onleft>5051</onleft>
-                        <onright>9000</onright>
-                    </control>
-                    <control type="label">
-                        <posx>1086</posx>
-                        <posy>800</posy>
-                        <height>44</height>
-                        <width>876</width>
-                        <align>right</align>
-                        <font>LeftMenuSubButtonFont</font>
-                        <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(5051).NumItems,,  $LOCALIZE[31025]]</label>
-                    </control>
-                </control>
-            </control>
-            <!-- SIMILAR ARTISTS EXTENDEDINFO-->
-            <control type="group" id="5060">
-                <visible>Control.HasFocus(506)|ControlGroup(5060).HasFocus</visible>
-                <include>VisibleFadeEffectDelay</include>
-                <control type="image">
-                    <posx>1342</posx>
-                    <posy>838</posy>
-                    <width>370</width>
-                    <height>370</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="defaultArtistBig.png">$INFO[Container(5061).Listitem.Icon]</texture>
-                    <include>ThumbBorder</include>
-                </control>
-                <control type="group">
-                    <posx>178</posx>
-                    <posy>382</posy>
-                    <control type="panel" id="5061">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1131</width>
-                        <height>803</height>
-                        <onright>5660</onright>
-                        <pagecontrol>5660</pagecontrol>
-                        <scrolltime>200</scrolltime>
-                        <orientation>vertical</orientation>
-                        <itemlayout height="73" width="1131">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>73</height>
-                                <width>1131</width>
-                                <texture border="3">list/bg_facade_nofocus.png</texture>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <height>71</height>
-                                <width>1041</width>
-                                <font>FacadeListMainFont</font>
-                                <textcolor>ListNoFocusColor</textcolor>
-                                <label>$INFO[ListItem.Property(comment)]</label>
-                                <scroll>false</scroll>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout height="73" width="1131">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>73</height>
-                                <width>1131</width>
-                                <include>FacadeFocus</include>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <height>71</height>
-                                <width>1041</width>
-                                <font>FacadeListMainFont</font>
-                                <textcolor>ListFocusColor</textcolor>
-                                <label>$INFO[ListItem.Property(comment)]</label>
-                            </control>
-                        </focusedlayout>
-                        <content>plugin://script.extendedinfo?info=similarartistsinlibrary&amp;&amp;artistname=$INFO[ListItem.Artist]</content>
-                    </control>
-                    <control type="scrollbar" id="5660">
-                        <posx>1100</posx>
-                        <posy>0</posy>
-                        <height>803</height>
-                        <include>VerticalScroller</include>
-                        <onleft>5061</onleft>
-                        <onright>9000</onright>
-                    </control>
-                    <control type="label">
-                        <posx>1086</posx>
-                        <posy>800</posy>
-                        <height>44</height>
-                        <width>876</width>
-                        <align>right</align>
-                        <font>LeftMenuSubButtonFont</font>
-                        <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(5101).NumItems,,  $LOCALIZE[31025]]</label>
-                    </control>
-                </control>
-            </control>
+            <!--&lt;!&ndash;CONCERTS EXTENDEDINFO&ndash;&gt;-->
+            <!--<control type="group" id="5050">-->
+                <!--<visible>Control.HasFocus(505)|ControlGroup(5050).HasFocus</visible>-->
+                <!--<include>VisibleFadeEffectDelay</include>-->
+                <!--<control type="image">-->
+                    <!--<posx>1342</posx>-->
+                    <!--<posy>838</posy>-->
+                    <!--<width>370</width>-->
+                    <!--<height>370</height>-->
+                    <!--<aspectratio>keep</aspectratio>-->
+                    <!--<texture background="true" fallback="defaultExtensionBig.png">$INFO[Container(5051).ListItem.Property(GoogleMap)]</texture>-->
+                    <!--<include>ThumbBorder</include>-->
+                <!--</control>-->
+                <!--<control type="group">-->
+                    <!--<posx>178</posx>-->
+                    <!--<posy>382</posy>-->
+                    <!--<control type="panel" id="5051">-->
+                        <!--<posx>0</posx>-->
+                        <!--<posy>0</posy>-->
+                        <!--<width>1131</width>-->
+                        <!--<height>803</height>-->
+                        <!--<onright>5650</onright>-->
+                        <!--<pagecontrol>5650</pagecontrol>-->
+                        <!--<scrolltime>200</scrolltime>-->
+                        <!--<orientation>vertical</orientation>-->
+                        <!--<itemlayout height="73" width="1131">-->
+                            <!--<control type="image">-->
+                                <!--<posx>0</posx>-->
+                                <!--<posy>0</posy>-->
+                                <!--<height>73</height>-->
+                                <!--<width>1131</width>-->
+                                <!--<texture border="3">list/bg_facade_nofocus.png</texture>-->
+                            <!--</control>-->
+                            <!--<control type="label">-->
+                                <!--<posx>TextMargin</posx>-->
+                                <!--<height>42</height>-->
+                                <!--<width>1041</width>-->
+                                <!--<font>FacadeListMainFont</font>-->
+                                <!--<textcolor>ListNoFocusColor</textcolor>-->
+                                <!--<label>$INFO[ListItem.Property(Name)]</label>-->
+                                <!--<scroll>false</scroll>-->
+                            <!--</control>-->
+                            <!--<control type="label">-->
+                                <!--<posx>TextMargin</posx>-->
+                                <!--<posy>39</posy>-->
+                                <!--<height>28</height>-->
+                                <!--<width>1041</width>-->
+                                <!--<font>FacadeListSubFont</font>-->
+                                <!--<textcolor>SublistNoFocusColor</textcolor>-->
+                                <!--<label>$INFO[ListItem.Property(City)]</label>-->
+                                <!--<scroll>false</scroll>-->
+                            <!--</control>-->
+                        <!--</itemlayout>-->
+                        <!--<focusedlayout height="73" width="1131">-->
+                            <!--<control type="image">-->
+                                <!--<posx>0</posx>-->
+                                <!--<posy>0</posy>-->
+                                <!--<height>73</height>-->
+                                <!--<width>1131</width>-->
+                                <!--<include>FacadeFocus</include>-->
+                            <!--</control>-->
+                            <!--<control type="label">-->
+                                <!--<posx>TextMargin</posx>-->
+                                <!--<height>42</height>-->
+                                <!--<width>1041</width>-->
+                                <!--<font>FacadeListMainFont</font>-->
+                                <!--<textcolor>ListFocusColor</textcolor>-->
+                                <!--<label>$INFO[ListItem.Property(Name)]</label>-->
+                            <!--</control>-->
+                            <!--<control type="label">-->
+                                <!--<posx>TextMargin</posx>-->
+                                <!--<posy>39</posy>-->
+                                <!--<height>28</height>-->
+                                <!--<width>1041</width>-->
+                                <!--<font>FacadeListSubFont</font>-->
+                                <!--<textcolor>SublistFocusColor</textcolor>-->
+                                <!--<label>$INFO[ListItem.Property(City)]</label>-->
+                            <!--</control>-->
+                        <!--</focusedlayout>-->
+                        <!--<content>plugin://script.extendedinfo?info=artistevents&amp;&amp;artistname=$INFO[ListItem.Artist]</content>-->
+                    <!--</control>-->
+                    <!--<control type="scrollbar" id="5650">-->
+                        <!--<posx>1100</posx>-->
+                        <!--<posy>0</posy>-->
+                        <!--<height>803</height>-->
+                        <!--<include>VerticalScroller</include>-->
+                        <!--<onleft>5051</onleft>-->
+                        <!--<onright>9000</onright>-->
+                    <!--</control>-->
+                    <!--<control type="label">-->
+                        <!--<posx>1086</posx>-->
+                        <!--<posy>800</posy>-->
+                        <!--<height>44</height>-->
+                        <!--<width>876</width>-->
+                        <!--<align>right</align>-->
+                        <!--<font>LeftMenuSubButtonFont</font>-->
+                        <!--<textcolor>SublistNoFocusColor</textcolor>-->
+                        <!--<label>$INFO[Container(5051).NumItems,,  $LOCALIZE[31025]]</label>-->
+                    <!--</control>-->
+                <!--</control>-->
+            <!--</control>-->
+            <!--&lt;!&ndash; SIMILAR ARTISTS EXTENDEDINFO&ndash;&gt;-->
+            <!--<control type="group" id="5060">-->
+                <!--<visible>Control.HasFocus(506)|ControlGroup(5060).HasFocus</visible>-->
+                <!--<include>VisibleFadeEffectDelay</include>-->
+                <!--<control type="image">-->
+                    <!--<posx>1342</posx>-->
+                    <!--<posy>838</posy>-->
+                    <!--<width>370</width>-->
+                    <!--<height>370</height>-->
+                    <!--<aspectratio>keep</aspectratio>-->
+                    <!--<texture background="true" fallback="defaultArtistBig.png">$INFO[Container(5061).Listitem.Icon]</texture>-->
+                    <!--<include>ThumbBorder</include>-->
+                <!--</control>-->
+                <!--<control type="group">-->
+                    <!--<posx>178</posx>-->
+                    <!--<posy>382</posy>-->
+                    <!--<control type="panel" id="5061">-->
+                        <!--<posx>0</posx>-->
+                        <!--<posy>0</posy>-->
+                        <!--<width>1131</width>-->
+                        <!--<height>803</height>-->
+                        <!--<onright>5660</onright>-->
+                        <!--<pagecontrol>5660</pagecontrol>-->
+                        <!--<scrolltime>200</scrolltime>-->
+                        <!--<orientation>vertical</orientation>-->
+                        <!--<itemlayout height="73" width="1131">-->
+                            <!--<control type="image">-->
+                                <!--<posx>0</posx>-->
+                                <!--<posy>0</posy>-->
+                                <!--<height>73</height>-->
+                                <!--<width>1131</width>-->
+                                <!--<texture border="3">list/bg_facade_nofocus.png</texture>-->
+                            <!--</control>-->
+                            <!--<control type="label">-->
+                                <!--<posx>TextMargin</posx>-->
+                                <!--<height>71</height>-->
+                                <!--<width>1041</width>-->
+                                <!--<font>FacadeListMainFont</font>-->
+                                <!--<textcolor>ListNoFocusColor</textcolor>-->
+                                <!--<label>$INFO[ListItem.Property(comment)]</label>-->
+                                <!--<scroll>false</scroll>-->
+                            <!--</control>-->
+                        <!--</itemlayout>-->
+                        <!--<focusedlayout height="73" width="1131">-->
+                            <!--<control type="image">-->
+                                <!--<posx>0</posx>-->
+                                <!--<posy>0</posy>-->
+                                <!--<height>73</height>-->
+                                <!--<width>1131</width>-->
+                                <!--<include>FacadeFocus</include>-->
+                            <!--</control>-->
+                            <!--<control type="label">-->
+                                <!--<posx>TextMargin</posx>-->
+                                <!--<height>71</height>-->
+                                <!--<width>1041</width>-->
+                                <!--<font>FacadeListMainFont</font>-->
+                                <!--<textcolor>ListFocusColor</textcolor>-->
+                                <!--<label>$INFO[ListItem.Property(comment)]</label>-->
+                            <!--</control>-->
+                        <!--</focusedlayout>-->
+                        <!--<content>plugin://script.extendedinfo?info=similarartistsinlibrary&amp;&amp;artistname=$INFO[ListItem.Artist]</content>-->
+                    <!--</control>-->
+                    <!--<control type="scrollbar" id="5660">-->
+                        <!--<posx>1100</posx>-->
+                        <!--<posy>0</posy>-->
+                        <!--<height>803</height>-->
+                        <!--<include>VerticalScroller</include>-->
+                        <!--<onleft>5061</onleft>-->
+                        <!--<onright>9000</onright>-->
+                    <!--</control>-->
+                    <!--<control type="label">-->
+                        <!--<posx>1086</posx>-->
+                        <!--<posy>800</posy>-->
+                        <!--<height>44</height>-->
+                        <!--<width>876</width>-->
+                        <!--<align>right</align>-->
+                        <!--<font>LeftMenuSubButtonFont</font>-->
+                        <!--<textcolor>SublistNoFocusColor</textcolor>-->
+                        <!--<label>$INFO[Container(5101).NumItems,,  $LOCALIZE[31025]]</label>-->
+                    <!--</control>-->
+                <!--</control>-->
+            <!--</control>-->
             <!--MUSICVIDEOS EXTENDEDINFO-->
             <control type="group" id="5070">
                 <visible>Control.HasFocus(507)|ControlGroup(5070).HasFocus</visible>
@@ -1148,88 +1157,88 @@
                     </control>
                 </control>
             </control>
-            <!-- TWITTER SHOUTS EXTENDEDINFO-->
-            <control type="group" id="5090">
-                <visible>Control.HasFocus(509)|ControlGroup(5090).HasFocus</visible>
-                <include>VisibleFadeEffectDelay</include>
-                <control type="image">
-                    <posx>1342</posx>
-                    <posy>838</posy>
-                    <width>370</width>
-                    <height>370</height>
-                    <aspectratio>keep</aspectratio>
-                    <texture background="true" fallback="defaultAudioBig.png">$INFO[Container(5091).Listitem.Icon]</texture>
-                    <include>ThumbBorder</include>
-                </control>
-                <control type="group">
-                    <posx>178</posx>
-                    <posy>382</posy>
-                    <control type="panel" id="5091">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>1131</width>
-                        <height>803</height>
-                        <onright>5690</onright>
-                        <pagecontrol>5690</pagecontrol>
-                        <scrolltime>200</scrolltime>
-                        <orientation>vertical</orientation>
-                        <itemlayout height="73" width="1131">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>73</height>
-                                <width>1131</width>
-                                <texture border="3">list/bg_facade_nofocus.png</texture>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <height>71</height>
-                                <width>1041</width>
-                                <font>FacadeListMainFont</font>
-                                <textcolor>ListNoFocusColor</textcolor>
-                                <label>$INFO[ListItem.Property(comment)]</label>
-                                <scroll>false</scroll>
-                            </control>
-                        </itemlayout>
-                        <focusedlayout height="73" width="1131">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <height>73</height>
-                                <width>1131</width>
-                                <include>FacadeFocus</include>
-                            </control>
-                            <control type="label">
-                                <posx>TextMargin</posx>
-                                <height>71</height>
-                                <width>1041</width>
-                                <font>FacadeListMainFont</font>
-                                <textcolor>ListFocusColor</textcolor>
-                                <label>$INFO[ListItem.Property(comment)]</label>
-                            </control>
-                        </focusedlayout>
-                        <content>plugin://script.extendedinfo?info=artistshouts&amp;&amp;artistname=$INFO[ListItem.Artist]</content>
-                    </control>
-                    <control type="scrollbar" id="5690">
-                        <posx>1100</posx>
-                        <posy>0</posy>
-                        <height>803</height>
-                        <include>VerticalScroller</include>
-                        <onleft>5091</onleft>
-                        <onright>9000</onright>
-                    </control>
-                    <control type="label">
-                        <posx>1086</posx>
-                        <posy>800</posy>
-                        <height>44</height>
-                        <width>876</width>
-                        <align>right</align>
-                        <font>LeftMenuSubButtonFont</font>
-                        <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(5091).NumItems,,  $LOCALIZE[31025]]</label>
-                    </control>
-                </control>
-            </control>
+            <!--&lt;!&ndash; TWITTER SHOUTS EXTENDEDINFO&ndash;&gt;-->
+            <!--<control type="group" id="5090">-->
+                <!--<visible>Control.HasFocus(509)|ControlGroup(5090).HasFocus</visible>-->
+                <!--<include>VisibleFadeEffectDelay</include>-->
+                <!--<control type="image">-->
+                    <!--<posx>1342</posx>-->
+                    <!--<posy>838</posy>-->
+                    <!--<width>370</width>-->
+                    <!--<height>370</height>-->
+                    <!--<aspectratio>keep</aspectratio>-->
+                    <!--<texture background="true" fallback="defaultAudioBig.png">$INFO[Container(5091).Listitem.Icon]</texture>-->
+                    <!--<include>ThumbBorder</include>-->
+                <!--</control>-->
+                <!--<control type="group">-->
+                    <!--<posx>178</posx>-->
+                    <!--<posy>382</posy>-->
+                    <!--<control type="panel" id="5091">-->
+                        <!--<posx>0</posx>-->
+                        <!--<posy>0</posy>-->
+                        <!--<width>1131</width>-->
+                        <!--<height>803</height>-->
+                        <!--<onright>5690</onright>-->
+                        <!--<pagecontrol>5690</pagecontrol>-->
+                        <!--<scrolltime>200</scrolltime>-->
+                        <!--<orientation>vertical</orientation>-->
+                        <!--<itemlayout height="73" width="1131">-->
+                            <!--<control type="image">-->
+                                <!--<posx>0</posx>-->
+                                <!--<posy>0</posy>-->
+                                <!--<height>73</height>-->
+                                <!--<width>1131</width>-->
+                                <!--<texture border="3">list/bg_facade_nofocus.png</texture>-->
+                            <!--</control>-->
+                            <!--<control type="label">-->
+                                <!--<posx>TextMargin</posx>-->
+                                <!--<height>71</height>-->
+                                <!--<width>1041</width>-->
+                                <!--<font>FacadeListMainFont</font>-->
+                                <!--<textcolor>ListNoFocusColor</textcolor>-->
+                                <!--<label>$INFO[ListItem.Property(comment)]</label>-->
+                                <!--<scroll>false</scroll>-->
+                            <!--</control>-->
+                        <!--</itemlayout>-->
+                        <!--<focusedlayout height="73" width="1131">-->
+                            <!--<control type="image">-->
+                                <!--<posx>0</posx>-->
+                                <!--<posy>0</posy>-->
+                                <!--<height>73</height>-->
+                                <!--<width>1131</width>-->
+                                <!--<include>FacadeFocus</include>-->
+                            <!--</control>-->
+                            <!--<control type="label">-->
+                                <!--<posx>TextMargin</posx>-->
+                                <!--<height>71</height>-->
+                                <!--<width>1041</width>-->
+                                <!--<font>FacadeListMainFont</font>-->
+                                <!--<textcolor>ListFocusColor</textcolor>-->
+                                <!--<label>$INFO[ListItem.Property(comment)]</label>-->
+                            <!--</control>-->
+                        <!--</focusedlayout>-->
+                        <!--<content>plugin://script.extendedinfo?info=artistshouts&amp;&amp;artistname=$INFO[ListItem.Artist]</content>-->
+                    <!--</control>-->
+                    <!--<control type="scrollbar" id="5690">-->
+                        <!--<posx>1100</posx>-->
+                        <!--<posy>0</posy>-->
+                        <!--<height>803</height>-->
+                        <!--<include>VerticalScroller</include>-->
+                        <!--<onleft>5091</onleft>-->
+                        <!--<onright>9000</onright>-->
+                    <!--</control>-->
+                    <!--<control type="label">-->
+                        <!--<posx>1086</posx>-->
+                        <!--<posy>800</posy>-->
+                        <!--<height>44</height>-->
+                        <!--<width>876</width>-->
+                        <!--<align>right</align>-->
+                        <!--<font>LeftMenuSubButtonFont</font>-->
+                        <!--<textcolor>SublistNoFocusColor</textcolor>-->
+                        <!--<label>$INFO[Container(5091).NumItems,,  $LOCALIZE[31025]]</label>-->
+                    <!--</control>-->
+                <!--</control>-->
+            <!--</control>-->
 
             <!--FANART-->
             <!--<control type="group" id="120">-->
