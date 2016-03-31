@@ -34,22 +34,11 @@
         </itemlayout>
         <focusedlayout height="71" width="467">
             <control type="image">
-                <visible>[Control.HasFocus(9001)|Control.HasFocus(8983)|Control.HasFocus(8984)]</visible>
-                <include>VisibleFadeEffect</include>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>467</width>
                 <height>71</height>
                 <include>FlippedFacadeFocus</include>
-            </control>
-            <control type="image">
-                <visible>![Control.HasFocus(9001)|Control.HasFocus(8983)|Control.HasFocus(8984)]</visible>
-                <include>VisibleFadeEffect</include>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>467</width>
-                <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
             </control>
             <control type="label">
                 <posx>422r</posx>
@@ -113,22 +102,11 @@
         </itemlayout>
         <focusedlayout height="71" width="467">
             <control type="image">
-                <visible>[Control.HasFocus(300)|Control.HasFocus(8981)|Control.HasFocus(8982)]</visible>
-                <include>VisibleFadeEffect</include>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>467</width>
                 <height>71</height>
                 <include>FlippedFacadeFocus</include>
-            </control>
-            <control type="image">
-                <visible>![Control.HasFocus(300)|Control.HasFocus(8981)|Control.HasFocus(8982)]</visible>
-                <include>VisibleFadeEffect</include>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>467</width>
-                <height>71</height>
-                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
             </control>
             <control type="label">
                 <posx>422r</posx>
@@ -308,22 +286,11 @@
                         </itemlayout>
                         <focusedlayout height="71" width="467">
                             <control type="image">
-                                <visible>[Control.HasFocus(701)|Control.HasFocus(7019)|Control.HasFocus(7018)]</visible>
-                                <include>VisibleFadeEffect</include>
                                 <posx>0</posx>
                                 <posy>0</posy>
                                 <width>467</width>
                                 <height>71</height>
                                 <include>FlippedFacadeFocus</include>
-                            </control>
-                            <control type="image">
-                                <visible>![Control.HasFocus(701)|Control.HasFocus(7019)|Control.HasFocus(7018)]</visible>
-                                <include>VisibleFadeEffect</include>
-                                <posx>0</posx>
-                                <posy>0</posy>
-                                <width>467</width>
-                                <height>71</height>
-                                <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
                             </control>
                             <control type="label">
                                 <posx>422r</posx>
@@ -369,7 +336,7 @@
                     <texture border="100">common/bg_left.png</texture>
                 </control>
                 <control type="group">
-                    <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="![Control.HasFocus(9001)|Control.hasfocus(8999)|Control.hasfocus(8983)|Control.hasfocus(8984)]">Conditional</animation>
+                    <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="![[Control.HasFocus(9001)|Control.hasfocus(8999)|Control.hasfocus(8983)|Control.hasfocus(8984)]+IntegerGreaterThan(Container(9001).NumItems,0)]">Conditional</animation>
                     <control type="label">
                         <visible>Skin.HasSetting(plexbmc)</visible>
                         <posx>467</posx>
