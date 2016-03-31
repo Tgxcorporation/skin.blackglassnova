@@ -201,7 +201,7 @@
                     <texture border="100">common/bg_left.png</texture>
                 </control>
                 <control type="group">
-                    <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="[Control.HasFocus(701)|Control.HasFocus(7019)|Control.HasFocus(7018)|Control.HasFocus(7010)]">Conditional</animation>
+                    <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![Control.HasFocus(701)|Control.HasFocus(7019)|Control.HasFocus(7018)|Control.HasFocus(7010)]">Conditional</animation>
                     <control type="label">
                         <posx>934</posx>
                         <posy>295</posy>
