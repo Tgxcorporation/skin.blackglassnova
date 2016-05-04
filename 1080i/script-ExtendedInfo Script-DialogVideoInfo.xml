@@ -81,7 +81,7 @@
                     <posy>163</posy>
                     <!-- CDART VIDEO -->
                     <include name="DiscArt">
-                        <param name="visible" value="!IsEmpty(Window.Property(Poster))"/>
+                        <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="1290"/>
                         <param name="y" value="392"/>
                         <param name="width" value="429"/>
