@@ -108,7 +108,7 @@
                 <onleft>6</onleft>
                 <onright>60</onright>
                 <onup>6</onup>
-                <ondown>5</ondown>
+                <ondown>9001</ondown>
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>300</scrolltime>
                 <itemlayout width="966" height="73">
@@ -148,6 +148,7 @@
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
                         <label>$INFO[ListItem.Label2]$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]$INFO[ListItem.Property(Addon.Creator),  •  $LOCALIZE[21863]: ]</label>
+                        <scroll>false</scroll>
                     </control>
                 </itemlayout>
                 <focusedlayout width="966" height="73">
@@ -207,7 +208,7 @@
                 <onleft>3</onleft>
                 <onright>61</onright>
                 <onup>3</onup>
-                <ondown>5</ondown>
+                <ondown>9001</ondown>
                 <pagecontrol>61</pagecontrol>
                 <scrolltime>300</scrolltime>
                 <itemlayout width="1400" height="73">
@@ -254,6 +255,7 @@
                 <include>VerticalScroller</include>
                 <onleft>3</onleft>
                 <onright>61</onright>
+                <ondown>9001</ondown>
             </control>
             <control type="image">
                 <posx>45</posx>
@@ -262,7 +264,7 @@
                 <height>79</height>
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
-            <control type="grouplist">
+            <control type="grouplist" id="9001">
                 <posx>45</posx>
                 <posy>672</posy>
                 <width>1400</width>
@@ -276,6 +278,9 @@
                 <onleft>6</onleft>
                 <onright>6</onright>
                 <control type="button" id="5">
+                    <label>-</label>
+                </control>
+                <control type="button" id="7">
                     <label>-</label>
                 </control>
             </control>
