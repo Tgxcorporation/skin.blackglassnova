@@ -292,7 +292,7 @@
             <control type="scrollbar" id="60">
                 <posx>1761</posx>
                 <posy>382</posy>
-                <height>803</height>
+                <height>781</height>
                 <include>VerticalScroller</include>
                 <onleft>9001</onleft>
                 <onright>60</onright>
