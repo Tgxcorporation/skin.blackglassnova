@@ -1,5 +1,5 @@
-## Black Glass Nova skin for Kodi 16 JARVIS
-Ported from MediaPortal, Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.
+## Black Glass Nova skin for Kodi 17 KRYPTON
+Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.
 
 ![](http://i.imgur.com/bNT9T4C.jpg)
 
