@@ -75,37 +75,37 @@
                     <description>Channels</description>
                     <label>19019</label>
                     <onclick condition="Window.IsActive(TVChannels) | Window.IsActive(RadioChannels)">NextChannelGroup</onclick>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="101">
                     <description>TV Guide</description>
                     <label>22020</label>
                     <onclick condition="Window.IsActive(TVGuide) | Window.IsActive(RadioGuide)">NextChannelGroup</onclick>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="102">
                     <description>Recordings</description>
                     <label>19163</label>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="103">
                     <description>Timers</description>
                     <label>19040</label>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="104">
                     <description>Search</description>
                     <label>137</label>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="label" id="9183">
@@ -198,7 +198,7 @@
                     <include>PVRProgress</include>
                 </control>
                 <control type="label">
-                    <visible>IsEmpty(ListItem.Title)</visible>
+                    <visible>String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <height>71</height>
                     <width>1299</width>
@@ -208,7 +208,7 @@
                     <scroll>false</scroll>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Title)</visible>
+                    <visible>!String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <height>42</height>
                     <width>1299</width>
@@ -218,7 +218,7 @@
                     <scroll>false</scroll>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Title)</visible>
+                    <visible>!String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <posy>39</posy>
                     <height>28</height>
@@ -246,7 +246,7 @@
                     <include>PVRProgress</include>
                 </control>
                 <control type="label">
-                    <visible>IsEmpty(ListItem.Title)</visible>
+                    <visible>String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <height>71</height>
                     <width>519</width>
@@ -256,7 +256,7 @@
                     <scroll>false</scroll>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Title)</visible>
+                    <visible>!String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <height>42</height>
                     <width>519</width>
@@ -266,7 +266,7 @@
                     <scroll>false</scroll>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Title)</visible>
+                    <visible>!String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <posy>39</posy>
                     <height>28</height>
@@ -279,7 +279,7 @@
             </control>
             <include>RecOverlayNoFocus</include>
             <control type="image">
-                <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>23</posx>
                 <height>71</height>
                 <width>73</width>
@@ -288,7 +288,7 @@
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-                <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>23</posx>
                 <height>71</height>
                 <width>73</width>
@@ -322,7 +322,7 @@
                     <include>PVRProgress</include>
                 </control>
                 <control type="label">
-                    <visible>IsEmpty(ListItem.Title)</visible>
+                    <visible>String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <height>71</height>
                     <width>1299</width>
@@ -331,7 +331,7 @@
                     <label>$INFO[ListItem.ChannelNumberLabel,, • ]$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Title)</visible>
+                    <visible>!String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <height>42</height>
                     <width>1299</width>
@@ -340,7 +340,7 @@
                     <label>$INFO[ListItem.ChannelNumberLabel,, • ]$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Title)</visible>
+                    <visible>!String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <posy>39</posy>
                     <height>28</height>
@@ -367,7 +367,7 @@
                     <include>PVRProgress</include>
                 </control>
                 <control type="label">
-                    <visible>IsEmpty(ListItem.Title)</visible>
+                    <visible>String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <height>71</height>
                     <width>519</width>
@@ -376,7 +376,7 @@
                     <label>$INFO[ListItem.ChannelNumberLabel,, • ]$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Title)</visible>
+                    <visible>!String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <height>42</height>
                     <width>519</width>
@@ -385,7 +385,7 @@
                     <label>$INFO[ListItem.ChannelNumberLabel,, • ]$INFO[ListItem.Label]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Title)</visible>
+                    <visible>!String.IsEmpty(ListItem.Title)</visible>
                     <posx>116</posx>
                     <posy>39</posy>
                     <height>28</height>
@@ -397,7 +397,7 @@
             </control>
             <include>RecOverlayFocus</include>
             <control type="image">
-                <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>23</posx>
                 <height>71</height>
                 <width>73</width>
@@ -405,7 +405,7 @@
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-                <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>23</posx>
                 <height>71</height>
                 <width>73</width>
@@ -420,7 +420,7 @@
             <include>Icon_Fade</include>
             <control type="group" id="50100">
                 <posy>-215</posy>
-                <visible>!IsEmpty(Container(50).ListItem.Plot)</visible>
+                <visible>!String.IsEmpty(Container(50).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
@@ -452,7 +452,7 @@
                         <texture>list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -461,7 +461,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -511,7 +511,7 @@
                         <font>InfoDetailsFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$LOCALIZE[19031]: $INFO[Container(50).ListItem.NextTitle]</label>
-                        <visible>!IsEmpty(Container(50).ListItem.NextTitle)</visible>
+                        <visible>!String.IsEmpty(Container(50).ListItem.NextTitle)</visible>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -560,7 +560,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(50).NumItems,7)</visible>
+                    <visible>!Integer.IsGreater(Container(50).NumItems,7)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>1440</width>
@@ -587,7 +587,7 @@
                 <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(50).NumItems,7)</visible>
+                <visible allowhiddenfocus="true">Integer.IsGreater(Container(50).NumItems,7)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -604,7 +604,7 @@
             <visible>Control.IsVisible(52)</visible>
             <include>Icon_Fade</include>
             <control type="group" id="50100">
-                <visible>!IsEmpty(Container(52).ListItem.Plot)</visible>
+                <visible>!String.IsEmpty(Container(52).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
@@ -636,7 +636,7 @@
                         <texture>list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -645,7 +645,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -695,7 +695,7 @@
                         <font>InfoDetailsFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$LOCALIZE[19031]: $INFO[Container(52).ListItem.NextTitle]</label>
-                        <visible>!IsEmpty(Container(52).ListItem.NextTitle)</visible>
+                        <visible>!String.IsEmpty(Container(52).ListItem.NextTitle)</visible>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -744,7 +744,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(52).NumItems,10)</visible>
+                    <visible>!Integer.IsGreater(Container(52).NumItems,10)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>1440</width>
@@ -771,7 +771,7 @@
                 <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(52).NumItems,10)</visible>
+                <visible allowhiddenfocus="true">Integer.IsGreater(Container(52).NumItems,10)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -788,7 +788,7 @@
             <visible>Control.IsVisible(54)</visible>
             <include>Icon_Fade</include>
             <control type="group" id="50100">
-                <visible>!IsEmpty(Container(54).ListItem.Plot)</visible>
+                <visible>!String.IsEmpty(Container(54).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
@@ -820,7 +820,7 @@
                         <texture>list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -829,7 +829,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -879,7 +879,7 @@
                         <font>InfoDetailsFont</font>
                         <textcolor>MainColor</textcolor>
                         <label>$LOCALIZE[19031]: $INFO[Container(54).ListItem.NextTitle]</label>
-                        <visible>!IsEmpty(Container(54).ListItem.NextTitle)</visible>
+                        <visible>!String.IsEmpty(Container(54).ListItem.NextTitle)</visible>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -928,7 +928,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(54).NumItems,4)</visible>
+                    <visible>!Integer.IsGreater(Container(54).NumItems,4)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>1440</width>
@@ -955,7 +955,7 @@
                 <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(54).NumItems,4)</visible>
+                <visible allowhiddenfocus="true">Integer.IsGreater(Container(54).NumItems,4)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -1022,7 +1022,7 @@
                 </control>
             </control>
             <control type="image">
-                <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>34</posx>
                 <posy>0</posy>
                 <height>71</height>
@@ -1034,7 +1034,7 @@
                 <texture background="true" fallback="defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
             </control>
             <control type="image">
-                <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>34</posx>
                 <posy>0</posy>
                 <height>71</height>
@@ -1105,7 +1105,7 @@
                 </control>
             </control>
             <control type="image">
-                <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>34</posx>
                 <posy>0</posy>
                 <height>71</height>
@@ -1116,7 +1116,7 @@
                 <texture background="true" fallback="defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
             </control>
             <control type="image">
-                <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>34</posx>
                 <posy>0</posy>
                 <height>71</height>
@@ -1138,7 +1138,7 @@
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
             <control type="group" id="50100">
-                <visible>!IsEmpty(Container(50).ListItem.Plot)</visible>
+                <visible>!String.IsEmpty(Container(50).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
@@ -1171,7 +1171,7 @@
                         <texture>list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>823</posx>
                         <posy>27</posy>
                         <width>361</width>
@@ -1181,7 +1181,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>823</posx>
                         <posy>27</posy>
                         <width>361</width>
@@ -1286,7 +1286,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(50).NumItems,7)</visible>
+                    <visible>!Integer.IsGreater(Container(50).NumItems,7)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>1440</width>
@@ -1313,7 +1313,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(50).NumItems,7)</visible>
+                <visible allowhiddenfocus="true">Integer.IsGreater(Container(50).NumItems,7)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -1330,7 +1330,7 @@
             <visible>Control.IsVisible(52)</visible>
             <include>Icon_Fade</include>
             <control type="group" id="50100">
-                <visible>!IsEmpty(Container(52).ListItem.Plot)</visible>
+                <visible>!String.IsEmpty(Container(52).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
@@ -1362,7 +1362,7 @@
                         <texture>list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>823</posx>
                         <posy>27</posy>
                         <width>361</width>
@@ -1372,7 +1372,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>823</posx>
                         <posy>27</posy>
                         <width>361</width>
@@ -1477,7 +1477,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(52).NumItems,10)</visible>
+                    <visible>!Integer.IsGreater(Container(52).NumItems,10)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>1440</width>
@@ -1504,7 +1504,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(52).NumItems,10)</visible>
+                <visible allowhiddenfocus="true">Integer.IsGreater(Container(52).NumItems,10)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -1522,7 +1522,7 @@
             <include>Icon_Fade</include>
             <include>Icon_Fade</include>
             <control type="group" id="50100">
-                <visible>!IsEmpty(Container(54).ListItem.Plot)</visible>
+                <visible>!String.IsEmpty(Container(54).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
@@ -1554,7 +1554,7 @@
                         <texture>list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>823</posx>
                         <posy>27</posy>
                         <width>361</width>
@@ -1564,7 +1564,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>823</posx>
                         <posy>27</posy>
                         <width>361</width>
@@ -1669,7 +1669,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(54).NumItems,4)</visible>
+                    <visible>!Integer.IsGreater(Container(54).NumItems,4)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>1440</width>
@@ -1696,7 +1696,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(54).NumItems,4)</visible>
+                <visible allowhiddenfocus="true">Integer.IsGreater(Container(54).NumItems,4)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -1719,7 +1719,7 @@
                 <texture border="3">list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
-                <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>15</posx>
                 <height>71</height>
                 <width>73</width>
@@ -1728,7 +1728,7 @@
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-                <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>15</posx>
                 <height>71</height>
                 <width>73</width>
@@ -1786,7 +1786,7 @@
                 <include>FacadeFocus</include>
             </control>
             <control type="image">
-                <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>15</posx>
                 <height>71</height>
                 <width>73</width>
@@ -1794,7 +1794,7 @@
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-                <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>15</posx>
                 <height>71</height>
                 <width>73</width>
@@ -1862,7 +1862,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(50).NumItems,7)</visible>
+                    <visible>!Integer.IsGreater(Container(50).NumItems,7)</visible>
                     <posx>TextMargin</posx>
                     <posy>1152</posy>
                     <width>1840</width>
@@ -1969,7 +1969,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(52).NumItems,10)</visible>
+                    <visible>!Integer.IsGreater(Container(52).NumItems,10)</visible>
                     <posx>TextMargin</posx>
                     <posy>1371</posy>
                     <width>1840</width>
@@ -2075,7 +2075,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(54).NumItems,4)</visible>
+                    <visible>!Integer.IsGreater(Container(54).NumItems,4)</visible>
                     <posx>TextMargin</posx>
                     <posy>933</posy>
                     <width>1840</width>
@@ -2169,7 +2169,7 @@
                 <texture border="3">list/bg_facade_nofocus.png</texture>
             </control>
             <control type="image">
-                <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>15</posx>
                 <height>71</height>
                 <width>73</width>
@@ -2178,7 +2178,7 @@
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-                <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>15</posx>
                 <height>71</height>
                 <width>73</width>
@@ -2266,7 +2266,7 @@
                 <include>FacadeFocus</include>
             </control>
             <control type="image">
-                <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>15</posx>
                 <height>71</height>
                 <width>73</width>
@@ -2274,7 +2274,7 @@
                 <aspectratio>keep</aspectratio>
             </control>
             <control type="image">
-                <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>15</posx>
                 <height>71</height>
                 <width>73</width>
@@ -2373,7 +2373,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(50).NumItems,7)</visible>
+                    <visible>!Integer.IsGreater(Container(50).NumItems,7)</visible>
                     <posx>TextMargin</posx>
                     <posy>1152</posy>
                     <width>1840</width>
@@ -2480,7 +2480,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(52).NumItems,10)</visible>
+                    <visible>!Integer.IsGreater(Container(52).NumItems,10)</visible>
                     <posx>TextMargin</posx>
                     <posy>1371</posy>
                     <width>1840</width>
@@ -2586,7 +2586,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(54).NumItems,4)</visible>
+                    <visible>!Integer.IsGreater(Container(54).NumItems,4)</visible>
                     <posx>TextMargin</posx>
                     <posy>933</posy>
                     <width>1840</width>
@@ -2749,7 +2749,7 @@
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>15</posx>
                         <posy>0</posy>
                         <width>70</width>
@@ -2759,7 +2759,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>15</posx>
                         <posy>0</posy>
                         <width>70</width>
@@ -2788,7 +2788,7 @@
                         <include>FacadeFocus</include>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>15</posx>
                         <posy>0</posy>
                         <width>70</width>
@@ -2797,7 +2797,7 @@
                         <aspectratio>keep</aspectratio>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>15</posx>
                         <posy>0</posy>
                         <width>70</width>
@@ -2882,7 +2882,7 @@
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
             <control type="image">
-                <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>95</posx>
                 <posy>798</posy>
                 <width>318</width>
@@ -2892,7 +2892,7 @@
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
-                <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>95</posx>
                 <posy>798</posy>
                 <width>318</width>
@@ -2967,7 +2967,7 @@
             <include>Icon_Fade</include>
             <control type="group" id="50100">
                 <posy>-215</posy>
-                <visible>!IsEmpty(Container(11).ListItem.Plot)</visible>
+                <visible>!String.IsEmpty(Container(11).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
@@ -2999,7 +2999,7 @@
                         <texture>list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -3008,7 +3008,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -3096,7 +3096,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(11).NumItems,7)</visible>
+                    <visible>!Integer.IsGreater(Container(11).NumItems,7)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>1440</width>
@@ -3140,7 +3140,7 @@
                                 <include>PVRProgress</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>71</height>
                                 <width>1299</width>
@@ -3150,7 +3150,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>42</height>
                                 <width>1299</width>
@@ -3160,7 +3160,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -3188,7 +3188,7 @@
                                 <include>PVRProgress</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>71</height>
                                 <width>519</width>
@@ -3198,7 +3198,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>42</height>
                                 <width>519</width>
@@ -3208,7 +3208,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -3221,7 +3221,7 @@
                         </control>
                         <include>RecOverlayNoFocus</include>
                         <control type="image">
-                            <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                            <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                             <posx>23</posx>
                             <height>71</height>
                             <width>73</width>
@@ -3230,7 +3230,7 @@
                             <aspectratio>keep</aspectratio>
                         </control>
                         <control type="image">
-                            <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                            <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                             <posx>23</posx>
                             <height>71</height>
                             <width>73</width>
@@ -3264,7 +3264,7 @@
                                 <include>PVRProgress</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>71</height>
                                 <width>1299</width>
@@ -3273,7 +3273,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>42</height>
                                 <width>1299</width>
@@ -3282,7 +3282,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -3309,7 +3309,7 @@
                                 <include>PVRProgress</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>71</height>
                                 <width>519</width>
@@ -3318,7 +3318,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>42</height>
                                 <width>519</width>
@@ -3327,7 +3327,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -3339,7 +3339,7 @@
                         </control>
                         <include>RecOverlayFocus</include>
                         <control type="image">
-                            <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                            <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                             <posx>23</posx>
                             <height>71</height>
                             <width>73</width>
@@ -3347,7 +3347,7 @@
                             <aspectratio>keep</aspectratio>
                         </control>
                         <control type="image">
-                            <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                            <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                             <posx>23</posx>
                             <height>71</height>
                             <width>73</width>
@@ -3362,7 +3362,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(11).NumItems,7)</visible>
+                <visible allowhiddenfocus="true">Integer.IsGreater(Container(11).NumItems,7)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -3381,7 +3381,7 @@
             <include>Icon_Fade</include>
             <control type="group" id="50100">
                 <posy>-215</posy>
-                <visible>!IsEmpty(Container(12).ListItem.Plot)</visible>
+                <visible>!String.IsEmpty(Container(12).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
@@ -3413,7 +3413,7 @@
                         <texture>list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -3422,7 +3422,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -3510,7 +3510,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(12).NumItems,7)</visible>
+                    <visible>!Integer.IsGreater(Container(12).NumItems,7)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>1440</width>
@@ -3554,7 +3554,7 @@
                                 <include>PVRProgress</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>71</height>
                                 <width>1299</width>
@@ -3564,7 +3564,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>42</height>
                                 <width>1299</width>
@@ -3574,7 +3574,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -3602,7 +3602,7 @@
                                 <include>PVRProgress</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>71</height>
                                 <width>519</width>
@@ -3612,7 +3612,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>42</height>
                                 <width>519</width>
@@ -3622,7 +3622,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -3635,7 +3635,7 @@
                         </control>
                         <include>RecOverlayNoFocus</include>
                         <control type="image">
-                            <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                            <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                             <posx>23</posx>
                             <height>71</height>
                             <width>73</width>
@@ -3644,7 +3644,7 @@
                             <aspectratio>keep</aspectratio>
                         </control>
                         <control type="image">
-                            <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                            <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                             <posx>23</posx>
                             <height>71</height>
                             <width>73</width>
@@ -3678,7 +3678,7 @@
                                 <include>PVRProgress</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>71</height>
                                 <width>1299</width>
@@ -3687,7 +3687,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>42</height>
                                 <width>1299</width>
@@ -3696,7 +3696,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -3723,7 +3723,7 @@
                                 <include>PVRProgress</include>
                             </control>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>71</height>
                                 <width>519</width>
@@ -3732,7 +3732,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <height>42</height>
                                 <width>519</width>
@@ -3741,7 +3741,7 @@
                                 <label>$INFO[ListItem.Label]</label>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>116</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -3753,7 +3753,7 @@
                         </control>
                         <include>RecOverlayFocus</include>
                         <control type="image">
-                            <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                            <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                             <posx>23</posx>
                             <height>71</height>
                             <width>73</width>
@@ -3761,7 +3761,7 @@
                             <aspectratio>keep</aspectratio>
                         </control>
                         <control type="image">
-                            <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                            <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                             <posx>23</posx>
                             <height>71</height>
                             <width>73</width>
@@ -3776,7 +3776,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(12).NumItems,7)</visible>
+                <visible allowhiddenfocus="true">Integer.IsGreater(Container(12).NumItems,7)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -3795,7 +3795,7 @@
             <include>Icon_Fade</include>
             <control type="group" id="50100">
                 <posy>-215</posy>
-                <visible>!IsEmpty(Container(13).ListItem.Plot)</visible>
+                <visible>!String.IsEmpty(Container(13).ListItem.Plot)</visible>
                 <include>Icon_Fade</include>
                 <include>SlideView</include>
                 <include>HideMediaInfo</include>
@@ -3827,7 +3827,7 @@
                         <texture>list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -3836,7 +3836,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
                         <posx>997</posx>
                         <posy>27</posy>
                         <width>187</width>
@@ -3924,7 +3924,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(13).NumItems,7)</visible>
+                    <visible>!Integer.IsGreater(Container(13).NumItems,7)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>1440</width>
@@ -3954,7 +3954,7 @@
                         <control type="group">
                             <include>ConditionLargeList</include>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <height>71</height>
                                 <width>1380</width>
@@ -3964,7 +3964,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <height>42</height>
                                 <width>1380</width>
@@ -3974,7 +3974,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -3988,7 +3988,7 @@
                         <control type="group">
                             <include>ConditionShortList</include>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <height>71</height>
                                 <width>595</width>
@@ -3998,7 +3998,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <height>42</height>
                                 <width>595</width>
@@ -4008,7 +4008,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -4032,7 +4032,7 @@
                         <control type="group">
                             <include>ConditionLargeList</include>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <height>71</height>
                                 <width>1380</width>
@@ -4042,7 +4042,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <height>42</height>
                                 <width>1380</width>
@@ -4052,7 +4052,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -4066,7 +4066,7 @@
                         <control type="group">
                             <include>ConditionShortList</include>
                             <control type="label">
-                                <visible>IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <height>71</height>
                                 <width>595</width>
@@ -4076,7 +4076,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <height>42</height>
                                 <width>595</width>
@@ -4086,7 +4086,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 <posx>35</posx>
                                 <posy>39</posy>
                                 <height>28</height>
@@ -4106,7 +4106,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(13).NumItems,7)</visible>
+                <visible allowhiddenfocus="true">Integer.IsGreater(Container(13).NumItems,7)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>

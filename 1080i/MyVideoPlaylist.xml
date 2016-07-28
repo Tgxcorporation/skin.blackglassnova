@@ -202,7 +202,7 @@
             </control>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="1385"/>
                 <param name="y" value="792"/>
                 <param name="width" value="316"/>

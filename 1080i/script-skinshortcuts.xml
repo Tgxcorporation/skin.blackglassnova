@@ -117,7 +117,7 @@
                     <label>$ADDON[script.skinshortcuts 32025]</label>
                 </control>
                 <control type="button" id="306">
-                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <visible>!Skin.HasSetting(VerticalHome)</visible>
                     <description>Change shortcut thumbnail</description>
                     <include>RightDialogButton</include>
@@ -125,7 +125,7 @@
                     <label>$ADDON[script.skinshortcuts 32026]</label>
                 </control>
                 <control type="button" id="310">
-                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <visible>[[!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(Home_DefaultBG)]|[Skin.HasSetting(BlackGlassMode)+Skin.HasSetting(VerticalHome)]]</visible>
                     <description>Change shortcut background</description>
                     <include>RightDialogButton</include>
@@ -134,7 +134,7 @@
                 </control>
                 <!--<control type="button" id="309">-->
                 <!--<visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>-->
-                <!--<visible>StringCompare(Window.Property(groupname),mainmenu)</visible>-->
+                <!--<visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>-->
                 <!--<description>Select Widgets</description>-->
                 <!--<include>RightDialogButton</include>-->
                 <!--<onclick>noop</onclick>-->
@@ -142,7 +142,7 @@
                 <!--</control>-->
                 <control type="button" id="312">
                     <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <description>Select Widgets Advanced</description>
                     <include>RightDialogButton</include>
                     <!--<onclick>SetProperty(widgetID,0)</onclick>-->
@@ -151,7 +151,7 @@
                 </control>
                 <control type="button" id="3121">
                     <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <description>Select Widgets Advanced</description>
                     <include>RightDialogButton</include>
                     <onclick>SetProperty(widgetID,1)</onclick>
@@ -160,7 +160,7 @@
                 </control>
                 <control type="button" id="3122">
                     <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <description>Select Widgets Advanced</description>
                     <include>RightDialogButton</include>
                     <onclick>SetProperty(widgetID,2)</onclick>
@@ -169,7 +169,7 @@
                 </control>
                 <control type="button" id="3123">
                     <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <description>Select Widgets Advanced</description>
                     <include>RightDialogButton</include>
                     <onclick>SetProperty(widgetID,3)</onclick>
@@ -178,7 +178,7 @@
                 </control>
                 <control type="button" id="3124">
                     <visible>!Skin.HasSetting(Hide.RecentlyAdded)</visible>
-                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <description>Select Widgets Advanced</description>
                     <include>RightDialogButton</include>
                     <onclick>SetProperty(widgetID,4)</onclick>
@@ -186,7 +186,7 @@
                     <label>$ADDON[script.skinshortcuts 32044] 5</label>
                 </control>
                 <control type="button" id="405">
-                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <description>Submenu</description>
                     <label>$ADDON[script.skinshortcuts 32072]</label>
                     <include>RightDialogButton</include>
@@ -208,11 +208,11 @@
             </control>
             <!--MAIN MENU-->
             <control type="group">
-                <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                 <include>VisibleFadeEffect</include>
                 <include>SkinShortcuts_Window_Back_Level</include>
                 <control type="fixedlist" id="211">
-                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <include condition="Skin.HasSetting(VerticalHome)">SkinShortcuts_MainMenu_Vertical</include>
                     <include condition="!Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">SkinShortcuts_MainMenu_Horizontal</include>
                     <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(VerticalHome)">SkinShortcuts_MainMenu_Horizontal_BG</include>
@@ -290,10 +290,10 @@
 
             <!--SUBMENU-->
             <control type="group">
-                <visible>!StringCompare(Window.Property(groupname),mainmenu)</visible>
+                <visible>!String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                 <include>VisibleFadeEffect</include>
                 <control type="list" id="211">
-                    <visible>!StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <visible>!String.IsEqual(Window.Property(groupname),mainmenu)</visible>
                     <posx>128</posx>
                     <posy>382</posy>
                     <width>1230</width>

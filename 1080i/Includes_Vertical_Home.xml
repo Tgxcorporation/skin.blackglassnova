@@ -230,14 +230,14 @@
                         <aligny>center</aligny>
                         <align>right</align>
                         <onleft>300</onleft>
-                        <onright condition="control.isvisible(212)+IntegerGreaterThan(Container(212).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">212</onright>
-                        <onright condition="control.isvisible(311)+IntegerGreaterThan(Container(311).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">311</onright>
-                        <onright condition="control.isvisible(411)+IntegerGreaterThan(Container(411).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">411</onright>
-                        <onright condition="control.isvisible(511)+IntegerGreaterThan(Container(511).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">511</onright>
-                        <onright condition="control.isvisible(900)+IntegerGreaterThan(Container(900).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">900</onright>
-                        <onright condition="control.isvisible(901)+IntegerGreaterThan(Container(901).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31961])">901</onright>
-                        <onright condition="control.isvisible(312)+IntegerGreaterThan(Container(311).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31966])">312</onright>
-                        <onright condition="control.isvisible(412)+IntegerGreaterThan(Container(411).NumItems,0)+StringCompare(Container(701).ListItem.Label,$LOCALIZE[31966])">412</onright>
+                        <onright condition="control.isvisible(212)+Integer.IsGreater(Container(212).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">212</onright>
+                        <onright condition="control.isvisible(311)+Integer.IsGreater(Container(311).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">311</onright>
+                        <onright condition="control.isvisible(411)+Integer.IsGreater(Container(411).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">411</onright>
+                        <onright condition="control.isvisible(511)+Integer.IsGreater(Container(511).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">511</onright>
+                        <onright condition="control.isvisible(900)+Integer.IsGreater(Container(900).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">900</onright>
+                        <onright condition="control.isvisible(901)+Integer.IsGreater(Container(901).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31961])">901</onright>
+                        <onright condition="control.isvisible(312)+Integer.IsGreater(Container(311).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31966])">312</onright>
+                        <onright condition="control.isvisible(412)+Integer.IsGreater(Container(411).NumItems,0)+String.IsEqual(Container(701).ListItem.Label,$LOCALIZE[31966])">412</onright>
                         <onright condition="control.isvisible(700011)+Container(701).HasFocus(7001)">700011</onright>
                         <onright condition="control.isvisible(700012)+Container(701).HasFocus(7001)">700012</onright>
                         <onright condition="control.isvisible(700013)+Container(701).HasFocus(7001)">700013</onright>
@@ -336,7 +336,7 @@
                     <texture border="100">common/bg_left.png</texture>
                 </control>
                 <control type="group">
-                    <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="![[Control.HasFocus(9001)|Control.hasfocus(8999)|Control.hasfocus(8983)|Control.hasfocus(8984)]+IntegerGreaterThan(Container(9001).NumItems,0)]">Conditional</animation>
+                    <animation effect="fade" time="200" start="0" end="100" reversible="true" condition="![[Control.HasFocus(9001)|Control.hasfocus(8999)|Control.hasfocus(8983)|Control.hasfocus(8984)]+Integer.IsGreater(Container(9001).NumItems,0)]">Conditional</animation>
                     <control type="label">
                         <visible>Skin.HasSetting(plexbmc)</visible>
                         <posx>467</posx>
@@ -436,7 +436,7 @@
 
             <!--SUB MENU PANEL-->
             <control type="group">
-                <animation effect="slide" tween="circle" start="0,0" end="455,0" time="200" delay="0" reversible="true" condition="IntegerGreaterThan(Container(9001).NumItems,0)+[Control.HasFocus(9001)|Control.hasfocus(8999)|Control.hasfocus(8983)|Control.hasfocus(8984)]">conditional</animation>
+                <animation effect="slide" tween="circle" start="0,0" end="455,0" time="200" delay="0" reversible="true" condition="Integer.IsGreater(Container(9001).NumItems,0)+[Control.HasFocus(9001)|Control.hasfocus(8999)|Control.hasfocus(8983)|Control.hasfocus(8984)]">conditional</animation>
                 <control type="button" id="8999">
                     <posx>-600</posx>
                     <posy>0</posy>

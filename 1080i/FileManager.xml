@@ -70,7 +70,7 @@
                         <colordiffuse>NoFocusedColor</colordiffuse>
                     </control>
                     <control type="label">
-                        <visible>IsEmpty(ListItem.Label2)</visible>
+                        <visible>String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <height>71</height>
                         <width>720</width>
@@ -80,7 +80,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Label2)</visible>
+                        <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <height>42</height>
                         <width>720</width>
@@ -90,7 +90,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Label2)</visible>
+                        <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -117,7 +117,7 @@
                         <include>SquareThumb</include>
                     </control>
                     <control type="label">
-                        <visible>IsEmpty(ListItem.Label2)</visible>
+                        <visible>String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <height>71</height>
                         <width>720</width>
@@ -126,7 +126,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Label2)</visible>
+                        <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <height>42</height>
                         <width>720</width>
@@ -135,7 +135,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Label2)</visible>
+                        <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -155,7 +155,7 @@
                 <onleft>20</onleft>
             </control>
             <control type="image">
-                <visible>!IntegerGreaterThan(Container(20).NumItems,9)</visible>
+                <visible>!Integer.IsGreater(Container(20).NumItems,9)</visible>
                 <posx>48</posx>
                 <posy>895</posy>
                 <width>864</width>
@@ -226,7 +226,7 @@
                         <colordiffuse>NoFocusedColor</colordiffuse>
                     </control>
                     <control type="label">
-                        <visible>IsEmpty(ListItem.Label2)</visible>
+                        <visible>String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <height>71</height>
                         <width>720</width>
@@ -235,7 +235,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Label2)</visible>
+                        <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <height>42</height>
                         <width>720</width>
@@ -244,7 +244,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Label2)</visible>
+                        <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -270,7 +270,7 @@
                         <include>SquareThumb</include>
                     </control>
                     <control type="label">
-                        <visible>IsEmpty(ListItem.Label2)</visible>
+                        <visible>String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <height>71</height>
                         <width>720</width>
@@ -279,7 +279,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Label2)</visible>
+                        <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <height>42</height>
                         <width>720</width>
@@ -288,7 +288,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!IsEmpty(ListItem.Label2)</visible>
+                        <visible>!String.IsEmpty(ListItem.Label2)</visible>
                         <posx>100</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -308,7 +308,7 @@
                 <onright>21</onright>
             </control>
             <control type="image">
-                <visible>!IntegerGreaterThan(Container(21).NumItems,9)</visible>
+                <visible>!Integer.IsGreater(Container(21).NumItems,9)</visible>
                 <posx>48</posx>
                 <posy>895</posy>
                 <width>864</width>

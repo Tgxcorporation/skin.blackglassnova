@@ -2,39 +2,39 @@
 <includes>
     <include name="ConditionSingleLine_BG">
         <visible>![
-            [!Container.Content(Addons) + Window.IsActive(MyPics.xml) + !Skin.HasSetting(plexbmc) + !IsEmpty(ListItem.Size)]|
-            [Container.Content(Albums) + !IsEmpty(ListItem.Artist)]|
-            [Container.Content(Episodes) + !IsEmpty(ListItem.Duration)]|
-            [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !StringCompare(ListItem.Label,..) ]|
-            [Container.Content(Addons) + !IsEmpty(ListItem.Property(Addon.Creator))]|
-            [Container.Content(Songs) + !IsEmpty(ListItem.Album)]|
-            [Container.Content(Artists) + [!IsEmpty(ListItem.Property(artist_genre)) | !IsEmpty(ListItem.Property(artist_style))]]|
-            [Container.Content(MusicVideos) + !IsEmpty(ListItem.Duration)]|
-            [Container.Content(Sets) + !IsEmpty(ListItem.Year)]|
+            [!Container.Content(Addons) + Window.IsActive(MyPics.xml) + !Skin.HasSetting(plexbmc) + !String.IsEmpty(ListItem.Size)]|
+            [Container.Content(Albums) + !String.IsEmpty(ListItem.Artist)]|
+            [Container.Content(Episodes) + !String.IsEmpty(ListItem.Duration)]|
+            [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !String.IsEqual(ListItem.Label,..) ]|
+            [Container.Content(Addons) + !String.IsEmpty(ListItem.Property(Addon.Creator))]|
+            [Container.Content(Songs) + !String.IsEmpty(ListItem.Album)]|
+            [Container.Content(Artists) + [!String.IsEmpty(ListItem.Property(artist_genre)) | !String.IsEmpty(ListItem.Property(artist_style))]]|
+            [Container.Content(MusicVideos) + !String.IsEmpty(ListItem.Duration)]|
+            [Container.Content(Sets) + !String.IsEmpty(ListItem.Year)]|
             [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
-            [Container.Content(Movies) + !IsEmpty(ListItem.Duration)]|
-            [[Container.Content(Seasons) | Container.Content(TVShows)] + !IsEmpty(ListItem.Year)]|
-            [[Container.Content(Seasons) | Container.Content(TVShows)] + !IsEmpty(ListItem.MPAA)]|
-            [!IsEmpty(ListItem.Label2)]
+            [Container.Content(Movies) + !String.IsEmpty(ListItem.Duration)]|
+            [[Container.Content(Seasons) | Container.Content(TVShows)] + !String.IsEmpty(ListItem.Year)]|
+            [[Container.Content(Seasons) | Container.Content(TVShows)] + !String.IsEmpty(ListItem.MPAA)]|
+            [!String.IsEmpty(ListItem.Label2)]
             ]
         </visible>
     </include>
     <include name="ConditionDoubleLine_BG">
         <visible>[
-            [!Container.Content(Addons) + Window.IsActive(MyPics.xml) + !Skin.HasSetting(plexbmc) + !IsEmpty(ListItem.Size)]|
-            [Container.Content(Albums) + !IsEmpty(ListItem.Artist)]|
-            [Container.Content(Episodes) + !IsEmpty(ListItem.Duration)]|
-            [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !StringCompare(ListItem.Label,..) ]|
-            [Container.Content(Addons) + !IsEmpty(ListItem.Property(Addon.Creator))]|
-            [Container.Content(Songs) + !IsEmpty(ListItem.Album)]|
-            [Container.Content(Artists) + [!IsEmpty(ListItem.Property(artist_genre)) | !IsEmpty(ListItem.Property(artist_style))]]|
-            [Container.Content(MusicVideos) + !IsEmpty(ListItem.Duration)]|
-            [Container.Content(Sets) + !IsEmpty(ListItem.Year)]|
+            [!Container.Content(Addons) + Window.IsActive(MyPics.xml) + !Skin.HasSetting(plexbmc) + !String.IsEmpty(ListItem.Size)]|
+            [Container.Content(Albums) + !String.IsEmpty(ListItem.Artist)]|
+            [Container.Content(Episodes) + !String.IsEmpty(ListItem.Duration)]|
+            [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !String.IsEqual(ListItem.Label,..) ]|
+            [Container.Content(Addons) + !String.IsEmpty(ListItem.Property(Addon.Creator))]|
+            [Container.Content(Songs) + !String.IsEmpty(ListItem.Album)]|
+            [Container.Content(Artists) + [!String.IsEmpty(ListItem.Property(artist_genre)) | !String.IsEmpty(ListItem.Property(artist_style))]]|
+            [Container.Content(MusicVideos) + !String.IsEmpty(ListItem.Duration)]|
+            [Container.Content(Sets) + !String.IsEmpty(ListItem.Year)]|
             [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
-            [Container.Content(Movies) + !IsEmpty(ListItem.Duration)]|
-            [[Container.Content(Seasons) | Container.Content(TVShows)] + !IsEmpty(ListItem.Year)]|
-            [[Container.Content(Seasons) | Container.Content(TVShows)] + !IsEmpty(ListItem.MPAA)]|
-            [!IsEmpty(ListItem.Label2)]
+            [Container.Content(Movies) + !String.IsEmpty(ListItem.Duration)]|
+            [[Container.Content(Seasons) | Container.Content(TVShows)] + !String.IsEmpty(ListItem.Year)]|
+            [[Container.Content(Seasons) | Container.Content(TVShows)] + !String.IsEmpty(ListItem.MPAA)]|
+            [!String.IsEmpty(ListItem.Label2)]
             ]
         </visible>
     </include>
@@ -83,17 +83,17 @@
         <control type="group">
             <visible>Control.IsVisible(50)+
                 [
-                !IsEmpty(ListItem.Property(Artist_Description))|
-                !IsEmpty(ListItem.Property(Addon.Description))|
-                !IsEmpty(ListItem.Property(Album_Description))|
-                !IsEmpty(ListItem.Plot)
+                !String.IsEmpty(ListItem.Property(Artist_Description))|
+                !String.IsEmpty(ListItem.Property(Addon.Description))|
+                !String.IsEmpty(ListItem.Property(Album_Description))|
+                !String.IsEmpty(ListItem.Plot)
                 ]
                 +!Container.Content(songs)</visible>
             <include>Icon_Fade</include>
             <posy>37</posy>
             <!-- CDART MUSIC -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="320"/>
                 <param name="y" value="187"/>
                 <param name="width" value="364"/>
@@ -102,7 +102,7 @@
             </include>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="138"/>
                 <param name="y" value="137"/>
                 <param name="width" value="464"/>
@@ -257,7 +257,7 @@
             </control>
             <include content="ProgressBar">
                 <param name="id" value="0"/>
-                <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                 <param name="x" value="0"/>
                 <param name="y" value="-37"/>
                 <param name="width" value="1180"/>
@@ -307,7 +307,7 @@
         <focusedlayout height="73" width="1180">
             <include content="ProgressBar">
                 <param name="id" value="0"/>
-                <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
+                <param name="visible" value="Integer.IsGreater(ListItem.PercentPlayed,0)"/>
                 <param name="x" value="0"/>
                 <param name="y" value="-37"/>
                 <param name="width" value="1180"/>
@@ -399,7 +399,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(50).NumItems,10)</visible>
+                    <visible>!Integer.IsGreater(Container(50).NumItems,10)</visible>
                     <posx>740</posx>
                     <posy>937</posy>
                     <width>1180</width>
@@ -439,7 +439,7 @@
     </include>
     <include name="Info_50_BG_ExtendedInfo">
         <control type="group">
-            <visible>Control.IsVisible(500)+!IsEmpty(Container(500).ListItem.Plot)</visible>
+            <visible>Control.IsVisible(500)+!String.IsEmpty(Container(500).ListItem.Plot)</visible>
             <include>Icon_Fade</include>
             <posy>37</posy>
             <control type="image">
@@ -546,7 +546,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(500).NumItems,10)</visible>
+                    <visible>!Integer.IsGreater(Container(500).NumItems,10)</visible>
                     <posx>740</posx>
                     <posy>937</posy>
                     <width>1180</width>
@@ -615,7 +615,7 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="image">
-                <visible>!IntegerGreaterThan(Container(50).NumItems,10)</visible>
+                <visible>!Integer.IsGreater(Container(50).NumItems,10)</visible>
                 <posx>740</posx>
                 <posy>937</posy>
                 <width>1180</width>
@@ -724,7 +724,7 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="image">
-                <visible>!IntegerGreaterThan(Container(51).NumItems,10)</visible>
+                <visible>!Integer.IsGreater(Container(51).NumItems,10)</visible>
                 <posx>740</posx>
                 <posy>937</posy>
                 <width>1180</width>
@@ -843,7 +843,7 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
-                <visible>![IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
+                <visible>![String.IsEmpty(Container(50).ListItem.Property(Property4))+String.IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
                 <posx>TextMargin</posx>
                 <posy>146</posy>
                 <width>660</width>
@@ -853,7 +853,7 @@
                 <label>$INFO[Container(50).ListItem.Property(Property4)]</label>
             </control>
             <control type="label">
-                <visible>[IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
+                <visible>[String.IsEmpty(Container(50).ListItem.Property(Property4))+String.IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
                 <posx>TextMargin</posx>
                 <posy>146</posy>
                 <width>660</width>
@@ -870,7 +870,7 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
-                <visible>![IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
+                <visible>![String.IsEmpty(Container(50).ListItem.Property(Property4))+String.IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
                 <posx>TextMargin</posx>
                 <posy>219</posy>
                 <width>660</width>
@@ -880,7 +880,7 @@
                 <label>$INFO[Container(50).ListItem.Property(Property8)]</label>
             </control>
             <control type="label">
-                <visible>[IsEmpty(Container(50).ListItem.Property(Property4))+IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
+                <visible>[String.IsEmpty(Container(50).ListItem.Property(Property4))+String.IsEmpty(Container(50).ListItem.Property(Property8))]</visible>
                 <posx>TextMargin</posx>
                 <posy>219</posy>
                 <width>660</width>
@@ -1135,7 +1135,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(570).NumItems,10)</visible>
+                    <visible>!Integer.IsGreater(Container(570).NumItems,10)</visible>
                     <posx>740</posx>
                     <posy>937</posy>
                     <width>1180</width>
@@ -1175,7 +1175,7 @@
     </include>
     <include name="Info_570_EventLog_BG">
         <control type="group">
-            <visible>!IsEmpty(ListItem.Property(Event.Description))</visible>
+            <visible>!String.IsEmpty(ListItem.Property(Event.Description))</visible>
             <include>Icon_Fade</include>
             <posy>37</posy>
             <control type="image">
@@ -1222,7 +1222,7 @@
             <posy>37</posy>
             <!-- CDART MUSIC -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="320"/>
                 <param name="y" value="187"/>
                 <param name="width" value="364"/>
@@ -1231,7 +1231,7 @@
             </include>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="138"/>
                 <param name="y" value="137"/>
                 <param name="width" value="464"/>

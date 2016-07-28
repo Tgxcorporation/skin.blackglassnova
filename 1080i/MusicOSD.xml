@@ -355,8 +355,8 @@
                     <texturefocus>topbar/topbar_teletext_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_teletext_nofocus.png</texturenofocus>
                     <onclick>Close</onclick>
-                    <onclick condition="IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
-                    <onclick condition="!IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
+                    <onclick condition="String.IsEmpty(Skin.String(LyricPath))">Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
+                    <onclick condition="!String.IsEmpty(Skin.String(LyricPath))">XBMC.RunScript($INFO[Skin.String(LyricPath)])</onclick>
                 </control>
                 <control type="button" id="555">
                     <label>$LOCALIZE[559]</label>

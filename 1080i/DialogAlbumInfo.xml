@@ -109,7 +109,7 @@
                 </control>
                 <control type="button" id="504">
                     <visible>System.HasAddon(script.extendedinfo)</visible>
-                    <!--<visible>IntegerGreaterThan(Container(5041).NumItems,0)</visible>-->
+                    <!--<visible>Integer.IsGreater(Container(5041).NumItems,0)</visible>-->
                     <visible>container.content(artists)</visible>
                     <description>Discography ExtendedInfo</description>
                     <include>RightDialogButton</include>
@@ -118,7 +118,7 @@
                 </control>
                 <!--<control type="button" id="509">-->
                     <!--<visible>System.HasAddon(script.extendedinfo)</visible>-->
-                    <!--&lt;!&ndash;<visible>IntegerGreaterThan(Container(5091).NumItems,0)</visible>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<visible>Integer.IsGreater(Container(5091).NumItems,0)</visible>&ndash;&gt;-->
                     <!--<visible>container.content(artists)</visible>-->
                     <!--<description>Twitter Shouts ExtendedInfo</description>-->
                     <!--<include>RightDialogButton</include>-->
@@ -127,7 +127,7 @@
                 <!--</control>-->
                 <!--<control type="button" id="505">-->
                     <!--<visible>System.HasAddon(script.extendedinfo)</visible>-->
-                    <!--&lt;!&ndash;<visible>IntegerGreaterThan(Container(5051).NumItems,0)</visible>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<visible>Integer.IsGreater(Container(5051).NumItems,0)</visible>&ndash;&gt;-->
                     <!--<visible>container.content(artists)</visible>-->
                     <!--<description>Concerts ExtendedInfo</description>-->
                     <!--<include>RightDialogButton</include>-->
@@ -144,7 +144,7 @@
                 <!--</control>-->
                 <control type="button" id="507">
                     <visible>System.HasAddon(script.extendedinfo)</visible>
-                    <!--<visible>IntegerGreaterThan(Container(5071).NumItems,0)</visible>-->
+                    <!--<visible>Integer.IsGreater(Container(5071).NumItems,0)</visible>-->
                     <visible>container.content(artists)</visible>
                     <description>MusicVideos ExtendedInfo</description>
                     <include>RightDialogButton</include>
@@ -153,7 +153,7 @@
                 </control>
                 <control type="button" id="508">
                     <visible>System.HasAddon(script.extendedinfo)</visible>
-                    <!--<visible>IntegerGreaterThan(Container(5081).NumItems,0)</visible>-->
+                    <!--<visible>Integer.IsGreater(Container(5081).NumItems,0)</visible>-->
                     <!--<visible>container.content(artists)</visible>-->
                     <description>Youtube ExtendedInfo</description>
                     <include>RightDialogButton</include>
@@ -223,7 +223,7 @@
                 <include>VisibleFadeEffectDelay</include>
                 <!-- CDART MUSIC -->
                 <include content="DiscArt">
-                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                    <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                     <param name="x" value="1540"/>
                     <param name="y" value="865"/>
                     <param name="width" value="316"/>
@@ -313,55 +313,55 @@
                                 <label>$LOCALIZE[557]:</label>
                                 <label2>$INFO[ListItem.Artist]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Artist)</visible>
+                                <visible>!String.IsEmpty(ListItem.Artist)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[515]:</label>
                                 <label2>$INFO[ListItem.Genre]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Genre)</visible>
+                                <visible>!String.IsEmpty(ListItem.Genre)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[563]:</label>
                                 <label2>$INFO[ListItem.RatingAndVotes]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
+                                <visible>!String.IsEmpty(ListItem.RatingAndVotes)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[175]:</label>
                                 <label2>$INFO[ListItem.Property(Album_Mood)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Album_Mood))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Album_Mood))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[176]:</label>
                                 <label2>$INFO[ListItem.Property(Album_Style)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Album_Style))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Album_Style))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21895]:</label>
                                 <label2>$INFO[ListItem.Property(Album_Theme)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Album_Theme))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Album_Theme))</visible>
                             </item>
                             <item>
                                 <label>146</label>
                                 <label2>$INFO[ListItem.Property(Album_Type)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Album_Type))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Album_Type))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21899]:</label>
                                 <label2>$INFO[ListItem.Property(Album_Label)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Album_Label))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Album_Label))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[562]:</label>
                                 <label2>$INFO[ListItem.Year]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Year)</visible>
+                                <visible>!String.IsEmpty(ListItem.Year)</visible>
                             </item>
                         </content>
                     </control>
@@ -449,55 +449,55 @@
                                 <label>$LOCALIZE[21893]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Born)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Artist_Born))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21894]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Artist_Formed))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[515]:</label>
                                 <label2>$INFO[ListItem.Genre]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Genre)</visible>
+                                <visible>!String.IsEmpty(ListItem.Genre)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[175]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Mood)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Artist_Mood))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Artist_Mood))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[176]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Style)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Artist_Style))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Artist_Style))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21892]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Instrument)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Artist_Instrument))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Artist_Instrument))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21897]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Died)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Artist_Died))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Artist_Died))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21896]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21898]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_YearsActive)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!IsEmpty(ListItem.Property(Artist_YearsActive))</visible>
+                                <visible>!String.IsEmpty(ListItem.Property(Artist_YearsActive))</visible>
                             </item>
                         </content>
                     </control>
@@ -548,7 +548,7 @@
                 <include>VisibleFadeEffectDelay</include>
                 <!-- CDART MUSIC -->
                 <include content="DiscArt">
-                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                    <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                     <param name="x" value="1540"/>
                     <param name="y" value="865"/>
                     <param name="width" value="316"/>
@@ -693,7 +693,7 @@
                 <include>VisibleFadeEffectDelay</include>
                 <!-- CDART MUSIC -->
                 <include content="DiscArt">
-                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                    <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                     <param name="x" value="1540"/>
                     <param name="y" value="865"/>
                     <param name="width" value="316"/>

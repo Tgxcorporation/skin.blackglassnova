@@ -12,7 +12,7 @@
             <!--7 DAYS-->
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day0.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day0.Outlook)) + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$LOCALIZE[33006]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Current.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Current.FanartCode)].png</property>
@@ -31,7 +31,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day1.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day1.Outlook)) + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$LOCALIZE[33007]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Day1.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Day1.FanartCode)].png</property>
@@ -42,7 +42,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day2.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day2.Outlook)) + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window.Property(Day2.Title)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Day2.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Day2.FanartCode)].png</property>
@@ -53,7 +53,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day3.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day3.Outlook)) + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window.Property(Day3.Title)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Day3.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Day3.FanartCode)].png</property>
@@ -64,7 +64,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day4.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day4.Outlook)) + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window.Property(Day4.Title)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Day4.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Day4.FanartCode)].png</property>
@@ -75,7 +75,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day5.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day5.Outlook)) + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Day5.Title)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Day5.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Day5.FanartCode)].png</property>
@@ -86,7 +86,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Day6.Outlook)) + IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Day6.Outlook)) + String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Day6.Title)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Day6.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Day6.FanartCode)].png</property>
@@ -98,7 +98,7 @@
             <!--14 DAYS-->
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.1.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.1.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.1.ShortDay)] $INFO[Window.Property(Daily.1.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.1.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.1.FanartCode)].png</property>
@@ -117,7 +117,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.2.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.2.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.2.ShortDay)] $INFO[Window.Property(Daily.2.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.2.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.2.FanartCode)].png</property>
@@ -132,7 +132,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.3.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.3.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.3.ShortDay)] $INFO[Window.Property(Daily.3.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.3.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.3.FanartCode)].png</property>
@@ -147,7 +147,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.4.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.4.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.4.ShortDay)] $INFO[Window.Property(Daily.4.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.4.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.4.FanartCode)].png</property>
@@ -162,7 +162,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.5.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.5.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.5.ShortDay)] $INFO[Window.Property(Daily.5.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.5.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.5.FanartCode)].png</property>
@@ -176,7 +176,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.6.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.6.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.6.ShortDay)] $INFO[Window.Property(Daily.6.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.6.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.6.FanartCode)].png</property>
@@ -190,7 +190,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.7.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.7.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.7.ShortDay)] $INFO[Window.Property(Daily.7.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.7.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.7.FanartCode)].png</property>
@@ -204,7 +204,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.8.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.8.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.8.ShortDay)] $INFO[Window.Property(Daily.8.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.8.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.8.FanartCode)].png</property>
@@ -218,7 +218,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.9.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.9.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.9.ShortDay)] $INFO[Window.Property(Daily.9.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.9.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.9.FanartCode)].png</property>
@@ -232,7 +232,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.10.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.10.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.10.ShortDay)] $INFO[Window.Property(Daily.10.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.10.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.10.FanartCode)].png</property>
@@ -246,7 +246,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.11.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.11.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.11.ShortDay)] $INFO[Window.Property(Daily.11.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.11.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.11.FanartCode)].png</property>
@@ -260,7 +260,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.12.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.12.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.12.ShortDay)] $INFO[Window.Property(Daily.12.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.12.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.12.FanartCode)].png</property>
@@ -274,7 +274,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.13.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.13.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.13.ShortDay)] $INFO[Window.Property(Daily.13.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.13.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.13.FanartCode)].png</property>
@@ -288,7 +288,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,)|Skin.String(WeatherType,daily)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Daily.14.Outlook)) + !IsEmpty(Window.Property(Daily.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Daily.14.Outlook)) + !String.IsEmpty(Window.Property(Daily.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Daily.14.ShortDay)] $INFO[Window.Property(Daily.14.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Daily.14.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Daily.14.FanartCode)].png</property>
@@ -303,7 +303,7 @@
             <!--36 HOURS-->
             <item>
                 <visible>Skin.String(WeatherType,36Hour)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(36Hour.1.Outlook)) + !IsEmpty(Window.Property(36Hour.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(36Hour.1.Outlook)) + !String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
                 <label>$INFO[Window.Property(36Hour.1.Heading)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(36Hour.1.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(36Hour.1.FanartCode)].png</property>
@@ -318,7 +318,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,36Hour)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(36Hour.2.Outlook)) + !IsEmpty(Window.Property(36Hour.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(36Hour.2.Outlook)) + !String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
                 <label>$INFO[Window.Property(36Hour.2.Heading)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(36Hour.2.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(36Hour.2.FanartCode)].png</property>
@@ -333,7 +333,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,36Hour)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(36Hour.3.Outlook)) + !IsEmpty(Window.Property(36Hour.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(36Hour.3.Outlook)) + !String.IsEmpty(Window.Property(36Hour.IsFetched))</visible>
                 <label>$INFO[Window.Property(36Hour.3.Heading)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(36Hour.3.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(36Hour.3.FanartCode)].png</property>
@@ -349,7 +349,7 @@
             <!--WEEKEND-->
             <item>
                 <visible>Skin.String(WeatherType,Weekend)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Weekend.1.Outlook)) + !IsEmpty(Window.Property(Weekend.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Weekend.1.Outlook)) + !String.IsEmpty(Window.Property(Weekend.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Weekend.1.ShortDay)] $INFO[Window.Property(Weekend.1.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Weekend.1.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Weekend.1.FanartCode)].png</property>
@@ -364,7 +364,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Weekend)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Weekend.2.Outlook)) + !IsEmpty(Window.Property(Weekend.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Weekend.2.Outlook)) + !String.IsEmpty(Window.Property(Weekend.IsFetched))</visible>
                 <label>$INFO[Window(Weather).Property(Weekend.2.ShortDay)] $INFO[Window.Property(Weekend.2.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Weekend.2.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Weekend.2.FanartCode)].png</property>
@@ -380,7 +380,7 @@
             <!--24 HOURS-->
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.1.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.1.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.1.Time)] - $INFO[Window.Property(Hourly.1.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.1.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.1.FanartCode)].png</property>
@@ -395,7 +395,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.2.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.2.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.2.Time)] - $INFO[Window.Property(Hourly.2.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.2.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.2.FanartCode)].png</property>
@@ -410,7 +410,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.3.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.3.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.3.Time)] - $INFO[Window.Property(Hourly.3.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.3.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.3.FanartCode)].png</property>
@@ -425,7 +425,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.4.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.4.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.4.Time)] - $INFO[Window.Property(Hourly.4.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.4.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.4.FanartCode)].png</property>
@@ -440,7 +440,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.5.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.5.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.5.Time)] - $INFO[Window.Property(Hourly.5.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.5.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.5.FanartCode)].png</property>
@@ -455,7 +455,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.6.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.6.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.6.Time)] - $INFO[Window.Property(Hourly.6.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.6.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.6.FanartCode)].png</property>
@@ -470,7 +470,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.7.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.7.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.7.Time)] - $INFO[Window.Property(Hourly.7.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.7.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.7.FanartCode)].png</property>
@@ -485,7 +485,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.8.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.8.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.8.Time)] - $INFO[Window.Property(Hourly.8.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.8.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.8.FanartCode)].png</property>
@@ -500,7 +500,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.9.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.9.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.9.Time)] - $INFO[Window.Property(Hourly.9.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.9.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.9.FanartCode)].png</property>
@@ -515,7 +515,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.10.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.10.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.10.Time)] - $INFO[Window.Property(Hourly.10.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.10.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.10.FanartCode)].png</property>
@@ -530,7 +530,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.11.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.11.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.11.Time)] - $INFO[Window.Property(Hourly.11.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.11.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.11.FanartCode)].png</property>
@@ -545,7 +545,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.12.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.12.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.12.Time)] - $INFO[Window.Property(Hourly.12.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.12.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.12.FanartCode)].png</property>
@@ -560,7 +560,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.13.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.13.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.13.Time)] - $INFO[Window.Property(Hourly.13.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.13.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.13.FanartCode)].png</property>
@@ -575,7 +575,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.14.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.14.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.14.Time)] - $INFO[Window.Property(Hourly.14.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.14.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.14.FanartCode)].png</property>
@@ -590,7 +590,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.15.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.15.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.15.Time)] - $INFO[Window.Property(Hourly.15.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.15.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.15.FanartCode)].png</property>
@@ -605,7 +605,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.16.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.16.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.16.Time)] - $INFO[Window.Property(Hourly.16.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.16.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.16.FanartCode)].png</property>
@@ -620,7 +620,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.17.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.17.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.17.Time)] - $INFO[Window.Property(Hourly.17.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.17.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.17.FanartCode)].png</property>
@@ -635,7 +635,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.18.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.18.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.18.Time)] - $INFO[Window.Property(Hourly.18.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.18.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.18.FanartCode)].png</property>
@@ -650,7 +650,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.19.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.19.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.19.Time)] - $INFO[Window.Property(Hourly.19.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.19.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.19.FanartCode)].png</property>
@@ -665,7 +665,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.20.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.20.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.20.Time)] - $INFO[Window.Property(Hourly.20.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.20.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.20.FanartCode)].png</property>
@@ -680,7 +680,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.21.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.21.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.21.Time)] - $INFO[Window.Property(Hourly.21.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.21.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.21.FanartCode)].png</property>
@@ -695,7 +695,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.22.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.22.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.22.Time)] - $INFO[Window.Property(Hourly.22.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.22.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.22.FanartCode)].png</property>
@@ -710,7 +710,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.23.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.23.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.23.Time)] - $INFO[Window.Property(Hourly.23.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.23.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.23.FanartCode)].png</property>
@@ -725,7 +725,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Hourly)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Hourly.24.Outlook)) + !IsEmpty(Window.Property(Hourly.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Hourly.24.Outlook)) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
                 <label>$INFO[Window.Property(Hourly.24.Time)] - $INFO[Window.Property(Hourly.24.ShortDate)]</label>
                 <thumb>$VAR[WeatherFanartPath]$INFO[Window(Weather).Property(Hourly.24.FanartCode)].jpg</thumb>
                 <property name="Icon">$VAR[WeatherIconPath]$INFO[Window(Weather).Property(Hourly.24.FanartCode)].png</property>
@@ -741,7 +741,7 @@
             <!--MAPS-->
             <item>
                 <visible>Skin.String(WeatherType,Map)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Map.1.Area)) + !IsEmpty(Window.Property(Map.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Map.1.Area)) + !String.IsEmpty(Window.Property(Map.IsFetched))</visible>
                 <label>$INFO[Window.Property(Map.1.Heading)]</label>
                 <thumb>$INFO[Window.Property(Map.1.Area)]</thumb>
                 <property name="Layer">$INFO[Window.Property(Map.1.Layer)]</property>
@@ -750,7 +750,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Map)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Map.2.Area)) + !IsEmpty(Window.Property(Map.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Map.2.Area)) + !String.IsEmpty(Window.Property(Map.IsFetched))</visible>
                 <label>$INFO[Window.Property(Map.2.Heading)]</label>
                 <thumb>$INFO[Window.Property(Map.2.Area)]</thumb>
                 <property name="Layer">$INFO[Window.Property(Map.2.Layer)]</property>
@@ -759,7 +759,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Map)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Map.3.Area)) + !IsEmpty(Window.Property(Map.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Map.3.Area)) + !String.IsEmpty(Window.Property(Map.IsFetched))</visible>
                 <label>$INFO[Window.Property(Map.3.Heading)]</label>
                 <thumb>$INFO[Window.Property(Map.3.Area)]</thumb>
                 <property name="Layer">$INFO[Window.Property(Map.3.Layer)]</property>
@@ -768,7 +768,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Map)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Map.4.Area)) + !IsEmpty(Window.Property(Map.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Map.4.Area)) + !String.IsEmpty(Window.Property(Map.IsFetched))</visible>
                 <label>$INFO[Window.Property(Map.4.Heading)]</label>
                 <thumb>$INFO[Window.Property(Map.4.Area)]</thumb>
                 <property name="Layer">$INFO[Window.Property(Map.4.Layer)]</property>
@@ -777,7 +777,7 @@
             </item>
             <item>
                 <visible>Skin.String(WeatherType,Map)</visible>
-                <visible>Weather.IsFetched + !IsEmpty(Window.Property(Map.5.Area)) + !IsEmpty(Window.Property(Map.IsFetched))</visible>
+                <visible>Weather.IsFetched + !String.IsEmpty(Window.Property(Map.5.Area)) + !String.IsEmpty(Window.Property(Map.IsFetched))</visible>
                 <label>$INFO[Window.Property(Map.5.Heading)]</label>
                 <thumb>$INFO[Window.Property(Map.5.Area)]</thumb>
                 <property name="Layer">$INFO[Window.Property(Map.5.Layer)]</property>

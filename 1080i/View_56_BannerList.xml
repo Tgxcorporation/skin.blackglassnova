@@ -13,10 +13,10 @@
             <include>HideMediaInfo</include>
             <visible>Control.IsVisible(56)+
                 [
-                !IsEmpty(ListItem.Property(Artist_Description))|
-                !IsEmpty(ListItem.Property(Addon.Description))|
-                !IsEmpty(ListItem.Property(Album_Description))|
-                !IsEmpty(ListItem.Plot)
+                !String.IsEmpty(ListItem.Property(Artist_Description))|
+                !String.IsEmpty(ListItem.Property(Addon.Description))|
+                !String.IsEmpty(ListItem.Property(Album_Description))|
+                !String.IsEmpty(ListItem.Plot)
                 ]
                 +!Container.Content(songs)</visible>
             <include>Icon_Fade</include>
@@ -195,7 +195,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(56).NumItems,7)</visible>
+                    <visible>!Integer.IsGreater(Container(56).NumItems,7)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>1440</width>
@@ -223,7 +223,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(56).NumItems,7)</visible>
+                <visible allowhiddenfocus="true">Integer.IsGreater(Container(56).NumItems,7)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -241,7 +241,7 @@
             <include>Icon_Fade</include>
             <!-- CDART MUSIC -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="236"/>
                 <param name="width" value="374"/>
@@ -250,7 +250,7 @@
             </include>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="236"/>
                 <param name="width" value="374"/>

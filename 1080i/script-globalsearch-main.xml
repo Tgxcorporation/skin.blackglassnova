@@ -379,7 +379,7 @@
                                     <include>ThumbBorder</include>
                                 </control>
                                 <control type="image">
-                                    <visible>!IntegerGreaterThan(Container(221).NumItems,4)</visible>
+                                    <visible>!Integer.IsGreater(Container(221).NumItems,4)</visible>
                                     <posx>0</posx>
                                     <posy>657</posy>
                                     <width>1131</width>
@@ -444,7 +444,7 @@
                                             <scroll>false</scroll>
                                         </control>
                                         <control type="label">
-                                            <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>136</posx>
                                             <posy>43</posy>
                                             <height>28</height>
@@ -455,7 +455,7 @@
                                             <scroll>false</scroll>
                                         </control>
                                         <control type="label">
-                                            <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>136</posx>
                                             <posy>43</posy>
                                             <height>28</height>
@@ -504,7 +504,7 @@
                                             <label>$INFO[ListItem.Label]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>136</posx>
                                             <posy>43</posy>
                                             <height>28</height>
@@ -514,7 +514,7 @@
                                             <label>$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>136</posx>
                                             <posy>43</posy>
                                             <height>28</height>
@@ -552,7 +552,7 @@
                                     <include>ThumbBorder</include>
                                 </control>
                                 <control type="image">
-                                    <visible>!IntegerGreaterThan(Container(111).NumItems,4)</visible>
+                                    <visible>!Integer.IsGreater(Container(111).NumItems,4)</visible>
                                     <posx>0</posx>
                                     <posy>657</posy>
                                     <width>1131</width>
@@ -617,7 +617,7 @@
                                             <scroll>false</scroll>
                                         </control>
                                         <control type="label">
-                                            <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>136</posx>
                                             <posy>43</posy>
                                             <height>28</height>
@@ -628,7 +628,7 @@
                                             <scroll>false</scroll>
                                         </control>
                                         <control type="label">
-                                            <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>136</posx>
                                             <posy>43</posy>
                                             <height>28</height>
@@ -677,7 +677,7 @@
                                             <label>$INFO[ListItem.Label]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>!SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>!String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>136</posx>
                                             <posy>43</posy>
                                             <height>28</height>
@@ -687,7 +687,7 @@
                                             <label>$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Duration),, $LOCALIZE[12391]]</label>
                                         </control>
                                         <control type="label">
-                                            <visible>SubString(ListItem.Property(Duration),min)</visible>
+                                            <visible>String.Contains(ListItem.Property(Duration),min)</visible>
                                             <posx>136</posx>
                                             <posy>43</posy>
                                             <height>28</height>
@@ -725,7 +725,7 @@
                                     <include>ThumbBorder</include>
                                 </control>
                                 <control type="image">
-                                    <visible>!IntegerGreaterThan(Container(211).NumItems,4)</visible>
+                                    <visible>!Integer.IsGreater(Container(211).NumItems,4)</visible>
                                     <posx>0</posx>
                                     <posy>657</posy>
                                     <width>1131</width>
@@ -875,7 +875,7 @@
                                     <include>ThumbBorder</include>
                                 </control>
                                 <control type="image">
-                                    <visible>!IntegerGreaterThan(Container(121).NumItems,4)</visible>
+                                    <visible>!Integer.IsGreater(Container(121).NumItems,4)</visible>
                                     <posx>0</posx>
                                     <posy>657</posy>
                                     <width>1131</width>
@@ -1025,7 +1025,7 @@
                                     <include>ThumbBorder</include>
                                 </control>
                                 <control type="image">
-                                    <visible>!IntegerGreaterThan(Container(131).NumItems,4)</visible>
+                                    <visible>!Integer.IsGreater(Container(131).NumItems,4)</visible>
                                     <posx>0</posx>
                                     <posy>657</posy>
                                     <width>1131</width>
@@ -1175,7 +1175,7 @@
                                     <include>ThumbBorder</include>
                                 </control>
                                 <control type="image">
-                                    <visible>!IntegerGreaterThan(Container(141).NumItems,4)</visible>
+                                    <visible>!Integer.IsGreater(Container(141).NumItems,4)</visible>
                                     <posx>0</posx>
                                     <posy>657</posy>
                                     <width>1131</width>
@@ -1344,7 +1344,7 @@
                                     <include>ThumbBorder</include>
                                 </control>
                                 <control type="image">
-                                    <visible>!IntegerGreaterThan(Container(151).NumItems,4)</visible>
+                                    <visible>!Integer.IsGreater(Container(151).NumItems,4)</visible>
                                     <posx>0</posx>
                                     <posy>657</posy>
                                     <width>1131</width>
@@ -1494,7 +1494,7 @@
                                     <include>ThumbBorder</include>
                                 </control>
                                 <control type="image">
-                                    <visible>!IntegerGreaterThan(Container(161).NumItems,4)</visible>
+                                    <visible>!Integer.IsGreater(Container(161).NumItems,4)</visible>
                                     <posx>0</posx>
                                     <posy>657</posy>
                                     <width>1131</width>
@@ -1644,7 +1644,7 @@
                                     <include>ThumbBorder</include>
                                 </control>
                                 <control type="image">
-                                    <visible>!IntegerGreaterThan(Container(171).NumItems,4)</visible>
+                                    <visible>!Integer.IsGreater(Container(171).NumItems,4)</visible>
                                     <posx>0</posx>
                                     <posy>657</posy>
                                     <width>1131</width>
@@ -1813,7 +1813,7 @@
                                     <include>ThumbBorder</include>
                                 </control>
                                 <control type="image">
-                                    <visible>!IntegerGreaterThan(Container(181).NumItems,4)</visible>
+                                    <visible>!Integer.IsGreater(Container(181).NumItems,4)</visible>
                                     <posx>0</posx>
                                     <posy>657</posy>
                                     <width>1131</width>

@@ -65,7 +65,7 @@
                     </control>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!IsEmpty(Player.Art(thumb))"/>
+                        <param name="visible" value="!String.IsEmpty(Player.Art(thumb))"/>
                         <param name="x" value="135"/>
                         <param name="y" value="565"/>
                         <param name="width" value="321"/>

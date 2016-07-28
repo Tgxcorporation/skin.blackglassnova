@@ -220,7 +220,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
-                    <visible>IsEmpty(ListItem.Property(Addon.broken))</visible>
+                    <visible>String.IsEmpty(ListItem.Property(Addon.broken))</visible>
                     <posx>228</posx>
                     <posy>768</posy>
                     <width>1041</width>
@@ -229,7 +229,7 @@
                     <label>$INFO[ListItem.Property(Addon.Disclaimer),[COLOR=WarningColor]$LOCALIZE[24052]: [/COLOR]]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(ListItem.Property(Addon.broken))</visible>
+                    <visible>!String.IsEmpty(ListItem.Property(Addon.broken))</visible>
                     <posx>228</posx>
                     <posy>768</posy>
                     <width>1041</width>

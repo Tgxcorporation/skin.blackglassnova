@@ -63,7 +63,7 @@
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="label">
-                        <visible>StringCompare(ListItem.Label2,)</visible>
+                        <visible>String.IsEqual(ListItem.Label2,)</visible>
                         <posx>25</posx>
                         <height>71</height>
                         <width>876</width>
@@ -73,7 +73,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>!StringCompare(ListItem.Label2,)</visible>
+                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
                         <posx>25</posx>
                         <height>42</height>
                         <width>876</width>
@@ -83,7 +83,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>!StringCompare(ListItem.Label2,)</visible>
+                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
                         <posx>25</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -103,7 +103,7 @@
                         <include>FacadeFocus</include>
                     </control>
                     <control type="label">
-                        <visible>StringCompare(ListItem.Label2,)</visible>
+                        <visible>String.IsEqual(ListItem.Label2,)</visible>
                         <posx>25</posx>
                         <height>71</height>
                         <width>876</width>
@@ -112,7 +112,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!StringCompare(ListItem.Label2,)</visible>
+                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
                         <posx>25</posx>
                         <height>42</height>
                         <width>876</width>
@@ -121,7 +121,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!StringCompare(ListItem.Label2,)</visible>
+                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
                         <posx>25</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -220,7 +220,7 @@
             </control>
             <!-- CDART MUSIC -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="1440"/>
                 <param name="y" value="792"/>
                 <param name="width" value="316"/>

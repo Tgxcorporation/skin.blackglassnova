@@ -13,7 +13,7 @@
             <control type="group">
                 <posy>127</posy>
                 <control type="group">
-                    <visible>StringCompare(ListItem.Label,..)</visible>
+                    <visible>String.IsEqual(ListItem.Label,..)</visible>
                     <posx>725</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -26,7 +26,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!StringCompare(ListItem.Label,..)</visible>
+                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     <posx>145</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -159,7 +159,7 @@
             <control type="group">
                 <posy>127</posy>
                 <control type="group">
-                    <visible>StringCompare(ListItem.Label,..)</visible>
+                    <visible>String.IsEqual(ListItem.Label,..)</visible>
                     <posx>725</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -172,7 +172,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!StringCompare(ListItem.Label,..)</visible>
+                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     <posx>145</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -200,7 +200,7 @@
                     </control>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                         <param name="x" value="51"/>
                         <param name="y" value="-127"/>
                         <param name="width" value="404"/>
@@ -314,7 +314,7 @@
             <control type="group">
                 <posy>127</posy>
                 <control type="group">
-                    <visible>StringCompare(ListItem.Label,..)</visible>
+                    <visible>String.IsEqual(ListItem.Label,..)</visible>
                     <posx>725</posx>
                     <control type="image">
                         <posx>0</posx>
@@ -326,7 +326,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!StringCompare(ListItem.Label,..)</visible>
+                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     <posx>145</posx>
                     <control type="image">
                         <posx>-21</posx>
@@ -490,7 +490,7 @@
             <control type="group">
                 <posy>127</posy>
                 <control type="group">
-                    <visible>StringCompare(ListItem.Label,..)</visible>
+                    <visible>String.IsEqual(ListItem.Label,..)</visible>
                     <posx>725</posx>
                     <control type="image">
                         <posx>0</posx>
@@ -502,7 +502,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!StringCompare(ListItem.Label,..)</visible>
+                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
                     <posx>145</posx>
                     <control type="image">
                         <posx>-21</posx>
@@ -529,7 +529,7 @@
                     </control>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                         <param name="x" value="51"/>
                         <param name="y" value="-127"/>
                         <param name="width" value="404"/>

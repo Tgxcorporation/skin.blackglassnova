@@ -227,7 +227,7 @@
         <focusposition>1</focusposition>
         <itemlayout height="262" width="417">
             <control type="image">
-                <visible>StringCompare(ListItem.Property(hide),True)+SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>String.IsEqual(ListItem.Property(hide),True)+String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>29</posx>
                 <posy>9</posy>
                 <width>359</width>
@@ -238,7 +238,7 @@
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
-                <visible>StringCompare(ListItem.Property(hide),True)+!SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>String.IsEqual(ListItem.Property(hide),True)+!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>29</posx>
                 <posy>9</posy>
                 <width>359</width>
@@ -249,7 +249,7 @@
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
-                <visible>!StringCompare(ListItem.Property(hide),True)</visible>
+                <visible>!String.IsEqual(ListItem.Property(hide),True)</visible>
                 <posx>29</posx>
                 <posy>9</posy>
                 <width>359</width>
@@ -260,7 +260,7 @@
                 <include>ThumbBorder</include>
             </control>
             <control type="image">
-                <visible>!SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <animation effect="rotate" start="0" end="180" center="208,224" reversible="false" condition="true">Conditional</animation>
                 <posx>29</posx>
                 <posy>9</posy>
@@ -272,7 +272,7 @@
                 <bordersize>27</bordersize>
             </control>
             <control type="image">
-                <visible>SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <animation effect="rotate" start="0" end="180" center="208,224" reversible="false" condition="true">Conditional</animation>
                 <posx>29</posx>
                 <posy>9</posy>
@@ -286,7 +286,7 @@
         </itemlayout>
         <focusedlayout height="262" width="396">
             <control type="image">
-                <visible>StringCompare(ListItem.Property(hide),True)+SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>String.IsEqual(ListItem.Property(hide),True)+String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>3</posx>
                 <posy>0</posy>
                 <width>390</width>
@@ -296,7 +296,7 @@
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="image">
-                <visible>StringCompare(ListItem.Property(hide),True)+!SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>String.IsEqual(ListItem.Property(hide),True)+!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>3</posx>
                 <posy>0</posy>
                 <width>390</width>
@@ -306,7 +306,7 @@
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="image">
-                <visible>!StringCompare(ListItem.Property(hide),True)</visible>
+                <visible>!String.IsEqual(ListItem.Property(hide),True)</visible>
                 <posx>3</posx>
                 <posy>0</posy>
                 <width>390</width>
@@ -317,7 +317,7 @@
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="image">
-                <visible>!SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <animation effect="rotate" start="0" end="180" center="198,233" reversible="false" condition="true">Conditional</animation>
                 <posx>3</posx>
                 <posy>0</posy>
@@ -328,7 +328,7 @@
                 <include>ThumbBorderOverlayDiffused</include>
             </control>
             <control type="image">
-                <visible>SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <animation effect="rotate" start="0" end="180" center="198,233" reversible="false" condition="true">Conditional</animation>
                 <posx>3</posx>
                 <posy>0</posy>
@@ -361,7 +361,7 @@
             <control type="group">
                 <posx>103</posx>
                 <control type="image">
-                    <visible>StringCompare(ListItem.Property(hide),True)+SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                    <visible>String.IsEqual(ListItem.Property(hide),True)+String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -369,7 +369,7 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png">special://skin/backgrounds/Weather.jpg</texture>
                 </control>
                 <control type="image">
-                    <visible>StringCompare(ListItem.Property(hide),True)+!SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                    <visible>String.IsEqual(ListItem.Property(hide),True)+!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -377,7 +377,7 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
-                    <visible>!StringCompare(ListItem.Property(hide),True)</visible>
+                    <visible>!String.IsEqual(ListItem.Property(hide),True)</visible>
                     <colordiffuse>50ffffff</colordiffuse>
                     <posx>-27</posx>
                     <posy>0</posy>
@@ -405,7 +405,7 @@
             <control type="group">
                 <posx>103</posx>
                 <control type="image">
-                    <visible>StringCompare(ListItem.Property(hide),True)+SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                    <visible>String.IsEqual(ListItem.Property(hide),True)+String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -413,7 +413,7 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png">special://skin/backgrounds/weather.jpg</texture>
                 </control>
                 <control type="image">
-                    <visible>StringCompare(ListItem.Property(hide),True)+!SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                    <visible>String.IsEqual(ListItem.Property(hide),True)+!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -421,7 +421,7 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
-                    <visible>!StringCompare(ListItem.Property(hide),True)</visible>
+                    <visible>!String.IsEqual(ListItem.Property(hide),True)</visible>
                     <colordiffuse>50ffffff</colordiffuse>
                     <posx>-27</posx>
                     <posy>0</posy>
@@ -472,7 +472,7 @@
                 <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
             </control>
             <control type="label">
-                <visible>StringCompare(ListItem.Property(hide),True)</visible>
+                <visible>String.IsEqual(ListItem.Property(hide),True)</visible>
                 <posx>TextMargin</posx>
                 <height>63</height>
                 <width>373</width>
@@ -483,7 +483,7 @@
                 <scroll>false</scroll>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Property(hide),True)</visible>
+                <visible>!String.IsEqual(ListItem.Property(hide),True)</visible>
                 <posx>TextMargin</posx>
                 <height>63</height>
                 <width>373</width>
@@ -503,7 +503,7 @@
                 <include>FlippedFacadeFocus</include>
             </control>
             <control type="label">
-                <visible>StringCompare(ListItem.Property(hide),True)</visible>
+                <visible>String.IsEqual(ListItem.Property(hide),True)</visible>
                 <posx>TextMargin</posx>
                 <height>63</height>
                 <width>373</width>
@@ -513,7 +513,7 @@
                 <label>$INFO[ListItem.Label]</label>
             </control>
             <control type="label">
-                <visible>!StringCompare(ListItem.Property(hide),True)</visible>
+                <visible>!String.IsEqual(ListItem.Property(hide),True)</visible>
                 <posx>TextMargin</posx>
                 <height>63</height>
                 <width>373</width>

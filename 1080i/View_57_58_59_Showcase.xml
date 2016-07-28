@@ -58,10 +58,10 @@
             <visible>![Control.HasFocus(7000)|Control.hasfocus(6069)]</visible>
             <visible>Control.hasfocus(505050)|[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]</visible>
             <control type="group">
-                <visible>![StringCompare(ListItem.Label,..)]</visible>
+                <visible>![String.IsEqual(ListItem.Label,..)]</visible>
                 <animation effect="slide" time="0" start="0,0" end="0,40" condition="[!control.isvisible(45741)+!control.isvisible(45742)]">Conditional</animation>
                 <control type="label">
-                    <animation effect="slide" time="0" start="0,0" end="0,25" condition="IsEmpty(control.getlabel(45742))">Conditional</animation>
+                    <animation effect="slide" time="0" start="0,0" end="0,25" condition="String.IsEmpty(control.getlabel(45742))">Conditional</animation>
                     <posx>100</posx>
                     <posy>925</posy>
                     <width>1720</width>
@@ -73,7 +73,7 @@
                     <label>$VAR[Fanart_Title]</label>
                 </control>
                 <control type="image">
-                    <visible>!IsEmpty(control.getlabel(45742))</visible>
+                    <visible>!String.IsEmpty(control.getlabel(45742))</visible>
                     <posx>0</posx>
                     <posy>911</posy>
                     <width>1920</width>
@@ -81,7 +81,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="group" id="45741">
-                    <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[SubString(ListItem.StarRating,rating1)|SubString(ListItem.StarRating,rating2)|SubString(ListItem.StarRating,rating3)|SubString(ListItem.StarRating,rating4)|SubString(ListItem.StarRating,rating5)]</visible>
+                    <visible>![Container.content(actors) | container.content(albums) | container.content(addons)]+[String.Contains(ListItem.StarRating,rating1)|String.Contains(ListItem.StarRating,rating2)|String.Contains(ListItem.StarRating,rating3)|String.Contains(ListItem.StarRating,rating4)|String.Contains(ListItem.StarRating,rating5)]</visible>
                     <control type="image">
                         <posx>1715</posx>
                         <posy>1009</posy>
@@ -146,9 +146,9 @@
             <include>Icon_Fade</include>
             <visible>Control.hasfocus(505050)</visible>
             <control type="group">
-                <visible>![StringCompare(Container(500).ListItem.Label,..)]</visible>
+                <visible>![String.IsEqual(Container(500).ListItem.Label,..)]</visible>
                 <control type="image">
-                    <visible>Control.HasFocus(505050)+!IsEmpty(Container(500).ListItem.Property(DBID))</visible>
+                    <visible>Control.HasFocus(505050)+!String.IsEmpty(Container(500).ListItem.Property(DBID))</visible>
                     <posx>50</posx>
                     <posy>925</posy>
                     <width>30</width>
@@ -203,7 +203,7 @@
                         <include>Stars</include>
                     </control>
                     <control type="label">
-                        <visible>[SubString(Container(500).ListItem.StarRating,rating1)|SubString(Container(500).ListItem.StarRating,rating2)|SubString(Container(500).ListItem.StarRating,rating3)|SubString(Container(500).ListItem.StarRating,rating4)|SubString(Container(500).ListItem.StarRating,rating5)]</visible>
+                        <visible>[String.Contains(Container(500).ListItem.StarRating,rating1)|String.Contains(Container(500).ListItem.StarRating,rating2)|String.Contains(Container(500).ListItem.StarRating,rating3)|String.Contains(Container(500).ListItem.StarRating,rating4)|String.Contains(Container(500).ListItem.StarRating,rating5)]</visible>
                         <posx>1690</posx>
                         <posy>1010</posy>
                         <height>33</height>
@@ -224,7 +224,7 @@
             <include>ScrollOffsetLabel_59</include>
             <control type="image">
                 <include>Icon_Fade</include>
-                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)</visible>
                 <posx>-100</posx>
                 <posy>569</posy>
                 <width>2258</width>
@@ -285,7 +285,7 @@
                 <focusedlayout height="550" width="274">
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                         <param name="x" value="27"/>
                         <param name="y" value="56"/>
                         <param name="width" value="220"/>
@@ -381,7 +381,7 @@
                 <control type="group">
                     <posy>219</posy>
                     <control type="group">
-                        <visible>!StringCompare(ListItem.Title,)+!StringCompare(ListItem.Label,..)</visible>
+                        <visible>!String.IsEqual(ListItem.Title,)+!String.IsEqual(ListItem.Label,..)</visible>
                         <control type="image">
                             <posx>92</posx>
                             <posy>399</posy>
@@ -400,7 +400,7 @@
                     </control>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                         <param name="x" value="45"/>
                         <param name="y" value="293"/>
                         <param name="width" value="264"/>
@@ -424,7 +424,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!StringCompare(ListItem.Title,)</visible>
+                    <visible>!String.IsEqual(ListItem.Title,)</visible>
                     <posx>344</posx>
                     <posy>645</posy>
                     <control type="label">
@@ -532,7 +532,7 @@
             <include>ScrollOffsetLabel_58</include>
             <control type="image">
                 <include>Icon_Fade</include>
-                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)</visible>
                 <posx>-100</posx>
                 <posy>629</posy>
                 <width>2258</width>
@@ -587,7 +587,7 @@
                 <focusedlayout height="553" width="384">
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                         <param name="x" value="37"/>
                         <param name="y" value="12"/>
                         <param name="width" value="310"/>
@@ -677,7 +677,7 @@
                 <control type="group">
                     <posy>279</posy>
                     <control type="group">
-                        <visible>!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
+                        <visible>!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)</visible>
                         <control type="image">
                             <posx>152</posx>
                             <posy>399</posy>
@@ -696,7 +696,7 @@
                     </control>
                     <!-- CDART MUSIC -->
                     <include content="DiscArt">
-                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                         <param name="x" value="45"/>
                         <param name="y" value="264"/>
                         <param name="width" value="321"/>
@@ -713,7 +713,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)+!Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
+                    <visible>!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
                     <posx>404</posx>
                     <posy>705</posy>
                     <control type="label">
@@ -788,7 +788,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)+Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
+                    <visible>!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)+Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
                     <posx>404</posx>
                     <posy>705</posy>
                     <control type="label">
@@ -832,7 +832,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)+![container.content(albums) | container.content(artists)]</visible>
+                    <visible>!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)+![container.content(albums) | container.content(artists)]</visible>
                     <posx>404</posx>
                     <posy>705</posy>
                     <control type="label">
@@ -918,7 +918,7 @@
             <include>ScrollOffsetLabel_57</include>
             <control type="image">
                 <include>Icon_Fade</include>
-                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!StringCompare(ListItem.Label,..)</visible>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)</visible>
                 <posx>-100</posx>
                 <posy>629</posy>
                 <width>2258</width>
@@ -1068,7 +1068,7 @@
                 <control type="group">
                     <posy>279</posy>
                     <control type="group">
-                        <visible>!StringCompare(ListItem.Title,)+!StringCompare(ListItem.Label,..)</visible>
+                        <visible>!String.IsEqual(ListItem.Title,)+!String.IsEqual(ListItem.Label,..)</visible>
                         <control type="image">
                             <posx>395</posx>
                             <posy>399</posy>
@@ -1102,7 +1102,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!StringCompare(ListItem.Title,)+!StringCompare(ListItem.Label,..)</visible>
+                    <visible>!String.IsEqual(ListItem.Title,)+!String.IsEqual(ListItem.Label,..)</visible>
                     <posx>647</posx>
                     <posy>705</posy>
                     <control type="label">

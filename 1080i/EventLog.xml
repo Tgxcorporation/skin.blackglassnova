@@ -26,8 +26,8 @@
             <include condition="!Skin.HasSetting(BlackGlassMode)">View_570_EventLog</include>
             <include condition="!Skin.HasSetting(BlackGlassMode)">Info_570_EventLog</include>
             <control type="group" id="81257">
-                <visible>[StringCompare(ListItem.Label,..)]|
-                    [IsEmpty(ListItem.Property(Event.Description))]|
+                <visible>[String.IsEqual(ListItem.Label,..)]|
+                    [String.IsEmpty(ListItem.Property(Event.Description))]|
                     [control.hasfocus(60)]</visible>
                 <include>Icon_Fade</include>
                 <control type="image">
@@ -50,8 +50,8 @@
                 <include condition="Skin.HasSetting(BlackGlassMode)">Info_570_EventLog_BG</include>
                 <!-- COMMON -->
                 <control type="group">
-                    <visible>[StringCompare(ListItem.Label,..)]|
-                        [IsEmpty(ListItem.Property(Event.Description))]</visible>
+                    <visible>[String.IsEqual(ListItem.Label,..)]|
+                        [String.IsEmpty(ListItem.Property(Event.Description))]</visible>
                     <include>Icon_Fade</include>
                     <control type="image">
                         <posx>18</posx>

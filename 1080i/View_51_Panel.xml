@@ -12,10 +12,10 @@
         <control type="group">
             <visible>Control.IsVisible(51)+
                 [
-                !IsEmpty(ListItem.Property(Artist_Description))|
-                !IsEmpty(ListItem.Property(Addon.Description))|
-                !IsEmpty(ListItem.Property(Album_Description))|
-                !IsEmpty(ListItem.Plot)
+                !String.IsEmpty(ListItem.Property(Artist_Description))|
+                !String.IsEmpty(ListItem.Property(Addon.Description))|
+                !String.IsEmpty(ListItem.Property(Album_Description))|
+                !String.IsEmpty(ListItem.Plot)
                 ]
                 +!Container.Content(songs)</visible>
             <include>Icon_Fade</include>
@@ -440,7 +440,7 @@
             <include>Icon_Fade</include>
             <!-- CDART MUSIC -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="130"/>
                 <param name="width" value="586"/>
@@ -449,7 +449,7 @@
             </include>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="236"/>
                 <param name="width" value="374"/>

@@ -13,10 +13,10 @@
             <include>HideMediaInfo</include>
             <visible>Control.IsVisible(54)+
                 ![
-                IsEmpty(ListItem.Property(Artist_Description))+
-                IsEmpty(ListItem.Property(Addon.Description))+
-                IsEmpty(ListItem.Property(Album_Description))+
-                IsEmpty(ListItem.Plot)
+                String.IsEmpty(ListItem.Property(Artist_Description))+
+                String.IsEmpty(ListItem.Property(Addon.Description))+
+                String.IsEmpty(ListItem.Property(Album_Description))+
+                String.IsEmpty(ListItem.Plot)
                 ]
                 +!Container.Content(songs)</visible>
             <include>Icon_Fade</include>
@@ -47,7 +47,7 @@
                 </control>
                 <!-- CDART MUSIC -->
                 <include content="DiscArt">
-                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                    <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                     <param name="x" value="51"/>
                     <param name="y" value="296"/>
                     <param name="width" value="254"/>
@@ -56,7 +56,7 @@
                 </include>
                 <!-- CDART VIDEO -->
                 <include content="DiscArt">
-                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                    <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                     <param name="x" value="51"/>
                     <param name="y" value="296"/>
                     <param name="width" value="254"/>
@@ -287,7 +287,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(54).NumItems,4)</visible>
+                    <visible>!Integer.IsGreater(Container(54).NumItems,4)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>1440</width>
@@ -314,7 +314,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <visible allowhiddenfocus="true">IntegerGreaterThan(Container(54).NumItems,4)</visible>
+                <visible allowhiddenfocus="true">Integer.IsGreater(Container(54).NumItems,4)</visible>
                 <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
                 <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
                 <posx>1899</posx>
@@ -409,7 +409,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(Container(54).ListItem.Property(Property4))</visible>
+                    <visible>!String.IsEmpty(Container(54).ListItem.Property(Property4))</visible>
                     <posx>TextMargin</posx>
                     <posy>146</posy>
                     <width>660</width>
@@ -419,7 +419,7 @@
                     <label>$INFO[Container(54).ListItem.Property(Property4)]</label>
                 </control>
                 <control type="label">
-                    <visible>IsEmpty(Container(54).ListItem.Property(Property4))+IsEmpty(Container(54).ListItem.Property(Property7))</visible>
+                    <visible>String.IsEmpty(Container(54).ListItem.Property(Property4))+String.IsEmpty(Container(54).ListItem.Property(Property7))</visible>
                     <posx>TextMargin</posx>
                     <posy>146</posy>
                     <width>660</width>
@@ -429,7 +429,7 @@
                     <label>$INFO[Container(54).ListItem.Property(Property1),$LOCALIZE[393]: ]</label>
                 </control>
                 <control type="label">
-                    <visible>!IsEmpty(Container(54).ListItem.Property(Property7))</visible>
+                    <visible>!String.IsEmpty(Container(54).ListItem.Property(Property7))</visible>
                     <posx>705</posx>
                     <posy>146</posy>
                     <width>660</width>
@@ -440,7 +440,7 @@
                     <label>$INFO[Container(54).ListItem.Property(Property7)]</label>
                 </control>
                 <control type="label">
-                    <visible>IsEmpty(Container(54).ListItem.Property(Property4))+IsEmpty(Container(54).ListItem.Property(Property7))</visible>
+                    <visible>String.IsEmpty(Container(54).ListItem.Property(Property4))+String.IsEmpty(Container(54).ListItem.Property(Property7))</visible>
                     <posx>705</posx>
                     <posy>146</posy>
                     <width>660</width>
@@ -534,7 +534,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!IntegerGreaterThan(Container(54).NumItems,4)</visible>
+                    <visible>!Integer.IsGreater(Container(54).NumItems,4)</visible>
                     <posx>1260</posx>
                     <posy>937</posy>
                     <width>660</width>
@@ -580,7 +580,7 @@
             <posy>219</posy>
             <!-- CDART MUSIC -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="45"/>
                 <param name="y" value="236"/>
                 <param name="width" value="378"/>
@@ -589,7 +589,7 @@
             </include>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="45"/>
                 <param name="y" value="294"/>
                 <param name="width" value="256"/>
