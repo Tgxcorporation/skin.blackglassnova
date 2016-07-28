@@ -34,7 +34,7 @@
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
-                <label>$INFO[ListItem.Property(Addon.Name),$LOCALIZE[24003] - ]</label>
+                <label>$INFO[ListItem.AddonName,$LOCALIZE[24003] - ]</label>
             </control>
             <control type="image">
                 <posx>1309</posx>
@@ -139,7 +139,7 @@
                     <posy>0</posy>
                     <width>1041</width>
                     <height>71</height>
-                    <label>$LOCALIZE[146] $INFO[ListItem.Property(Addon.Type)]</label>
+                    <label>$LOCALIZE[146] $INFO[ListItem.AddonType]</label>
                     <font>InfoDetailsFont</font>
                     <textcolor>MainColor</textcolor>
                 </control>
@@ -155,7 +155,7 @@
                     <posy>73</posy>
                     <width>1041</width>
                     <height>71</height>
-                    <label>$LOCALIZE[21863]: $INFO[ListItem.Property(Addon.Creator)]</label>
+                    <label>$LOCALIZE[21863]: $INFO[ListItem.AddonCreator]</label>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
                 </control>
@@ -171,7 +171,7 @@
                     <posy>146</posy>
                     <width>1041</width>
                     <height>71</height>
-                    <label>$LOCALIZE[24051] $INFO[ListItem.Property(Addon.Version)]</label>
+                    <label>$LOCALIZE[24051] $INFO[ListItem.AddonVersion]</label>
                     <font>InfoDetailsFont</font>
                     <textcolor>MainColor</textcolor>
                 </control>
@@ -187,7 +187,7 @@
                     <posy>219</posy>
                     <width>1041</width>
                     <height>71</height>
-                    <label>$LOCALIZE[20037]: $INFO[ListItem.Property(Addon.Summary)]</label>
+                    <label>$LOCALIZE[20037]: $INFO[ListItem.AddonSummary]</label>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
                     <scrollout>false</scrollout>
@@ -200,7 +200,7 @@
                     <height>440</height>
                     <font>InfoPlotFont</font>
                     <align>justify</align>
-                    <label>$INFO[ListItem.Property(Addon.Description)]</label>
+                    <label>$INFO[ListItem.AddonDescription]</label>
                     <pagecontrol>6060</pagecontrol>
                 </control>
                 <control type="scrollbar" id="6060">
@@ -220,22 +220,22 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
-                    <visible>String.IsEmpty(ListItem.Property(Addon.broken))</visible>
+                    <visible>String.IsEmpty(ListItem.AddonBroken)</visible>
                     <posx>228</posx>
                     <posy>768</posy>
                     <width>1041</width>
                     <height>71</height>
                     <font>InfoDetailsFont</font>
-                    <label>$INFO[ListItem.Property(Addon.Disclaimer),[COLOR=WarningColor]$LOCALIZE[24052]: [/COLOR]]</label>
+                    <label>$INFO[ListItem.AddonDisclaimer,[COLOR=WarningColor]$LOCALIZE[24052]: [/COLOR]]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(ListItem.Property(Addon.broken))</visible>
+                    <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
                     <posx>228</posx>
                     <posy>768</posy>
                     <width>1041</width>
                     <height>71</height>
                     <font>InfoDetailsFont</font>
-                    <label>$INFO[ListItem.Property(Addon.broken),[COLOR=WarningColor]$LOCALIZE[24096]: [/COLOR]]</label>
+                    <label>$INFO[ListItem.AddonBroken,[COLOR=WarningColor]$LOCALIZE[24096]: [/COLOR]]</label>
                 </control>
             </control>
         </control>

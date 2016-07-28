@@ -6,7 +6,7 @@
             [Container.Content(Albums) + !String.IsEmpty(ListItem.Artist)]|
             [Container.Content(Episodes) + !String.IsEmpty(ListItem.Duration)]|
             [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !String.IsEqual(ListItem.Label,..) ]|
-            [Container.Content(Addons) + !String.IsEmpty(ListItem.Property(Addon.Creator))]|
+            [Container.Content(Addons) + !String.IsEmpty(ListItem.AddonCreator)]|
             [Container.Content(Songs) + !String.IsEmpty(ListItem.Album)]|
             [Container.Content(Artists) + [!String.IsEmpty(ListItem.Property(artist_genre)) | !String.IsEmpty(ListItem.Property(artist_style))]]|
             [Container.Content(MusicVideos) + !String.IsEmpty(ListItem.Duration)]|
@@ -25,7 +25,7 @@
             [Container.Content(Albums) + !String.IsEmpty(ListItem.Artist)]|
             [Container.Content(Episodes) + !String.IsEmpty(ListItem.Duration)]|
             [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !String.IsEqual(ListItem.Label,..) ]|
-            [Container.Content(Addons) + !String.IsEmpty(ListItem.Property(Addon.Creator))]|
+            [Container.Content(Addons) + !String.IsEmpty(ListItem.AddonCreator)]|
             [Container.Content(Songs) + !String.IsEmpty(ListItem.Album)]|
             [Container.Content(Artists) + [!String.IsEmpty(ListItem.Property(artist_genre)) | !String.IsEmpty(ListItem.Property(artist_style))]]|
             [Container.Content(MusicVideos) + !String.IsEmpty(ListItem.Duration)]|
@@ -84,7 +84,7 @@
             <visible>Control.IsVisible(50)+
                 [
                 !String.IsEmpty(ListItem.Property(Artist_Description))|
-                !String.IsEmpty(ListItem.Property(Addon.Description))|
+                !String.IsEmpty(ListItem.AddonDescription)|
                 !String.IsEmpty(ListItem.Property(Album_Description))|
                 !String.IsEmpty(ListItem.Plot)
                 ]
@@ -151,7 +151,7 @@
                             <height>71</height>
                             <font>InfoDetailsFont</font>
                             <textcolor>MainColor</textcolor>
-                            <label>$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]</label>
+                            <label>$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]</label>
                         </control>
                     </control>
                     <control type="label">

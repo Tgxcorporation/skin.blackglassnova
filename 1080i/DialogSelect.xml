@@ -120,7 +120,7 @@
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="label">
-                        <visible>[String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.Property(Addon.Version))+String.IsEmpty(ListItem.Property(Addon.Creator))]</visible>
+                        <visible>[String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <height>71</height>
                         <width>905</width>
@@ -130,7 +130,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.Property(Addon.Version))+String.IsEmpty(ListItem.Property(Addon.Creator))]</visible>
+                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <height>42</height>
                         <width>905</width>
@@ -140,14 +140,14 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.Property(Addon.Version))+String.IsEmpty(ListItem.Property(Addon.Creator))]</visible>
+                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <posy>39</posy>
                         <height>28</height>
                         <width>905</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[ListItem.Label2]$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]$INFO[ListItem.Property(Addon.Creator),  •  $LOCALIZE[21863]: ]</label>
+                        <label>$INFO[ListItem.Label2]$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]$INFO[ListItem.AddonCreator,  •  $LOCALIZE[21863]: ]</label>
                         <scroll>false</scroll>
                     </control>
                 </itemlayout>
@@ -160,7 +160,7 @@
                         <include>FacadeFocus</include>
                     </control>
                     <control type="label">
-                        <visible>[String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.Property(Addon.Version))+String.IsEmpty(ListItem.Property(Addon.Creator))]</visible>
+                        <visible>[String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <height>71</height>
                         <width>915</width>
@@ -169,7 +169,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.Property(Addon.Version))+String.IsEmpty(ListItem.Property(Addon.Creator))]</visible>
+                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <height>42</height>
                         <width>905</width>
@@ -178,14 +178,14 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.Property(Addon.Version))+String.IsEmpty(ListItem.Property(Addon.Creator))]</visible>
+                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <posy>39</posy>
                         <height>28</height>
                         <width>905</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[ListItem.Label2]$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]$INFO[ListItem.Property(Addon.Creator),  •  $LOCALIZE[21863]: ]</label>
+                        <label>$INFO[ListItem.Label2]$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]$INFO[ListItem.AddonCreator,  •  $LOCALIZE[21863]: ]</label>
                     </control>
                 </focusedlayout>
             </control>

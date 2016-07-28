@@ -12,7 +12,7 @@
             <visible>Control.IsVisible(55)+
                 [
                 !String.IsEmpty(ListItem.Property(Artist_Description))|
-                !String.IsEmpty(ListItem.Property(Addon.Description))|
+                !String.IsEmpty(ListItem.AddonDescription)|
                 !String.IsEmpty(ListItem.Property(Album_Description))|
                 !String.IsEmpty(ListItem.Plot)
                 ]
@@ -77,7 +77,7 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>MainColor</textcolor>
-                        <label>$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]</label>
+                        <label>$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]</label>
                     </control>
                 </control>
                 <control type="label">
@@ -404,7 +404,7 @@
                 <height>68</height>
                 <font>FacadeNumItemsFont</font>
                 <textcolor>MainColor</textcolor>
-                <label>[B]$INFO[ListItem.Label][/B]$INFO[ListItem.Property(Addon.Version), ]</label>
+                <label>[B]$INFO[ListItem.Label][/B]$INFO[ListItem.AddonVersion, ]</label>
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>

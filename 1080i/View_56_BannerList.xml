@@ -14,7 +14,7 @@
             <visible>Control.IsVisible(56)+
                 [
                 !String.IsEmpty(ListItem.Property(Artist_Description))|
-                !String.IsEmpty(ListItem.Property(Addon.Description))|
+                !String.IsEmpty(ListItem.AddonDescription)|
                 !String.IsEmpty(ListItem.Property(Album_Description))|
                 !String.IsEmpty(ListItem.Plot)
                 ]
