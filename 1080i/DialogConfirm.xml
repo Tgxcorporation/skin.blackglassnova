@@ -22,7 +22,7 @@
                 <posx>326</posx>
                 <posy>277</posy>
                 <control type="label" id="1">
-                    <animation effect="slide" start="0,0" end="0,10" time="0" condition="String.IsEmpty(Control.GetLabel(20))">Conditional</animation>
+                    <animation effect="slide" start="0,0" end="0,10" time="0" condition="Integer.IsEqual(Control.GetLabel(20),0)">Conditional</animation>
                     <posx>45</posx>
                     <posy>7</posy>
                     <width>1179</width>
