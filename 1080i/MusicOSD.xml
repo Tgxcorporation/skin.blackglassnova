@@ -6,7 +6,7 @@
     <controls>
         <control type="group">
             <visible>![Skin.HasSetting(DisableOSDInfoOnPause)+Player.Paused]</visible>
-            <visible>![window.IsActive(DialogVolumeBar.xml)|window.IsActive(DialogMuteBug.xml)]</visible>
+            <visible>![window.IsActive(DialogVolumeBar.xml)]</visible>
             <include>OSDFade</include>
             <control type="image">
                 <posx>-150</posx>
