@@ -10,7 +10,7 @@
                 <!-- default group -->
                 <visible>![Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)|Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml)]</visible>
                 <posy>-4</posy>
-                <include name="WindowClosingButton">
+                <include content="WindowClosingButton">
                     <param name="id" value="0"/>
                     <param name="x" value="1737"/>
                     <param name="y" value="21"/>

@@ -64,7 +64,7 @@
                         <texture>list/bg_facade_vertical.png</texture>
                     </control>
                     <!-- CDART MUSIC -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(Player.Art(thumb))"/>
                         <param name="x" value="135"/>
                         <param name="y" value="565"/>

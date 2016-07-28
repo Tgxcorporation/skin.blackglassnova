@@ -78,7 +78,7 @@
                 <height>54</height>
                 <texture border="3">OSD/osd_progress_background.png</texture>
             </control>
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="0"/>
                 <param name="visible" value="Player.Caching"/>
                 <param name="x" value="0"/>
@@ -94,7 +94,7 @@
                 <param name="info" value="Player.CacheLevel"/>
                 <param name="reveal" value="false"/>
             </include>
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="0"/>
                 <param name="visible" value="true"/>
                 <param name="x" value="0"/>
@@ -110,7 +110,7 @@
                 <param name="info" value="Player.ProgressCache"/>
                 <param name="reveal" value="false"/>
             </include>
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="23"/>
                 <param name="visible" value="true"/>
                 <param name="x" value="0"/>
@@ -126,7 +126,7 @@
                 <param name="info" value="Player.Progress"/>
                 <param name="reveal" value="false"/>
             </include>
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="0"/>
                 <param name="visible" value="PVR.IsTimeshift"/>
                 <param name="x" value="0"/>

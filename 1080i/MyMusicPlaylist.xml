@@ -219,7 +219,7 @@
                 <onright>9001</onright>
             </control>
             <!-- CDART MUSIC -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="1440"/>
                 <param name="y" value="792"/>

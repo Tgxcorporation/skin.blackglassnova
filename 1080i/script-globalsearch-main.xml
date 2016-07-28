@@ -52,7 +52,7 @@
                 <control type="label" id="210">
                     <include>HiddenButton</include>
                 </control>
-                <include name="WindowClosingButton">
+                <include content="WindowClosingButton">
                     <param name="id" value="0"/>
                     <param name="x" value="1737"/>
                     <param name="y" value="21"/>

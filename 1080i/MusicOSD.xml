@@ -71,7 +71,7 @@
                 <height>54</height>
                 <texture border="3">OSD/osd_progress_background.png</texture>
             </control>
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="23"/>
                 <param name="visible" value="true"/>
                 <param name="x" value="0"/>

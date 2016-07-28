@@ -92,7 +92,7 @@
             <include>Icon_Fade</include>
             <posy>37</posy>
             <!-- CDART MUSIC -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="320"/>
                 <param name="y" value="187"/>
@@ -101,7 +101,7 @@
                 <param name="texture" value="$VAR[MusicCdArt]"/>
             </include>
             <!-- CDART VIDEO -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="138"/>
                 <param name="y" value="137"/>
@@ -255,7 +255,7 @@
                 <width>1180</width>
                 <texture border="3">list/bg_facade_nofocus.png</texture>
             </control>
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="0"/>
                 <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                 <param name="x" value="0"/>
@@ -305,7 +305,7 @@
             <include>ListWatchedOverlayNoFocus_BG</include>
         </itemlayout>
         <focusedlayout height="73" width="1180">
-            <include name="ProgressBar">
+            <include content="ProgressBar">
                 <param name="id" value="0"/>
                 <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                 <param name="x" value="0"/>
@@ -364,7 +364,7 @@
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
             <include>ScrollOffsetLabel_50_BG</include>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="875"/>
                 <param name="y" value="10"/>
                 <param name="width" value="300"/>
@@ -373,7 +373,7 @@
                 <param name="align" value="left"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="1175"/>
                 <param name="y" value="20"/>
                 <param name="width" value="300"/>
@@ -512,7 +512,7 @@
         <control type="group">
             <control type="group">
                 <include>ScrollOffsetLabel_50_BG</include>
-                <include name="ClearArtLogo">
+                <include content="ClearArtLogo">
                     <param name="x" value="875"/>
                     <param name="y" value="10"/>
                     <param name="width" value="300"/>
@@ -521,7 +521,7 @@
                     <param name="align" value="left"/>
                     <param name="aligny" value="bottom"/>
                 </include>
-                <include name="StudioArt">
+                <include content="StudioArt">
                     <param name="x" value="1175"/>
                     <param name="y" value="20"/>
                     <param name="width" value="300"/>
@@ -1221,7 +1221,7 @@
             <include>Icon_Fade</include>
             <posy>37</posy>
             <!-- CDART MUSIC -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="320"/>
                 <param name="y" value="187"/>
@@ -1230,7 +1230,7 @@
                 <param name="texture" value="$VAR[MusicCdArt]"/>
             </include>
             <!-- CDART VIDEO -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="138"/>
                 <param name="y" value="137"/>

@@ -137,7 +137,7 @@
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
             <!-- CDART MUSIC -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="221"/>
@@ -146,7 +146,7 @@
                 <param name="texture" value="$VAR[MusicCdArt]"/>
             </include>
             <!-- CDART VIDEO -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="221"/>
@@ -367,7 +367,7 @@
             </control>
             <control type="group">
                 <include>ConditionLargeList</include>
-                <include name="ProgressBar">
+                <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                     <param name="x" value="0"/>
@@ -417,7 +417,7 @@
             </control>
             <control type="group">
                 <include>ConditionShortList</include>
-                <include name="ProgressBar">
+                <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                     <param name="x" value="0"/>
@@ -477,7 +477,7 @@
             </control>
             <control type="group">
                 <include>ConditionLargeList</include>
-                <include name="ProgressBar">
+                <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                     <param name="x" value="0"/>
@@ -524,7 +524,7 @@
             </control>
             <control type="group">
                 <include>ConditionShortList</include>
-                <include name="ProgressBar">
+                <include content="ProgressBar">
                     <param name="id" value="0"/>
                     <param name="visible" value="IntegerGreaterThan(ListItem.PercentPlayed,0)"/>
                     <param name="x" value="0"/>
@@ -576,7 +576,7 @@
         <control type="group">
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="345r"/>
                 <param name="y" value="150"/>
                 <param name="width" value="300"/>
@@ -585,7 +585,7 @@
                 <param name="align" value="right"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="904"/>
                 <param name="y" value="245"/>
                 <param name="width" value="300"/>
@@ -791,7 +791,7 @@
     </include>
     <include name="View_50_ExtendedInfo">
         <control type="group">
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="345r"/>
                 <param name="y" value="150"/>
                 <param name="width" value="300"/>
@@ -800,7 +800,7 @@
                 <param name="align" value="right"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="904"/>
                 <param name="y" value="245"/>
                 <param name="width" value="300"/>
@@ -1375,7 +1375,7 @@
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
             <!-- CDART MUSIC -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="236"/>
@@ -1384,7 +1384,7 @@
                 <param name="texture" value="$VAR[MusicCdArt]"/>
             </include>
             <!-- CDART VIDEO -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="236"/>

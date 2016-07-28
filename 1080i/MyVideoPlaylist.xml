@@ -19,7 +19,7 @@
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-154</posy>
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="0"/>
                 <param name="x" value="1637"/>
                 <param name="y" value="240"/>
@@ -201,7 +201,7 @@
                 <onright>9001</onright>
             </control>
             <!-- CDART VIDEO -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="1385"/>
                 <param name="y" value="792"/>

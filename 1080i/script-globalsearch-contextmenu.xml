@@ -15,7 +15,7 @@
             <control type="group">
                 <animation effect="slide" time="0" start="0,0" end="0,-35" condition="control.isvisible(1002)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,-36" condition="control.isvisible(1003)">conditional</animation>
-                <include name="WindowClosingButton">
+                <include content="WindowClosingButton">
                     <param name="id" value="0"/>
                     <param name="x" value="617"/>
                     <param name="y" value="-24"/>

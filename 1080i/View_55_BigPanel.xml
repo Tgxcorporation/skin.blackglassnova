@@ -223,7 +223,7 @@
     <include name="View_55_BigPanel">
         <control type="group">
             <visible>Control.IsVisible(55)</visible>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="1003"/>
                 <param name="y" value="10"/>
                 <param name="width" value="300"/>
@@ -232,7 +232,7 @@
                 <param name="align" value="left"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="350"/>
                 <param name="y" value="10"/>
                 <param name="width" value="300"/>
@@ -482,7 +482,7 @@
             <visible>Control.IsVisible(55)</visible>
             <include>Icon_Fade</include>
             <!-- CDART MUSIC -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="91"/>
                 <param name="y" value="540"/>
@@ -491,7 +491,7 @@
                 <param name="texture" value="$VAR[MusicCdArt]"/>
             </include>
             <!-- CDART VIDEO -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="588"/>

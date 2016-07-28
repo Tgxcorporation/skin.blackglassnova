@@ -10,7 +10,7 @@
     <include name="View_53_Grid">
         <control type="group">
             <visible>Control.IsVisible(53)</visible>
-            <include name="ClearArtLogo">
+            <include content="ClearArtLogo">
                 <param name="x" value="715"/>
                 <param name="y" value="10"/>
                 <param name="width" value="150"/>
@@ -19,7 +19,7 @@
                 <param name="align" value="right"/>
                 <param name="aligny" value="bottom"/>
             </include>
-            <include name="StudioArt">
+            <include content="StudioArt">
                 <param name="x" value="1055"/>
                 <param name="y" value="10"/>
                 <param name="width" value="150"/>

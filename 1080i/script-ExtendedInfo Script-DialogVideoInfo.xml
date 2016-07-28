@@ -10,7 +10,7 @@
             <control type="group">
                 <visible>!Window.IsVisible(FileBrowser)</visible>
                 <posy>-4</posy>
-                <include name="WindowClosingButton">
+                <include content="WindowClosingButton">
                     <param name="id" value="0"/>
                     <param name="x" value="1737"/>
                     <param name="y" value="21"/>
@@ -80,7 +80,7 @@
                     <posx>178</posx>
                     <posy>163</posy>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="1290"/>
                         <param name="y" value="392"/>
@@ -1439,7 +1439,7 @@
                     <posx>178</posx>
                     <posy>163</posy>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="1290"/>
                         <param name="y" value="392"/>
@@ -1526,7 +1526,7 @@
                     <posx>178</posx>
                     <posy>163</posy>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="1290"/>
                         <param name="y" value="392"/>
@@ -1613,7 +1613,7 @@
                     <posx>178</posx>
                     <posy>163</posy>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="1290"/>
                         <param name="y" value="392"/>
@@ -1716,7 +1716,7 @@
                     <posx>178</posx>
                     <posy>163</posy>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="1290"/>
                         <param name="y" value="392"/>
@@ -1891,7 +1891,7 @@
                     <posx>178</posx>
                     <posy>163</posy>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="1290"/>
                         <param name="y" value="392"/>
@@ -1978,7 +1978,7 @@
                     <posx>178</posx>
                     <posy>163</posy>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="1290"/>
                         <param name="y" value="392"/>
@@ -2044,7 +2044,7 @@
                     <posx>178</posx>
                     <posy>163</posy>
                     <!-- CDART VIDEO -->
-                    <include name="DiscArt">
+                    <include content="DiscArt">
                         <param name="visible" value="!IsEmpty(Window.Property(Poster))+[Container.content(movies)|Container.content(MusicVideos)]"/>
                         <param name="x" value="1290"/>
                         <param name="y" value="392"/>

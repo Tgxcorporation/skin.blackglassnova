@@ -1017,7 +1017,7 @@
     <include name="OSDInfoPanel">
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-            <include name="WindowClosingButton">
+            <include content="WindowClosingButton">
                 <param name="id" value="9001"/>
                 <param name="x" value="1637"/>
                 <param name="y" value="479"/>
@@ -1085,7 +1085,7 @@
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
             <!-- CDART VIDEO -->
-            <include name="DiscArt">
+            <include content="DiscArt">
                 <param name="visible" value="!IsEmpty(VideoPlayer.Cover)+!VideoPlayer.Content(LiveTV)+!VideoPlayer.Content(episodes)"/>
                 <param name="x" value="147"/>
                 <param name="y" value="565"/>
