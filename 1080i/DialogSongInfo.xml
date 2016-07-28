@@ -67,6 +67,7 @@
                 <control type="button" id="7">
                     <include>RightDialogButton</include>
                     <label>$LOCALIZE[38023]</label>
+                    <visible>Control.IsEnabled(7)</visible>
                 </control>
                 <control type="button" id="500">
                     <visible>System.HasAddon(script.extendedinfo)</visible>
@@ -101,14 +102,14 @@
                 <include>SquareThumb</include>
                 <include>ThumbBorder</include>
             </control>
-            <control type="image">
-                <posx>1342</posx>
-                <posy>1147</posy>
-                <width>370</width>
-                <height>36</height>
-                <aspectratio>keep</aspectratio>
-                <texture>$INFO[ListItem.StarRating]</texture>
-            </control>
+            <!--<control type="image">-->
+                <!--<posx>1342</posx>-->
+                <!--<posy>1147</posy>-->
+                <!--<width>370</width>-->
+                <!--<height>36</height>-->
+                <!--<aspectratio>keep</aspectratio>-->
+                <!--<texture>$INFO[ListItem.StarRating]</texture>-->
+            <!--</control>-->
             <!--SONG INFO-->
             <control type="group" id="4900">
                 <visible>![Control.HasFocus(500)|
@@ -213,6 +214,18 @@
                             <label2>$INFO[ListItem.TrackNumber]</label2>
                             <onclick>noop</onclick>
                             <visible>!IsEmpty(ListItem.TrackNumber)</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[563]:</label>
+                            <label2>$INFO[ListItem.RatingAndVotes]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
+                        </item>
+                        <item>
+                            <label>$LOCALIZE[38018]:</label>
+                            <label2>$INFO[ListItem.Userrating]</label2>
+                            <onclick>noop</onclick>
+                            <visible>!IsEmpty(ListItem.Userrating)</visible>
                         </item>
                         <item>
                             <label>$LOCALIZE[427]:</label>
