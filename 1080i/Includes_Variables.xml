@@ -58,6 +58,7 @@
         <value condition="[Window.IsActive(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType.2),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType.2),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <value condition="[Window.IsActive(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType.3),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType.3),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <value condition="[Window.IsActive(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType.4),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType.4),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
+        <value condition="Window.IsVisible(DialogMusicInfo.xml)+Control.hasfocus(50)+String.IsEqual(ListItem.DBType,artist)">$INFO[Container(50).ListItem.Thumb]</value>
         <!--NORMAL-->
         <value condition="String.IsEqual(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
         <value condition="!String.IsEmpty(ListItem.Art(poster))+!String.StartsWith(ListItem.Art(poster),Default)">$INFO[ListItem.Art(poster)]</value>
@@ -821,5 +822,10 @@
     <variable name="Picked.Overlay.Color">
         <value condition="!String.IsEmpty(Skin.String(PickedColor.Overlay))+Skin.HasSetting(Overlay.Color.Custom)">$INFO[Skin.String(PickedColor.Overlay)]</value>
         <value>ffffffff</value>
+    </variable>
+    <variable name="MusicInfoTextboxVar">
+        <value condition="Container.Content(songs)">$INFO[ListItem.ContributorAndRole] $INFO[ListItem.Comment]</value>
+        <value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Description)]</value>
+        <value>$INFO[ListItem.Property(Artist_Description)]</value>
     </variable>
 </includes>
