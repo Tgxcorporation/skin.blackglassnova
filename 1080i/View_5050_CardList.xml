@@ -115,7 +115,7 @@
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
                                 <textcolor>AlternateColor</textcolor>
-                                <label>$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]</label>
+                                <label>$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]$INFO[ListItem.AddonSize,  •  $LOCALIZE[21802]: ]</label>
                             </control>
                         </control>
                         <control type="image">
@@ -270,7 +270,7 @@
                                 <height>71</height>
                                 <font>InfoDetailsFont</font>
                                 <textcolor>AlternateColor</textcolor>
-                                <label>$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]</label>
+                                <label>$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]$INFO[ListItem.AddonSize,  •  $LOCALIZE[21802]: ]</label>
                             </control>
                         </control>
                         <control type="image">
