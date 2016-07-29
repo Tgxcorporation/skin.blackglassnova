@@ -110,7 +110,7 @@
                 <width>359</width>
                 <height>225</height>
                 <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
-                <texture flipx="true" background="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture flipx="true" background="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$INFO[ListItem.Icon]</texture>
                 <bordertexture diffuse="common/Thumb_Mask.png" border="27">common/JewelCase.png</bordertexture>
                 <bordersize>27</bordersize>
             </control>
@@ -133,7 +133,7 @@
                 <width>390</width>
                 <height>243</height>
                 <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
-                <texture flipx="true" background="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$VAR[Thumbs]</texture>
+                <texture flipx="true" background="true" diffuse="common/Thumb_Mask.png" fallback="defaultIconBig.png">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorderOverlayDiffused</include>
             </control>
         </focusedlayout>
