@@ -13,7 +13,7 @@
             <control type="group">
                 <posy>127</posy>
                 <control type="group">
-                    <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>ListItem.IsParentFolder</visible>
                     <posx>725</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -26,7 +26,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>!ListItem.IsParentFolder</visible>
                     <posx>145</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -159,7 +159,7 @@
             <control type="group">
                 <posy>127</posy>
                 <control type="group">
-                    <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>ListItem.IsParentFolder</visible>
                     <posx>725</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -172,7 +172,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>!ListItem.IsParentFolder</visible>
                     <posx>145</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -314,7 +314,7 @@
             <control type="group">
                 <posy>127</posy>
                 <control type="group">
-                    <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>ListItem.IsParentFolder</visible>
                     <posx>725</posx>
                     <control type="image">
                         <posx>0</posx>
@@ -326,7 +326,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>!ListItem.IsParentFolder</visible>
                     <posx>145</posx>
                     <control type="image">
                         <posx>-21</posx>
@@ -490,7 +490,7 @@
             <control type="group">
                 <posy>127</posy>
                 <control type="group">
-                    <visible>String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>ListItem.IsParentFolder</visible>
                     <posx>725</posx>
                     <control type="image">
                         <posx>0</posx>
@@ -502,7 +502,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>!ListItem.IsParentFolder</visible>
                     <posx>145</posx>
                     <control type="image">
                         <posx>-21</posx>

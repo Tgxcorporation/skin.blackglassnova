@@ -58,7 +58,7 @@
             <visible>![Control.HasFocus(7000)|Control.hasfocus(6069)]</visible>
             <visible>Control.hasfocus(505050)|[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]</visible>
             <control type="group">
-                <visible>![String.IsEqual(ListItem.Label,..)]</visible>
+                <visible>![ListItem.IsParentFolder]</visible>
                 <animation effect="slide" time="0" start="0,0" end="0,40" condition="[!control.isvisible(45741)+!control.isvisible(45742)]">Conditional</animation>
                 <control type="label">
                     <animation effect="slide" time="0" start="0,0" end="0,25" condition="String.IsEmpty(control.getlabel(45742))">Conditional</animation>
@@ -224,7 +224,7 @@
             <include>ScrollOffsetLabel_59</include>
             <control type="image">
                 <include>Icon_Fade</include>
-                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)</visible>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                 <posx>-100</posx>
                 <posy>569</posy>
                 <width>2258</width>
@@ -381,7 +381,7 @@
                 <control type="group">
                     <posy>219</posy>
                     <control type="group">
-                        <visible>!String.IsEqual(ListItem.Title,)+!String.IsEqual(ListItem.Label,..)</visible>
+                        <visible>!String.IsEqual(ListItem.Title,)+!ListItem.IsParentFolder</visible>
                         <control type="image">
                             <posx>92</posx>
                             <posy>399</posy>
@@ -532,7 +532,7 @@
             <include>ScrollOffsetLabel_58</include>
             <control type="image">
                 <include>Icon_Fade</include>
-                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)</visible>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                 <posx>-100</posx>
                 <posy>629</posy>
                 <width>2258</width>
@@ -677,7 +677,7 @@
                 <control type="group">
                     <posy>279</posy>
                     <control type="group">
-                        <visible>!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)</visible>
+                        <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                         <control type="image">
                             <posx>152</posx>
                             <posy>399</posy>
@@ -713,7 +713,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)+!Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
+                    <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
                     <posx>404</posx>
                     <posy>705</posy>
                     <control type="label">
@@ -788,7 +788,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)+Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
+                    <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder+Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
                     <posx>404</posx>
                     <posy>705</posy>
                     <control type="label">
@@ -832,7 +832,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)+![container.content(albums) | container.content(artists)]</visible>
+                    <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder+![container.content(albums) | container.content(artists)]</visible>
                     <posx>404</posx>
                     <posy>705</posy>
                     <control type="label">
@@ -918,7 +918,7 @@
             <include>ScrollOffsetLabel_57</include>
             <control type="image">
                 <include>Icon_Fade</include>
-                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!String.IsEqual(ListItem.Label,..)</visible>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                 <posx>-100</posx>
                 <posy>629</posy>
                 <width>2258</width>
@@ -1068,7 +1068,7 @@
                 <control type="group">
                     <posy>279</posy>
                     <control type="group">
-                        <visible>!String.IsEqual(ListItem.Title,)+!String.IsEqual(ListItem.Label,..)</visible>
+                        <visible>!String.IsEqual(ListItem.Title,)+!ListItem.IsParentFolder</visible>
                         <control type="image">
                             <posx>395</posx>
                             <posy>399</posy>
@@ -1102,7 +1102,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Title,)+!String.IsEqual(ListItem.Label,..)</visible>
+                    <visible>!String.IsEqual(ListItem.Title,)+!ListItem.IsParentFolder</visible>
                     <posx>647</posx>
                     <posy>705</posy>
                     <control type="label">

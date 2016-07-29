@@ -38,7 +38,7 @@
             <include condition="!Skin.HasSetting(BlackGlassMode)">View_5050_CardList</include>
             <!-- COMMON -->
             <control type="group">
-                <visible>[String.IsEqual(ListItem.Label,..)+
+                <visible>[ListItem.IsParentFolder+
                     ![Control.IsVisible(5050)|Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]|
                     [[Control.IsVisible(50)|Control.IsVisible(51)|Control.IsVisible(52)|Control.IsVisible(54)|Control.IsVisible(55)]+String.IsEmpty(ListItem.AddonDescription)+String.IsEmpty(ListItem.Plot)]|
                     [control.hasfocus(60)+[Control.IsVisible(50)|Control.IsVisible(52)|Control.IsVisible(54)]]</visible>
@@ -66,7 +66,7 @@
                 <include condition="Skin.HasSetting(BlackGlassMode)">View_5050_CardList</include>
                 <!-- COMMON -->
                 <control type="group">
-                    <visible>[String.IsEqual(ListItem.Label,..)+
+                    <visible>[ListItem.IsParentFolder+
                         ![Control.IsVisible(5050)|Control.IsVisible(53)|Control.IsVisible(57)|Control.IsVisible(58)|Control.IsVisible(59)]]
                         |[[Control.IsVisible(50)|Control.IsVisible(55)]+String.IsEmpty(ListItem.AddonDescription)+String.IsEmpty(ListItem.Plot)]</visible>
                     <include>Icon_Fade</include>
@@ -117,17 +117,6 @@
                     <height>2</height>
                     <texture border="0,0,0,2">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="button" id="5">
-                    <description>addon-updates</description>
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[24063]</label>
-                </control>
-                <control type="radiobutton" id="6">
-                    <description>No notifications</description>
-                    <textwidth>450</textwidth>
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[25000]</label>
-                </control>
                 <control type="radiobutton" id="7">
                     <description>Hide foreign</description>
                     <textwidth>450</textwidth>
@@ -135,10 +124,15 @@
                     <label>$LOCALIZE[25001]</label>
                 </control>
                 <control type="radiobutton" id="8">
-                    <description>Hide broken</description>
+                    <description>Hide incompatible</description>
                     <textwidth>450</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[24999]</label>
+                </control>
+                <control type="button" id="5">
+                    <description>Addon settings</description>
+                    <include>LeftMenuButton</include>
+                    <label>$LOCALIZE[10004]</label>
                 </control>
                 <control type="button" id="9">
                     <description>Check for updates</description>
