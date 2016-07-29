@@ -288,12 +288,6 @@
                                         <visible>!String.IsEmpty(ListItem.Episode)</visible>
                                     </item>
                                     <item>
-                                        <label>$LOCALIZE[31322]:</label>
-                                        <label2>$INFO[ListItem.Premiered]</label2>
-                                        <onclick>noop</onclick>
-                                        <visible>!String.IsEmpty(ListItem.Premiered)</visible>
-                                    </item>
-                                    <item>
                                         <label>$LOCALIZE[515]:</label>
                                         <label2>$INFO[ListItem.Genre]</label2>
                                         <onclick>noop</onclick>
@@ -328,6 +322,12 @@
                                         <label2>$INFO[ListItem.Premiered]</label2>
                                         <onclick>noop</onclick>
                                         <visible>!String.IsEmpty(ListItem.Premiered)</visible>
+                                    </item>
+                                    <item>
+                                        <label>$LOCALIZE[126]:</label>
+                                        <label2>$INFO[ListItem.Status]</label2>
+                                        <onclick>noop</onclick>
+                                        <visible>!String.IsEmpty(ListItem.Status)</visible>
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[574]:</label>
@@ -383,12 +383,6 @@
                                         <onclick>noop</onclick>
                                         <visible>!String.IsEmpty(ListItem.Episode)</visible>
                                         <visible>!Skin.HasSetting(plexbmc)</visible>
-                                    </item>
-                                    <item>
-                                        <label>$LOCALIZE[31322]:</label>
-                                        <label2>$INFO[ListItem.Premiered]</label2>
-                                        <onclick>noop</onclick>
-                                        <visible>!String.IsEmpty(ListItem.Premiered)</visible>
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[515]:</label>
