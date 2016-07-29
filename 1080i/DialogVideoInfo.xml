@@ -157,7 +157,7 @@
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[38018]:</label>
-                                    <label2>$INFO[ListItem.Userrating]</label2>
+                                    <label2>$INFO[ListItem.Userrating,,.0]</label2>
                                     <onclick>noop</onclick>
                                     <visible>!String.IsEmpty(ListItem.Userrating)</visible>
                                 </item>
@@ -313,7 +313,7 @@
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[38018]:</label>
-                                        <label2>$INFO[ListItem.Userrating]</label2>
+                                        <label2>$INFO[ListItem.Userrating,,.0]</label2>
                                         <onclick>noop</onclick>
                                         <visible>!String.IsEmpty(ListItem.Userrating)</visible>
                                     </item>
@@ -446,7 +446,7 @@
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[38018]:</label>
-                                        <label2>$INFO[ListItem.Userrating]</label2>
+                                        <label2>$INFO[ListItem.Userrating,,.0]</label2>
                                         <onclick>noop</onclick>
                                         <visible>!String.IsEmpty(ListItem.Userrating)</visible>
                                     </item>
@@ -639,7 +639,7 @@
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[38018]:</label>
-                                        <label2>$INFO[ListItem.Userrating]</label2>
+                                        <label2>$INFO[ListItem.Userrating,,.0]</label2>
                                         <onclick>noop</onclick>
                                         <visible>!String.IsEmpty(ListItem.Userrating)</visible>
                                     </item>
