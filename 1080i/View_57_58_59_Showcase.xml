@@ -285,7 +285,7 @@
                 <focusedlayout height="550" width="274">
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                         <param name="x" value="27"/>
                         <param name="y" value="56"/>
                         <param name="width" value="220"/>
@@ -400,7 +400,7 @@
                     </control>
                     <!-- CDART VIDEO -->
                     <include content="DiscArt">
-                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyVideoPlaylist.xml)]"/>
+                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                         <param name="x" value="45"/>
                         <param name="y" value="293"/>
                         <param name="width" value="264"/>
