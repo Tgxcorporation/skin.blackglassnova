@@ -52,6 +52,9 @@
                 <control type="label" id="210">
                     <include>HiddenButton</include>
                 </control>
+                <control type="label" id="230">
+                    <include>HiddenButton</include>
+                </control>
                 <include content="WindowClosingButton">
                     <param name="id" value="0"/>
                     <param name="x" value="1737"/>
@@ -224,6 +227,12 @@
                                 <onclick>Control.Setfocus(9000,0)</onclick>
                                 <onclick>SendClick(198)</onclick>
                                 <visible>Control.IsVisible(198)</visible>
+                            </item>
+                            <item id="12">
+                                <label>$LOCALIZE[20348]</label>
+                                <label2>$LOCALIZE[31206] $INFO[Control.GetLabel(230)] $LOCALIZE[31025]</label2>
+                                <onclick>noop</onclick>
+                                <visible>Control.IsVisible(239)</visible>
                             </item>
                         </content>
                     </control>
