@@ -69,30 +69,39 @@
                     <width>433</width>
                     <height>73</height>
                     <include>LeftMenuButton</include>
+                    <onleft>8060</onleft>
                 </control>
                 <control type="button" id="8">
                     <label>$LOCALIZE[24069]</label>
                     <width>433</width>
                     <height>73</height>
                     <include>LeftMenuButton</include>
+                    <onleft>8060</onleft>
                 </control>
-                <control type="button" id="10">
+                <control type="button" id="100">
                     <label>$LOCALIZE[24036]</label>
-                    <width>433</width>
-                    <height>73</height>
                     <include>LeftMenuButton</include>
+                    <onleft>8070</onleft>
+                </control>
+                <control type="button" id="705">
+                    <visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
+                    <label>$LOCALIZE[20008]</label>
+                    <include>LeftMenuButton</include>
+                    <onleft>50</onleft>
                 </control>
                 <control type="button" id="7">
                     <label>$LOCALIZE[24021]</label>
                     <width>433</width>
                     <height>73</height>
                     <include>LeftMenuButton</include>
+                    <onleft>8060</onleft>
                 </control>
                 <control type="button" id="6">
                     <label>$LOCALIZE[24022]</label>
                     <width>433</width>
                     <height>73</height>
                     <include>LeftMenuButton</include>
+                    <onleft>8060</onleft>
                 </control>
                 <control type="button" id="13">
                     <description>Auto-update button</description>
@@ -100,12 +109,14 @@
                     <width>433</width>
                     <height>73</height>
                     <include>LeftMenuButton</include>
+                    <onleft>8060</onleft>
                 </control>
                 <control type="button" id="12">
                     <label>$LOCALIZE[518]</label>
                     <width>433</width>
                     <height>73</height>
                     <include>LeftMenuButton</include>
+                    <onleft>8060</onleft>
                 </control>
             </control>
             <control type="scrollbar" id="60">
@@ -125,6 +136,11 @@
                 <include>ThumbBorder</include>
             </control>
             <control type="group">
+                <visible>![Control.HasFocus(100)|
+                    Control.HasFocus(705)|
+                    ControlGroup(1000).HasFocus|
+                    ControlGroup(7050).HasFocus]</visible>
+                <include>VisibleFadeEffect</include>
                 <posx>0</posx>
                 <posy>382</posy>
                 <control type="image">
@@ -236,6 +252,80 @@
                     <height>71</height>
                     <font>InfoDetailsFont</font>
                     <label>$INFO[ListItem.AddonBroken,[COLOR=WarningColor]$LOCALIZE[24096]: [/COLOR]]</label>
+                </control>
+            </control>
+            <!-- CHANGELOG -->
+            <control type="group" id="1000">
+                <visible>Control.HasFocus(100)|ControlGroup(1000).HasFocus</visible>
+                <include>VisibleFadeEffect</include>
+                <posx>178</posx>
+                <posy>382</posy>
+                <control type="textbox">
+                    <align>justify</align>
+                    <posx>TextMargin</posx>
+                    <posy>20</posy>
+                    <height>800</height>
+                    <width>1041</width>
+                    <font>InfoPlotFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <label fallback="416">$INFO[ListItem.AddonNews]</label>
+                    <pagecontrol>8070</pagecontrol>
+                </control>
+                <control type="scrollbar" id="8070">
+                    <visible>Skin.HasSetting(ManualScroll)</visible>
+                    <posx>1100</posx>
+                    <posy>0</posy>
+                    <height>840</height>
+                    <include>VerticalScroller</include>
+                    <onleft>8070</onleft>
+                    <onright>9001</onright>
+                </control>
+            </control>
+            <!--SCREENSHOTS-->
+            <control type="group" id="7050">
+                <visible>control.hasfocus(705)|ControlGroup(7050).HasFocus</visible>
+                <visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
+                <include>VisibleFadeEffectDelay</include>
+                <posx>178</posx>
+                <posy>382</posy>
+                <control type="panel" id="50">
+                    <posx>10</posx>
+                    <posy>0</posy>
+                    <width>1131</width>
+                    <height>840</height>
+                    <onright>756</onright>
+                    <preloaditems>4</preloaditems>
+                    <pagecontrol>756</pagecontrol>
+                    <itemlayout height="333" width="550">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>550</width>
+                            <height>333</height>
+                            <texture fallback="defaultPictureBig.png">$INFO[ListItem.Icon]</texture>
+                            <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                            <include>ThumbBorder</include>
+                        </control>
+                    </itemlayout>
+                    <focusedlayout height="333" width="550">
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>0</posy>
+                            <width>550</width>
+                            <height>333</height>
+                            <texture fallback="defaultPictureBig.png">$INFO[ListItem.Icon]</texture>
+                            <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                            <include>ThumbBorderOverlay</include>
+                        </control>
+                    </focusedlayout>
+                </control>
+                <control type="scrollbar" id="756">
+                    <posx>1100</posx>
+                    <posy>0</posy>
+                    <height>840</height>
+                    <include>VerticalScroller</include>
+                    <onleft>50</onleft>
+                    <onright>9001</onright>
                 </control>
             </control>
         </control>
