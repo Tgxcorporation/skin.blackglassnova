@@ -201,6 +201,7 @@
         <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
+        <orientation>horizontal</orientation>
     </default>
     <default type="sliderex">
         <align>left</align>
