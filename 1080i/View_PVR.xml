@@ -101,14 +101,14 @@
                     <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="button" id="105">
-                    <description>Timers</description>
-                    <label>$LOCALIZE[19038]</label>
-                    <onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimerRules)</onclick>
-                    <onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimerRules)</onclick>
+                <control type="button" id="104">
+                    <description>Timers Rules</description>
+                    <label>19138</label>
+                    <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimerRules)</onclick>
+                    <onclick condition="!String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimerRules)</onclick>
                     <include>LeftMenuButton</include>
                 </control>
-                <control type="button" id="104">
+                <control type="button" id="105">
                     <description>Search</description>
                     <label>137</label>
                     <onclick condition="String.IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
