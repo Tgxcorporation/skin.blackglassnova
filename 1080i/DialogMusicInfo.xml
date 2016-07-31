@@ -91,7 +91,6 @@
                     <onleft>49</onleft>
                 </control>
                 <control type="button" id="502">
-                    <visible>!System.HasAddon(script.extendedinfo)</visible>
                     <visible>String.IsEqual(ListItem.DBType,artist)</visible>
                     <description>Discography</description>
                     <include>RightDialogButton</include>
