@@ -4,6 +4,6 @@
     <defaultcontrol always="true">9001</defaultcontrol>
     <include>OSDFade</include>
     <controls>
-        <include>OSDInfoPanel</include>
+        <!--<include>OSDInfoPanel</include>-->
     </controls>
 </window>

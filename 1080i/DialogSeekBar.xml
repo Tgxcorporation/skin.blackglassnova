@@ -4,7 +4,7 @@
     <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
     <visible>Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSD.xml) | [Window.IsVisible(FullScreenVideo) + !System.IdleTime(20) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
     <include>OSDFade</include>
-    <zorder>2</zorder>
+    <zorder>3</zorder>
     <controls>
         <control type="image">
             <posx>-15</posx>
@@ -237,11 +237,9 @@
             </control>
         </control>
         <control type="group">
-            <animation effect="slide" start="0,0" end="0,-250" time="0" condition="window.IsActive(DialogFullScreenInfo.xml)|[Player.Paused+Skin.HasSetting(OSDShowInfoPaused)+!Window.IsVisible(DialogFullScreenInfo.xml)]">conditional</animation>
-            <!--<visible>!window.isactive(videoosd)</visible>-->
+            <posy>-250</posy>
             <control type="image">
-                <!--<visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Window.isActive(DialogSubtitles.xml)] + Player.Paused + !Skin.HasSetting(DisablePauseIconOSD)</visible>-->
-                <visible>Player.Paused + !Skin.HasSetting(DisablePauseIconOSD)</visible>
+               <visible>Player.Paused + !Skin.HasSetting(DisablePauseIconOSD)</visible>
                 <posx>810</posx>
                 <posy>390</posy>
                 <width>300</width>
@@ -265,12 +263,6 @@
                 <texture>OSD/fastforward.png</texture>
             </control>
         </control>
-        <control type="group">
-            <!--<visible>[Player.Paused+Skin.HasSetting(OSDShowInfoPaused)+!Window.IsVisible(DialogFullScreenInfo.xml)]|-->
-                <!--[[Pvr.IsPlayingTv|Pvr.IsPlayingRadio]+-->
-                <!--!Player.Paused+-->
-                <!--![Window.IsVisible(DialogFullScreenInfo.xml)|Window.IsVisible(VideoOSD.xml)]]</visible>-->
-            <include>OSDInfoPanel</include>
-        </control>
+        <include>OSDInfoPanel</include>
     </controls>
 </window>

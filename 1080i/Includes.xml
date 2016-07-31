@@ -1018,11 +1018,6 @@
     <include name="OSDInfoPanel">
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-            <include content="WindowClosingButton">
-                <param name="id" value="9001"/>
-                <param name="x" value="1637"/>
-                <param name="y" value="479"/>
-            </include>
             <control type="group">
                 <!-- CLEAR ART / LOGO -->
                 <control type="image">
@@ -1145,16 +1140,6 @@
                     <label fallback="416">$INFO[VideoPlayer.Plot]</label>
                     <textcolor>AlternateBrightColor</textcolor>
                     <font>InfoPlotFont</font>
-                    <pagecontrol>6060</pagecontrol>
-                </control>
-                <control type="scrollbar" id="6060">
-                    <visible>Skin.HasSetting(ManualScroll)</visible>
-                    <posx>1209</posx>
-                    <posy>630</posy>
-                    <height>200</height>
-                    <include>VerticalScroller</include>
-                    <onleft>9001</onleft>
-                    <onright>9001</onright>
                 </control>
                 <control type="image">
                     <posx>236</posx>
