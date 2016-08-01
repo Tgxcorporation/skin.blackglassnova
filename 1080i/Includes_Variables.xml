@@ -741,7 +741,7 @@
         <value condition="String.IsEqual(Skin.String(StartupWindow),radiorecordings)">$LOCALIZE[19021] - $LOCALIZE[20007]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),radioguide)">$LOCALIZE[19021] - $LOCALIZE[22020]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),programs)">$LOCALIZE[0]</value>
-        <value condition="String.IsEqual(Skin.String(StartupWindow),video)">$LOCALIZE[3]</value>
+        <value condition="String.IsEqual(Skin.String(StartupWindow),Videos)">$LOCALIZE[3]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),pictures)">$LOCALIZE[1]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),filemanager)">$LOCALIZE[7]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),settings)">$LOCALIZE[5]</value>
