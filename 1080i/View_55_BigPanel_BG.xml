@@ -64,7 +64,7 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <label fallback="416">$INFO[ListItem.Rating]</label>
+                        <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                     </control>
                 </control>
                 <control type="group">

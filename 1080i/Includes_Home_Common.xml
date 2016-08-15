@@ -60,15 +60,12 @@
                 <control type="group">
                     <visible>$PARAM[visibilityLabelRight]</visible>
                     <control type="image">
-                        <posx>1859</posx>
+                        <posx>1860</posx>
                         <posy>1009</posy>
-                        <height>36</height>
-                        <width>36</width>
-                        <aspectratio>keep</aspectratio>
-                        <texture>common/starOn.png</texture>
+                        <include>Stars</include>
                     </control>
                     <control type="label" id="46983">
-                        <posx>1834</posx>
+                        <posx>1835</posx>
                         <posy>1010</posy>
                         <height>33</height>
                         <width>1120</width>
@@ -156,15 +153,12 @@
                 <control type="group">
                     <visible>$PARAM[visibilityLabelRight]</visible>
                     <control type="image">
-                        <posx>1859</posx>
+                        <posx>1860</posx>
                         <posy>1009</posy>
-                        <height>36</height>
-                        <width>36</width>
-                        <aspectratio>keep</aspectratio>
-                        <texture>common/starOn.png</texture>
+                        <include>Stars</include>
                     </control>
                     <control type="label" id="46983">
-                        <posx>1834</posx>
+                        <posx>1835</posx>
                         <posy>1010</posy>
                         <height>33</height>
                         <width>1120</width>

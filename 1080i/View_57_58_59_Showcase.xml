@@ -81,7 +81,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="group" id="45741">
-                    <visible>![Container.content(actors) | container.content(albums) | container.content(addons)] + !String.IsEmpty(ListItem.Rating)</visible>
+                    <visible>![Container.content(actors) | container.content(albums) | container.content(addons)] + !String.IsEmpty(ListItem.RatingAndVotes)</visible>
                     <control type="image">
                         <posx>1860</posx>
                         <posy>1009</posy>
@@ -96,7 +96,7 @@
                         <align>right</align>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <label fallback="416">$INFO[ListItem.Rating]</label>
+                        <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                     </control>
                 </control>
                 <control type="label">
@@ -454,7 +454,7 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <label fallback="416">$INFO[ListItem.Rating]</label>
+                        <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -743,7 +743,7 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <label fallback="416">$INFO[ListItem.Rating]</label>
+                        <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -1132,7 +1132,7 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <label fallback="416">$INFO[ListItem.Rating]</label>
+                        <label fallback="416">$INFO[ListItem.RatingAndVotes]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
