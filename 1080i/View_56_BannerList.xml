@@ -46,11 +46,11 @@
                     <include>Stars</include>
                 </control>
                 <control type="label">
-                    <posx>245</posx>
+                    <posx>100</posx>
                     <posy>0</posy>
                     <width>480</width>
                     <height>71</height>
-                    <font>InfoRatingFont</font>
+                    <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
                     <label fallback="416">$INFO[ListItem.Rating]</label>
                 </control>

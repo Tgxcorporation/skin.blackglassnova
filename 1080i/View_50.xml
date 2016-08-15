@@ -192,11 +192,11 @@
                         <include>Stars</include>
                     </control>
                     <control type="label">
-                        <posx>245</posx>
+                        <posx>100</posx>
                         <posy>73</posy>
                         <width>460</width>
                         <height>71</height>
-                        <font>InfoRatingFont</font>
+                        <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
                         <label fallback="416">$INFO[ListItem.Rating]</label>
                     </control>
@@ -715,15 +715,14 @@
                     <control type="image">
                         <posx>TextMargin</posx>
                         <posy>92</posy>
-                        <texture fallback="rating0.png">$INFO[Container(500).ListItem.StarRating]</texture>
                         <include>Stars</include>
                     </control>
                     <control type="label">
-                        <posx>245</posx>
+                        <posx>100</posx>
                         <posy>73</posy>
                         <width>460</width>
                         <height>71</height>
-                        <font>InfoRatingFont</font>
+                        <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
                         <label fallback="416">$INFO[Container(500).ListItem.Rating]</label>
                     </control>

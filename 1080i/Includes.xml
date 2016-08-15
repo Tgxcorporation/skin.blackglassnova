@@ -479,11 +479,9 @@
         <animation effect="fade" time="50">VisibleChange</animation>
     </include>
     <include name="Stars">
-        <!-- <visible>!String.IsEmpty(ListItem.StarRating)</visible> -->
         <height>36</height>
-        <width>180</width>
-        <aspectratio align="left">keep</aspectratio>
-        <texture fallback="rating0.png">$INFO[ListItem.StarRating]</texture>
+        <width>36</width>
+        <texture>badges/ratingStarFull.png</texture>
     </include>
     <include name="ThumbBorder">
         <bordertexture border="27">common/JewelCase.png</bordertexture>
