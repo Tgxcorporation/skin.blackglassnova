@@ -14,18 +14,18 @@
             <posx>20</posx>
             <posy>0</posy>
             <control type="image">
-                <posx>490</posx>
+                <posx>290</posx>
                 <posy>-265</posy>
-                <width>900</width>
+                <width>1300</width>
                 <height>417</height>
                 <texture border="90">common/bg_dialog.png</texture>
             </control>
             <include name="ProgressBar">
                 <param name="id" value="32"/>
                 <param name="visible" value="true"/>
-                <param name="x" value="550"/>
+                <param name="x" value="350"/>
                 <param name="y" value="-5"/>
-                <param name="width" value="780"/>
+                <param name="width" value="1180"/>
                 <param name="height" value="42"/>
                 <param name="texturebg" value="buttons/Scrollbar_Horizontal_NoFocus.png"/>
                 <param name="gfx" value="buttons/Scrollbar_Horizontal_Focus.png"/>
@@ -37,18 +37,18 @@
                 <param name="reveal" value="false"/>
             </include>
             <control type="label" id="30">
-                <posx>570</posx>
+                <posx>370</posx>
                 <posy>22</posy>
-                <width>740</width>
+                <width>1140</width>
                 <height>46</height>
                 <font>NotificationFont</font>
                 <align>center</align>
                 <textcolor>MainColor</textcolor>
             </control>
             <control type="label" id="31">
-                <posx>570</posx>
+                <posx>370</posx>
                 <posy>54</posy>
-                <width>740</width>
+                <width>1140</width>
                 <height>46</height>
                 <font>NotificationFont</font>
                 <align>center</align>
