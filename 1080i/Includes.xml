@@ -129,9 +129,9 @@
     <include name="TopBar">
         <control type="button" id="8998">
             <description>Fake button for mouse control</description>
-            <posx>395</posx>
+            <posx>295</posx>
             <posy>0</posy>
-            <width>1130</width>
+            <width>1330</width>
             <height>100</height>
             <label>-</label>
             <font>-</font>
@@ -156,9 +156,9 @@
             </control>
             <control type="button" id="8997">
                 <description>Fake button for mouse control</description>
-                <posx>395</posx>
+                <posx>295</posx>
                 <posy>-110</posy>
-                <width>1130</width>
+                <width>1330</width>
                 <height>100</height>
                 <label>-</label>
                 <font>-</font>
@@ -167,9 +167,9 @@
                 <visible>true</visible>
             </control>
             <control type="grouplist" id="9900">
-                <posx>395</posx>
+                <posx>295</posx>
                 <posy>-10</posy>
-                <width>1130</width>
+                <width>1330</width>
                 <height>100</height>
                 <itemgap>0</itemgap>
                 <scrolltime>200</scrolltime>
@@ -285,9 +285,9 @@
             </control>
             <control type="button" id="8997">
                 <description>Fake button for mouse control</description>
-                <posx>395</posx>
+                <posx>295</posx>
                 <posy>40</posy>
-                <width>1130</width>
+                <width>1330</width>
                 <height>30</height>
                 <label>-</label>
                 <font>-</font>
@@ -359,18 +359,18 @@
                     <animation effect="slide" start="0,0" end="0,-88" time="200">Hidden</animation>
                     <posy>0</posy>
                     <control type="image">
-                        <posx>395</posx>
+                        <posx>295</posx>
                         <posy>-330</posy>
-                        <width>1130</width>
+                        <width>1330</width>
                         <height>417</height>
                         <texture>common/bg_dialog.png</texture>
                     </control>
                     <control type="label">
                         <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
-                        <posx>460</posx>
+                        <posx>360</posx>
                         <posy>0</posy>
                         <height>46</height>
-                        <width>750</width>
+                        <width>950</width>
                         <scroll>false</scroll>
                         <align>left</align>
                         <font>NotificationFont</font>
@@ -379,10 +379,10 @@
                     </control>
                     <control type="label">
                         <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
-                        <posx>1455</posx>
+                        <posx>1555</posx>
                         <posy>0</posy>
                         <height>46</height>
-                        <width>200</width>
+                        <width>300</width>
                         <scroll>false</scroll>
                         <align>right</align>
                         <font>NotificationFont</font>
@@ -391,10 +391,10 @@
                     </control>
                     <control type="label">
                         <visible>Player.hasvideo + VideoPlayer.Content(livetv)</visible>
-                        <posx>460</posx>
+                        <posx>360</posx>
                         <posy>0</posy>
                         <height>46</height>
-                        <width>650</width>
+                        <width>750</width>
                         <scroll>false</scroll>
                         <align>left</align>
                         <font>NotificationFont</font>
@@ -403,10 +403,10 @@
                     </control>
                     <control type="label">
                         <visible>Player.hasvideo + !VideoPlayer.Content(livetv)</visible>
-                        <posx>460</posx>
+                        <posx>360</posx>
                         <posy>0</posy>
                         <height>46</height>
-                        <width>650</width>
+                        <width>750</width>
                         <scroll>false</scroll>
                         <align>left</align>
                         <font>NotificationFont</font>
@@ -415,10 +415,10 @@
                     </control>
                     <control type="label">
                         <visible>Player.hasvideo + [[VideoPlayer.HasEpg+VideoPlayer.Content(livetv)]|!VideoPlayer.Content(livetv)]</visible>
-                        <posx>1455</posx>
+                        <posx>1555</posx>
                         <posy>0</posy>
                         <height>46</height>
-                        <width>300</width>
+                        <width>400</width>
                         <scroll>false</scroll>
                         <align>right</align>
                         <font>NotificationFont</font>
