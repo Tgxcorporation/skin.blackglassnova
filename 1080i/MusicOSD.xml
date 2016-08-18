@@ -398,8 +398,8 @@
                     <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.Enabled">Conditional</animation>
                     <label>$LOCALIZE[250] $LOCALIZE[10004]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_viz_settings_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_viz_settings_nofocus.png</texturenofocus>
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                 </control>
                 <control type="button" id="20">
