@@ -24,13 +24,6 @@
                 <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
                 <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
             </control>
-            <control type="image">
-                <posx>-150</posx>
-                <posy>-3</posy>
-                <texture>common/basichome_upper_gradient.png</texture>
-                <width>2220</width>
-                <height>440</height>
-            </control>
             <control type="grouplist" id="100">
                 <posx>0</posx>
                 <posy>68</posy>
