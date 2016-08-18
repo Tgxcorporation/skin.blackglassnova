@@ -186,8 +186,8 @@
                 <control type="button" id="252">
                     <label>$LOCALIZE[13396]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_speaker_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_speaker_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(OSDAudioSettings)</onclick>
                 </control>
                 <control type="button" id="253">
