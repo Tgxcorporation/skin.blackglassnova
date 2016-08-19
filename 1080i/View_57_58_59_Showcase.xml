@@ -110,7 +110,7 @@
                     <label>$VAR[Fanart_Details2]</label>
                 </control>
                 <control type="label" id="45742">
-                    <animation type="Conditional" pulse="true" reversible="false" condition="[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)|Container.Content(sets)]">
+                    <animation type="Conditional" pulse="true" reversible="false" condition="[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]">
                         <include>PulseBasicVisible</include>
                     </animation>
                     <posx>200</posx>
@@ -124,7 +124,7 @@
                 </control>
                 <control type="grouplist">
                     <visible>[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)|Container.Content(sets)]</visible>
-                    <animation type="Conditional" pulse="true" reversible="false" condition="[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)|Container.Content(sets)]">
+                    <animation type="Conditional" pulse="true" reversible="false" condition="[Container.Content(musicvideos) | Container.Content(movies)| Container.Content(episodes)]">
                         <include>PulseBasicHidden</include>
                     </animation>
                     <posx>0</posx>

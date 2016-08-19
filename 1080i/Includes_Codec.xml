@@ -185,7 +185,6 @@
         <value condition="String.Contains(ListItem.Filenameandpath,web)">webtv</value>
         <value condition="String.Contains(ListItem.Filenameandpath,hdtv)">hdtv</value>
         <value condition="String.Contains(ListItem.Filenameandpath,dvd) | String.EndsWith(ListItem.Filenameandpath,.ifo) | String.EndsWith(ListItem.Filenameandpath,.iso)">dvd</value>
-        <value condition="String.Contains(ListItem.Path,videodb://movies/sets)">set</value>
         <value condition="String.Contains(ListItem.Filenameandpath,4k)">4kbis</value>
         <value condition="[String.Contains(ListItem.VideoCodec,div) | String.IsEqual(ListItem.VideoCodec,dx50)]">divx</value>
         <value>$INFO[ListItem.VideoCodec]</value>
@@ -195,7 +194,6 @@
         <value condition="String.Contains(Window.Property(Filenameandpath),web)">webtv</value>
         <value condition="String.Contains(Window.Property(Filenameandpath),hdtv)">hdtv</value>
         <value condition="String.Contains(Window.Property(Filenameandpath),dvd) | String.EndsWith(Window.Property(Filenameandpath),.ifo) | String.EndsWith(Window.Property(Filenameandpath),.iso)">dvd</value>
-        <value condition="String.StartsWith(Window.Property(Path),videodb://movies/sets)">set</value>
         <value condition="String.Contains(Window.Property(Filenameandpath),4k)">4kbis</value>
         <value condition="[String.StartsWith(Window.Property(VideoCodec),div) | String.IsEqual(Window.Property(VideoCodec),dx50)]">divx</value>
         <value>$INFO[Window.Property(VideoCodec)]</value>
