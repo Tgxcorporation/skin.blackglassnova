@@ -1396,12 +1396,14 @@
                                 <onclick>Skin.ToggleSetting(Home_DefaultBG)</onclick>
                             </item>
                             <item id="62">
+                                <visible>!Skin.HasSetting(VerticalHome)</visible>
                                 <visible>Skin.HasSetting(Fixed_HomeMenu)</visible>
                                 <label>$LOCALIZE[31998]</label>
                                 <label2>$LOCALIZE[107]</label2>
                                 <onclick>Skin.ToggleSetting(Fixed_HomeMenu)</onclick>
                             </item>
                             <item id="62">
+                                <visible>!Skin.HasSetting(VerticalHome)</visible>
                                 <visible>!Skin.HasSetting(Fixed_HomeMenu)</visible>
                                 <label>$LOCALIZE[31998]</label>
                                 <label2>$LOCALIZE[106]</label2>
