@@ -234,6 +234,7 @@
             </control>
             <control type="fixedlist" id="59">
                 <visible>[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons)</visible>
+                <visible>StringCompare(Window(Home).Property(SkinHelper.ForcedView),59) | IsEmpty(Window(Home).Property(SkinHelper.ForcedView))</visible>
                 <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)|Control.hasfocus(6069)">Conditional</animation>
                 <posx>0</posx>
                 <posy>366</posy>
@@ -533,6 +534,7 @@
             </control>
             <control type="fixedlist" id="58">
                 <visible>![[container.content(MusicVideos) + Window.IsActive(myvideonav.xml)] | Container.content(actors) | container.content(movies) | container.content(sets) | container.content(tvshows) | container.content(seasons) | container.content(episodes)]</visible>
+                <visible>StringCompare(Window(Home).Property(SkinHelper.ForcedView),58) | IsEmpty(Window(Home).Property(SkinHelper.ForcedView))</visible>
                 <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)|Control.hasfocus(6069)">Conditional</animation>
                 <posx>0</posx>
                 <posy>386</posy>
@@ -910,6 +912,7 @@
             </control>
             <control type="fixedlist" id="57">
                 <visible>container.content(episodes)</visible>
+                <visible>StringCompare(Window(Home).Property(SkinHelper.ForcedView),57) | IsEmpty(Window(Home).Property(SkinHelper.ForcedView))</visible>
                 <animation effect="slide" easing="out" start="0,0" end="0,800" time="0" delay="0" center="120,350" reversible="true" condition="Control.HasFocus(7000)|Control.hasfocus(6069)">Conditional</animation>
                 <posx>0</posx>
                 <posy>386</posy>

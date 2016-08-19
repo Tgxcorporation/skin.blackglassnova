@@ -204,8 +204,6 @@ msgctxt "#31046"
 msgid "Startup delay in seconds"
 msgstr ""
 
-#empty strings from id 31047 to 31047
-
 msgctxt "#31048"
 msgid "Visualization Presets"
 msgstr ""
@@ -317,6 +315,14 @@ msgstr ""
 
 msgctxt "#31075"
 msgid "Enable Studio/Album Label Art"
+msgstr ""
+
+msgctxt "#31076"
+msgid "Forced Views"
+msgstr ""
+
+msgctxt "#31077"
+msgid "Enable Forced Views"
 msgstr ""
 
 #empty strings from id 31076 to 31089

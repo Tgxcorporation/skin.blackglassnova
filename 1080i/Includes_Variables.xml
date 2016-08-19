@@ -817,4 +817,168 @@
         <value condition="!IsEmpty(Skin.String(PickedColor.Overlay))+Skin.HasSetting(Overlay.Color.Custom)">$INFO[Skin.String(PickedColor.Overlay)]</value>
         <value>ffffffff</value>
     </variable>
+    <variable name="ForcedViews.movies">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.movies),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.movies),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.movies),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.movies),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.movies),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.movies),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.movies),56)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.movies),59)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.movies),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.movies),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.movies))">-</value>
+    </variable>
+    <variable name="ForcedViews.sets">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.sets),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.sets),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.sets),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.sets),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.sets),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.sets),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.sets),56)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.sets),59)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.sets),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.sets),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.sets))">-</value>
+    </variable>
+    <variable name="ForcedViews.setmovies">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.setmovies),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.setmovies),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.setmovies),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.setmovies),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.setmovies),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.setmovies),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.setmovies),56)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.setmovies),59)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.setmovies),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.setmovies),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.setmovies))">-</value>
+    </variable>
+    <variable name="ForcedViews.tvshows">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvshows),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvshows),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvshows),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvshows),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvshows),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvshows),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvshows),56)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvshows),59)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvshows),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvshows),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.tvshows))">-</value>
+    </variable>
+    <variable name="ForcedViews.seasons">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.seasons),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.seasons),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.seasons),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.seasons),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.seasons),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.seasons),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.seasons),56)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.seasons),59)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.seasons),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.seasons),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.seasons))">-</value>
+    </variable>
+    <variable name="ForcedViews.episodes">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.episodes),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.episodes),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.episodes),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.episodes),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.episodes),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.episodes),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.episodes),57)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.episodes),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.episodes),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.episodes))">-</value>
+    </variable>
+    <variable name="ForcedViews.musicvideos">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.musicvideos),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.musicvideos),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.musicvideos),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.musicvideos),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.musicvideos),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.musicvideos),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.musicvideos),56)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.musicvideos),59)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.musicvideos),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.musicvideos),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.musicvideos))">-</value>
+    </variable>
+    <variable name="ForcedViews.artists">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.artists),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.artists),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.artists),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.artists),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.artists),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.artists),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.artists),58)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.artists),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.artists),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.artists))">-</value>
+    </variable>
+    <variable name="ForcedViews.albums">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.albums),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.albums),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.albums),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.albums),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.albums),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.albums),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.albums),58)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.albums),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.albums),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.albums))">-</value>
+    </variable>
+    <variable name="ForcedViews.songs">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.songs),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.songs),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.songs),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.songs),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.songs),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.songs),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.songs),58)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.songs),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.songs),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.songs))">-</value>
+    </variable>
+    <variable name="ForcedViews.programs">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.programs),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.programs),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.programs),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.programs),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.programs),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.programs),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.programs),58)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.programs),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.programs),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.programs))">-</value>
+    </variable>
+    <variable name="ForcedViews.pictures">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.pictures),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.pictures),51)">$LOCALIZE[31090]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.pictures),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.pictures),53)">$LOCALIZE[536]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.pictures),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.pictures),55)">$LOCALIZE[31093]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.pictures),58)">$LOCALIZE[20445]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.pictures),5050)">$LOCALIZE[31095]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.pictures),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.pictures))">-</value>
+    </variable>
+    <variable name="ForcedViews.tvchannels">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvchannels),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvchannels),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvchannels),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvchannels),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.tvchannels))">-</value>
+    </variable>
+    <variable name="ForcedViews.tvrecordings">
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvrecordings),50)">$LOCALIZE[535]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvrecordings),52)">$LOCALIZE[31091]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvrecordings),54)">$LOCALIZE[31092]</value>
+        <value condition="StringCompare(Skin.String(SkinHelper.ForcedViews.tvrecordings),None)">-</value>
+        <value condition="IsEmpty(Skin.String(SkinHelper.ForcedViews.tvrecordings))">-</value>
+    </variable>
 </includes>
