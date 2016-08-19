@@ -246,6 +246,13 @@
                             <thumb>topbar/topbar_settings_nofocus.png</thumb>
                             <icon>topbar/topbar_settings_focus.png</icon>
                         </item>
+                        <item id="23">
+                            <onclick>dialog.close(all,true)</onclick>
+                            <onclick>activatewindow(favourites)</onclick>
+                            <label>$LOCALIZE[10134]</label>
+                            <thumb>topbar/topbar_bookmark2_nofocus.png</thumb>
+                            <icon>topbar/topbar_bookmark2_focus.png</icon>
+                        </item>
                         <item id="17">
                             <visible>Skin.HasSetting(QuitMenu_Hide_Timer)</visible>
                             <visible>System.CanPowerDown | System.CanSuspend | System.CanHibernate</visible>
