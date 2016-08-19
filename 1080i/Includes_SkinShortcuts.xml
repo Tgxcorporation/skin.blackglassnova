@@ -227,7 +227,8 @@
         <focusposition>1</focusposition>
         <itemlayout height="262" width="417">
             <control type="image">
-                <visible>StringCompare(ListItem.Property(hide),True)+SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>![StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                <visible>SubString(ListItem.Property(LabelID),weather,Left)</visible>
                 <posx>29</posx>
                 <posy>9</posy>
                 <width>359</width>
@@ -238,7 +239,8 @@
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
-                <visible>StringCompare(ListItem.Property(hide),True)+!SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>![StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                <visible>!SubString(ListItem.Property(LabelID),weather,Left)</visible>
                 <posx>29</posx>
                 <posy>9</posy>
                 <width>359</width>
@@ -249,7 +251,7 @@
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
-                <visible>!StringCompare(ListItem.Property(hide),True)</visible>
+                <visible>[StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                 <posx>29</posx>
                 <posy>9</posy>
                 <width>359</width>
@@ -258,6 +260,16 @@
                 <colordiffuse>90ffffff</colordiffuse>
                 <aspectratio>scale</aspectratio>
                 <include>ThumbBorder</include>
+            </control>
+            <control type="label">
+                <visible>[StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                <posx>3</posx>
+                <posy>0</posy>
+                <width>390</width>
+                <height>243</height>
+                <align>center</align>
+                <textcolor>ListNoFocusColor</textcolor>
+                <label>$LOCALIZE[13106]</label>
             </control>
             <control type="image">
                 <visible>!SubString(ListItem.Property(LabelID),weather,Left)</visible>
@@ -286,7 +298,8 @@
         </itemlayout>
         <focusedlayout height="262" width="396">
             <control type="image">
-                <visible>StringCompare(ListItem.Property(hide),True)+SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>![StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                <visible>SubString(ListItem.Property(LabelID),weather,Left)</visible>
                 <posx>3</posx>
                 <posy>0</posy>
                 <width>390</width>
@@ -296,7 +309,8 @@
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="image">
-                <visible>StringCompare(ListItem.Property(hide),True)+!SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                <visible>![StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                <visible>!SubString(ListItem.Property(LabelID),weather,Left)</visible>
                 <posx>3</posx>
                 <posy>0</posy>
                 <width>390</width>
@@ -306,7 +320,7 @@
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="image">
-                <visible>!StringCompare(ListItem.Property(hide),True)</visible>
+                <visible>[StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                 <posx>3</posx>
                 <posy>0</posy>
                 <width>390</width>
@@ -315,6 +329,16 @@
                 <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <colordiffuse>90ffffff</colordiffuse>
                 <include>ThumbBorderOverlay</include>
+            </control>
+            <control type="label">
+                <visible>[StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                <posx>3</posx>
+                <posy>0</posy>
+                <width>390</width>
+                <height>243</height>
+                <align>center</align>
+                <textcolor>ListFocusColor</textcolor>
+                <label>$LOCALIZE[13106]</label>
             </control>
             <control type="image">
                 <visible>!SubString(ListItem.Property(LabelID),weather,Left)</visible>
@@ -361,7 +385,8 @@
             <control type="group">
                 <posx>103</posx>
                 <control type="image">
-                    <visible>StringCompare(ListItem.Property(hide),True)+SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                    <visible>![StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <visible>SubString(ListItem.Property(LabelID),weather,Left)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -369,7 +394,8 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png">special://skin/backgrounds/Weather.jpg</texture>
                 </control>
                 <control type="image">
-                    <visible>StringCompare(ListItem.Property(hide),True)+!SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                    <visible>![StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <visible>!SubString(ListItem.Property(LabelID),weather,Left)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -377,13 +403,23 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
-                    <visible>!StringCompare(ListItem.Property(hide),True)</visible>
+                    <visible>[StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                     <colordiffuse>50ffffff</colordiffuse>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
                     <height>601</height>
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
+                </control>
+                <control type="label">
+                    <visible>[StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <posx>-27</posx>
+                    <posy>0</posy>
+                    <width>1077</width>
+                    <height>601</height>
+                    <align>center</align>
+                    <textcolor>ListNoFocusColor</textcolor>
+                    <label>$LOCALIZE[13106]</label>
                 </control>
                 <control type="image">
                     <posx>-27</posx>
@@ -405,7 +441,8 @@
             <control type="group">
                 <posx>103</posx>
                 <control type="image">
-                    <visible>StringCompare(ListItem.Property(hide),True)+SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                    <visible>![StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <visible>SubString(ListItem.Property(LabelID),weather,Left)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -413,7 +450,8 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png">special://skin/backgrounds/weather.jpg</texture>
                 </control>
                 <control type="image">
-                    <visible>StringCompare(ListItem.Property(hide),True)+!SubString(ListItem.Property(LabelID),weather,Left)</visible>
+                    <visible>![StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <visible>!SubString(ListItem.Property(LabelID),weather,Left)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -421,13 +459,23 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
-                    <visible>!StringCompare(ListItem.Property(hide),True)</visible>
+                    <visible>[StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                     <colordiffuse>50ffffff</colordiffuse>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
                     <height>601</height>
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
+                </control>
+                <control type="label">
+                    <visible>[StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <posx>-27</posx>
+                    <posy>0</posy>
+                    <width>1077</width>
+                    <height>601</height>
+                    <align>center</align>
+                    <textcolor>ListNoFocusColor</textcolor>
+                    <label>$LOCALIZE[13106]</label>
                 </control>
                 <control type="image">
                     <posx>-27</posx>
@@ -472,24 +520,13 @@
                 <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
             </control>
             <control type="label">
-                <visible>StringCompare(ListItem.Property(hide),True)</visible>
+                <animation effect="fade" start="100" end="50" condition="[StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]">Conditional</animation>
                 <posx>TextMargin</posx>
                 <height>63</height>
                 <width>373</width>
                 <align>right</align>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListNoFocusColor</textcolor>
-                <label>$INFO[ListItem.Label]</label>
-                <scroll>false</scroll>
-            </control>
-            <control type="label">
-                <visible>!StringCompare(ListItem.Property(hide),True)</visible>
-                <posx>TextMargin</posx>
-                <height>63</height>
-                <width>373</width>
-                <align>right</align>
-                <font>FacadeListMainFont</font>
-                <textcolor>60ffffff</textcolor>
                 <label>$INFO[ListItem.Label]</label>
                 <scroll>false</scroll>
             </control>
@@ -503,23 +540,13 @@
                 <include>FlippedFacadeFocus</include>
             </control>
             <control type="label">
-                <visible>StringCompare(ListItem.Property(hide),True)</visible>
+                <animation effect="fade" start="100" end="50" condition="[StringCompare(ListItem.Property(hide),True)|StringCompare(ListItem.Property(skinshortcuts-disabled),True)]">Conditional</animation>
                 <posx>TextMargin</posx>
                 <height>63</height>
                 <width>373</width>
                 <align>right</align>
                 <font>FacadeListMainFont</font>
                 <textcolor>ListFocusColor</textcolor>
-                <label>$INFO[ListItem.Label]</label>
-            </control>
-            <control type="label">
-                <visible>!StringCompare(ListItem.Property(hide),True)</visible>
-                <posx>TextMargin</posx>
-                <height>63</height>
-                <width>373</width>
-                <align>right</align>
-                <font>FacadeListMainFont</font>
-                <textcolor>60ffffff</textcolor>
                 <label>$INFO[ListItem.Label]</label>
             </control>
         </focusedlayout>
