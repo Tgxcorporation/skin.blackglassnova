@@ -406,12 +406,14 @@
                                 <onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=pictures)</onclick>
                             </item>
                             <item id="207">
+                                <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                                 <visible>Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</visible>
                                 <label>$LOCALIZE[19019]</label>
                                 <label2>$VAR[ForcedViews.tvchannels]</label2>
                                 <onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=tvchannels)</onclick>
                             </item>
                             <item id="208">
+                                <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                                 <visible>Skin.HasSetting(SkinHelper.ForcedViews.Enabled)</visible>
                                 <label>$LOCALIZE[19017]</label>
                                 <label2>$VAR[ForcedViews.tvrecordings]</label2>
