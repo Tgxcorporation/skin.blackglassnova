@@ -1068,7 +1068,7 @@
             </control>
             <!-- CDART VIDEO -->
             <include content="DiscArt">
-                <param name="visible" value="!String.IsEmpty(VideoPlayer.Cover)+!VideoPlayer.Content(LiveTV)+!VideoPlayer.Content(episodes)"/>
+                <param name="visible" value="!String.IsEmpty(VideoPlayer.Cover)+VideoPlayer.Content(movies)"/>
                 <param name="x" value="147"/>
                 <param name="y" value="565"/>
                 <param name="width" value="356"/>
