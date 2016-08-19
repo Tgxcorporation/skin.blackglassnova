@@ -1452,7 +1452,7 @@
                         <posy>365</posy>
                         <width>410</width>
                         <height>483</height>
-                        <texture fallback="defaultIconBig.png">resource://resource.images.studios.white/$INFO[Container(550).ListItem.Label,,.png]</texture>
+                        <texture fallback="defaultIconBig.png">$VAR[ExtendedInfoStudioArt]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
@@ -1539,7 +1539,7 @@
                         <posy>365</posy>
                         <width>410</width>
                         <height>483</height>
-                        <texture fallback="defaultIconBig.png">resource://resource.images.studios.white/$INFO[Container(1450).ListItem.Label,,.png]</texture>
+                        <texture fallback="defaultIconBig.png">$VAR[ExtendedInfoStudioArt]</texture>
                         <include>ThumbBorder</include>
                         <aspectratio>keep</aspectratio>
                     </control>
