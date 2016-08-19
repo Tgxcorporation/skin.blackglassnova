@@ -185,7 +185,6 @@
         <value condition="SubString(ListItem.Filenameandpath,web)">webtv</value>
         <value condition="SubString(ListItem.Filenameandpath,hdtv)">hdtv</value>
         <value condition="SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,Right) | SubString(ListItem.Filenameandpath,.iso,Right)">dvd</value>
-        <value condition="SubString(ListItem.Path,videodb://movies/sets,left)">set</value>
         <value condition="SubString(ListItem.Filenameandpath,4k)">4kbis</value>
         <value condition="[substring(ListItem.VideoCodec,div,left) | stringcompare(ListItem.VideoCodec,dx50)]">divx</value>
         <value>$INFO[ListItem.VideoCodec]</value>
@@ -195,7 +194,6 @@
         <value condition="SubString(Window.Property(Filenameandpath),web)">webtv</value>
         <value condition="SubString(Window.Property(Filenameandpath),hdtv)">hdtv</value>
         <value condition="SubString(Window.Property(Filenameandpath),dvd) | SubString(Window.Property(Filenameandpath),.ifo,Right) | SubString(Window.Property(Filenameandpath),.iso,Right)">dvd</value>
-        <value condition="SubString(Window.Property(Path),videodb://movies/sets,left)">set</value>
         <value condition="SubString(Window.Property(Filenameandpath),4k)">4kbis</value>
         <value condition="[substring(Window.Property(VideoCodec),div,left) | stringcompare(Window.Property(VideoCodec),dx50)]">divx</value>
         <value>$INFO[Window.Property(VideoCodec)]</value>
