@@ -461,7 +461,7 @@
         <height>52</height>
         <width>1840</width>
         <align>center</align>
-        <textcolor>aaffffff</textcolor>
+        <!--<textcolor>aaffffff</textcolor>-->
         <font>OSDFont</font>
         <shadowcolor>ShadowColor</shadowcolor>
         <animation effect="fade" time="50">VisibleChange</animation>
@@ -1003,6 +1003,7 @@
     </include>
     <include name="OSDInfoPanel">
         <control type="group">
+            <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <control type="group">
                 <!-- CLEAR ART / LOGO -->
@@ -1036,6 +1037,14 @@
                     <aspectratio align="right" aligny="bottom">keep</aspectratio>
                     <texture background="true">$VAR[VideoPlayerClearLogo]</texture>
                 </control>
+            </control>
+            <control type="group">
+                <visible>![Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo)]</visible>
+                <include content="WindowClosingButton">
+                    <param name="id" value="9001"/>
+                    <param name="x" value="1637"/>
+                    <param name="y" value="479"/>
+                </include>
             </control>
             <control type="image">
                 <posx>233</posx>

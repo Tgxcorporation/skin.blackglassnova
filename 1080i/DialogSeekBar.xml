@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
+    <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
     <visible>![Skin.HasSetting(DisableOSDInfoOnPause)+Player.Paused]|Window.IsVisible(VideoOSD.xml)</visible>
     <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
-    <visible>Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSD.xml) | [Window.IsVisible(FullScreenVideo) + !System.IdleTime(20) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]</visible>
+    <visible>Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSD.xml) | [Window.IsVisible(FullScreenVideo) + !System.IdleTime(20) + [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding]]</visible>
     <include>OSDFade</include>
     <zorder>3</zorder>
     <controls>
@@ -69,7 +70,8 @@
             <texture border="3">common/time.png</texture>
         </control>
         <control type="group">
-            <visible>Window.IsActive(DialogFullScreenInfo.xml) | [Player.Caching | Player.Paused | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Window.IsActive(videoosd.xml)]</visible>
+            <visible>Window.IsActive(DialogFullScreenInfo.xml) | [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd.xml)]</visible>
+            <include>OSDVisibleFadeEffect</include>
             <posy>0</posy>
             <control type="image">
                 <posx>-15</posx>
@@ -181,41 +183,6 @@
         <control type="group" id="22929">
             <posy>1026</posy>
             <control type="label">
-                <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek] + [Player.Paused]</visible>
-                <include>SeekbarLabels</include>
-                <label>$LOCALIZE[112]</label>
-            </control>
-            <control type="label" id="24">
-                <visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
-                <include>SeekbarLabels</include>
-                <label>$INFO[Player.CacheLevel,$LOCALIZE[15107] ,%]</label>
-            </control>
-            <control type="label">
-                <visible>player.forwarding2x | player.rewinding2x</visible>
-                <include>SeekbarLabels</include>
-                <label>2 X</label>
-            </control>
-            <control type="label">
-                <visible>player.forwarding4x | player.rewinding4x</visible>
-                <include>SeekbarLabels</include>
-                <label>4 X</label>
-            </control>
-            <control type="label">
-                <visible>player.forwarding8x | player.rewinding8x</visible>
-                <include>SeekbarLabels</include>
-                <label>8 X</label>
-            </control>
-            <control type="label">
-                <visible>player.forwarding16x | player.rewinding16x</visible>
-                <include>SeekbarLabels</include>
-                <label>16 X</label>
-            </control>
-            <control type="label">
-                <visible>player.forwarding32x | player.rewinding32x</visible>
-                <include>SeekbarLabels</include>
-                <label>32 X</label>
-            </control>
-            <control type="label">
                 <include>SeekbarLabels</include>
                 <label>$VAR[SeekLabel]</label>
             </control>
@@ -237,9 +204,14 @@
             </control>
         </control>
         <control type="group">
-            <posy>-250</posy>
+            <animation effect="slide" start="0,0" end="0,-250" time="0" condition="window.IsActive(DialogFullScreenInfo.xml)|[Player.Paused+Skin.HasSetting(OSDShowInfoPaused)+!Window.IsVisible(DialogFullScreenInfo.xml)]">conditional</animation>
+            <visible>!Skin.HasSetting(DisablePauseIconOSD)</visible>
+            <visible>!Player.Caching</visible>
+            <include>OSDVisibleFadeEffect</include>
+            <posy>0</posy>
             <control type="image">
-               <visible>Player.Paused + !Skin.HasSetting(DisablePauseIconOSD)</visible>
+               <visible>Player.Paused</visible>
+                <include>OSDVisibleFadeEffect</include>
                 <posx>810</posx>
                 <posy>390</posy>
                 <width>300</width>
@@ -247,7 +219,8 @@
                 <texture>OSD/pause.png</texture>
             </control>
             <control type="image">
-                <visible>player.rewinding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
+                <visible>player.rewinding</visible>
+                <include>OSDVisibleFadeEffect</include>
                 <posx>810</posx>
                 <posy>390</posy>
                 <width>300</width>
@@ -255,7 +228,8 @@
                 <texture>OSD/rewind.png</texture>
             </control>
             <control type="image">
-                <visible>player.forwarding + !Skin.HasSetting(DisablePauseIconOSD)</visible>
+                <visible>player.forwarding</visible>
+                <include>OSDVisibleFadeEffect</include>
                 <posx>810</posx>
                 <posy>390</posy>
                 <width>300</width>
@@ -263,6 +237,11 @@
                 <texture>OSD/fastforward.png</texture>
             </control>
         </control>
-        <include>OSDInfoPanel</include>
+        <control type="group">
+            <visible>!Window.IsActive(DialogFullScreenInfo.xml)</visible>
+            <visible>Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo)</visible>
+            <include>OSDVisibleFadeEffect</include>
+            <include>OSDInfoPanel</include>
+        </control>
     </controls>
 </window>

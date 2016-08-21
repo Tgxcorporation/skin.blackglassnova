@@ -2,16 +2,25 @@
 <window>
     <defaultcontrol always="false">100</defaultcontrol>
     <onload condition="!VideoPlayer.Content(LiveTV)">SetFocus(202)</onload>
-    <zorder>4</zorder>
+    <zorder>5</zorder>
     <include>OSDFade</include>
     <controls>
         <control type="group">
-            <visible>![Window.IsActive(DialogSelect.xml) | Window.IsActive(SliderDialog) | Window.IsActive(OSDVideoSettings) | Window.IsActive(OSDAudioSettings) | Window.IsActive(VideoBookmarks) | Window.IsVisible(PVROSDChannels) | Window.IsVisible(PVROSDGuide)]</visible>
+            <visible>![
+                Window.IsVisible(DialogPlayerProcessInfo.xml) |
+                Window.IsActive(DialogSelect.xml) |
+                Window.IsActive(SliderDialog) |
+                Window.IsActive(OSDVideoSettings) |
+                Window.IsActive(OSDAudioSettings) |
+                Window.IsVisible(OSDAudioDSPSettings) |
+                Window.IsActive(VideoBookmarks) |
+                Window.IsVisible(PVROSDChannels) |
+                Window.IsVisible(PVROSDGuide)
+                ]</visible>
             <include>OSDFade</include>
             <posx>0</posx>
             <posy>0</posy>
             <control type="slider" id="87">
-                <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(OSDAudioDSPSettings) | Window.IsVisible(VideoBookmarks) | VideoPlayer.Content(LiveTV)]</visible>
                 <description>Seek Slider</description>
                 <posx>0</posx>
                 <posy>985</posy>
@@ -29,7 +38,7 @@
                 <posy>68</posy>
                 <width>1920</width>
                 <onup>100</onup>
-                <ondown>87</ondown>
+                <ondown>101</ondown>
                 <orientation>horizontal</orientation>
                 <itemgap>10</itemgap>
                 <align>center</align>
@@ -119,6 +128,55 @@
                     <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
+                <control type="button" id="1616">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
+                    <onclick>Mute</onclick>
+                </control>
+                <control type="button" id="1618">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
+                    <onclick>VolumeDown</onclick>
+                </control>
+                <control type="button" id="1620">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                    <onclick>VolumeUp</onclick>
+                </control>
+                <control type="button" id="1622">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_smallscreen_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_smallscreen_nofocus.png</texturenofocus>
+                    <onclick>Dialog.Close(VideoOSD,true)</onclick>
+                    <onclick>fullscreen</onclick>
+                </control>
+                <control type="button" id="1624">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
+                    <onclick>Dialog.Close(VideoOSD,true)</onclick>
+                    <onclick>ActivateWindow(Settings,return)</onclick>
+                </control>
+                <control type="button" id="1626">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
+                    <onclick>ActivateWindow(shutdownmenu)</onclick>
+                </control>
+            </control>
+            <control type="grouplist" id="101">
+                <posx>0</posx>
+                <posy>138</posy>
+                <width>1920</width>
+                <onup>100</onup>
+                <ondown>87</ondown>
+                <orientation>horizontal</orientation>
+                <itemgap>10</itemgap>
+                <align>center</align>
+                <!--***-->
                 <control type="button" id="306">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[19069]</label>
@@ -162,6 +220,8 @@
                     <onclick>PlayerControl(Record)</onclick>
                 </control>
                 <control type="button" id="250">
+                    <enable>VideoPlayer.HasSubtitles</enable>
+                    <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.HasSubtitles">Conditional</animation>
                     <label>$LOCALIZE[31356]</label>
                     <include>TopBarButton</include>
                     <texturefocus>topbar/topbar_subtitles_focus.png</texturefocus>
@@ -220,43 +280,12 @@
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(VideoPlaylist)</onclick>
                 </control>
-                <control type="button" id="1616">
+                <control type="button" id="707">
+                    <label>$LOCALIZE[544]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
-                    <onclick>Mute</onclick>
-                </control>
-                <control type="button" id="1618">
-                    <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
-                    <onclick>VolumeDown</onclick>
-                </control>
-                <control type="button" id="1620">
-                    <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
-                    <onclick>VolumeUp</onclick>
-                </control>
-                <control type="button" id="1622">
-                    <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_smallscreen_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_smallscreen_nofocus.png</texturenofocus>
-                    <onclick>Dialog.Close(VideoOSD,true)</onclick>
-                    <onclick>fullscreen</onclick>
-                </control>
-                <control type="button" id="1624">
-                    <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
-                    <onclick>Dialog.Close(VideoOSD,true)</onclick>
-                    <onclick>ActivateWindow(Settings,return)</onclick>
-                </control>
-                <control type="button" id="1626">
-                    <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
-                    <onclick>ActivateWindow(shutdownmenu)</onclick>
+                    <texturefocus>topbar/topbar_info_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_info_nofocus.png</texturenofocus>
+                    <onclick>ActivateWindow(fullscreeninfo)</onclick>
                 </control>
             </control>
 
@@ -264,7 +293,7 @@
                 <description>Fake button for mouse control</description>
                 <visible>Control.HasFocus(410) | Control.HasFocus(250) | ControlGroup(400).HasFocus</visible>
                 <posx>621</posx>
-                <posy>115</posy>
+                <posy>185</posy>
                 <width>678</width>
                 <height>429</height>
                 <label>-</label>
@@ -278,7 +307,7 @@
                 <visible>Control.HasFocus(410) | Control.HasFocus(250) | ControlGroup(400).HasFocus</visible>
                 <include>VisibleFadeEffect</include>
                 <posx>676</posx>
-                <posy>110</posy>
+                <posy>180</posy>
                 <control type="image">
                     <posx>0</posx>
                     <posy>-20</posy>
