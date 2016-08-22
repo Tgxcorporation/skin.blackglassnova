@@ -8,12 +8,12 @@
         <control type="group">
             <visible>![
                 Window.IsVisible(DialogPlayerProcessInfo.xml) |
-                Window.IsActive(DialogSelect.xml) |
-                Window.IsActive(SliderDialog) |
-                Window.IsActive(OSDVideoSettings) |
-                Window.IsActive(OSDAudioSettings) |
+                Window.IsVisible(DialogSelect.xml) |
+                Window.IsVisible(SliderDialog) |
+                Window.IsVisible(OSDVideoSettings) |
+                Window.IsVisible(OSDAudioSettings) |
                 Window.IsVisible(OSDAudioDSPSettings) |
-                Window.IsActive(VideoBookmarks) |
+                Window.IsVisible(VideoBookmarks) |
                 Window.IsVisible(PVROSDChannels) |
                 Window.IsVisible(PVROSDGuide)
                 ]</visible>
