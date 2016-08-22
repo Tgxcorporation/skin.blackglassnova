@@ -112,45 +112,8 @@
             <include>OSDFade</include>
             <posy>1026</posy>
             <control type="label">
-                <visible>![Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek] + [Player.Paused]</visible>
                 <include>SeekbarLabels</include>
-                <label>$LOCALIZE[112]</label>
-            </control>
-            <control type="label" id="24">
-                <visible>[Player.Paused + Player.Caching] + !Player.Seeking</visible>
-                <include>SeekbarLabels</include>
-                <label>$INFO[Player.CacheLevel,$LOCALIZE[15107] ,%]</label>
-            </control>
-            <control type="label">
-                <visible>player.forwarding2x | player.rewinding2x</visible>
-                <include>SeekbarLabels</include>
-                <label>2 X</label>
-            </control>
-            <control type="label">
-                <visible>player.forwarding4x | player.rewinding4x</visible>
-                <include>SeekbarLabels</include>
-                <label>4 X</label>
-            </control>
-            <control type="label">
-                <visible>player.forwarding8x | player.rewinding8x</visible>
-                <include>SeekbarLabels</include>
-                <label>8 X</label>
-            </control>
-            <control type="label">
-                <visible>player.forwarding16x | player.rewinding16x</visible>
-                <include>SeekbarLabels</include>
-                <label>16 X</label>
-            </control>
-            <control type="label">
-                <visible>player.forwarding32x | player.rewinding32x</visible>
-                <include>SeekbarLabels</include>
-                <label>32 X</label>
-            </control>
-            <control type="label">
-                <visible>![player.forwarding | player.rewinding]</visible>
-                <visible>Player.DisplayAfterSeek</visible>
-                <include>SeekbarLabels</include>
-                <label>$INFO[Player.SeekOffset,$LOCALIZE[773] ]</label>
+                <label>$VAR[SeekLabel]</label>
             </control>
             <control type="image">
                 <visible>player.rewinding</visible>
@@ -179,7 +142,7 @@
                 <itemgap>10</itemgap>
                 <align>center</align>
                 <onup>100</onup>
-                <ondown>87</ondown>
+                <ondown>101</ondown>
                 <control type="button" id="598">
                     <include>TopBarButton</include>
                     <texturefocus>topbar/topbar_back_focus.png</texturefocus>
@@ -266,6 +229,55 @@
                     <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
+                <control type="button" id="1616">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
+                    <onclick>Mute</onclick>
+                </control>
+                <control type="button" id="1618">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
+                    <onclick>VolumeDown</onclick>
+                </control>
+                <control type="button" id="1620">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
+                    <onclick>VolumeUp</onclick>
+                </control>
+                <control type="button" id="1622">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_smallscreen_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_smallscreen_nofocus.png</texturenofocus>
+                    <onclick>Dialog.Close(MusicOSD,true)</onclick>
+                    <onclick>fullscreen</onclick>
+                </control>
+                <control type="button" id="1624">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
+                    <onclick>Dialog.Close(MusicOSD,true)</onclick>
+                    <onclick>ActivateWindow(Settings,return)</onclick>
+                </control>
+                <control type="button" id="1626">
+                    <include>TopBarButton</include>
+                    <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
+                    <onclick>ActivateWindow(shutdownmenu)</onclick>
+                </control>
+            </control>
+            <!--101-->
+            <control type="grouplist" id="101">
+                <posx>0</posx>
+                <posy>138</posy>
+                <width>1920</width>
+                <orientation>horizontal</orientation>
+                <itemgap>10</itemgap>
+                <align>center</align>
+                <onup>100</onup>
+                <ondown>87</ondown>
                 <control type="button" id="306">
                     <visible>MusicPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[19019]</label>
@@ -409,44 +421,6 @@
                     <texturefocus>topbar/topbar_presets_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_presets_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(122)</onclick>
-                </control>
-                <control type="button" id="1616">
-                    <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
-                    <onclick>Mute</onclick>
-                </control>
-                <control type="button" id="1618">
-                    <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
-                    <onclick>VolumeDown</onclick>
-                </control>
-                <control type="button" id="1620">
-                    <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
-                    <onclick>VolumeUp</onclick>
-                </control>
-                <control type="button" id="1622">
-                    <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_smallscreen_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_smallscreen_nofocus.png</texturenofocus>
-                    <onclick>Dialog.Close(MusicOSD,true)</onclick>
-                    <onclick>fullscreen</onclick>
-                </control>
-                <control type="button" id="1624">
-                    <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
-                    <onclick>Dialog.Close(MusicOSD,true)</onclick>
-                    <onclick>ActivateWindow(Settings,return)</onclick>
-                </control>
-                <control type="button" id="1626">
-                    <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
-                    <onclick>ActivateWindow(shutdownmenu)</onclick>
                 </control>
             </control>
         </control>
