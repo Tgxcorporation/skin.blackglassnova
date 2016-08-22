@@ -408,7 +408,7 @@
                 </control>
                 <control type="label">
                     <posx>0</posx>
-                    <posy>11</posy>
+                    <posy>224</posy>
                     <textoffsetx>45</textoffsetx>
                     <textoffsety>32</textoffsety>
                     <align>right</align>
