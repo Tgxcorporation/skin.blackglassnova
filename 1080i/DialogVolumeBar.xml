@@ -8,10 +8,22 @@
     </coordinates>
     <include>DialogOpenClose</include>
     <controls>
+        <control type="progress" id="20">
+            <posx>-300</posx>
+            <posy>-300</posy>
+            <width>324</width>
+            <height>81</height>
+            <texturebg>-</texturebg>
+            <lefttexture>-</lefttexture>
+            <midtexture>-</midtexture>
+            <righttexture>-</righttexture>
+            <info>Player.Volume</info>
+        </control>
         <control type="group">
             <animation effect="slide" start="0,0" end="0,55" time="0" condition="window.isactive(DialogSeekBar.xml)|window.isactive(MusicOSD.xml)">Conditional</animation>
-            <control type="image" id="901">
-                <visible>Player.Muted</visible>
+            <control type="image">
+                <visible>Player.Muted + ![Skin.HasSetting(VerticalHome) + Window.IsVisible(Home.xml)]</visible>
+                <include>VisibleFadeEffect</include>
                 <posx>0</posx>
                 <posy>0</posy>
                 <width>100</width>
@@ -20,37 +32,16 @@
                 <texture>volume/VolumeMuted.png</texture>
             </control>
             <control type="group">
-                <visible>!Player.Muted</visible>
-                <control type="image">
-                    <visible>!player.passthrough</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>100</width>
-                    <height>100</height>
-                    <colordiffuse>WindowTitleColor</colordiffuse>
-                    <texture>volume/Volume.png</texture>
-                </control>
-                <control type="image">
-                    <visible>player.passthrough</visible>
-                    <posx>0</posx>
-                    <posy>0</posy>
-                    <width>100</width>
-                    <height>100</height>
-                    <colordiffuse>WindowTitleColor</colordiffuse>
-                    <texture>volume/VolumeMuted.png</texture>
-                </control>
+                <visible>!Player.Muted + !Player.passthrough</visible>
+                <include>VisibleFadeEffect</include>
                 <control type="group">
-                    <visible>!player.passthrough</visible>
-                    <control type="progress" id="20">
-                        <posx>-300</posx>
-                        <posy>-300</posy>
-                        <width>324</width>
-                        <height>81</height>
-                        <texturebg>-</texturebg>
-                        <lefttexture>-</lefttexture>
-                        <midtexture>-</midtexture>
-                        <righttexture>-</righttexture>
-                        <info>Player.Volume</info>
+                    <control type="image">
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>100</width>
+                        <height>100</height>
+                        <colordiffuse>WindowTitleColor</colordiffuse>
+                        <texture>volume/Volume.png</texture>
                     </control>
                     <control type="label">
                         <posx>100</posx>
