@@ -400,6 +400,8 @@
                     <texture>common/BlackDot.png</texture>
                 </control>
                 <control type="image">
+                    <visible>Integer.IsGreater(Container(9001).NumItems,0)</visible>
+                    <include>VisibleFadeEffect</include>
                     <posx>-470</posx>
                     <posy>178</posy>
                     <width>517</width>
