@@ -104,8 +104,6 @@
         </control>
         <include>Time</include>
         <control type="group">
-            <visible>![window.IsActive(DialogVolumeBar.xml)|window.IsActive(DialogMuteBug.xml)]+!Skin.HasSetting(VerticalHome)</visible>
-            <include>Icon_Fade</include>
             <control type="image">
                 <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
                 <posx>15</posx>
