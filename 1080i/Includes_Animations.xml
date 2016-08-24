@@ -62,7 +62,7 @@
         </animation>
     </include>
     <include name="PlexbmcFixTrick">
-        <animation effect="slide" time="0" start="0,0" end="4000,0">WindowOpen</animation>
+        <animation effect="slide" time="0" start="0,0" end="4000,0" delay="1000">WindowOpen</animation>
         <animation effect="slide" time="0" end="-4000,0">WindowClose</animation>
         <posx>-4000</posx>
     </include>
