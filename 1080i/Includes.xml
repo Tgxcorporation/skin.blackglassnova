@@ -413,6 +413,8 @@
                 </control>
             </control>
             <control type="label">
+                <visible>![window.IsActive(DialogVolumeBar.xml) + !Player.Muted]</visible>
+                <include>VisibleFadeEffect</include>
                 <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">conditional</animation>
                 <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
                 <posx>TextMarginR</posx>
@@ -426,6 +428,8 @@
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="label">
+                <visible>![window.IsActive(DialogVolumeBar.xml) + !Player.Muted]</visible>
+                <include>VisibleFadeEffect</include>
                 <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">conditional</animation>
                 <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
                 <description>Date label</description>
@@ -447,8 +451,20 @@
                 <width>64</width>
                 <height>64</height>
                 <texture>OverlayTopRecording.png</texture>
+                <include>VisibleFadeEffect</include>
                 <visible>PVR.IsRecording</visible>
                 <animation effect="fade" start="65" time="3000" condition="true" pulse="true">Conditional</animation>
+            </control>
+            <control type="image">
+                <visible>Player.Muted</visible>
+                <include>VisibleFadeEffect</include>
+                <posx>1881</posx>
+                <posy>-25</posy>
+                <width>64</width>
+                <height>64</height>
+                <texture>VolumeMuted.png</texture>
+                <animation effect="fade" start="65" time="3000" condition="true" pulse="true">Conditional</animation>
+                <animation effect="zoom" start="100" end="70" time="100" center="auto" condition="Pvr.IsRecording">Conditional</animation>
             </control>
         </control>
     </include>
