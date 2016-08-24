@@ -40,6 +40,7 @@
                 <texture border="10" flipy="true">common/basichome_upper_gradient.png</texture>
             </control>
             <control type="image">
+                <include condition="Skin.HasSetting(plexbmc)">PlexbmcFixTrick</include>
                 <include>VisibleFadeEffect</include>
                 <visible>!Control.hasfocus(505050)+[Control.IsVisible(53)|control.IsVisible(57)|control.IsVisible(58)|control.IsVisible(59)]</visible>
                 <posx>0</posx>
