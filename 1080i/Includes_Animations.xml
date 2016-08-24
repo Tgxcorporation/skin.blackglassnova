@@ -63,7 +63,7 @@
             <effect type="slide" time="0" start="0,0" end="4000,0" delay="1000"/>
         </animation>
         <animation type="WindowClose">
-            <effect type="slide" time="0" end="-4000,0"/>
+            <effect type="slide" time="0" end="4000,0"/>
         </animation>
         <posx>-4000</posx>
     </include>
