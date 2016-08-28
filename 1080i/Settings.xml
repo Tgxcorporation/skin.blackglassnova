@@ -288,6 +288,18 @@
                         <label2>$VAR[Default.Art]</label2>
                         <onclick>activatewindow(skinsettings)</onclick>
                     </item>
+                    <item id="14">
+                        <visible>!Skin.HasSetting(BlackGlassMode)</visible>
+                        <label>$LOCALIZE[20183]</label>
+                        <onclick>ReloadSkin()</onclick>
+                        <label2>special://skin/backgrounds/Favourites.jpg</label2>
+                    </item>
+                    <item id="14">
+                        <visible>Skin.HasSetting(BlackGlassMode)</visible>
+                        <label>$LOCALIZE[20183]</label>
+                        <onclick>ReloadSkin()</onclick>
+                        <label2>special://skin/backgrounds/Favourites2.jpg</label2>
+                    </item>
                 </content>
             </control>
             <control type="scrollbar" id="60">
