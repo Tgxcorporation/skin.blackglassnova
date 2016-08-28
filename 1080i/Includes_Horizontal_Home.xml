@@ -98,7 +98,7 @@
                 <width>359</width>
                 <height>225</height>
                 <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
-                <aspectratio>scale</aspectratio>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <include>ThumbBorder</include>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
                 <fadetime>0</fadetime>
@@ -121,7 +121,7 @@
                 <posy>0</posy>
                 <width>390</width>
                 <height>243</height>
-                <aspectratio>scale</aspectratio>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorderOverlay</include>
                 <fadetime>0</fadetime>

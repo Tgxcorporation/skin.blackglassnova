@@ -234,7 +234,7 @@
                 <width>359</width>
                 <height>225</height>
                 <texture background="true">special://skin/backgrounds/Weather.jpg</texture>
-                <aspectratio>scale</aspectratio>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <include>ThumbBorder</include>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
@@ -246,7 +246,7 @@
                 <width>359</width>
                 <height>225</height>
                 <texture background="true">$INFO[ListItem.Icon]</texture>
-                <aspectratio>scale</aspectratio>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <include>ThumbBorder</include>
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
@@ -258,7 +258,7 @@
                 <height>225</height>
                 <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <colordiffuse>90ffffff</colordiffuse>
-                <aspectratio>scale</aspectratio>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <include>ThumbBorder</include>
             </control>
             <control type="label">
@@ -304,7 +304,7 @@
                 <posy>0</posy>
                 <width>390</width>
                 <height>243</height>
-                <aspectratio>scale</aspectratio>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <texture background="true">special://skin/backgrounds/Weather.jpg</texture>
                 <include>ThumbBorderOverlay</include>
             </control>
@@ -315,7 +315,7 @@
                 <posy>0</posy>
                 <width>390</width>
                 <height>243</height>
-                <aspectratio>scale</aspectratio>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <texture background="true">$INFO[ListItem.Icon]</texture>
                 <include>ThumbBorderOverlay</include>
             </control>
@@ -325,7 +325,7 @@
                 <posy>0</posy>
                 <width>390</width>
                 <height>243</height>
-                <aspectratio>scale</aspectratio>
+                <aspectratio scalediffuse="false" aligny="bottom">keep</aspectratio>
                 <texture background="true" fallback="special://skin/backgrounds/default/default.jpg">$INFO[ListItem.Icon]</texture>
                 <colordiffuse>90ffffff</colordiffuse>
                 <include>ThumbBorderOverlay</include>
