@@ -349,7 +349,7 @@
                                 <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="1006">
-                                <visible>!Skin.HasSetting(plexbmc)]</visible>
+                                <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <label/>
                                 <label2>$LOCALIZE[31076]</label2>
                                 <onclick>noop</onclick>
