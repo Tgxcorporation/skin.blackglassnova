@@ -58,7 +58,6 @@
         <content>
             <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
             <include>skinshortcuts-submenu</include>
-            <include>default-submenu</include>
         </content>
     </include>
     <include name="Horizontal_Fixed_HomeSubMenu">
