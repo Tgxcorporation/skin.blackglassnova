@@ -289,7 +289,7 @@
                 <onup>211</onup>
                 <ondown>300</ondown>
             </control>
-            <include>SkinShortcuts_Window_Vertical_Upper_Level</include>
+            <include condition="Skin.HasSetting(VerticalHome)">SkinShortcuts_Window_Vertical_Upper_Level</include>
             <include>SkinShortcuts_Window_Navigation</include>
             <control type="group">
                 <visible>!Skin.HasSetting(VerticalHome)</visible>
