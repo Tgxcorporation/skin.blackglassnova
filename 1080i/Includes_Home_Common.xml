@@ -673,6 +673,19 @@
             <onclick>Skin.ToggleSetting(BlackGlassMode)</onclick>
             <onclick>ReloadSkin()</onclick>
         </item>
+        <item id="90205">
+            <visible>String.IsEqual(System.ProfileName,Master user) + [String.IsEqual(Container(300).ListItem.Property(submenuVisibility),settings)]</visible>
+            <label>$LOCALIZE[20183]</label>
+            <!--<label2>Common Shortcut</label2>-->
+            <icon>special://skin/backgrounds/default/default.jpg</icon>
+            <thumb />
+            <property name="labelID">20183</property>
+            <property name="defaultID">20183</property>
+            <property name="path">ReloadSkin()</property>
+            <property name="isSubmenu">True</property>
+            <property name="group">settings</property>
+            <onclick>ReloadSkin()</onclick>
+        </item>
     </include>
     <include name="WidgetsCollection">
         <control type="group" id="700">
