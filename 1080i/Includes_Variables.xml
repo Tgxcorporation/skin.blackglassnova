@@ -363,7 +363,7 @@
     <variable name="Fanart.Art">
         <value condition="Skin.HasSetting(DisableFanart)">$VAR[Default.Art]</value>
         <value condition="Window.IsActive(Home.xml) + Skin.HasSetting(Home_DefaultBG)">$VAR[Default.Art]</value>
-        <value condition="Window.IsActive(Home.xml) + Skin.HasSetting(BlackGlassMode) + !Skin.HasSetting(VerticalHome)">-</value>
+        <value condition="Window.IsActive(Home.xml) + Skin.HasSetting(BlackGlassMode) + !Skin.HasSetting(VerticalHome) + !ControlGroup(700).HasFocus">-</value>
         <value condition="Window.IsActive(Home.xml)">$VAR[HomeBackgrounds]</value>
         <value condition="Window.IsActive(script-NextAired-TVGuide.xml)|Window.IsActive(script-NextAired-TVGuide2.xml)">$VAR[TVShows.Art]</value>
         <value condition="Window.IsActive(MyPics.xml)">$VAR[Pictures.Art]</value>
