@@ -227,7 +227,7 @@
         <focusposition>1</focusposition>
         <itemlayout height="262" width="417">
             <control type="image">
-                <visible>![String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                <visible>![String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                 <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>29</posx>
                 <posy>9</posy>
@@ -239,7 +239,7 @@
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
-                <visible>![String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                <visible>![String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                 <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>29</posx>
                 <posy>9</posy>
@@ -251,7 +251,7 @@
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
-                <visible>String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
+                <visible>String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
                 <posx>29</posx>
                 <posy>9</posy>
                 <width>359</width>
@@ -262,7 +262,7 @@
                 <include>ThumbBorder</include>
             </control>
             <control type="label">
-                <visible>String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
+                <visible>String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
                 <posx>3</posx>
                 <posy>0</posy>
                 <width>390</width>
@@ -298,7 +298,7 @@
         </itemlayout>
         <focusedlayout height="262" width="396">
             <control type="image">
-                <visible>![String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                <visible>![String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                 <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>3</posx>
                 <posy>0</posy>
@@ -309,7 +309,7 @@
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="image">
-                <visible>![String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                <visible>![String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                 <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                 <posx>3</posx>
                 <posy>0</posy>
@@ -320,7 +320,7 @@
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="image">
-                <visible>String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
+                <visible>String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
                 <posx>3</posx>
                 <posy>0</posy>
                 <width>390</width>
@@ -331,7 +331,7 @@
                 <include>ThumbBorderOverlay</include>
             </control>
             <control type="label">
-                <visible>String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
+                <visible>String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
                 <posx>3</posx>
                 <posy>0</posy>
                 <width>390</width>
@@ -385,7 +385,7 @@
             <control type="group">
                 <posx>103</posx>
                 <control type="image">
-                    <visible>![String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <visible>![String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                     <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
@@ -394,7 +394,7 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png">special://skin/backgrounds/Weather.jpg</texture>
                 </control>
                 <control type="image">
-                    <visible>![String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <visible>![String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                     <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
@@ -403,7 +403,7 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
-                    <visible>[String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <visible>[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                     <colordiffuse>50ffffff</colordiffuse>
                     <posx>-27</posx>
                     <posy>0</posy>
@@ -412,7 +412,7 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="label">
-                    <visible>String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
+                    <visible>String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -441,7 +441,7 @@
             <control type="group">
                 <posx>103</posx>
                 <control type="image">
-                    <visible>![String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <visible>![String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                     <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
@@ -450,7 +450,7 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png">special://skin/backgrounds/weather.jpg</texture>
                 </control>
                 <control type="image">
-                    <visible>![String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <visible>![String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                     <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
@@ -459,7 +459,7 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="image">
-                    <visible>[String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
+                    <visible>[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]</visible>
                     <colordiffuse>50ffffff</colordiffuse>
                     <posx>-27</posx>
                     <posy>0</posy>
@@ -468,7 +468,7 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
                 </control>
                 <control type="label">
-                    <visible>String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
+                    <visible>String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)</visible>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -520,7 +520,7 @@
                 <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
             </control>
             <control type="label">
-                <animation effect="fade" start="100" end="50" condition="[String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]">Conditional</animation>
+                <animation effect="fade" start="100" end="50" condition="[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]">Conditional</animation>
                 <posx>TextMargin</posx>
                 <height>63</height>
                 <width>373</width>
@@ -540,7 +540,7 @@
                 <include>FlippedFacadeFocus</include>
             </control>
             <control type="label">
-                <animation effect="fade" start="100" end="50" condition="[String.IsEqual(ListItem.Property(hide),True)|String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]">Conditional</animation>
+                <animation effect="fade" start="100" end="50" condition="[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True)]">Conditional</animation>
                 <posx>TextMargin</posx>
                 <height>63</height>
                 <width>373</width>
