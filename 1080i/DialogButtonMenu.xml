@@ -13,7 +13,7 @@
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <control type="image">
-                <visible>IntegerGreaterThan(Container(9009).NumItems,9)+!IntegerGreaterThan(Container(9009).NumItems,10)</visible>
+                <visible>IntegerGreaterThan(Container(9009).NumItems,9)</visible>
                 <posx>555</posx>
                 <posy>72</posy>
                 <width>810</width>
@@ -122,9 +122,10 @@
                     <width>720</width>
                     <height>730</height>
                     <onleft>close</onleft>
-                    <onright>close</onright>
+                    <onright>6060</onright>
                     <onup>9009</onup>
                     <ondown>9009</ondown>
+                    <pagecontrol>6060</pagecontrol>
                     <scrolltime tween="sine" easing="inout">280</scrolltime>
                     <itemlayout height="73" width="720">
                         <control type="image">
@@ -144,7 +145,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="image">
-                            <posx>65r</posx>
+                            <posx>70r</posx>
                             <posy>0</posy>
                             <width>40</width>
                             <height>71</height>
@@ -169,7 +170,7 @@
                             <label>$INFO[ListItem.Label]</label>
                         </control>
                         <control type="image">
-                            <posx>65r</posx>
+                            <posx>70r</posx>
                             <posy>0</posy>
                             <width>40</width>
                             <height>71</height>
@@ -290,6 +291,15 @@
                             <icon>topbar/topbar_play_focus.png</icon>
                         </item>
                     </content>
+                </control>
+                <control type="scrollbar" id="6060">
+                    <visible>IntegerGreaterThan(Container(9009).NumItems,9)</visible>
+                    <posx>1289</posx>
+                    <posy>176</posy>
+                    <height>730</height>
+                    <include>VerticalScroller</include>
+                    <onleft>9009</onleft>
+                    <onright>close</onright>
                 </control>
             </control>
         </control>
