@@ -319,25 +319,29 @@
                             </item>
                             <item id="250">
                                 <visible>System.HasAddon(plugin.video.plexbmc) + !Skin.HasSetting(plexbmc)</visible>
-                                <label>$LOCALIZE[31008]</label>
+                                <label>Kodi / PleXBMC</label>
+                                <label2>Kodi</label2>
                                 <onclick>Skin.ToggleSetting(plexbmc)</onclick>
                                 <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="250">
                                 <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-                                <label>$LOCALIZE[31009]</label>
+                                <label>Kodi / PleXBMC</label>
+                                <label2>PleXBMC</label2>
                                 <onclick>Skin.ToggleSetting(plexbmc)</onclick>
                                 <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="251">
                                 <visible>!Skin.HasSetting(BlackGlassMode)</visible>
-                                <label>$LOCALIZE[31027]</label>
+                                <label>Black Glass Nova / Black Glass</label>
+                                <label2>Black Glass Nova</label2>
                                 <onclick>Skin.ToggleSetting(BlackGlassMode)</onclick>
                                 <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="251">
                                 <visible>Skin.HasSetting(BlackGlassMode)</visible>
-                                <label>$LOCALIZE[31028]</label>
+                                <label>Black Glass Nova / Black Glass</label>
+                                <label2>Black Glass</label2>
                                 <onclick>Skin.ToggleSetting(BlackGlassMode)</onclick>
                                 <onclick>ReloadSkin()</onclick>
                             </item>
