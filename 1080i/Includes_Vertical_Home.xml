@@ -52,7 +52,6 @@
         </focusedlayout>
         <content>
             <include>skinshortcuts-submenu</include>
-            <include>default-submenu</include>
             <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
         </content>
     </include>
