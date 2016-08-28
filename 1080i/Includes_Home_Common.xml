@@ -615,8 +615,6 @@
             </item>
         </content>
     </include>
-    <include name="default-submenu">
-    </include>
     <include name="WidgetsCollection">
         <control type="group" id="700">
             <posy>-1080</posy>
