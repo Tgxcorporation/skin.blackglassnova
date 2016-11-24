@@ -104,6 +104,8 @@
         </control>
         <include>Time</include>
         <control type="group">
+            <visible>!Skin.HasSetting(VerticalHome)</visible>
+            <include>Icon_Fade</include>
             <control type="image">
                 <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
                 <posx>15</posx>
