@@ -93,8 +93,7 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="group">
-                <animation effect="slide" time="0" start="0,0" end="0,-37" condition="IntegerGreaterThan(Container(9009).NumItems,10)+!IntegerGreaterThan(Container(9009).NumItems,11)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,0" condition="IntegerGreaterThan(Container(9009).NumItems,9)+!IntegerGreaterThan(Container(9009).NumItems,10)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,0" condition="IntegerGreaterThan(Container(9009).NumItems,9)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,36" condition="IntegerGreaterThan(Container(9009).NumItems,8)+!IntegerGreaterThan(Container(9009).NumItems,9)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,73" condition="IntegerGreaterThan(Container(9009).NumItems,7)+!IntegerGreaterThan(Container(9009).NumItems,8)">conditional</animation>
                 <animation effect="slide" time="0" start="0,0" end="0,109" condition="IntegerGreaterThan(Container(9009).NumItems,6)+!IntegerGreaterThan(Container(9009).NumItems,7)">conditional</animation>
