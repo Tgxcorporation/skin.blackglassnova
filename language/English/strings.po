@@ -582,7 +582,11 @@ msgctxt "#31417"
 msgid "Recommended Episodes"
 msgstr ""
 
-#empty strings from id 31418 to 31499
+msgctxt "#31418"
+msgid "Most played albums"
+msgstr ""
+
+#empty strings from id 31419 to 31499
 #PVR Labels
 
 msgctxt "#31500"
