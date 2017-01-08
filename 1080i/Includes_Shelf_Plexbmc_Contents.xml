@@ -7,6 +7,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.1.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.1.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.1.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="2">
@@ -14,6 +15,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.2.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.2.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.2.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="3">
@@ -21,6 +23,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.3.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.3.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.3.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="4">
@@ -28,6 +31,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.4.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.4.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.4.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="5">
@@ -35,6 +39,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.5.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.5.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.5.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="6">
@@ -42,6 +47,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.6.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.6.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.6.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="7">
@@ -49,6 +55,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.7.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.7.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.7.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="8">
@@ -56,6 +63,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.8.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.8.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.8.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="9">
@@ -63,6 +71,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.9.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.9.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.9.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="10">
@@ -70,6 +79,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.10.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.10.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.10.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="11">
@@ -77,6 +87,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.11.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.11.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.11.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="12">
@@ -84,6 +95,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.12.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.12.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.12.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="13">
@@ -91,6 +103,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.13.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.13.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.13.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="14">
@@ -98,6 +111,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.14.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.14.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.14.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
             <item id="15">
@@ -105,6 +119,7 @@
                 <label>$INFO[Window.Property(Plexbmc.LatestPhoto.15.Title)]</label>
                 <onclick>$INFO[Container(300).ListItem.Property(recent)]</onclick>
                 <thumb>$INFO[Window.Property(Plexbmc.LatestPhoto.15.Thumb)]</thumb>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestPhoto.15.Art)]</property>
                 <property name="ItemType">Photo</property>
             </item>
         </content>
@@ -261,6 +276,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.1.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.1.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.1.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.1.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.1.Path)])</onclick>
             </item>
             <item id="2">
@@ -274,6 +290,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.2.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.2.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.2.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.2.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.2.Path)])</onclick>
             </item>
             <item id="3">
@@ -287,6 +304,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.3.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.3.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.3.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.3.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.3.Path)])</onclick>
             </item>
             <item id="4">
@@ -300,6 +318,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.4.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.4.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.4.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.4.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.4.Path)])</onclick>
             </item>
             <item id="5">
@@ -313,6 +332,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.5.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.5.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.5.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.5.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.5.Path)])</onclick>
             </item>
             <item id="6">
@@ -326,6 +346,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.6.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.6.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.6.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.6.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.6.Path)])</onclick>
             </item>
             <item id="7">
@@ -339,6 +360,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.7.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.7.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.7.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.7.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.7.Path)])</onclick>
             </item>
             <item id="8">
@@ -352,6 +374,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.8.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.8.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.8.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.8.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.8.Path)])</onclick>
             </item>
             <item id="9">
@@ -365,6 +388,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.9.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.9.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.9.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.9.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.9.Path)])</onclick>
             </item>
             <item id="10">
@@ -378,6 +402,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.10.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.10.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.10.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.10.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.10.Path)])</onclick>
             </item>
             <item id="11">
@@ -391,6 +416,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.11.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.11.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.11.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.11.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.11.Path)])</onclick>
             </item>
             <item id="12">
@@ -404,6 +430,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.12.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.12.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.12.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.12.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.12.Path)])</onclick>
             </item>
             <item id="13">
@@ -417,6 +444,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.13.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.13.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.13.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.13.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.13.Path)])</onclick>
             </item>
             <item id="14">
@@ -430,6 +458,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.14.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.14.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.14.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.14.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.14.Path)])</onclick>
             </item>
             <item id="15">
@@ -443,6 +472,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.15.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.15.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.15.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.15.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.15.Path)])</onclick>
             </item>
             <item id="16">
@@ -456,6 +486,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.16.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.16.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.16.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.16.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.16.Path)])</onclick>
             </item>
             <item id="17">
@@ -469,6 +500,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.17.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.17.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.17.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.17.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.17.Path)])</onclick>
             </item>
             <item id="18">
@@ -482,6 +514,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.18.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.18.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.18.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.18.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.18.Path)])</onclick>
             </item>
             <item id="19">
@@ -495,6 +528,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.19.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.19.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.19.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.19.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.19.Path)])</onclick>
             </item>
             <item id="20">
@@ -508,6 +542,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.20.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.20.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.20.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.20.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.20.Path)])</onclick>
             </item>
             <item id="21">
@@ -521,6 +556,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.21.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.21.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.21.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.21.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.21.Path)])</onclick>
             </item>
             <item id="22">
@@ -534,6 +570,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.22.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.22.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.22.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.22.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.22.Path)])</onclick>
             </item>
             <item id="23">
@@ -547,6 +584,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.23.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.23.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.23.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.23.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.23.Path)])</onclick>
             </item>
             <item id="24">
@@ -560,6 +598,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.24.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.24.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.24.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.24.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.24.Path)])</onclick>
             </item>
             <item id="25">
@@ -573,6 +612,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.25.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.25.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.25.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.25.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.25.Path)])</onclick>
             </item>
             <item id="26">
@@ -586,6 +626,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.26.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.26.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.26.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.26.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.26.Path)])</onclick>
             </item>
             <item id="27">
@@ -599,6 +640,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.27.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.27.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.27.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.27.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.27.Path)])</onclick>
             </item>
             <item id="28">
@@ -612,6 +654,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.28.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.28.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.28.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.28.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.28.Path)])</onclick>
             </item>
             <item id="29">
@@ -625,6 +668,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.29.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.29.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.29.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.29.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.29.Path)])</onclick>
             </item>
             <item id="30">
@@ -638,6 +682,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.30.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.30.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.30.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.30.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.30.Path)])</onclick>
             </item>
             <item id="31">
@@ -651,6 +696,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.31.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.31.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.31.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.31.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.31.Path)])</onclick>
             </item>
             <item id="32">
@@ -664,6 +710,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.32.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.32.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.32.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.32.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.32.Path)])</onclick>
             </item>
             <item id="33">
@@ -677,6 +724,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.33.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.33.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.33.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.33.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.33.Path)])</onclick>
             </item>
             <item id="34">
@@ -690,6 +738,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.34.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.34.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.34.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.34.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.34.Path)])</onclick>
             </item>
             <item id="35">
@@ -703,6 +752,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.35.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.35.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.35.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.35.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.35.Path)])</onclick>
             </item>
             <item id="36">
@@ -716,6 +766,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.36.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.36.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.36.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.36.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.36.Path)])</onclick>
             </item>
             <item id="37">
@@ -729,6 +780,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.37.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.37.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.37.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.37.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.37.Path)])</onclick>
             </item>
             <item id="38">
@@ -742,6 +794,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.38.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.38.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.38.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.38.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.38.Path)])</onclick>
             </item>
             <item id="39">
@@ -755,6 +808,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.39.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.39.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.39.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.39.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.39.Path)])</onclick>
             </item>
             <item id="40">
@@ -768,6 +822,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.40.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.40.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.40.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.40.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.40.Path)])</onclick>
             </item>
             <item id="41">
@@ -781,6 +836,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.41.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.41.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.41.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.41.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.41.Path)])</onclick>
             </item>
             <item id="42">
@@ -794,6 +850,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.42.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.42.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.42.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.42.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.42.Path)])</onclick>
             </item>
             <item id="43">
@@ -807,6 +864,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.43.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.43.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.43.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.43.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.43.Path)])</onclick>
             </item>
             <item id="44">
@@ -820,6 +878,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.44.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.44.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.44.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.44.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.44.Path)])</onclick>
             </item>
             <item id="45">
@@ -833,6 +892,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.45.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.45.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.45.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.45.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.45.Path)])</onclick>
             </item>
             <item id="46">
@@ -846,6 +906,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.46.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.46.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.46.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.46.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.46.Path)])</onclick>
             </item>
             <item id="47">
@@ -859,6 +920,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.47.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.47.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.47.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.47.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.47.Path)])</onclick>
             </item>
             <item id="48">
@@ -872,6 +934,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.48.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.48.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.48.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.48.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.48.Path)])</onclick>
             </item>
             <item id="49">
@@ -885,6 +948,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.49.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.49.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.49.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.49.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.49.Path)])</onclick>
             </item>
             <item id="50">
@@ -898,6 +962,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.50.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.50.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.50.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.50.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.50.Path)])</onclick>
             </item>
             <item id="51">
@@ -911,6 +976,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.51.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.51.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.51.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.51.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.51.Path)])</onclick>
             </item>
             <item id="52">
@@ -924,6 +990,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.52.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.52.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.52.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.52.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.52.Path)])</onclick>
             </item>
             <item id="53">
@@ -937,6 +1004,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.53.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.53.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.53.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.53.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.53.Path)])</onclick>
             </item>
             <item id="54">
@@ -950,6 +1018,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.54.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.54.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.54.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.54.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.54.Path)])</onclick>
             </item>
             <item id="55">
@@ -963,6 +1032,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.55.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.55.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.55.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.55.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.55.Path)])</onclick>
             </item>
             <item id="56">
@@ -976,6 +1046,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.56.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.56.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.56.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.56.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.56.Path)])</onclick>
             </item>
             <item id="57">
@@ -989,6 +1060,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.57.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.57.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.57.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.57.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.57.Path)])</onclick>
             </item>
             <item id="58">
@@ -1002,6 +1074,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.58.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.58.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.58.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.58.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.58.Path)])</onclick>
             </item>
             <item id="59">
@@ -1015,6 +1088,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.59.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.59.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.59.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.59.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.59.Path)])</onclick>
             </item>
             <item id="60">
@@ -1028,6 +1102,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.LatestMovie.60.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.LatestMovie.60.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.LatestMovie.60.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestMovie.60.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.LatestMovie.60.Path)])</onclick>
             </item>
         </content>
@@ -1045,6 +1120,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.1.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.1.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.1.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.1.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.1.Path)])</onclick>
             </item>
             <item id="2">
@@ -1058,6 +1134,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.2.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.2.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.2.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.2.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.2.Path)])</onclick>
             </item>
             <item id="3">
@@ -1071,6 +1148,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.3.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.3.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.3.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.3.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.3.Path)])</onclick>
             </item>
             <item id="4">
@@ -1084,6 +1162,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.4.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.4.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.4.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.4.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.4.Path)])</onclick>
             </item>
             <item id="5">
@@ -1097,6 +1176,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.5.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.5.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.5.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.5.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.5.Path)])</onclick>
             </item>
             <item id="6">
@@ -1110,6 +1190,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.6.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.6.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.6.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.6.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.6.Path)])</onclick>
             </item>
             <item id="7">
@@ -1123,6 +1204,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.7.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.7.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.7.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.7.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.7.Path)])</onclick>
             </item>
             <item id="8">
@@ -1136,6 +1218,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.8.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.8.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.8.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.8.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.8.Path)])</onclick>
             </item>
             <item id="9">
@@ -1149,6 +1232,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.9.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.9.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.9.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.9.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.9.Path)])</onclick>
             </item>
             <item id="10">
@@ -1162,6 +1246,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.10.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.10.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.10.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.10.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.10.Path)])</onclick>
             </item>
             <item id="11">
@@ -1175,6 +1260,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.11.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.11.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.11.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.11.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.11.Path)])</onclick>
             </item>
             <item id="12">
@@ -1188,6 +1274,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.12.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.12.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.12.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.12.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.12.Path)])</onclick>
             </item>
             <item id="13">
@@ -1201,6 +1288,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.13.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.13.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.13.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.13.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.13.Path)])</onclick>
             </item>
             <item id="14">
@@ -1214,6 +1302,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.14.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.14.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.14.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.14.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.14.Path)])</onclick>
             </item>
             <item id="15">
@@ -1227,6 +1316,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.15.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.15.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.15.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.15.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.15.Path)])</onclick>
             </item>
             <item id="16">
@@ -1240,6 +1330,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.16.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.16.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.16.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.16.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.16.Path)])</onclick>
             </item>
             <item id="17">
@@ -1253,6 +1344,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.17.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.17.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.17.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.17.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.17.Path)])</onclick>
             </item>
             <item id="18">
@@ -1266,6 +1358,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.18.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.18.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.18.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.18.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.18.Path)])</onclick>
             </item>
             <item id="19">
@@ -1279,6 +1372,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.19.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.19.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.19.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.19.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.19.Path)])</onclick>
             </item>
             <item id="20">
@@ -1292,6 +1386,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.20.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.20.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.20.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.20.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.20.Path)])</onclick>
             </item>
             <item id="21">
@@ -1305,6 +1400,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.21.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.21.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.21.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.21.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.21.Path)])</onclick>
             </item>
             <item id="22">
@@ -1318,6 +1414,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.22.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.22.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.22.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.22.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.22.Path)])</onclick>
             </item>
             <item id="23">
@@ -1331,6 +1428,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.23.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.23.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.23.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.23.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.23.Path)])</onclick>
             </item>
             <item id="24">
@@ -1344,6 +1442,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.24.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.24.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.24.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.24.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.24.Path)])</onclick>
             </item>
             <item id="25">
@@ -1357,6 +1456,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.25.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.25.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.25.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.25.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.25.Path)])</onclick>
             </item>
             <item id="26">
@@ -1370,6 +1470,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.26.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.26.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.26.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.26.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.26.Path)])</onclick>
             </item>
             <item id="27">
@@ -1383,6 +1484,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.27.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.27.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.27.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.27.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.27.Path)])</onclick>
             </item>
             <item id="28">
@@ -1396,6 +1498,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.28.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.28.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.28.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.28.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.28.Path)])</onclick>
             </item>
             <item id="29">
@@ -1409,6 +1512,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.29.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.29.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.29.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.29.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.29.Path)])</onclick>
             </item>
             <item id="30">
@@ -1422,6 +1526,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.30.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.30.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.30.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.30.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.30.Path)])</onclick>
             </item>
             <item id="31">
@@ -1435,6 +1540,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.31.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.31.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.31.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.31.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.31.Path)])</onclick>
             </item>
             <item id="32">
@@ -1448,6 +1554,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.32.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.32.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.32.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.32.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.32.Path)])</onclick>
             </item>
             <item id="33">
@@ -1461,6 +1568,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.33.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.33.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.33.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.33.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.33.Path)])</onclick>
             </item>
             <item id="34">
@@ -1474,6 +1582,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.34.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.34.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.34.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.34.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.34.Path)])</onclick>
             </item>
             <item id="35">
@@ -1487,6 +1596,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.35.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.35.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.35.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.35.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.35.Path)])</onclick>
             </item>
             <item id="36">
@@ -1500,6 +1610,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.36.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.36.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.36.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.36.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.36.Path)])</onclick>
             </item>
             <item id="37">
@@ -1513,6 +1624,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.37.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.37.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.37.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.37.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.37.Path)])</onclick>
             </item>
             <item id="38">
@@ -1526,6 +1638,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.38.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.38.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.38.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.38.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.38.Path)])</onclick>
             </item>
             <item id="39">
@@ -1539,6 +1652,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.39.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.39.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.39.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.39.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.39.Path)])</onclick>
             </item>
             <item id="40">
@@ -1552,6 +1666,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.40.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.40.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.40.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.40.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.40.Path)])</onclick>
             </item>
             <item id="41">
@@ -1565,6 +1680,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.41.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.41.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.41.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.41.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.41.Path)])</onclick>
             </item>
             <item id="42">
@@ -1578,6 +1694,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.42.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.42.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.42.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.42.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.42.Path)])</onclick>
             </item>
             <item id="43">
@@ -1591,6 +1708,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.43.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.43.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.43.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.43.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.43.Path)])</onclick>
             </item>
             <item id="44">
@@ -1604,6 +1722,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.44.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.44.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.44.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.44.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.44.Path)])</onclick>
             </item>
             <item id="45">
@@ -1617,6 +1736,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.45.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.45.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.45.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.45.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.45.Path)])</onclick>
             </item>
             <item id="46">
@@ -1630,6 +1750,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.46.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.46.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.46.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.46.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.46.Path)])</onclick>
             </item>
             <item id="47">
@@ -1643,6 +1764,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.47.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.47.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.47.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.47.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.47.Path)])</onclick>
             </item>
             <item id="48">
@@ -1656,6 +1778,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.48.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.48.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.48.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.48.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.48.Path)])</onclick>
             </item>
             <item id="49">
@@ -1669,6 +1792,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.49.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.49.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.49.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.49.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.49.Path)])</onclick>
             </item>
             <item id="50">
@@ -1682,6 +1806,7 @@
                 <property name="Rating">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.50.Rating)]</property>
                 <property name="Genre">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.50.Genre)]</property>
                 <property name="Plot">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.50.Plot)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckMovie.50.Art)]</property>
                 <onclick>PlayMedia($ESCINFO[Window(Home).Property(Plexbmc.OnDeckMovie.50.Path)])</onclick>
             </item>
         </content>
@@ -1694,6 +1819,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.1.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.1.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.1.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.1.Path)]</onclick>
             </item>
@@ -1703,6 +1829,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.2.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.2.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.2.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.2.Path)]</onclick>
             </item>
@@ -1712,6 +1839,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.3.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.3.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.3.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.3.Path)]</onclick>
             </item>
@@ -1721,6 +1849,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.4.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.4.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.41.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.4.Path)]</onclick>
             </item>
@@ -1730,6 +1859,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.5.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.5.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.5.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.5.Path)]</onclick>
             </item>
@@ -1739,6 +1869,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.6.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.6.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.6.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.6.Path)]</onclick>
             </item>
@@ -1748,6 +1879,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.7.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.7.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.7.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.7.Path)]</onclick>
             </item>
@@ -1757,6 +1889,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.8.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.8.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.8.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.8.Path)]</onclick>
             </item>
@@ -1766,6 +1899,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.9.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.9.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.9.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.9.Path)]</onclick>
             </item>
@@ -1775,6 +1909,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.10.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.10.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.10.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.10.Path)]</onclick>
             </item>
@@ -1784,6 +1919,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.11.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.11.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.11.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.11.Path)]</onclick>
             </item>
@@ -1793,6 +1929,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.12.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.12.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.12.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.12.Path)]</onclick>
             </item>
@@ -1802,6 +1939,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.13.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.13.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.13.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.13.Path)]</onclick>
             </item>
@@ -1811,6 +1949,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.14.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.14.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.14.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.14.Path)]</onclick>
             </item>
@@ -1820,6 +1959,7 @@
                 <label2>$INFO[Window(Home).Property(plexbmc.LatestAlbum.15.Artist)]</label2>
                 <thumb>$INFO[Window(Home).Property(plexbmc.LatestAlbum.15.Thumb)]</thumb>
                 <property name="ItemType">$LOCALIZE[31961]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestAlbum.15.Art)]</property>
                 <onclick>PlayList.Clear</onclick>
                 <onclick>$INFO[Window(Home).Property(plexbmc.LatestAlbum.15.Path)]</onclick>
             </item>
@@ -1909,6 +2049,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.1.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.1.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.1.Path)]</onclick>
             </item>
             <item id="2">
@@ -1919,6 +2060,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.2.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.2.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.2.Path)]</onclick>
             </item>
             <item id="3">
@@ -1929,6 +2071,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.3.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.3.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.3.Path)]</onclick>
             </item>
             <item id="4">
@@ -1939,6 +2082,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.4.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.4.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.4.Path)]</onclick>
             </item>
             <item id="5">
@@ -1949,6 +2093,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.5.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.5.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.5.Path)]</onclick>
             </item>
             <item id="6">
@@ -1959,6 +2104,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.6.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.6.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.6.Path)]</onclick>
             </item>
             <item id="7">
@@ -1969,6 +2115,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.7.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.7.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.7.Path)]</onclick>
             </item>
             <item id="8">
@@ -1979,6 +2126,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.8.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.8.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.8.Path)]</onclick>
             </item>
             <item id="9">
@@ -1989,6 +2137,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.9.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.8.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.9.Path)]</onclick>
             </item>
             <item id="10">
@@ -1999,6 +2148,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.10.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.10.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.10.Path)]</onclick>
             </item>
             <item id="11">
@@ -2009,6 +2159,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.11.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.11.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.11.Path)]</onclick>
             </item>
             <item id="12">
@@ -2019,6 +2170,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.12.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.12.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.12.Path)]</onclick>
             </item>
             <item id="13">
@@ -2029,6 +2181,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.13.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.13.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.13.Path)]</onclick>
             </item>
             <item id="14">
@@ -2039,6 +2192,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.14.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.14.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.14.Path)]</onclick>
             </item>
             <item id="15">
@@ -2049,6 +2203,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.15.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.15.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.15.Path)]</onclick>
             </item>
             <item id="16">
@@ -2059,6 +2214,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.16.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.16.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.16.Path)]</onclick>
             </item>
             <item id="17">
@@ -2069,6 +2225,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.17.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.17.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.17.Path)]</onclick>
             </item>
             <item id="18">
@@ -2079,6 +2236,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.18.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.18.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.18.Path)]</onclick>
             </item>
             <item id="19">
@@ -2089,6 +2247,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.19.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.19.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.19.Path)]</onclick>
             </item>
             <item id="20">
@@ -2099,6 +2258,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.20.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.20.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.20.Path)]</onclick>
             </item>
             <item id="21">
@@ -2109,6 +2269,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.21.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.21.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.21.Path)]</onclick>
             </item>
             <item id="22">
@@ -2119,6 +2280,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.22.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.22.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.22.Path)]</onclick>
             </item>
             <item id="23">
@@ -2129,6 +2291,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.23.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.23.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.23.Path)]</onclick>
             </item>
             <item id="24">
@@ -2139,6 +2302,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.24.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.24.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.24.Path)]</onclick>
             </item>
             <item id="25">
@@ -2149,6 +2313,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.25.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.25.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.25.Path)]</onclick>
             </item>
             <item id="26">
@@ -2159,6 +2324,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.26.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.26.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.26.Path)]</onclick>
             </item>
             <item id="27">
@@ -2169,6 +2335,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.27.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.27.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.27.Path)]</onclick>
             </item>
             <item id="28">
@@ -2179,6 +2346,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.28.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.28.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.28.Path)]</onclick>
             </item>
             <item id="29">
@@ -2189,6 +2357,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.29.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.29.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.29.Path)]</onclick>
             </item>
             <item id="30">
@@ -2199,6 +2368,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.30.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.30.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.30.Path)]</onclick>
             </item>
             <item id="31">
@@ -2209,6 +2379,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.31.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.31.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.31.Path)]</onclick>
             </item>
             <item id="32">
@@ -2219,6 +2390,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.32.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.32.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.32.Path)]</onclick>
             </item>
             <item id="33">
@@ -2229,6 +2401,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.33.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.33.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.33.Path)]</onclick>
             </item>
             <item id="34">
@@ -2239,6 +2412,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.34.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.34.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.34.Path)]</onclick>
             </item>
             <item id="35">
@@ -2249,6 +2423,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.35.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.35.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.35.Path)]</onclick>
             </item>
             <item id="36">
@@ -2259,6 +2434,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.36.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.36.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.36.Path)]</onclick>
             </item>
             <item id="37">
@@ -2269,6 +2445,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.37.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.37.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.37.Path)]</onclick>
             </item>
             <item id="38">
@@ -2279,6 +2456,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.38.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.38.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.38.Path)]</onclick>
             </item>
             <item id="39">
@@ -2289,6 +2467,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.39.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.39.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.39.Path)]</onclick>
             </item>
             <item id="40">
@@ -2299,6 +2478,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.40.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.40.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.40.Path)]</onclick>
             </item>
             <item id="41">
@@ -2309,6 +2489,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.41.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.41.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.41.Path)]</onclick>
             </item>
             <item id="42">
@@ -2319,6 +2500,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.42.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.42.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.42.Path)]</onclick>
             </item>
             <item id="43">
@@ -2329,6 +2511,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.43.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.43.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.43.Path)]</onclick>
             </item>
             <item id="44">
@@ -2339,6 +2522,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.44.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.44.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.44.Path)]</onclick>
             </item>
             <item id="45">
@@ -2349,6 +2533,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.45.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.45.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.45.Path)]</onclick>
             </item>
             <item id="46">
@@ -2359,6 +2544,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.46.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.46.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.46.Path)]</onclick>
             </item>
             <item id="47">
@@ -2369,6 +2555,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.47.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.47.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.47.Path)]</onclick>
             </item>
             <item id="48">
@@ -2379,6 +2566,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.48.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.48.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.48.Path)]</onclick>
             </item>
             <item id="49">
@@ -2389,6 +2577,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.49.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.49.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.49.Path)]</onclick>
             </item>
             <item id="50">
@@ -2399,6 +2588,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.50.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.50.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.50.Path)]</onclick>
             </item>
             <item id="51">
@@ -2409,6 +2599,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.51.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.51.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.51.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.51.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.51.Path)]</onclick>
             </item>
             <item id="52">
@@ -2419,6 +2610,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.52.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.52.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.52.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.52.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.52.Path)]</onclick>
             </item>
             <item id="53">
@@ -2429,6 +2621,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.53.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.53.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.53.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.53.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.53.Path)]</onclick>
             </item>
             <item id="54">
@@ -2439,6 +2632,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.54.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.54.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.54.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.54.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.54.Path)]</onclick>
             </item>
             <item id="55">
@@ -2449,6 +2643,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.55.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.55.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.55.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.55.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.55.Path)]</onclick>
             </item>
             <item id="56">
@@ -2459,6 +2654,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.56.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.56.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.56.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.56.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.56.Path)]</onclick>
             </item>
             <item id="57">
@@ -2469,6 +2665,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.57.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.57.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.57.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.57.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.57.Path)]</onclick>
             </item>
             <item id="58">
@@ -2479,6 +2676,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.58.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.58.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.58.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.58.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.58.Path)]</onclick>
             </item>
             <item id="59">
@@ -2489,6 +2687,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.59.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.59.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.59.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.59.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.59.Path)]</onclick>
             </item>
             <item id="60">
@@ -2499,6 +2698,7 @@
                 <property name="ItemType">$LOCALIZE[31961]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.LatestEpisode.60.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.LatestEpisode.60.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.LatestEpisode.60.Path)]</onclick>
             </item>
         </content>
@@ -2513,6 +2713,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.1.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.1.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path)]</onclick>
             </item>
             <item id="2">
@@ -2523,6 +2724,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.2.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.2.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.2.Path)]</onclick>
             </item>
             <item id="3">
@@ -2533,6 +2735,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.3.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.3.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.3.Path)]</onclick>
             </item>
             <item id="4">
@@ -2543,6 +2746,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.4.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.4.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.4.Path)]</onclick>
             </item>
             <item id="5">
@@ -2553,6 +2757,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.5.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.5.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.5.Path)]</onclick>
             </item>
             <item id="6">
@@ -2563,6 +2768,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.6.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.6.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.6.Path)]</onclick>
             </item>
             <item id="7">
@@ -2573,6 +2779,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.7.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.7.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.7.Path)]</onclick>
             </item>
             <item id="8">
@@ -2583,6 +2790,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.8.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.8.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.8.Path)]</onclick>
             </item>
             <item id="9">
@@ -2593,6 +2801,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.9.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.9.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.9.Path)]</onclick>
             </item>
             <item id="10">
@@ -2603,6 +2812,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.10.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.10.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.10.Path)]</onclick>
             </item>
             <item id="11">
@@ -2613,6 +2823,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.11.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.11.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.11.Path)]</onclick>
             </item>
             <item id="12">
@@ -2623,6 +2834,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.12.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.12.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.12.Path)]</onclick>
             </item>
             <item id="13">
@@ -2633,6 +2845,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.13.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.13.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.13.Path)]</onclick>
             </item>
             <item id="14">
@@ -2643,6 +2856,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.14.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.14.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.14.Path)]</onclick>
             </item>
             <item id="15">
@@ -2653,6 +2867,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.15.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.15.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.15.Path)]</onclick>
             </item>
             <item id="16">
@@ -2663,6 +2878,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.16.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.16.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.16.Path)]</onclick>
             </item>
             <item id="17">
@@ -2673,6 +2889,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.17.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.17.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.17.Path)]</onclick>
             </item>
             <item id="18">
@@ -2683,6 +2900,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.18.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.18.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.18.Path)]</onclick>
             </item>
             <item id="19">
@@ -2693,6 +2911,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.19.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.19.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.19.Path)]</onclick>
             </item>
             <item id="20">
@@ -2703,6 +2922,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.20.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.20.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.20.Path)]</onclick>
             </item>
             <item id="21">
@@ -2713,6 +2933,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.21.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.21.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.21.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.21.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.21.Path)]</onclick>
             </item>
             <item id="22">
@@ -2723,6 +2944,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.22.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.22.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.22.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.22.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.22.Path)]</onclick>
             </item>
             <item id="23">
@@ -2733,6 +2955,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.23.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.23.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.23.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.23.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.23.Path)]</onclick>
             </item>
             <item id="24">
@@ -2743,6 +2966,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.24.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.24.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.24.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.24.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.24.Path)]</onclick>
             </item>
             <item id="25">
@@ -2753,6 +2977,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.25.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.25.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.25.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.25.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.25.Path)]</onclick>
             </item>
             <item id="26">
@@ -2763,6 +2988,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.26.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.26.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.26.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.26.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.26.Path)]</onclick>
             </item>
             <item id="27">
@@ -2773,6 +2999,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.27.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.27.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.27.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.27.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.27.Path)]</onclick>
             </item>
             <item id="28">
@@ -2783,6 +3010,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.28.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.28.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.28.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.28.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.28.Path)]</onclick>
             </item>
             <item id="29">
@@ -2793,6 +3021,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.29.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.29.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.29.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.29.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.29.Path)]</onclick>
             </item>
             <item id="30">
@@ -2803,6 +3032,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.30.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.30.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.30.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.30.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.30.Path)]</onclick>
             </item>
             <item id="31">
@@ -2813,6 +3043,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.31.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.31.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.31.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.31.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.31.Path)]</onclick>
             </item>
             <item id="32">
@@ -2823,6 +3054,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.32.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.32.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.32.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.32.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.32.Path)]</onclick>
             </item>
             <item id="33">
@@ -2833,6 +3065,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.33.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.33.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.33.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.33.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.33.Path)]</onclick>
             </item>
             <item id="34">
@@ -2843,6 +3076,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.34.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.34.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.34.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.34.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.34.Path)]</onclick>
             </item>
             <item id="35">
@@ -2853,6 +3087,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.35.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.35.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.35.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.35.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.35.Path)]</onclick>
             </item>
             <item id="36">
@@ -2863,6 +3098,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.36.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.36.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.36.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.36.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.36.Path)]</onclick>
             </item>
             <item id="37">
@@ -2873,6 +3109,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.37.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.37.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.37.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.37.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.37.Path)]</onclick>
             </item>
             <item id="38">
@@ -2883,6 +3120,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.38.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.38.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.38.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.38.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.38.Path)]</onclick>
             </item>
             <item id="39">
@@ -2893,6 +3131,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.39.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.39.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.39.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.39.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.39.Path)]</onclick>
             </item>
             <item id="40">
@@ -2903,6 +3142,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.40.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.40.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.40.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.40.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.40.Path)]</onclick>
             </item>
             <item id="41">
@@ -2913,6 +3153,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.41.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.41.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.41.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.41.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.41.Path)]</onclick>
             </item>
             <item id="42">
@@ -2923,6 +3164,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.42.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.42.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.42.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.42.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.42.Path)]</onclick>
             </item>
             <item id="43">
@@ -2933,6 +3175,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.43.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.43.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.43.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.43.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.43.Path)]</onclick>
             </item>
             <item id="44">
@@ -2943,6 +3186,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.44.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.44.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.44.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.44.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.44.Path)]</onclick>
             </item>
             <item id="45">
@@ -2953,6 +3197,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.45.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.45.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.45.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.45.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.45.Path)]</onclick>
             </item>
             <item id="46">
@@ -2963,6 +3208,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.46.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.46.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.46.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.46.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.46.Path)]</onclick>
             </item>
             <item id="47">
@@ -2973,6 +3219,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.47.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.47.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.47.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.47.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.47.Path)]</onclick>
             </item>
             <item id="48">
@@ -2983,6 +3230,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.48.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.48.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.48.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.48.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.48.Path)]</onclick>
             </item>
             <item id="49">
@@ -2993,6 +3241,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.49.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.49.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.49.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.49.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.49.Path)]</onclick>
             </item>
             <item id="50">
@@ -3003,6 +3252,7 @@
                 <property name="ItemType">$LOCALIZE[31014]</property>
                 <property name="SeasonEpisode">$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.50.EpisodeSeasonNumber),,x]$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.50.EpisodeNumber)]</property>
                 <property name="TVshowTitle">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.50.ShowTitle)]</property>
+                <property name="Art">$INFO[Window(home).Property(Plexbmc.OnDeckEpisode.50.Art)]</property>
                 <onclick>$INFO[Window(Home).Property(Plexbmc.OnDeckEpisode.50.Path)]</onclick>
             </item>
         </content>
