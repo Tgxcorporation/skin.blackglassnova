@@ -68,6 +68,7 @@
         <value>$VAR[ThumbsMissing]</value>
     </variable>
     <variable name="GlobalSubTitles">
+        <value condition="Skin.hassetting(plexbmc) + !Window.IsActive(Home) + !IsEmpty(Window.Property(heading2))">$INFO[Window.Property(heading),,  •  ]$INFO[Window.Property(heading2)]</value>
         <value condition="Skin.hassetting(plexbmc) + !Window.IsActive(Home) + !IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading)]</value>
         <value condition="Window.IsActive(56) | Window.IsActive(SkinSettings.xml)">$LOCALIZE[20077]</value>
         <value condition="Window.IsActive(Settings.xml) | Window.IsActive(SettingsCategory.xml)">$LOCALIZE[5]</value>
