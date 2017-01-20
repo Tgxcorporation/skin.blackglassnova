@@ -21,7 +21,7 @@
                 [[Integer.IsGreater(Container(311).NumItems,0)|Integer.IsGreater(Container(312).NumItems,0)]+String.IsEqual(Container(300).ListItem.Property(type),movie)]|
                 [[Integer.IsGreater(Container(511).NumItems,0)]+String.IsEqual(Container(300).ListItem.Property(type),artist)]|
                 [[Integer.IsGreater(Container(212).NumItems,0)]+Container(300).HasFocus(50)]|
-                [[Integer.IsGreater(Container(411).NumItems,0)|Integer.IsGreater(Container(412).NumItems,0)]+String.IsEqual(Container(300).ListItem.Property(type),show)]
+                [[Integer.IsGreater(Container(411).NumItems,0)|Integer.IsGreater(Container(412).NumItems,0)|Integer.IsGreater(Container(413).NumItems,0)]+String.IsEqual(Container(300).ListItem.Property(type),show)]
                 ]]
                 ]</visible>
             <include>HiddenButton</include>
@@ -33,6 +33,7 @@
                 control.hasfocus(312)|
                 control.hasfocus(411)|
                 control.hasfocus(412)|
+                control.hasfocus(413)|
                 control.hasfocus(511)|
                 control.hasfocus(900)|
                 control.hasfocus(901)|

@@ -488,18 +488,27 @@
                 <onup condition="control.isvisible(901)+!Skin.HasSetting(VerticalHome)">SetFocus(901)</onup>
                 <onright condition="control.isvisible(901)+Skin.HasSetting(VerticalHome)">SetFocus(901)</onright>
             </item>
-            <!--RECOMMENDED-->
+            <!--RECENTLY VIEWED-->
             <item id="703">
                 <visible>[control.isvisible(312)+Integer.IsGreater(Container(312).NumItems,0)]|
                     [control.isvisible(412)+Integer.IsGreater(Container(412).NumItems,0)]</visible>
                 <include>VisibleFadeEffect</include>
-                <label>$LOCALIZE[31966]</label>
+                <label>$LOCALIZE[31011]</label>
                 <onclick condition="control.isvisible(312)">SetFocus(312)</onclick>
                 <onup condition="control.isvisible(312)+!Skin.HasSetting(VerticalHome)">SetFocus(312)</onup>
                 <onright condition="control.isvisible(312)+Skin.HasSetting(VerticalHome)">SetFocus(312)</onright>
                 <onclick condition="control.isvisible(412)">SetFocus(412)</onclick>
                 <onup condition="control.isvisible(412)+!Skin.HasSetting(VerticalHome)">SetFocus(412)</onup>
                 <onright condition="control.isvisible(412)+Skin.HasSetting(VerticalHome)">SetFocus(412)</onright>
+            </item>
+            <!--RECENTLY VIEWED SHOWS-->
+            <item id="704">
+                <visible>[control.isvisible(413)+Integer.IsGreater(Container(413).NumItems,0)]</visible>
+                <include>VisibleFadeEffect</include>
+                <label>$LOCALIZE[31932]</label>
+                <onclick condition="control.isvisible(413)">SetFocus(413)</onclick>
+                <onup condition="control.isvisible(413)+!Skin.HasSetting(VerticalHome)">SetFocus(413)</onup>
+                <onright condition="control.isvisible(413)+Skin.HasSetting(VerticalHome)">SetFocus(413)</onright>
             </item>
             <!--CUSTOM WIDGETS-->
             <item id="7001">
@@ -725,10 +734,10 @@
                 <param name="id" value="411"/>
                 <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),show)"/>
                 <param name="labelTitle" value="$INFO[Container(411).ListItem.Property(TVshowTitle)]"/>
-                <param name="labelLeft" value=""/>
+                <param name="labelLeft" value="$INFO[Container(411).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
                 <param name="labelCenter" value="$INFO[Container(411).ListItem.Property(SeasonEpisode),,  •  ]$INFO[Container(411).ListItem.Label]"/>
-                <param name="labelRight" value=""/>
-                <param name="visibilityLabelRight" value="false"/>
+                <param name="labelRight" value="$INFO[Container(411).ListItem.Property(Rating)]"/>
+                <param name="visibilityLabelRight" value="true"/>
             </include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Widget">
                 <param name="gfxType" value="Poster"/>
@@ -736,12 +745,22 @@
                 <param name="id" value="412"/>
                 <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),show)"/>
                 <param name="labelTitle" value="$INFO[Container(412).ListItem.Property(TVshowTitle)]"/>
-                <param name="labelLeft" value=""/>
+                <param name="labelLeft" value="$INFO[Container(412).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
                 <param name="labelCenter" value="$INFO[Container(412).ListItem.Property(SeasonEpisode),,  •  ]$INFO[Container(412).ListItem.Label]"/>
-                <param name="labelRight" value=""/>
-                <param name="visibilityLabelRight" value="false"/>
+                <param name="labelRight" value="$INFO[Container(412).ListItem.Property(Rating)]"/>
+                <param name="visibilityLabelRight" value="true"/>
             </include>
-
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Widget">
+                <param name="gfxType" value="Poster"/>
+                <param name="content" value="PlexRecentlyViewedShowContent"/>
+                <param name="id" value="413"/>
+                <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),show)"/>
+                <param name="labelTitle" value="$INFO[Container(413).ListItem.Label]"/>
+                <param name="labelLeft" value="$INFO[Container(413).ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
+                <param name="labelCenter" value="$INFO[Container(413).ListItem.Property(Year)]$INFO[Container(413).ListItem.Property(Mpaa),  •  ]$INFO[Container(413).ListItem.Property(Genre),  •  ]"/>
+                <param name="labelRight" value="$INFO[Container(413).ListItem.Property(Rating)]"/>
+                <param name="visibilityLabelRight" value="true"/>
+            </include>
             <!-- -->
             <!--CUSTOM WIDGETS-->
             <!-- -->
