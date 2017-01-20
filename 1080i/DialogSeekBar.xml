@@ -204,7 +204,8 @@
             </control>
         </control>
         <control type="group">
-            <animation effect="slide" start="0,0" end="0,-250" time="0" condition="window.IsActive(DialogFullScreenInfo.xml)">conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-250" time="100" condition="window.IsActive(DialogFullScreenInfo.xml)">conditional</animation>
+            <animation effect="slide" start="0,0" end="0,50" time="100" condition="window.IsActive(VideoOSD.xml)+window.IsActive(DialogFullScreenInfo.xml)">conditional</animation>
             <visible>!Skin.HasSetting(DisablePauseIconOSD)</visible>
             <visible>!Player.Caching</visible>
             <include>OSDVisibleFadeEffect</include>
