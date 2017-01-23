@@ -766,6 +766,7 @@
             <!-- -->
 
             <!--WIDGET 1-->
+            <!--WIDGET 1-->
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath)]"/>
@@ -939,7 +940,7 @@
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
-                <param name="id" value="700021"/>
+                <param name="id" value="700031"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.2),season)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),actor)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),director)|
@@ -948,36 +949,36 @@
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),movie)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),tvshow)|
                     [String.StartsWith(Container(300).ListItem.Property(widgetType.2),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700021).ListItem.TVShowTitle,,  •  ]$INFO[Container(700021).ListItem.Label]"/>
-                <param name="labelLeft" value="$INFO[Container(700021).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelCenter" value="$INFO[Container(700021).ListItem.Year]$INFO[Container(700021).ListItem.MPAA,  •  ]$INFO[Container(700021).ListItem.Genre,  •  ]"/>
-                <param name="labelRight" value="$INFO[Container(700021).ListItem.Rating]"/>
+                <param name="labelTitle" value="$INFO[Container(700031).ListItem.TVShowTitle,,  •  ]$INFO[Container(700031).ListItem.Label]"/>
+                <param name="labelLeft" value="$INFO[Container(700031).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelCenter" value="$INFO[Container(700031).ListItem.Year]$INFO[Container(700031).ListItem.MPAA,  •  ]$INFO[Container(700031).ListItem.Genre,  •  ]"/>
+                <param name="labelRight" value="$INFO[Container(700031).ListItem.Rating]"/>
                 <param name="visibilityLabelRight" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
-                <param name="id" value="700022"/>
+                <param name="id" value="700032"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.2),episode)|
                     [String.StartsWith(Container(300).ListItem.Property(widgetType.2),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700022).ListItem.TVShowTitle,,  •  ]$INFO[Container(700022).ListItem.Label]"/>
-                <param name="labelLeft" value="$INFO[Container(700022).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelCenter" value="$INFO[Container(700022).ListItem.Artist,,  •  ]$INFO[Container(700022).ListItem.Year]$INFO[Container(700022).ListItem.MPAA,  •  ]$INFO[Container(700022).ListItem.Genre,  •  ]"/>
-                <param name="labelRight" value="$INFO[Container(700022).ListItem.Rating]"/>
+                <param name="labelTitle" value="$INFO[Container(700032).ListItem.TVShowTitle,,  •  ]$INFO[Container(700032).ListItem.Label]"/>
+                <param name="labelLeft" value="$INFO[Container(700032).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelCenter" value="$INFO[Container(700032).ListItem.Artist,,  •  ]$INFO[Container(700032).ListItem.Year]$INFO[Container(700032).ListItem.MPAA,  •  ]$INFO[Container(700032).ListItem.Genre,  •  ]"/>
+                <param name="labelRight" value="$INFO[Container(700032).ListItem.Rating]"/>
                 <param name="visibilityLabelRight" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
             </include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
-                <param name="id" value="700023"/>
+                <param name="id" value="700033"/>
                 <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.2),audio)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),album)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),song)"/>
-                <param name="labelTitle" value="$INFO[Container(700023).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700033).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
-                <param name="labelCenter" value="$INFO[Container(700023).ListItem.Artist,,  •  ]$INFO[Container(700023).ListItem.Year]$INFO[Container(700023).ListItem.Genre,  •  ]"/>
+                <param name="labelCenter" value="$INFO[Container(700033).ListItem.Artist,,  •  ]$INFO[Container(700033).ListItem.Year]$INFO[Container(700033).ListItem.Genre,  •  ]"/>
                 <param name="labelRight" value=""/>
                 <param name="visibilityLabelRight" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
@@ -985,12 +986,12 @@
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
-                <param name="id" value="700024"/>
+                <param name="id" value="700034"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.2),tv)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),radio)"/>
-                <param name="labelTitle" value="$INFO[Container(700024).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700034).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
-                <param name="labelCenter" value="$INFO[Container(700024).ListItem.Label2,,  •  ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700024).ListItem.Genre]"/>
+                <param name="labelCenter" value="$INFO[Container(700034).ListItem.Label2,,  •  ]$INFO[Container(700034).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700034).ListItem.Genre]"/>
                 <param name="labelRight" value=""/>
                 <param name="visibilityLabelRight" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.2)]"/>
@@ -998,7 +999,7 @@
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.2)]"/>
-                <param name="id" value="700025"/>
+                <param name="id" value="700035"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.2),genre)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),year)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),playlist)|
@@ -1013,7 +1014,7 @@
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),picture)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),addon)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.2),program)"/>
-                <param name="labelTitle" value="$INFO[Container(700025).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700035).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
                 <param name="labelCenter" value=""/>
                 <param name="labelRight" value=""/>
@@ -1024,7 +1025,7 @@
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
-                <param name="id" value="700021"/>
+                <param name="id" value="700041"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.3),season)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),actor)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),director)|
@@ -1033,36 +1034,36 @@
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),movie)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),tvshow)|
                     [String.StartsWith(Container(300).ListItem.Property(widgetType.3),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700021).ListItem.TVShowTitle,,  •  ]$INFO[Container(700021).ListItem.Label]"/>
-                <param name="labelLeft" value="$INFO[Container(700021).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelCenter" value="$INFO[Container(700021).ListItem.Year]$INFO[Container(700021).ListItem.MPAA,  •  ]$INFO[Container(700021).ListItem.Genre,  •  ]"/>
-                <param name="labelRight" value="$INFO[Container(700021).ListItem.Rating]"/>
+                <param name="labelTitle" value="$INFO[Container(700041).ListItem.TVShowTitle,,  •  ]$INFO[Container(700041).ListItem.Label]"/>
+                <param name="labelLeft" value="$INFO[Container(700041).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelCenter" value="$INFO[Container(700041).ListItem.Year]$INFO[Container(700041).ListItem.MPAA,  •  ]$INFO[Container(700041).ListItem.Genre,  •  ]"/>
+                <param name="labelRight" value="$INFO[Container(700041).ListItem.Rating]"/>
                 <param name="visibilityLabelRight" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
-                <param name="id" value="700022"/>
+                <param name="id" value="700042"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.3),episode)|
                     [String.StartsWith(Container(300).ListItem.Property(widgetType.3),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700022).ListItem.TVShowTitle,,  •  ]$INFO[Container(700022).ListItem.Label]"/>
-                <param name="labelLeft" value="$INFO[Container(700022).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelCenter" value="$INFO[Container(700022).ListItem.Artist,,  •  ]$INFO[Container(700022).ListItem.Year]$INFO[Container(700022).ListItem.MPAA,  •  ]$INFO[Container(700022).ListItem.Genre,  •  ]"/>
-                <param name="labelRight" value="$INFO[Container(700022).ListItem.Rating]"/>
+                <param name="labelTitle" value="$INFO[Container(700042).ListItem.TVShowTitle,,  •  ]$INFO[Container(700042).ListItem.Label]"/>
+                <param name="labelLeft" value="$INFO[Container(700042).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelCenter" value="$INFO[Container(700042).ListItem.Artist,,  •  ]$INFO[Container(700042).ListItem.Year]$INFO[Container(700042).ListItem.MPAA,  •  ]$INFO[Container(700042).ListItem.Genre,  •  ]"/>
+                <param name="labelRight" value="$INFO[Container(700042).ListItem.Rating]"/>
                 <param name="visibilityLabelRight" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
             </include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
-                <param name="id" value="700023"/>
+                <param name="id" value="700043"/>
                 <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.3),audio)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),album)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),song)"/>
-                <param name="labelTitle" value="$INFO[Container(700023).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700043).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
-                <param name="labelCenter" value="$INFO[Container(700023).ListItem.Artist,,  •  ]$INFO[Container(700023).ListItem.Year]$INFO[Container(700023).ListItem.Genre,  •  ]"/>
+                <param name="labelCenter" value="$INFO[Container(700043).ListItem.Artist,,  •  ]$INFO[Container(700043).ListItem.Year]$INFO[Container(700043).ListItem.Genre,  •  ]"/>
                 <param name="labelRight" value=""/>
                 <param name="visibilityLabelRight" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
@@ -1070,12 +1071,12 @@
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
-                <param name="id" value="700024"/>
+                <param name="id" value="700044"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.3),tv)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),radio)"/>
-                <param name="labelTitle" value="$INFO[Container(700024).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700044).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
-                <param name="labelCenter" value="$INFO[Container(700024).ListItem.Label2,,  •  ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700024).ListItem.Genre]"/>
+                <param name="labelCenter" value="$INFO[Container(700044).ListItem.Label2,,  •  ]$INFO[Container(700044).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700044).ListItem.Genre]"/>
                 <param name="labelRight" value=""/>
                 <param name="visibilityLabelRight" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.3)]"/>
@@ -1083,7 +1084,7 @@
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.3)]"/>
-                <param name="id" value="700025"/>
+                <param name="id" value="700045"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.3),genre)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),year)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),playlist)|
@@ -1098,7 +1099,7 @@
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),picture)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),addon)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.3),program)"/>
-                <param name="labelTitle" value="$INFO[Container(700025).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700045).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
                 <param name="labelCenter" value=""/>
                 <param name="labelRight" value=""/>
@@ -1109,7 +1110,7 @@
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Poster"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
-                <param name="id" value="700021"/>
+                <param name="id" value="700051"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.4),season)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),actor)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),director)|
@@ -1118,36 +1119,36 @@
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),movie)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),tvshow)|
                     [String.StartsWith(Container(300).ListItem.Property(widgetType.4),musicvideo)+String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700021).ListItem.TVShowTitle,,  •  ]$INFO[Container(700021).ListItem.Label]"/>
-                <param name="labelLeft" value="$INFO[Container(700021).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelCenter" value="$INFO[Container(700021).ListItem.Year]$INFO[Container(700021).ListItem.MPAA,  •  ]$INFO[Container(700021).ListItem.Genre,  •  ]"/>
-                <param name="labelRight" value="$INFO[Container(700021).ListItem.Rating]"/>
+                <param name="labelTitle" value="$INFO[Container(700051).ListItem.TVShowTitle,,  •  ]$INFO[Container(700051).ListItem.Label]"/>
+                <param name="labelLeft" value="$INFO[Container(700051).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelCenter" value="$INFO[Container(700051).ListItem.Year]$INFO[Container(700051).ListItem.MPAA,  •  ]$INFO[Container(700051).ListItem.Genre,  •  ]"/>
+                <param name="labelRight" value="$INFO[Container(700051).ListItem.Rating]"/>
                 <param name="visibilityLabelRight" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
             </include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Episode"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
-                <param name="id" value="700022"/>
+                <param name="id" value="700052"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.4),episode)|
                     [String.StartsWith(Container(300).ListItem.Property(widgetType.4),musicvideo)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]"/>
-                <param name="labelTitle" value="$INFO[Container(700022).ListItem.TVShowTitle,,  •  ]$INFO[Container(700022).ListItem.Label]"/>
-                <param name="labelLeft" value="$INFO[Container(700022).ListItem.Duration,, $LOCALIZE[31297]]"/>
-                <param name="labelCenter" value="$INFO[Container(700022).ListItem.Artist,,  •  ]$INFO[Container(700022).ListItem.Year]$INFO[Container(700022).ListItem.MPAA,  •  ]$INFO[Container(700022).ListItem.Genre,  •  ]"/>
-                <param name="labelRight" value="$INFO[Container(700022).ListItem.Rating]"/>
+                <param name="labelTitle" value="$INFO[Container(700052).ListItem.TVShowTitle,,  •  ]$INFO[Container(700052).ListItem.Label]"/>
+                <param name="labelLeft" value="$INFO[Container(700052).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelCenter" value="$INFO[Container(700052).ListItem.Artist,,  •  ]$INFO[Container(700052).ListItem.Year]$INFO[Container(700052).ListItem.MPAA,  •  ]$INFO[Container(700052).ListItem.Genre,  •  ]"/>
+                <param name="labelRight" value="$INFO[Container(700052).ListItem.Rating]"/>
                 <param name="visibilityLabelRight" value="true"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
             </include>
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
-                <param name="id" value="700023"/>
+                <param name="id" value="700053"/>
                 <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(widgetType.4),audio)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),album)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),song)"/>
-                <param name="labelTitle" value="$INFO[Container(700023).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700053).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
-                <param name="labelCenter" value="$INFO[Container(700023).ListItem.Artist,,  •  ]$INFO[Container(700023).ListItem.Year]$INFO[Container(700023).ListItem.Genre,  •  ]"/>
+                <param name="labelCenter" value="$INFO[Container(700053).ListItem.Artist,,  •  ]$INFO[Container(700053).ListItem.Year]$INFO[Container(700053).ListItem.Genre,  •  ]"/>
                 <param name="labelRight" value=""/>
                 <param name="visibilityLabelRight" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
@@ -1155,12 +1156,12 @@
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Channel"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
-                <param name="id" value="700024"/>
+                <param name="id" value="700054"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.4),tv)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),radio)"/>
-                <param name="labelTitle" value="$INFO[Container(700024).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700054).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
-                <param name="labelCenter" value="$INFO[Container(700024).ListItem.Label2,,  •  ]$INFO[Container(700024).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700024).ListItem.Genre]"/>
+                <param name="labelCenter" value="$INFO[Container(700054).ListItem.Label2,,  •  ]$INFO[Container(700054).ListItem.Duration,, $LOCALIZE[31297]       ]$INFO[Container(700054).ListItem.Genre]"/>
                 <param name="labelRight" value=""/>
                 <param name="visibilityLabelRight" value="false"/>
                 <param name="target" value="$INFO[Container(300).ListItem.Property(widgetTarget.4)]"/>
@@ -1168,7 +1169,7 @@
             <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="CustomWidget">
                 <param name="gfxType" value="Square"/>
                 <param name="content" value="$INFO[Container(300).ListItem.Property(widgetPath.4)]"/>
-                <param name="id" value="700025"/>
+                <param name="id" value="700055"/>
                 <param name="visibility" value="String.StartsWith(Container(300).ListItem.Property(widgetType.4),genre)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),year)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),playlist)|
@@ -1183,7 +1184,7 @@
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),picture)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),addon)|
                     String.StartsWith(Container(300).ListItem.Property(widgetType.4),program)"/>
-                <param name="labelTitle" value="$INFO[Container(700025).ListItem.Label]"/>
+                <param name="labelTitle" value="$INFO[Container(700055).ListItem.Label]"/>
                 <param name="labelLeft" value=""/>
                 <param name="labelCenter" value=""/>
                 <param name="labelRight" value=""/>
