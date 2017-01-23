@@ -135,6 +135,7 @@
                     <label>Black Glass</label>
                 </control>
                 <control type="label">
+                    <visible>System.HasAddon(script.skin.helper.service)</visible>
                     <posx>158</posx>
                     <posy>940</posy>
                     <height>36</height>

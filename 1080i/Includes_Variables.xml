@@ -155,10 +155,10 @@
         <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),music)+Library.HasContent(Music)">$INFO[Window(Home).Property(Music.ArtistsCount),, $LOCALIZE[31937]]  •  $INFO[Window(Home).Property(Music.AlbumsCount),, $LOCALIZE[31938]]  •  $INFO[Window(Home).Property(Music.SongsCount),, $LOCALIZE[31933]]</value>
         <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),movies)">$INFO[Window(Home).Property(Movies.Count),, $LOCALIZE[31934]]$INFO[Window(Home).Property(Movies.UnWatched),  •  , $LOCALIZE[16101]]</value>
         <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),tvshows)">$INFO[Window(Home).Property(TVShows.Count),, $LOCALIZE[31936]]$INFO[Window(Home).Property(TVShows.UnWatched),  •  , $LOCALIZE[16101]]  /  $INFO[Window(Home).Property(episodes.Count),, $LOCALIZE[31935]]$INFO[Window(Home).Property(episodes.UnWatched),  •  , $LOCALIZE[16101]]</value>
-        <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),livetv)">$ADDON[script.skinshortcuts 32022]$INFO[Pvr.BackendName,  •  ]$INFO[Window(Home).Property(SkinHelper.TotalTVChannels),  •  , $LOCALIZE[19023]]</value>
-        <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),radio)">$ADDON[script.skinshortcuts 32087]$INFO[Pvr.BackendName,  •  ]$INFO[Window(Home).Property(SkinHelper.TotalRadioChannels),  •  , $LOCALIZE[19024]]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),livetv) + System.HasAddon(script.skin.helper.service)">$ADDON[script.skinshortcuts 32022]$INFO[Pvr.BackendName,  •  ]$INFO[Window(Home).Property(SkinHelper.TotalTVChannels),  •  , $LOCALIZE[19023]]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),radio) + System.HasAddon(script.skin.helper.service)">$ADDON[script.skinshortcuts 32087]$INFO[Pvr.BackendName,  •  ]$INFO[Window(Home).Property(SkinHelper.TotalRadioChannels),  •  , $LOCALIZE[19024]]</value>
         <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),favourites)">$INFO[Window(Home).Property(favourite.count),, $LOCALIZE[1036]]</value>
-        <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),$LOCALIZE[24001])">$INFO[Window(Home).Property(SkinHelper.TotalAddons),, $LOCALIZE[20161] $LOCALIZE[24001]]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),$LOCALIZE[24001]) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.TotalAddons),, $LOCALIZE[20161] $LOCALIZE[24001]]</value>
         <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),$LOCALIZE[13009])">$LOCALIZE[12390]: $INFO[System.Uptime]</value>
         <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),settings)">$INFO[System.memory(used.percent),$LOCALIZE[31309] ]$INFO[System.CPUUsage,  •  $LOCALIZE[13271] ]</value>
         <value condition="String.IsEqual(Container(300).ListItem.Property(defaultID),weather)">$INFO[Window(Weather).Property(Location),,  •  ]$INFO[Window(Weather).Property(Current.Condition),,  •  ]$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</value>
@@ -292,13 +292,13 @@
         <value>resource://resource.images.weathericons.transparent/</value>
     </variable>
     <variable name="Default.Art">
-        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
+        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
         <value condition="!String.IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
         <value condition="Skin.HasSetting(BlackGlassMode)">special://skin/backgrounds/default/default2.jpg</value>
         <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Videos.Art">
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
+        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
         <value condition="!String.IsEmpty(Skin.String(Videos.Background))">$INFO[Skin.String(Videos.Background)]</value>
         <value>special://skin/backgrounds/Videos.jpg</value>
     </variable>
@@ -311,17 +311,17 @@
         <value>special://skin/backgrounds/Quit.jpg</value>
     </variable>
     <variable name="Movies.Art">
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
+        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
         <value condition="!String.IsEmpty(Skin.String(Movies.Background))">$INFO[Skin.String(Movies.Background)]</value>
         <value>special://skin/backgrounds/Movies.jpg</value>
     </variable>
     <variable name="TVShows.Art">
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
+        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
         <value condition="!String.IsEmpty(Skin.String(TVShows.Background))">$INFO[Skin.String(TVShows.Background)]</value>
         <value>special://skin/backgrounds/TVShows.jpg</value>
     </variable>
     <variable name="Music.Art">
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
+        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
         <value condition="!String.IsEmpty(Skin.String(Music.Background))">$INFO[Skin.String(Music.Background)]</value>
         <value>special://skin/backgrounds/Music.jpg</value>
     </variable>
@@ -330,12 +330,12 @@
         <value>special://skin/backgrounds/Addons.jpg</value>
     </variable>
     <variable name="Concerts.Art">
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
         <value condition="!String.IsEmpty(Skin.String(Concerts.Background))">$INFO[Skin.String(Concerts.Background)]</value>
         <value>special://skin/backgrounds/Concerts.jpg</value>
     </variable>
     <variable name="Clips.Art">
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
         <value condition="!String.IsEmpty(Skin.String(Clips.Background))">$INFO[Skin.String(Clips.Background)]</value>
         <value>special://skin/backgrounds/Clips.jpg</value>
     </variable>
@@ -362,7 +362,7 @@
         <value>special://skin/backgrounds/Radio.jpg</value>
     </variable>
     <variable name="Pictures.Art">
-        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
+        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
         <value condition="!String.IsEmpty(Skin.String(Pictures.Background))">$INFO[Skin.String(Pictures.Background)]</value>
         <value>special://skin/backgrounds/Pictures.jpg</value>
     </variable>
@@ -398,14 +398,14 @@
     <variable name="HomeBackgrounds">
         <value condition="Skin.HasSetting(plexbmc)+!String.IsEqual(Container(300).ListItem.Property(uuid),)+!String.IsEmpty(Container(300).ListItem.ActualIcon)">$INFO[Container(300).ListItem.ActualIcon]</value>
         <value condition="Skin.HasSetting(plexbmc)+!String.IsEqual(Container(300).ListItem.Property(uuid),)+String.IsEmpty(Container(300).ListItem.ActualIcon)">$INFO[Container(300).ListItem.Icon]</value>
-        <value condition="String.IsEqual(Container(300).ListItem.Property(background),defaultFanart)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
-        <value condition="String.IsEqual(Container(300).ListItem.Property(background),pictureFanart)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
-        <value condition="String.IsEqual(Container(300).ListItem.Property(background),clipFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
-        <value condition="String.IsEqual(Container(300).ListItem.Property(background),concertFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
-        <value condition="String.IsEqual(Container(300).ListItem.Property(background),movieFanart)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
-        <value condition="String.IsEqual(Container(300).ListItem.Property(background),tvshowFanart)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
-        <value condition="String.IsEqual(Container(300).ListItem.Property(background),videoFanart)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
-        <value condition="String.IsEqual(Container(300).ListItem.Property(background),musicFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),defaultFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),pictureFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),clipFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),concertFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),movieFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),tvshowFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),videoFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
+        <value condition="String.IsEqual(Container(300).ListItem.Property(background),musicFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
         <value condition="String.IsEqual(Container(300).ListItem.Property(background),weatherFanart)">$VAR[WeatherFanartPath]$INFO[Weather.fanartcode].jpg</value>
         <value condition="String.IsEqual(Container(300).ListItem.Property(Background),Videos.Art)">$VAR[Videos.Art]</value>
         <value condition="String.IsEqual(Container(300).ListItem.Property(Background),Movies.Art)">$VAR[Movies.Art]</value>
@@ -434,14 +434,14 @@
         <value condition="Skin.HasSetting(BlackGlassMode) + !Skin.HasSetting(VerticalHome)">-</value>
         <value condition="Skin.HasSetting(plexbmc)+!String.IsEqual(Container(211).ListItem.Property(uuid),)+!String.IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.ActualIcon]</value>
         <value condition="Skin.HasSetting(plexbmc)+!String.IsEqual(Container(211).ListItem.Property(uuid),)+String.IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.Icon]</value>
-        <value condition="String.IsEqual(Container(211).ListItem.Property(background),defaultFanart)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
-        <value condition="String.IsEqual(Container(211).ListItem.Property(background),pictureFanart)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
-        <value condition="String.IsEqual(Container(211).ListItem.Property(background),clipFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
-        <value condition="String.IsEqual(Container(211).ListItem.Property(background),concertFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
-        <value condition="String.IsEqual(Container(211).ListItem.Property(background),movieFanart)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
-        <value condition="String.IsEqual(Container(211).ListItem.Property(background),tvshowFanart)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
-        <value condition="String.IsEqual(Container(211).ListItem.Property(background),videoFanart)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
-        <value condition="String.IsEqual(Container(211).ListItem.Property(background),musicFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(background),defaultFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(background),pictureFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(background),clipFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(background),concertFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(background),movieFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(background),tvshowFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(background),videoFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
+        <value condition="String.IsEqual(Container(211).ListItem.Property(background),musicFanart) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
         <value condition="String.IsEqual(Container(211).ListItem.Property(background),weatherFanart)">$VAR[WeatherFanartPath]$INFO[Weather.fanartcode].jpg</value>
         <value condition="String.IsEqual(Container(211).ListItem.Property(Background),Videos.Art)">$VAR[Videos.Art]</value>
         <value condition="String.IsEqual(Container(211).ListItem.Property(Background),Movies.Art)">$VAR[Movies.Art]</value>
@@ -820,7 +820,7 @@
         <value condition="!VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Cover]</value>
     </variable>
     <variable name="MusicPlayerCdArt">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Music.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Music.DiscArt)) + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</value>
         <value>$INFO[Player.Art(thumb)]</value>
     </variable>
     <variable name="MusicPlayerClearArtLogo">
@@ -828,7 +828,7 @@
         <value condition="[Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)]">$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</value>
     </variable>
     <variable name="DefaultClearArt">
-        <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
+        <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)] + System.HasAddon(script.skin.helper.service)">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]+!String.IsEmpty(ListItem.Art(tvshow.clearart))]">$INFO[ListItem.Art(tvshow.clearart)]</value>
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(script-ExtendedInfo Script-VideoList.xml)]">$INFO[Container(500).ListItem.Art(clearart)]</value>
         <value condition="Skin.HasSetting(EnableClearArt)">$INFO[ListItem.Art(clearart)]</value>
@@ -883,170 +883,6 @@
         <value condition="Container.Content(songs)">$INFO[ListItem.ContributorAndRole] $INFO[ListItem.Comment]</value>
         <value condition="Container.Content(albums)">$INFO[ListItem.Property(Album_Description)]</value>
         <value>$INFO[ListItem.Property(Artist_Description)]</value>
-    </variable>
-    <variable name="ForcedViews.movies">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),56)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),59)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.movies),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.movies))">-</value>
-    </variable>
-    <variable name="ForcedViews.sets">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),56)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),59)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.sets),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.sets))">-</value>
-    </variable>
-    <variable name="ForcedViews.setmovies">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),56)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),59)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.setmovies),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.setmovies))">-</value>
-    </variable>
-    <variable name="ForcedViews.tvshows">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),56)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),59)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvshows),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.tvshows))">-</value>
-    </variable>
-    <variable name="ForcedViews.seasons">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),56)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),59)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.seasons),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.seasons))">-</value>
-    </variable>
-    <variable name="ForcedViews.episodes">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),57)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.episodes),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.episodes))">-</value>
-    </variable>
-    <variable name="ForcedViews.musicvideos">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),56)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),59)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.musicvideos),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.musicvideos))">-</value>
-    </variable>
-    <variable name="ForcedViews.artists">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),58)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.artists),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.artists))">-</value>
-    </variable>
-    <variable name="ForcedViews.albums">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),58)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.albums),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.albums))">-</value>
-    </variable>
-    <variable name="ForcedViews.songs">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.songs),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.songs),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.songs),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.songs),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.songs),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.songs),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.songs),58)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.songs),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.songs),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.songs))">-</value>
-    </variable>
-    <variable name="ForcedViews.programs">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.programs),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.programs),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.programs),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.programs),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.programs),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.programs),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.programs),58)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.programs),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.programs),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.programs))">-</value>
-    </variable>
-    <variable name="ForcedViews.pictures">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.pictures),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.pictures),51)">$LOCALIZE[31090]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.pictures),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.pictures),53)">$LOCALIZE[536]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.pictures),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.pictures),55)">$LOCALIZE[31093]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.pictures),58)">$LOCALIZE[20445]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.pictures),5050)">$LOCALIZE[31095]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.pictures),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.pictures))">-</value>
-    </variable>
-    <variable name="ForcedViews.tvchannels">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvchannels),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvchannels),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvchannels),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvchannels),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.tvchannels))">-</value>
-    </variable>
-    <variable name="ForcedViews.tvrecordings">
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvrecordings),50)">$LOCALIZE[535]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvrecordings),52)">$LOCALIZE[31091]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvrecordings),54)">$LOCALIZE[31092]</value>
-        <value condition="String.IsEqual(Skin.String(SkinHelper.ForcedViews.tvrecordings),None)">-</value>
-        <value condition="String.IsEmpty(Skin.String(SkinHelper.ForcedViews.tvrecordings))">-</value>
     </variable>
     <variable name="VideoHWDecoder">
         <value condition="Player.Process(videohwdecoder)">HW</value>

@@ -581,7 +581,6 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="list" id="50">
-                    <visible>[[String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),50) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))] + !Skin.HasSetting(plexbmc)] | Skin.HasSetting(plexbmc)</visible>
                     <viewtype label="535">List</viewtype>
                     <posx>1260</posx>
                     <posy>426</posy>
@@ -766,7 +765,6 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="panel" id="52">
-                    <visible>[[String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),52) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))] + !Skin.HasSetting(plexbmc)] | Skin.HasSetting(plexbmc)</visible>
                     <viewtype label="31091">Large List</viewtype>
                     <posx>1260</posx>
                     <posy>207</posy>
@@ -951,7 +949,6 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="panel" id="54">
-                    <visible>[[String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),54) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))] + !Skin.HasSetting(plexbmc)] | Skin.HasSetting(plexbmc)</visible>
                     <viewtype label="31092">Low List</viewtype>
                     <posx>1260</posx>
                     <posy>645</posy>
@@ -1310,7 +1307,6 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="panel" id="50">
-                    <visible>[[String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),50) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))] + !Skin.HasSetting(plexbmc)] | Skin.HasSetting(plexbmc)</visible>
                     <viewtype label="535">List</viewtype>
                     <posx>1260</posx>
                     <posy>426</posy>
@@ -1502,7 +1498,6 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="panel" id="52">
-                    <visible>[[String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),52) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))] + !Skin.HasSetting(plexbmc)] | Skin.HasSetting(plexbmc)</visible>
                     <viewtype label="31091">Large List</viewtype>
                     <posx>1260</posx>
                     <posy>207</posy>
@@ -1695,7 +1690,6 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="panel" id="54">
-                    <visible>[[String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),54) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))] + !Skin.HasSetting(plexbmc)] | Skin.HasSetting(plexbmc)</visible>
                     <viewtype label="31092">Low List</viewtype>
                     <posx>1260</posx>
                     <posy>645</posy>

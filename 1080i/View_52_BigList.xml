@@ -314,7 +314,6 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="list" id="52">
-                    <visible>[[String.IsEqual(Window(Home).Property(SkinHelper.ForcedView),52) | String.IsEmpty(Window(Home).Property(SkinHelper.ForcedView))] + !Skin.HasSetting(plexbmc)] | Skin.HasSetting(plexbmc)</visible>
                     <viewtype label="31091">Large List</viewtype>
                     <posx>1260</posx>
                     <posy>207</posy>
