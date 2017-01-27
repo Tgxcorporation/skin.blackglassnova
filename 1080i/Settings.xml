@@ -86,21 +86,21 @@
                 <posy>195</posy>
                 <control type="image">
                     <posx>165</posx>
-                    <posy>602</posy>
+                    <posy>582</posy>
                     <width>1159</width>
-                    <height>393</height>
+                    <height>413</height>
                     <texture flipy="true" border="10">common/basichome_upper_gradient.png</texture>
                 </control>
                 <control type="image">
                     <posx>165</posx>
-                    <posy>602</posy>
+                    <posy>582</posy>
                     <width>1159</width>
-                    <height>393</height>
+                    <height>413</height>
                     <texture flipy="true" border="10">common/basichome_upper_gradient.png</texture>
                 </control>
                 <control type="image">
                     <posx>647</posx>
-                    <posy>801</posy>
+                    <posy>721</posy>
                     <width>195</width>
                     <height>54</height>
                     <texture>common/logo.png</texture>
@@ -108,7 +108,7 @@
                 </control>
                 <control type="image">
                     <posx>646</posx>
-                    <posy>800</posy>
+                    <posy>720</posy>
                     <width>195</width>
                     <height>54</height>
                     <texture>common/logo.png</texture>
@@ -116,7 +116,7 @@
                 <control type="label">
                     <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                     <posx>158</posx>
-                    <posy>880</posy>
+                    <posy>800</posy>
                     <height>36</height>
                     <width>1173</width>
                     <align>center</align>
@@ -127,7 +127,7 @@
                 <control type="label">
                     <visible>Skin.HasSetting(BlackGlassMode)</visible>
                     <posx>158</posx>
-                    <posy>880</posy>
+                    <posy>800</posy>
                     <height>36</height>
                     <width>1173</width>
                     <align>center</align>
@@ -137,13 +137,24 @@
                 </control>
                 <control type="label">
                     <posx>158</posx>
-                    <posy>940</posy>
+                    <posy>860</posy>
                     <height>36</height>
                     <width>1173</width>
                     <align>center</align>
                     <font>WindowTitleSubFont</font>
                     <textcolor>MainColor</textcolor>
                     <label>$INFO[Window(Home).Property(SkinHelper.skinVersion)] by Tgx</label>
+                </control>
+                <control type="label">
+                    <visible>System.HasAddon(script.skin.helper.service)</visible>
+                    <posx>158</posx>
+                    <posy>920</posy>
+                    <height>50</height>
+                    <width>1173</width>
+                    <align>center</align>
+                    <font>LeftMenuTitleFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <label>$LOCALIZE[]</label>
                 </control>
             </control>
             <control type="list" id="9001">
