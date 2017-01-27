@@ -357,6 +357,10 @@ msgctxt "#31085"
 msgid "Memory used"
 msgstr ""
 
+msgctxt "#31086"
+msgid "If you like this skin and you want to help a little bit,[CR] you can donate to this Paypal account: [B]massimo@pagani.no.it[/B]"
+msgstr ""
+
 #empty strings from id 31086 to 31089
 #Viewtype
 
