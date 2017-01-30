@@ -27,7 +27,7 @@
                 <width>900</width>
                 <height>30</height>
                 <font>InfoTitleFont</font>
-                <label>$ADDON[script.cu.lrclyrics 32199]</label>
+                <label>$INFO[MusicPlayer.Title]</label>
                 <align>center</align>
                 <aligny>center</aligny>
                 <textcolor>MainColor</textcolor>
