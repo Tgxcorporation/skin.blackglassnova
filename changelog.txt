@@ -1,3 +1,31 @@
+4.15.0
+Added donation message.
+Added toggles to skin settings.
+Updated toggle buttons gfx.
+Enhanced seek bar.
+Added support Recently added shows widget + Ratings and Runtime for PleXBMC widgets (only for Tgxcorporation's pleXBMC plugin).
+Added support for PleXBMC fanart in shelf items (only for Tgxcorporation's pleXBMC plugin).
+Added Recently viewed shows to Plex Home submenu.
+Added scrollbar to Quit Dialog.
+Moved Plex, Black Glass Mode, Reload skin controls into Skin Settings.
+Added options to reload skin.
+New layout for Muted and Volume Indicator.
+New layout for the busy dialog.
+New layout for video osd.
+New layout for music osd.
+Added Favourites to Quit Menu.
+Added option to disable zoomed images as fanart in pictures.
+New layout and navigation for vertical home menu.
+Added support for image resources from Kodi repository: weather Icons, weather fanarts, studio logos, album labels logos.
+Topbars enhancements. Added volume and window controls in Music and Video OSD.
+Changed icon for visualisation settings in MusicOSD.
+Changed icon for audio settings in VideoOSD.
+Enlarged Now Playing.
+Enlarged DialogNotification.
+Enlarged DialogExtendendProgressBar.
+Updated languages from Transifex.
+Bugs fixed.
+
 4.10.0
 Added option to choose custom color for themes and highlighted color.
 Added update library command in music screen.
