@@ -146,7 +146,6 @@
                     <label>$INFO[Window(Home).Property(SkinHelper.skinVersion)] by Tgx</label>
                 </control>
                 <control type="label">
-                    <visible>System.HasAddon(script.skin.helper.service)</visible>
                     <posx>158</posx>
                     <posy>920</posy>
                     <height>50</height>
