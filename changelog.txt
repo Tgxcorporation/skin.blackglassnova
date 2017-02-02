@@ -1,3 +1,9 @@
+6.0.1
+Added donation message.
+Added toggles to skin settings.
+Updated toggle buttons gfx.
+Bugs fixed.
+
 6.0.0
 Enhanced seek bar.
 Added support Recently added shows widget + Ratings and Runtime for PleXBMC widgets (only for Tgxcorporation's pleXBMC plugin).
