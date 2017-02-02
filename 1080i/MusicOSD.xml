@@ -308,7 +308,7 @@
             <!--101-->
             <control type="grouplist" id="101">
                 <posx>0</posx>
-                <posy>68</posy>
+                <posy>138</posy>
                 <width>1920</width>
                 <orientation>horizontal</orientation>
                 <itemgap>10</itemgap>
