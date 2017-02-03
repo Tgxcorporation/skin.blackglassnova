@@ -862,7 +862,7 @@
             </control>
             <control type="label">
                 <posx>645r</posx>
-                <visible>!StringCompare(ListItem.Label,)]</visible>
+                <visible>!StringCompare(ListItem.Label,)</visible>
                 <height>71</height>
                 <width>600</width>
                 <align>right</align>
