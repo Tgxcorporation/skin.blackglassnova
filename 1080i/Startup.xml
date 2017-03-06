@@ -2,6 +2,7 @@
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
     <onload>AlarmClock(StartupDelay,SetFocus(12),$VAR[StartupDelay],silent)</onload>
+    <onload>Skin.SetBool(SkinHelper.EnableMusicArt)</onload>
     <animation effect="fade" time="800">WindowOpen</animation>
     <animation effect="fade" time="200">WindowClose</animation>
     <controls>
@@ -93,7 +94,6 @@
                 <label>by Tgx</label>
             </control>
             <control type="label">
-                <visible>System.HasAddon(script.skin.helper.service)</visible>
                 <posx>55</posx>
                 <posy>1010</posy>
                 <height>36</height>

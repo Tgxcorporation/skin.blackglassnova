@@ -820,7 +820,7 @@
         <value condition="!VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Cover]</value>
     </variable>
     <variable name="MusicPlayerCdArt">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Music.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Music.DiscArt)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Music.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</value>
         <value>$INFO[Player.Art(thumb)]</value>
     </variable>
     <variable name="MusicPlayerClearArtLogo">
@@ -828,7 +828,7 @@
         <value condition="[Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)]">$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</value>
     </variable>
     <variable name="DefaultClearArt">
-        <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Window(Home).Property(SkinHelper.Music.ClearLogo)]</value>
+        <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]">$INFO[Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)]</value>
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]+!String.IsEmpty(ListItem.Art(tvshow.clearart))]">$INFO[ListItem.Art(tvshow.clearart)]</value>
         <value condition="Skin.HasSetting(EnableClearArt) + [Window.IsActive(script-ExtendedInfo Script-VideoList.xml)]">$INFO[Container(500).ListItem.Art(clearart)]</value>
         <value condition="Skin.HasSetting(EnableClearArt)">$INFO[ListItem.Art(clearart)]</value>
