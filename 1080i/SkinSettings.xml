@@ -478,7 +478,6 @@
                                 <label2>$VAR[ForcedViews.tvrecordings]</label2>
                                 <onclick>RunScript(script.skin.helper.service,action=setforcedview,contenttype=tvrecordings)</onclick>
                             </item>
-
                             <item id="1005">
                                 <label/>
                                 <label2>$LOCALIZE[19098]</label2>
@@ -496,12 +495,12 @@
                                 <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="127">
-                                <label>$ADDON[script.skin.helper.service 32028]</label>
-                                <onclick>RunScript(script.skin.helper.service,action=backup)</onclick>
+                                <label>$ADDON[script.skin.helper.skinbackup 32004]</label>
+                                <onclick>RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
                             </item>
                             <item id="128">
-                                <label>$ADDON[script.skin.helper.service 32032]</label>
-                                <onclick>RunScript(script.skin.helper.service,action=restore)</onclick>
+                                <label>$ADDON[script.skin.helper.skinbackup 32006]</label>
+                                <onclick>RunScript(script.skin.helper.skinbackup,action=restore)</onclick>
                             </item>
                         </content>
                     </control>
