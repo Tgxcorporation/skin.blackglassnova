@@ -174,8 +174,8 @@
             </control>
             <control type="textbox">
                 <posx>1404</posx>
-                <posy>990</posy>
-                <height>205</height>
+                <posy>1063</posy>
+                <height>138</height>
                 <width>343</width>
                 <align>left</align>
                 <font>LeftMenuTitleFont</font>
