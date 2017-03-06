@@ -820,10 +820,11 @@
         <value condition="!VideoPlayer.Content(episodes)">$INFO[VideoPlayer.Cover]</value>
     </variable>
     <variable name="MusicPlayerCdArt">
-        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Music.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</value>
+        <value condition="!String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.DiscArt))">$INFO[Window(Home).Property(SkinHelper.Player.Art.DiscArt)]</value>
         <value>$INFO[Player.Art(thumb)]</value>
     </variable>
     <variable name="MusicPlayerClearArtLogo">
+        <value condition="[Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)] + !String.IsEmpty(Window(Home).Property(SkinHelper.Player.Art.ClearLogo))">$INFO[Window(Home).Property(SkinHelper.Player.Art.ClearLogo)]</value>
         <value condition="[Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)] + !String.IsEmpty(MusicPlayer.Art(clearart))">$INFO[MusicPlayer.Art(clearart)]</value>
         <value condition="[Skin.HasSetting(EnableClearArt) | Skin.HasSetting(EnableClearLogo)]">$INFO[Skin.String(cdartPath)]$INFO[MusicPlayer.Artist,,/logo.png]</value>
     </variable>
