@@ -1760,7 +1760,7 @@
                             <onclick>Skin.Reset(Highlighted.Color.White)</onclick>
                             <onclick>Skin.ToggleSetting(Highlighted.Color.Custom)</onclick>
                             <selected>Skin.HasSetting(Highlighted.Color.Custom)</selected>
-                            <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=PickedColor.Highlight)</onclick>
+                            <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PickedColor.Highlight)</onclick>
                         </control>
                     </control>
                 </control>
@@ -1880,7 +1880,7 @@
                             <onclick>Skin.Reset(Overlay.Color.White)</onclick>
                             <onclick>Skin.ToggleSetting(Overlay.Color.Custom)</onclick>
                             <selected>Skin.HasSetting(Overlay.Color.Custom)</selected>
-                            <onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=PickedColor.Overlay)</onclick>
+                            <onclick>RunScript(script.skin.helper.colorpicker,skinstring=PickedColor.Overlay)</onclick>
                         </control>
                     </control>
                 </control>
