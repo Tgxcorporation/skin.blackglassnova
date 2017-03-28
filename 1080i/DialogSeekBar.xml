@@ -8,6 +8,15 @@
     <zorder>3</zorder>
     <controls>
         <control type="image">
+            <visible>Window.IsActive(VideoOSD.xml)</visible>
+            <include>VisibleFadeEffect</include>
+            <posx>-150</posx>
+            <posy>-3</posy>
+            <texture>common/basichome_upper_gradient.png</texture>
+            <width>2220</width>
+            <height>440</height>
+        </control>
+        <control type="image">
             <posx>-15</posx>
             <posy>0</posy>
             <width>1950</width>
