@@ -11,7 +11,7 @@
             [Container.Content(Artists) + [!String.IsEmpty(ListItem.Property(artist_genre)) | !String.IsEmpty(ListItem.Property(artist_style))]]|
             [Container.Content(MusicVideos) + !String.IsEmpty(ListItem.Duration)]|
             [Container.Content(Sets) + !String.IsEmpty(ListItem.Year)]|
-            [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
+            [Window.IsVisible(script-script.extendedinfo-VideoList.xml)]|
             [Container.Content(Movies) + !String.IsEmpty(ListItem.Duration)]|
             [[Container.Content(Seasons) | Container.Content(TVShows)] + !String.IsEmpty(ListItem.Year)]|
             [[Container.Content(Seasons) | Container.Content(TVShows)] + !String.IsEmpty(ListItem.MPAA)]|
@@ -30,7 +30,7 @@
             [Container.Content(Artists) + [!String.IsEmpty(ListItem.Property(artist_genre)) | !String.IsEmpty(ListItem.Property(artist_style))]]|
             [Container.Content(MusicVideos) + !String.IsEmpty(ListItem.Duration)]|
             [Container.Content(Sets) + !String.IsEmpty(ListItem.Year)]|
-            [Window.IsVisible(script-ExtendedInfo Script-VideoList.xml)]|
+            [Window.IsVisible(script-script.extendedinfo-VideoList.xml)]|
             [Container.Content(Movies) + !String.IsEmpty(ListItem.Duration)]|
             [[Container.Content(Seasons) | Container.Content(TVShows)] + !String.IsEmpty(ListItem.Year)]|
             [[Container.Content(Seasons) | Container.Content(TVShows)] + !String.IsEmpty(ListItem.MPAA)]|
