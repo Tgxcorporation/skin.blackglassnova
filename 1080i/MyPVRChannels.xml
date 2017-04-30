@@ -33,6 +33,7 @@
             <include>WindowTitleSub</include>
             <label>$LOCALIZE[19019]</label>
         </control>
+        <include>NowPlaying</include>
         <!-- BGN -->
         <control type="group">
             <visible>!Skin.HasSetting(BlackGlassMode)</visible>

@@ -119,5 +119,6 @@
                 <label>$VAR[HomeSubTitles]</label>
             </control>
         </control>
+        <include>NowPlaying</include>
     </controls>
 </window>

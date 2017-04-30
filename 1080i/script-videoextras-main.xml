@@ -21,6 +21,7 @@
             <include>WindowTitleSub</include>
             <label>$INFO[ListItem.Title]</label>
         </control>
+        <include>NowPlaying</include>
         <!-- BGN -->
         <control type="group">
             <visible>!Skin.HasSetting(BlackGlassMode)</visible>

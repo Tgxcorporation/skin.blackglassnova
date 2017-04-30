@@ -154,6 +154,7 @@
             <include>WindowTitleSub</include>
             <label>$INFO[Window.Property(WeatherProvider)]</label>
         </control>
+        <include>NowPlaying</include>
         <control type="group" id="49">
             <!-- BGN -->
             <control type="group">

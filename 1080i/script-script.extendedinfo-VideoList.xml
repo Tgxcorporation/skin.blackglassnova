@@ -26,6 +26,7 @@
             <include>WindowTitleSub</include>
             <label>$INFO[Window.Property(Filter_Label)]</label>
         </control>
+        <include>NowPlaying</include>
         <!-- BGN -->
         <control type="group">
             <visible>!Skin.HasSetting(BlackGlassMode)</visible>

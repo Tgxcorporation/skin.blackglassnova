@@ -208,6 +208,7 @@
             <include>WindowTitleSub</include>
             <label>$ADDON[script.tv.show.next.aired 32019]</label>
         </control>
+        <include>NowPlaying</include>
         <!-- BGN & BG-->
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>

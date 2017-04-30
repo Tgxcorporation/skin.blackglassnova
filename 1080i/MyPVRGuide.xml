@@ -45,6 +45,7 @@
             <include>WindowTitleSub</include>
             <label>$LOCALIZE[19029]$INFO[Container(13).ListItem.ChannelNumberLabel,  •  ]$INFO[Container(13).ListItem.ChannelName,  •  ]</label>
         </control>
+        <include>NowPlaying</include>
         <!-- BGN -->
         <control type="group">
             <visible>!Skin.HasSetting(BlackGlassMode)</visible>

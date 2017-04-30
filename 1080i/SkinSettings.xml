@@ -21,6 +21,7 @@
             <include>WindowTitleSub</include>
             <label>$LOCALIZE[20077] - Black Glass Nova</label>
         </control>
+        <include>NowPlaying</include>
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-189</posy>
