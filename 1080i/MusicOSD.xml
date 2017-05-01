@@ -200,16 +200,16 @@
                     <visible>MusicPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[210]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_channel_up_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_channel_up_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_channel_down_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_channel_down_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="301">
                     <visible>MusicPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[209]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_channel_down_focus.png</texturefocus>
-                    <texturenofocus>topbar/topbar_channel_down_nofocus.png</texturenofocus>
+                    <texturefocus>topbar/topbar_channel_up_focus.png</texturefocus>
+                    <texturenofocus>topbar/topbar_channel_up_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="600">
