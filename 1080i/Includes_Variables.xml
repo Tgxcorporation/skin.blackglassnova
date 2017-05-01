@@ -184,6 +184,7 @@
         <value condition="Container.content(Albums) + !String.IsEmpty(ListItem.Album) + !String.IsEmpty(ListItem.Year)">$INFO[ListItem.Artist]$INFO[ListItem.Year,  •  ]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="Container.content(Albums) + !String.IsEmpty(ListItem.Album)">$INFO[ListItem.Artist]</value>
         <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
+        <value condition="Window.IsActive(AddonBrowser.xml)">$INFO[ListItem.AddonCreator,$LOCALIZE[21863]: ]$INFO[ListItem.AddonSize,  •  ]$INFO[ListItem.Label2,  •  ]</value>
         <value condition="Container.Content(Addons) + !String.IsEmpty(ListItem.AddonCreator)">$INFO[ListItem.AddonCreator,$LOCALIZE[21863]: ]</value>
         <value condition="Container.Content(songs) + !String.IsEmpty(ListItem.Album) + !String.IsEmpty(ListItem.Year)">$INFO[ListItem.Album]$INFO[ListItem.Year,  •  ]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="Container.Content(songs) + !String.IsEmpty(ListItem.Album)">$INFO[ListItem.Album]</value>
