@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol>50</defaultcontrol>
     <menucontrol>9000</menucontrol>
-    <include>ViewModes</include>
+    <views>50,52,54</views>
     <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">OpenClose</include>
     <controls>
         <include>Fanart_Art</include>
