@@ -229,9 +229,17 @@
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="1616">
+                    <visible>!Player.Muted</visible>
                     <include>TopBarButton</include>
                     <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
+                    <onclick>Mute</onclick>
+                </control>
+                <control type="button" id="16161">
+                    <visible>Player.Muted</visible>
+                    <include>TopBarButton</include>
+                    <texturefocus colordiffuse="red">topbar/topbar_volume_mute_focus.png</texturefocus>
+                    <texturenofocus colordiffuse="red">topbar/topbar_volume_mute_nofocus.png</texturenofocus>
                     <onclick>Mute</onclick>
                 </control>
                 <control type="button" id="1618">
