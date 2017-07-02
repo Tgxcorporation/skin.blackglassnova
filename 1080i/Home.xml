@@ -108,25 +108,13 @@
         <control type="group">
             <visible>!Skin.HasSetting(VerticalHome)</visible>
             <include>Icon_Fade</include>
-            <control type="image">
+           <control type="label">
                 <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-                <posx>15</posx>
-                <posy>16</posy>
-                <width>57</width>
-                <height>54</height>
-                <texture>common/logo2.png</texture>
-                <aspectratio align="left">keep</aspectratio>
-                <colordiffuse>WindowTitleColor</colordiffuse>
-            </control>
-            <control type="label">
-                <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-                <posx>88</posx>
                 <include>WindowTitle</include>
                 <label>$VAR[HomeTitles]</label>
             </control>
             <control type="label">
                 <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-                <posx>88</posx>
                 <include>WindowTitleSub</include>
                 <label>$VAR[HomeSubTitles]</label>
             </control>
