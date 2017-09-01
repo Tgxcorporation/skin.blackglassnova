@@ -1477,6 +1477,18 @@
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot)</onclick>
                             </item>
+                            <item id="6">
+                                <visible>Skin.HasSetting(QuitMenu_Hide_Reboot_Android)</visible>
+                                <label>$LOCALIZE[31900]</label>
+                                <label2>$LOCALIZE[107]</label2>
+                                <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot_Android)</onclick>
+                            </item>
+                            <item id="6">
+                                <visible>!Skin.HasSetting(QuitMenu_Hide_Reboot_Android)</visible>
+                                <label>$LOCALIZE[31900]</label>
+                                <label2>$LOCALIZE[106]</label2>
+                                <onclick>Skin.ToggleSetting(QuitMenu_Hide_Reboot_Android)</onclick>
+                            </item>
                             <item id="7">
                                 <visible>Skin.HasSetting(QuitMenu_Hide_Timer)</visible>
                                 <label>$LOCALIZE[20144]</label>
