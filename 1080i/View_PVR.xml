@@ -1044,7 +1044,7 @@
                 <aligny>center</aligny>
                 <aspectratio>keep</aspectratio>
                 <colordiffuse>NoFocusedColor</colordiffuse>
-                <texture background="true" fallback="defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                <texture background="true" fallback="defaultChannelTvBig.png">$VAR[Thumbs]</texture>
             </control>
             <control type="image">
                 <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
@@ -1056,7 +1056,7 @@
                 <aligny>center</aligny>
                 <aspectratio>keep</aspectratio>
                 <colordiffuse>NoFocusedColor</colordiffuse>
-                <texture background="true" fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
+                <texture background="true" fallback="DefaultRadioBig.png">$VAR[Thumbs]</texture>
             </control>
             <!--<include>RecOverlayNoFocus</include>-->
             <control type="image">
@@ -1126,7 +1126,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <aspectratio>keep</aspectratio>
-                <texture background="true" fallback="defaultChannelTvBig.png">$INFO[ListItem.Icon]</texture>
+                <texture background="true" fallback="defaultChannelTvBig.png">$VAR[Thumbs]</texture>
             </control>
             <control type="image">
                 <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
@@ -1137,7 +1137,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <aspectratio>keep</aspectratio>
-                <texture background="true" fallback="DefaultRadioBig.png">$INFO[ListItem.Icon]</texture>
+                <texture background="true" fallback="DefaultRadioBig.png">$VAR[Thumbs]</texture>
             </control>
             <!--<include>RecOverlayFocus</include>-->
             <control type="image">
