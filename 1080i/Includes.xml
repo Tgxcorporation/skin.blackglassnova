@@ -141,15 +141,14 @@
         </control>
         <control type="group">
             <visible>!Window.isvisible(DialogVideoInfo.xml)</visible>
-            <animation effect="slide" start="0,0" end="0,130" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+control.IsVisible(495678)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="0,77" time="150" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]+!control.IsVisible(495678)">Conditional</animation>
-            <posy>-50</posy>
+            <include>HeaderSlideEffectTopBar</include>
+            <posy>-60</posy>
             <control type="image">
                 <posx>-80</posx>
                 <posy>-90</posy>
-                <texture>common/basichome_upper_gradient.png</texture>
                 <width>2220</width>
-                <height>150</height>
+                <height>200</height>
+                <texture>common/basichome_upper_gradient.png</texture>
             </control>
             <control type="button" id="8997">
                 <description>Fake button for mouse control</description>
@@ -282,6 +281,24 @@
                     <onclick>ActivateWindow(shutdownmenu)</onclick>
                 </control>
             </control>
+            <control type="label">
+                <posx>0</posx>
+                <posy>60</posy>
+                <width>1920</width>
+                <height>50</height>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$VAR[TopbarLabel]</label>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>-13</posy>
+                <width>1920</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
             <control type="button" id="8997">
                 <description>Fake button for mouse control</description>
                 <posx>295</posx>
@@ -321,13 +338,11 @@
                 <height>240</height>
             </control>
             <control type="label">
-                <visible>![window.IsActive(DialogVolumeBar.xml) + !Player.Muted]</visible>
-                <include>HeaderVisibleFadeEffect</include>
-                <include>VisibleFadeEffect</include>
+                <include>HeaderSlideEffectTopBar</include>
                 <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">conditional</animation>
                 <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
                 <posx>TextMarginR</posx>
-                <posy>18</posy>
+                <posy>39</posy>
                 <width>500</width>
                 <align>right</align>
                 <aligny>top</aligny>
@@ -337,14 +352,12 @@
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="label">
-                <visible>![window.IsActive(DialogVolumeBar.xml) + !Player.Muted]</visible>
-                <include>HeaderVisibleFadeEffect</include>
-                <include>VisibleFadeEffect</include>
+                <include>HeaderSlideEffectTopBar</include>
                 <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">conditional</animation>
                 <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
                 <description>Date label</description>
                 <posx>TextMarginR</posx>
-                <posy>68</posy>
+                <posy>89</posy>
                 <width>500</width>
                 <align>right</align>
                 <aligny>top</aligny>
@@ -706,10 +719,10 @@
     <constant name="TextMargin">45</constant>
     <constant name="TextMarginR">45r</constant>
     <include name="WindowTitle">
-        <include>HeaderVisibleFadeEffect</include>
+        <include>HeaderSlideEffectTopBar</include>
         <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">conditional</animation>
         <posx>TextMargin</posx>
-        <posy>18</posy>
+        <posy>39</posy>
         <width>1200</width>
         <aligny>top</aligny>
         <font>WindowTitleFont</font>
@@ -717,10 +730,10 @@
         <textcolor>WindowTitleColor</textcolor>
     </include>
     <include name="WindowTitleSub">
-        <include>HeaderVisibleFadeEffect</include>
+        <include>HeaderSlideEffectTopBar</include>
         <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">conditional</animation>
         <posx>TextMargin</posx>
-        <posy>68</posy>
+        <posy>89</posy>
         <width>1200</width>
         <aligny>top</aligny>
         <font>WindowTitleSubFont</font>

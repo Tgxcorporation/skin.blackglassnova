@@ -642,8 +642,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(50).NumItems,7)</visible>
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>421</posy>
                 <height>586</height>
@@ -868,8 +867,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(500).NumItems,7)</visible>
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>421</posy>
                 <height>586</height>
@@ -981,8 +979,7 @@
         </control>
         <control type="scrollbar" id="60">
             <visible allowhiddenfocus="true">Integer.IsGreater(Container(50).NumItems,7)</visible>
-            <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-            <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+            <include>ScrollabarVerticalHasFocus</include>
             <posx>1899</posx>
             <posy>421</posy>
             <height>586</height>
@@ -1039,8 +1036,7 @@
         </control>
         <control type="scrollbar" id="60">
             <visible allowhiddenfocus="true">Integer.IsGreater(Container(51).NumItems,7)</visible>
-            <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-            <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+            <include>ScrollabarVerticalHasFocus</include>
             <posx>1899</posx>
             <posy>421</posy>
             <height>586</height>
@@ -1263,8 +1259,7 @@
         </control>
         <control type="scrollbar" id="60">
             <visible allowhiddenfocus="true">Integer.IsGreater(Container(570).NumItems,7)</visible>
-            <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-            <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+            <include>ScrollabarVerticalHasFocus</include>
             <posx>1899</posx>
             <posy>421</posy>
             <height>586</height>

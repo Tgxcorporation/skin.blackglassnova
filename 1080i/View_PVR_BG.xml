@@ -330,8 +330,7 @@
             </focusedlayout>
         </control>
         <control type="scrollbar" id="70">
-            <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-            <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+            <include>ScrollabarVerticalHasFocus</include>
             <posx>1899</posx>
             <posy>207</posy>
             <height>803</height>
@@ -572,8 +571,7 @@
             </focusedlayout>
         </control>
         <control type="scrollbar" id="72">
-            <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-            <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+            <include>ScrollabarVerticalHasFocus</include>
             <posx>1899</posx>
             <posy>207</posy>
             <height>803</height>
@@ -760,8 +758,7 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="73">
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>645</posy>
                 <height>805</height>
@@ -1054,8 +1051,7 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="74">
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>645</posy>
                 <height>803</height>
@@ -1664,8 +1660,7 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="76">
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>207</posy>
                 <height>803</height>
@@ -1961,8 +1956,7 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="76">
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>207</posy>
                 <height>803</height>
@@ -2163,8 +2157,7 @@
                 </focusedlayout>
             </control>
             <control type="scrollbar" id="75">
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>207</posy>
                 <height>803</height>

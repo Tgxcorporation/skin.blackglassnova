@@ -134,7 +134,7 @@
             <include>Icon_Fade</include>
             <include>ScrollOffsetLabel_56_BG</include>
             <control type="group">
-                <include>HeaderVisibleFadeEffect</include>
+                <include>HeaderSlideEffectTopBar</include>
                 <include content="ClearArtLogo">
                     <param name="x" value="875"/>
                     <param name="y" value="10"/>
@@ -199,8 +199,7 @@
                 <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>207</posy>
                 <height>803</height>

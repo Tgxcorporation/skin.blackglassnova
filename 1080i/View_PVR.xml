@@ -601,8 +601,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(50).NumItems,7)</visible>
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>421</posy>
                 <height>584</height>
@@ -785,8 +784,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(52).NumItems,10)</visible>
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>207</posy>
                 <height>803</height>
@@ -969,8 +967,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(54).NumItems,4)</visible>
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>645</posy>
                 <height>365</height>
@@ -1327,8 +1324,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(50).NumItems,7)</visible>
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>426</posy>
                 <height>584</height>
@@ -1518,8 +1514,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(52).NumItems,10)</visible>
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>421</posy>
                 <height>803</height>
@@ -1710,8 +1705,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(54).NumItems,4)</visible>
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>645</posy>
                 <height>365</height>
@@ -1903,8 +1897,7 @@
                     <include>Timers_Layout</include>
                 </control>
                 <control type="scrollbar" id="73">
-                    <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                    <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                    <include>ScrollabarVerticalHasFocus</include>
                     <posx>1899</posx>
                     <posy>645</posy>
                     <height>584</height>
@@ -2010,8 +2003,7 @@
                     <include>Timers_Layout</include>
                 </control>
                 <control type="scrollbar" id="73">
-                    <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                    <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                    <include>ScrollabarVerticalHasFocus</include>
                     <posx>1899</posx>
                     <posy>645</posy>
                     <height>803</height>
@@ -2115,8 +2107,7 @@
                     <include>Timers_Layout</include>
                 </control>
                 <control type="scrollbar" id="73">
-                    <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                    <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                    <include>ScrollabarVerticalHasFocus</include>
                     <posx>1899</posx>
                     <posy>645</posy>
                     <height>365</height>
@@ -2414,8 +2405,7 @@
                     <include>Search_Layout</include>
                 </control>
                 <control type="scrollbar" id="74">
-                    <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                    <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                    <include>ScrollabarVerticalHasFocus</include>
                     <posx>1899</posx>
                     <posy>645</posy>
                     <height>584</height>
@@ -2521,8 +2511,7 @@
                     <include>Search_Layout</include>
                 </control>
                 <control type="scrollbar" id="74">
-                    <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                    <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                    <include>ScrollabarVerticalHasFocus</include>
                     <posx>1899</posx>
                     <posy>645</posy>
                     <height>803</height>
@@ -2626,8 +2615,7 @@
                     <include>Search_Layout</include>
                 </control>
                 <control type="scrollbar" id="74">
-                    <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                    <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                    <include>ScrollabarVerticalHasFocus</include>
                     <posx>1899</posx>
                     <posy>645</posy>
                     <height>365</height>
@@ -3376,8 +3364,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(11).NumItems,7)</visible>
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>426</posy>
                 <height>584</height>
@@ -3790,8 +3777,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(12).NumItems,7)</visible>
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>426</posy>
                 <height>585</height>
@@ -4120,8 +4106,7 @@
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(13).NumItems,7)</visible>
-                <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarVerticalHasFocus</include>
                 <posx>1899</posx>
                 <posy>426</posy>
                 <height>584</height>

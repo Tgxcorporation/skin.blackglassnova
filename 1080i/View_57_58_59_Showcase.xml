@@ -53,6 +53,7 @@
     </include>
     <include name="FooterInfo">
         <control type="group">
+            <include>HeaderSlideEffectTopBar</include>
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+[control.isvisible(57)|control.isvisible(58)|control.isvisible(59)|control.isvisible(53)]]+!Skin.HasSetting(DisableSlidingAnimations)+Skin.HasSetting(BlackGlassMode)">conditional</animation>
             <include>Icon_Fade</include>
@@ -501,8 +502,7 @@
                         <pagecontrol>6069</pagecontrol>
                     </control>
                     <control type="scrollbar" id="6069">
-                        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                        <include>ScrollabarVerticalHasFocus</include>
                         <visible>Skin.HasSetting(ManualScroll)</visible>
                         <posx>1555</posx>
                         <posy>233</posy>
@@ -515,8 +515,7 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
-                <animation effect="slide" start="0,0" end="0,-8" time="150">Focus</animation>
-                <animation effect="slide" start="0,-8" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarHorizontalHasFocus</include>
                 <posx>20</posx>
                 <posy>1059</posy>
                 <width>1880</width>
@@ -774,8 +773,7 @@
                         <pagecontrol>6069</pagecontrol>
                     </control>
                     <control type="scrollbar" id="6069">
-                        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                        <include>ScrollabarVerticalHasFocus</include>
                         <visible>Skin.HasSetting(ManualScroll)</visible>
                         <posx>1493</posx>
                         <posy>160</posy>
@@ -818,8 +816,7 @@
                         <pagecontrol>6069</pagecontrol>
                     </control>
                     <control type="scrollbar" id="6069">
-                        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                        <include>ScrollabarVerticalHasFocus</include>
                         <visible>Skin.HasSetting(ManualScroll)</visible>
                         <posx>1493</posx>
                         <posy>90</posy>
@@ -887,8 +884,7 @@
                         <pagecontrol>6069</pagecontrol>
                     </control>
                     <control type="scrollbar" id="6069">
-                        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                        <include>ScrollabarVerticalHasFocus</include>
                         <visible>Skin.HasSetting(ManualScroll)</visible>
                         <posx>1493</posx>
                         <posy>160</posy>
@@ -901,8 +897,7 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
-                <animation effect="slide" start="0,0" end="0,-8" time="150">Focus</animation>
-                <animation effect="slide" start="0,-8" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarHorizontalHasFocus</include>
                 <posx>20</posx>
                 <posy>1059</posy>
                 <width>1880</width>
@@ -1163,8 +1158,7 @@
                         <pagecontrol>6069</pagecontrol>
                     </control>
                     <control type="scrollbar" id="6069">
-                        <animation effect="slide" start="0,0" end="-8,0" time="150">Focus</animation>
-                        <animation effect="slide" start="-8,0" end="0,0" time="300">UnFocus</animation>
+                        <include>ScrollabarVerticalHasFocus</include>
                         <visible>Skin.HasSetting(ManualScroll)</visible>
                         <posx>1248</posx>
                         <posy>160</posy>
@@ -1177,8 +1171,7 @@
                 </control>
             </control>
             <control type="scrollbar" id="60">
-                <animation effect="slide" start="0,0" end="0,-8" time="150">Focus</animation>
-                <animation effect="slide" start="0,-8" end="0,0" time="300">UnFocus</animation>
+                <include>ScrollabarHorizontalHasFocus</include>
                 <posx>20</posx>
                 <posy>1059</posy>
                 <width>1880</width>

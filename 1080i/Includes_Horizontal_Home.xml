@@ -172,6 +172,7 @@
             <texture>common/BlackDot.png</texture>
         </control>
         <control type="group">
+            <include>HeaderSlideEffectTopBar</include>
             <animation effect="slide" tween="circle" time="200" start="0,0" end="0,540" reversible="true" condition="control.isvisible(378433)">Conditional</animation>
             <control type="image">
                 <visible>control.isvisible(378432)</visible>

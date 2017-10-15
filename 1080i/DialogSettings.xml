@@ -5,6 +5,9 @@
     <controls>
         <include>DimBG</include>
         <control type="group">
+            <visible>!Window.IsVisible(sliderdialog)</visible>
+            <include condition="!Skin.HasSetting(BlackGlassMode)">OSDVisibleFadeEffect</include>
+            <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">VisibleFadeSlideRight</include>
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include content="WindowClosingButton">
                 <param name="id" value="0"/>

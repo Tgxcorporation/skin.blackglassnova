@@ -2,10 +2,10 @@
 <includes>
     <include name="Horizontal_HomeSubMenu_BG">
         <animation effect="fade" time="0" start="100" end="50" reversible="true" condition="![Control.HasFocus(9001)|Control.HasFocus(9002)|Control.HasFocus(9003)]">Conditional</animation>
-        <posx>155</posx>
+        <posx>173</posx>
         <posy>902</posy>
         <height>50</height>
-        <width>1610</width>
+        <width>1574</width>
         <onleft>9001</onleft>
         <onright>9001</onright>
         <ondown>9001</ondown>
@@ -14,12 +14,12 @@
         <onup>300</onup>
         <onback>SetFocus(300)</onback>
         <ondown>700</ondown>
-        <itemlayout width="536" height="50">
+        <itemlayout width="524" height="50">
             <control type="label">
                 <posx>20</posx>
                 <posy>0</posy>
                 <height>50</height>
-                <width>496</width>
+                <width>484</width>
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>SmallButtonFont</font>
@@ -28,13 +28,13 @@
                 <textcolor>ListNoFocusColor</textcolor>
             </control>
         </itemlayout>
-        <focusedlayout width="536" height="50">
+        <focusedlayout width="524" height="50">
             <control type="label">
                 <visible>![Control.HasFocus(9001)|Control.HasFocus(9002)|Control.HasFocus(9003)]</visible>
                 <posx>20</posx>
                 <posy>0</posy>
                 <height>50</height>
-                <width>496</width>
+                <width>484</width>
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>SmallButtonFont</font>
@@ -46,7 +46,7 @@
                 <posx>20</posx>
                 <posy>0</posy>
                 <height>50</height>
-                <width>496</width>
+                <width>484</width>
                 <align>center</align>
                 <aligny>center</aligny>
                 <font>SmallButtonFont</font>
@@ -75,10 +75,10 @@
         </control>
     </include>
     <include name="Horizontal_HomeMenu_BG">
-        <posx>-1683</posx>
-        <posy>85</posy>
+        <posx>-1510</posx>
+        <posy>105</posy>
         <width>3603</width>
-        <height>930</height>
+        <height>910</height>
         <onleft>300</onleft>
         <onright>300</onright>
         <ondown>9001</ondown>
@@ -87,86 +87,80 @@
         <preloaditems>4</preloaditems>
         <scrolltime tween="sine" easing="out">300</scrolltime>
         <orientation>horizontal</orientation>
-        <itemlayout height="930" width="1683">
-            <control type="group">
-                <posx>145</posx>
-                <control type="image">
-                    <posx>-27</posx>
-                    <posy>0</posy>
-                    <width>1683</width>
-                    <height>940</height>
-                    <texture background="true" diffuse="common/bg_panel_home_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
-                    <fadetime>0</fadetime>
-                </control>
-                <control type="image">
-                    <posx>-27</posx>
-                    <posy>0</posy>
-                    <width>1683</width>
-                    <height>940</height>
-                    <texture diffuse="common/bg_panel_home_diffuse.png">common/basichome_downer_gradient.png</texture>
-                </control>
-                <control type="image">
-                    <posx>-27</posx>
-                    <posy>0</posy>
-                    <width>1683</width>
-                    <height>940</height>
-                    <texture border="90">common/bg_panel_home.png</texture>
-                </control>
-                <control type="image">
-                    <posx>10</posx>
-                    <posy>620</posy>
-                    <width>1610</width>
-                    <height>73</height>
-                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                </control>
-                <control type="image">
-                    <posx>10</posx>
-                    <posy>720</posy>
-                    <width>1610</width>
-                    <height>73</height>
-                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                </control>
+        <itemlayout height="930" width="1647">
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1647</width>
+                <height>920</height>
+                <texture background="true" diffuse="common/bg_panel_home_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
+                <fadetime>0</fadetime>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1647</width>
+                <height>920</height>
+                <texture diffuse="common/bg_panel_home_diffuse.png">common/basichome_downer_gradient.png</texture>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1647</width>
+                <height>920</height>
+                <texture border="90">common/bg_panel_home.png</texture>
+            </control>
+            <control type="image">
+                <posx>37</posx>
+                <posy>600</posy>
+                <width>1574</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="image">
+                <posx>37</posx>
+                <posy>700</posy>
+                <width>1574</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
         </itemlayout>
-        <focusedlayout height="930" width="1683">
-            <control type="group">
-                <posx>145</posx>
-                <control type="image">
-                    <posx>-27</posx>
-                    <posy>0</posy>
-                    <width>1683</width>
-                    <height>940</height>
-                    <texture background="true" diffuse="common/bg_panel_home_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
-                    <fadetime>0</fadetime>
-                </control>
-                <control type="image">
-                    <posx>-27</posx>
-                    <posy>0</posy>
-                    <width>1683</width>
-                    <height>940</height>
-                    <texture diffuse="common/bg_panel_home_diffuse.png">common/basichome_downer_gradient.png</texture>
-                </control>
-                <control type="image">
-                    <posx>-27</posx>
-                    <posy>0</posy>
-                    <width>1683</width>
-                    <height>940</height>
-                    <texture border="90">common/bg_panel_home.png</texture>
-                </control>
-                <control type="image">
-                    <posx>10</posx>
-                    <posy>620</posy>
-                    <width>1610</width>
-                    <height>73</height>
-                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                </control>
-                <control type="image">
-                    <posx>10</posx>
-                    <posy>720</posy>
-                    <width>1610</width>
-                    <height>73</height>
-                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
-                </control>
+        <focusedlayout height="930" width="1647">
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1647</width>
+                <height>920</height>
+                <texture background="true" diffuse="common/bg_panel_home_diffuse.png" fallback="special://skin/backgrounds/default/default2.jpg">$INFO[ListItem.Icon]</texture>
+                <fadetime>0</fadetime>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1647</width>
+                <height>920</height>
+                <texture diffuse="common/bg_panel_home_diffuse.png">common/basichome_downer_gradient.png</texture>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>0</posy>
+                <width>1647</width>
+                <height>920</height>
+                <texture border="90">common/bg_panel_home.png</texture>
+            </control>
+            <control type="image">
+                <posx>37</posx>
+                <posy>600</posy>
+                <width>1574</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="image">
+                <posx>37</posx>
+                <posy>700</posy>
+                <width>1574</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
         </focusedlayout>
         <content>
@@ -211,6 +205,7 @@
             <include condition="!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <animation effect="slide" tween="circle" time="200" start="0,0" end="0,1080" reversible="true" condition="control.isvisible(378433)">Conditional</animation>
             <control type="group">
+                <include>HeaderSlideEffectTopBar</include>
                 <posy>20</posy>
                 <include condition="Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Fixed_HomeMenu_BG</include>
                 <include condition="!Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Wrapped_HomeMenu_BG</include>
@@ -238,9 +233,9 @@
                 <include condition="!Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Wrapped_HomeSubMenu_BG</include>
                 <control type="fixedlist" id="701">
                     <animation effect="fade" time="200" start="100" end="50" reversible="true" condition="![Control.HasFocus(701)|Control.HasFocus(7019)|Control.HasFocus(7018)]">Conditional</animation>
-                    <posx>155</posx>
+                    <posx>173</posx>
                     <posy>705</posy>
-                    <width>1610</width>
+                    <width>1574</width>
                     <height>50</height>
                     <itemgap>50</itemgap>
                     <align>center</align>
@@ -281,12 +276,12 @@
                     <focusposition>1</focusposition>
                     <orientation>horizontal</orientation>
                     <pagecontrol>-</pagecontrol>
-                    <itemlayout width="536" height="50">
+                    <itemlayout width="524" height="50">
                         <control type="label">
                             <posx>20</posx>
                             <posy>0</posy>
                             <height>50</height>
-                            <width>496</width>
+                            <width>484</width>
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>SmallButtonFont</font>
@@ -295,14 +290,14 @@
                             <textcolor>ListNoFocusColor</textcolor>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="536" height="50">
+                    <focusedlayout width="524" height="50">
                         <control type="label">
                             <visible>![Control.HasFocus(701)|Control.HasFocus(7019)|Control.HasFocus(7018)]</visible>
                             <animation effect="fade" time="200" start="0" end="100" reversible="true">Visible</animation>
                             <posx>20</posx>
                             <posy>0</posy>
                             <height>50</height>
-                            <width>496</width>
+                            <width>484</width>
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>SmallButtonFont</font>
@@ -315,7 +310,7 @@
                             <posx>20</posx>
                             <posy>0</posy>
                             <height>50</height>
-                            <width>496</width>
+                            <width>484</width>
                             <align>center</align>
                             <aligny>center</aligny>
                             <font>SmallButtonFont</font>

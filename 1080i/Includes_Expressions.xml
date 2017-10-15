@@ -67,6 +67,9 @@
         [Control.HasFocus(9001)|Control.HasFocus(89990)|Control.HasFocus(9061)]
     </expression>
     <expression name="TopBarHasFocus">
-        [ControlGroup(9900).HasFocus()|ControlGroup(9901).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]
+        [ControlGroup(9900).HasFocus()|Control.HasFocus(8998)|Control.HasFocus(8997)]
+    </expression>
+    <expression name="PlayingNowIsVisible">
+        [Control.IsVisible(495678)]
     </expression>
 </includes>

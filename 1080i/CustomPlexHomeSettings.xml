@@ -20,6 +20,7 @@
         <include>NowPlaying</include>
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
+            <include>HeaderSlideEffectTopBar</include>
             <posy>-189</posy>
             <include content="WindowClosingButton">
                 <param name="id" value="0"/>
