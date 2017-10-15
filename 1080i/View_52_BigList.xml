@@ -268,24 +268,27 @@
         <control type="group">
             <visible>Control.IsVisible(52)</visible>
             <include>Icon_Fade</include>
-            <include content="ClearArtLogo">
-                <param name="x" value="1010r"/>
-                <param name="y" value="10"/>
-                <param name="width" value="300"/>
-                <param name="height" value="155"/>
-                <param name="visible" value="true"/>
-                <param name="align" value="right"/>
-                <param name="aligny" value="bottom"/>
-            </include>
-            <include content="StudioArt">
-                <param name="x" value="1310r"/>
-                <param name="y" value="25"/>
-                <param name="width" value="300"/>
-                <param name="height" value="140"/>
-                <param name="visible" value="true"/>
-                <param name="align" value="left"/>
-                <param name="aligny" value="bottom"/>
-            </include>
+            <control type="group">
+                <include>HeaderVisibleFadeEffect</include>
+                <include content="ClearArtLogo">
+                    <param name="x" value="1010r"/>
+                    <param name="y" value="10"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="155"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="right"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
+                <include content="StudioArt">
+                    <param name="x" value="1310r"/>
+                    <param name="y" value="25"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="140"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="left"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
+            </control>
             <control type="group">
                 <include>SlideViewUnknown</include>
                 <include>SlideView</include>

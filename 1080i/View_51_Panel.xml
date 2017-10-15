@@ -221,24 +221,27 @@
     <include name="View_51_Panel">
         <control type="group">
             <visible>Control.IsVisible(51)</visible>
-            <include content="ClearArtLogo">
-                <param name="x" value="345r"/>
-                <param name="y" value="150"/>
-                <param name="width" value="300"/>
-                <param name="height" value="235"/>
-                <param name="visible" value="true"/>
-                <param name="align" value="right"/>
-                <param name="aligny" value="bottom"/>
-            </include>
-            <include content="StudioArt">
-                <param name="x" value="350"/>
-                <param name="y" value="245"/>
-                <param name="width" value="300"/>
-                <param name="height" value="140"/>
-                <param name="visible" value="true"/>
-                <param name="align" value="right"/>
-                <param name="aligny" value="bottom"/>
-            </include>
+            <control type="group">
+                <include>HeaderVisibleFadeEffect</include>
+                <include content="ClearArtLogo">
+                    <param name="x" value="345r"/>
+                    <param name="y" value="150"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="235"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="right"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
+                <include content="StudioArt">
+                    <param name="x" value="350"/>
+                    <param name="y" value="245"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="140"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="right"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
+            </control>
             <include>ScrollOffsetLabel_51</include>
             <control type="image">
                 <posx>657</posx>

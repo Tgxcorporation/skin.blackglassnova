@@ -145,4 +145,12 @@
         <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
         <effect type="fade" start="100" end="0" time="500" delay="3000"/>
     </include>
+    <include name="HeaderVisibleFadeEffect">
+        <animation type="Conditional" reversible="false" condition="!$EXP[TopBarHasFocus]">
+            <effect type="fade" start="0" end="100" time="150" delay="0" tween="circle" easing="inout"/>
+        </animation>
+        <animation type="Conditional" reversible="false" condition="$EXP[TopBarHasFocus]">
+            <effect type="fade" start="100" end="0" time="150" delay="0" tween="circle" easing="inout"/>
+        </animation>
+    </include>
 </includes>

@@ -364,24 +364,27 @@
             <visible>Control.IsVisible(50)</visible>
             <include>Icon_Fade</include>
             <include>ScrollOffsetLabel_50_BG</include>
-            <include content="ClearArtLogo">
-                <param name="x" value="875"/>
-                <param name="y" value="10"/>
-                <param name="width" value="300"/>
-                <param name="height" value="149"/>
-                <param name="visible" value="true"/>
-                <param name="align" value="left"/>
-                <param name="aligny" value="bottom"/>
-            </include>
-            <include content="StudioArt">
-                <param name="x" value="1175"/>
-                <param name="y" value="20"/>
-                <param name="width" value="300"/>
-                <param name="height" value="140"/>
-                <param name="visible" value="true"/>
-                <param name="align" value="left"/>
-                <param name="aligny" value="bottom"/>
-            </include>
+            <control type="group">
+                <include>HeaderVisibleFadeEffect</include>
+                <include content="ClearArtLogo">
+                    <param name="x" value="875"/>
+                    <param name="y" value="10"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="149"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="left"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
+                <include content="StudioArt">
+                    <param name="x" value="1175"/>
+                    <param name="y" value="20"/>
+                    <param name="width" value="300"/>
+                    <param name="height" value="140"/>
+                    <param name="visible" value="true"/>
+                    <param name="align" value="left"/>
+                    <param name="aligny" value="bottom"/>
+                </include>
+            </control>
             <control type="group">
                 <control type="image">
                     <posx>704</posx>
