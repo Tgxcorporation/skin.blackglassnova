@@ -175,4 +175,7 @@
         <animation effect="slide" start="0,0" end="0,-8" time="150">Focus</animation>
         <animation effect="slide" start="0,-8" end="0,0" time="300">UnFocus</animation>
     </include>
+    <include name="BgOverlayFanart">
+        <animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableFanart)">Conditional</animation>
+    </include>
 </includes>

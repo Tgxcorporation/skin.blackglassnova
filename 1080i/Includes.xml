@@ -122,9 +122,6 @@
         <texturenofocus>-</texturenofocus>
         <texturefocus>-</texturefocus>
     </include>
-    <include name="BgOverlayFanart">
-        <animation effect="fade" start="70" end="70" time="0" condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableFanart)">Conditional</animation>
-    </include>
     <include name="TopBar">
         <control type="button" id="8998">
             <description>Fake button for mouse control</description>
@@ -143,13 +140,6 @@
             <visible>!Window.isvisible(DialogVideoInfo.xml)</visible>
             <include>HeaderSlideEffectTopBar</include>
             <posy>-60</posy>
-            <control type="image">
-                <posx>-80</posx>
-                <posy>-90</posy>
-                <width>2220</width>
-                <height>200</height>
-                <texture>common/basichome_upper_gradient.png</texture>
-            </control>
             <control type="button" id="8997">
                 <description>Fake button for mouse control</description>
                 <posx>295</posx>
@@ -336,6 +326,27 @@
                 <texture border="10">common/basichome_upper_gradient.png</texture>
                 <width>1920</width>
                 <height>240</height>
+            </control>
+            <control type="group">
+                <visible>!Window.isvisible(DialogVideoInfo.xml)</visible>
+                <include>HeaderSlideEffectTopBar</include>
+                <visible>$EXP[TopBarHasFocus]</visible>
+                <include>VisibleFadeEffect</include>
+                <posy>-60</posy>
+                <control type="image">
+                    <posx>-80</posx>
+                    <posy>-90</posy>
+                    <width>2220</width>
+                    <height>300</height>
+                    <texture>common/basichome_upper_gradient.png</texture>
+                </control>
+                <control type="image">
+                    <posx>-80</posx>
+                    <posy>-90</posy>
+                    <width>2220</width>
+                    <height>300</height>
+                    <texture>common/basichome_upper_gradient.png</texture>
+                </control>
             </control>
             <control type="label">
                 <include>HeaderSlideEffectTopBar</include>
