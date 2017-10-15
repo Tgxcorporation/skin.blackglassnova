@@ -231,7 +231,7 @@
                     <param name="y" value="10"/>
                     <param name="width" value="300"/>
                     <param name="height" value="118"/>
-                    <param name="visible" value="true"/>
+                    <param name="visible" value="!$EXP[TopBarHasFocus]"/>
                     <param name="align" value="left"/>
                     <param name="aligny" value="bottom"/>
                 </include>
@@ -240,7 +240,7 @@
                     <param name="y" value="10"/>
                     <param name="width" value="300"/>
                     <param name="height" value="118"/>
-                    <param name="visible" value="true"/>
+                    <param name="visible" value="!$EXP[TopBarHasFocus]"/>
                     <param name="align" value="right"/>
                     <param name="aligny" value="bottom"/>
                 </include>
