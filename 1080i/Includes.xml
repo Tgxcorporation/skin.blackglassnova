@@ -271,6 +271,13 @@
                     <onclick>ActivateWindow(shutdownmenu)</onclick>
                 </control>
             </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>-13</posy>
+                <width>1920</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
             <control type="label">
                 <posx>0</posx>
                 <posy>60</posy>
@@ -281,13 +288,6 @@
                 <font>NotificationFont</font>
                 <textcolor>AlternateColor</textcolor>
                 <label>$VAR[TopbarLabel]</label>
-            </control>
-            <control type="image">
-                <posx>0</posx>
-                <posy>-13</posy>
-                <width>1920</width>
-                <height>73</height>
-                <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="button" id="8997">
                 <description>Fake button for mouse control</description>

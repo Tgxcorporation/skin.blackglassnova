@@ -921,7 +921,7 @@
     </variable>
     <variable name="TopbarVideoOSDLabel">
         <value condition="control.hasfocus(306)">$LOCALIZE[19069]</value>
-        <value condition="control.hasfocus(307)">$LOCALIZE[19069]$INFO[VideoPlayer.ChannelName,[COLOR=SeparatorColor] › [/COLOR]]</value>
+        <value condition="control.hasfocus(307)">$LOCALIZE[19069]$INFO[VideoPlayer.ChannelName,  •  ]</value>
         <value condition="control.hasfocus(350)">$LOCALIZE[23050]</value>
         <value condition="control.hasfocus(353)">$LOCALIZE[264]</value>
         <value condition="control.hasfocus(251)">$LOCALIZE[13395]</value>
@@ -935,7 +935,7 @@
         <value condition="control.hasfocus(707)">$LOCALIZE[544]</value>
         <value condition="control.hasfocus(1624)">$LOCALIZE[5]</value>
         <value condition="control.hasfocus(1626)">$LOCALIZE[13009]</value>
-        <value condition="control.hasfocus(1622)">$LOCALIZE[14200]</value>
+        <value condition="control.hasfocus(1622)">$LOCALIZE[33061]</value>
         <value condition="control.hasfocus(1623)">$LOCALIZE[13014]</value>
         <value condition="control.hasfocus(704)">$LOCALIZE[31298]</value>
         <value condition="control.hasfocus(705)">$LOCALIZE[10000]</value>
@@ -955,25 +955,25 @@
     </variable>
     <variable name="TopbarMusicOSDLabel">
         <value condition="control.hasfocus(306)">$LOCALIZE[19069]</value>
-        <value condition="control.hasfocus(307)">$LOCALIZE[19069]$INFO[MusicPlayer.ChannelName,[COLOR=SeparatorColor] › [/COLOR]]</value>
+        <value condition="control.hasfocus(307)">$LOCALIZE[19069]$INFO[MusicPlayer.ChannelName,  •  ]</value>
         <value condition="control.hasfocus(9)">$LOCALIZE[24013]</value>
         <value condition="control.hasfocus(500)">$LOCALIZE[250]</value>
-        <value condition="control.hasfocus(19)">$LOCALIZE[250][COLOR=SeparatorColor] › [/COLOR]$LOCALIZE[5]</value>
-        <value condition="control.hasfocus(20)">$LOCALIZE[250][COLOR=SeparatorColor] › [/COLOR]$LOCALIZE[13388]</value>
+        <value condition="control.hasfocus(19)">$LOCALIZE[250]  •  $LOCALIZE[5]</value>
+        <value condition="control.hasfocus(20)">$LOCALIZE[250]  •  $LOCALIZE[13388]</value>
         <value condition="control.hasfocus(556)">$LOCALIZE[20445]</value>
         <value condition="control.hasfocus(555)">$LOCALIZE[559]</value>
         <value condition="control.hasfocus(1624)">$LOCALIZE[5]</value>
         <value condition="control.hasfocus(1626)">$LOCALIZE[13009]</value>
-        <value condition="control.hasfocus(1623)">$LOCALIZE[13014]</value>
-        <value condition="control.hasfocus(704)">$LOCALIZE[31298]</value>
-        <value condition="control.hasfocus(705)">$LOCALIZE[10000]</value>
+        <value condition="control.hasfocus(1622)">$LOCALIZE[33061]</value>
+        <value condition="control.hasfocus(598)">$LOCALIZE[31298]</value>
+        <value condition="control.hasfocus(599)">$LOCALIZE[10000]</value>
         <value condition="control.hasfocus(300)">$LOCALIZE[210]</value>
         <value condition="control.hasfocus(301)">$LOCALIZE[209]</value>
         <value condition="control.hasfocus(600)">$LOCALIZE[210]</value>
         <value condition="control.hasfocus(601)">$LOCALIZE[31354]</value>
-        <value condition="control.hasfocus(202)">$LOCALIZE[31351] / $LOCALIZE[208]</value>
+        <value condition="control.hasfocus(602)">$LOCALIZE[31351] / $LOCALIZE[208]</value>
         <value condition="control.hasfocus(603)">$LOCALIZE[31352]</value>
-        <value condition="control.hasfocus(699)">$LOCALIZE[486]</value>
+        <value condition="controlgroup(699).hasfocus">$LOCALIZE[486]</value>
         <value condition="control.hasfocus(21)">$LOCALIZE[590]</value>
         <value condition="control.hasfocus(353)">$LOCALIZE[264]</value>
         <value condition="control.hasfocus(604)">$LOCALIZE[31353]</value>

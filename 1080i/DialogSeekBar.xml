@@ -17,6 +17,15 @@
             <height>440</height>
         </control>
         <control type="image">
+            <visible>Window.IsActive(VideoOSD.xml)</visible>
+            <include>VisibleFadeEffect</include>
+            <posx>-150</posx>
+            <posy>-3</posy>
+            <texture>common/basichome_upper_gradient.png</texture>
+            <width>2220</width>
+            <height>440</height>
+        </control>
+        <control type="image">
             <posx>-15</posx>
             <posy>0</posy>
             <width>1950</width>
@@ -251,7 +260,7 @@
         </control>
         <control type="group">
             <animation effect="slide" start="0,0" end="0,-250" time="100" condition="window.IsActive(DialogFullScreenInfo.xml)">conditional</animation>
-            <animation effect="slide" start="0,0" end="0,50" time="100" condition="window.IsActive(VideoOSD.xml)+window.IsActive(DialogFullScreenInfo.xml)">conditional</animation>
+            <animation effect="slide" start="0,0" end="0,70" time="100" condition="window.IsActive(VideoOSD.xml)+window.IsActive(DialogFullScreenInfo.xml)">conditional</animation>
             <visible>!Skin.HasSetting(DisablePauseIconOSD)</visible>
             <visible>!Player.Caching</visible>
             <include>OSDVisibleFadeEffect</include>

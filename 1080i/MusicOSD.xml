@@ -136,7 +136,7 @@
             <!--100-->
             <control type="grouplist" id="100">
                 <posx>0</posx>
-                <posy>68</posy>
+                <posy>65</posy>
                 <width>1920</width>
                 <orientation>horizontal</orientation>
                 <itemgap>10</itemgap>
@@ -279,7 +279,7 @@
             <!--101-->
             <control type="grouplist" id="101">
                 <posx>0</posx>
-                <posy>138</posy>
+                <posy>139</posy>
                 <width>1920</width>
                 <orientation>horizontal</orientation>
                 <itemgap>10</itemgap>
@@ -357,7 +357,7 @@
                     </control>
                 </control>
                 <control type="togglebutton" id="21">
-                    <visible>!MusicPlayer.Content(LiveTV)</visible>
+                    <!--<visible>!MusicPlayer.Content(LiveTV)</visible>-->
                     <label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
                     <altlabel>$LOCALIZE[590] : $LOCALIZE[16041]</altlabel>
                     <include>TopBarButton</include>
@@ -386,7 +386,7 @@
                     <onclick>ActivateWindow(MusicPlaylist)</onclick>
                 </control>
                 <control type="togglebutton" id="353">
-                    <enable>Player.CanRecord</enable>
+                    <!--<enable>Player.CanRecord</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>
                     <label>$LOCALIZE[264]</label>
                     <altlabel>$LOCALIZE[265]</altlabel>
@@ -413,7 +413,7 @@
                     <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
                 </control>
                 <control type="button" id="19">
-                    <enable>Visualisation.Enabled</enable>
+                    <!--<enable>Visualisation.Enabled</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.Enabled">Conditional</animation>
                     <label>$LOCALIZE[250] $LOCALIZE[10004]</label>
                     <include>TopBarButton</include>
@@ -422,7 +422,7 @@
                     <onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
                 </control>
                 <control type="button" id="20">
-                    <enable>Visualisation.HasPresets</enable>
+                    <!--<enable>Visualisation.HasPresets</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Visualisation.HasPresets">Conditional</animation>
                     <label>$LOCALIZE[31048]</label>
                     <include>TopBarButton</include>
@@ -430,6 +430,31 @@
                     <texturenofocus>topbar/topbar_presets_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(122)</onclick>
                 </control>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>55</posy>
+                <width>1920</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="image">
+                <posx>0</posx>
+                <posy>130</posy>
+                <width>1920</width>
+                <height>73</height>
+                <texture border="3">list/bg_facade_nofocus_top.png</texture>
+            </control>
+            <control type="label">
+                <posx>0</posx>
+                <posy>203</posy>
+                <width>1920</width>
+                <height>50</height>
+                <align>center</align>
+                <aligny>center</aligny>
+                <font>NotificationFont</font>
+                <textcolor>AlternateColor</textcolor>
+                <label>$VAR[TopbarMusicOSDLabel]</label>
             </control>
         </control>
     </controls>
