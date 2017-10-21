@@ -15,9 +15,20 @@ Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD
 
 #### [Download from GitHub](https://github.com/Tgxcorporation/skin.blackglassnova/wiki/Install-from-GitHub)
 
+&nbsp;
 #### Thanks
-All the Kodi/XBMC team and addon developers.
 
+[![Kodi](https://github.com/Tgxcorporation/skin.andromeda/blob/master/media/kodi.png?raw=true)](https://kodi.tv)
+
+All the [Kodi](https://kodi.tv) team and addon developers.
+
+&nbsp;
+
+&nbsp;&nbsp;[![JetBrains](https://github.com/Tgxcorporation/skin.andromeda/blob/master/media/jetbrains.png?raw=true)](https://www.jetbrains.com)
+
+[JetBrains](https://www.jetbrains.com) for providing a free lincese for their wonderfuld IDEs used during the code development of the skin.
+
+&nbsp;
 #### Donations
 If you liked this skin and you want to help a little bit, you can donate here:
 
