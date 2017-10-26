@@ -328,10 +328,7 @@
                 <posy>185</posy>
                 <width>678</width>
                 <height>429</height>
-                <label>-</label>
-                <font>-</font>
-                <texturenofocus>-</texturenofocus>
-                <texturefocus>-</texturefocus>
+                <include>HiddenButton</include>
             </control>
 
             <!--SUBTITLES-->

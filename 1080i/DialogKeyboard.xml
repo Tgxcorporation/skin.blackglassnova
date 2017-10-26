@@ -114,8 +114,8 @@
                         <align>center</align>
                         <textcolor>MainColor</textcolor>
                         <font>ButtonFont</font>
-                        <texturefocus>-</texturefocus>
-                        <texturenofocus>-</texturenofocus>
+                        <include>HiddenButton</include>
+                        <onup>300</onup>
                         <ondown>9091</ondown>
                     </control>
                     <control type="panel" id="9091">

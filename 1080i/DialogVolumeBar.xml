@@ -4,6 +4,7 @@
     <zorder>10</zorder>
     <controls>
         <control type="group">
+            <include>DimBG</include>
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <visible>!Player.Muted + !Player.passthrough</visible>
             <include>VisibleFadeEffect</include>

@@ -2016,14 +2016,17 @@
                             </control>
                         </itemlayout>
                         <focusedlayout height="276" width="183">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>-3</posy>
-                                <width>197</width>
-                                <height>273</height>
-                                <texture fallback="defaultVideoBig.png">$INFO[ListItem.Thumb]</texture>
-                                <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
-                                <include>ThumbBorderOverlay</include>
+                            <control type="group">
+                                <include>ListFocusAnimation</include>
+                                <control type="image">
+                                    <posx>0</posx>
+                                    <posy>-3</posy>
+                                    <width>197</width>
+                                    <height>273</height>
+                                    <texture fallback="defaultVideoBig.png">$INFO[ListItem.Thumb]</texture>
+                                    <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                                    <include>ThumbBorderOverlay</include>
+                                </control>
                             </control>
                         </focusedlayout>
                     </control>
@@ -2082,14 +2085,17 @@
                             </control>
                         </itemlayout>
                         <focusedlayout height="416" width="550">
-                            <control type="image">
-                                <posx>0</posx>
-                                <posy>41</posy>
-                                <width>550</width>
-                                <height>333</height>
-                                <texture fallback="defaultPictureBig.png">$INFO[ListItem.Thumb]</texture>
-                                <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
-                                <include>ThumbBorderOverlay</include>
+                            <control type="group">
+                                <include>ListFocusAnimation</include>
+                                <control type="image">
+                                    <posx>0</posx>
+                                    <posy>41</posy>
+                                    <width>550</width>
+                                    <height>333</height>
+                                    <texture fallback="defaultPictureBig.png">$INFO[ListItem.Thumb]</texture>
+                                    <aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+                                    <include>ThumbBorderOverlay</include>
+                                </control>
                             </control>
                         </focusedlayout>
                     </control>
