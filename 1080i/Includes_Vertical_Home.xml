@@ -7,7 +7,7 @@
         <height>497</height>
         <onleft>300</onleft>
         <onright>300</onright>
-        <onup>9001</onup>
+        <onup>9900</onup>
         <ondown>9001</ondown>
         <onback>300</onback>
         <focusposition>6</focusposition>
@@ -60,7 +60,7 @@
         <posy>78</posy>
         <width>467</width>
         <height>923</height>
-        <onup>300</onup>
+        <onup>9900</onup>
         <ondown>300</ondown>
         <onleft>9001</onleft>
         <onright>9060</onright>
