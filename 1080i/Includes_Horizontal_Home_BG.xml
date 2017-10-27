@@ -121,6 +121,7 @@
                 <texture border="90">common/bg_panel_home.png</texture>
             </control>
             <control type="image">
+                <visible>$EXP[HomeWidgetCollectionIsVisible]</visible>
                 <posx>37</posx>
                 <posy>60</posy>
                 <width>1574</width>
@@ -169,6 +170,7 @@
                     <texture border="90">common/bg_panel_home.png</texture>
                 </control>
                 <control type="image">
+                    <visible>$EXP[HomeWidgetCollectionIsVisible]</visible>
                     <posx>37</posx>
                     <posy>60</posy>
                     <width>1574</width>
@@ -204,6 +206,7 @@
         </control>
     </include>
     <include name="Horizontal_Home_Layout_BG">
+        <include>HeaderSlideEffectTopBar</include>
         <control type="image">
             <visible>$EXP[HomeWidgetCollectionHasFocus]|$EXP[HomeWidgetSelectorHasFocus]</visible>
             <include>VisibleFadeEffect</include>
