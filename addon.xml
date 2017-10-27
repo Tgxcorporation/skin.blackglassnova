@@ -83,12 +83,6 @@
             <screenshot>screenshots/screenshot08.jpg</screenshot>
             <screenshot>screenshots/screenshot09.jpg</screenshot>
             <screenshot>screenshots/screenshot10.jpg</screenshot>
-            <screenshot>screenshots/screenshot11.jpg</screenshot>
-            <screenshot>screenshots/screenshot12.jpg</screenshot>
-            <screenshot>screenshots/screenshot13.jpg</screenshot>
-            <screenshot>screenshots/screenshot14.jpg</screenshot>
-            <screenshot>screenshots/screenshot15.jpg</screenshot>
-            <screenshot>screenshots/screenshot16.jpg</screenshot>
         </assets>
     </extension>
 </addon>
