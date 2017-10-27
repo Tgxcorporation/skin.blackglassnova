@@ -3,7 +3,7 @@ Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD
 
 ![](https://github.com/Tgxcorporation/skin.blackglassnova/raw/master/screenshots/screenshot01.jpg)
 
-![](https://github.com/Tgxcorporation/skin.blackglassnova/raw/master/screenshots/screenshot11.jpg)
+![](https://i.imgur.com/fswAmrp.jpg)
 
 #### Some pictures of the skin:
 - [Black Glass Nova Mode](https://github.com/Tgxcorporation/skin.blackglassnova/wiki/Screenshots-BGN)
