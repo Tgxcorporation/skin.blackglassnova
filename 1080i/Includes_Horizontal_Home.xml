@@ -162,7 +162,7 @@
     </include>
     <include name="Horizontal_Home_Layout">
         <control type="image">
-            <animation effect="slide" start="0,0" end="0,-160" time="175" condition="$EXP[HomeWidgetCollectionIsVisible]+[$EXP[HomeMainMenuHasFocus]|$EXP[HomeSubMenuHasFocus]|$EXP[TopBarHasFocus]]">conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-160" time="175" condition="$EXP[HomeWidgetCollectionIsVisible]+!$EXP[HomeWidgetCollectionHasFocus]+[$EXP[HomeMainMenuHasFocus]|$EXP[HomeSubMenuHasFocus]|$EXP[TopBarHasFocus]]">conditional</animation>
             <posx>-200</posx>
             <posy>633</posy>
             <width>2320</width>
