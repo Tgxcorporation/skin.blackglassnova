@@ -1,9 +1,9 @@
 ## Black Glass Nova skin for Kodi 17 KRYPTON
 Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.
 
-![](http://i.imgur.com/bNT9T4C.jpg)
+![](https://i.imgur.com/7Tcx7om.jpg)
 
-![](http://i.imgur.com/NxPPyDE.jpg)
+![](https://i.imgur.com/fswAmrp.jpg)
 
 #### Some pictures of the skin:
 - [Black Glass Nova Mode](https://github.com/Tgxcorporation/skin.blackglassnova/wiki/Screenshots-BGN)
