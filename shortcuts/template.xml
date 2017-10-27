@@ -72,7 +72,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
                         <posx>0</posx>
                         <posy>999</posy>
                         <width>1920</width>
@@ -259,7 +259,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
                         <posx>0</posx>
                         <posy>999</posy>
                         <width>1920</width>
@@ -446,7 +446,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
                         <posx>0</posx>
                         <posy>999</posy>
                         <width>1920</width>
@@ -633,7 +633,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
                         <posx>0</posx>
                         <posy>999</posy>
                         <width>1920</width>
@@ -820,7 +820,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
                         <posx>0</posx>
                         <posy>999</posy>
                         <width>1920</width>
