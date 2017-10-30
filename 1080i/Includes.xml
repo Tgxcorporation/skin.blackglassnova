@@ -812,6 +812,7 @@
         <scrolltime>200</scrolltime>
         <orientation>vertical</orientation>
         <onup>9900</onup>
+        <onleft>9900</onleft>
     </include>
     <include name="LeftMenuButton">
         <height>71</height>
