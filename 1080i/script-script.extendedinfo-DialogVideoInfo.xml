@@ -2,6 +2,7 @@
 <window type="dialog">
     <defaultcontrol always="true">9001</defaultcontrol>
     <!-- <zorder>1</zorder> -->
+    <onload condition="Skin.HasSetting(StopPlaybackOnMenu)">PlayerControl(stop)</onload>
     <include>DialogOpenClose</include>
     <controls>
         <include>DimBG</include>

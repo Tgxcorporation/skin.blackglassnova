@@ -3,6 +3,7 @@
     <defaultcontrol>50</defaultcontrol>
     <menucontrol>9000</menucontrol>
     <views>50,52,54</views>
+    <onload condition="Skin.HasSetting(StopPlaybackOnMenu)">PlayerControl(stop)</onload>
     <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">OpenClose</include>
     <controls>
         <include>Fanart_Art</include>
