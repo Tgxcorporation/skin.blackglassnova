@@ -1194,9 +1194,9 @@
                     <label>$SKINSHORTCUTS[title]</label>
                 </control>
                 <control type="list" id="70003$SKINSHORTCUTS[mainmenuid]">
-                    <onright>70003$SKINSHORTCUTS[mainmenuid]</onright>
+                    <onright>70004$SKINSHORTCUTS[mainmenuid]</onright>
                     <onup>70002$SKINSHORTCUTS[mainmenuid]</onup>
-                    <ondown>70003$SKINSHORTCUTS[mainmenuid]</ondown>
+                    <ondown>70004$SKINSHORTCUTS[mainmenuid]</ondown>
                     <onleft>300</onleft>
                     <include content="Vertical_Widget_$SKINSHORTCUTS[gfxType]">
                         <param name="id" value="70003$SKINSHORTCUTS[mainmenuid]"/>
