@@ -83,7 +83,7 @@
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="201">
-                    <enable>Player.SeekEnabled</enable>
+                    <!--<enable>Player.SeekEnabled</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                     <label>$LOCALIZE[31354]</label>
                     <include>TopBarButton</include>
@@ -92,7 +92,7 @@
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="togglebutton" id="202">
-                    <enable>Player.PauseEnabled</enable>
+                    <!--<enable>Player.PauseEnabled</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.PauseEnabled">Conditional</animation>
                     <label>$LOCALIZE[31351]</label>
                     <altlabel>$LOCALIZE[208]</altlabel>
@@ -112,7 +112,7 @@
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="204">
-                    <enable>Player.SeekEnabled</enable>
+                    <!--<enable>Player.SeekEnabled</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                     <label>$LOCALIZE[31353]</label>
                     <include>TopBarButton</include>
@@ -215,7 +215,7 @@
                 </control>
                 <control type="togglebutton" id="353">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
-                    <enable>Player.CanRecord</enable>
+                    <!--<enable>Player.CanRecord</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>
                     <label>$LOCALIZE[264]</label>
                     <altlabel>$LOCALIZE[265]</altlabel>
@@ -259,7 +259,7 @@
                 </control>
                 <control type="button" id="254">
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
-                    <enable>VideoPlayer.HasMenu</enable>
+                    <!--<enable>VideoPlayer.HasMenu</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
                     <label>$LOCALIZE[31355]</label>
                     <include>TopBarButton</include>
@@ -268,7 +268,7 @@
                     <onclick>PlayerControl(ShowVideoMenu)</onclick>
                 </control>
                 <control type="button" id="255">
-                    <enable>VideoPlayer.IsStereoscopic</enable>
+                    <!--<enable>VideoPlayer.IsStereoscopic</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
                     <label>$LOCALIZE[36501]</label>
                     <include>TopBarButton</include>

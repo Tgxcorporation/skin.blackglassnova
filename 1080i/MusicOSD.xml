@@ -184,7 +184,7 @@
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="601">
-                    <enable>Player.SeekEnabled</enable>
+                    <!--<enable>Player.SeekEnabled</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                     <label>$LOCALIZE[31354]</label>
                     <include>TopBarButton</include>
@@ -193,7 +193,7 @@
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="togglebutton" id="602">
-                    <enable>Player.PauseEnabled</enable>
+                    <!--<enable>Player.PauseEnabled</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                     <label>$LOCALIZE[31351]</label>
                     <altlabel>$LOCALIZE[208]</altlabel>
@@ -213,7 +213,7 @@
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="604">
-                    <enable>Player.SeekEnabled</enable>
+                    <!--<enable>Player.SeekEnabled</enable>-->
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                     <label>$LOCALIZE[31353]</label>
                     <include>TopBarButton</include>
