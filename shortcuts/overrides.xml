@@ -61,6 +61,12 @@
 
     <widgetRename>True</widgetRename>
 
+    <propertyfallback property="widgetAspect">Icon - 1:1</propertyfallback>
+    <propertyfallback property="widgetAspect.1">Icon - 1:1</propertyfallback>
+    <propertyfallback property="widgetAspect.2">Icon - 1:1</propertyfallback>
+    <propertyfallback property="widgetAspect.3">Icon - 1:1</propertyfallback>
+    <propertyfallback property="widgetAspect.4">Icon - 1:1</propertyfallback>
+
     <!-- Widget Icon Aspect Ratio -->
     <propertySettings property="widgetAspect" title="$LOCALIZE[31115]" showNone="False" />
     <property property="widgetAspect">$LOCALIZE[31117]</property>

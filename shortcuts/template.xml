@@ -10,37 +10,37 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect" value="31117">697</property>
         <property name="height" tag="property" attribute="name|widgetAspect" value="31119">505</property>
-        <property name="height" tag="property" attribute="name|widgetAspect" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">608</property>
         <property name="height" tag="property" attribute="name|widgetAspect" value="31120">547</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31117">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.TVShowTitle,, • ]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31119">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.TVShowTitle,, • ]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31118">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31120">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
 
         <property name="labelCenter" tag="property" attribute="name|widgetAspect" value="31117">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA, • ]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
         <property name="labelCenter" tag="property" attribute="name|widgetAspect" value="31119">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA, • ]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
-        <property name="labelCenter" tag="property" attribute="name|widgetAspect" value="31118">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
+        <property name="labelCenter" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
         <property name="labelCenter" tag="property" attribute="name|widgetAspect" value="31120">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Label2,, • ]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297] • ]$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Genre]</property>
 
         <property name="labelLeft" tag="property" attribute="name|widgetAspect" value="31117">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect" value="31119">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect" value="31118">-</property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">-</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect" value="31120">-</property>
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31117">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31119">$INFO[Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31118">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">-</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect" value="31120">-</property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect" value="31119">true</property>
-        <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect" value="31118">false</property>
+        <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">false</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect" value="31120">false</property>
 
         <property name="title" tag="property" attribute="name|widgetName" />
@@ -197,37 +197,37 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.1" value="31117">697</property>
         <property name="height" tag="property" attribute="name|widgetAspect.1" value="31119">505</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.1" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">608</property>
         <property name="height" tag="property" attribute="name|widgetAspect.1" value="31120">547</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.TVShowTitle,, • ]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.TVShowTitle,, • ]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31118">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31120">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
 
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA, • ]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA, • ]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
-        <property name="labelCenter" tag="property" attribute="name|widgetAspect.1" value="31118">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
+        <property name="labelCenter" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.1" value="31120">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Label2,, • ]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297] • ]$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Genre]</property>
 
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.1" value="31118">-</property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">-</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.1" value="31120">-</property>
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31118">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">-</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.1" value="31120">-</property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.1" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.1" value="31119">true</property>
-        <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.1" value="31118">false</property>
+        <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">false</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.1" value="31120">false</property>
 
         <property name="title" tag="property" attribute="name|widgetName.1" />
@@ -384,37 +384,37 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.2" value="31117">697</property>
         <property name="height" tag="property" attribute="name|widgetAspect.2" value="31119">505</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.2" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">608</property>
         <property name="height" tag="property" attribute="name|widgetAspect.2" value="31120">547</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.TVShowTitle,, • ]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.TVShowTitle,, • ]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31118">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31120">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
 
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA, • ]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA, • ]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
-        <property name="labelCenter" tag="property" attribute="name|widgetAspect.2" value="31118">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
+        <property name="labelCenter" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.2" value="31120">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Label2,, • ]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297] • ]$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Genre]</property>
 
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.2" value="31118">-</property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">-</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.2" value="31120">-</property>
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31118">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">-</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.2" value="31120">-</property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.2" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.2" value="31119">true</property>
-        <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.2" value="31118">false</property>
+        <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">false</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.2" value="31120">false</property>
 
         <property name="title" tag="property" attribute="name|widgetName.2" />
@@ -571,37 +571,37 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.3" value="31117">697</property>
         <property name="height" tag="property" attribute="name|widgetAspect.3" value="31119">505</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.3" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">608</property>
         <property name="height" tag="property" attribute="name|widgetAspect.3" value="31120">547</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.TVShowTitle,, • ]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.TVShowTitle,, • ]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31118">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31120">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
 
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA, • ]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA, • ]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
-        <property name="labelCenter" tag="property" attribute="name|widgetAspect.3" value="31118">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
+        <property name="labelCenter" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.3" value="31120">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Label2,, • ]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297] • ]$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Genre]</property>
 
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.3" value="31118">-</property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">-</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.3" value="31120">-</property>
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31118">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">-</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.3" value="31120">-</property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.3" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.3" value="31119">true</property>
-        <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.3" value="31118">false</property>
+        <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">false</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.3" value="31120">false</property>
 
         <property name="title" tag="property" attribute="name|widgetName.3" />
@@ -758,37 +758,37 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.4" value="31117">697</property>
         <property name="height" tag="property" attribute="name|widgetAspect.4" value="31119">505</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.4" value="31118">608</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">608</property>
         <property name="height" tag="property" attribute="name|widgetAspect.4" value="31120">547</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.TVShowTitle,, • ]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.TVShowTitle,, • ]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31118">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31120">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Label]</property>
 
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA, • ]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA, • ]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
-        <property name="labelCenter" tag="property" attribute="name|widgetAspect.4" value="31118">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
+        <property name="labelCenter" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Artist,, • ]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Year]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Genre, • ]</property>
         <property name="labelCenter" tag="property" attribute="name|widgetAspect.4" value="31120">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Label2,, • ]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297] • ]$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Genre]</property>
 
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelLeft" tag="property" attribute="name|widgetAspect.4" value="31118">-</property>
+        <property name="labelLeft" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">-</property>
         <property name="labelLeft" tag="property" attribute="name|widgetAspect.4" value="31120">-</property>
 
         <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Rating]</property>
-        <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31118">-</property>
+        <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">-</property>
         <property name="labelRight" tag="property" attribute="name|widgetAspect.4" value="31120">-</property>
 
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.4" value="31117">true</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.4" value="31119">true</property>
-        <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.4" value="31118">false</property>
+        <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">false</property>
         <property name="visibilityLabelRight" tag="property" attribute="name|widgetAspect.4" value="31120">false</property>
 
         <property name="title" tag="property" attribute="name|widgetName.4" />
@@ -947,27 +947,27 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect" value="31117">650</property>
         <property name="height" tag="property" attribute="name|widgetAspect" value="31119">489</property>
-        <property name="height" tag="property" attribute="name|widgetAspect" value="31118">573</property>
+        <property name="height" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">573</property>
         <property name="height" tag="property" attribute="name|widgetAspect" value="31120">529</property>
 
         <property name="gradientY" tag="property" attribute="name|widgetAspect" value="31117">380</property>
         <property name="gradientY" tag="property" attribute="name|widgetAspect" value="31119">219</property>
-        <property name="gradientY" tag="property" attribute="name|widgetAspect" value="31118">303</property>
+        <property name="gradientY" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">303</property>
         <property name="gradientY" tag="property" attribute="name|widgetAspect" value="31120">259</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31117">$INFO[ListItem.TVShowTitle,, • ]$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31119">$INFO[ListItem.TVShowTitle,, • ]$INFO[ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect" value="31120">$INFO[ListItem.Label]</property>
 
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31117">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31119">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating, • ]$INFO[ListItem.Year, • ]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31118|Icon - 1:1">$INFO[ListItem.Artist]$INFO[ListItem.Rating, • ]$INFO[ListItem.Year, • ]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect" value="31120">$INFO[ListItem.Label2,, • ]$INFO[ListItem.Duration]</property>
 
         <property name="title" tag="property" attribute="name|widgetName" />
@@ -1044,27 +1044,27 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.1" value="31117">650</property>
         <property name="height" tag="property" attribute="name|widgetAspect.1" value="31119">489</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.1" value="31118">573</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">573</property>
         <property name="height" tag="property" attribute="name|widgetAspect.1" value="31120">529</property>
 
         <property name="gradientY" tag="property" attribute="name|widgetAspect.1" value="31117">380</property>
         <property name="gradientY" tag="property" attribute="name|widgetAspect.1" value="31119">219</property>
-        <property name="gradientY" tag="property" attribute="name|widgetAspect.1" value="31118">303</property>
+        <property name="gradientY" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">303</property>
         <property name="gradientY" tag="property" attribute="name|widgetAspect.1" value="31120">259</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.1" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[ListItem.TVShowTitle,, • ]$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[ListItem.TVShowTitle,, • ]$INFO[ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.1" value="31120">$INFO[ListItem.Label]</property>
 
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31117">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31119">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating, • ]$INFO[ListItem.Year, • ]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31118|Icon - 1:1">$INFO[ListItem.Artist]$INFO[ListItem.Rating, • ]$INFO[ListItem.Year, • ]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.1" value="31120">$INFO[ListItem.Label2,, • ]$INFO[ListItem.Duration]</property>
 
         <property name="title" tag="property" attribute="name|widgetName.1" />
@@ -1141,27 +1141,27 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.2" value="31117">650</property>
         <property name="height" tag="property" attribute="name|widgetAspect.2" value="31119">489</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.2" value="31118">573</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">573</property>
         <property name="height" tag="property" attribute="name|widgetAspect.2" value="31120">529</property>
 
         <property name="gradientY" tag="property" attribute="name|widgetAspect.2" value="31117">380</property>
         <property name="gradientY" tag="property" attribute="name|widgetAspect.2" value="31119">219</property>
-        <property name="gradientY" tag="property" attribute="name|widgetAspect.2" value="31118">303</property>
+        <property name="gradientY" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">303</property>
         <property name="gradientY" tag="property" attribute="name|widgetAspect.2" value="31120">259</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.2" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[ListItem.TVShowTitle,, • ]$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[ListItem.TVShowTitle,, • ]$INFO[ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.2" value="31120">$INFO[ListItem.Label]</property>
 
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31117">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31119">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating, • ]$INFO[ListItem.Year, • ]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31118|Icon - 1:1">$INFO[ListItem.Artist]$INFO[ListItem.Rating, • ]$INFO[ListItem.Year, • ]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.2" value="31120">$INFO[ListItem.Label2,, • ]$INFO[ListItem.Duration]</property>
 
         <property name="title" tag="property" attribute="name|widgetName.2" />
@@ -1238,27 +1238,27 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.3" value="31117">650</property>
         <property name="height" tag="property" attribute="name|widgetAspect.3" value="31119">489</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.3" value="31118">573</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">573</property>
         <property name="height" tag="property" attribute="name|widgetAspect.3" value="31120">529</property>
 
         <property name="gradientY" tag="property" attribute="name|widgetAspect.3" value="31117">380</property>
         <property name="gradientY" tag="property" attribute="name|widgetAspect.3" value="31119">219</property>
-        <property name="gradientY" tag="property" attribute="name|widgetAspect.3" value="31118">303</property>
+        <property name="gradientY" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">303</property>
         <property name="gradientY" tag="property" attribute="name|widgetAspect.3" value="31120">259</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.3" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[ListItem.TVShowTitle,, • ]$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[ListItem.TVShowTitle,, • ]$INFO[ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.3" value="31120">$INFO[ListItem.Label]</property>
 
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31117">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31119">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating, • ]$INFO[ListItem.Year, • ]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31118|Icon - 1:1">$INFO[ListItem.Artist]$INFO[ListItem.Rating, • ]$INFO[ListItem.Year, • ]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.3" value="31120">$INFO[ListItem.Label2,, • ]$INFO[ListItem.Duration]</property>
 
         <property name="title" tag="property" attribute="name|widgetName.3" />
@@ -1335,27 +1335,27 @@
 
         <property name="height" tag="property" attribute="name|widgetAspect.4" value="31117">650</property>
         <property name="height" tag="property" attribute="name|widgetAspect.4" value="31119">489</property>
-        <property name="height" tag="property" attribute="name|widgetAspect.4" value="31118">573</property>
+        <property name="height" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">573</property>
         <property name="height" tag="property" attribute="name|widgetAspect.4" value="31120">529</property>
 
         <property name="gradientY" tag="property" attribute="name|widgetAspect.4" value="31117">380</property>
         <property name="gradientY" tag="property" attribute="name|widgetAspect.4" value="31119">219</property>
-        <property name="gradientY" tag="property" attribute="name|widgetAspect.4" value="31118">303</property>
+        <property name="gradientY" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">303</property>
         <property name="gradientY" tag="property" attribute="name|widgetAspect.4" value="31120">259</property>
 
         <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31117">Poster</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31119">Episode</property>
-        <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31118">Square</property>
+        <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">Square</property>
         <property name="gfxType" tag="property" attribute="name|widgetAspect.4" value="31120">Channel</property>
 
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[ListItem.TVShowTitle,, • ]$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[ListItem.TVShowTitle,, • ]$INFO[ListItem.Label]</property>
-        <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31118">$INFO[ListItem.Label]</property>
+        <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">$INFO[ListItem.Label]</property>
         <property name="labelTitle" tag="property" attribute="name|widgetAspect.4" value="31120">$INFO[ListItem.Label]</property>
 
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31117">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31119">$INFO[ListItem.Rating,, • ]$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</property>
-        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31118">$INFO[ListItem.Artist]$INFO[ListItem.Rating, • ]$INFO[ListItem.Year, • ]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
+        <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31118|Icon - 1:1">$INFO[ListItem.Artist]$INFO[ListItem.Rating, • ]$INFO[ListItem.Year, • ]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]</property>
         <property name="labelSubTitle" tag="property" attribute="name|widgetAspect.4" value="31120">$INFO[ListItem.Label2,, • ]$INFO[ListItem.Duration]</property>
 
         <property name="title" tag="property" attribute="name|widgetName.4" />
