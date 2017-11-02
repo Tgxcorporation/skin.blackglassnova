@@ -132,6 +132,7 @@
                             <font>FacadeListMainFont</font>
                             <textcolor>ListNoFocusColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
+                            <align>center</align>
                             <scroll>false</scroll>
                         </control>
                     </itemlayout>
@@ -150,6 +151,8 @@
                             <font>FacadeListMainFont</font>
                             <textcolor>ListFocusColor</textcolor>
                             <label>$INFO[ListItem.Label]</label>
+                            <align>center</align>
+                            <scroll>true</scroll>
                         </control>
                     </focusedlayout>
                 </control>
