@@ -1409,7 +1409,7 @@
     </variable>
     <variable name="WidgetAspectLabel">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect))">$INFO[Container(211).ListItem.Property(widgetAspect)]</value>
-        <value>$LOCALIZE[21371]</value>
+        <value>$LOCALIZE[31118]</value>
     </variable>
     <variable name="WidgetSortByLabel">
         <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy),lastplayed)">$LOCALIZE[568]</value>
@@ -1426,7 +1426,7 @@
     </variable>
     <variable name="WidgetAspectLabel.1">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.1))">$INFO[Container(211).ListItem.Property(widgetAspect.1)]</value>
-        <value>$LOCALIZE[21371]</value>
+        <value>$LOCALIZE[31118]</value>
     </variable>
     <variable name="WidgetSortByLabel.1">
         <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.1),lastplayed)">$LOCALIZE[568]</value>
@@ -1443,7 +1443,7 @@
     </variable>
     <variable name="WidgetAspectLabel.2">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.2))">$INFO[Container(211).ListItem.Property(widgetAspect.2)]</value>
-        <value>$LOCALIZE[21371]</value>
+        <value>$LOCALIZE[31118]</value>
     </variable>
     <variable name="WidgetSortByLabel.2">
         <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.2),lastplayed)">$LOCALIZE[568]</value>
@@ -1460,7 +1460,7 @@
     </variable>
     <variable name="WidgetAspectLabel.3">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.3))">$INFO[Container(211).ListItem.Property(widgetAspect.3)]</value>
-        <value>$LOCALIZE[21371]</value>
+        <value>$LOCALIZE[31118]</value>
     </variable>
     <variable name="WidgetSortByLabel.3">
         <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.3),lastplayed)">$LOCALIZE[568]</value>
@@ -1477,7 +1477,7 @@
     </variable>
     <variable name="WidgetAspectLabel.4">
         <value condition="!String.IsEmpty(Container(211).ListItem.Property(widgetAspect.4))">$INFO[Container(211).ListItem.Property(widgetAspect.4)]</value>
-        <value>$LOCALIZE[21371]</value>
+        <value>$LOCALIZE[31118]</value>
     </variable>
     <variable name="WidgetSortByLabel.4">
         <value condition="String.IsEqual(Container(211).ListItem.Property(widgetSortBy.4),lastplayed)">$LOCALIZE[568]</value>
