@@ -4,7 +4,7 @@
 <template>
 
     <other include="widget">
-        <!-- We're going to use this template for all widgets with a widgetPath element -->
+
         <condition tag="property" attribute="name|widgetPath" />
         <property name="mainmenuid" tag="mainmenuid" />
 
@@ -191,7 +191,7 @@
         </controls>
     </other>
     <other include="widget.1">
-        <!-- We're going to use this template for all widgets with a widgetPath element -->
+
         <condition tag="property" attribute="name|widgetPath.1" />
         <property name="mainmenuid" tag="mainmenuid" />
 
@@ -378,7 +378,7 @@
         </controls>
     </other>
     <other include="widget.2">
-        <!-- We're going to use this template for all widgets with a widgetPath element -->
+
         <condition tag="property" attribute="name|widgetPath.2" />
         <property name="mainmenuid" tag="mainmenuid" />
 
@@ -565,7 +565,7 @@
         </controls>
     </other>
     <other include="widget.3">
-        <!-- We're going to use this template for all widgets with a widgetPath element -->
+
         <condition tag="property" attribute="name|widgetPath.3" />
         <property name="mainmenuid" tag="mainmenuid" />
 
@@ -752,7 +752,7 @@
         </controls>
     </other>
     <other include="widget.4">
-        <!-- We're going to use this template for all widgets with a widgetPath element -->
+
         <condition tag="property" attribute="name|widgetPath.4" />
         <property name="mainmenuid" tag="mainmenuid" />
 
@@ -941,7 +941,7 @@
 
 
     <other include="vertical.widget">
-        <!-- We're going to use this template for all widgets with a widgetPath element -->
+
         <condition tag="property" attribute="name|widgetPath" />
         <property name="mainmenuid" tag="mainmenuid" />
 
@@ -1038,7 +1038,7 @@
         </controls>
     </other>
     <other include="vertical.widget.1">
-        <!-- We're going to use this template for all widgets with a widgetPath element -->
+
         <condition tag="property" attribute="name|widgetPath.1" />
         <property name="mainmenuid" tag="mainmenuid" />
 
@@ -1135,7 +1135,7 @@
         </controls>
     </other>
     <other include="vertical.widget.2">
-        <!-- We're going to use this template for all widgets with a widgetPath element -->
+
         <condition tag="property" attribute="name|widgetPath.2" />
         <property name="mainmenuid" tag="mainmenuid" />
 
@@ -1232,7 +1232,7 @@
         </controls>
     </other>
     <other include="vertical.widget.3">
-        <!-- We're going to use this template for all widgets with a widgetPath element -->
+
         <condition tag="property" attribute="name|widgetPath.3" />
         <property name="mainmenuid" tag="mainmenuid" />
 
@@ -1329,7 +1329,7 @@
         </controls>
     </other>
     <other include="vertical.widget.4">
-        <!-- We're going to use this template for all widgets with a widgetPath element -->
+
         <condition tag="property" attribute="name|widgetPath.4" />
         <property name="mainmenuid" tag="mainmenuid" />
 

@@ -12,7 +12,7 @@
             <lefttexture>-</lefttexture>
         </control>
         <control type="image" id="1">
-            <!--<visible>Integer.IsGreater(Control.GetLabel(10), 0)</visible>-->
+            <visible>Integer.IsGreater(Control.GetLabel(10), 0)</visible>
             <posx>810</posx>
             <posy>390</posy>
             <width>300</width>
