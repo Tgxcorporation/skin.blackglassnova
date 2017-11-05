@@ -160,7 +160,7 @@
                     <param name="gfxType" value="Square"/>
                     <param name="content" value="PlexRecentPhotoContent"/>
                     <param name="id" value="900"/>
-                    <param name="visibility" value="!String.IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),photo)"/>
+                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),photo)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value=""/>
                 </include>
@@ -190,7 +190,7 @@
                     <param name="gfxType" value="Poster"/>
                     <param name="content" value="PlexRecentMovieContent"/>
                     <param name="id" value="311"/>
-                    <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),movie)"/>
+                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),movie)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,  •  ]$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
                 </include>

@@ -1135,48 +1135,42 @@
                 <include>VisibleFadeEffect</include>
                 <label>$LOCALIZE[31961]</label>
                 <onclick>SetFocus(212)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(212)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(212)</onright>
+                <onup>SetFocus(212)</onup>
             </item>
             <item id="311">
                 <visible>Skin.HasSetting(plexbmc) + String.IsEqual(Container(300).ListItem.Property(type),movie)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$LOCALIZE[31961]</label>
                 <onclick>SetFocus(311)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(311)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(311)</onright>
+                <onup>SetFocus(311)</onup>
             </item>
             <item id="411">
                 <visible>Skin.HasSetting(plexbmc) + String.IsEqual(Container(300).ListItem.Property(type),show)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$LOCALIZE[31961]</label>
                 <onclick>SetFocus(411)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(411)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(411)</onright>
+                <onup>SetFocus(411)</onup>
             </item>
             <item id="511">
                 <visible>Skin.HasSetting(plexbmc) + String.IsEqual(Container(300).ListItem.Property(type),artist)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$LOCALIZE[31961]</label>
                 <onclick>SetFocus(511)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(511)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(511)</onright>
+                <onup>SetFocus(511)</onup>
             </item>
             <item id="900">
                 <visible>Skin.HasSetting(plexbmc) + String.IsEqual(Container(300).ListItem.Property(type),photo)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$LOCALIZE[31961]</label>
                 <onclick>SetFocus(900)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(900)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(900)</onright>
+                <onup>SetFocus(900)</onup>
             </item>
             <item id="901">
                 <visible>Skin.HasSetting(plexbmc) + String.IsEqual(Container(300).ListItem.Label,$LOCALIZE[31010])</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$LOCALIZE[31961]</label>
                 <onclick>SetFocus(901)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(901)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(901)</onright>
+                <onup>SetFocus(901)</onup>
             </item>
             <!--PLEX RECENTLY VIEWED-->
             <item id="312">
@@ -1184,16 +1178,14 @@
                 <include>VisibleFadeEffect</include>
                 <label>$LOCALIZE[31011]</label>
                 <onclick>SetFocus(312)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(312)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(312)</onright>
+                <onup>SetFocus(312)</onup>
             </item>
             <item id="412">
                 <visible>Skin.HasSetting(plexbmc) + String.IsEqual(Container(300).ListItem.Property(type),show)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$LOCALIZE[31011]</label>
                 <onclick>SetFocus(412)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(412)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(412)</onright>
+                <onup>SetFocus(412)</onup>
             </item>
             <!--PLEX RECENTLY VIEWED SHOWS-->
             <item id="413">
@@ -1201,1192 +1193,1044 @@
                 <include>VisibleFadeEffect</include>
                 <label>$LOCALIZE[31932]</label>
                 <onclick>SetFocus(413)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(413)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(413)</onright>
+                <onup>SetFocus(413)</onup>
             </item>
 
             <!--CUSTOM WIDGETS-->
-            
+
             <!--WIDGET 1-->
             <item id="700011">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(1)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(700011)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700011)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700011)</onright>
+                <onup>SetFocus(700011)</onup>
             </item>
             <item id="700012">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(2)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(700012)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700012)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700012)</onright>
+                <onup>SetFocus(700012)</onup>
             </item>
             <item id="700013">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(3)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(700013)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700013)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700013)</onright>
+                <onup>SetFocus(700013)</onup>
             </item>
             <item id="700014">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(4)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(700014)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700014)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700014)</onright>
+                <onup>SetFocus(700014)</onup>
             </item>
             <item id="700015">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(5)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(700015)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700015)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700015)</onright>
+                <onup>SetFocus(700015)</onup>
             </item>
             <item id="700016">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(6)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(700016)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700016)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700016)</onright>
+                <onup>SetFocus(700016)</onup>
             </item>
             <item id="700017">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(7)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(700017)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700017)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700017)</onright>
+                <onup>SetFocus(700017)</onup>
             </item>
             <item id="700018">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(8)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(700018)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700018)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700018)</onright>
+                <onup>SetFocus(700018)</onup>
             </item>
             <item id="700019">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(9)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(700019)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700019)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700019)</onright>
+                <onup>SetFocus(700019)</onup>
             </item>
             <item id="7000110">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(10)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000110)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000110)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000110)</onright>
+                <onup>SetFocus(7000110)</onup>
             </item>
             <item id="7000111">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(11)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000111)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000111)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000111)</onright>
+                <onup>SetFocus(7000111)</onup>
             </item>
             <item id="7000112">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(12)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000112)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000112)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000112)</onright>
+                <onup>SetFocus(7000112)</onup>
             </item>
             <item id="7000113">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(13)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000113)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000113)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000113)</onright>
+                <onup>SetFocus(7000113)</onup>
             </item>
             <item id="7000114">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(14)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000114)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000114)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000114)</onright>
+                <onup>SetFocus(7000114)</onup>
             </item>
             <item id="7000115">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(15)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000115)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000115)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000115)</onright>
+                <onup>SetFocus(7000115)</onup>
             </item>
             <item id="7000116">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(16)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000116)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000116)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000116)</onright>
+                <onup>SetFocus(7000116)</onup>
             </item>
             <item id="7000117">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(17)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000117)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000117)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000117)</onright>
+                <onup>SetFocus(7000117)</onup>
             </item>
             <item id="7000118">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(18)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000118)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000118)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000118)</onright>
+                <onup>SetFocus(7000118)</onup>
             </item>
             <item id="7000119">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(19)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000119)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000119)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000119)</onright>
+                <onup>SetFocus(7000119)</onup>
             </item>
             <item id="7000120">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(20)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000120)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000120)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000120)</onright>
+                <onup>SetFocus(7000120)</onup>
             </item>
             <item id="7000121">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(21)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000121)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000121)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000121)</onright>
+                <onup>SetFocus(7000121)</onup>
             </item>
             <item id="7000122">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(22)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000122)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000122)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000122)</onright>
+                <onup>SetFocus(7000122)</onup>
             </item>
             <item id="7000123">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(23)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000123)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000123)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000123)</onright>
+                <onup>SetFocus(7000123)</onup>
             </item>
             <item id="7000124">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(24)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000124)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000124)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000124)</onright>
+                <onup>SetFocus(7000124)</onup>
             </item>
             <item id="7000125">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(25)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000125)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000125)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000125)</onright>
+                <onup>SetFocus(7000125)</onup>
             </item>
             <item id="7000126">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(26)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000126)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000126)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000126)</onright>
+                <onup>SetFocus(7000126)</onup>
             </item>
             <item id="7000127">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(27)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000127)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000127)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000127)</onright>
+                <onup>SetFocus(7000127)</onup>
             </item>
             <item id="7000128">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(28)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000128)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000128)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000128)</onright>
+                <onup>SetFocus(7000128)</onup>
             </item>
             <item id="7000129">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(29)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000129)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000129)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000129)</onright>
+                <onup>SetFocus(7000129)</onup>
             </item>
             <item id="7000130">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(30)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000130)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000130)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000130)</onright>
+                <onup>SetFocus(7000130)</onup>
             </item>
             <item id="7000131">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(31)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000131)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000131)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000131)</onright>
+                <onup>SetFocus(7000131)</onup>
             </item>
             <item id="7000132">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(32)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000132)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000132)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000132)</onright>
+                <onup>SetFocus(7000132)</onup>
             </item>
             <item id="7000133">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(33)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000133)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000133)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000133)</onright>
+                <onup>SetFocus(7000133)</onup>
             </item>
             <item id="7000134">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(34)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000134)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000134)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000134)</onright>
+                <onup>SetFocus(7000134)</onup>
             </item>
             <item id="7000135">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(35)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000135)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000135)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000135)</onright>
+                <onup>SetFocus(7000135)</onup>
             </item>
             <item id="7000136">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(36)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000136)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000136)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000136)</onright>
+                <onup>SetFocus(7000136)</onup>
             </item>
             <item id="7000137">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(37)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000137)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000137)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000137)</onright>
+                <onup>SetFocus(7000137)</onup>
             </item>
             <item id="7000138">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(38)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000138)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000138)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000138)</onright>
+                <onup>SetFocus(7000138)</onup>
             </item>
             <item id="7000139">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(39)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000139)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000139)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000139)</onright>
+                <onup>SetFocus(7000139)</onup>
             </item>
             <item id="7000140">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(40)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000140)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000140)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000140)</onright>
+                <onup>SetFocus(7000140)</onup>
             </item>
             <item id="7000141">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(41)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000141)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000141)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000141)</onright>
+                <onup>SetFocus(7000141)</onup>
             </item>
             <item id="7000142">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(42)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000142)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000142)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000142)</onright>
+                <onup>SetFocus(7000142)</onup>
             </item>
             <item id="7000143">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(43)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000143)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000143)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000143)</onright>
+                <onup>SetFocus(7000143)</onup>
             </item>
             <item id="7000144">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(44)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000144)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000144)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000144)</onright>
+                <onup>SetFocus(7000144)</onup>
             </item>
             <item id="7000145">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(45)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000145)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000145)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000145)</onright>
+                <onup>SetFocus(7000145)</onup>
             </item>
             <item id="7000146">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(46)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000146)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000146)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000146)</onright>
+                <onup>SetFocus(7000146)</onup>
             </item>
             <item id="7000147">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(47)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000147)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000147)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000147)</onright>
+                <onup>SetFocus(7000147)</onup>
             </item>
             <item id="7000148">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(48)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000148)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000148)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000148)</onright>
+                <onup>SetFocus(7000148)</onup>
             </item>
             <item id="7000149">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetName))+Container(300).HasFocus(49)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetName)]</label>
                 <onclick>SetFocus(7000149)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000149)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000149)</onright>
+                <onup>SetFocus(7000149)</onup>
             </item>
-            
+
             <!--WIDGET 2-->
             <item id="700021">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(1)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(700021)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700021)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700021)</onright>
+                <onup>SetFocus(700021)</onup>
             </item>
             <item id="700022">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(2)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(700022)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700022)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700022)</onright>
+                <onup>SetFocus(700022)</onup>
             </item>
             <item id="700023">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(3)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(700023)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700023)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700023)</onright>
+                <onup>SetFocus(700023)</onup>
             </item>
             <item id="700024">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(4)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(700024)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700024)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700024)</onright>
+                <onup>SetFocus(700024)</onup>
             </item>
             <item id="700025">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(5)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(700025)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700025)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700025)</onright>
+                <onup>SetFocus(700025)</onup>
             </item>
             <item id="700026">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(6)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(700026)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700026)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700026)</onright>
+                <onup>SetFocus(700026)</onup>
             </item>
             <item id="700027">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(7)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(700027)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700027)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700027)</onright>
+                <onup>SetFocus(700027)</onup>
             </item>
             <item id="700028">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(8)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(700028)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700028)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700028)</onright>
+                <onup>SetFocus(700028)</onup>
             </item>
             <item id="700029">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(9)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(700029)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700029)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700029)</onright>
+                <onup>SetFocus(700029)</onup>
             </item>
             <item id="7000210">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(10)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000210)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000210)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000210)</onright>
+                <onup>SetFocus(7000210)</onup>
             </item>
             <item id="7000211">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(11)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000211)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000211)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000211)</onright>
+                <onup>SetFocus(7000211)</onup>
             </item>
             <item id="7000212">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(12)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000212)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000212)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000212)</onright>
+                <onup>SetFocus(7000212)</onup>
             </item>
             <item id="7000213">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(13)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000213)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000213)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000213)</onright>
+                <onup>SetFocus(7000213)</onup>
             </item>
             <item id="7000214">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(14)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000214)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000214)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000214)</onright>
+                <onup>SetFocus(7000214)</onup>
             </item>
             <item id="7000215">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(15)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000215)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000215)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000215)</onright>
+                <onup>SetFocus(7000215)</onup>
             </item>
             <item id="7000216">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(16)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000216)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000216)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000216)</onright>
+                <onup>SetFocus(7000216)</onup>
             </item>
             <item id="7000217">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(17)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000217)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000217)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000217)</onright>
+                <onup>SetFocus(7000217)</onup>
             </item>
             <item id="7000218">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(18)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000218)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000218)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000218)</onright>
+                <onup>SetFocus(7000218)</onup>
             </item>
             <item id="7000219">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(19)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000219)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000219)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000219)</onright>
+                <onup>SetFocus(7000219)</onup>
             </item>
             <item id="7000220">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(20)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000220)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000220)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000220)</onright>
+                <onup>SetFocus(7000220)</onup>
             </item>
             <item id="7000221">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(21)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000221)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000221)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000221)</onright>
+                <onup>SetFocus(7000221)</onup>
             </item>
             <item id="7000222">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(22)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000222)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000222)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000222)</onright>
+                <onup>SetFocus(7000222)</onup>
             </item>
             <item id="7000223">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(23)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000223)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000223)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000223)</onright>
+                <onup>SetFocus(7000223)</onup>
             </item>
             <item id="7000224">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(24)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000224)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000224)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000224)</onright>
+                <onup>SetFocus(7000224)</onup>
             </item>
             <item id="7000225">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(25)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000225)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000225)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000225)</onright>
+                <onup>SetFocus(7000225)</onup>
             </item>
             <item id="7000226">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(26)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000226)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000226)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000226)</onright>
+                <onup>SetFocus(7000226)</onup>
             </item>
             <item id="7000227">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(27)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000227)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000227)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000227)</onright>
+                <onup>SetFocus(7000227)</onup>
             </item>
             <item id="7000228">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(28)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000228)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000228)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000228)</onright>
+                <onup>SetFocus(7000228)</onup>
             </item>
             <item id="7000229">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(29)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000229)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000229)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000229)</onright>
+                <onup>SetFocus(7000229)</onup>
             </item>
             <item id="7000230">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(30)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000230)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000230)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000230)</onright>
+                <onup>SetFocus(7000230)</onup>
             </item>
             <item id="7000231">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(31)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000231)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000231)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000231)</onright>
+                <onup>SetFocus(7000231)</onup>
             </item>
             <item id="7000232">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(32)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000232)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000232)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000232)</onright>
+                <onup>SetFocus(7000232)</onup>
             </item>
             <item id="7000233">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(33)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000233)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000233)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000233)</onright>
+                <onup>SetFocus(7000233)</onup>
             </item>
             <item id="7000234">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(34)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000234)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000234)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000234)</onright>
+                <onup>SetFocus(7000234)</onup>
             </item>
             <item id="7000235">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(35)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000235)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000235)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000235)</onright>
+                <onup>SetFocus(7000235)</onup>
             </item>
             <item id="7000236">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(36)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000236)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000236)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000236)</onright>
+                <onup>SetFocus(7000236)</onup>
             </item>
             <item id="7000237">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(37)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000237)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000237)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000237)</onright>
+                <onup>SetFocus(7000237)</onup>
             </item>
             <item id="7000238">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(38)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000238)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000238)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000238)</onright>
+                <onup>SetFocus(7000238)</onup>
             </item>
             <item id="7000239">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(39)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000239)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000239)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000239)</onright>
+                <onup>SetFocus(7000239)</onup>
             </item>
             <item id="7000240">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(40)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000240)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000240)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000240)</onright>
+                <onup>SetFocus(7000240)</onup>
             </item>
             <item id="7000241">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(41)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000241)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000241)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000241)</onright>
+                <onup>SetFocus(7000241)</onup>
             </item>
             <item id="7000242">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(42)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000242)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000242)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000242)</onright>
+                <onup>SetFocus(7000242)</onup>
             </item>
             <item id="7000243">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(43)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000243)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000243)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000243)</onright>
+                <onup>SetFocus(7000243)</onup>
             </item>
             <item id="7000244">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(44)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000244)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000244)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000244)</onright>
+                <onup>SetFocus(7000244)</onup>
             </item>
             <item id="7000245">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(45)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000245)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000245)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000245)</onright>
+                <onup>SetFocus(7000245)</onup>
             </item>
             <item id="7000246">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(46)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000246)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000246)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000246)</onright>
+                <onup>SetFocus(7000246)</onup>
             </item>
             <item id="7000247">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(47)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000247)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000247)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000247)</onright>
+                <onup>SetFocus(7000247)</onup>
             </item>
             <item id="7000248">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(48)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000248)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000248)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000248)</onright>
+                <onup>SetFocus(7000248)</onup>
             </item>
             <item id="7000249">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.1))+Container(300).HasFocus(49)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.1)]</label>
                 <onclick>SetFocus(7000249)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000249)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000249)</onright>
+                <onup>SetFocus(7000249)</onup>
             </item>
-            
+
             <!--WIDGET 3-->
             <item id="700031">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(1)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(700031)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700031)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700031)</onright>
+                <onup>SetFocus(700031)</onup>
             </item>
             <item id="700032">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(2)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(700032)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700032)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700032)</onright>
+                <onup>SetFocus(700032)</onup>
             </item>
             <item id="700033">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(3)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(700033)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700033)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700033)</onright>
+                <onup>SetFocus(700033)</onup>
             </item>
             <item id="700034">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(4)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(700034)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700034)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700034)</onright>
+                <onup>SetFocus(700034)</onup>
             </item>
             <item id="700035">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(5)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(700035)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700035)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700035)</onright>
+                <onup>SetFocus(700035)</onup>
             </item>
             <item id="700036">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(6)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(700036)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700036)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700036)</onright>
+                <onup>SetFocus(700036)</onup>
             </item>
             <item id="700037">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(7)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(700037)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700037)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700037)</onright>
+                <onup>SetFocus(700037)</onup>
             </item>
             <item id="700038">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(8)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(700038)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700038)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700038)</onright>
+                <onup>SetFocus(700038)</onup>
             </item>
             <item id="700039">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(9)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(700039)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700039)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700039)</onright>
+                <onup>SetFocus(700039)</onup>
             </item>
             <item id="7000310">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(10)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000310)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000310)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000310)</onright>
+                <onup>SetFocus(7000310)</onup>
             </item>
             <item id="7000311">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(11)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000311)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000311)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000311)</onright>
+                <onup>SetFocus(7000311)</onup>
             </item>
             <item id="7000312">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(12)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000312)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000312)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000312)</onright>
+                <onup>SetFocus(7000312)</onup>
             </item>
             <item id="7000313">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(13)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000313)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000313)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000313)</onright>
+                <onup>SetFocus(7000313)</onup>
             </item>
             <item id="7000314">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(14)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000314)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000314)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000314)</onright>
+                <onup>SetFocus(7000314)</onup>
             </item>
             <item id="7000315">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(15)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000315)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000315)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000315)</onright>
+                <onup>SetFocus(7000315)</onup>
             </item>
             <item id="7000316">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(16)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000316)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000316)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000316)</onright>
+                <onup>SetFocus(7000316)</onup>
             </item>
             <item id="7000317">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(17)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000317)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000317)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000317)</onright>
+                <onup>SetFocus(7000317)</onup>
             </item>
             <item id="7000318">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(18)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000318)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000318)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000318)</onright>
+                <onup>SetFocus(7000318)</onup>
             </item>
             <item id="7000319">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(19)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000319)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000319)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000319)</onright>
+                <onup>SetFocus(7000319)</onup>
             </item>
             <item id="7000320">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(20)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000320)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000320)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000320)</onright>
+                <onup>SetFocus(7000320)</onup>
             </item>
             <item id="7000321">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(21)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000321)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000321)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000321)</onright>
+                <onup>SetFocus(7000321)</onup>
             </item>
             <item id="7000322">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(22)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000322)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000322)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000322)</onright>
+                <onup>SetFocus(7000322)</onup>
             </item>
             <item id="7000323">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(23)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000323)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000323)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000323)</onright>
+                <onup>SetFocus(7000323)</onup>
             </item>
             <item id="7000324">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(24)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000324)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000324)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000324)</onright>
+                <onup>SetFocus(7000324)</onup>
             </item>
             <item id="7000325">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(25)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000325)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000325)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000325)</onright>
+                <onup>SetFocus(7000325)</onup>
             </item>
             <item id="7000326">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(26)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000326)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000326)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000326)</onright>
+                <onup>SetFocus(7000326)</onup>
             </item>
             <item id="7000327">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(27)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000327)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000327)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000327)</onright>
+                <onup>SetFocus(7000327)</onup>
             </item>
             <item id="7000328">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(28)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000328)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000328)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000328)</onright>
+                <onup>SetFocus(7000328)</onup>
             </item>
             <item id="7000329">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(29)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000329)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000329)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000329)</onright>
+                <onup>SetFocus(7000329)</onup>
             </item>
             <item id="7000330">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(30)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000330)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000330)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000330)</onright>
+                <onup>SetFocus(7000330)</onup>
             </item>
             <item id="7000331">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(31)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000331)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000331)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000331)</onright>
+                <onup>SetFocus(7000331)</onup>
             </item>
             <item id="7000332">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(32)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000332)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000332)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000332)</onright>
+                <onup>SetFocus(7000332)</onup>
             </item>
             <item id="7000333">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(33)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000333)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000333)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000333)</onright>
+                <onup>SetFocus(7000333)</onup>
             </item>
             <item id="7000334">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(34)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000334)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000334)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000334)</onright>
+                <onup>SetFocus(7000334)</onup>
             </item>
             <item id="7000335">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(35)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000335)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000335)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000335)</onright>
+                <onup>SetFocus(7000335)</onup>
             </item>
             <item id="7000336">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(36)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000336)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000336)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000336)</onright>
+                <onup>SetFocus(7000336)</onup>
             </item>
             <item id="7000337">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(37)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000337)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000337)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000337)</onright>
+                <onup>SetFocus(7000337)</onup>
             </item>
             <item id="7000338">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(38)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000338)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000338)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000338)</onright>
+                <onup>SetFocus(7000338)</onup>
             </item>
             <item id="7000339">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(39)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000339)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000339)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000339)</onright>
+                <onup>SetFocus(7000339)</onup>
             </item>
             <item id="7000340">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(40)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000340)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000340)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000340)</onright>
+                <onup>SetFocus(7000340)</onup>
             </item>
             <item id="7000341">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(41)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000341)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000341)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000341)</onright>
+                <onup>SetFocus(7000341)</onup>
             </item>
             <item id="7000342">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(42)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000342)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000342)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000342)</onright>
+                <onup>SetFocus(7000342)</onup>
             </item>
             <item id="7000343">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(43)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000343)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000343)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000343)</onright>
+                <onup>SetFocus(7000343)</onup>
             </item>
             <item id="7000344">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(44)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000344)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000344)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000344)</onright>
+                <onup>SetFocus(7000344)</onup>
             </item>
             <item id="7000345">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(45)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000345)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000345)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000345)</onright>
+                <onup>SetFocus(7000345)</onup>
             </item>
             <item id="7000346">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(46)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000346)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000346)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000346)</onright>
+                <onup>SetFocus(7000346)</onup>
             </item>
             <item id="7000347">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(47)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000347)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000347)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000347)</onright>
+                <onup>SetFocus(7000347)</onup>
             </item>
             <item id="7000348">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(48)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000348)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000348)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000348)</onright>
+                <onup>SetFocus(7000348)</onup>
             </item>
             <item id="7000349">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.2))+Container(300).HasFocus(49)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.2)]</label>
                 <onclick>SetFocus(7000349)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000349)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000349)</onright>
+                <onup>SetFocus(7000349)</onup>
             </item>
 
             <!--WIDGET 4-->
@@ -2395,392 +2239,343 @@
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(700041)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700041)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700041)</onright>
+                <onup>SetFocus(700041)</onup>
             </item>
             <item id="700042">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(2)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(700042)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700042)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700042)</onright>
+                <onup>SetFocus(700042)</onup>
             </item>
             <item id="700043">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(3)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(700043)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700043)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700043)</onright>
+                <onup>SetFocus(700043)</onup>
             </item>
             <item id="700044">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(4)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(700044)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700044)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700044)</onright>
+                <onup>SetFocus(700044)</onup>
             </item>
             <item id="700045">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(5)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(700045)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700045)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700045)</onright>
+                <onup>SetFocus(700045)</onup>
             </item>
             <item id="700046">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(6)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(700046)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700046)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700046)</onright>
+                <onup>SetFocus(700046)</onup>
             </item>
             <item id="700047">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(7)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(700047)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700047)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700047)</onright>
+                <onup>SetFocus(700047)</onup>
             </item>
             <item id="700048">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(8)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(700048)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700048)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700048)</onright>
+                <onup>SetFocus(700048)</onup>
             </item>
             <item id="700049">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(9)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(700049)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700049)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700049)</onright>
+                <onup>SetFocus(700049)</onup>
             </item>
             <item id="7000410">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(10)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000410)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000410)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000410)</onright>
+                <onup>SetFocus(7000410)</onup>
             </item>
             <item id="7000411">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(11)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000411)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000411)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000411)</onright>
+                <onup>SetFocus(7000411)</onup>
             </item>
             <item id="7000412">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(12)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000412)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000412)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000412)</onright>
+                <onup>SetFocus(7000412)</onup>
             </item>
             <item id="7000413">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(13)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000413)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000413)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000413)</onright>
+                <onup>SetFocus(7000413)</onup>
             </item>
             <item id="7000414">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(14)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000414)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000414)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000414)</onright>
+                <onup>SetFocus(7000414)</onup>
             </item>
             <item id="7000415">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(15)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000415)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000415)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000415)</onright>
+                <onup>SetFocus(7000415)</onup>
             </item>
             <item id="7000416">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(16)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000416)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000416)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000416)</onright>
+                <onup>SetFocus(7000416)</onup>
             </item>
             <item id="7000417">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(17)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000417)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000417)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000417)</onright>
+                <onup>SetFocus(7000417)</onup>
             </item>
             <item id="7000418">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(18)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000418)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000418)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000418)</onright>
+                <onup>SetFocus(7000418)</onup>
             </item>
             <item id="7000419">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(19)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000419)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000419)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000419)</onright>
+                <onup>SetFocus(7000419)</onup>
             </item>
             <item id="7000420">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(20)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000420)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000420)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000420)</onright>
+                <onup>SetFocus(7000420)</onup>
             </item>
             <item id="7000421">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(21)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000421)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000421)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000421)</onright>
+                <onup>SetFocus(7000421)</onup>
             </item>
             <item id="7000422">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(22)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000422)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000422)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000422)</onright>
+                <onup>SetFocus(7000422)</onup>
             </item>
             <item id="7000423">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(23)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000423)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000423)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000423)</onright>
+                <onup>SetFocus(7000423)</onup>
             </item>
             <item id="7000424">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(24)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000424)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000424)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000424)</onright>
+                <onup>SetFocus(7000424)</onup>
             </item>
             <item id="7000425">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(25)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000425)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000425)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000425)</onright>
+                <onup>SetFocus(7000425)</onup>
             </item>
             <item id="7000426">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(26)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000426)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000426)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000426)</onright>
+                <onup>SetFocus(7000426)</onup>
             </item>
             <item id="7000427">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(27)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000427)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000427)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000427)</onright>
+                <onup>SetFocus(7000427)</onup>
             </item>
             <item id="7000428">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(28)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000428)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000428)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000428)</onright>
+                <onup>SetFocus(7000428)</onup>
             </item>
             <item id="7000429">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(29)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000429)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000429)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000429)</onright>
+                <onup>SetFocus(7000429)</onup>
             </item>
             <item id="7000430">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(30)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000430)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000430)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000430)</onright>
+                <onup>SetFocus(7000430)</onup>
             </item>
             <item id="7000431">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(31)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000431)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000431)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000431)</onright>
+                <onup>SetFocus(7000431)</onup>
             </item>
             <item id="7000432">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(32)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000432)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000432)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000432)</onright>
+                <onup>SetFocus(7000432)</onup>
             </item>
             <item id="7000433">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(33)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000433)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000433)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000433)</onright>
+                <onup>SetFocus(7000433)</onup>
             </item>
             <item id="7000434">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(34)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000434)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000434)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000434)</onright>
+                <onup>SetFocus(7000434)</onup>
             </item>
             <item id="7000435">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(35)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000435)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000435)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000435)</onright>
+                <onup>SetFocus(7000435)</onup>
             </item>
             <item id="7000436">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(36)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000436)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000436)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000436)</onright>
+                <onup>SetFocus(7000436)</onup>
             </item>
             <item id="7000437">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(37)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000437)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000437)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000437)</onright>
+                <onup>SetFocus(7000437)</onup>
             </item>
             <item id="7000438">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(38)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000438)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000438)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000438)</onright>
+                <onup>SetFocus(7000438)</onup>
             </item>
             <item id="7000439">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(39)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000439)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000439)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000439)</onright>
+                <onup>SetFocus(7000439)</onup>
             </item>
             <item id="7000440">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(40)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000440)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000440)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000440)</onright>
+                <onup>SetFocus(7000440)</onup>
             </item>
             <item id="7000441">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(41)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000441)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000441)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000441)</onright>
+                <onup>SetFocus(7000441)</onup>
             </item>
             <item id="7000442">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(42)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000442)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000442)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000442)</onright>
+                <onup>SetFocus(7000442)</onup>
             </item>
             <item id="7000443">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(43)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000443)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000443)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000443)</onright>
+                <onup>SetFocus(7000443)</onup>
             </item>
             <item id="7000444">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(44)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000444)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000444)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000444)</onright>
+                <onup>SetFocus(7000444)</onup>
             </item>
             <item id="7000445">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(45)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000445)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000445)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000445)</onright>
+                <onup>SetFocus(7000445)</onup>
             </item>
             <item id="7000446">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(46)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000446)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000446)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000446)</onright>
+                <onup>SetFocus(7000446)</onup>
             </item>
             <item id="7000447">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(47)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000447)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000447)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000447)</onright>
+                <onup>SetFocus(7000447)</onup>
             </item>
             <item id="7000448">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(48)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000448)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000448)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000448)</onright>
+                <onup>SetFocus(7000448)</onup>
             </item>
             <item id="7000449">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.3))+Container(300).HasFocus(49)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.3)]</label>
                 <onclick>SetFocus(7000449)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000449)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000449)</onright>
+                <onup>SetFocus(7000449)</onup>
             </item>
 
 
@@ -2790,392 +2585,343 @@
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(700051)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700051)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700051)</onright>
+                <onup>SetFocus(700051)</onup>
             </item>
             <item id="700052">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(2)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(700052)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700052)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700052)</onright>
+                <onup>SetFocus(700052)</onup>
             </item>
             <item id="700053">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(3)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(700053)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700053)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700053)</onright>
+                <onup>SetFocus(700053)</onup>
             </item>
             <item id="700054">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(4)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(700054)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700054)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700054)</onright>
+                <onup>SetFocus(700054)</onup>
             </item>
             <item id="700055">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(5)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(700055)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700055)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700055)</onright>
+                <onup>SetFocus(700055)</onup>
             </item>
             <item id="700056">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(6)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(700056)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700056)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700056)</onright>
+                <onup>SetFocus(700056)</onup>
             </item>
             <item id="700057">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(7)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(700057)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700057)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700057)</onright>
+                <onup>SetFocus(700057)</onup>
             </item>
             <item id="700058">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(8)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(700058)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700058)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700058)</onright>
+                <onup>SetFocus(700058)</onup>
             </item>
             <item id="700059">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(9)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(700059)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(700059)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(700059)</onright>
+                <onup>SetFocus(700059)</onup>
             </item>
             <item id="7000510">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(10)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000510)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000510)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000510)</onright>
+                <onup>SetFocus(7000510)</onup>
             </item>
             <item id="7000511">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(11)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000511)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000511)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000511)</onright>
+                <onup>SetFocus(7000511)</onup>
             </item>
             <item id="7000512">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(12)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000512)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000512)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000512)</onright>
+                <onup>SetFocus(7000512)</onup>
             </item>
             <item id="7000513">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(13)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000513)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000513)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000513)</onright>
+                <onup>SetFocus(7000513)</onup>
             </item>
             <item id="7000514">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(14)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000514)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000514)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000514)</onright>
+                <onup>SetFocus(7000514)</onup>
             </item>
             <item id="7000515">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(15)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000515)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000515)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000515)</onright>
+                <onup>SetFocus(7000515)</onup>
             </item>
             <item id="7000516">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(16)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000516)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000516)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000516)</onright>
+                <onup>SetFocus(7000516)</onup>
             </item>
             <item id="7000517">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(17)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000517)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000517)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000517)</onright>
+                <onup>SetFocus(7000517)</onup>
             </item>
             <item id="7000518">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(18)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000518)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000518)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000518)</onright>
+                <onup>SetFocus(7000518)</onup>
             </item>
             <item id="7000519">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(19)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000519)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000519)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000519)</onright>
+                <onup>SetFocus(7000519)</onup>
             </item>
             <item id="7000520">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(20)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000520)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000520)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000520)</onright>
+                <onup>SetFocus(7000520)</onup>
             </item>
             <item id="7000521">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(21)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000521)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000521)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000521)</onright>
+                <onup>SetFocus(7000521)</onup>
             </item>
             <item id="7000522">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(22)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000522)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000522)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000522)</onright>
+                <onup>SetFocus(7000522)</onup>
             </item>
             <item id="7000523">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(23)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000523)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000523)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000523)</onright>
+                <onup>SetFocus(7000523)</onup>
             </item>
             <item id="7000524">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(24)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000524)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000524)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000524)</onright>
+                <onup>SetFocus(7000524)</onup>
             </item>
             <item id="7000525">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(25)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000525)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000525)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000525)</onright>
+                <onup>SetFocus(7000525)</onup>
             </item>
             <item id="7000526">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(26)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000526)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000526)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000526)</onright>
+                <onup>SetFocus(7000526)</onup>
             </item>
             <item id="7000527">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(27)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000527)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000527)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000527)</onright>
+                <onup>SetFocus(7000527)</onup>
             </item>
             <item id="7000528">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(28)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000528)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000528)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000528)</onright>
+                <onup>SetFocus(7000528)</onup>
             </item>
             <item id="7000529">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(29)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000529)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000529)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000529)</onright>
+                <onup>SetFocus(7000529)</onup>
             </item>
             <item id="7000530">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(30)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000530)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000530)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000530)</onright>
+                <onup>SetFocus(7000530)</onup>
             </item>
             <item id="7000531">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(31)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000531)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000531)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000531)</onright>
+                <onup>SetFocus(7000531)</onup>
             </item>
             <item id="7000532">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(32)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000532)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000532)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000532)</onright>
+                <onup>SetFocus(7000532)</onup>
             </item>
             <item id="7000533">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(33)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000533)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000533)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000533)</onright>
+                <onup>SetFocus(7000533)</onup>
             </item>
             <item id="7000534">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(34)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000534)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000534)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000534)</onright>
+                <onup>SetFocus(7000534)</onup>
             </item>
             <item id="7000535">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(35)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000535)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000535)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000535)</onright>
+                <onup>SetFocus(7000535)</onup>
             </item>
             <item id="7000536">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(36)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000536)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000536)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000536)</onright>
+                <onup>SetFocus(7000536)</onup>
             </item>
             <item id="7000537">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(37)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000537)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000537)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000537)</onright>
+                <onup>SetFocus(7000537)</onup>
             </item>
             <item id="7000538">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(38)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000538)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000538)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000538)</onright>
+                <onup>SetFocus(7000538)</onup>
             </item>
             <item id="7000539">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(39)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000539)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000539)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000539)</onright>
+                <onup>SetFocus(7000539)</onup>
             </item>
             <item id="7000540">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(40)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000540)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000540)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000540)</onright>
+                <onup>SetFocus(7000540)</onup>
             </item>
             <item id="7000541">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(41)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000541)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000541)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000541)</onright>
+                <onup>SetFocus(7000541)</onup>
             </item>
             <item id="7000542">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(42)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000542)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000542)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000542)</onright>
+                <onup>SetFocus(7000542)</onup>
             </item>
             <item id="7000543">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(43)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000543)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000543)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000543)</onright>
+                <onup>SetFocus(7000543)</onup>
             </item>
             <item id="7000544">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(44)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000544)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000544)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000544)</onright>
+                <onup>SetFocus(7000544)</onup>
             </item>
             <item id="7000545">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(45)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000545)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000545)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000545)</onright>
+                <onup>SetFocus(7000545)</onup>
             </item>
             <item id="7000546">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(46)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000546)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000546)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000546)</onright>
+                <onup>SetFocus(7000546)</onup>
             </item>
             <item id="7000547">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(47)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000547)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000547)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000547)</onright>
+                <onup>SetFocus(7000547)</onup>
             </item>
             <item id="7000548">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(48)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000548)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000548)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000548)</onright>
+                <onup>SetFocus(7000548)</onup>
             </item>
             <item id="7000549">
                 <visible>!String.IsEmpty(Container(300).ListItem.Property(widgetname.4))+Container(300).HasFocus(49)</visible>
                 <include>VisibleFadeEffect</include>
                 <label>$INFO[Container(300).ListItem.Property(widgetname.4)]</label>
                 <onclick>SetFocus(7000549)</onclick>
-                <onup condition="!Skin.HasSetting(VerticalHome)">SetFocus(7000549)</onup>
-                <onright condition="Skin.HasSetting(VerticalHome)">SetFocus(7000549)</onright>
+                <onup>SetFocus(7000549)</onup>
             </item>
         </content>
     </include>

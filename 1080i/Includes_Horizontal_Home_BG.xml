@@ -264,16 +264,16 @@
                         <height>50</height>
                         <itemgap>50</itemgap>
                         <align>center</align>
-                        <onup condition="control.isvisible(212)+Container(701).HasFocus(212)">212</onup>
-                        <onup condition="control.isvisible(311)+Container(701).HasFocus(311)">311</onup>
-                        <onup condition="control.isvisible(411)+Container(701).HasFocus(411)">411</onup>
-                        <onup condition="control.isvisible(511)+Container(701).HasFocus(511)">511</onup>
-                        <onup condition="control.isvisible(900)+Container(701).HasFocus(900)">900</onup>
-                        <onup condition="control.isvisible(901)+Container(701).HasFocus(901)">901</onup>
-                        <onup condition="control.isvisible(312)+Container(701).HasFocus(312)">312</onup>
-                        <onup condition="control.isvisible(412)+Container(701).HasFocus(412)">412</onup>
-                        <onup condition="control.isvisible(413)+Container(413).HasFocus(413)">413</onup>
-                        <onup condition="control.isvisible(411)+Container(701).HasFocus(411)">411</onup>
+                        <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(212)">212</onup>
+                        <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(311)">311</onup>
+                        <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(411)">411</onup>
+                        <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(511)">511</onup>
+                        <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(900)">900</onup>
+                        <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(901)">901</onup>
+                        <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(312)">312</onup>
+                        <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(412)">412</onup>
+                        <onup condition="Skin.HasSetting(plexbmc)+Container(413).HasFocus(413)">413</onup>
+                        <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(411)">411</onup>
                         <onup condition="control.isvisible(700011)+Container(701).HasFocus(700011)">700011</onup>
                         <onup condition="control.isvisible(700012)+Container(701).HasFocus(700012)">700012</onup>
                         <onup condition="control.isvisible(700013)+Container(701).HasFocus(700013)">700013</onup>
