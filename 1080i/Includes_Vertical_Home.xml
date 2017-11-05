@@ -160,7 +160,7 @@
                     <param name="gfxType" value="Square"/>
                     <param name="content" value="PlexRecentPhotoContent"/>
                     <param name="id" value="900"/>
-                    <param name="visibility" value="!String.IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),photo) + Skin.HasSetting(plexbmc)"/>
+                    <param name="visibility" value="!String.IsEmpty(Window.Property(Plexbmc.LatestPhoto.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),photo)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value=""/>
                 </include>
@@ -175,7 +175,7 @@
                     <param name="gfxType" value="Square"/>
                     <param name="content" value="PlexQueueContent"/>
                     <param name="id" value="901"/>
-                    <param name="visibility" value="!String.IsEmpty(Window.Property(Plexbmc.Queue.1.Path))+String.IsEqual(Container(300).ListItem.Label,$LOCALIZE[31010]) + Skin.HasSetting(plexbmc)"/>
+                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Label,$LOCALIZE[31010])"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="-"/>
                 </include>
@@ -190,7 +190,7 @@
                     <param name="gfxType" value="Poster"/>
                     <param name="content" value="PlexRecentMovieContent"/>
                     <param name="id" value="311"/>
-                    <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),movie) + Skin.HasSetting(plexbmc)"/>
+                    <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestMovie.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),movie)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,  •  ]$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
                 </include>
@@ -204,7 +204,7 @@
                     <param name="gfxType" value="Poster"/>
                     <param name="content" value="PlexOnDeckMovieContent"/>
                     <param name="id" value="312"/>
-                    <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckMovie.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),movie) + Skin.HasSetting(plexbmc)"/>
+                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),movie)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,  •  ]$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
                 </include>
@@ -219,7 +219,7 @@
                     <param name="gfxType" value="Square"/>
                     <param name="content" value="PlexRecentAlbumContent"/>
                     <param name="id" value="511"/>
-                    <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestAlbum.1.Title))+String.IsEqual(Container(300).ListItem.Property(type),artist) + Skin.HasSetting(plexbmc)"/>
+                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),artist)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Label2]"/>
                 </include>
@@ -234,7 +234,7 @@
                     <param name="gfxType" value="Square"/>
                     <param name="content" value="PlexRecentChannelContent"/>
                     <param name="id" value="212"/>
-                    <param name="visibility" value="!String.IsEmpty(Window.Property(Plexbmc.LatestChannel.1.Path))+Container(300).HasFocus(50) + Skin.HasSetting(plexbmc)"/>
+                    <param name="visibility" value="Container(300).HasFocus(50)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="-"/>
                 </include>
@@ -249,7 +249,7 @@
                     <param name="gfxType" value="Poster"/>
                     <param name="content" value="PlexRecentEpisodeContent"/>
                     <param name="id" value="411"/>
-                    <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.LatestEpisode.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),show) + Skin.HasSetting(plexbmc)"/>
+                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),show)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Property(TVshowTitle)]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Property(SeasonEpisode)]$INFO[ListItem.Property(Rating),  •  ]$INFO[ListItem.Property(Runtime),  •  , $LOCALIZE[31297]]"/>
                 </include>
@@ -263,7 +263,7 @@
                     <param name="gfxType" value="Poster"/>
                     <param name="content" value="PlexOnDeckEpisodeContent"/>
                     <param name="id" value="412"/>
-                    <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.OnDeckEpisode.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),show) + Skin.HasSetting(plexbmc)"/>
+                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),show)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Property(TVshowTitle)]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Property(SeasonEpisode)]$INFO[ListItem.Property(Rating),  •  ]$INFO[ListItem.Property(Runtime),  •  , $LOCALIZE[31297]]"/>
                 </include>
@@ -277,7 +277,7 @@
                     <param name="gfxType" value="Poster"/>
                     <param name="content" value="PlexRecentlyViewedShowContent"/>
                     <param name="id" value="413"/>
-                    <param name="visibility" value="!String.IsEmpty(Window(Home).Property(Plexbmc.RecentlyViewedShow.1.Path))+String.IsEqual(Container(300).ListItem.Property(type),show) + Skin.HasSetting(plexbmc)"/>
+                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),show)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,  •  ]$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
                 </include>
