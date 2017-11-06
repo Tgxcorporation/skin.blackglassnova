@@ -1065,9 +1065,6 @@
                     <ondown>70002$SKINSHORTCUTS[mainmenuid]</ondown>
                     <include>Vertical_Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
                 </control>
-                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
-                    <param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>
-                </include>
             </control>
         </controls>
     </other>
@@ -1161,9 +1158,6 @@
                     <ondown>70003$SKINSHORTCUTS[mainmenuid]</ondown>
                     <include>Vertical_Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
                 </control>
-                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
-                    <param name="id" value="70002$SKINSHORTCUTS[mainmenuid]"/>
-                </include>
             </control>
         </controls>
     </other>
@@ -1257,9 +1251,6 @@
                     <ondown>70004$SKINSHORTCUTS[mainmenuid]</ondown>
                     <include>Vertical_Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
                 </control>
-                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
-                    <param name="id" value="70003$SKINSHORTCUTS[mainmenuid]"/>
-                </include>
             </control>
         </controls>
     </other>
@@ -1353,9 +1344,6 @@
                     <ondown>70005$SKINSHORTCUTS[mainmenuid]</ondown>
                     <include>Vertical_Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
                 </control>
-                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
-                    <param name="id" value="70004$SKINSHORTCUTS[mainmenuid]"/>
-                </include>
             </control>
         </controls>
     </other>
@@ -1449,9 +1437,6 @@
                     <ondown>70005$SKINSHORTCUTS[mainmenuid]</ondown>
                     <include>Vertical_Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
                 </control>
-                <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
-                    <param name="id" value="70005$SKINSHORTCUTS[mainmenuid]"/>
-                </include>
             </control>
         </controls>
     </other>

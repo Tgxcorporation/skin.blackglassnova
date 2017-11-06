@@ -381,9 +381,6 @@
                 <ondown>$PARAM[ondown]</ondown>
                 <include>Vertical_Widget_Empty_Border_$PARAM[gfxType]</include>
             </control>
-            <include content="Vertical_Widget_Empty_$PARAM[gfxType]">
-                <param name="id" value="$PARAM[id]"/>
-            </include>
         </control>
     </include>
     <include name="Widget_Poster">
