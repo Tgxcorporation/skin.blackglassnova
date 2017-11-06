@@ -323,7 +323,7 @@
                 <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
                 <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(401$PARAM[id]).HasFocus">Conditional</animation>
                 <visible>Integer.IsEqual(Container($PARAM[id]).Numitems,0)+Container(701).HasFocus($PARAM[id])</visible>
-                <include>Widget_Empty_Reflection_$SKINSHORTCUTS[gfxType]</include>
+                <include>Widget_Empty_Reflection_$PARAM[gfxType]</include>
             </control>
         </control>
     </include>
