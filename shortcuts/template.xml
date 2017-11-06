@@ -104,7 +104,6 @@
                         <visible>Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
                         <texture>OSD/loading.png</texture>
                     </control>
                     <control type="image">
@@ -112,7 +111,6 @@
                         <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90001$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
                         <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
                         <texture>defaultEmptyBig.png</texture>
                         <fadetime>300</fadetime>
                     </control>
@@ -188,10 +186,13 @@
                     <visible>Integer.IsEqual(Container(70001$SKINSHORTCUTS[mainmenuid]).Numitems,0)+Container(701).HasFocus(70001$SKINSHORTCUTS[mainmenuid])</visible>
                     <onup>9900</onup>
                     <ondown>701</ondown>
-                    <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                    <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                     <include>Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
-                    <onclick>noop</onclick>
+                </control>
+                <control type="image">
+                    <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70001$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
+                    <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90001$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
+                    <visible>Integer.IsEqual(Container(70001$SKINSHORTCUTS[mainmenuid]).Numitems,0)+Container(701).HasFocus(70001$SKINSHORTCUTS[mainmenuid])</visible>
+                    <include>Widget_Empty_Reflection_$SKINSHORTCUTS[gfxType]</include>
                 </control>
             </control>
         </controls>
@@ -297,7 +298,6 @@
                         <visible>Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
                         <texture>OSD/loading.png</texture>
                     </control>
                     <control type="image">
@@ -305,7 +305,6 @@
                         <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90002$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
                         <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
                         <texture>defaultEmptyBig.png</texture>
                         <fadetime>300</fadetime>
                     </control>
@@ -381,10 +380,13 @@
                     <visible>Integer.IsEqual(Container(70002$SKINSHORTCUTS[mainmenuid]).Numitems,0)+Container(701).HasFocus(70002$SKINSHORTCUTS[mainmenuid])</visible>
                     <onup>9900</onup>
                     <ondown>701</ondown>
-                    <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                    <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                     <include>Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
-                    <onclick>noop</onclick>
+                </control>
+                <control type="image">
+                    <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70002$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
+                    <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90002$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
+                    <visible>Integer.IsEqual(Container(70002$SKINSHORTCUTS[mainmenuid]).Numitems,0)+Container(701).HasFocus(70002$SKINSHORTCUTS[mainmenuid])</visible>
+                    <include>Widget_Empty_Reflection_$SKINSHORTCUTS[gfxType]</include>
                 </control>
             </control>
         </controls>
@@ -490,7 +492,6 @@
                         <visible>Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
                         <texture>OSD/loading.png</texture>
                     </control>
                     <control type="image">
@@ -498,7 +499,6 @@
                         <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90003$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
                         <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
                         <texture>defaultEmptyBig.png</texture>
                         <fadetime>300</fadetime>
                     </control>
@@ -574,10 +574,13 @@
                     <visible>Integer.IsEqual(Container(70003$SKINSHORTCUTS[mainmenuid]).Numitems,0)+Container(701).HasFocus(70003$SKINSHORTCUTS[mainmenuid])</visible>
                     <onup>9900</onup>
                     <ondown>701</ondown>
-                    <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                    <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                     <include>Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
-                    <onclick>noop</onclick>
+                </control>
+                <control type="image">
+                    <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70003$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
+                    <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90003$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
+                    <visible>Integer.IsEqual(Container(70003$SKINSHORTCUTS[mainmenuid]).Numitems,0)+Container(701).HasFocus(70003$SKINSHORTCUTS[mainmenuid])</visible>
+                    <include>Widget_Empty_Reflection_$SKINSHORTCUTS[gfxType]</include>
                 </control>
             </control>
         </controls>
@@ -683,7 +686,6 @@
                         <visible>Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
                         <texture>OSD/loading.png</texture>
                     </control>
                     <control type="image">
@@ -691,7 +693,6 @@
                         <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90004$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
                         <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
                         <texture>defaultEmptyBig.png</texture>
                         <fadetime>300</fadetime>
                     </control>
@@ -767,10 +768,13 @@
                     <visible>Integer.IsEqual(Container(70004$SKINSHORTCUTS[mainmenuid]).Numitems,0)+Container(701).HasFocus(70004$SKINSHORTCUTS[mainmenuid])</visible>
                     <onup>9900</onup>
                     <ondown>701</ondown>
-                    <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                    <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                     <include>Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
-                    <onclick>noop</onclick>
+                </control>
+                <control type="image">
+                    <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70004$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
+                    <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90004$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
+                    <visible>Integer.IsEqual(Container(70004$SKINSHORTCUTS[mainmenuid]).Numitems,0)+Container(701).HasFocus(70004$SKINSHORTCUTS[mainmenuid])</visible>
+                    <include>Widget_Empty_Reflection_$SKINSHORTCUTS[gfxType]</include>
                 </control>
             </control>
         </controls>
@@ -876,7 +880,6 @@
                         <visible>Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
                         <texture>OSD/loading.png</texture>
                     </control>
                     <control type="image">
@@ -884,7 +887,6 @@
                         <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90005$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
                         <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                        <aspectratio align="center" aligny="center">keep</aspectratio>
                         <texture>defaultEmptyBig.png</texture>
                         <fadetime>300</fadetime>
                     </control>
@@ -960,10 +962,13 @@
                     <visible>Integer.IsEqual(Container(70005$SKINSHORTCUTS[mainmenuid]).Numitems,0)+Container(701).HasFocus(70005$SKINSHORTCUTS[mainmenuid])</visible>
                     <onup>9900</onup>
                     <ondown>701</ondown>
-                    <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                    <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                     <include>Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
-                    <onclick>noop</onclick>
+                </control>
+                <control type="image">
+                    <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70005$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
+                    <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90005$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
+                    <visible>Integer.IsEqual(Container(70005$SKINSHORTCUTS[mainmenuid]).Numitems,0)+Container(701).HasFocus(70005$SKINSHORTCUTS[mainmenuid])</visible>
+                    <include>Widget_Empty_Reflection_$SKINSHORTCUTS[gfxType]</include>
                 </control>
             </control>
         </controls>
@@ -1045,28 +1050,20 @@
                     <visible>Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>OSD/loading.png</texture>
                 </control>
                 <control type="image">
                     <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70001$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
                     <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>defaultEmptyBig.png</texture>
                     <fadetime>300</fadetime>
                 </control>
                 <control type="button" id="70001$SKINSHORTCUTS[mainmenuid]">
-                    <include>ListFocusAnimation</include>
                     <visible>Integer.IsEqual(Container(70001$SKINSHORTCUTS[mainmenuid]).Numitems,0)</visible>
-                    <onright>60</onright>
                     <onup>300</onup>
                     <ondown>70002$SKINSHORTCUTS[mainmenuid]</ondown>
-                    <onleft>300</onleft>
-                    <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                    <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                     <include>Vertical_Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
-                    <onclick>noop</onclick>
                 </control>
                 <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
                     <param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>
@@ -1149,28 +1146,20 @@
                     <visible>Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>OSD/loading.png</texture>
                 </control>
                 <control type="image">
                     <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70002$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
                     <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>defaultEmptyBig.png</texture>
                     <fadetime>300</fadetime>
                 </control>
                 <control type="button" id="70002$SKINSHORTCUTS[mainmenuid]">
-                    <include>ListFocusAnimation</include>
                     <visible>Integer.IsEqual(Container(70002$SKINSHORTCUTS[mainmenuid]).Numitems,0)</visible>
-                    <onright>60</onright>
                     <onup>70001$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70003$SKINSHORTCUTS[mainmenuid]</ondown>
-                    <onleft>300</onleft>
-                    <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                    <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                     <include>Vertical_Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
-                    <onclick>noop</onclick>
                 </control>
                 <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
                     <param name="id" value="70002$SKINSHORTCUTS[mainmenuid]"/>
@@ -1253,28 +1242,20 @@
                     <visible>Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>OSD/loading.png</texture>
                 </control>
                 <control type="image">
                     <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70003$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
                     <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>defaultEmptyBig.png</texture>
                     <fadetime>300</fadetime>
                 </control>
                 <control type="button" id="70003$SKINSHORTCUTS[mainmenuid]">
-                    <include>ListFocusAnimation</include>
                     <visible>Integer.IsEqual(Container(70003$SKINSHORTCUTS[mainmenuid]).Numitems,0)</visible>
-                    <onright>60</onright>
                     <onup>70002$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70004$SKINSHORTCUTS[mainmenuid]</ondown>
-                    <onleft>300</onleft>
-                    <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                    <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                     <include>Vertical_Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
-                    <onclick>noop</onclick>
                 </control>
                 <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
                     <param name="id" value="70003$SKINSHORTCUTS[mainmenuid]"/>
@@ -1357,28 +1338,20 @@
                     <visible>Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>OSD/loading.png</texture>
                 </control>
                 <control type="image">
                     <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70004$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
                     <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>defaultEmptyBig.png</texture>
                     <fadetime>300</fadetime>
                 </control>
                 <control type="button" id="70004$SKINSHORTCUTS[mainmenuid]">
-                    <include>ListFocusAnimation</include>
                     <visible>Integer.IsEqual(Container(70004$SKINSHORTCUTS[mainmenuid]).Numitems,0)</visible>
-                    <onright>60</onright>
                     <onup>70003$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70005$SKINSHORTCUTS[mainmenuid]</ondown>
-                    <onleft>300</onleft>
-                    <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                    <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                     <include>Vertical_Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
-                    <onclick>noop</onclick>
                 </control>
                 <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
                     <param name="id" value="70004$SKINSHORTCUTS[mainmenuid]"/>
@@ -1461,28 +1434,20 @@
                     <visible>Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>OSD/loading.png</texture>
                 </control>
                 <control type="image">
                     <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70005$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
                     <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>defaultEmptyBig.png</texture>
                     <fadetime>300</fadetime>
                 </control>
                 <control type="button" id="70005$SKINSHORTCUTS[mainmenuid]">
-                    <include>ListFocusAnimation</include>
                     <visible>Integer.IsEqual(Container(70005$SKINSHORTCUTS[mainmenuid]).Numitems,0)</visible>
-                    <onright>60</onright>
                     <onup>70004$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70005$SKINSHORTCUTS[mainmenuid]</ondown>
-                    <onleft>300</onleft>
-                    <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                    <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                     <include>Vertical_Widget_Empty_Border_$SKINSHORTCUTS[gfxType]</include>
-                    <onclick>noop</onclick>
                 </control>
                 <include content="Widget_Empty_$SKINSHORTCUTS[gfxType]">
                     <param name="id" value="70005$SKINSHORTCUTS[mainmenuid]"/>

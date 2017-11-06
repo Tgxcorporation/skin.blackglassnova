@@ -5,96 +5,180 @@
         <posy>546</posy>
         <width>220</width>
         <height>333</height>
+        <aspectratio align="center" aligny="center">keep</aspectratio>
     </include>
     <include name="Widget_Empty_Square">
         <posx>795</posx>
         <posy>566</posy>
         <width>320</width>
         <height>310</height>
+        <aspectratio align="center" aligny="center">keep</aspectratio>
     </include>
     <include name="Widget_Empty_Episode">
         <posx>795</posx>
         <posy>691</posy>
         <width>330</width>
         <height>185</height>
+        <aspectratio align="center" aligny="center">keep</aspectratio>
     </include>
     <include name="Widget_Empty_Channel">
         <posx>795</posx>
         <posy>638</posy>
         <width>330</width>
         <height>248</height>
+        <aspectratio align="center" aligny="center">keep</aspectratio>
+    </include>
+    <include name="Widget_Empty_Reflection_Poster">
+        <animation effect="rotate" start="0" end="180" center="960,895" reversible="false" condition="true">Conditional</animation>
+        <posx>822</posx>
+        <posy>516</posy>
+        <width>274</width>
+        <height>387</height>
+        <aspectratio>scale</aspectratio>
+        <texture>common/TransparentDot.png</texture>
+        <include>ThumbBorderOverlayDiffused</include>
+    </include>
+    <include name="Widget_Empty_Reflection_Square">
+        <animation effect="rotate" start="0" end="180" center="960,895" reversible="false" condition="true">Conditional</animation>
+        <posx>778</posx>
+        <posy>539</posy>
+        <width>364</width>
+        <height>364</height>
+        <aspectratio>scale</aspectratio>
+        <texture>common/TransparentDot.png</texture>
+        <include>ThumbBorderOverlayDiffused</include>
+    </include>
+    <include name="Widget_Empty_Reflection_Episode">
+        <animation effect="rotate" start="0" end="180" center="960,895" reversible="false" condition="true">Conditional</animation>
+        <posx>773</posx>
+        <posy>669</posy>
+        <width>374</width>
+        <height>234</height>
+        <aspectratio>scale</aspectratio>
+        <texture>common/TransparentDot.png</texture>
+        <include>ThumbBorderOverlayDiffused</include>
+    </include>
+    <include name="Widget_Empty_Reflection_Channel">
+        <animation effect="rotate" start="0" end="180" center="960,895" reversible="false" condition="true">Conditional</animation>
+        <posx>778</posx>
+        <posy>617</posy>
+        <width>364</width>
+        <height>286</height>
+        <aspectratio>scale</aspectratio>
+        <texture>common/TransparentDot.png</texture>
+        <include>ThumbBorderOverlayDiffused</include>
     </include>
     <include name="Widget_Empty_Border_Poster">
         <posx>822</posx>
-        <posy>519</posy>
+        <posy>516</posy>
         <width>274</width>
         <height>387</height>
+        <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
+        <texturenofocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturenofocus>
+        <onclick>noop</onclick>
     </include>
     <include name="Widget_Empty_Border_Square">
-        <posx>768</posx>
+        <posx>778</posx>
         <posy>539</posy>
-        <width>374</width>
+        <width>364</width>
         <height>364</height>
+        <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
+        <texturenofocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturenofocus>
+        <onclick>noop</onclick>
     </include>
     <include name="Widget_Empty_Border_Episode">
-        <posx>768</posx>
-        <posy>664</posy>
-        <width>384</width>
-        <height>239</height>
+        <posx>773</posx>
+        <posy>669</posy>
+        <width>374</width>
+        <height>234</height>
+        <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
+        <texturenofocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturenofocus>
+        <onclick>noop</onclick>
     </include>
     <include name="Widget_Empty_Border_Channel">
-        <posx>768</posx>
-        <posy>611</posy>
-        <width>384</width>
-        <height>302</height>
+        <posx>778</posx>
+        <posy>617</posy>
+        <width>364</width>
+        <height>286</height>
+        <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
+        <texturenofocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturenofocus>
+        <onclick>noop</onclick>
     </include>
     <include name="Vertical_Widget_Empty_Poster">
         <posx>127</posx>
         <posy>97</posy>
         <width>274</width>
         <height>413</height>
+        <aspectratio align="center" aligny="center">keep</aspectratio>
     </include>
     <include name="Vertical_Widget_Empty_Square">
         <posx>127</posx>
         <posy>97</posy>
         <width>344</width>
         <height>344</height>
+        <aspectratio align="center" aligny="center">keep</aspectratio>
     </include>
     <include name="Vertical_Widget_Empty_Episode">
         <posx>127</posx>
         <posy>97</posy>
         <width>448</width>
         <height>252</height>
+        <aspectratio align="center" aligny="center">keep</aspectratio>
     </include>
     <include name="Vertical_Widget_Empty_Channel">
         <posx>127</posx>
         <posy>97</posy>
         <width>388</width>
         <height>292</height>
+        <aspectratio align="center" aligny="center">keep</aspectratio>
     </include>
     <include name="Vertical_Widget_Empty_Border_Poster">
+        <include>ListFocusAnimation</include>
+        <onright>60</onright>
+        <onleft>300</onleft>
         <posx>100</posx>
         <posy>70</posy>
         <width>328</width>
         <height>467</height>
+        <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
+        <texturenofocus border="27">common/JewelCase.png</texturenofocus>
+        <onclick>noop</onclick>
     </include>
     <include name="Vertical_Widget_Empty_Border_Square">
+        <include>ListFocusAnimation</include>
+        <onright>60</onright>
+        <onleft>300</onleft>
         <posx>100</posx>
         <posy>70</posy>
         <width>390</width>
         <height>390</height>
+        <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
+        <texturenofocus border="27">common/JewelCase.png</texturenofocus>
+        <onclick>noop</onclick>
     </include>
     <include name="Vertical_Widget_Empty_Border_Episode">
+        <include>ListFocusAnimation</include>
+        <onright>60</onright>
+        <onleft>300</onleft>
         <posx>100</posx>
         <posy>70</posy>
         <width>502</width>
         <height>306</height>
+        <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
+        <texturenofocus border="27">common/JewelCase.png</texturenofocus>
+        <onclick>noop</onclick>
     </include>
     <include name="Vertical_Widget_Empty_Border_Channel">
+        <include>ListFocusAnimation</include>
+        <onright>60</onright>
+        <onleft>300</onleft>
         <posx>100</posx>
         <posy>70</posy>
         <width>442</width>
         <height>346</height>
+        <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
+        <texturenofocus border="27">common/JewelCase.png</texturenofocus>
+        <onclick>noop</onclick>
     </include>
     <include name="WidgetPlex">
         <control type="group" id="401$PARAM[id]">
@@ -151,7 +235,6 @@
                     <visible>Container($PARAM[id]).IsUpdating</visible>
                     <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                     <include>Widget_Empty_$PARAM[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>OSD/loading.png</texture>
                 </control>
                 <control type="image">
@@ -159,7 +242,6 @@
                     <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(401$PARAM[id]).HasFocus">Conditional</animation>
                     <visible>!Integer.IsGreater(Container($PARAM[id]).NumItems,0)+!Container($PARAM[id]).IsUpdating</visible>
                     <include>Widget_Empty_$PARAM[gfxType]</include>
-                    <aspectratio align="center" aligny="center">keep</aspectratio>
                     <texture>defaultEmptyBig.png</texture>
                     <fadetime>300</fadetime>
                 </control>
@@ -235,10 +317,13 @@
                 <visible>Integer.IsEqual(Container($PARAM[id]).Numitems,0)+Container(701).HasFocus($PARAM[id])</visible>
                 <onup>9900</onup>
                 <ondown>701</ondown>
-                <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                 <include>Widget_Empty_Border_$PARAM[gfxType]</include>
-                <onclick>noop</onclick>
+            </control>
+            <control type="image">
+                <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
+                <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(401$PARAM[id]).HasFocus">Conditional</animation>
+                <visible>Integer.IsEqual(Container($PARAM[id]).Numitems,0)+Container(701).HasFocus($PARAM[id])</visible>
+                <include>Widget_Empty_Reflection_$SKINSHORTCUTS[gfxType]</include>
             </control>
         </control>
     </include>
@@ -281,28 +366,20 @@
                 <visible>Container($PARAM[id]).IsUpdating</visible>
                 <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
                 <include>Vertical_Widget_Empty_$PARAM[gfxType]</include>
-                <aspectratio align="center" aligny="center">keep</aspectratio>
                 <texture>OSD/loading.png</texture>
             </control>
             <control type="image">
                 <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
                 <visible>!Integer.IsGreater(Container($PARAM[id]).NumItems,0)+!Container($PARAM[id]).IsUpdating</visible>
                 <include>Vertical_Widget_Empty_$PARAM[gfxType]</include>
-                <aspectratio align="center" aligny="center">keep</aspectratio>
                 <texture>defaultEmptyBig.png</texture>
                 <fadetime>300</fadetime>
             </control>
             <control type="button" id="$PARAM[id]">
-                <include>ListFocusAnimation</include>
                 <visible>Integer.IsEqual(Container($PARAM[id]).Numitems,0)</visible>
-                <onright>60</onright>
                 <onup>$PARAM[onup]</onup>
                 <ondown>$PARAM[ondown]</ondown>
-                <onleft>300</onleft>
-                <texturefocus border="27" colordiffuse="$VAR[Picked.Highlight.Color]">common/JewelCaseOverlay_white.png</texturefocus>
-                <texturenofocus border="27">common/JewelCase.png</texturenofocus>
                 <include>Vertical_Widget_Empty_Border_$PARAM[gfxType]</include>
-                <onclick>noop</onclick>
             </control>
             <include content="Vertical_Widget_Empty_$PARAM[gfxType]">
                 <param name="id" value="$PARAM[id]"/>
@@ -321,7 +398,7 @@
         <orientation>horizontal</orientation>
         <itemlayout height="1050" width="274">
             <control type="group">
-                <posy>519</posy>
+                <posy>516</posy>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -332,7 +409,7 @@
                     <include>ThumbBorder</include>
                 </control>
                 <control type="image">
-                    <animation effect="rotate" start="0" end="180" center="137,380" reversible="false" condition="true">Conditional</animation>
+                    <animation effect="rotate" start="0" end="180" center="137,379" reversible="false" condition="true">Conditional</animation>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>274</width>
@@ -354,7 +431,7 @@
         <focusedlayout height="1050" width="274">
             <control type="group">
                 <include>ListFocusAnimation</include>
-                <posy>519</posy>
+                <posy>516</posy>
                 <control type="image">
                     <posx>0</posx>
                     <posy>0</posy>
@@ -365,7 +442,7 @@
                     <include>ThumbBorderOverlay</include>
                 </control>
                 <control type="image">
-                    <animation effect="rotate" start="0" end="180" center="137,380" reversible="false" condition="true">Conditional</animation>
+                    <animation effect="rotate" start="0" end="180" center="137,379" reversible="false" condition="true">Conditional</animation>
                     <posx>0</posx>
                     <posy>0</posy>
                     <width>274</width>
