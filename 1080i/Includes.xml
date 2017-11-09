@@ -42,7 +42,7 @@
     <include file="script-skinshortcuts-includes.xml"/>
     <include name="Player_Show">
         <control type="image">
-            <visible>Player.HasVideo + Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
+            <visible>Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
@@ -79,7 +79,7 @@
             <height>1080</height>
         </control>
         <control type="videowindow">
-            <visible>Player.HasVideo + Skin.HasSetting(Show_Player) + !Window.IsVisible(script-Actors-DialogVideoInfo.xml)</visible>
+            <visible>Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
