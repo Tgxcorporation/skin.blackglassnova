@@ -241,7 +241,6 @@
                 </control>
                 <control type="button" id="1622">
                     <visible>Player.HasMedia</visible>
-                    <animation effect="fade" start="100" end="50" time="0" condition="![Player.HasVideo | Player.HasAudio]">Conditional</animation>
                     <include>TopBarButton</include>
                     <texturefocus>topbar/topbar_fullscreen_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_fullscreen_nofocus.png</texturenofocus>
