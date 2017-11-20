@@ -228,9 +228,9 @@
         <posy>0</posy>
         <width>42</width>
         <orientation>vertical</orientation>
-        <texturesliderbackground>-</texturesliderbackground>
-        <texturesliderbar>-</texturesliderbar>
-        <texturesliderbarfocus>-</texturesliderbarfocus>
+        <texturesliderbackground></texturesliderbackground>
+        <texturesliderbar></texturesliderbar>
+        <texturesliderbarfocus></texturesliderbarfocus>
         <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
         <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
         <pulseonselect>false</pulseonselect>

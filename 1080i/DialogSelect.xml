@@ -278,10 +278,10 @@
                 <onleft>6</onleft>
                 <onright>6</onright>
                 <control type="button" id="5">
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="button" id="7">
-                    <label>-</label>
+                    <label></label>
                 </control>
             </control>
         </control>

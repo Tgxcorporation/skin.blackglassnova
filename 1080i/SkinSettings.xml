@@ -924,7 +924,7 @@
                         <onright>102</onright>
                         <onup>9004</onup>
                         <ondown>9004</ondown>
-                        <pagecontrol>-</pagecontrol>
+                        <pagecontrol></pagecontrol>
                         <scrolltime>0</scrolltime>
                         <itemlayout height="1" width="1231"/>
                         <focusedlayout height="73" width="1231">
@@ -1355,13 +1355,13 @@
                             <!--GENERAL-->
                             <item id="59">
                                 <label>$LOCALIZE[31034]</label>
-                                <label2>-</label2>
+                                <label2></label2>
                                 <onclick>RunScript(script.skinshortcuts,type=manage&amp;nolabels=True&amp;group=mainmenu)</onclick>
                             </item>
                             <item id="58">
                                 <visible>Skin.HasSetting(plexbmc)</visible>
                                 <label>$LOCALIZE[31045]</label>
-                                <label2>-</label2>
+                                <label2></label2>
                                 <onclick>ActivateWindow(1115)</onclick>
                             </item>
                             <item id="60">
@@ -1450,7 +1450,7 @@
                         <onright>9000</onright>
                         <onup>9007</onup>
                         <ondown>9007</ondown>
-                        <pagecontrol>-</pagecontrol>
+                        <pagecontrol></pagecontrol>
                         <scrolltime>280</scrolltime>
                         <include>SkinSettings_DefaultLayout</include>
                         <content>

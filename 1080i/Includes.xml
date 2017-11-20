@@ -91,9 +91,9 @@
         <posy>-30</posy>
         <width>1</width>
         <height>1</height>
-        <label>-</label>
-        <texturenofocus>-</texturenofocus>
-        <texturefocus>-</texturefocus>
+        <label></label>
+        <texturenofocus></texturenofocus>
+        <texturefocus></texturefocus>
         <texturenofocus>common/WhiteDotT.png</texturenofocus>
         <texturefocus>common/BlackDotT.png</texturefocus>
     </include>
@@ -115,8 +115,8 @@
     <include name="TopBarButton">
         <width>50</width>
         <height>50</height>
-        <font>-</font>
-        <label>-</label>
+        <font></font>
+        <label></label>
     </include>
     <include name="FakeTopBarButton">
         <width>5</width>
@@ -345,7 +345,7 @@
                 <aligny>top</aligny>
                 <font>WindowTitleFont</font>
                 <textcolor>WindowTitleColor</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
                 <label>$INFO[System.Time]</label>
             </control>
             <control type="label">
@@ -361,7 +361,7 @@
                 <aligny>top</aligny>
                 <font>WindowTitleSubFont</font>
                 <textcolor>WindowTitleSubColor</textcolor>
-                <shadowcolor>-</shadowcolor>
+                <shadowcolor></shadowcolor>
                 <label>$INFO[System.Date]</label>
             </control>
             <control type="image">
@@ -723,7 +723,7 @@
         <width>1200</width>
         <aligny>top</aligny>
         <font>WindowTitleFont</font>
-        <shadowcolor>-</shadowcolor>
+        <shadowcolor></shadowcolor>
         <textcolor>WindowTitleColor</textcolor>
     </include>
     <include name="WindowTitleSub">
@@ -735,7 +735,7 @@
         <aligny>top</aligny>
         <font>WindowTitleSubFont</font>
         <textcolor>WindowTitleSubColor</textcolor>
-        <shadowcolor>-</shadowcolor>
+        <shadowcolor></shadowcolor>
     </include>
     <include name="FacadeNumItems">
         <include>VisibleFadeEffect</include>
@@ -764,8 +764,8 @@
             <posy>0</posy>
             <width>627</width>
             <height>980</height>
-            <label>-</label>
-            <font>-</font>
+            <label></label>
+            <font></font>
             <include>HiddenButton</include>
             <visible>true</visible>
         </control>
@@ -838,21 +838,21 @@
         <alttexturenofocus border="4">list/bg_facade_nofocus.png</alttexturenofocus>
     </include>
     <include name="VerticalScroller">
-        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbackground></texturesliderbackground>
         <texturesliderbar border="0,31,0,31">buttons/Scrollbar_Vertical_NoFocus.png</texturesliderbar>
         <texturesliderbarfocus border="0,31,0,31">buttons/Scrollbar_Vertical_Focus.png</texturesliderbarfocus>
-        <textureslidernib>-</textureslidernib>
-        <textureslidernibfocus>-</textureslidernibfocus>
+        <textureslidernib></textureslidernib>
+        <textureslidernibfocus></textureslidernibfocus>
         <showonepage>false</showonepage>
         <orientation>vertical</orientation>
         <width>42</width>
     </include>
     <include name="HorizontalScroller">
-        <texturesliderbackground>-</texturesliderbackground>
+        <texturesliderbackground></texturesliderbackground>
         <texturesliderbar border="31,0,31,0">buttons/Scrollbar_Horizontal_NoFocus.png</texturesliderbar>
         <texturesliderbarfocus border="31,0,31,0">buttons/Scrollbar_Horizontal_Focus.png</texturesliderbarfocus>
-        <textureslidernib>-</textureslidernib>
-        <textureslidernibfocus>-</textureslidernibfocus>
+        <textureslidernib></textureslidernib>
+        <textureslidernibfocus></textureslidernibfocus>
         <showonepage>false</showonepage>
         <orientation>horizontal</orientation>
         <height>42</height>
@@ -1274,7 +1274,7 @@
             <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
             <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
             <onclick>back</onclick>
-            <label>-</label>
+            <label></label>
         </control>
     </include>
     <include name="ClearArtLogo">
@@ -1354,10 +1354,10 @@
             <height>$PARAM[height]</height>
             <width>$PARAM[width]</width>
             <texturebg border="$PARAM[borderbg]" colordiffuse="$PARAM[coldiffbg]">$PARAM[texturebg]</texturebg>
-            <lefttexture>-</lefttexture>
+            <lefttexture></lefttexture>
             <midtexture border="$PARAM[border]">$PARAM[gfx]</midtexture>
-            <righttexture>-</righttexture>
-            <overlaytexture>-</overlaytexture>
+            <righttexture></righttexture>
+            <overlaytexture></overlaytexture>
             <info>$PARAM[info]</info>
             <colordiffuse>$PARAM[colordiffuse]</colordiffuse>
             <reveal>$PARAM[reveal]</reveal>

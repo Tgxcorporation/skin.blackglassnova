@@ -88,7 +88,7 @@
         <ondown>9001</ondown>
         <onup condition="$EXP[HomeWidgetCollectionIsVisible]">7010</onup>
         <onup>9900</onup>
-        <pagecontrol>-</pagecontrol>
+        <pagecontrol></pagecontrol>
         <preloaditems>4</preloaditems>
         <scrolltime tween="sine" easing="out">300</scrolltime>
         <orientation>horizontal</orientation>
@@ -557,7 +557,7 @@
                     <ondown>300</ondown>
                     <focusposition>1</focusposition>
                     <orientation>horizontal</orientation>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol></pagecontrol>
                     <itemlayout width="640" height="50">
                         <control type="label">
                             <posx>20</posx>

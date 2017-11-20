@@ -36,14 +36,14 @@
                 <posy>0</posy>
                 <height>40</height>
                 <width>570</width>
-                <font>-</font>
+                <font></font>
             </control>
             <control type="label" id="402">
                 <posx>153</posx>
                 <posy>40</posy>
                 <height>40</height>
                 <width>570</width>
-                <font>-</font>
+                <font></font>
             </control>
         </control>
     </controls>

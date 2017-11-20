@@ -30,7 +30,7 @@
                 <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
                 <texturefocus>topbar/topbar_exit_focus.png</texturefocus>
                 <onclick>ActivateWindow(shutdownmenu)</onclick>
-                <label>-</label>
+                <label></label>
             </control>
             <control type="image">
                 <posx>483</posx>
@@ -100,7 +100,7 @@
                     <onright>11</onright>
                     <onup>52</onup>
                     <ondown>52</ondown>
-                    <pagecontrol>-</pagecontrol>
+                    <pagecontrol></pagecontrol>
                     <scrolltime>240</scrolltime>
                     <itemlayout width="600" height="73">
                         <control type="image">

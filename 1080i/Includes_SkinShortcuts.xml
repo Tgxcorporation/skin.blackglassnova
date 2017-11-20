@@ -665,7 +665,7 @@
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
@@ -760,7 +760,7 @@
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
@@ -855,7 +855,7 @@
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
@@ -950,7 +950,7 @@
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
@@ -1045,7 +1045,7 @@
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
@@ -1142,7 +1142,7 @@
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
@@ -1235,7 +1235,7 @@
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
@@ -1328,7 +1328,7 @@
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
@@ -1421,7 +1421,7 @@
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
@@ -1514,7 +1514,7 @@
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="label">
                     <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>

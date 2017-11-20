@@ -151,7 +151,7 @@
                     <onclick>fullscreen</onclick>
                 </control>
                 <control type="button" id="599">
-                    <label>-</label>
+                    <label></label>
                     <include>TopBarButton</include>
                     <texturefocus>topbar/topbar_home_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_home_nofocus.png</texturenofocus>
@@ -319,8 +319,8 @@
                         <texturefocus>topbar/topbar_repeat_focus.png</texturefocus>
                         <texturenofocus>topbar/topbar_repeat_nofocus.png</texturenofocus>
                         <usealttexture>Playlist.IsRepeatOne | Playlist.IsRepeat</usealttexture>
-                        <alttexturefocus>-</alttexturefocus>
-                        <alttexturenofocus>-</alttexturenofocus>
+                        <alttexturefocus></alttexturefocus>
+                        <alttexturenofocus></alttexturenofocus>
                         <onclick>PlayerControl(Repeat)</onclick>
                     </control>
                     <control type="image" id="4">

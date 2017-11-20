@@ -32,7 +32,7 @@
                     <font>InfoTitleFont</font>
                     <textcolor>MainColor</textcolor>
                     <align>center</align>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="image">
                     <posx>0</posx>
@@ -90,7 +90,7 @@
                 </control>
                 <control type="label" id="14">
                     <description>Default Label</description>
-                    <label>-</label>
+                    <label></label>
                     <width>1269</width>
                     <textoffsety>40</textoffsety>
                     <aligny>top</aligny>

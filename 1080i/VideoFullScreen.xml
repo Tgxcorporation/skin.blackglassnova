@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-    <defaultcontrol>-</defaultcontrol>
+    <defaultcontrol></defaultcontrol>
     <controls>
         <control type="group" id="0">
             <posy>50</posy>
@@ -9,7 +9,7 @@
                 <top>0</top>
                 <width>1830</width>
                 <height>50</height>
-                <label>-</label>
+                <label></label>
                 <font>NotificationFont</font>
             </control>
             <control type="label" id="11">
@@ -17,7 +17,7 @@
                 <top>50</top>
                 <width>1830</width>
                 <height>50</height>
-                <label>-</label>
+                <label></label>
                 <font>NotificationFont</font>
             </control>
             <control type="label" id="12">
@@ -25,7 +25,7 @@
                 <top>100</top>
                 <width>1830</width>
                 <height>50</height>
-                <label>-</label>
+                <label></label>
                 <font>NotificationFont</font>
             </control>
             <control type="label" id="1">

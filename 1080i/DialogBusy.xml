@@ -6,10 +6,10 @@
             <posy>3000</posy>
             <width>150</width>
             <height>8</height>
-            <texturebg>-</texturebg>
-            <midtexture>-</midtexture>
-            <righttexture>-</righttexture>
-            <lefttexture>-</lefttexture>
+            <texturebg></texturebg>
+            <midtexture></midtexture>
+            <righttexture></righttexture>
+            <lefttexture></lefttexture>
         </control>
         <control type="image" id="1">
             <visible>Integer.IsGreater(Control.GetLabel(10), 0)</visible>

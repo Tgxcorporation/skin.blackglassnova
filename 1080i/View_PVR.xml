@@ -50,11 +50,11 @@
         <posx>0</posx>
         <posy>-37</posy>
         <height>73</height>
-        <texturebg>-</texturebg>
+        <texturebg></texturebg>
         <reveal>true</reveal>
-        <lefttexture>-</lefttexture>
-        <righttexture>-</righttexture>
-        <overlaytexture>-</overlaytexture>
+        <lefttexture></lefttexture>
+        <righttexture></righttexture>
+        <overlaytexture></overlaytexture>
         <info>ListItem.Progress</info>
     </include>
     <include name="PVRLeftMenu">
@@ -130,7 +130,7 @@
                 <control type="button" id="28">
                     <description>Channel Groups</description>
                     <include>LeftMenuButton</include>
-                    <label>-</label>
+                    <label></label>
                 </control>
                 <control type="radiobutton" id="5">
                     <description>Group recording items by folder structure</description>
@@ -147,7 +147,7 @@
                 <control type="button" id="2">
                     <visible>!Skin.HasSetting(BlackGlassMode)|[Skin.HasSetting(BlackGlassMode)+Window.IsActive(MyPVRGuide.xml)]</visible>
                     <description>View As button</description>
-                    <label>-</label>
+                    <label></label>
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="button" id="3">
@@ -2727,7 +2727,7 @@
                         <height>70</height>
                         <posx>0</posx>
                         <posy>0</posy>
-                        <texture>-</texture>
+                        <texture></texture>
                     </control>
                     <control type="label" id="2">
                         <posx>20</posx>

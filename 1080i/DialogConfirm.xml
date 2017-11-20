@@ -60,7 +60,7 @@
                     <width>979</width>
                     <height>240</height>
                     <align>center</align>
-                    <label>-</label>
+                    <label></label>
                     <font>InfoDetailsFont</font>
                     <textcolor>MainColor</textcolor>
                     <pagecontrol>6060</pagecontrol>

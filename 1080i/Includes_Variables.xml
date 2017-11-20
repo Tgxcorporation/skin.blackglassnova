@@ -5,10 +5,10 @@
         <value condition="Player.ChapterCount">$LOCALIZE[21396]: $INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
     </variable>
     <variable name="Overlay">
-        <value condition="!Window.isvisible(Home.xml)+![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]">-</value>
+        <value condition="!Window.isvisible(Home.xml)+![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]"></value>
         <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
         <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$INFO[ListItem.property(overlay)]</value>
-        <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)">-</value>
+        <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)"></value>
         <value condition="Skin.HasSetting(Hide_Unwatched_Marks)">$INFO[ListItem.Overlay,overlay_watched/]</value>
         <value condition="Skin.HasSetting(Hide_Watched_Marks)">$INFO[ListItem.Overlay,overlay_unwatched/]</value>
         <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
@@ -566,7 +566,7 @@
         <value condition="Skin.HasSetting(DisableFanart)">$VAR[Default.Art]</value>
         <value condition="Window.IsActive(Home.xml) + Skin.HasSetting(Home_DefaultBG)">$VAR[Default.Art]</value>
         <value condition="Window.IsVisible(Home.xml)+control.isvisible(378433)">$VAR[WidgetsBackgrounds]</value>
-        <value condition="Window.IsActive(Home.xml) + Skin.HasSetting(BlackGlassMode) + !Skin.HasSetting(VerticalHome) + [Control.hasfocus(300)|Control.hasfocus(301)|Control.hasfocus(302)|Control.hasfocus(9001)|Control.hasfocus(9002)|Control.hasfocus(9003)|Control.hasfocus(9004)]">-</value>
+        <value condition="Window.IsActive(Home.xml) + Skin.HasSetting(BlackGlassMode) + !Skin.HasSetting(VerticalHome) + [Control.hasfocus(300)|Control.hasfocus(301)|Control.hasfocus(302)|Control.hasfocus(9001)|Control.hasfocus(9002)|Control.hasfocus(9003)|Control.hasfocus(9004)]"></value>
         <value condition="Window.IsActive(Home.xml)">$VAR[HomeBackgrounds]</value>
         <value condition="Window.IsActive(script-NextAired-TVGuide.xml)|Window.IsActive(script-NextAired-TVGuide2.xml)">$VAR[TVShows.Art]</value>
         <value condition="Window.IsActive(MyPics.xml)">$VAR[Pictures.Art]</value>
@@ -624,7 +624,7 @@
     <variable name="SkinShortcutBackgrounds">
         <value condition="Skin.HasSetting(DisableFanart)">$VAR[Default.Art]</value>
         <value condition="Skin.HasSetting(Home_DefaultBG)">$VAR[Default.Art]</value>
-        <value condition="Skin.HasSetting(BlackGlassMode) + !Skin.HasSetting(VerticalHome)">-</value>
+        <value condition="Skin.HasSetting(BlackGlassMode) + !Skin.HasSetting(VerticalHome)"></value>
         <value condition="Skin.HasSetting(plexbmc)+!String.IsEqual(Container(211).ListItem.Property(uuid),)+!String.IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.ActualIcon]</value>
         <value condition="Skin.HasSetting(plexbmc)+!String.IsEqual(Container(211).ListItem.Property(uuid),)+String.IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.Icon]</value>
         <value condition="String.IsEqual(Container(211).ListItem.Property(background),defaultFanart)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
