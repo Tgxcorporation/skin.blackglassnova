@@ -1146,7 +1146,7 @@
                 <posy>140</posy>
                 <width>1840</width>
                 <height>560</height>
-                <pagecontrol>10</pagecontrol>
+                <pagecontrol>60</pagecontrol>
                 <scrolltime>350</scrolltime>
                 <timeblocks>20</timeblocks>
                 <rulerunit>6</rulerunit>
@@ -1271,6 +1271,14 @@
                         <info>ListItem.Label</info>
                     </control>
                 </focusedlayout>
+            </control>
+            <control type="scrollbar" id="60">
+                <posx>1854</posx>
+                <posy>210</posy>
+                <height>490</height>
+                <include>VerticalScroller</include>
+                <onleft>10</onleft>
+                <onright>60</onright>
             </control>
             <!-- INFO -->
             <control type="image">
