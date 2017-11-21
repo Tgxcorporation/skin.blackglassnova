@@ -15,7 +15,7 @@
                 Window.IsVisible(OSDAudioDSPSettings) |
                 Window.IsVisible(VideoBookmarks) |
                 Window.IsVisible(PVROSDChannels) |
-                Window.IsVisible(PVROSDGuide)
+                Window.IsVisible(pvrchannelguide)
                 ]</visible>
             <include>OSDFade</include>
             <posx>0</posx>
@@ -200,7 +200,7 @@
                     <include>TopBarButton</include>
                     <texturefocus>topbar/topbar_epg_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_epg_nofocus.png</texturenofocus>
-                    <onclick>ActivateWindow(PVROSDGuide)</onclick>
+                    <onclick>ActivateWindow(pvrchannelguide)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                 </control>
                 <control type="button" id="350">

@@ -301,7 +301,7 @@
                     <include>TopBarButton</include>
                     <texturefocus>topbar/topbar_epg_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_epg_nofocus.png</texturenofocus>
-                    <onclick>ActivateWindow(PVROSDGuide)</onclick>
+                    <onclick>ActivateWindow(pvrchannelguide)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                 </control>
                 <control type="group" id="699">
