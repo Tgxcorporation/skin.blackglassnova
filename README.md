@@ -1,4 +1,4 @@
-## Black Glass Nova skin for Kodi 17 KRYPTON
+## Black Glass Nova skin for Kodi 18 LEIA
 Black Glass Nova is an easy to use and fanart oriented skin designed for Full HD TV screens.
 
 ![](https://github.com/Tgxcorporation/skin.blackglassnova/raw/master/screenshots/screenshot01.jpg)
