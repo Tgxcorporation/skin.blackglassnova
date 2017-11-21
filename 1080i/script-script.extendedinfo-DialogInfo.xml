@@ -341,7 +341,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(150).NumItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(150).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--TV Show actor roles-->
@@ -510,7 +510,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(250).NumItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(250).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--Movie crew member-->
@@ -679,7 +679,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(550).NumItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(550).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--TVShow crew member-->
@@ -848,7 +848,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(650).NumItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(650).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--Youtube-->
@@ -933,7 +933,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(350).NumItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(350).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--PICTURES-->

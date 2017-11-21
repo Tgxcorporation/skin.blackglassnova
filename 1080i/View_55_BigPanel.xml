@@ -478,7 +478,7 @@
             <control type="label">
                 <posy>983</posy>
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
                 <include>ScrollabarVerticalHasFocus</include>

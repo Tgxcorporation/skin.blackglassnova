@@ -259,7 +259,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(200).NumItems]</label>
+                        <label>$INFO[Container(200).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -287,7 +287,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(201).NumItems]</label>
+                        <label>$INFO[Container(201).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -315,7 +315,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(202).NumItems]</label>
+                        <label>$INFO[Container(202).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -343,7 +343,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(203).NumItems]</label>
+                        <label>$INFO[Container(203).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -371,7 +371,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(204).NumItems]</label>
+                        <label>$INFO[Container(204).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -399,7 +399,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(205).NumItems]</label>
+                        <label>$INFO[Container(205).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -427,7 +427,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(206).NumItems]</label>
+                        <label>$INFO[Container(206).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -482,7 +482,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(207).NumItems]</label>
+                        <label>$INFO[Container(207).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -510,7 +510,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(208).NumItems]</label>
+                        <label>$INFO[Container(208).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -538,7 +538,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(209).NumItems]</label>
+                        <label>$INFO[Container(209).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -566,7 +566,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(210).NumItems]</label>
+                        <label>$INFO[Container(210).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -594,7 +594,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(211).NumItems]</label>
+                        <label>$INFO[Container(211).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -622,7 +622,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(212).NumItems]</label>
+                        <label>$INFO[Container(212).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>
@@ -650,7 +650,7 @@
                         <font>FacadeListSubFont</font>
                         <align>right</align>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[Container(213).NumItems]</label>
+                        <label>$INFO[Container(213).NumNonFolderItems]</label>
                     </control>
                     <control type="image">
                         <posx>0</posx>

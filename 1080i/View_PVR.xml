@@ -604,7 +604,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(50).NumItems,7)</visible>
@@ -787,7 +787,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(52).NumItems,10)</visible>
@@ -970,7 +970,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(54).NumItems,4)</visible>
@@ -1327,7 +1327,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(50).NumItems,7)</visible>
@@ -1517,7 +1517,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(52).NumItems,10)</visible>
@@ -1708,7 +1708,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(54).NumItems,4)</visible>
@@ -1887,7 +1887,7 @@
                     <posx>65r</posx>
                     <posy>1229</posy>
                     <include>FacadeNumItems</include>
-                    <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="list" id="50">
                     <viewtype label="535">List</viewtype>
@@ -1993,7 +1993,7 @@
                     <posx>65r</posx>
                     <posy>1448</posy>
                     <include>FacadeNumItems</include>
-                    <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="list" id="52">
                     <viewtype label="31091">Large List</viewtype>
@@ -2097,7 +2097,7 @@
                 <control type="label">
                     <posx>65r</posx>
                     <include>FacadeNumItems</include>
-                    <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="list" id="54">
                     <viewtype label="31092">Low List</viewtype>
@@ -2395,7 +2395,7 @@
                     <posx>65r</posx>
                     <posy>1229</posy>
                     <include>FacadeNumItems</include>
-                    <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="list" id="50">
                     <viewtype label="535">List</viewtype>
@@ -2501,7 +2501,7 @@
                     <posx>65r</posx>
                     <posy>1448</posy>
                     <include>FacadeNumItems</include>
-                    <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="list" id="52">
                     <viewtype label="31091">Large List</viewtype>
@@ -2605,7 +2605,7 @@
                 <control type="label">
                     <posx>65r</posx>
                     <include>FacadeNumItems</include>
-                    <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
                 </control>
                 <control type="list" id="54">
                     <viewtype label="31092">Low List</viewtype>
@@ -3367,7 +3367,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(11).NumItems,7)</visible>
@@ -3780,7 +3780,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(12).NumItems,7)</visible>
@@ -4109,7 +4109,7 @@
             </control>
             <control type="label">
                 <include>FacadeNumItems</include>
-                <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
+                <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
             </control>
             <control type="scrollbar" id="60">
                 <visible allowhiddenfocus="true">Integer.IsGreater(Container(13).NumItems,7)</visible>

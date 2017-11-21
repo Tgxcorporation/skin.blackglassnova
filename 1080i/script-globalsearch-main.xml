@@ -404,7 +404,7 @@
                                     <align>right</align>
                                     <font>LeftMenuSubButtonFont</font>
                                     <textcolor>SublistNoFocusColor</textcolor>
-                                    <label>$INFO[Container(221).NumItems,,  $LOCALIZE[31025]]</label>
+                                    <label>$INFO[Container(221).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                                 </control>
                             </control>
                         </control>
@@ -577,7 +577,7 @@
                                     <align>right</align>
                                     <font>LeftMenuSubButtonFont</font>
                                     <textcolor>SublistNoFocusColor</textcolor>
-                                    <label>$INFO[Container(111).NumItems,,  $LOCALIZE[31025]]</label>
+                                    <label>$INFO[Container(111).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                                 </control>
                             </control>
                         </control>
@@ -750,7 +750,7 @@
                                     <align>right</align>
                                     <font>LeftMenuSubButtonFont</font>
                                     <textcolor>SublistNoFocusColor</textcolor>
-                                    <label>$INFO[Container(211).NumItems,,  $LOCALIZE[31025]]</label>
+                                    <label>$INFO[Container(211).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                                 </control>
                             </control>
                         </control>
@@ -900,7 +900,7 @@
                                     <align>right</align>
                                     <font>LeftMenuSubButtonFont</font>
                                     <textcolor>SublistNoFocusColor</textcolor>
-                                    <label>$INFO[Container(121).NumItems,,  $LOCALIZE[31025]]</label>
+                                    <label>$INFO[Container(121).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                                 </control>
                             </control>
                         </control>
@@ -1050,7 +1050,7 @@
                                     <align>right</align>
                                     <font>LeftMenuSubButtonFont</font>
                                     <textcolor>SublistNoFocusColor</textcolor>
-                                    <label>$INFO[Container(131).NumItems,,  $LOCALIZE[31025]]</label>
+                                    <label>$INFO[Container(131).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                                 </control>
                             </control>
                         </control>
@@ -1200,7 +1200,7 @@
                                     <align>right</align>
                                     <font>LeftMenuSubButtonFont</font>
                                     <textcolor>SublistNoFocusColor</textcolor>
-                                    <label>$INFO[Container(141).NumItems,,  $LOCALIZE[31025]]</label>
+                                    <label>$INFO[Container(141).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                                 </control>
                             </control>
                         </control>
@@ -1369,7 +1369,7 @@
                                     <align>right</align>
                                     <font>LeftMenuSubButtonFont</font>
                                     <textcolor>SublistNoFocusColor</textcolor>
-                                    <label>$INFO[Container(151).NumItems,,  $LOCALIZE[31025]]</label>
+                                    <label>$INFO[Container(151).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                                 </control>
                             </control>
                         </control>
@@ -1519,7 +1519,7 @@
                                     <align>right</align>
                                     <font>LeftMenuSubButtonFont</font>
                                     <textcolor>SublistNoFocusColor</textcolor>
-                                    <label>$INFO[Container(161).NumItems,,  $LOCALIZE[31025]]</label>
+                                    <label>$INFO[Container(161).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                                 </control>
                             </control>
                         </control>
@@ -1669,7 +1669,7 @@
                                     <align>right</align>
                                     <font>LeftMenuSubButtonFont</font>
                                     <textcolor>SublistNoFocusColor</textcolor>
-                                    <label>$INFO[Container(171).NumItems,,  $LOCALIZE[31025]]</label>
+                                    <label>$INFO[Container(171).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                                 </control>
                             </control>
                         </control>
@@ -1838,7 +1838,7 @@
                                     <align>right</align>
                                     <font>LeftMenuSubButtonFont</font>
                                     <textcolor>SublistNoFocusColor</textcolor>
-                                    <label>$INFO[Container(181).NumItems,,  $LOCALIZE[31025]]</label>
+                                    <label>$INFO[Container(181).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
                                 </control>
                             </control>
                         </control>
