@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
+    <include name="PVRChannelNumericInput">
+        <control type="group">
+            <visible>!String.IsEmpty(PVR.ChannelNumberInput)</visible>
+            <include>VisibleFadeEffect</include>
+            <control type="image">
+                <centerleft>50%</centerleft>
+                <centertop>50%</centertop>
+                <width>190</width>
+                <height>100</height>
+                <texture border="45">buttons/bg_button_focus_white.png</texture>
+            </control>
+            <control type="label">
+                <posx>0</posx>
+                <posy>0</posy>
+                <height>1080</height>
+                <width>1920</width>
+                <align>center</align>
+                <font>InfoTitleFont</font>
+                <textcolor>MainColor</textcolor>
+                <label>[B]$INFO[PVR.ChannelNumberInput][/B]</label>
+            </control>
+        </control>
+    </include>
     <include name="PVROSDChannelListSmall">
         <control type="group">
+            <posy>30</posy>
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include content="WindowClosingButton">
                 <param name="id" value="9001"/>
@@ -269,11 +293,12 @@
                 <onright>NextChannelGroup</onright>
             </control>
         </control>
+        <include>PVRChannelNumericInput</include>
     </include>
     <include name="PVROSDChannelListBig">
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-            <posy>-450</posy>
+            <posy>-420</posy>
             <include content="WindowClosingButton">
                 <param name="id" value="9001"/>
                 <param name="x" value="1635"/>
@@ -540,6 +565,7 @@
                 <onright>NextChannelGroup</onright>
             </control>
         </control>
+        <include>PVRChannelNumericInput</include>
     </include>
     <include name="PVROSDChannelListSmallGuide">
         <control type="group">
