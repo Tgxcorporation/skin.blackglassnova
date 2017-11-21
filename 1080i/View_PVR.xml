@@ -2729,6 +2729,7 @@
                 <onright>60</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>
+                <orientation>vertical</orientation>
                 <!-- <onback>50</onback> -->
                 <progresstexture border="0,85,20,20">common/EPGMarker.png</progresstexture>
                 <rulerlayout height="70" width="60">
