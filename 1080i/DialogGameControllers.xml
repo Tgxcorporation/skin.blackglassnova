@@ -99,9 +99,9 @@
             </control>
             <control type="gamecontroller" id="31">
                 <posx>658</posx>
-                <posy>402</posy>
+                <posy>392</posy>
                 <width>604</width>
-                <height>360</height>
+                <height>604</height>
             </control>
             <control type="group">
                 <posx>1312</posx>

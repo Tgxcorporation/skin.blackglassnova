@@ -90,6 +90,15 @@
         <action>ActivateWindow(1119)</action>
     </shortcut>
     <shortcut>
+        <visible>System.GetBool(gamesgeneral.enable)</visible>
+        <defaultID>15016</defaultID>
+        <label>15016</label>
+        <label2>Common Shortcut</label2>
+        <icon>DefaultShortcut.png</icon>
+        <thumb></thumb>
+        <action>ActivateWindow(Games,root)</action>
+    </shortcut>
+    <shortcut>
         <visible>!Skin.HasSetting(BlackGlassMode)</visible>
         <defaultID>favourites</defaultID>
         <label>1036</label>
