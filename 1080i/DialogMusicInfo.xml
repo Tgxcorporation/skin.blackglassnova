@@ -796,7 +796,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(50).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(50).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
             </control>

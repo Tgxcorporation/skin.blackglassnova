@@ -173,7 +173,7 @@
         </control>
         <control type="label">
             <include>FacadeNumItems</include>
-            <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
+            <label>$INFO[Container.FolderName,,  •  ]$INFO[Container.NumItems] $LOCALIZE[31025]</label>
         </control>
         <control type="panel" id="50">
             <viewtype label="535">Large List</viewtype>
@@ -444,7 +444,7 @@
         </control>
         <control type="label">
             <include>FacadeNumItems</include>
-            <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
+            <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
         </control>
         <control type="panel" id="50">
             <viewtype label="535">Large List</viewtype>
@@ -613,7 +613,7 @@
                 <control type="label">
                     <posx>65r</posx>
                     <include>FacadeNumItems</include>
-                    <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
                 </control>
             </control>
             <control type="list" id="50">
@@ -845,7 +845,7 @@
                 <control type="label">
                     <posx>65r</posx>
                     <include>FacadeNumItems</include>
-                    <label>$INFO[Container.NumNonFolderItems] $LOCALIZE[31025]</label>
+                    <label>$INFO[Container.NumItems] $LOCALIZE[31025]</label>
                 </control>
             </control>
             <control type="list" id="50">

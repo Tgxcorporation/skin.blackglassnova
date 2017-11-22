@@ -39,7 +39,7 @@
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
-                <label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - $INFO[Container(11).NumNonFolderItems,, $LOCALIZE[31025]]</label>
+                <label>[UPPERCASE]$LOCALIZE[298][/UPPERCASE] - $INFO[Container(11).NumItems,, $LOCALIZE[31025]]</label>
             </control>
             <control type="panel" id="11">
                 <posx>278</posx>

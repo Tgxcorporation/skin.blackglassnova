@@ -787,7 +787,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(1000).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(1000).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--CREW-->
@@ -907,7 +907,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(750).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(750).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--RECOMMENDED TMDB-->
@@ -1069,7 +1069,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(150).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(150).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--SET MOVIES-->
@@ -1231,7 +1231,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(250).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(250).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--OFFICIAL VIDEOS-->
@@ -1351,7 +1351,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(1150).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(1150).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--YOUTUBE-->
@@ -1429,7 +1429,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(350).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(350).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--PRODUCTION COMPANIES-->
@@ -1516,7 +1516,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(550).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(550).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--NETWORKS STUDIOS-->
@@ -1603,7 +1603,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(1450).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(1450).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--RELEASES-->
@@ -1706,7 +1706,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(650).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(650).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--GENRES-->
@@ -1793,7 +1793,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(850).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(850).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--REVIEWS-->
@@ -1881,7 +1881,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(1050).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(1050).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--KEYWORDS-->
@@ -1968,7 +1968,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(950).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(950).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--ARTWORK-->
@@ -2226,7 +2226,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(450).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(450).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <!--EPISODE INDEX-->
@@ -2304,7 +2304,7 @@
                         <align>right</align>
                         <font>LeftMenuSubButtonFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[Container(2000).NumNonFolderItems,,  $LOCALIZE[31025]]</label>
+                        <label>$INFO[Container(2000).NumItems,,  $LOCALIZE[31025]]</label>
                     </control>
                 </control>
                 <control type="grouplist" id="9001">
