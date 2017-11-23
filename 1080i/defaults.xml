@@ -141,9 +141,9 @@
         <posy>0</posy>
         <height>60</height>
         <textureup>buttons/SpinUpNF.png</textureup>
-        <textureupfocus>buttons/SpinUpFO.png</textureupfocus>
+        <textureupfocus colordiffuse="$VAR[Picked.Highlight.Color]">buttons/SpinUpFO.png</textureupfocus>
         <texturedown>buttons/SpinDownNF.png</texturedown>
-        <texturedownfocus>buttons/SpinDownFO.png</texturedownfocus>
+        <texturedownfocus colordiffuse="$VAR[Picked.Highlight.Color]">buttons/SpinDownFO.png</texturedownfocus>
         <textureupdisabled colordiffuse="90ffffff">buttons/SpinUpNF.png</textureupdisabled>
         <texturedowndisabled colordiffuse="90ffffff">buttons/SpinDownNF.png</texturedowndisabled>
         <include>TextureFocus</include>
@@ -169,9 +169,9 @@
         <height>60</height>
         <font>ButtonFont</font>
         <textureup>buttons/SpinUpNF.png</textureup>
-        <textureupfocus>buttons/SpinUpFO.png</textureupfocus>
+        <textureupfocus colordiffuse="$VAR[Picked.Highlight.Color]">buttons/SpinUpFO.png</textureupfocus>
         <texturedown>buttons/SpinDownNF.png</texturedown>
-        <texturedownfocus>buttons/SpinDownFO.png</texturedownfocus>
+        <texturedownfocus colordiffuse="$VAR[Picked.Highlight.Color]">buttons/SpinDownFO.png</texturedownfocus>
         <textureupdisabled colordiffuse="90ffffff">buttons/SpinUpNF.png</textureupdisabled>
         <texturedowndisabled colordiffuse="90ffffff">buttons/SpinDownNF.png</texturedowndisabled>
         <include>TextureFocus</include>
@@ -198,7 +198,7 @@
         <sliderheight>64</sliderheight>
         <texturesliderbar>buttons/SliderBG.png</texturesliderbar>
         <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
-        <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+        <textureslidernibfocus colordiffuse="$VAR[Picked.Highlight.Color]">buttons/SliderNibFO.png</textureslidernibfocus>
         <textoffsetx>20</textoffsetx>
         <pulseonselect>false</pulseonselect>
         <orientation>horizontal</orientation>
@@ -211,7 +211,7 @@
         <sliderheight>64</sliderheight>
         <texturesliderbar>buttons/SliderBG.png</texturesliderbar>
         <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
-        <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+        <textureslidernibfocus colordiffuse="$VAR[Picked.Highlight.Color]">buttons/SliderNibFO.png</textureslidernibfocus>
         <include>TextureFocus</include>
         <texturenofocus border="4">list/bg_facade_nofocus.png</texturenofocus>
         <font>ButtonFont</font>
@@ -232,7 +232,7 @@
         <texturesliderbar>-</texturesliderbar>
         <texturesliderbarfocus>-</texturesliderbarfocus>
         <textureslidernib border="18">buttons/Scrollbar_Vertical_NoFocus.png</textureslidernib>
-        <textureslidernibfocus border="18">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
+        <textureslidernibfocus border="18" colordiffuse="$VAR[Picked.Highlight.Color]">buttons/Scrollbar_Vertical_Focus.png</textureslidernibfocus>
         <pulseonselect>false</pulseonselect>
         <showonepage>false</showonepage>
     </default>
