@@ -16,6 +16,7 @@
     <include file="Includes_PVR.xml"/>
     <include file="Includes_Animations.xml"/>
     <include file="Includes_Expressions.xml"/>
+    <include file="Includes_DialogSelect.xml"/>
     <include file="defaults.xml"/>
     <include file="Includes_Home_Common.xml"/>
     <include file="Includes_Home_Common_Plexbmc.xml"/>
