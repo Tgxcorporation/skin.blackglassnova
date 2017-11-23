@@ -45,14 +45,14 @@
                 <!--***-->
                 <control type="button" id="704">
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_back_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_back_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
                     <onclick>Dialog.Close(VideoOSD,true)</onclick>
                     <onclick>fullscreen</onclick>
                 </control>
                 <control type="button" id="705">
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_home_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_home_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_home_nofocus.png</texturenofocus>
                     <onclick>Back</onclick>
                     <onclick>Dialog.Close(all,true)</onclick>
@@ -62,7 +62,7 @@
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[210]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_channel_down_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_channel_down_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_channel_down_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
@@ -70,7 +70,7 @@
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[209]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_channel_up_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_channel_up_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_channel_up_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
@@ -78,7 +78,7 @@
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[210]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_skipback_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_skipback_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
@@ -87,7 +87,7 @@
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                     <label>$LOCALIZE[31354]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_rewind_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_rewind_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
@@ -97,17 +97,17 @@
                     <label>$LOCALIZE[31351]</label>
                     <altlabel>$LOCALIZE[208]</altlabel>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_pause_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_pause_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
                     <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                    <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
+                     <alttexturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_play_focus.png</alttexturefocus>
                     <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="button" id="203">
                     <label>$LOCALIZE[31352]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_stop_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_stop_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
@@ -116,7 +116,7 @@
                     <animation effect="fade" start="100" end="50" time="0" condition="!Player.SeekEnabled">Conditional</animation>
                     <label>$LOCALIZE[31353]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_fastforward_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_fastforward_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Forward)</onclick>
                 </control>
@@ -124,14 +124,14 @@
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[209]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_skipforward_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_skipforward_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="1616">
                     <visible>!Player.Muted</visible>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_volume_mute_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_volume_mute_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
                     <onclick>Mute</onclick>
                 </control>
@@ -144,33 +144,33 @@
                 </control>
                 <control type="button" id="1618">
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_volume_down_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_volume_down_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
                     <onclick>VolumeDown</onclick>
                 </control>
                 <control type="button" id="1620">
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_volume_up_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_volume_up_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
                     <onclick>VolumeUp</onclick>
                 </control>
                 <control type="button" id="1622">
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_smallscreen_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_smallscreen_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_smallscreen_nofocus.png</texturenofocus>
                     <onclick>Dialog.Close(VideoOSD,true)</onclick>
                     <onclick>fullscreen</onclick>
                 </control>
                 <control type="button" id="1624">
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_settings_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_settings_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
                     <onclick>Dialog.Close(VideoOSD,true)</onclick>
                     <onclick>ActivateWindow(Settings,return)</onclick>
                 </control>
                 <control type="button" id="1626">
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_shutdown_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_shutdown_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(shutdownmenu)</onclick>
                 </control>
@@ -189,7 +189,7 @@
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[19069]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_channel_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_channel_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_channel_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(PVROSDChannels)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
@@ -198,7 +198,7 @@
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[19069]$INFO[VideoPlayer.ChannelNumberLabel,  •  ]$INFO[VideoPlayer.ChannelName,  •  ]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_epg_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_epg_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_epg_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(pvrchannelguide)</onclick>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
@@ -207,7 +207,7 @@
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[23050]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_teletext_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_teletext_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_teletext_nofocus.png</texturenofocus>
                     <onclick>Dialog.Close(VideoOSD)</onclick>
                     <onclick>ActivateWindow(Teletext)</onclick>
@@ -220,17 +220,17 @@
                     <label>$LOCALIZE[264]</label>
                     <altlabel>$LOCALIZE[265]</altlabel>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_rec_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_rec_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_rec_nofocus.png</texturenofocus>
                     <usealttexture>Player.Recording</usealttexture>
-                    <alttexturefocus>topbar/topbar_rec_on_focus.png</alttexturefocus>
+                     <alttexturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_rec_on_focus.png</alttexturefocus>
                     <alttexturenofocus>topbar/topbar_rec_on_nofocus.png</alttexturenofocus>
                     <onclick>PlayerControl(Record)</onclick>
                 </control>
                 <control type="button" id="250">
                     <label>$LOCALIZE[31356]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_subtitles_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_subtitles_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_subtitles_nofocus.png</texturenofocus>
                     <ondown>400</ondown>
                     <onclick>SetFocus(400)</onclick>
@@ -238,14 +238,14 @@
                 <control type="button" id="251">
                     <label>$LOCALIZE[13395]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_video_settings_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_video_settings_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_video_settings_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(OSDVideoSettings)</onclick>
                 </control>
                 <control type="button" id="252">
                     <label>$LOCALIZE[13396]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_speaker_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_speaker_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_speaker_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(OSDAudioSettings)</onclick>
                 </control>
@@ -253,7 +253,7 @@
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[298]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_bookmark2_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_bookmark2_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_bookmark2_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(VideoBookmarks)</onclick>
                 </control>
@@ -263,7 +263,7 @@
                     <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.HasMenu">Conditional</animation>
                     <label>$LOCALIZE[31355]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_dvd_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_dvd_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_dvd_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(ShowVideoMenu)</onclick>
                 </control>
@@ -272,7 +272,7 @@
                     <animation effect="fade" start="100" end="50" time="0" condition="!VideoPlayer.IsStereoscopic">Conditional</animation>
                     <label>$LOCALIZE[36501]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_3d_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_3d_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_3d_nofocus.png</texturenofocus>
                     <onclick>StereoMode</onclick>
                 </control>
@@ -281,7 +281,7 @@
                     <visible>!VideoPlayer.Content(LiveTV)</visible>
                     <label>$LOCALIZE[559]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_bookmark_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_bookmark_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_bookmark_nofocus.png</texturenofocus>
                     <onclick>Close</onclick>
                     <onclick>ActivateWindow(VideoPlaylist)</onclick>
@@ -289,7 +289,7 @@
                 <control type="button" id="707">
                     <label>$LOCALIZE[544]</label>
                     <include>TopBarButton</include>
-                    <texturefocus>topbar/topbar_info_focus.png</texturefocus>
+                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_info_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_info_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(fullscreeninfo)</onclick>
                 </control>
