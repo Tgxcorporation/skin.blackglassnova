@@ -93,9 +93,9 @@
         <height>1</height>
         <label></label>
         <texturenofocus></texturenofocus>
-         <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]"></texturefocus>
+        <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]"></texturefocus>
         <texturenofocus>common/WhiteDotT.png</texturenofocus>
-         <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">common/BlackDotT.png</texturefocus>
+        <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">common/BlackDotT.png</texturefocus>
     </include>
     <include name="DimBG">
         <control type="image">
@@ -157,13 +157,13 @@
                 <align>center</align>
                 <control type="button" id="1600">
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_back_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_back_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_back_nofocus.png</texturenofocus>
                     <onclick>back</onclick>
                 </control>
                 <control type="button" id="1602">
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_home_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_home_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_home_nofocus.png</texturenofocus>
                     <onclick>Dialog.Close(all,true)</onclick>
                     <onclick>ActivateWindow(home)</onclick>
@@ -171,52 +171,52 @@
                 <control type="button" id="1604">
                     <visible>Player.HasMedia</visible>
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_skipback_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_skipback_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_skipback_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Previous)</onclick>
                 </control>
                 <control type="button" id="1606">
                     <visible>Player.HasMedia</visible>
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_rewind_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_rewind_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_rewind_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Rewind)</onclick>
                 </control>
                 <control type="togglebutton" id="1608">
                     <visible>Player.HasMedia</visible>
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_pause_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_pause_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_pause_nofocus.png</texturenofocus>
                     <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-                    <alttexturefocus>topbar/topbar_play_focus.png</alttexturefocus>
+                    <alttexturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_play_focus.png</alttexturefocus>
                     <alttexturenofocus>topbar/topbar_play_nofocus.png</alttexturenofocus>
                     <onclick>PlayerControl(Play)</onclick>
                 </control>
                 <control type="button" id="1610">
                     <visible>Player.HasMedia</visible>
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_stop_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_stop_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_stop_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Stop)</onclick>
                 </control>
                 <control type="button" id="1612">
                     <visible>Player.HasMedia</visible>
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_fastforward_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_fastforward_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_fastforward_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Forward)</onclick>
                 </control>
                 <control type="button" id="1614">
                     <visible>Player.HasMedia</visible>
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_skipforward_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_skipforward_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_skipforward_nofocus.png</texturenofocus>
                     <onclick>PlayerControl(Next)</onclick>
                 </control>
                 <control type="button" id="1616">
                     <visible>!Player.Muted</visible>
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_volume_mute_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_volume_mute_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_volume_mute_nofocus.png</texturenofocus>
                     <onclick>Mute</onclick>
                 </control>
@@ -229,32 +229,32 @@
                 </control>
                 <control type="button" id="1618">
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_volume_down_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_volume_down_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_volume_down_nofocus.png</texturenofocus>
                     <onclick>VolumeDown</onclick>
                 </control>
                 <control type="button" id="1620">
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_volume_up_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_volume_up_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_volume_up_nofocus.png</texturenofocus>
                     <onclick>VolumeUp</onclick>
                 </control>
                 <control type="button" id="1622">
                     <visible>Player.HasMedia</visible>
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_fullscreen_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_fullscreen_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_fullscreen_nofocus.png</texturenofocus>
                     <onclick>fullscreen</onclick>
                 </control>
                 <control type="button" id="1624">
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_settings_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_settings_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_settings_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(Settings,return)</onclick>
                 </control>
                 <control type="button" id="1626">
                     <include>TopBarButton</include>
-                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_shutdown_focus.png</texturefocus>
+                    <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_shutdown_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
                     <onclick>ActivateWindow(shutdownmenu)</onclick>
                 </control>
@@ -1272,7 +1272,7 @@
             <height>50</height>
             <width>50</width>
             <texturenofocus>topbar/topbar_exit_nofocus.png</texturenofocus>
-             <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_exit_focus.png</texturefocus>
+            <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_exit_focus.png</texturefocus>
             <onclick>back</onclick>
             <label></label>
         </control>
