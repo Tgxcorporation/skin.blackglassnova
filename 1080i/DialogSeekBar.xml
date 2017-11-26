@@ -53,7 +53,7 @@
             <aligny>center</aligny>
             <font>OSDFont</font>
             <shadowcolor>ShadowColor</shadowcolor>
-            <label>$INFO[VideoPlayer.ChannelNumber,,  •  ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,  •  ]</label>
+            <label>$INFO[VideoPlayer.ChannelNumberLabel,,  •  ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,  •  ]</label>
         </control>
         <control type="label">
             <visible>!VideoPlayer.Content(livetv)</visible>

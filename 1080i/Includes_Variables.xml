@@ -1201,7 +1201,7 @@
         <value condition="Player.Rewinding">$VAR[VideoPlayerForwardRewindVar]</value>
         <value condition="Player.IsTempo">$LOCALIZE[224]: $INFO[Player.PlaySpeed]</value>
         <value condition="Player.ChapterCount">$VAR[ChapterLabel]</value>
-        <value condition="Player.hasvideo + VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName]</value>
+        <value condition="Player.hasvideo + VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumberLabel,, - ]$INFO[VideoPlayer.ChannelName]</value>
         <value condition="Player.hasvideo + !VideoPlayer.Content(livetv)">$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist]</value>
         <value condition="Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))">$INFO[MusicPlayer.Artist]</value>
     </variable>

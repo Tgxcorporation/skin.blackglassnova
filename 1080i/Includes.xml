@@ -468,7 +468,7 @@
                     <align>left</align>
                     <font>NotificationFont</font>
                     <textcolor>MainColor</textcolor>
-                    <label>$INFO[VideoPlayer.ChannelNumber,,  •  ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,  •  ]</label>
+                    <label>$INFO[VideoPlayer.ChannelNumberLabel,,  •  ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,  •  ]</label>
                 </control>
                 <control type="label">
                     <visible>Player.hasvideo + !VideoPlayer.Content(livetv)</visible>
@@ -1182,7 +1182,7 @@
                     <width>930</width>
                     <font>InfoTitleFont</font>
                     <textcolor>MainColor</textcolor>
-                    <label>$INFO[VideoPlayer.ChannelNumber,,  •  ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,  •  ]</label>
+                    <label>$INFO[VideoPlayer.ChannelNumberLabel,,  •  ]$INFO[VideoPlayer.ChannelName]$INFO[VideoPlayer.Title,  •  ]</label>
                 </control>
                 <control type="label">
                     <visible>!VideoPlayer.Content(livetv)</visible>
