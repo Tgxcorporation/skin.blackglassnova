@@ -88,6 +88,7 @@
                     <height>710</height>
                     <onright>5</onright>
                     <ondown>9001</ondown>
+                    <onleft>9001</onleft>
                     <itemgap>0</itemgap>
                     <include>DialogMenuButtonGroup</include>
                 </control>
