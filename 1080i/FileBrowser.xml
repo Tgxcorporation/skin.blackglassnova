@@ -58,7 +58,7 @@
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <onleft>noop</onleft>
-                <onright>9001</onright>
+                <onright>60</onright>
                 <onup>450</onup>
                 <ondown>450</ondown>
                 <itemlayout height="73" width="931">
@@ -160,7 +160,7 @@
                 <pagecontrol>60</pagecontrol>
                 <scrolltime>200</scrolltime>
                 <onleft>noop</onleft>
-                <onright>9001</onright>
+                <onright>60</onright>
                 <onup>451</onup>
                 <ondown>451</ondown>
                 <itemlayout height="73" width="931">
@@ -257,7 +257,7 @@
                 <height>730</height>
                 <include>VerticalScroller</include>
                 <onleft>450</onleft>
-                <onright>450</onright>
+                <onright>9001</onright>
             </control>
             <control type="image">
                 <posx>1209</posx>
