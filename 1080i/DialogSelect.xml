@@ -280,9 +280,6 @@
                 <control type="button" id="5">
                     <label>-</label>
                 </control>
-                <control type="button" id="7">
-                    <label>-</label>
-                </control>
             </control>
         </control>
     </controls>
