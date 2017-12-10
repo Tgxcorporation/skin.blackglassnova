@@ -6,7 +6,7 @@
             [Container.Content(Albums) + !IsEmpty(ListItem.Artist)]|
             [Container.Content(Episodes) + !IsEmpty(ListItem.Duration)]|
             [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !ListItem.IsParentFolder ]|
-            [Container.Content(Addons) + !IsEmpty(ListItem.AddonCreator)]|
+            [Container.Content(Addons) + !IsEmpty(ListItem.Property(Addon.Creator))]|
             [Container.Content(Songs) + !IsEmpty(ListItem.Album)]|
             [Container.Content(Artists) + [!IsEmpty(ListItem.Property(artist_genre)) | !IsEmpty(ListItem.Property(artist_style))]]|
             [Container.Content(MusicVideos) + !IsEmpty(ListItem.Duration)]|
@@ -24,7 +24,7 @@
             [Container.Content(Albums) + !IsEmpty(ListItem.Artist)]|
             [Container.Content(Episodes) + !IsEmpty(ListItem.Duration)]|
             [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !ListItem.IsParentFolder ]|
-            [Container.Content(Addons) + !IsEmpty(ListItem.AddonCreator)]|
+            [Container.Content(Addons) + !IsEmpty(ListItem.Property(Addon.Creator))]|
             [Container.Content(Songs) + !IsEmpty(ListItem.Album)]|
             [Container.Content(Artists) + [!IsEmpty(ListItem.Property(artist_genre)) | !IsEmpty(ListItem.Property(artist_style))]]|
             [Container.Content(MusicVideos) + !IsEmpty(ListItem.Duration)]|
@@ -75,7 +75,7 @@
             control.hasfocus(60)|
             [!Skin.HasSetting(FixedShortListUnknown)+
             [
-            IsEmpty(ListItem.AddonDescription)+
+            IsEmpty(ListItem.Property(Addon.Description))+
             IsEmpty(ListItem.Property(Artist_Description))+
             IsEmpty(ListItem.Property(Album_Description))+
             IsEmpty(ListItem.Plot)
@@ -86,7 +86,7 @@
             control.hasfocus(60)|
             [!Skin.HasSetting(FixedShortListUnknown)+
             [
-            IsEmpty(ListItem.AddonDescription)+
+            IsEmpty(ListItem.Property(Addon.Description))+
             IsEmpty(ListItem.Property(Artist_Description))+
             IsEmpty(ListItem.Property(Album_Description))+
             IsEmpty(ListItem.Plot)
@@ -107,7 +107,7 @@
             <visible>Control.IsVisible(50)+
                 ![
                 IsEmpty(ListItem.Property(Artist_Description))+
-                IsEmpty(ListItem.AddonDescription)+
+                IsEmpty(ListItem.Property(Addon.Description))+
                 IsEmpty(ListItem.Property(Album_Description))+
                 IsEmpty(ListItem.Plot)
                 ]
@@ -210,7 +210,7 @@
                         <height>71</height>
                         <font>InfoDetailsFont</font>
                         <textcolor>AlternateColor</textcolor>
-                        <label>$INFO[ListItem.AddonVersion,$LOCALIZE[24051] ]$INFO[ListItem.AddonSize,  •  $LOCALIZE[21802]: ]</label>
+                        <label>$INFO[ListItem.Property(Addon.Version),$LOCALIZE[24051] ]$INFO[ListItem.AddonSize,  •  $LOCALIZE[21802]: ]</label>
                     </control>
                 </control>
                 <control type="image">

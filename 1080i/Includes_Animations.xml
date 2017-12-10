@@ -98,7 +98,7 @@
         <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="[control.hasfocus(60)+Skin.HasSetting(FixedShortListUnknown)]|
         [control.hasfocus(60)+!Skin.HasSetting(FixedShortListUnknown)+
         ![
-        IsEmpty(ListItem.AddonDescription)+
+        IsEmpty(ListItem.Property(Addon.Description))+
         IsEmpty(ListItem.Property(Artist_Description))+
         IsEmpty(ListItem.Property(Album_Description))+
         IsEmpty(ListItem.Property(Event.Description))+
@@ -112,7 +112,7 @@
     <include name="SlideViewUnknown">
         <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="!Skin.HasSetting(FixedShortListUnknown)+
         [
-        IsEmpty(ListItem.AddonDescription)+
+        IsEmpty(ListItem.Property(Addon.Description))+
         IsEmpty(ListItem.Property(Artist_Description))+
         IsEmpty(ListItem.Property(Album_Description))+
         IsEmpty(ListItem.Property(Event.Description))+

@@ -34,7 +34,7 @@
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
-                <label>$INFO[ListItem.AddonName,$LOCALIZE[24003] - ]</label>
+                <label>$INFO[ListItem.Property(Addon.Name),$LOCALIZE[24003] - ]</label>
             </control>
             <control type="image">
                 <posx>1309</posx>
@@ -155,7 +155,7 @@
                     <posy>0</posy>
                     <width>1041</width>
                     <height>71</height>
-                    <label>$LOCALIZE[146] $INFO[ListItem.AddonType]</label>
+                    <label>$LOCALIZE[146] $INFO[ListItem.Property(Addon.Type)]</label>
                     <font>InfoDetailsFont</font>
                     <textcolor>MainColor</textcolor>
                 </control>
@@ -171,7 +171,7 @@
                     <posy>73</posy>
                     <width>1041</width>
                     <height>71</height>
-                    <label>$LOCALIZE[21863]: $INFO[ListItem.AddonCreator]</label>
+                    <label>$LOCALIZE[21863]: $INFO[ListItem.Property(Addon.Creator)]</label>
                     <font>InfoDetailsFont</font>
                     <textcolor>AlternateColor</textcolor>
                 </control>
@@ -187,7 +187,7 @@
                     <posy>146</posy>
                     <width>1041</width>
                     <height>71</height>
-                    <label>$LOCALIZE[24051] $INFO[ListItem.AddonVersion]</label>
+                    <label>$LOCALIZE[24051] $INFO[ListItem.Property(Addon.Version)]</label>
                     <font>InfoDetailsFont</font>
                     <textcolor>MainColor</textcolor>
                 </control>
@@ -216,7 +216,7 @@
                     <height>440</height>
                     <font>InfoPlotFont</font>
                     <align>justify</align>
-                    <label>$INFO[ListItem.AddonDescription]</label>
+                    <label>$INFO[ListItem.Property(Addon.Description)]</label>
                     <pagecontrol>6060</pagecontrol>
                 </control>
                 <control type="scrollbar" id="6060">
