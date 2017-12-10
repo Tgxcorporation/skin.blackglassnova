@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="Horizontal_HomeSubMenu_BG">
-        <animation effect="fade" time="0" start="100" end="50" reversible="true" condition="!$EXP[HomeSubMenuHasFocus]">Conditional</animation>
+        <animation effect="fade" time="0" start="100" end="50" reversible="true" condition="![Control.hasfocus(9001)|Control.hasfocus(9002)|Control.hasfocus(9003)|Control.hasfocus(9004)]">Conditional</animation>
         <posx>173</posx>
         <posy>902</posy>
         <height>50</height>
@@ -84,7 +84,7 @@
         <onleft>300</onleft>
         <onright>300</onright>
         <ondown>9001</ondown>
-        <onup condition="$EXP[HomeWidgetCollectionIsVisible]">7010</onup>
+        <onup condition="[Control.isvisible(378432)]">7010</onup>
         <pagecontrol>-</pagecontrol>
         <preloaditems>4</preloaditems>
         <scrolltime tween="sine" easing="out">300</scrolltime>
@@ -121,7 +121,7 @@
                 <texture border="90">common/bg_panel_home.png</texture>
             </control>
             <control type="image">
-                <visible>$EXP[HomeWidgetCollectionIsVisible]</visible>
+                <visible>[Control.isvisible(378432)]</visible>
                 <posx>37</posx>
                 <posy>60</posy>
                 <width>1574</width>
@@ -170,7 +170,7 @@
                     <texture border="90">common/bg_panel_home.png</texture>
                 </control>
                 <control type="image">
-                    <visible>$EXP[HomeWidgetCollectionIsVisible]</visible>
+                    <visible>[Control.isvisible(378432)]</visible>
                     <posx>37</posx>
                     <posy>60</posy>
                     <width>1574</width>
@@ -208,7 +208,7 @@
     <include name="Horizontal_Home_Layout_BG">
         <include>HeaderSlideEffectTopBar</include>
         <control type="image">
-            <visible>$EXP[HomeWidgetCollectionHasFocus]|$EXP[HomeWidgetSelectorHasFocus]</visible>
+            <visible>[Control.isvisible(378433)]|[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]</visible>
             <include>VisibleFadeEffect</include>
             <posx>-200</posx>
             <posy>633</posy>
@@ -217,7 +217,7 @@
             <texture>common/HomeGradient.png</texture>
         </control>
         <control type="image">
-            <visible>$EXP[HomeWidgetCollectionHasFocus]|$EXP[HomeWidgetSelectorHasFocus]</visible>
+            <visible>[Control.isvisible(378433)]|[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]</visible>
             <include>VisibleFadeEffect</include>
             <posx>-200</posx>
             <posy>840</posy>
@@ -227,7 +227,7 @@
         </control>
         <control type="group">
             <include condition="!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-            <animation effect="slide" tween="circle" time="200" start="0,0" end="0,825" reversible="true" condition="$EXP[HomeWidgetCollectionHasFocus]|$EXP[HomeWidgetSelectorHasFocus]">Conditional</animation>
+            <animation effect="slide" tween="circle" time="200" start="0,0" end="0,825" reversible="true" condition="[Control.isvisible(378433)]|[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]">Conditional</animation>
             <control type="group">
                 <posy>20</posy>
                 <include condition="Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Fixed_HomeMenu_BG</include>
@@ -248,7 +248,7 @@
                     <posy>-535</posy>
                     <control type="button" id="7010">
                         <!--NAVIGATION DUMMY-->
-                        <visible>$EXP[HomeWidgetCollectionIsVisible]</visible>
+                        <visible>[Control.isvisible(378432)]</visible>
                         <posx>150</posx>
                         <posy>645</posy>
                         <width>1620</width>
@@ -257,7 +257,7 @@
                         <onfocus>SetFocus(701)</onfocus>
                     </control>
                     <control type="fixedlist" id="701">
-                        <animation effect="fade" time="200" start="100" end="50" reversible="true" condition="!$EXP[HomeWidgetSelectorHasFocus]">Conditional</animation>
+                        <animation effect="fade" time="200" start="100" end="50" reversible="true" condition="![Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]">Conditional</animation>
                         <posx>173</posx>
                         <posy>705</posy>
                         <width>1574</width>
@@ -541,7 +541,7 @@
                             <control type="group">
                                 <include>ListFocusAnimation</include>
                                 <control type="label">
-                                    <visible>!$EXP[HomeWidgetSelectorHasFocus]</visible>
+                                    <visible>![Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]</visible>
                                     <animation effect="fade" time="200" start="0" end="100" reversible="true">Visible</animation>
                                     <posx>20</posx>
                                     <posy>0</posy>
@@ -554,7 +554,7 @@
                                     <textcolor>ListNoFocusColor</textcolor>
                                 </control>
                                 <control type="label">
-                                    <visible>$EXP[HomeWidgetSelectorHasFocus]</visible>
+                                    <visible>[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]</visible>
                                     <animation effect="fade" time="200" start="0" end="100" reversible="true">Visible</animation>
                                     <posx>20</posx>
                                     <posy>0</posy>

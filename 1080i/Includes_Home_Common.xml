@@ -182,8 +182,8 @@
     </include>
     <include name="WidgetPlex">
         <control type="group" id="401$PARAM[id]">
-            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(401$PARAM[id]).HasFocus">Conditional</animation>
-            <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(401$PARAM[id]).HasFocus]">Conditional</animation>
+            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(401$PARAM[id]).HasFocus">Conditional</animation>
+            <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(401$PARAM[id]).HasFocus]">Conditional</animation>
             <control type="group">
                 <visible>Control.IsVisible($PARAM[id])</visible>
                 <control type="image">

@@ -51,8 +51,8 @@
 
         <controls>
             <control type="group" id="90001$SKINSHORTCUTS[mainmenuid]">
-                <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(90001$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
-                <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(90001$SKINSHORTCUTS[mainmenuid]).HasFocus]">Conditional</animation>
+                <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(90001$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
+                <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(90001$SKINSHORTCUTS[mainmenuid]).HasFocus]">Conditional</animation>
                 <control type="group">
                     <visible>Control.IsVisible(70001$SKINSHORTCUTS[mainmenuid])</visible>
                     <control type="image">
@@ -245,8 +245,8 @@
 
         <controls>
             <control type="group" id="90002$SKINSHORTCUTS[mainmenuid]">
-                <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(90002$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
-                <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(90002$SKINSHORTCUTS[mainmenuid]).HasFocus]">Conditional</animation>
+                <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(90002$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
+                <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(90002$SKINSHORTCUTS[mainmenuid]).HasFocus]">Conditional</animation>
                 <control type="group">
                     <visible>Control.IsVisible(70002$SKINSHORTCUTS[mainmenuid])</visible>
                     <control type="image">
@@ -439,8 +439,8 @@
 
         <controls>
             <control type="group" id="90003$SKINSHORTCUTS[mainmenuid]">
-                <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(90003$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
-                <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(90003$SKINSHORTCUTS[mainmenuid]).HasFocus]">Conditional</animation>
+                <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(90003$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
+                <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(90003$SKINSHORTCUTS[mainmenuid]).HasFocus]">Conditional</animation>
                 <control type="group">
                     <visible>Control.IsVisible(70003$SKINSHORTCUTS[mainmenuid])</visible>
                     <control type="image">
@@ -633,8 +633,8 @@
 
         <controls>
             <control type="group" id="90004$SKINSHORTCUTS[mainmenuid]">
-                <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(90004$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
-                <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(90004$SKINSHORTCUTS[mainmenuid]).HasFocus]">Conditional</animation>
+                <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(90004$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
+                <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(90004$SKINSHORTCUTS[mainmenuid]).HasFocus]">Conditional</animation>
                 <control type="group">
                     <visible>Control.IsVisible(70004$SKINSHORTCUTS[mainmenuid])</visible>
                     <control type="image">
@@ -827,8 +827,8 @@
 
         <controls>
             <control type="group" id="90005$SKINSHORTCUTS[mainmenuid]">
-                <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(90005$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
-                <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![$EXP[HomeWidgetSelectorHasFocus]|ControlGroup(90005$SKINSHORTCUTS[mainmenuid]).HasFocus]">Conditional</animation>
+                <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(90005$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
+                <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(90005$SKINSHORTCUTS[mainmenuid]).HasFocus]">Conditional</animation>
                 <control type="group">
                     <visible>Control.IsVisible(70005$SKINSHORTCUTS[mainmenuid])</visible>
                     <control type="image">

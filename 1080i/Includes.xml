@@ -127,7 +127,7 @@
     <include name="TopBar">
         <control type="button" id="8998">
             <description>Fake button for mouse control</description>
-            <animation type="Conditional" reversible="true" condition="$EXP[PlayingNowIsVisible]">
+            <animation type="Conditional" reversible="true" condition="[Control.IsVisible(495678)]">
                 <effect type="slide" start="0,0" end="0,60" time="150" delay="0" tween="circle" easing="inout"/>
             </animation>
             <posx>295</posx>
@@ -268,7 +268,7 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="image">
-                <visible>$EXP[TopBarHasFocus]</visible>
+                <visible>[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)]</visible>
                 <include>VisibleFadeEffect</include>
                 <posx>-80</posx>
                 <posy>60</posy>
@@ -316,7 +316,7 @@
             <control type="group">
                 <visible>!Window.isvisible(DialogVideoInfo.xml)</visible>
                 <include>HeaderSlideEffectTopBar</include>
-                <visible>$EXP[TopBarHasFocus]</visible>
+                <visible>[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)]</visible>
                 <include>VisibleFadeEffect</include>
                 <posy>-60</posy>
                 <control type="image">

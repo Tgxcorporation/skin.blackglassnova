@@ -169,15 +169,15 @@
         <effect type="fade" start="100" end="0" time="500" delay="3000"/>
     </include>
     <include name="HeaderSlideEffectTopBar">
-        <animation type="Conditional" reversible="true" condition="$EXP[TopBarHasFocus]+$EXP[PlayingNowIsVisible]">
+        <animation type="Conditional" reversible="true" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)]+[Control.IsVisible(495678)]">
             <effect type="slide" start="0,0" end="0,60" time="150" delay="0" tween="circle" easing="inout"/>
         </animation>
-        <animation type="Conditional" reversible="true" condition="$EXP[TopBarHasFocus]">
+        <animation type="Conditional" reversible="true" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)]">
             <effect type="slide" start="0,0" end="0,90" time="150" delay="0" tween="circle" easing="inout"/>
         </animation>
     </include>
     <include name="LogoFadeEffectTopBar">
-        <animation type="Conditional" reversible="true" condition="$EXP[TopBarHasFocus]">
+        <animation type="Conditional" reversible="true" condition="[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)]">
             <effect type="fade" start="100" end="0" time="150" delay="0"/>
         </animation>
     </include>

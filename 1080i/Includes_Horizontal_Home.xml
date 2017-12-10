@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
     <include name="Horizontal_HomeSubMenu">
-        <animation effect="fade" time="200" start="100" end="50" reversible="true" condition="!$EXP[HomeSubMenuHasFocus]">Conditional</animation>
+        <animation effect="fade" time="200" start="100" end="50" reversible="true" condition="![Control.hasfocus(9001)|Control.hasfocus(9002)|Control.hasfocus(9003)|Control.hasfocus(9004)]">Conditional</animation>
         <posx>0</posx>
         <posy>870</posy>
         <height>50</height>
@@ -31,7 +31,7 @@
             <control type="group">
                 <include>ListFocusAnimation</include>
                 <control type="label">
-                    <visible>!$EXP[HomeSubMenuHasFocus]</visible>
+                    <visible>![Control.hasfocus(9001)|Control.hasfocus(9002)|Control.hasfocus(9003)|Control.hasfocus(9004)]</visible>
                     <animation effect="fade" time="200" start="0" end="100" reversible="true">Visible</animation>
                     <posx>20</posx>
                     <posy>0</posy>
@@ -44,7 +44,7 @@
                     <textcolor>ListNoFocusColor</textcolor>
                 </control>
                 <control type="label">
-                    <visible>$EXP[HomeSubMenuHasFocus]</visible>
+                    <visible>[Control.hasfocus(9001)|Control.hasfocus(9002)|Control.hasfocus(9003)|Control.hasfocus(9004)]</visible>
                     <animation effect="fade" time="200" start="0" end="100" reversible="true">Visible</animation>
                     <posx>20</posx>
                     <posy>0</posy>
@@ -78,7 +78,7 @@
         </control>
     </include>
     <include name="Horizontal_HomeMenu">
-        <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!$EXP[HomeMainMenuHasFocus]">Conditional</animation>
+        <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="![Control.hasfocus(300)|Control.hasfocus(301)|Control.hasfocus(302)]">Conditional</animation>
         <posx>0</posx>
         <posy>539</posy>
         <width>1950</width>
@@ -86,7 +86,7 @@
         <onleft>300</onleft>
         <onright>300</onright>
         <ondown>9001</ondown>
-        <onup condition="$EXP[HomeWidgetCollectionIsVisible]">7010</onup>
+        <onup condition="[Control.isvisible(378432)]">7010</onup>
         <onup>9900</onup>
         <pagecontrol>-</pagecontrol>
         <preloaditems>4</preloaditems>
@@ -162,7 +162,7 @@
     </include>
     <include name="Horizontal_Home_Layout">
         <control type="image">
-            <animation effect="slide" start="0,0" end="0,-160" time="175" condition="$EXP[HomeWidgetCollectionIsVisible]+!$EXP[HomeWidgetCollectionHasFocus]+[$EXP[HomeMainMenuHasFocus]|$EXP[HomeSubMenuHasFocus]|$EXP[TopBarHasFocus]]">conditional</animation>
+            <animation effect="slide" start="0,0" end="0,-160" time="175" condition="[Control.isvisible(378432)]+![Control.isvisible(378433)]+[[Control.hasfocus(300)|Control.hasfocus(301)|Control.hasfocus(302)]|[Control.hasfocus(9001)|Control.hasfocus(9002)|Control.hasfocus(9003)|Control.hasfocus(9004)]|[ControlGroup(9900).HasFocus()|Control.HasFocus(8998)]]">conditional</animation>
             <posx>-200</posx>
             <posy>633</posy>
             <width>2320</width>
@@ -178,7 +178,7 @@
         </control>
         <include>WidgetsCollection</include>
         <control type="group">
-            <animation effect="slide" tween="circle" time="200" start="0,0" end="0,400" reversible="true" condition="[$EXP[HomeWidgetCollectionHasFocus]|$EXP[HomeWidgetSelectorHasFocus]]">Conditional</animation>
+            <animation effect="slide" tween="circle" time="200" start="0,0" end="0,400" reversible="true" condition="[[Control.isvisible(378433)]|[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]]">Conditional</animation>
             <control type="group">
                 <visible>system.getbool(lookandfeel.enablerssfeeds)</visible>
                 <control type="image">
@@ -217,8 +217,8 @@
                 </control>
             </control>
             <control type="image">
-                <visible>$EXP[HomeWidgetCollectionIsVisible]</visible>
-                <animation effect="slide" tween="circle" start="0,0" end="0,-334" time="100" condition="$EXP[HomeWidgetCollectionIsVisible]">conditional</animation>
+                <visible>[Control.isvisible(378432)]</visible>
+                <animation effect="slide" tween="circle" start="0,0" end="0,-334" time="100" condition="[Control.isvisible(378432)]">conditional</animation>
                 <include>VisibleFadeEffect</include>
                 <posx>0</posx>
                 <posy>909</posy>
@@ -292,7 +292,7 @@
                     <onclick>Control.Move(9001,1)</onclick>
                 </control>
                 <control type="fixedlist" id="701">
-                    <animation effect="fade" time="200" start="100" end="50" reversible="true" condition="!$EXP[HomeWidgetSelectorHasFocus]">Conditional</animation>
+                    <animation effect="fade" time="200" start="100" end="50" reversible="true" condition="![Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]">Conditional</animation>
                     <posx>0</posx>
                     <posy>475</posy>
                     <height>50</height>
@@ -576,7 +576,7 @@
                         <control type="group">
                             <include>ListFocusAnimation</include>
                             <control type="label">
-                                <visible>!$EXP[HomeWidgetSelectorHasFocus]</visible>
+                                <visible>![Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]</visible>
                                 <animation effect="fade" time="200" start="0" end="100" reversible="true">Visible</animation>
                                 <posx>20</posx>
                                 <posy>0</posy>
@@ -589,7 +589,7 @@
                                 <textcolor>ListNoFocusColor</textcolor>
                             </control>
                             <control type="label">
-                                <visible>$EXP[HomeWidgetSelectorHasFocus]</visible>
+                                <visible>[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]</visible>
                                 <animation effect="fade" time="200" start="0" end="100" reversible="true">Visible</animation>
                                 <posx>20</posx>
                                 <posy>0</posy>
@@ -607,7 +607,7 @@
                 </control>
                 <control type="button" id="7010">
                     <!--NAVIGATION DUMMY-->
-                    <visible>$EXP[HomeWidgetCollectionIsVisible]</visible>
+                    <visible>[Control.isvisible(378432)]</visible>
                     <posx>0</posx>
                     <posy>415</posy>
                     <width>1920</width>
