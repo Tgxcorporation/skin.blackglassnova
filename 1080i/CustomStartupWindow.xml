@@ -85,7 +85,7 @@
                     <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                     <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                     <onclick>Skin.Reset(StartupWindowOption)</onclick>
-                    <selected>StringCompare(Skin.String(StartupWindow),Videos) + IsEmpty(Skin.String(StartupWindowOption))</selected>
+                    <selected>StringCompare(Skin.String(StartupWindow),VideoLibrary) + IsEmpty(Skin.String(StartupWindowOption))</selected>
                 </control>
                 <!--VIDEOS-->
                 <control type="radiobutton" id="718">
@@ -95,11 +95,11 @@
                     <textwidth>660</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[3]</label>
-                    <onclick>Skin.SetString(StartupWindow,Videos)</onclick>
+                    <onclick>Skin.SetString(StartupWindow,VideoLibrary)</onclick>
                     <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                     <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                     <onclick>Skin.Reset(StartupWindowOption)</onclick>
-                    <selected>StringCompare(Skin.String(StartupWindow),Videos)</selected>
+                    <selected>StringCompare(Skin.String(StartupWindow),VideoLibrary)</selected>
                 </control>
                 <!--MOVIES-->
                 <control type="radiobutton" id="719">
@@ -110,12 +110,12 @@
                     <textwidth>660</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[20342]</label>
-                    <onclick>Skin.SetString(StartupWindow,Videos)</onclick>
+                    <onclick>Skin.SetString(StartupWindow,VideoLibrary)</onclick>
                     <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                     <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                     <onclick>Skin.Reset(StartupWindowOption)</onclick>
                     <onclick>Skin.SetString(StartupWindowOption,MovieTitles)</onclick>
-                    <selected>StringCompare(Skin.String(StartupWindow),Videos) + StringCompare(Skin.String(StartupWindowOption),MovieTitles)</selected>
+                    <selected>StringCompare(Skin.String(StartupWindow),VideoLibrary) + StringCompare(Skin.String(StartupWindowOption),MovieTitles)</selected>
                 </control>
                 <!--TVSHOWS-->
                 <control type="radiobutton" id="720">
@@ -126,12 +126,12 @@
                     <textwidth>660</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[20343]</label>
-                    <onclick>Skin.SetString(StartupWindow,Videos)</onclick>
+                    <onclick>Skin.SetString(StartupWindow,VideoLibrary)</onclick>
                     <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                     <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                     <onclick>Skin.Reset(StartupWindowOption)</onclick>
                     <onclick>Skin.SetString(StartupWindowOption,TVShowTitles)</onclick>
-                    <selected>StringCompare(Skin.String(StartupWindow),Videos) + StringCompare(Skin.String(StartupWindowOption),TVShowTitles)</selected>
+                    <selected>StringCompare(Skin.String(StartupWindow),VideoLibrary) + StringCompare(Skin.String(StartupWindowOption),TVShowTitles)</selected>
                 </control>
                 <!--CONCERTS-->
                 <control type="radiobutton" id="721">
@@ -142,12 +142,12 @@
                     <textwidth>660</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[31971]</label>
-                    <onclick>Skin.SetString(StartupWindow,Videos)</onclick>
+                    <onclick>Skin.SetString(StartupWindow,VideoLibrary)</onclick>
                     <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                     <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                     <onclick>Skin.Reset(StartupWindowOption)</onclick>
                     <onclick>Skin.SetString(StartupWindowOption,MusicVideoTitles)</onclick>
-                    <selected>StringCompare(Skin.String(StartupWindow),Videos) + StringCompare(Skin.String(StartupWindowOption),MusicVideoTitles)</selected>
+                    <selected>StringCompare(Skin.String(StartupWindow),VideoLibrary) + StringCompare(Skin.String(StartupWindowOption),MusicVideoTitles)</selected>
                 </control>
                 <!--VIDEO PLAYLISTS-->
                 <control type="radiobutton" id="722">
@@ -157,12 +157,12 @@
                     <textwidth>660</textwidth>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[3] - $LOCALIZE[136]</label>
-                    <onclick>Skin.SetString(StartupWindow,Videos)</onclick>
+                    <onclick>Skin.SetString(StartupWindow,VideoLibrary)</onclick>
                     <onclick>Skin.Reset(CustomStartup.Label)</onclick>
                     <onclick>Skin.Reset(CustomStartup.Path)</onclick>
                     <onclick>Skin.Reset(StartupWindowOption)</onclick>
                     <onclick>Skin.SetString(StartupWindowOption,Playlists)</onclick>
-                    <selected>StringCompare(Skin.String(StartupWindow),Videos) + StringCompare(Skin.String(StartupWindowOption),Playlists)</selected>
+                    <selected>StringCompare(Skin.String(StartupWindow),VideoLibrary) + StringCompare(Skin.String(StartupWindowOption),Playlists)</selected>
                 </control>
                 <!--MUSIC-->
                 <control type="radiobutton" id="723">

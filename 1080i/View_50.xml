@@ -930,7 +930,7 @@
                         <visible>!Skin.HasSetting(Addons.Hide)</visible>
                         <label>$LOCALIZE[1037]</label>
                         <label2>$INFO[Window(Home).Property(SkinHelper.TotalVideoAddons),, $LOCALIZE[24001]]</label2>
-                        <onclick>ActivateWindow(Videos,Addons,return)</onclick>
+                        <onclick>ActivateWindow(VideoLibrary,Addons,return)</onclick>
                     </item>
                     <item id="4">
                         <visible>!Skin.HasSetting(Addons.Hide)</visible>
@@ -952,7 +952,7 @@
                     <item id="52">
                         <visible>Skin.HasSetting(plexbmc)</visible>
                         <label>$LOCALIZE[31001]</label>
-                        <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?url=http://video&amp;mode=22",return)</onclick>
+                        <onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?url=http://video&amp;mode=22",return)</onclick>
                     </item>
                     <item id="53">
                         <visible>Skin.HasSetting(plexbmc)</visible>
@@ -962,7 +962,7 @@
                     <item id="50">
                         <visible>Skin.HasSetting(plexbmc)</visible>
                         <label>$LOCALIZE[31003]</label>
-                        <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
+                        <onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
                     </item>
                     <item id="2">
                         <visible>!Skin.HasSetting(Addons.Hide)</visible>

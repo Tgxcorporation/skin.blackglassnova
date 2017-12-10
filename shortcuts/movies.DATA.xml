@@ -6,7 +6,7 @@
         <label2>Videos</label2>
         <icon>DefaultRecentlyAddedMovies.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,RecentlyAddedMovies,return)</action>
+        <action>ActivateWindow(VideoLibrary,RecentlyAddedMovies,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>20434</defaultID>
@@ -14,7 +14,7 @@
         <label2>Movies</label2>
         <icon>DefaultSets.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,MovieSets,return)</action>
+        <action>ActivateWindow(VideoLibrary,MovieSets,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>369</defaultID>
@@ -22,7 +22,7 @@
         <label2>Movies</label2>
         <icon>DefaultMovieTitle.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,MovieTitles,return)</action>
+        <action>ActivateWindow(VideoLibrary,MovieTitles,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>135</defaultID>
@@ -30,7 +30,7 @@
         <label2>Movies</label2>
         <icon>DefaultGenre.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,MovieGenres,return)</action>
+        <action>ActivateWindow(VideoLibrary,MovieGenres,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>562</defaultID>
@@ -38,7 +38,7 @@
         <label2>Movies</label2>
         <icon>DefaultYear.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,MovieYears,return)</action>
+        <action>ActivateWindow(VideoLibrary,MovieYears,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>344</defaultID>
@@ -46,7 +46,7 @@
         <label2>Movies</label2>
         <icon>DefaultActor.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,MovieActors,return)</action>
+        <action>ActivateWindow(VideoLibrary,MovieActors,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>20459</defaultID>
@@ -54,7 +54,7 @@
         <label2>Movies</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,MovieTags,return)</action>
+        <action>ActivateWindow(VideoLibrary,MovieTags,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>136</defaultID>
@@ -62,6 +62,6 @@
         <label2>Videos</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,Playlists,return)</action>
+        <action>ActivateWindow(VideoLibrary,Playlists,return)</action>
     </shortcut>
 </shortcuts>

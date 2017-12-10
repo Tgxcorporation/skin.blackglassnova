@@ -6,7 +6,7 @@
         <label2>Videos</label2>
         <icon>DefaultFolder.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,Files,return)</action>
+        <action>ActivateWindow(VideoLibrary,Files,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>1037</defaultID>
@@ -14,7 +14,7 @@
         <label2>Videos</label2>
         <icon>DefaultAddonVideo.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,Addons,return)</action>
+        <action>ActivateWindow(VideoLibrary,Addons,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>136</defaultID>
@@ -22,7 +22,7 @@
         <label2>Videos</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,Playlists,return)</action>
+        <action>ActivateWindow(VideoLibrary,Playlists,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>32046</defaultID>

@@ -51,7 +51,7 @@
             <texture>common/BlackDot.png</texture>
         </control>
         <control type="multiimage">
-            <visible>[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+            <visible>[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>KenBurns</include>
             <include>Dimensions_Fullscreen</include>
             <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
@@ -63,7 +63,7 @@
             <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
         </control>
         <control type="image">
-            <visible>[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+            <visible>[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>Dimensions_Fullscreen</include>
             <include>KenBurns</include>
             <fadetime>400</fadetime>
@@ -73,7 +73,7 @@
             <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
         </control>
         <control type="visualisation">
-            <visible>[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
+            <visible>[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
@@ -411,7 +411,7 @@
             </control>
             <include>TopBar</include>
             <control type="group" id="495678">
-                <visible>[[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|Player.HasVideo]+[window.isactive(AddonBrowser.xml)|window.isactive(FileManager.xml)|window.isactive(Home.xml)|window.isactive(MyMusicNav.xml)|window.isactive(MyMusicSongs.xml)|window.isactive(MyPics.xml)|window.isactive(MyPrograms.xml)|window.isactive(MyPVRChannels.xml)|window.isactive(MyPVRGuide.xml)|window.isactive(MyPVRRecordings.xml)|window.isactive(MyPVRSearch.xml)|window.isactive(MyPVRTimers.xml)|window.isactive(MyVideoNav.xml)|window.isactive(MyWeather.xml)|window.isactive(CustomAddons.xml)]</visible>
+                <visible>[[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]|Player.HasVideo]+[window.isactive(AddonBrowser.xml)|window.isactive(FileManager.xml)|window.isactive(Home.xml)|window.isactive(MyMusicNav.xml)|window.isactive(MyMusicSongs.xml)|window.isactive(MyPics.xml)|window.isactive(MyPrograms.xml)|window.isactive(MyPVRChannels.xml)|window.isactive(MyPVRGuide.xml)|window.isactive(MyPVRRecordings.xml)|window.isactive(MyPVRSearch.xml)|window.isactive(MyPVRTimers.xml)|window.isactive(MyVideoNav.xml)|window.isactive(MyWeather.xml)|window.isactive(CustomAddons.xml)]</visible>
                 <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">conditional</animation>
                 <animation effect="slide" start="0,-88" end="0,0" time="200">Visible</animation>
                 <animation effect="slide" start="0,0" end="0,-88" time="200">Hidden</animation>
@@ -424,7 +424,7 @@
                     <texture>common/bg_dialog.png</texture>
                 </control>
                 <control type="label">
-                    <visible>[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
+                    <visible>[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]</visible>
                     <posx>360</posx>
                     <posy>0</posy>
                     <height>46</height>
@@ -436,7 +436,7 @@
                     <label>$INFO[MusicPlayer.Artist,,  •  ]$INFO[MusicPlayer.Title,[COLOR=AlternateColor],[/COLOR]]</label>
                 </control>
                 <control type="label">
-                    <visible>[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
+                    <visible>[Player.HasAudio + IsEmpty(Window(videolibrary).Property(PlayingBackgroundMedia))]</visible>
                     <posx>1555</posx>
                     <posy>0</posy>
                     <height>46</height>

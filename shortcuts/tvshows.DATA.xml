@@ -6,7 +6,7 @@
 		<label2>Videos</label2>
 		<icon>DefaultRecentlyAddedEpisodes.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</action>
+		<action>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>626</defaultID>
@@ -14,7 +14,7 @@
 		<label2>Videos</label2>
 		<icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,library://video/tvshows/inprogressshows.xml,return)</action>
+		<action>ActivateWindow(VideoLibrary,library://video/tvshows/inprogressshows.xml,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>369</defaultID>
@@ -22,7 +22,7 @@
 		<label2>TV Shows</label2>
 		<icon>DefaultTVShowTitle.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,TvShowTitles,return)</action>
+		<action>ActivateWindow(VideoLibrary,TvShowTitles,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>135</defaultID>
@@ -30,7 +30,7 @@
 		<label2>TV Shows</label2>
         <icon>DefaultGenre.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,TvShowGenres,return)</action>
+		<action>ActivateWindow(VideoLibrary,TvShowGenres,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>562</defaultID>
@@ -38,7 +38,7 @@
 		<label2>TV Shows</label2>
         <icon>DefaultYear.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,TvShowYears,return)</action>
+		<action>ActivateWindow(VideoLibrary,TvShowYears,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>344</defaultID>
@@ -46,7 +46,7 @@
 		<label2>TV Shows</label2>
         <icon>DefaultActor.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,TvShowActors,return)</action>
+		<action>ActivateWindow(VideoLibrary,TvShowActors,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>20459</defaultID>
@@ -54,7 +54,7 @@
 		<label2>TV Shows</label2>
         <icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,TvShowTags,return)</action>
+		<action>ActivateWindow(VideoLibrary,TvShowTags,return)</action>
 	</shortcut>
 	<shortcut>
 		<defaultID>136</defaultID>
@@ -62,6 +62,6 @@
 		<label2>TV Shows</label2>
         <icon>DefaultShortcut.png</icon>
 		<thumb />
-		<action>ActivateWindow(Videos,Playlists,return)</action>
+		<action>ActivateWindow(VideoLibrary,Playlists,return)</action>
 	</shortcut>
 </shortcuts>

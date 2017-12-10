@@ -427,7 +427,7 @@
             <property name="uuid">Channels</property>
             <thumb background="true">$VAR[Plex.Channels.Icon.Management]</thumb>
             <icon background="true">$VAR[Plex.Channels.Background.Management]</icon>
-            <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
+            <onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?mode=22&amp;url=http://online%2fsystem%2fplugins%2fall",return)</onclick>
         </item>
         <item id="51">
             <visible>Skin.HasSetting(plexbmc) + !Skin.HasSetting(Queue.Hide)</visible>
@@ -603,7 +603,7 @@
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
             <visible>Container(300).HasFocus(50)</visible>
             <label>$LOCALIZE[157]</label>
-            <onclick>ActivateWindow(Videos,"plugin://plugin.video.plexbmc/?url=http://video&amp;mode=22",return)</onclick>
+            <onclick>ActivateWindow(VideoLibrary,"plugin://plugin.video.plexbmc/?url=http://video&amp;mode=22",return)</onclick>
         </item>
         <item id="53">
             <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>

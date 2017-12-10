@@ -2104,13 +2104,13 @@
                     <description>TV Shows</description>
                     <label>$LOCALIZE[20343]</label>
                     <include>LeftMenuButton</include>
-                    <onclick>ActivateWindow(Videos,TVShowTitles,Return)</onclick>
+                    <onclick>ActivateWindow(VideoLibrary,TVShowTitles,Return)</onclick>
                 </control>
                 <control type="button" id="401">
                     <description>Recently Added Episodes</description>
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[20387]</label>
-                    <onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,Return)</onclick>
+                    <onclick>ActivateWindow(VideoLibrary,RecentlyAddedEpisodes,Return)</onclick>
                 </control>
                 <control type="button" id="402">
                     <description>Update info</description>

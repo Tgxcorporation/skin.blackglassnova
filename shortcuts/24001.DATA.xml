@@ -14,7 +14,7 @@
         <label2>Videos</label2>
         <icon>DefaultShortcut.png</icon>
         <thumb/>
-        <action>ActivateWindow(Videos,Addons,return)</action>
+        <action>ActivateWindow(VideoLibrary,Addons,return)</action>
     </shortcut>
     <shortcut>
         <defaultID>1038</defaultID>
