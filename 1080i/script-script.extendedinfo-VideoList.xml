@@ -80,7 +80,6 @@
             <visible>!Skin.HasSetting(EnableKioskMode)</visible>
             <include>LeftMenu</include>
             <control type="group">
-                <visible>!Window.IsVisible(script-script.module.kodi65-t9search.xml)</visible>
                 <include>VisibleFadeEffect</include>
                 <control type="label">
                     <include>LeftMenuTitleLabel</include>
