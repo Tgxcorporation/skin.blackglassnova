@@ -59,7 +59,6 @@
         <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.2),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.2),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.3),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.3),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.4),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.4),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
-        <value condition="Window.IsVisible(DialogMusicInfo.xml)+Control.hasfocus(50)+StringCompare(ListItem.DBType,artist)">$INFO[Container(50).ListItem.Thumb]</value>
         <!--NORMAL-->
         <value condition="ListItem.IsParentFolder">$VAR[ThumbsFolderBack]</value>
         <value condition="Container.Content(episodes) + !IsEmpty(ListItem.thumb) + !SubString(ListItem.thumb,Default,left)">$INFO[ListItem.thumb]</value>
