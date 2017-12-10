@@ -88,7 +88,7 @@
                 </control>
                 <!-- COMMON -->
                 <control type="group">
-                    <visible>[ListItem.IsParentFolder+!Control.IsVisible(10)]|[[Control.IsVisible(11)|Control.IsVisible(12)|Control.IsVisible(13)]+IsEmpty(ListItem.Plot)]</visible>
+                    <visible>[StringCompare(ListItem.Label,..)+!Control.IsVisible(10)]|[[Control.IsVisible(11)|Control.IsVisible(12)|Control.IsVisible(13)]+IsEmpty(ListItem.Plot)]</visible>
                     <include>Icon_Fade</include>
                     <posy>37</posy>
                     <control type="image">

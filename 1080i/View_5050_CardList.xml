@@ -13,7 +13,7 @@
             <control type="group">
                 <posy>127</posy>
                 <control type="group">
-                    <visible>ListItem.IsParentFolder</visible>
+                    <visible>StringCompare(ListItem.Label,..)</visible>
                     <posx>725</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -26,7 +26,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!ListItem.IsParentFolder</visible>
+                    <visible>!StringCompare(ListItem.Label,..)</visible>
                     <posx>145</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -160,7 +160,7 @@
                 <include>ListFocusAnimationWide</include>
                 <posy>127</posy>
                 <control type="group">
-                    <visible>ListItem.IsParentFolder</visible>
+                    <visible>StringCompare(ListItem.Label,..)</visible>
                     <posx>725</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -173,7 +173,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!ListItem.IsParentFolder</visible>
+                    <visible>!StringCompare(ListItem.Label,..)</visible>
                     <posx>145</posx>
                     <posy>184</posy>
                     <control type="image">
@@ -315,7 +315,7 @@
             <control type="group">
                 <posy>127</posy>
                 <control type="group">
-                    <visible>ListItem.IsParentFolder</visible>
+                    <visible>StringCompare(ListItem.Label,..)</visible>
                     <posx>725</posx>
                     <control type="image">
                         <posx>0</posx>
@@ -327,7 +327,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!ListItem.IsParentFolder</visible>
+                    <visible>!StringCompare(ListItem.Label,..)</visible>
                     <posx>145</posx>
                     <control type="image">
                         <posx>-21</posx>
@@ -492,7 +492,7 @@
                 <include>ListFocusAnimationWide</include>
                 <posy>127</posy>
                 <control type="group">
-                    <visible>ListItem.IsParentFolder</visible>
+                    <visible>StringCompare(ListItem.Label,..)</visible>
                     <posx>725</posx>
                     <control type="image">
                         <posx>0</posx>
@@ -504,7 +504,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!ListItem.IsParentFolder</visible>
+                    <visible>!StringCompare(ListItem.Label,..)</visible>
                     <posx>145</posx>
                     <control type="image">
                         <posx>-21</posx>

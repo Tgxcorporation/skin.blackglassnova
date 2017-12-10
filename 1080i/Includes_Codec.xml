@@ -381,7 +381,7 @@
             <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
         </control>
         <control type="image">
-            <visible>!ListItem.IsParentFolder+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
+            <visible>!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
             <description>MPAA Image</description>
             <width>100</width>
             <height>60</height>
@@ -470,7 +470,7 @@
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.VideoCodec)|![[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]|SubString(ListItem.Filenameandpath,web)|SubString(ListItem.Filenameandpath,hdtv)|SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,right) | SubString(ListItem.Filenameandpath,.iso,right)|SubString(ListItem.Path,videodb://movies/sets,left)|SubString(Player.Filenameandpath,4k)]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.AudioChannels)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.AudioCodec)">Conditional</animation>
-            <visible>!ListItem.IsParentFolder+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
+            <visible>!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
             <description>MPAA Image</description>
             <posx>408</posx>
             <posy>0</posy>
@@ -484,7 +484,7 @@
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.VideoCodec)|![[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]|SubString(ListItem.Filenameandpath,web)|SubString(ListItem.Filenameandpath,hdtv)|SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,right) | SubString(ListItem.Filenameandpath,.iso,right)|SubString(ListItem.Path,videodb://movies/sets,left)|SubString(Player.Filenameandpath,4k)]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.AudioChannels)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.AudioCodec)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!ListItem.IsParentFolder+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <visible>ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)</visible>
             <description>3D Image</description>
             <posx>510</posx>
@@ -499,7 +499,7 @@
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.VideoCodec)|![[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]|SubString(ListItem.Filenameandpath,web)|SubString(ListItem.Filenameandpath,hdtv)|SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,right) | SubString(ListItem.Filenameandpath,.iso,right)|SubString(ListItem.Path,videodb://movies/sets,left)|SubString(Player.Filenameandpath,4k)]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.AudioChannels)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.AudioCodec)">Conditional</animation>
-            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!ListItem.IsParentFolder+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
+            <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="![ListItem.IsStereoscopic|SubString(ListItem.Filenameandpath,.3dbd.) | SubString(ListItem.Filenameandpath,.3d.)]">Conditional</animation>
             <posx>612</posx>
             <posy>0</posy>
@@ -556,7 +556,7 @@
             <texture>$INFO[ListItem.AudioCodec,badges/audio/,.png]</texture>
         </control>
         <control type="image">
-            <visible>!ListItem.IsParentFolder+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
+            <visible>!StringCompare(ListItem.Label,..)+[Container.Content(movies)|Container.Content(episodes)|Container.Content(musicvideos)]</visible>
             <description>MPAA Image</description>
             <width>90</width>
             <height>53</height>

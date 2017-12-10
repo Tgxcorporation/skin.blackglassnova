@@ -5,7 +5,7 @@
             [!Container.Content(Addons) + Window.IsActive(MyPics.xml) + !Skin.HasSetting(plexbmc) + !IsEmpty(ListItem.Date)]|
             [Container.Content(Albums) + !IsEmpty(ListItem.Artist)]|
             [Container.Content(Episodes) + !IsEmpty(ListItem.Duration)]|
-            [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !ListItem.IsParentFolder ]|
+            [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !StringCompare(ListItem.Label,..) ]|
             [Container.Content(Addons) + !IsEmpty(ListItem.Property(Addon.Creator))]|
             [Container.Content(Songs) + !IsEmpty(ListItem.Album)]|
             [Container.Content(Artists) + [!IsEmpty(ListItem.Property(artist_genre)) | !IsEmpty(ListItem.Property(artist_style))]]|
@@ -23,7 +23,7 @@
             [!Container.Content(Addons) + Window.IsActive(MyPics.xml) + !Skin.HasSetting(plexbmc) + !IsEmpty(ListItem.Date)]|
             [Container.Content(Albums) + !IsEmpty(ListItem.Artist)]|
             [Container.Content(Episodes) + !IsEmpty(ListItem.Duration)]|
-            [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !ListItem.IsParentFolder ]|
+            [Container.Content(Episodes) + Skin.HasSetting(plexbmc) + !StringCompare(ListItem.Label,..) ]|
             [Container.Content(Addons) + !IsEmpty(ListItem.Property(Addon.Creator))]|
             [Container.Content(Songs) + !IsEmpty(ListItem.Album)]|
             [Container.Content(Artists) + [!IsEmpty(ListItem.Property(artist_genre)) | !IsEmpty(ListItem.Property(artist_style))]]|

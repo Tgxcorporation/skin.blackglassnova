@@ -18,7 +18,7 @@
         <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)+!IsEmpty(ListItem.Property(DBID))">OverlayUnwatched.png</value>
     </variable>
     <variable name="Banner">
-        <value condition="ListItem.IsParentFolder+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)|Container.Content(sets)]">DefaultFolderBackBanner.png</value>
+        <value condition="StringCompare(ListItem.Label,..)+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)|Container.Content(sets)]">DefaultFolderBackBanner.png</value>
         <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
         <value condition="Skin.HasSetting(plexbmc)+Container.Content(episodes)">$INFO[ListItem.Property(banner)]</value>
         <value condition="Container.Content(episodes)">$INFO[ListItem.Art(tvshow.banner)]</value>
@@ -41,11 +41,11 @@
         <value condition="[Container.content(Genres)]">defaultGenreBig.png</value>
         <value condition="[Container.content(Playlists)]">defaultPlaylistBig.png</value>
         <value condition="[Container.content(tvshows)|Container.content(episodes)|Container.Content(Seasons)|Container.content(movies)|Container.content(musicvideos)]">defaultVideoBig.png</value>
-        <value condition="!ListItem.IsParentFolder+[Window.isActive(MyPVRChannels.xml)Window.isActive(MyPVRGuide.xml)]+!IsEmpty(Window.Property(IsRadio))">DefaultRadioBig.png</value>
-        <value condition="!ListItem.IsParentFolder+[Window.isActive(MyPVRChannels.xml)|Window.isActive(MyPVRGuide.xml)]+IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig.png</value>
-        <value condition="!ListItem.IsParentFolder+[Window.isActive(MyPVRRecordings.xml)]+!IsEmpty(Window.Property(IsRadio))">DefaultRadioBig_Wide.png</value>
-        <value condition="!ListItem.IsParentFolder+[Window.isActive(MyPVRRecordings.xml)]+IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig_Wide.png</value>
-        <value condition="!ListItem.IsParentFolder+[Container.content(LiveTV)]">defaultChannelTvBig.png</value>
+        <value condition="!StringCompare(ListItem.Label,..)+[Window.isActive(MyPVRChannels.xml)Window.isActive(MyPVRGuide.xml)]+!IsEmpty(Window.Property(IsRadio))">DefaultRadioBig.png</value>
+        <value condition="!StringCompare(ListItem.Label,..)+[Window.isActive(MyPVRChannels.xml)|Window.isActive(MyPVRGuide.xml)]+IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig.png</value>
+        <value condition="!StringCompare(ListItem.Label,..)+[Window.isActive(MyPVRRecordings.xml)]+!IsEmpty(Window.Property(IsRadio))">DefaultRadioBig_Wide.png</value>
+        <value condition="!StringCompare(ListItem.Label,..)+[Window.isActive(MyPVRRecordings.xml)]+IsEmpty(Window.Property(IsRadio))">defaultChannelTvBig_Wide.png</value>
+        <value condition="!StringCompare(ListItem.Label,..)+[Container.content(LiveTV)]">defaultChannelTvBig.png</value>
         <value condition="[Container.content(Addons)|Container.content(plugins)|Window.isActive(CustomAddons.xml)]">defaultExtensionBig.png</value>
         <value condition="[Container.content(Artists)|Container.content(Actors)|Container.content(directors)]">defaultArtistBig.png</value>
         <value condition="[Container.content(Albums)|Container.content(songs)]">defaultAudioBig.png</value>
@@ -60,7 +60,7 @@
         <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.3),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.3),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.4),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.4),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <!--NORMAL-->
-        <value condition="ListItem.IsParentFolder">$VAR[ThumbsFolderBack]</value>
+        <value condition="StringCompare(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
         <value condition="Container.Content(episodes) + !IsEmpty(ListItem.thumb) + !SubString(ListItem.thumb,Default,left)">$INFO[ListItem.thumb]</value>
         <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,left)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,left)">$INFO[ListItem.Icon]</value>
@@ -86,7 +86,7 @@
         <value condition="Container.content(tvshows) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
         <value condition="Container.content(tvshows)">$LOCALIZE[20343]$INFO[Container.FolderName, - ]</value>
         <value condition="Container.content(seasons)">$INFO[Container.FolderName,, - ]$LOCALIZE[33054]</value>
-        <value condition="Container.content(episodes)+ListItem.IsParentFolder">$INFO[Container.FolderName]</value>
+        <value condition="Container.content(episodes)+StringCompare(ListItem.Label,..)">$INFO[Container.FolderName]</value>
         <value condition="Container.content(episodes)">$INFO[ListItem.TVShowTitle,, - ]$LOCALIZE[20373] $INFO[ListItem.Season]</value>
         <value condition="Container.content(musicvideos) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389]</value>
         <value condition="Window.IsActive(MyVideoNav.xml)+SubString(Container.FolderPath,movies)">$LOCALIZE[20342]</value>
@@ -1238,8 +1238,8 @@
         <value>common/cdart.png</value>
     </variable>
     <variable name="MusicCdArt">
-        <!--<value condition="!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>-->
-        <value condition="!Skin.HasSetting(plexbmc)+!ListItem.IsParentFolder+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=common/cdart.png</value>
+        <!--<value condition="!Skin.HasSetting(plexbmc)+!StringCompare(ListItem.Label,..)+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>-->
+        <value condition="!Skin.HasSetting(plexbmc)+!StringCompare(ListItem.Label,..)+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=common/cdart.png</value>
     </variable>
     <variable name="VideoPlayerCdArt">
         <value condition="!IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>

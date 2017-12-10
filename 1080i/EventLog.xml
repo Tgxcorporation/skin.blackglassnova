@@ -28,7 +28,7 @@
             <include condition="!Skin.HasSetting(BlackGlassMode)">View_570_EventLog</include>
             <include condition="!Skin.HasSetting(BlackGlassMode)">Info_570_EventLog</include>
             <control type="group" id="81257">
-                <visible>[ListItem.IsParentFolder]|
+                <visible>[StringCompare(ListItem.Label,..)]|
                     [IsEmpty(ListItem.Property(Event.Description))]|
                     [control.hasfocus(60)]</visible>
                 <include>Icon_Fade</include>
@@ -53,7 +53,7 @@
                 <include condition="Skin.HasSetting(BlackGlassMode)">Info_570_EventLog_BG</include>
                 <!-- COMMON -->
                 <control type="group">
-                    <visible>[ListItem.IsParentFolder]|
+                    <visible>[StringCompare(ListItem.Label,..)]|
                         [IsEmpty(ListItem.Property(Event.Description))]</visible>
                     <include>Icon_Fade</include>
                     <control type="image">
