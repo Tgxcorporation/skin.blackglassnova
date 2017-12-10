@@ -964,7 +964,7 @@
                             <posx>324</posx>
                             <posy>309</posy>
                             <width>28</width>
-                            <height>28</height><?xml version="1.0" encoding="utf-8"?>
+                            <height>28</height>
                             <texture>$VAR[Overlay]</texture>
                         </control>
                     </control>
