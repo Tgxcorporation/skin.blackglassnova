@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
     <defaultcontrol always="true">50</defaultcontrol>
-    <onload condition="Skin.HasSetting(StopPlaybackOnMenu)">PlayerControl(stop)</onload>
     <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">OpenClose</include>
     <controls>
         <include>Fanart_Art</include>
@@ -10,23 +9,16 @@
         <control type="label">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitle</include>
-            <label>$LOCALIZE[3]</label>
+            <label>$LOCALIZE[2]</label>
         </control>
         <control type="label">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>WindowTitleSub</include>
             <label>$VAR[GlobalSubTitles]</label>
         </control>
-        <include>NowPlaying</include>
         <control type="group">
-            <include>HeaderSlideEffectTopBar</include>
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-154</posy>
-            <include name="WindowClosingButton">
-                <param name="id" value="0"/>
-                <param name="x" value="1637"/>
-                <param name="y" value="240"/>
-            </include>
             <control type="image">
                 <posx>233</posx>
                 <posy>244</posy>
@@ -49,7 +41,7 @@
                 <align>center</align>
                 <font>InfoTitleFont</font>
                 <textcolor>MainColor</textcolor>
-                <label>$LOCALIZE[10522]</label>
+                <label>$LOCALIZE[10517]</label>
             </control>
             <control type="panel" id="50">
                 <posx>278</posx>
@@ -71,6 +63,17 @@
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="label">
+                        <visible>String.IsEqual(ListItem.Label2,)</visible>
+                        <posx>25</posx>
+                        <height>71</height>
+                        <width>876</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListNoFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                        <scroll>false</scroll>
+                    </control>
+                    <control type="label">
+                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
                         <posx>25</posx>
                         <height>42</height>
                         <width>876</width>
@@ -80,13 +83,14 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
+                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
                         <posx>25</posx>
                         <posy>39</posy>
                         <height>28</height>
                         <width>876</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistNoFocusColor</textcolor>
-                        <label>$INFO[ListItem.Duration,, $LOCALIZE[31297]]</label>
+                        <label>$INFO[ListItem.Label2]</label>
                         <scroll>false</scroll>
                     </control>
                 </itemlayout>
@@ -99,6 +103,16 @@
                         <include>FacadeFocus</include>
                     </control>
                     <control type="label">
+                        <visible>String.IsEqual(ListItem.Label2,)</visible>
+                        <posx>25</posx>
+                        <height>71</height>
+                        <width>876</width>
+                        <font>FacadeListMainFont</font>
+                        <textcolor>ListFocusColor</textcolor>
+                        <label>$INFO[ListItem.Label]</label>
+                    </control>
+                    <control type="label">
+                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
                         <posx>25</posx>
                         <height>42</height>
                         <width>876</width>
@@ -107,13 +121,14 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
+                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
                         <posx>25</posx>
                         <posy>39</posy>
                         <height>28</height>
                         <width>876</width>
                         <font>FacadeListSubFont</font>
                         <textcolor>SublistFocusColor</textcolor>
-                        <label>$INFO[ListItem.Duration,, $LOCALIZE[31297]]</label>
+                        <label>$INFO[ListItem.Label2]</label>
                     </control>
                 </focusedlayout>
             </control>
@@ -203,18 +218,10 @@
                 <onleft>9001</onleft>
                 <onright>9001</onright>
             </control>
-            <!-- CDART VIDEO -->
-            <include name="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
-                <param name="x" value="1385"/>
-                <param name="y" value="792"/>
-                <param name="width" value="316"/>
-                <param name="height" value="316"/>
-                <param name="texture" value="$VAR[VideoCdArt]"/>
-            </include>
-            <include name="DiscArt">
-                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
-                <param name="x" value="1385"/>
+            <!-- CDART MUSIC -->
+            <include content="DiscArt">
+                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                <param name="x" value="1440"/>
                 <param name="y" value="792"/>
                 <param name="width" value="316"/>
                 <param name="height" value="316"/>
@@ -225,7 +232,7 @@
                 <posy>765</posy>
                 <width>370</width>
                 <height>370</height>
-                <include>EpisodeThumb</include>
+                <include>SquareThumb</include>
                 <include>ThumbBorder</include>
             </control>
             <control type="label" id="12">
