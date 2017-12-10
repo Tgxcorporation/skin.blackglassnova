@@ -266,8 +266,6 @@
                     <textcolor>MainColor</textcolor>
                     <label>$INFO[Container(300).ListItem.Label]</label>
                 </control>
-                <include condition="Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Fixed_HomeSubMenu</include>
-                <include condition="!Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Wrapped_HomeSubMenu</include>
                 <control type="button" id="9004">
                     <posx>0</posx>
                     <posy>845</posy>
@@ -275,6 +273,8 @@
                     <height>150</height>
                     <include>HiddenButton</include>
                 </control>
+                <include condition="Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Fixed_HomeSubMenu</include>
+                <include condition="!Skin.HasSetting(Fixed_HomeMenu)">Horizontal_Wrapped_HomeSubMenu</include>
                 <control type="button" id="9002">
                     <posx>0</posx>
                     <posy>845</posy>
