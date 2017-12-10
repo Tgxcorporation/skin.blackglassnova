@@ -152,6 +152,7 @@
                 <onleft>9900</onleft>
                 <onright>9900</onright>
                 <onup>9000</onup>
+                <ondown condition="Window.IsActive(DialogFavourites.xml)">9000</ondown>
                 <ondown condition="Window.IsActive(Home.xml)">300</ondown>
                 <ondown>9000</ondown>
                 <itemgap>10</itemgap>
