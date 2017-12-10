@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+    <include>DialogOpenClose</include>
+    <controls>
+        <control type="group">
+            <control type="image" id="901">
+                <posx>1881</posx>
+                <posy>-25</posy>
+                <width>64</width>
+                <height>64</height>
+                <texture>VolumeMuted.png</texture>
+                <animation effect="fade" start="65" time="3000" condition="true" pulse="true">Conditional</animation>
+                <animation effect="zoom" start="100" end="70" time="100" center="auto" condition="Pvr.IsRecording">Conditional</animation>
+            </control>
+        </control>
+    </controls>
+</window>
