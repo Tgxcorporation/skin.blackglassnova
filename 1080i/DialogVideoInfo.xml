@@ -244,14 +244,12 @@
                                     <label2>$INFO[ListItem.StereoscopicMode]</label2>
                                     <onclick>noop</onclick>
                                     <visible>!IsEmpty(ListItem.StereoscopicMode)</visible>
-                                    <visible>!Skin.HasSetting(plexbmc)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[573]:</label>
                                     <label2>$INFO[ListItem.Path]</label2>
                                     <onclick>Dialog.Close(movieinformation)</onclick>
                                     <onclick>ActivateWindow(VideoLibrary,$INFO[ListItem.Path],return)</onclick>
-                                    <visible>!Skin.HasSetting(plexbmc)</visible>
                                 </item>
                                 <item>
                                     <label>$LOCALIZE[21800]:</label>
@@ -381,14 +379,12 @@
                                         <label2>$INFO[ListItem.Season]</label2>
                                         <onclick>noop</onclick>
                                         <visible>!IsEmpty(ListItem.Season)</visible>
-                                        <visible>!Skin.HasSetting(plexbmc)</visible>
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[20359]:</label>
                                         <label2>$INFO[ListItem.Episode]</label2>
                                         <onclick>noop</onclick>
                                         <visible>!IsEmpty(ListItem.Episode)</visible>
-                                        <visible>!Skin.HasSetting(plexbmc)</visible>
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[515]:</label>
@@ -533,14 +529,12 @@
                                         <label2>$INFO[ListItem.StereoscopicMode]</label2>
                                         <onclick>noop</onclick>
                                         <visible>!IsEmpty(ListItem.StereoscopicMode)</visible>
-                                        <visible>!Skin.HasSetting(plexbmc)</visible>
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[573]:</label>
                                         <label2>$INFO[ListItem.Path]</label2>
                                         <onclick>Dialog.Close(movieinformation)</onclick>
                                         <onclick>ActivateWindow(VideoLibrary,$INFO[ListItem.Path],return)</onclick>
-                                        <visible>!Skin.HasSetting(plexbmc)</visible>
                                     </item>
                                     <item>
                                         <label>$LOCALIZE[21800]:</label>
@@ -1011,7 +1005,7 @@
                     </control>
                     <control type="togglebutton" id="9010">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
-                        <visible>StringCompare(ListItem.DBType,movie)|StringCompare(ListItem.DBType,tvshow)|[StringCompare(ListItem.DBType,episode)+Skin.HasSetting(plexbmc)+!SubString(ListItem.Title,Season,left)+IsEmpty(ListItem.VideoCodec)]</visible>
+                        <visible>StringCompare(ListItem.DBType,movie)|StringCompare(ListItem.DBType,tvshow)</visible>
                         <visible>![!StringCompare(Container.FolderPath,videodb://tvshows/titles/) + SubString(Container.FolderPath,videodb://tvshows/titles/,left) + !StringCompare(ListItem.DBType,episode)]</visible>
                         <description>Extended Info</description>
                         <include>RightDialogButton</include>

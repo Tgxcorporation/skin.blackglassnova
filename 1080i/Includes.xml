@@ -4,7 +4,6 @@
 
     CUSTOM WINDOWS LIST
     _1114 Quit * define Quit menu
-    _1115 CustomPlexHomeSettings.xml * Plex Items Settings
     _1118 Custom_FullscreenMusic * start fullscreen audio playback
     _1119 CustomAddons * browse addons united under the same roof
     _1120 CustomStartupWindow.xml * define startup window
@@ -19,13 +18,10 @@
     <include file="Includes_Expressions.xml"/>
     <include file="defaults.xml"/>
     <include file="Includes_Home_Common.xml"/>
-    <include file="Includes_Home_Common_Plexbmc.xml"/>
     <include file="Includes_Horizontal_Home.xml"/>
     <include file="Includes_Horizontal_Home_BG.xml"/>
     <include file="Includes_Vertical_Home.xml"/>
-    <include file="Includes_Shelf_Plexbmc_Contents.xml"/>
     <include file="Includes_Weather.xml"/>
-    <include file="Includes_SkinShortcuts.xml"/>
     <include file="View_50.xml"/>
     <include file="View_50_BG.xml"/>
     <include file="View_51_Panel.xml"/>
@@ -40,7 +36,6 @@
     <include file="View_5050_CardList.xml"/>
     <include file="View_PVR.xml"/>
     <include file="View_PVR_BG.xml"/>
-    <include file="script-skinshortcuts-includes.xml"/>
     <include name="Player_Show">
         <control type="image">
             <visible>Player.HasVideo + Skin.HasSetting(Show_Player)</visible>
@@ -152,6 +147,7 @@
                 <onleft>9900</onleft>
                 <onright>9900</onright>
                 <onup>9000</onup>
+                <ondown condition="Window.IsActive(DialogFavourites.xml)">9000</ondown>
                 <ondown condition="Window.IsActive(Home.xml)">300</ondown>
                 <ondown>9000</ondown>
                 <itemgap>10</itemgap>
@@ -254,6 +250,7 @@
                     <onclick>ActivateWindow(Settings,return)</onclick>
                 </control>
                 <control type="button" id="1626">
+                    <visible>!System.Platform.IOS + !System.Platform.TVOS</visible>
                     <include>TopBarButton</include>
                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_shutdown_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>
@@ -891,7 +888,7 @@
             </control>
             <control type="label">
                 <posx>645r</posx>
-                <visible>!StringCompare(ListItem.Label,) + [!StringCompare(ListItem.Label2,$LOCALIZE[106])+!StringCompare(ListItem.Label2,$LOCALIZE[107])]</visible>
+                <visible>!StringCompare(ListItem.Label,)</visible>
                 <height>71</height>
                 <width>600</width>
                 <align>right</align>
@@ -910,24 +907,6 @@
                 <textcolor>AlternateColor</textcolor>
                 <label>$INFO[ListItem.Label2]</label>
                 <scroll>false</scroll>
-            </control>
-            <control type="image">
-                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[106])</visible>
-                <posx>1128</posx>
-                <posy>0</posy>
-                <height>73</height>
-                <width>58</width>
-                <aspectratio align="right" aligny="center">keep</aspectratio>
-                <texture>buttons/RadioOffNF.png</texture>
-            </control>
-            <control type="image">
-                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[107])</visible>
-                <posx>1128</posx>
-                <posy>0</posy>
-                <height>73</height>
-                <width>58</width>
-                <aspectratio align="right" aligny="center">keep</aspectratio>
-                <texture>buttons/RadioOnNF.png</texture>
             </control>
         </itemlayout>
         <focusedlayout width="1231" height="73">
@@ -949,7 +928,7 @@
             </control>
             <control type="label">
                 <posx>645r</posx>
-                <visible>!StringCompare(ListItem.Label,) + [!StringCompare(ListItem.Label2,$LOCALIZE[106])+!StringCompare(ListItem.Label2,$LOCALIZE[107])]</visible>
+                <visible>!StringCompare(ListItem.Label,)</visible>
                 <height>71</height>
                 <width>600</width>
                 <align>right</align>
@@ -966,24 +945,6 @@
                 <font>LeftMenuTitleFont</font>
                 <textcolor>MainColor</textcolor>
                 <label>$INFO[ListItem.Label2]</label>
-            </control>
-            <control type="image">
-                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[106])</visible>
-                <posx>1128</posx>
-                <posy>0</posy>
-                <height>73</height>
-                <width>58</width>
-                <aspectratio align="right" aligny="center">keep</aspectratio>
-                <texture>buttons/RadioOffFO.png</texture>
-            </control>
-            <control type="image">
-                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[107])</visible>
-                <posx>1128</posx>
-                <posy>0</posy>
-                <height>73</height>
-                <width>58</width>
-                <aspectratio align="right" aligny="center">keep</aspectratio>
-                <texture>buttons/RadioOnFO.png</texture>
             </control>
         </focusedlayout>
     </include>
@@ -1295,7 +1256,7 @@
     </include>
     <include name="DiscArt">
         <control type="group">
-            <visible>!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableCdArt)</visible>
+            <visible>Skin.HasSetting(EnableCdArt)</visible>
             <visible>$PARAM[visible]</visible>
             <include>VisibleFadeEffectDelay</include>
             <control type="image">
@@ -1311,7 +1272,7 @@
     </include>
     <include name="StudioArt">
         <control type="group">
-            <visible>!Skin.HasSetting(plexbmc)+Skin.HasSetting(EnableStudioArt)</visible>
+            <visible>Skin.HasSetting(EnableStudioArt)</visible>
             <control type="image">
                 <animation effect="slide" start="0,0" end="1,1" time="0" reversible="false" condition="true">Conditional</animation>
                 <visible>$PARAM[visible]</visible>

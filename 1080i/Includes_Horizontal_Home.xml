@@ -59,8 +59,7 @@
             </control>
         </focusedlayout>
         <content>
-            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
-            <include>skinshortcuts-submenu</include>
+            <include>Home.Submenu.Items</include>
         </content>
     </include>
     <include name="Horizontal_Fixed_HomeSubMenu">
@@ -142,8 +141,7 @@
             </control>
         </focusedlayout>
         <content>
-            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Items</include>
-            <include>skinshortcuts-mainmenu</include>
+            <include>Home.Main.Menu.Items</include>
         </content>
     </include>
     <include name="Horizontal_Fixed_HomeMenu">
@@ -299,16 +297,6 @@
                     <width>1920</width>
                     <itemgap>0</itemgap>
                     <align>center</align>
-                    <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(212)">212</onup>
-                    <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(311)">311</onup>
-                    <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(411)">411</onup>
-                    <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(511)">511</onup>
-                    <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(900)">900</onup>
-                    <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(901)">901</onup>
-                    <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(312)">312</onup>
-                    <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(412)">412</onup>
-                    <onup condition="Skin.HasSetting(plexbmc)+Container(413).HasFocus(413)">413</onup>
-                    <onup condition="Skin.HasSetting(plexbmc)+Container(701).HasFocus(411)">411</onup>
                     <onup condition="control.isvisible(700011)+Container(701).HasFocus(700011)">700011</onup>
                     <onup condition="control.isvisible(700012)+Container(701).HasFocus(700012)">700012</onup>
                     <onup condition="control.isvisible(700013)+Container(701).HasFocus(700013)">700013</onup>

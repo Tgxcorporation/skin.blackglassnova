@@ -2,11 +2,8 @@
 <window>
     <backgroundcolor>0</backgroundcolor>
     <defaultcontrol always="true">9000</defaultcontrol>
-    <!--<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;group=CustomGroupName1|pictures|CustomGroupName2|addons|CustomGroupName3|videos|CustomGroupName4|movies|CustomGroupName5|tvshows|CustomGroupName6|music|CustomGroupName7|clips|concerts|CustomGroupName8|livetv|radio|favourites|CustomGroupName9|dvd|weather|settings|quit)</onunload>-->
-    <!--<onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;levels=0)</onunload>-->
-    <onunload>RunScript(script.skinshortcuts,type=buildxml&amp;mode=single&amp;options=clonewidgets&amp;mainmenuID=300)</onunload>
-    <animation effect="fade" time="150" condition="![Window.Previous(SettingsCategory.xml)|Window.Previous(Settings.xml)|Window.Previous(script-skinshortcuts.xml)]">WindowOpen</animation>
-    <animation effect="fade" time="150" condition="![Window.Next(SettingsCategory.xml)|Window.Next(Settings.xml)|Window.Next(script-skinshortcuts.xml)]">WindowClose</animation>
+    <animation effect="fade" time="150" condition="![Window.Previous(SettingsCategory.xml)|Window.Previous(Settings.xml)]">WindowOpen</animation>
+    <animation effect="fade" time="150" condition="![Window.Next(SettingsCategory.xml)|Window.Next(Settings.xml)]">WindowClose</animation>
     <controls>
         <include>Fanart_Art</include>
         <include>Player_Show</include>
@@ -145,6 +142,7 @@
                     </item>
                     <!--QUIT MENU-->
                     <item id="7">
+                        <visible>!System.Platform.IOS + !System.Platform.TVOS</visible>
                         <label>[CAPITALIZE]$LOCALIZE[31990][/CAPITALIZE]</label>
                         <onclick>noop</onclick>
                     </item>
@@ -328,20 +326,6 @@
                                 <label2>$LOCALIZE[107]</label2>
                                 <onclick>Skin.ToggleSetting(EnableKioskMode)</onclick>
                             </item>
-                            <item id="250">
-                                <visible>System.HasAddon(plugin.video.plexbmc) + !Skin.HasSetting(plexbmc)</visible>
-                                <label>Kodi / PleXBMC</label>
-                                <label2>Kodi</label2>
-                                <onclick>Skin.ToggleSetting(plexbmc)</onclick>
-                                <onclick>ReloadSkin()</onclick>
-                            </item>
-                            <item id="250">
-                                <visible>System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)</visible>
-                                <label>Kodi / PleXBMC</label>
-                                <label2>PleXBMC</label2>
-                                <onclick>Skin.ToggleSetting(plexbmc)</onclick>
-                                <onclick>ReloadSkin()</onclick>
-                            </item>
                             <item id="251">
                                 <visible>!Skin.HasSetting(BlackGlassMode)</visible>
                                 <label>Black Glass Nova / Black Glass</label>
@@ -367,13 +351,7 @@
                             </item>
                             <item id="125">
                                 <label>$LOCALIZE[31038]</label>
-                                <onclick>RunScript(script.skinshortcuts,type=resetall&amp;warning=false)</onclick>
                                 <onclick>Skin.ResetSettings</onclick>
-                                <onclick>ReloadSkin()</onclick>
-                            </item>
-                            <item id="126">
-                                <label>$LOCALIZE[31944]</label>
-                                <onclick>RunScript(script.skinshortcuts,type=resetall&amp;warning=false)</onclick>
                                 <onclick>ReloadSkin()</onclick>
                             </item>
                             <item id="127">
@@ -977,51 +955,26 @@
                                 <thumb>$INFO[Skin.String(Videos.Background)]</thumb>
                             </item>
                             <item id="2">
-                                <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <visible>Library.HasContent(Movies)</visible>
                                 <label>$LOCALIZE[20342]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Movies.jpg</icon>
                                 <thumb>$INFO[Skin.String(Movies.Background)]</thumb>
                             </item>
-                            <item id="2">
-                                <visible>Skin.HasSetting(plexbmc)</visible>
-                                <label>$LOCALIZE[20342]</label>
-                                <onclick>Control.Move(9004,-1)</onclick>
-                                <icon>special://skin/backgrounds/Movies.jpg</icon>
-                                <thumb>$INFO[Skin.String(Movies.Background)]</thumb>
-                            </item>
                             <item id="3">
-                                <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <visible>Library.HasContent(TVShows)</visible>
                                 <label>$LOCALIZE[20343]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/TVShows.jpg</icon>
                                 <thumb>$INFO[Skin.String(TVShows.Background)]</thumb>
                             </item>
-                            <item id="3">
-                                <visible>Skin.HasSetting(plexbmc)</visible>
-                                <label>$LOCALIZE[20343]</label>
-                                <onclick>Control.Move(9004,-1)</onclick>
-                                <icon>special://skin/backgrounds/TVShows.jpg</icon>
-                                <thumb>$INFO[Skin.String(TVShows.Background)]</thumb>
-                            </item>
                             <item id="4">
-                                <visible>!Skin.HasSetting(plexbmc)</visible>
-                                <label>$LOCALIZE[2]</label>
-                                <onclick>Control.Move(9004,-1)</onclick>
-                                <icon>special://skin/backgrounds/Music.jpg</icon>
-                                <thumb>$INFO[Skin.String(Music.Background)]</thumb>
-                            </item>
-                            <item id="4">
-                                <visible>Skin.HasSetting(plexbmc)</visible>
                                 <label>$LOCALIZE[2]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Music.jpg</icon>
                                 <thumb>$INFO[Skin.String(Music.Background)]</thumb>
                             </item>
                             <item id="13">
-                                <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <visible>Library.HasContent(MusicVideos)</visible>
                                 <label>$LOCALIZE[31972]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
@@ -1029,7 +982,6 @@
                                 <thumb>$INFO[Skin.String(Clips.Background)]</thumb>
                             </item>
                             <item id="14">
-                                <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <visible>Library.HasContent(MusicVideos)</visible>
                                 <label>$LOCALIZE[31971]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
@@ -1037,14 +989,12 @@
                                 <thumb>$INFO[Skin.String(Concerts.Background)]</thumb>
                             </item>
                             <item id="5">
-                                <visible>!Skin.HasSetting(plexbmc)</visible>
                                 <label>$LOCALIZE[1]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Pictures.jpg</icon>
                                 <thumb>$INFO[Skin.String(Pictures.Background)]</thumb>
                             </item>
                             <item id="5">
-                                <visible>Skin.HasSetting(plexbmc)</visible>
                                 <label>$LOCALIZE[1]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Pictures.jpg</icon>
@@ -1081,6 +1031,7 @@
                                 <thumb>$INFO[Skin.String(DVD.Background)]</thumb>
                             </item>
                             <item id="11">
+                                <visible>!System.Platform.IOS + !System.Platform.TVOS</visible>
                                 <label>$LOCALIZE[13009]</label>
                                 <onclick>Control.Move(9004,-1)</onclick>
                                 <icon>special://skin/backgrounds/Quit.jpg</icon>
@@ -1247,56 +1198,56 @@
                             <onclick condition="Container(9004).HasFocus(14)">Skin.SetPath(Concerts.Background)</onclick>
                         </control>
                         <control type="radiobutton" id="307">
-                            <visible>Container(9004).HasFocus(0)+!Skin.HasSetting(plexbmc)</visible>
+                            <visible>Container(9004).HasFocus(0)</visible>
                             <selected>Skin.HasSetting(Default.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Default.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="303">
-                            <visible>Container(9004).HasFocus(1)+!Skin.HasSetting(plexbmc)</visible>
+                            <visible>Container(9004).HasFocus(1)</visible>
                             <selected>Skin.HasSetting(Videos.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Videos.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="304">
-                            <visible>Container(9004).HasFocus(2)+!Skin.HasSetting(plexbmc)</visible>
+                            <visible>Container(9004).HasFocus(2)</visible>
                             <selected>Skin.HasSetting(Movies.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Movies.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="305">
-                            <visible>Container(9004).HasFocus(3)+!Skin.HasSetting(plexbmc)</visible>
+                            <visible>Container(9004).HasFocus(3)</visible>
                             <selected>Skin.HasSetting(TVShows.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(TVShows.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="306">
-                            <visible>Container(9004).HasFocus(4)+!Skin.HasSetting(plexbmc)</visible>
+                            <visible>Container(9004).HasFocus(4)</visible>
                             <selected>Skin.HasSetting(Music.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Music.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="308">
-                            <visible>Container(9004).HasFocus(5)+!Skin.HasSetting(plexbmc)</visible>
+                            <visible>Container(9004).HasFocus(5)</visible>
                             <selected>Skin.HasSetting(Pictures.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(Pictures.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="309">
-                            <visible>Container(9004).HasFocus(13)+!Skin.HasSetting(plexbmc)</visible>
+                            <visible>Container(9004).HasFocus(13)</visible>
                             <selected>Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
                             <onclick>Skin.ToggleSetting(MusicVideos.Background.EnableRandomFanart)</onclick>
                         </control>
                         <control type="radiobutton" id="310">
-                            <visible>Container(9004).HasFocus(14)+!Skin.HasSetting(plexbmc)</visible>
+                            <visible>Container(9004).HasFocus(14)</visible>
                             <selected>Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)</selected>
                             <include>SkinSettingsButton</include>
                             <label>$LOCALIZE[590]         </label>
@@ -1353,17 +1304,6 @@
                         <include>SkinSettings_DefaultLayout</include>
                         <content>
                             <!--GENERAL-->
-                            <item id="59">
-                                <label>$LOCALIZE[31034]</label>
-                                <label2>-</label2>
-                                <onclick>RunScript(script.skinshortcuts,type=manage&amp;nolabels=True&amp;group=mainmenu)</onclick>
-                            </item>
-                            <item id="58">
-                                <visible>Skin.HasSetting(plexbmc)</visible>
-                                <label>$LOCALIZE[31045]</label>
-                                <label2>-</label2>
-                                <onclick>ActivateWindow(1115)</onclick>
-                            </item>
                             <item id="60">
                                 <visible>Skin.HasSetting(VerticalHome)</visible>
                                 <label>$LOCALIZE[31994]</label>
@@ -1425,6 +1365,336 @@
                                 <label>$LOCALIZE[31116]</label>
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(DisableWidgetLimit)</onclick>
+                            </item>
+                            <item id="1003">
+                                <label/>
+                                <label2>$LOCALIZE[31974]</label2>
+                                <onclick>noop</onclick>
+                            </item>
+                            <!--<item id="21">-->
+                                <!--<visible>!IsEmpty(Skin.String(CustomHome.1.Path))</visible>-->
+                                <!--<label>$INFO[Skin.String(CustomHome.1.Label)]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.1)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="21">-->
+                                <!--<visible>IsEmpty(Skin.String(CustomHome.1.Path))</visible>-->
+                                <!--<label>$LOCALIZE[504]</label>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.1.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.1)</onclick>-->
+                            <!--</item>-->
+                            <item id="1">
+                                <visible>!Skin.HasSetting(Pictures.Hide)</visible>
+                                <label>$LOCALIZE[1]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Pictures.Hide)</onclick>
+                            </item>
+                            <item id="1">
+                                <visible>Skin.HasSetting(Pictures.Hide)</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[1][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/Pictures.jpg">$INFO[Skin.String(Pictures.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Pictures.Hide)</onclick>
+                            </item>
+                            <!--<item id="22">-->
+                                <!--<visible>!IsEmpty(Skin.String(CustomHome.2.Path))</visible>-->
+                                <!--<label>$INFO[Skin.String(CustomHome.2.Label)]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.2)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="22">-->
+                                <!--<visible>IsEmpty(Skin.String(CustomHome.2.Path))</visible>-->
+                                <!--<label>$LOCALIZE[504]</label>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.2.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.2)</onclick>-->
+                            <!--</item>-->
+                            <item id="2">
+                                <visible>!Skin.HasSetting(Addons.Hide)</visible>
+                                <label>$LOCALIZE[24001]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Addons.Hide)</onclick>
+                            </item>
+                            <item id="2">
+                                <visible>Skin.HasSetting(Addons.Hide)</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[24001][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Addons.Hide)</onclick>
+                            </item>
+                            <!--<item id="23">-->
+                                <!--<visible>!IsEmpty(Skin.String(CustomHome.3.Path))</visible>-->
+                                <!--<label>$INFO[Skin.String(CustomHome.3.Label)]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.3)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="23">-->
+                                <!--<visible>IsEmpty(Skin.String(CustomHome.3.Path))</visible>-->
+                                <!--<label>$LOCALIZE[504]</label>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.3.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.3)</onclick>-->
+                            <!--</item>-->
+                            <item id="3">
+                                <visible>!Skin.HasSetting(Videos.Hide)</visible>
+                                <label>$LOCALIZE[3]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Videos.Hide)</onclick>
+                            </item>
+                            <item id="3">
+                                <visible>Skin.HasSetting(Videos.Hide)</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[3][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/Videos.jpg">$INFO[Skin.String(Videos.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Videos.Hide)</onclick>
+                            </item>
+                            <!--<item id="24">-->
+                                <!--<visible>!IsEmpty(Skin.String(CustomHome.4.Path))</visible>-->
+                                <!--<label>$INFO[Skin.String(CustomHome.4.Label)]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.4)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="24">-->
+                                <!--<visible>IsEmpty(Skin.String(CustomHome.4.Path))</visible>-->
+                                <!--<label>$LOCALIZE[504]</label>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.4.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.4)</onclick>-->
+                            <!--</item>-->
+                            <item id="4">
+                                <visible>!Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
+                                <label>$LOCALIZE[20342]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Movies.Hide)</onclick>
+                            </item>
+                            <item id="4">
+                                <visible>Skin.HasSetting(Movies.Hide) + Library.HasContent(Movies)</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[20342][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/Movies.jpg">$INFO[Skin.String(Movies.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Movies.Hide)</onclick>
+                            </item>
+                            <!--<item id="25">-->
+                                <!--<visible>!IsEmpty(Skin.String(CustomHome.5.Path))</visible>-->
+                                <!--<label>$INFO[Skin.String(CustomHome.5.Label)]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.5)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="25">-->
+                                <!--<visible>IsEmpty(Skin.String(CustomHome.5.Path))</visible>-->
+                                <!--<label>$LOCALIZE[504]</label>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.5.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.5)</onclick>-->
+                            <!--</item>-->
+                            <item id="5">
+                                <visible>!Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
+                                <label>$LOCALIZE[20343]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(TVShows.Hide)</onclick>
+                            </item>
+                            <item id="5">
+                                <visible>Skin.HasSetting(TVShows.Hide) + Library.HasContent(TVShows)</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[20343][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(TVShows.Hide)</onclick>
+                            </item>
+                            <!--<item id="26">-->
+                                <!--<visible>!IsEmpty(Skin.String(CustomHome.6.Path))</visible>-->
+                                <!--<label>$INFO[Skin.String(CustomHome.6.Label)]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.6)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="26">-->
+                                <!--<visible>IsEmpty(Skin.String(CustomHome.6.Path))</visible>-->
+                                <!--<label>$LOCALIZE[504]</label>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.6.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.6)</onclick>-->
+                            <!--</item>-->
+                            <item id="6">
+                                <visible>!Skin.HasSetting(Music.Hide)</visible>
+                                <label>$LOCALIZE[2]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Music.Hide)</onclick>
+                            </item>
+                            <item id="6">
+                                <visible>Skin.HasSetting(Music.Hide)</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[2][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/Music.jpg">$INFO[Skin.String(Music.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Music.Hide)</onclick>
+                            </item>
+                            <!--<item id="27">-->
+                                <!--<visible>!IsEmpty(Skin.String(CustomHome.7.Path))</visible>-->
+                                <!--<label>$INFO[Skin.String(CustomHome.7.Label)]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.7)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="27">-->
+                                <!--<visible>IsEmpty(Skin.String(CustomHome.7.Path))</visible>-->
+                                <!--<label>$LOCALIZE[504]</label>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.7.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.7)</onclick>-->
+                            <!--</item>-->
+                            <item id="30">
+                                <visible>Skin.HasSetting(Clips.Show)</visible>
+                                <label>$LOCALIZE[31972]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Clips.Show)</onclick>
+                            </item>
+                            <item id="30">
+                                <visible>!Skin.HasSetting(Clips.Show)</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[31972][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/Clips.jpg">$INFO[Skin.String(Clips.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Clips.Show)</onclick>
+                            </item>
+                            <item id="31">
+                                <visible>Skin.HasSetting(Concerts.Show)</visible>
+                                <label>$LOCALIZE[31971]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Concerts.Show)</onclick>
+                            </item>
+                            <item id="31">
+                                <visible>!Skin.HasSetting(Concerts.Show)</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[31971][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/Concerts.jpg">$INFO[Skin.String(Concerts.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Concerts.Show)</onclick>
+                            </item>
+                            <!--<item id="28">-->
+                                <!--<visible>!IsEmpty(Skin.String(CustomHome.8.Path))</visible>-->
+                                <!--<label>$INFO[Skin.String(CustomHome.8.Label)]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.8)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="28">-->
+                                <!--<visible>IsEmpty(Skin.String(CustomHome.8.Path))</visible>-->
+                                <!--<label>$LOCALIZE[504]</label>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.8.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.8)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="32">-->
+                                <!--<visible>!Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>-->
+                                <!--<label>$LOCALIZE[31500]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/Tv.jpg">$INFO[Skin.String(Tv.Background)]</thumb>-->
+                                <!--<onclick>Skin.ToggleSetting(Tv.Hide)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="32">-->
+                                <!--<visible>Skin.HasSetting(Tv.Hide)+System.GetBool(pvrmanager.enabled)</visible>-->
+                                <!--<label>[COLOR=DisabledColor]$LOCALIZE[31500][/COLOR]</label>-->
+                                <!--<label2>$LOCALIZE[1223]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/Tv.jpg">$INFO[Skin.String(Tv.Background)]</thumb>-->
+                                <!--<onclick>Skin.ToggleSetting(Tv.Hide)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="33">-->
+                                <!--<visible>!Skin.HasSetting(Radio.Hide)+System.GetBool(pvrmanager.enabled)</visible>-->
+                                <!--<label>$LOCALIZE[19021]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/Radio.jpg">$INFO[Skin.String(Radio.Background)]</thumb>-->
+                                <!--<onclick>Skin.ToggleSetting(Radio.Hide)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="33">-->
+                                <!--<visible>Skin.HasSetting(Radio.Hide)+System.GetBool(pvrmanager.enabled)</visible>-->
+                                <!--<label>[COLOR=DisabledColor]$LOCALIZE[19021][/COLOR]</label>-->
+                                <!--<label2>$LOCALIZE[1223]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/Radio.jpg">$INFO[Skin.String(Radio.Background)]</thumb>-->
+                                <!--<onclick>Skin.ToggleSetting(Radio.Hide)</onclick>-->
+                            <!--</item>-->
+                            <item id="7">
+                                <visible>!Skin.HasSetting(Favourites.Hide)</visible>
+                                <label>$LOCALIZE[1036]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favorites.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Favourites.Hide)</onclick>
+                            </item>
+                            <item id="7">
+                                <visible>Skin.HasSetting(Favourites.Hide)</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[1036][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/Favourites.jpg">$INFO[Skin.String(Favorites.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Favourites.Hide)</onclick>
+                            </item>
+                            <!--<item id="29">-->
+                                <!--<visible>!IsEmpty(Skin.String(CustomHome.9.Path))</visible>-->
+                                <!--<label>$INFO[Skin.String(CustomHome.9.Label)]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.9)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="29">-->
+                                <!--<visible>IsEmpty(Skin.String(CustomHome.9.Path))</visible>-->
+                                <!--<label>$LOCALIZE[504]</label>-->
+                                <!--<thumb fallback="special://skin/backgrounds/default/default.jpg">$INFO[Skin.String(CustomHome.9.Background)]</thumb>-->
+                                <!--<onclick>RunScript(script.favourites,changetitle=true&amp;property=CustomHome.9)</onclick>-->
+                            <!--</item>-->
+                            <item id="8">
+                                <visible>!Skin.HasSetting(DVD.Hide) + !System.Platform.IOS + !System.Platform.TVOS</visible>
+                                <label>$LOCALIZE[427]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/DVD.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(DVD.Hide)</onclick>
+                            </item>
+                            <item id="8">
+                                <visible>Skin.HasSetting(DVD.Hide) + !System.Platform.IOS + !System.Platform.TVOS</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[427][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/DVD.jpg">$INFO[Skin.String(DVD.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(DVD.Hide)</onclick>
+                            </item>
+                            <item id="15">
+                                <visible>!Skin.HasSetting(Weather.Hide)</visible>
+                                <label>$LOCALIZE[8]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <onclick>Skin.ToggleSetting(Weather.Hide)</onclick>
+                            </item>
+                            <item id="15">
+                                <visible>Skin.HasSetting(Weather.Hide)</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[8][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <onclick>Skin.ToggleSetting(Weather.Hide)</onclick>
+                            </item>
+                            <item id="10">
+                                <visible>!Skin.HasSetting(Settings.Hide)</visible>
+                                <label>$LOCALIZE[5]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Settings.Hide)</onclick>
+                            </item>
+                            <item id="10">
+                                <visible>Skin.HasSetting(Settings.Hide)</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[5][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/Settings.jpg">$INFO[Skin.String(Settings.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Settings.Hide)</onclick>
+                            </item>
+                            <item id="11">
+                                <visible>!Skin.HasSetting(Quit.Hide) + !System.Platform.IOS + !System.Platform.TVOS</visible>
+                                <label>$LOCALIZE[13009]</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Quit.Hide)</onclick>
+                            </item>
+                            <item id="11">
+                                <visible>Skin.HasSetting(Quit.Hide) + !System.Platform.IOS + !System.Platform.TVOS</visible>
+                                <label>[COLOR=DisabledColor]$LOCALIZE[13009][/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <thumb fallback="special://skin/backgrounds/Quit.jpg">$INFO[Skin.String(Quit.Background)]</thumb>
+                                <onclick>Skin.ToggleSetting(Quit.Hide)</onclick>
                             </item>
                         </content>
                     </control>

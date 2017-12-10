@@ -21,6 +21,7 @@
             <include>HeaderSlideEffectTopBar</include>
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <control type="button" id="11">
+                <visible>!System.Platform.IOS + !System.Platform.TVOS</visible>
                 <posx>1387</posx>
                 <posy>266</posy>
                 <height>50</height>

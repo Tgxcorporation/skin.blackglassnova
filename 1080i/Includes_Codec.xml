@@ -303,7 +303,7 @@
             <texture>$INFO[Window.Property(AudioChannels),badges/audio/,.png]</texture>
         </control>
         <control type="image">
-            <visible>!IsEmpty(Window.Property(AudioCodec))</visible>
+            <visible>!IsEmpty(ListItem.AudioCodec) + !System.Platform.IOS + !System.Platform.TVOS</visible>
             <description>Audio Codec Image</description>
             <width>120</width>
             <height>80</height>
@@ -365,7 +365,7 @@
             <texture>$VAR[videocodec,badges/video/,.png]</texture>
         </control>
         <control type="image">
-            <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+            <visible>!IsEmpty(ListItem.AudioChannels)</visible>
             <description>Audio Codec Image</description>
             <width>100</width>
             <height>60</height>
@@ -373,7 +373,7 @@
             <texture>$INFO[ListItem.AudioChannels,badges/audio/,.png]</texture>
         </control>
         <control type="image">
-            <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+            <visible>!IsEmpty(ListItem.AudioCodec) + !System.Platform.IOS + !System.Platform.TVOS</visible>
             <description>Audio Codec Image</description>
             <width>100</width>
             <height>60</height>
@@ -456,7 +456,7 @@
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.VideoResolution)">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.VideoCodec)|![[SubString(ListItem(0).Filenameandpath,bluray) | SubString(ListItem(0).Filenameandpath,blu-ray) | SubString(ListItem(0).Filenameandpath,bdrip)]|SubString(ListItem.Filenameandpath,web)|SubString(ListItem.Filenameandpath,hdtv)|SubString(ListItem.Filenameandpath,dvd) | SubString(ListItem.Filenameandpath,.ifo,right) | SubString(ListItem.Filenameandpath,.iso,right)|SubString(ListItem.Path,videodb://movies/sets,left)|SubString(Player.Filenameandpath,4k)]">Conditional</animation>
             <animation effect="slide" start="0,0" end="-102,0" time="0" condition="IsEmpty(ListItem.AudioChannels)">Conditional</animation>
-            <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+            <visible>!IsEmpty(ListItem.AudioCodec) + !System.Platform.IOS + !System.Platform.TVOS</visible>
             <description>Audio Codec Image</description>
             <posx>306</posx>
             <posy>0</posy>
@@ -548,7 +548,7 @@
             <texture>$INFO[ListItem.AudioChannels,badges/audio/,.png]</texture>
         </control>
         <control type="image">
-            <visible>!IsEmpty(ListItem.AudioCodec)</visible>
+            <visible>!IsEmpty(ListItem.AudioCodec) + !System.Platform.IOS + !System.Platform.TVOS</visible>
             <description>Audio Codec Image</description>
             <width>90</width>
             <height>53</height>

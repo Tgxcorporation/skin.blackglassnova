@@ -169,6 +169,7 @@
                     <onclick>ActivateWindow(Settings,return)</onclick>
                 </control>
                 <control type="button" id="1626">
+                    <visible>!System.Platform.IOS + !System.Platform.TVOS</visible>
                     <include>TopBarButton</include>
                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_shutdown_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_shutdown_nofocus.png</texturenofocus>

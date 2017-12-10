@@ -141,7 +141,6 @@
                             <label>$INFO[MusicPlayer.TimeSpeed,, / ]$INFO[MusicPlayer.Duration]</label>
                         </control>
                         <control type="label">
-                            <visible>!Skin.HasSetting(plexbmc)</visible>
                             <posx>950</posx>
                             <posy>757</posy>
                             <height>66</height>
@@ -158,18 +157,7 @@
                             <height>90</height>
                             <texture border="3">list/bg_facade_nofocus_top.png</texture>
                         </control>
-                        <!-- <control type="label">
-                            <visible>!Skin.HasSetting(plexbmc)</visible>
-                            <posx>37</posx>
-                            <posy>825</posy>
-                            <height>66</height>
-                            <width>420</width>
-                            <font>NotificationFont</font>
-                            <textcolor>MainColor</textcolor>
-                            <label>$INFO[MusicPlayer.offset(-1).Title,[COLOR=AlternateColor]$LOCALIZE[210]: [/COLOR]]</label>
-                        </control> -->
                         <control type="label">
-                            <visible>!Skin.HasSetting(plexbmc)</visible>
                             <posx>950</posx>
                             <posy>835</posy>
                             <height>66</height>

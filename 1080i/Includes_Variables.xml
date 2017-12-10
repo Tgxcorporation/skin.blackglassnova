@@ -6,8 +6,6 @@
     </variable>
     <variable name="Overlay">
         <value condition="!Window.isvisible(Home.xml)+![Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets) | Container.HasFiles]">-</value>
-        <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
-        <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$INFO[ListItem.property(overlay)]</value>
         <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)">-</value>
         <value condition="Skin.HasSetting(Hide_Unwatched_Marks)">$INFO[ListItem.Overlay,overlay_watched/]</value>
         <value condition="Skin.HasSetting(Hide_Watched_Marks)">$INFO[ListItem.Overlay,overlay_unwatched/]</value>
@@ -20,9 +18,7 @@
     <variable name="Banner">
         <value condition="StringCompare(ListItem.Label,..)+[Container.Content(TVShows)|Container.Content(movies)|Container.Content(seasons)|Container.Content(sets)]">DefaultFolderBackBanner.png</value>
         <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
-        <value condition="Skin.HasSetting(plexbmc)+Container.Content(episodes)">$INFO[ListItem.Property(banner)]</value>
         <value condition="Container.Content(episodes)">$INFO[ListItem.Art(tvshow.banner)]</value>
-        <value condition="Skin.HasSetting(plexbmc)+[Container.Content(TVShows)|Container.Content(seasons)]">$INFO[ListItem.Property(banner)]</value>
         <value>$INFO[ListItem.Icon]</value>
     </variable>
     <variable name="ThumbsFolderBack">
@@ -71,8 +67,6 @@
         <value>$VAR[ThumbsMissing]</value>
     </variable>
     <variable name="GlobalSubTitles">
-        <value condition="Skin.hassetting(plexbmc) + !Window.IsActive(Home) + !IsEmpty(Window.Property(heading2))">$INFO[Window.Property(heading),,  •  ]$INFO[Window.Property(heading2)]</value>
-        <value condition="Skin.hassetting(plexbmc) + !Window.IsActive(Home) + !IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading)]</value>
         <value condition="Window.IsActive(56) | Window.IsActive(SkinSettings.xml)">$LOCALIZE[20077]</value>
         <value condition="Window.IsActive(Settings.xml) | Window.IsActive(SettingsCategory.xml)">$LOCALIZE[5]</value>
         <value condition="Window.IsActive(CustomAddons.xml)">$LOCALIZE[31291]</value>
@@ -354,6 +348,37 @@
         <value condition="StringCompare(Container(300).ListItem.Property(defaultID),weather)">$INFO[Window(Weather).Property(Location),,  •  ]$INFO[Window(Weather).Property(Current.Condition),,  •  ]$INFO[Window(Weather).Property(Current.Temperature)] $INFO[System.TemperatureUnits]</value>
         <value>$INFO[Container(300).ListItem.Label]</value>
     </variable>
+    <variable name="MovieEntryPoint">
+        <value condition="!IsEmpty(Skin.String(CustomMovie.1.Path))">$INFO[Skin.String(CustomMovie.1.Path)]</value>
+        <value condition="StringCompare(Skin.String(movie_entries),playlists)">ActivateWindow(Videos,Playlists,return)</value>
+        <value condition="StringCompare(Skin.String(movie_entries),files)">ActivateWindow(Videos,Files,return)</value>
+        <value condition="StringCompare(Skin.String(movie_entries),library)">ActivateWindow(Videos,Movies,return)</value>
+        <value>ActivateWindow(VideoLibrary,MovieTitles,return)</value>
+    </variable>
+    <variable name="MusicEntryPoint">
+        <value condition="[Library.HasContent(Music) | Library.HasServices] + !Skin.HasSetting(ArtistView)">ActivateWindow(Music,Artists,root)</value>
+        <value condition="![Library.HasContent(Music) | Library.HasServices]">ActivateWindow(Music,Files,return)</value>
+        <value condition="[Library.HasContent(Music) | Library.HasServices] + Skin.HasSetting(ArtistView)">ActivateWindow(Music,Artists)</value>
+    </variable>
+    <variable name="TvShowEntryPoint">
+        <value condition="!IsEmpty(Skin.String(CustomTvShow.1.Path))">$INFO[Skin.String(CustomTvShow.1.Path)]</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),playlists)">ActivateWindow(Videos,Playlists,return)</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),files)">ActivateWindow(Videos,Files,return)</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),library)">ActivateWindow(Videos,TvShows,return)</value>
+        <value>ActivateWindow(VideoLibrary,TVShowTitles,return)</value>
+    </variable>
+    <variable name="MovieEntryPointLabel2">
+        <value condition="!IsEmpty(Skin.String(CustomMovie.1.Path))">$INFO[Skin.String(CustomMovie.1.Label)]</value>
+        <value condition="StringCompare(Skin.String(movie_entries),playlists)">$LOCALIZE[136]</value>
+        <value condition="StringCompare(Skin.String(movie_entries),files)">$LOCALIZE[744]</value>
+        <value condition="StringCompare(Skin.String(movie_entries),library)">$LOCALIZE[15100]</value>
+    </variable>
+    <variable name="TvShowEntryPointLabel2">
+        <value condition="!IsEmpty(Skin.String(CustomTvShow.1.Path))">$INFO[Skin.String(CustomTvShow.1.Label)]</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),playlists)">$LOCALIZE[136]</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),files)">$LOCALIZE[744]</value>
+        <value condition="StringCompare(Skin.String(tvshows_entries),library)">$LOCALIZE[15100]</value>
+    </variable>
     <variable name="MusicPlayingFanartLabel2">
         <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>
         <value>$LOCALIZE[13113]</value>
@@ -370,7 +395,7 @@
     </variable>
     <variable name="Details">
         <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[ListItem.Year]$INFO[ListItem.Premiered,  •  ]</value>
-        <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml) + !Skin.HasSetting(plexbmc)">$INFO[ListItem.Date]$INFO[ListItem.Size,  •  ]</value>
+        <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date]$INFO[ListItem.Size,  •  ]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album) + !IsEmpty(ListItem.Year)">$INFO[ListItem.Artist]$INFO[ListItem.Year,  •  ]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album)">$INFO[ListItem.Artist]</value>
         <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]</value>
@@ -397,7 +422,7 @@
     </variable>
     <variable name="Details_BG">
         <value condition="Window.IsVisible(script-script.extendedinfo-VideoList.xml)">$INFO[ListItem.Year]$INFO[ListItem.Genre,  •  ]</value>
-        <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml) + !Skin.HasSetting(plexbmc)">$INFO[ListItem.Date]$INFO[ListItem.Size,  •  ]$INFO[ListItem.PictureResolution,  •  ]</value>
+        <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date]$INFO[ListItem.Size,  •  ]$INFO[ListItem.PictureResolution,  •  ]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album) + !IsEmpty(ListItem.Year)">$INFO[ListItem.Artist]$INFO[ListItem.Year,  •  ]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="Container.content(Albums) + !IsEmpty(ListItem.Album)">$INFO[ListItem.Artist]$INFO[ListItem.Genre,  •  ]</value>
         <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]$INFO[ListItem.Season,  •  S, x ]$INFO[ListItem.Episode,E,  •  ]$INFO[ListItem.TVShowTitle]</value>
@@ -483,13 +508,13 @@
         <value>resource://resource.images.weathericons.transparent/</value>
     </variable>
     <variable name="Default.Art">
-        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
+        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
         <value condition="Skin.HasSetting(BlackGlassMode)">special://skin/backgrounds/default/default2.jpg</value>
         <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Videos.Art">
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
+        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Videos.Background))">$INFO[Skin.String(Videos.Background)]</value>
         <value>special://skin/backgrounds/Videos.jpg</value>
     </variable>
@@ -502,17 +527,17 @@
         <value>special://skin/backgrounds/Quit.jpg</value>
     </variable>
     <variable name="Movies.Art">
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
+        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Movies.Background))">$INFO[Skin.String(Movies.Background)]</value>
         <value>special://skin/backgrounds/Movies.jpg</value>
     </variable>
     <variable name="TVShows.Art">
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
+        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
         <value condition="!IsEmpty(Skin.String(TVShows.Background))">$INFO[Skin.String(TVShows.Background)]</value>
         <value>special://skin/backgrounds/TVShows.jpg</value>
     </variable>
     <variable name="Music.Art">
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
+        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Music.Background))">$INFO[Skin.String(Music.Background)]</value>
         <value>special://skin/backgrounds/Music.jpg</value>
     </variable>
@@ -521,12 +546,12 @@
         <value>special://skin/backgrounds/Addons.jpg</value>
     </variable>
     <variable name="Concerts.Art">
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Concerts.Background))">$INFO[Skin.String(Concerts.Background)]</value>
         <value>special://skin/backgrounds/Concerts.jpg</value>
     </variable>
     <variable name="Clips.Art">
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Clips.Background))">$INFO[Skin.String(Clips.Background)]</value>
         <value>special://skin/backgrounds/Clips.jpg</value>
     </variable>
@@ -553,7 +578,7 @@
         <value>special://skin/backgrounds/Radio.jpg</value>
     </variable>
     <variable name="Pictures.Art">
-        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
+        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Pictures.Background))">$INFO[Skin.String(Pictures.Background)]</value>
         <value>special://skin/backgrounds/Pictures.jpg</value>
     </variable>
@@ -581,15 +606,13 @@
         <value condition="Window.IsActive(MyMusicPlaylistEditor.xml)|Window.IsActive(SmartPlaylistEditor.xml)|Window.IsActive(MusicVisualization.xml)|Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyPlaylist.xml)|Window.IsActive(MyMusicPlaylistEditor.xml)">$VAR[Music.Art]</value>
         <value condition="!IsEmpty(Window.Property(IsRadio))">$VAR[Radio.Art]</value>
         <value condition="Window.IsActive(DialogContentSettings.xml)|Window.IsActive(DialogPVRChannelManager.xml)|Window.IsActive(MyPVRChannels.xml)|Window.IsActive(MyPVRGuide.xml)|Window.IsActive(MyPVRRecordings.xml)|Window.IsActive(MyPVRSearch.xml)|Window.IsActive(MyPVRTimers.xml)">$VAR[Tv.Art]</value>
-        <value condition="Window.IsActive(CustomPlexHomeSettings.xml)|Window.IsActive(CustomStartupWindow.xml)">$VAR[Settings.Art]</value>
+        <value condition="Window.IsActive(CustomStartupWindow.xml)">$VAR[Settings.Art]</value>
         <value condition="Window.IsActive(Startup.xml)">$VAR[Default.Art]</value>
         <value condition="Window.IsActive(MyWeather.xml)">$VAR[Weather.Art]</value>
         <value condition="Window.IsActive(DialogFavourites.xml)">$VAR[Favourites.Art]</value>
         <value>$VAR[Default.Art]</value>
     </variable>
     <variable name="HomeBackgrounds">
-        <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(300).ListItem.Property(uuid),)+!IsEmpty(Container(300).ListItem.ActualIcon)">$INFO[Container(300).ListItem.ActualIcon]</value>
-        <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(300).ListItem.Property(uuid),)+IsEmpty(Container(300).ListItem.ActualIcon)">$INFO[Container(300).ListItem.Icon]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(background),defaultFanart)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(background),pictureFanart)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
         <value condition="StringCompare(Container(300).ListItem.Property(background),clipFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
@@ -624,8 +647,6 @@
         <value condition="Skin.HasSetting(DisableFanart)">$VAR[Default.Art]</value>
         <value condition="Skin.HasSetting(Home_DefaultBG)">$VAR[Default.Art]</value>
         <value condition="Skin.HasSetting(BlackGlassMode) + !Skin.HasSetting(VerticalHome)">-</value>
-        <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(211).ListItem.Property(uuid),)+!IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.ActualIcon]</value>
-        <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(211).ListItem.Property(uuid),)+IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.Icon]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),defaultFanart)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),pictureFanart)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),clipFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
@@ -655,8 +676,6 @@
         <value>$VAR[Default.Art]</value>
     </variable>
     <variable name="SkinShortcutBackgroundDescription">
-        <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(211).ListItem.Property(uuid),)+!IsEmpty(Container(211).ListItem.ActualIcon)">$INFO[Container(211).ListItem.ActualIcon]</value>
-        <value condition="Skin.HasSetting(plexbmc)+!StringCompare(Container(211).ListItem.Property(uuid),)+IsEmpty(Container(211).ListItem.ActualIcon)+!SubString(Container(211).ListItem.Icon,:/resources/)+!StringCompare(Container(211).ListItem.Icon,special://skin/backgrounds/Channels.jpg)+!StringCompare(Container(211).ListItem.Icon,special://skin/backgrounds/Queue.jpg)">$INFO[Container(211).ListItem.Icon]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),defaultFanart)">$LOCALIZE[31071]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),pictureFanart)">$LOCALIZE[31072]</value>
         <value condition="StringCompare(Container(211).ListItem.Property(background),clipFanart)">$LOCALIZE[31073]</value>
@@ -689,31 +708,7 @@
         <value condition="StringCompare(Container(211).ListItem.Property(skinshortcuts-disabled),True)">$LOCALIZE[24022]</value>
         <value>$LOCALIZE[24021]</value>
     </variable>
-    <variable name="SkinShortcutDisabledLabelPlex">
-        <value condition="[Container(211).HasFocus(30)+Skin.HasSetting(hide.plexbmc.0.title)]|
-                    [Container(211).HasFocus(31)+Skin.HasSetting(hide.plexbmc.1.title)]|
-                    [Container(211).HasFocus(32)+Skin.HasSetting(hide.plexbmc.2.title)]|
-                    [Container(211).HasFocus(33)+Skin.HasSetting(hide.plexbmc.3.title)]|
-                    [Container(211).HasFocus(34)+Skin.HasSetting(hide.plexbmc.4.title)]|
-                    [Container(211).HasFocus(35)+Skin.HasSetting(hide.plexbmc.5.title)]|
-                    [Container(211).HasFocus(36)+Skin.HasSetting(hide.plexbmc.6.title)]|
-                    [Container(211).HasFocus(37)+Skin.HasSetting(hide.plexbmc.7.title)]|
-                    [Container(211).HasFocus(38)+Skin.HasSetting(hide.plexbmc.8.title)]|
-                    [Container(211).HasFocus(39)+Skin.HasSetting(hide.plexbmc.9.title)]|
-                    [Container(211).HasFocus(40)+Skin.HasSetting(hide.plexbmc.10.title)]|
-                    [Container(211).HasFocus(50)+Skin.HasSetting(Channels.Hide)]|
-                    [Container(211).HasFocus(51)+Skin.HasSetting(Queue.Hide)]">$LOCALIZE[24022]</value>
-        <value>$LOCALIZE[24021]</value>
-    </variable>
     <variable name="WidgetsBackgrounds">
-        <!-- WIDGET PLEXBMC -->
-        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(311)">$INFO[Container(311).ListItem.Property(Art)]</value>
-        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(312)">$INFO[Container(312).ListItem.Property(Art)]</value>
-        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(511)">$INFO[Container(511).ListItem.Property(Art)]</value>
-        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(411)">$INFO[Container(411).ListItem.Property(Art)]</value>
-        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(412)">$INFO[Container(412).ListItem.Property(Art)]</value>
-        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(413)">$INFO[Container(413).ListItem.Property(Art)]</value>
-        <value condition="Skin.HasSetting(plexbmc)+Control.HasFocus(900)">$INFO[Container(900).ListItem.Property(Art)]</value>
         <!-- WIDGET 1 -->
         <value condition="Control.HasFocus(700011)+!IsEmpty(Container(700011).ListItem.Art(fanart))">$INFO[Container(700011).ListItem.Art(fanart)]</value>
         <value condition="Control.HasFocus(700012)+!IsEmpty(Container(700012).ListItem.Art(fanart))">$INFO[Container(700012).ListItem.Art(fanart)]</value>
@@ -971,205 +966,26 @@
         <value>$VAR[HomeBackgrounds]</value>
     </variable>
     <variable name="SkinSettings.RandomBackground.Art">
-        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(0)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(2)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(3)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(4)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
-        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(5)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(13)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(14)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+Container(9004).HasFocus(0)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
+        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+Container(9004).HasFocus(1)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
+        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+Container(9004).HasFocus(2)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
+        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+Container(9004).HasFocus(3)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
+        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+Container(9004).HasFocus(4)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
+        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+Container(9004).HasFocus(5)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+Container(9004).HasFocus(13)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+Container(9004).HasFocus(14)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
         <value>$INFO[Container(9004).ListItem.Icon]</value>
     </variable>
     <variable name="SkinSettings.RandomBackground.Label">
-        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(0)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(1)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(2)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(3)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(4)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(5)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(13)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+!Skin.HasSetting(plexbmc)+Container(9004).HasFocus(14)">$LOCALIZE[590]</value>
+        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+Container(9004).HasFocus(0)">$LOCALIZE[590]</value>
+        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+Container(9004).HasFocus(1)">$LOCALIZE[590]</value>
+        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+Container(9004).HasFocus(2)">$LOCALIZE[590]</value>
+        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+Container(9004).HasFocus(3)">$LOCALIZE[590]</value>
+        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+Container(9004).HasFocus(4)">$LOCALIZE[590]</value>
+        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+Container(9004).HasFocus(5)">$LOCALIZE[590]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+Container(9004).HasFocus(13)">$LOCALIZE[590]</value>
+        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+Container(9004).HasFocus(14)">$LOCALIZE[590]</value>
         <value>$INFO[Container(9004).ListItem.Thumb]</value>
-    </variable>
-    <variable name="Plex.0.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.0.Background))">$INFO[Skin.String(Plexbmc.0.Background)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.0.art))">$INFO[Window(Home).Property(plexbmc.0.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.1.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.1.Background))">$INFO[Skin.String(Plexbmc.1.Background)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.1.art))">$INFO[Window(Home).Property(plexbmc.1.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.2.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.2.Background))">$INFO[Skin.String(Plexbmc.2.Background)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.2.art))">$INFO[Window(Home).Property(plexbmc.2.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.3.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.3.Background))">$INFO[Skin.String(Plexbmc.3.Background)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.3.art))">$INFO[Window(Home).Property(plexbmc.3.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.4.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.4.Background))">$INFO[Skin.String(Plexbmc.4.Background)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.4.art))">$INFO[Window(Home).Property(plexbmc.4.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.5.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.5.Background))">$INFO[Skin.String(Plexbmc.5.Background)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.5.art))">$INFO[Window(Home).Property(plexbmc.5.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.6.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.6.Background))">$INFO[Skin.String(Plexbmc.6.Background)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.6.art))">$INFO[Window(Home).Property(plexbmc.6.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.7.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.7.Background))">$INFO[Skin.String(Plexbmc.7.Background)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.7.art))">$INFO[Window(Home).Property(plexbmc.7.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.8.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.8.Background))">$INFO[Skin.String(Plexbmc.8.Background)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.8.art))">$INFO[Window(Home).Property(plexbmc.8.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.9.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.9.Background))">$INFO[Skin.String(Plexbmc.9.Background)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.9.art))">$INFO[Window(Home).Property(plexbmc.9.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.10.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.10.Background))">$INFO[Skin.String(Plexbmc.10.Background)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.10.art))">$INFO[Window(Home).Property(plexbmc.10.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.Channels.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.Channels.Background))">$INFO[Skin.String(Plexbmc.Channels.Background)]</value>
-        <value>special://skin/backgrounds/Channels.jpg</value>
-    </variable>
-    <variable name="Plex.Queue.Background.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.0.Background))">$INFO[Skin.String(Plexbmc.Queue.Background)]</value>
-        <value>special://skin/backgrounds/Queue.jpg</value>
-    </variable>
-    <variable name="Plex.0.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.0.Icon))">$INFO[Skin.String(Plexbmc.0.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.0.art))">$INFO[Window(Home).Property(plexbmc.0.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.1.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.1.Icon))">$INFO[Skin.String(Plexbmc.1.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.1.art))">$INFO[Window(Home).Property(plexbmc.1.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.2.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.2.Icon))">$INFO[Skin.String(Plexbmc.2.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.2.art))">$INFO[Window(Home).Property(plexbmc.2.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.3.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.3.Icon))">$INFO[Skin.String(Plexbmc.3.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.3.art))">$INFO[Window(Home).Property(plexbmc.3.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.4.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.4.Icon))">$INFO[Skin.String(Plexbmc.4.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.4.art))">$INFO[Window(Home).Property(plexbmc.4.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.5.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.5.Icon))">$INFO[Skin.String(Plexbmc.5.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.5.art))">$INFO[Window(Home).Property(plexbmc.5.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.6.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(PlPlexbmcex.6.Icon))">$INFO[Skin.String(Plexbmc.6.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.6.art))">$INFO[Window(Home).Property(plexbmc.6.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.7.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.7.Icon))">$INFO[Skin.String(Plexbmc.7.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.7.art))">$INFO[Window(Home).Property(plexbmc.7.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.8.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.8.Icon))">$INFO[Skin.String(Plexbmc.8.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.8.art))">$INFO[Window(Home).Property(plexbmc.8.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.9.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.9.Icon))">$INFO[Skin.String(Plexbmc.9.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.9.art))">$INFO[Window(Home).Property(plexbmc.9.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.10.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.10.Icon))">$INFO[Skin.String(Plexbmc.10.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.10.art))">$INFO[Window(Home).Property(plexbmc.10.art)]</value>
-        <value>$VAR[Default.Art]</value>
-    </variable>
-    <variable name="Plex.Channels.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.Channels.Icon))">$INFO[Skin.String(Plexbmc.Channels.Icon)]</value>
-        <value condition="!IsEmpty(Window(Home).Property(plexbmc.Channels.art))">$INFO[Window(Home).Property(plexbmc.Channels.art)]</value>
-        <value>special://skin/backgrounds/Channels.jpg</value>
-    </variable>
-    <variable name="Plex.Queue.Icon.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.Queue.Icon))">$INFO[Skin.String(Plexbmc.Queue.Icon)]</value>
-        <value>special://skin/backgrounds/Queue.jpg</value>
-    </variable>
-    <variable name="Plex.0.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.0.Label))">$INFO[Skin.String(Plexbmc.0.Label)]</value>
-        <value>$INFO[Window(Home).Property(plexbmc.0.title)]</value>
-    </variable>
-    <variable name="Plex.1.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.1.Label))">$INFO[Skin.String(Plexbmc.1.Label)]</value>
-        <value>$INFO[Window(Home).Property(plexbmc.1.title)]</value>
-    </variable>
-    <variable name="Plex.2.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.2.Label))">$INFO[Skin.String(Plexbmc.2.Label)]</value>
-        <value>$INFO[Window(Home).Property(plexbmc.2.title)]</value>
-    </variable>
-    <variable name="Plex.3.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.3.Label))">$INFO[Skin.String(Plexbmc.3.Label)]</value>
-        <value>$INFO[Window(Home).Property(plexbmc.3.title)]</value>
-    </variable>
-    <variable name="Plex.4.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.4.Label))">$INFO[Skin.String(Plexbmc.4.Label)]</value>
-        <value>$INFO[Window(Home).Property(plexbmc.4.title)]</value>
-    </variable>
-    <variable name="Plex.5.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.5.Label))">$INFO[Skin.String(Plexbmc.5.Label)]</value>
-        <value>$INFO[Window(Home).Property(plexbmc.5.title)]</value>
-    </variable>
-    <variable name="Plex.6.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.6.Label))">$INFO[Skin.String(Plexbmc.6.Label)]</value>
-        <value>$INFO[Window(Home).Property(plexbmc.6.title)]</value>
-    </variable>
-    <variable name="Plex.7.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.7.Label))">$INFO[Skin.String(Plexbmc.7.Label)]</value>
-        <value>$INFO[Window(Home).Property(plexbmc.7.title)]</value>
-    </variable>
-    <variable name="Plex.8.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.8.Label))">$INFO[Skin.String(Plexbmc.8.Label)]</value>
-        <value>$INFO[Window(Home).Property(plexbmc.8.title)]</value>
-    </variable>
-    <variable name="Plex.9.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.9.Label))">$INFO[Skin.String(Plexbmc.9.Label)]</value>
-        <value>$INFO[Window(Home).Property(plexbmc.9.title)]</value>
-    </variable>
-    <variable name="Plex.10.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.10.Label))">$INFO[Skin.String(Plexbmc.10.Label)]</value>
-        <value>$INFO[Window(Home).Property(plexbmc.10.title)]</value>
-    </variable>
-    <variable name="Plex.Channels.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.Channels.Label))">$INFO[Skin.String(Plexbmc.Channels.Label)]</value>
-        <value>$LOCALIZE[31975]</value>
-    </variable>
-    <variable name="Plex.Queue.Label.Management">
-        <value condition="!IsEmpty(Skin.String(Plexbmc.Queue.Label))">$INFO[Skin.String(Plexbmc.Queue.Label)]</value>
-        <value>$LOCALIZE[31010]</value>
     </variable>
     <variable name="YouTubeContent">
         <value condition="Container.Content(albums)">plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Album]</value>
@@ -1238,8 +1054,7 @@
         <value>common/cdart.png</value>
     </variable>
     <variable name="MusicCdArt">
-        <!--<value condition="!Skin.HasSetting(plexbmc)+!StringCompare(ListItem.Label,..)+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=$INFO[ListItem.Thumb]</value>-->
-        <value condition="!Skin.HasSetting(plexbmc)+!StringCompare(ListItem.Label,..)+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=common/cdart.png</value>
+        <value condition="!StringCompare(ListItem.Label,..)+Skin.HasSetting(EnableCdArt)+!IsEmpty(ListItem.Thumb)+[Container.content(songs)|Container.content(albums)]">http://localhost:52307/getmusicart&amp;artist=$INFO[Listitem.Artist]&amp;track=$INFO[Listitem.Title]&amp;album=$INFO[Listitem.Album]&amp;type=discart&amp;fallback=common/cdart.png</value>
     </variable>
     <variable name="VideoPlayerCdArt">
         <value condition="!IsEmpty(Player.Art(discart))">$INFO[Player.Art(discart)]</value>
@@ -1492,7 +1307,7 @@
         <value>$LOCALIZE[16018]</value>
     </variable>
     <variable name="WidgetLimit">
-        <value condition="Skin.HasSetting(DisableWidgetLimit) + !Skin.HasSetting(plexbmc)">1000</value>
+        <value condition="Skin.HasSetting(DisableWidgetLimit)">1000</value>
         <value>24</value>
     </variable>
 </includes>

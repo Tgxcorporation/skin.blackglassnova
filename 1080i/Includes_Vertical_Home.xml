@@ -51,8 +51,7 @@
             </control>
         </focusedlayout>
         <content>
-            <include>skinshortcuts-submenu</include>
-            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Submenu.Items</include>
+            <include>Home.Submenu.Items</include>
         </content>
     </include>
     <include name="Vertical_HomeMenu">
@@ -117,8 +116,7 @@
             </control>
         </focusedlayout>
         <content>
-            <include condition="Skin.HasSetting(plexbmc)+System.HasAddon(plugin.video.plexbmc)">Plexbmc.Items</include>
-            <include>skinshortcuts-mainmenu</include>
+            <include>Home.Main.Menu.Items</include>
         </content>
     </include>
     <include name="Vertical_Home_Layout">
@@ -145,142 +143,7 @@
                 <pagecontrol>60</pagecontrol>
                 <itemgap>0</itemgap>
 
-                <!-- -->
-                <!--PLEX-->
-                <!-- -->
 
-                <!--PICTURES-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Vertical_WidgetPlex">
-                    <param name="title" value="$LOCALIZE[31961]"/>
-                    <param name="ondown" value="901"/>
-                    <param name="onup" value="300"/>
-                    <param name="onright" value="901"/>
-                    <param name="height" value="573"/>
-                    <param name="gradientY" value="303"/>
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="PlexRecentPhotoContent"/>
-                    <param name="id" value="900"/>
-                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),photo)"/>
-                    <param name="labelTitle" value="$INFO[ListItem.Label]"/>
-                    <param name="labelSubTitle" value=""/>
-                </include>
-                <!--QUEUE-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Vertical_WidgetPlex">
-                    <param name="title" value="$LOCALIZE[31961]"/>
-                    <param name="ondown" value="311"/>
-                    <param name="onup" value="900"/>
-                    <param name="onright" value="311"/>
-                    <param name="height" value="573"/>
-                    <param name="gradientY" value="303"/>
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="PlexQueueContent"/>
-                    <param name="id" value="901"/>
-                    <param name="visibility" value="StringCompare(Container(300).ListItem.Label,$LOCALIZE[31010])"/>
-                    <param name="labelTitle" value="$INFO[ListItem.Label]"/>
-                    <param name="labelSubTitle" value="-"/>
-                </include>
-                <!--MOVIES-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Vertical_WidgetPlex">
-                    <param name="title" value="$LOCALIZE[31961]"/>
-                    <param name="height" value="650"/>
-                    <param name="ondown" value="312"/>
-                    <param name="onup" value="901"/>
-                    <param name="onright" value="312"/>
-                    <param name="gradientY" value="380"/>
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="PlexRecentMovieContent"/>
-                    <param name="id" value="311"/>
-                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),movie)"/>
-                    <param name="labelTitle" value="$INFO[ListItem.Label]"/>
-                    <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,  •  ]$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Vertical_WidgetPlex">
-                    <param name="title" value="$LOCALIZE[31011]"/>
-                    <param name="height" value="650"/>
-                    <param name="ondown" value="511"/>
-                    <param name="onup" value="311"/>
-                    <param name="onright" value="511"/>
-                    <param name="gradientY" value="380"/>
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="PlexOnDeckMovieContent"/>
-                    <param name="id" value="312"/>
-                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),movie)"/>
-                    <param name="labelTitle" value="$INFO[ListItem.Label]"/>
-                    <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,  •  ]$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
-                </include>
-                <!--ALBUMS-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Vertical_WidgetPlex">
-                    <param name="title" value="$LOCALIZE[31961]"/>
-                    <param name="ondown" value="212"/>
-                    <param name="onup" value="312"/>
-                    <param name="onright" value="212"/>
-                    <param name="height" value="573"/>
-                    <param name="gradientY" value="303"/>
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="PlexRecentAlbumContent"/>
-                    <param name="id" value="511"/>
-                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),artist)"/>
-                    <param name="labelTitle" value="$INFO[ListItem.Label]"/>
-                    <param name="labelSubTitle" value="$INFO[ListItem.Label2]"/>
-                </include>
-                <!--CHANNELS-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Vertical_WidgetPlex">
-                    <param name="title" value="$LOCALIZE[31961]"/>
-                    <param name="ondown" value="411"/>
-                    <param name="onup" value="511"/>
-                    <param name="onright" value="411"/>
-                    <param name="height" value="573"/>
-                    <param name="gradientY" value="303"/>
-                    <param name="gfxType" value="Square"/>
-                    <param name="content" value="PlexRecentChannelContent"/>
-                    <param name="id" value="212"/>
-                    <param name="visibility" value="Container(300).HasFocus(50)"/>
-                    <param name="labelTitle" value="$INFO[ListItem.Label]"/>
-                    <param name="labelSubTitle" value="-"/>
-                </include>
-                <!--EPISODES-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Vertical_WidgetPlex">
-                    <param name="title" value="$LOCALIZE[31961]"/>
-                    <param name="height" value="650"/>
-                    <param name="ondown" value="412"/>
-                    <param name="onup" value="212"/>
-                    <param name="onright" value="412"/>
-                    <param name="gradientY" value="380"/>
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="PlexRecentEpisodeContent"/>
-                    <param name="id" value="411"/>
-                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),show)"/>
-                    <param name="labelTitle" value="$INFO[ListItem.Property(TVshowTitle)]"/>
-                    <param name="labelSubTitle" value="$INFO[ListItem.Property(SeasonEpisode)]$INFO[ListItem.Property(Rating),  •  ]$INFO[ListItem.Property(Runtime),  •  , $LOCALIZE[31297]]"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Vertical_WidgetPlex">
-                    <param name="title" value="$LOCALIZE[31011]"/>
-                    <param name="height" value="650"/>
-                    <param name="ondown" value="413"/>
-                    <param name="onup" value="411"/>
-                    <param name="onright" value="413"/>
-                    <param name="gradientY" value="380"/>
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="PlexOnDeckEpisodeContent"/>
-                    <param name="id" value="412"/>
-                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),show)"/>
-                    <param name="labelTitle" value="$INFO[ListItem.Property(TVshowTitle)]"/>
-                    <param name="labelSubTitle" value="$INFO[ListItem.Property(SeasonEpisode)]$INFO[ListItem.Property(Rating),  •  ]$INFO[ListItem.Property(Runtime),  •  , $LOCALIZE[31297]]"/>
-                </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded) + Skin.HasSetting(plexbmc)" content="Vertical_WidgetPlex">
-                    <param name="title" value="$LOCALIZE[31932]"/>
-                    <param name="height" value="650"/>
-                    <param name="ondown" value="700011"/>
-                    <param name="onup" value="412"/>
-                    <param name="onright" value="700011"/>
-                    <param name="gradientY" value="380"/>
-                    <param name="gfxType" value="Poster"/>
-                    <param name="content" value="PlexRecentlyViewedShowContent"/>
-                    <param name="id" value="413"/>
-                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),show)"/>
-                    <param name="labelTitle" value="$INFO[ListItem.Label]"/>
-                    <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,  •  ]$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
-                </include>
 
 
                 <!-- -->
@@ -383,7 +246,6 @@
                         <posy>78</posy>
                         <height>923</height>
                         <include>VerticalScroller</include>
-                        <onright condition="Skin.HasSetting(plexbmc)+!IsEmpty(Container(300).ListItem.Property(uuid))">900</onright>
                         <onright condition="StringCompare(Container(300).ListItem.Property(id),1)">700011</onright>
                         <onright condition="StringCompare(Container(300).ListItem.Property(id),2)">700012</onright>
                         <onright condition="StringCompare(Container(300).ListItem.Property(id),3)">700013</onright>

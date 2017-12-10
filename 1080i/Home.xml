@@ -2,8 +2,6 @@
 <window id="0">
     <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">OpenClose</include>
     <defaultcontrol>300</defaultcontrol>
-    <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,amberskin,nocat)</onload>
-    <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;levels=0)</onload>
     <onload condition="!Skin.HasSetting(Hide.Favourites)">RunScript(script.favourites)</onload>
     <onload condition="IsEmpty(Skin.String(SkinHelper.RandomFanartDelay))">Skin.SetString(SkinHelper.RandomFanartDelay,9)</onload>
     <onload condition="Skin.HasSetting(StopPlaybackOnMenu)">PlayerControl(stop)</onload>
@@ -38,7 +36,6 @@
                 Control.IsVisible(7000530)|Control.IsVisible(7000531)|Control.IsVisible(7000532)|Control.IsVisible(7000533)|Control.IsVisible(7000534)|Control.IsVisible(7000535)|Control.IsVisible(7000536)|Control.IsVisible(7000537)|Control.IsVisible(7000538)|Control.IsVisible(7000539)|
                 Control.IsVisible(7000540)|Control.IsVisible(7000541)|Control.IsVisible(7000542)|Control.IsVisible(7000543)|Control.IsVisible(7000544)|Control.IsVisible(7000545)|Control.IsVisible(7000546)|Control.IsVisible(7000547)|Control.IsVisible(7000548)|Control.IsVisible(7000549)
                 ]
-                |[Skin.HasSetting(plexbmc)+[Control.IsVisible(900)|Control.IsVisible(901)|Control.IsVisible(311)|Control.IsVisible(312)|Control.IsVisible(511)|Control.IsVisible(212)|Control.IsVisible(411)|Control.IsVisible(412)|Control.IsVisible(413)]]
                 ]</visible>
             <include>HiddenButton</include>
         </control>
