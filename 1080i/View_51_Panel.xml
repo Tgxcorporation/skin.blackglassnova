@@ -223,7 +223,7 @@
             <visible>Control.IsVisible(51)</visible>
             <control type="group">
                 <include>HeaderSlideEffectTopBar</include>
-                <include content="ClearArtLogo">
+                <include name="ClearArtLogo">
                     <param name="x" value="345r"/>
                     <param name="y" value="150"/>
                     <param name="width" value="300"/>
@@ -232,7 +232,7 @@
                     <param name="align" value="right"/>
                     <param name="aligny" value="bottom"/>
                 </include>
-                <include content="StudioArt">
+                <include name="StudioArt">
                     <param name="x" value="350"/>
                     <param name="y" value="245"/>
                     <param name="width" value="300"/>
@@ -450,7 +450,7 @@
             <visible>Control.IsVisible(51)</visible>
             <include>Icon_Fade</include>
             <!-- CDART MUSIC -->
-            <include content="DiscArt">
+            <include name="DiscArt">
                 <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="130"/>
@@ -459,7 +459,7 @@
                 <param name="texture" value="$VAR[MusicCdArt]"/>
             </include>
             <!-- CDART VIDEO -->
-            <include content="DiscArt">
+            <include name="DiscArt">
                 <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="236"/>

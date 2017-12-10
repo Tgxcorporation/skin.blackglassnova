@@ -3,7 +3,7 @@
     <include name="PVROSDChannelListSmall">
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-            <include content="WindowClosingButton">
+            <include name="WindowClosingButton">
                 <param name="id" value="9001"/>
                 <param name="x" value="1635"/>
                 <param name="y" value="487"/>
@@ -68,7 +68,7 @@
                         <width>1364</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
-                    <include content="ProgressBar">
+                    <include name="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="!ListItem.IsRecording"/>
                         <param name="x" value="0"/>
@@ -84,7 +84,7 @@
                         <param name="info" value="ListItem.Progress"/>
                         <param name="reveal" value="true"/>
                     </include>
-                    <include content="ProgressBar">
+                    <include name="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="ListItem.IsRecording"/>
                         <param name="x" value="0"/>
@@ -168,7 +168,7 @@
                         <width>1364</width>
                         <include>FacadeFocus</include>
                     </control>
-                    <include content="ProgressBar">
+                    <include name="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="!ListItem.IsRecording"/>
                         <param name="x" value="0"/>
@@ -184,7 +184,7 @@
                         <param name="info" value="ListItem.Progress"/>
                         <param name="reveal" value="true"/>
                     </include>
-                    <include content="ProgressBar">
+                    <include name="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="ListItem.IsRecording"/>
                         <param name="x" value="0"/>
@@ -274,7 +274,7 @@
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-450</posy>
-            <include content="WindowClosingButton">
+            <include name="WindowClosingButton">
                 <param name="id" value="9001"/>
                 <param name="x" value="1635"/>
                 <param name="y" value="487"/>
@@ -339,7 +339,7 @@
                         <width>1364</width>
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
-                    <include content="ProgressBar">
+                    <include name="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="!ListItem.IsRecording"/>
                         <param name="x" value="0"/>
@@ -355,7 +355,7 @@
                         <param name="info" value="ListItem.Progress"/>
                         <param name="reveal" value="true"/>
                     </include>
-                    <include content="ProgressBar">
+                    <include name="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="ListItem.IsRecording"/>
                         <param name="x" value="0"/>
@@ -439,7 +439,7 @@
                         <width>1364</width>
                         <include>FacadeFocus</include>
                     </control>
-                    <include content="ProgressBar">
+                    <include name="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="!ListItem.IsRecording"/>
                         <param name="x" value="0"/>
@@ -455,7 +455,7 @@
                         <param name="info" value="ListItem.Progress"/>
                         <param name="reveal" value="true"/>
                     </include>
-                    <include content="ProgressBar">
+                    <include name="ProgressBar">
                         <param name="id" value="0"/>
                         <param name="visible" value="ListItem.IsRecording"/>
                         <param name="x" value="0"/>
@@ -544,7 +544,7 @@
     <include name="PVROSDChannelListSmallGuide">
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-            <include content="WindowClosingButton">
+            <include name="WindowClosingButton">
                 <param name="id" value="9001"/>
                 <param name="x" value="1635"/>
                 <param name="y" value="487"/>
@@ -737,7 +737,7 @@
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-450</posy>
-            <include content="WindowClosingButton">
+            <include name="WindowClosingButton">
                 <param name="id" value="0"/>
                 <param name="x" value="1635"/>
                 <param name="y" value="487"/>

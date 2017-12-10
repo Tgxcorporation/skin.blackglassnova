@@ -355,7 +355,7 @@
                 <onup>$PARAM[onup]</onup>
                 <ondown>$PARAM[ondown]</ondown>
                 <onleft>300</onleft>
-                <include content="Vertical_Widget_$PARAM[gfxType]">
+                <include name="Vertical_Widget_$PARAM[gfxType]">
                     <param name="id" value="$PARAM[id]"/>
                     <param name="labelTitle" value="$PARAM[labelTitle]"/>
                     <param name="labelSubTitle" value="$PARAM[labelSubTitle]"/>

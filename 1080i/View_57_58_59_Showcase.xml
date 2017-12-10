@@ -286,7 +286,7 @@
                     <control type="group">
                         <include>ListFocusAnimation</include>
                         <!-- CDART VIDEO -->
-                        <include content="DiscArt">
+                        <include name="DiscArt">
                             <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                             <param name="x" value="27"/>
                             <param name="y" value="56"/>
@@ -359,7 +359,7 @@
                     <onclick>Control.SetFocus(59)</onclick>
                     <onleft>Control.Move(59,-1)</onleft>
                 </control>
-                <include content="ClearArtLogo">
+                <include name="ClearArtLogo">
                     <param name="x" value="345r"/>
                     <param name="y" value="369"/>
                     <param name="width" value="300"/>
@@ -368,7 +368,7 @@
                     <param name="align" value="right"/>
                     <param name="aligny" value="bottom"/>
                 </include>
-                <include content="StudioArt">
+                <include name="StudioArt">
                     <param name="x" value="380"/>
                     <param name="y" value="464"/>
                     <param name="width" value="150"/>
@@ -398,7 +398,7 @@
                         </control>
                     </control>
                     <!-- CDART VIDEO -->
-                    <include content="DiscArt">
+                    <include name="DiscArt">
                         <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                         <param name="x" value="45"/>
                         <param name="y" value="293"/>
@@ -585,7 +585,7 @@
                     <control type="group">
                         <include>ListFocusAnimation</include>
                         <!-- CDART MUSIC -->
-                        <include content="DiscArt">
+                        <include name="DiscArt">
                             <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                             <param name="x" value="37"/>
                             <param name="y" value="12"/>
@@ -652,7 +652,7 @@
                     <onclick>Control.SetFocus(58)</onclick>
                     <onleft>Control.Move(58,-1)</onleft>
                 </control>
-                <include content="ClearArtLogo">
+                <include name="ClearArtLogo">
                     <param name="x" value="345r"/>
                     <param name="y" value="429"/>
                     <param name="width" value="300"/>
@@ -661,7 +661,7 @@
                     <param name="align" value="right"/>
                     <param name="aligny" value="bottom"/>
                 </include>
-                <include content="StudioArt">
+                <include name="StudioArt">
                     <param name="x" value="440"/>
                     <param name="y" value="524"/>
                     <param name="width" value="150"/>
@@ -691,7 +691,7 @@
                         </control>
                     </control>
                     <!-- CDART MUSIC -->
-                    <include content="DiscArt">
+                    <include name="DiscArt">
                         <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                         <param name="x" value="45"/>
                         <param name="y" value="264"/>
@@ -1252,7 +1252,7 @@
                                                 <control type="group">
                                                     <include>ListFocusAnimation</include>
                                                     <!-- CDART VIDEO -->
-                                                    <include content="DiscArt">
+                                                    <include name="DiscArt">
                                                         <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                                                         <param name="x" value="27"/>
                                                         <param name="y" value="56"/>
@@ -1325,7 +1325,7 @@
                                                 <onclick>Control.SetFocus(59)</onclick>
                                                 <onleft>Control.Move(59,-1)</onleft>
                                             </control>
-                                            <include content="ClearArtLogo">
+                                            <include name="ClearArtLogo">
                                                 <param name="x" value="345r"/>
                                                 <param name="y" value="369"/>
                                                 <param name="width" value="300"/>
@@ -1334,7 +1334,7 @@
                                                 <param name="align" value="right"/>
                                                 <param name="aligny" value="bottom"/>
                                             </include>
-                                            <include content="StudioArt">
+                                            <include name="StudioArt">
                                                 <param name="x" value="380"/>
                                                 <param name="y" value="464"/>
                                                 <param name="width" value="150"/>
@@ -1364,7 +1364,7 @@
                                                     </control>
                                                 </control>
                                                 <!-- CDART VIDEO -->
-                                                <include content="DiscArt">
+                                                <include name="DiscArt">
                                                     <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                                                     <param name="x" value="45"/>
                                                     <param name="y" value="293"/>
@@ -1551,7 +1551,7 @@
                                                 <control type="group">
                                                     <include>ListFocusAnimation</include>
                                                     <!-- CDART MUSIC -->
-                                                    <include content="DiscArt">
+                                                    <include name="DiscArt">
                                                         <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                                                         <param name="x" value="37"/>
                                                         <param name="y" value="12"/>
@@ -1618,7 +1618,7 @@
                                                 <onclick>Control.SetFocus(58)</onclick>
                                                 <onleft>Control.Move(58,-1)</onleft>
                                             </control>
-                                            <include content="ClearArtLogo">
+                                            <include name="ClearArtLogo">
                                                 <param name="x" value="345r"/>
                                                 <param name="y" value="429"/>
                                                 <param name="width" value="300"/>
@@ -1627,7 +1627,7 @@
                                                 <param name="align" value="right"/>
                                                 <param name="aligny" value="bottom"/>
                                             </include>
-                                            <include content="StudioArt">
+                                            <include name="StudioArt">
                                                 <param name="x" value="440"/>
                                                 <param name="y" value="524"/>
                                                 <param name="width" value="150"/>
@@ -1657,7 +1657,7 @@
                                                     </control>
                                                 </control>
                                                 <!-- CDART MUSIC -->
-                                                <include content="DiscArt">
+                                                <include name="DiscArt">
                                                     <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                                                     <param name="x" value="45"/>
                                                     <param name="y" value="264"/>
@@ -2002,7 +2002,7 @@
                                                 <onclick>Control.SetFocus(57)</onclick>
                                                 <onleft>Control.Move(57,-1)</onleft>
                                             </control>
-                                            <include content="ClearArtLogo">
+                                            <include name="ClearArtLogo">
                                                 <param name="x" value="345r"/>
                                                 <param name="y" value="429"/>
                                                 <param name="width" value="300"/>
@@ -2011,7 +2011,7 @@
                                                 <param name="align" value="right"/>
                                                 <param name="aligny" value="bottom"/>
                                             </include>
-                                            <include content="StudioArt">
+                                            <include name="StudioArt">
                                                 <param name="x" value="680"/>
                                                 <param name="y" value="524"/>
                                                 <param name="width" value="150"/>
@@ -2215,7 +2215,7 @@
                     <onclick>Control.SetFocus(57)</onclick>
                     <onleft>Control.Move(57,-1)</onleft>
                 </control>
-                <include content="ClearArtLogo">
+                <include name="ClearArtLogo">
                     <param name="x" value="345r"/>
                     <param name="y" value="429"/>
                     <param name="width" value="300"/>
@@ -2224,7 +2224,7 @@
                     <param name="align" value="right"/>
                     <param name="aligny" value="bottom"/>
                 </include>
-                <include content="StudioArt">
+                <include name="StudioArt">
                     <param name="x" value="680"/>
                     <param name="y" value="524"/>
                     <param name="width" value="150"/>

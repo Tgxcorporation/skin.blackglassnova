@@ -45,7 +45,7 @@
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
             <!-- CDART MUSIC -->
-            <include content="DiscArt">
+            <include name="DiscArt">
                 <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="45"/>
                 <param name="y" value="398"/>
@@ -54,7 +54,7 @@
                 <param name="texture" value="$VAR[MusicCdArt]"/>
             </include>
             <!-- CDART VIDEO -->
-            <include content="DiscArt">
+            <include name="DiscArt">
                 <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="588"/>
@@ -270,7 +270,7 @@
             <include>Icon_Fade</include>
             <control type="group">
                 <include>HeaderSlideEffectTopBar</include>
-                <include content="ClearArtLogo">
+                <include name="ClearArtLogo">
                     <param name="x" value="1010r"/>
                     <param name="y" value="10"/>
                     <param name="width" value="300"/>
@@ -279,7 +279,7 @@
                     <param name="align" value="right"/>
                     <param name="aligny" value="bottom"/>
                 </include>
-                <include content="StudioArt">
+                <include name="StudioArt">
                     <param name="x" value="1310r"/>
                     <param name="y" value="25"/>
                     <param name="width" value="300"/>
@@ -353,7 +353,7 @@
             <visible>Control.IsVisible(52)</visible>
             <include>Icon_Fade</include>
             <!-- CDART MUSIC -->
-            <include content="DiscArt">
+            <include name="DiscArt">
                 <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="418"/>
@@ -362,7 +362,7 @@
                 <param name="texture" value="$VAR[MusicCdArt]"/>
             </include>
             <!-- CDART VIDEO -->
-            <include content="DiscArt">
+            <include name="DiscArt">
                 <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                 <param name="x" value="51"/>
                 <param name="y" value="608"/>

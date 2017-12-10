@@ -12,7 +12,7 @@
         <!-- <include>DimBG</include> -->
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
-            <include content="WindowClosingButton">
+            <include name="WindowClosingButton">
                 <param name="id" value="0"/>
                 <param name="x" value="1637"/>
                 <param name="y" value="240"/>

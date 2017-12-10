@@ -1039,7 +1039,7 @@
                     <onup>300</onup>
                     <ondown>70002$SKINSHORTCUTS[mainmenuid]</ondown>
                     <onleft>300</onleft>
-                    <include content="Vertical_Widget_$SKINSHORTCUTS[gfxType]">
+                    <include name="Vertical_Widget_$SKINSHORTCUTS[gfxType]">
                         <param name="id" value="70001$SKINSHORTCUTS[mainmenuid]"/>
                         <param name="labelTitle" value="$SKINSHORTCUTS[labelTitle]"/>
                         <param name="labelSubTitle" value="$SKINSHORTCUTS[labelSubTitle]"/>
@@ -1132,7 +1132,7 @@
                     <onup>70001$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70003$SKINSHORTCUTS[mainmenuid]</ondown>
                     <onleft>300</onleft>
-                    <include content="Vertical_Widget_$SKINSHORTCUTS[gfxType]">
+                    <include name="Vertical_Widget_$SKINSHORTCUTS[gfxType]">
                         <param name="id" value="70002$SKINSHORTCUTS[mainmenuid]"/>
                         <param name="labelTitle" value="$SKINSHORTCUTS[labelTitle]"/>
                         <param name="labelSubTitle" value="$SKINSHORTCUTS[labelSubTitle]"/>
@@ -1225,7 +1225,7 @@
                     <onup>70002$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70004$SKINSHORTCUTS[mainmenuid]</ondown>
                     <onleft>300</onleft>
-                    <include content="Vertical_Widget_$SKINSHORTCUTS[gfxType]">
+                    <include name="Vertical_Widget_$SKINSHORTCUTS[gfxType]">
                         <param name="id" value="70003$SKINSHORTCUTS[mainmenuid]"/>
                         <param name="labelTitle" value="$SKINSHORTCUTS[labelTitle]"/>
                         <param name="labelSubTitle" value="$SKINSHORTCUTS[labelSubTitle]"/>
@@ -1318,7 +1318,7 @@
                     <onup>70003$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70005$SKINSHORTCUTS[mainmenuid]</ondown>
                     <onleft>300</onleft>
-                    <include content="Vertical_Widget_$SKINSHORTCUTS[gfxType]">
+                    <include name="Vertical_Widget_$SKINSHORTCUTS[gfxType]">
                         <param name="id" value="70004$SKINSHORTCUTS[mainmenuid]"/>
                         <param name="labelTitle" value="$SKINSHORTCUTS[labelTitle]"/>
                         <param name="labelSubTitle" value="$SKINSHORTCUTS[labelSubTitle]"/>
@@ -1411,7 +1411,7 @@
                     <onup>70004$SKINSHORTCUTS[mainmenuid]</onup>
                     <ondown>70005$SKINSHORTCUTS[mainmenuid]</ondown>
                     <onleft>300</onleft>
-                    <include content="Vertical_Widget_$SKINSHORTCUTS[gfxType]">
+                    <include name="Vertical_Widget_$SKINSHORTCUTS[gfxType]">
                         <param name="id" value="70005$SKINSHORTCUTS[mainmenuid]"/>
                         <param name="labelTitle" value="$SKINSHORTCUTS[labelTitle]"/>
                         <param name="labelSubTitle" value="$SKINSHORTCUTS[labelSubTitle]"/>

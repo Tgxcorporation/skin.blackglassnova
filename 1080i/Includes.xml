@@ -1118,7 +1118,7 @@
             </control>
             <control type="group">
                 <visible>![Player.ShowInfo + VideoPlayer.Content(LiveTV) + Window.IsActive(fullscreenvideo)]</visible>
-                <include content="WindowClosingButton">
+                <include name="WindowClosingButton">
                     <param name="id" value="9001"/>
                     <param name="x" value="1637"/>
                     <param name="y" value="479"/>
@@ -1154,7 +1154,7 @@
                 <texture>list/bg_facade_vertical.png</texture>
             </control>
             <!-- CDART VIDEO -->
-            <include content="DiscArt">
+            <include name="DiscArt">
                 <param name="visible" value="!String.IsEmpty(VideoPlayer.Cover)+VideoPlayer.Content(movies)"/>
                 <param name="x" value="147"/>
                 <param name="y" value="565"/>

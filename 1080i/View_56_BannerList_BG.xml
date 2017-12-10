@@ -135,7 +135,7 @@
             <include>ScrollOffsetLabel_56_BG</include>
             <control type="group">
                 <include>HeaderSlideEffectTopBar</include>
-                <include content="ClearArtLogo">
+                <include name="ClearArtLogo">
                     <param name="x" value="875"/>
                     <param name="y" value="10"/>
                     <param name="width" value="300"/>
@@ -144,7 +144,7 @@
                     <param name="align" value="left"/>
                     <param name="aligny" value="bottom"/>
                 </include>
-                <include content="StudioArt">
+                <include name="StudioArt">
                     <param name="x" value="1175"/>
                     <param name="y" value="20"/>
                     <param name="width" value="300"/>
@@ -216,7 +216,7 @@
             <include>Icon_Fade</include>
             <posy>33</posy>
             <!-- CDART MUSIC -->
-            <include content="DiscArt">
+            <include name="DiscArt">
                 <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="320"/>
                 <param name="y" value="187"/>
@@ -225,7 +225,7 @@
                 <param name="texture" value="$VAR[MusicCdArt]"/>
             </include>
             <!-- CDART VIDEO -->
-            <include content="DiscArt">
+            <include name="DiscArt">
                 <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                 <param name="x" value="138"/>
                 <param name="y" value="137"/>

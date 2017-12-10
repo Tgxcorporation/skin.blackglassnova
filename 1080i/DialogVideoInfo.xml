@@ -12,7 +12,7 @@
                 <!-- default group -->
                 <visible>![Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml)|Window.IsVisible(script-script.extendedinfo-DialogInfo.xml)]</visible>
                 <posy>-4</posy>
-                <include content="WindowClosingButton">
+                <include name="WindowClosingButton">
                     <param name="id" value="0"/>
                     <param name="x" value="1737"/>
                     <param name="y" value="21"/>
@@ -65,7 +65,7 @@
                             ControlGroup(90120).HasFocus]</visible>
                         <include>VisibleFadeEffectDelay</include>
                         <!-- CDART VIDEO -->
-                        <include content="DiscArt">
+                        <include name="DiscArt">
                             <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[String.IsEqual(ListItem.DBType,movie)|String.IsEqual(ListItem.DBType,musicvideo)|Window.IsVisible(MyPlaylist.xml)]"/>
                             <param name="x" value="1290"/>
                             <param name="y" value="392"/>

@@ -13,7 +13,7 @@
             <visible>Control.IsVisible(53)</visible>
             <control type="group">
                 <include>HeaderSlideEffectTopBar</include>
-                <include content="ClearArtLogo">
+                <include name="ClearArtLogo">
                     <param name="x" value="715"/>
                     <param name="y" value="10"/>
                     <param name="width" value="150"/>
@@ -22,7 +22,7 @@
                     <param name="align" value="right"/>
                     <param name="aligny" value="bottom"/>
                 </include>
-                <include content="StudioArt">
+                <include name="StudioArt">
                     <param name="x" value="1055"/>
                     <param name="y" value="10"/>
                     <param name="width" value="150"/>

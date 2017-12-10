@@ -24,7 +24,7 @@
                 <height>417</height>
                 <texture border="90">common/bg_dialog.png</texture>
             </control>
-            <include content="ProgressBar">
+            <include name="ProgressBar">
                 <param name="id" value="32"/>
                 <param name="visible" value="true"/>
                 <param name="x" value="350"/>

@@ -7,7 +7,7 @@
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-219</posy>
-            <include content="WindowClosingButton">
+            <include name="WindowClosingButton">
                 <param name="id" value="0"/>
                 <param name="x" value="1773"/>
                 <param name="y" value="240"/>
@@ -145,7 +145,7 @@
                     ControlGroup(5020).HasFocus]</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <!-- CDART MUSIC -->
-                <include content="DiscArt">
+                <include name="DiscArt">
                     <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[String.IsEqual(ListItem.DBType,album)|String.IsEqual(ListItem.DBType,song)]"/>
                     <param name="x" value="1540"/>
                     <param name="y" value="865"/>
@@ -643,7 +643,7 @@
                 <visible>Control.HasFocus(502)|Control.HasFocus(503)|ControlGroup(5020).HasFocus</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <!-- CDART MUSIC -->
-                <include content="DiscArt">
+                <include name="DiscArt">
                     <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[String.IsEqual(ListItem.DBType,album)|String.IsEqual(ListItem.DBType,song)]"/>
                     <param name="x" value="1540"/>
                     <param name="y" value="865"/>

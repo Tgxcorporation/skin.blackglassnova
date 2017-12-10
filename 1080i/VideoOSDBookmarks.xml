@@ -12,7 +12,7 @@
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-129</posy>
-            <include content="WindowClosingButton">
+            <include name="WindowClosingButton">
                 <param name="id" value="9002"/>
                 <param name="x" value="1637"/>
                 <param name="y" value="240"/>

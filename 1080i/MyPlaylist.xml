@@ -22,7 +22,7 @@
             <include>HeaderSlideEffectTopBar</include>
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-154</posy>
-            <include content="WindowClosingButton">
+            <include name="WindowClosingButton">
                 <param name="id" value="0"/>
                 <param name="x" value="1637"/>
                 <param name="y" value="240"/>
@@ -204,7 +204,7 @@
                 <onright>9001</onright>
             </control>
             <!-- CDART VIDEO -->
-            <include content="DiscArt">
+            <include name="DiscArt">
                 <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                 <param name="x" value="1385"/>
                 <param name="y" value="792"/>
@@ -212,7 +212,7 @@
                 <param name="height" value="316"/>
                 <param name="texture" value="$VAR[VideoCdArt]"/>
             </include>
-            <include content="DiscArt">
+            <include name="DiscArt">
                 <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="1385"/>
                 <param name="y" value="792"/>
