@@ -98,12 +98,12 @@
         <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="[control.hasfocus(60)+Skin.HasSetting(FixedShortListUnknown)]|
         [control.hasfocus(60)+!Skin.HasSetting(FixedShortListUnknown)+
         ![
-        String.IsEmpty(ListItem.AddonDescription)+
-        String.IsEmpty(ListItem.Property(Artist_Description))+
-        String.IsEmpty(ListItem.Property(Album_Description))+
-        String.IsEmpty(ListItem.Property(Event.Description))+
-        String.IsEmpty(ListItem.Plot)+
-        String.IsEmpty(Container(500).ListItem.Plot)
+        IsEmpty(ListItem.AddonDescription)+
+        IsEmpty(ListItem.Property(Artist_Description))+
+        IsEmpty(ListItem.Property(Album_Description))+
+        IsEmpty(ListItem.Property(Event.Description))+
+        IsEmpty(ListItem.Plot)+
+        IsEmpty(Container(500).ListItem.Plot)
         ]]">Conditional</animation>
     </include>
     <include name="HideMediaInfo">
@@ -112,12 +112,12 @@
     <include name="SlideViewUnknown">
         <animation effect="slide" tween="circle" easing="in" time="150" start="0,0" end="-780,0" condition="!Skin.HasSetting(FixedShortListUnknown)+
         [
-        String.IsEmpty(ListItem.AddonDescription)+
-        String.IsEmpty(ListItem.Property(Artist_Description))+
-        String.IsEmpty(ListItem.Property(Album_Description))+
-        String.IsEmpty(ListItem.Property(Event.Description))+
-        String.IsEmpty(ListItem.Plot)+
-        String.IsEmpty(Container(500).ListItem.Plot)
+        IsEmpty(ListItem.AddonDescription)+
+        IsEmpty(ListItem.Property(Artist_Description))+
+        IsEmpty(ListItem.Property(Album_Description))+
+        IsEmpty(ListItem.Property(Event.Description))+
+        IsEmpty(ListItem.Plot)+
+        IsEmpty(Container(500).ListItem.Plot)
         ]">Conditional</animation>
     </include>
     <include name="Animation_ViewsCDart">
@@ -128,15 +128,15 @@
         <visible>Skin.HasSetting(EnableClearArt)</visible>
         <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearLogo)+
                     [
-                    [!String.IsEmpty(ListItem.Art(clearlogo)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    [!IsEmpty(ListItem.Art(clearlogo)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
                     |
-                    [!String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    [!IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
                     ]+[
-                    [!String.IsEmpty(ListItem.Art(clearart)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]] + ![Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                    [!IsEmpty(ListItem.Art(clearart)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]] + ![Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
                     |
-                    [!String.IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    [!IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
                     |
-                    [!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                    [!IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
                     ]">
             <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
             <effect type="fade" start="100" end="0" time="500" delay="3000"/>
@@ -146,15 +146,15 @@
         <visible>Skin.HasSetting(EnableClearLogo)</visible>
         <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearArt)+
                     [
-                    [!String.IsEmpty(ListItem.Art(clearlogo)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    [!IsEmpty(ListItem.Art(clearlogo)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
                     |
-                    [!String.IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    [!IsEmpty(ListItem.Art(tvshow.clearlogo)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
                     ]+[
-                    [!String.IsEmpty(ListItem.Art(clearart)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]] + ![Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                    [!IsEmpty(ListItem.Art(clearart)) + ![Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]] + ![Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
                     |
-                    [!String.IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
+                    [!IsEmpty(ListItem.Art(tvshow.clearart)) + [Window.IsActive(MyVideoNav.xml)+[Container.Content(episodes)|Container.Content(seasons)]]]
                     |
-                    [!String.IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
+                    [!IsEmpty(Window(Home).Property(SkinHelper.ListItem.Art.ClearLogo)) + [Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)]]
                     ]">
             <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
             <effect type="fade" start="0" end="100" time="500" delay="3000"/>

@@ -5,7 +5,7 @@
     <onload condition="System.HasAddon(plugin.video.plexbmc) + Skin.HasSetting(plexbmc)">RunScript(plugin.video.plexbmc,amberskin,nocat)</onload>
     <onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=300&amp;levels=0)</onload>
     <onload condition="!Skin.HasSetting(Hide.Favourites)">RunScript(script.favourites)</onload>
-    <onload condition="String.IsEmpty(Skin.String(SkinHelper.RandomFanartDelay))">Skin.SetString(SkinHelper.RandomFanartDelay,9)</onload>
+    <onload condition="IsEmpty(Skin.String(SkinHelper.RandomFanartDelay))">Skin.SetString(SkinHelper.RandomFanartDelay,9)</onload>
     <onload condition="Skin.HasSetting(StopPlaybackOnMenu)">PlayerControl(stop)</onload>
     <controls>
         <!--DUMMY BUTTON-->

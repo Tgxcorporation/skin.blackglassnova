@@ -5,11 +5,11 @@
     <animation effect="slide" time="0" start="0,0" end="0,3510">WindowClose</animation>
     <controls>
         <control type="group">
-            <animation effect="slide" time="0" start="0,-3510" end="0,-3510" condition="Integer.IsGreater(Container(155).NumItems,0)">conditional</animation>
+            <animation effect="slide" time="0" start="0,-3510" end="0,-3510" condition="IntegerGreaterThan(Container(155).NumItems,0)">conditional</animation>
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <include>DimBG</include>
             <control type="image">
-                <visible>Integer.IsGreater(Container(155).NumItems,9)</visible>
+                <visible>IntegerGreaterThan(Container(155).NumItems,9)</visible>
                 <posx>555</posx>
                 <posy>72</posy>
                 <width>810</width>
@@ -17,7 +17,7 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <visible>Integer.IsGreater(Container(155).NumItems,8)+!Integer.IsGreater(Container(155).NumItems,9)</visible>
+                <visible>IntegerGreaterThan(Container(155).NumItems,8)+!IntegerGreaterThan(Container(155).NumItems,9)</visible>
                 <posx>555</posx>
                 <posy>108</posy>
                 <width>810</width>
@@ -25,7 +25,7 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <visible>Integer.IsGreater(Container(155).NumItems,7)+!Integer.IsGreater(Container(155).NumItems,8)</visible>
+                <visible>IntegerGreaterThan(Container(155).NumItems,7)+!IntegerGreaterThan(Container(155).NumItems,8)</visible>
                 <posx>555</posx>
                 <posy>145</posy>
                 <width>810</width>
@@ -33,7 +33,7 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <visible>Integer.IsGreater(Container(155).NumItems,6)+!Integer.IsGreater(Container(155).NumItems,7)</visible>
+                <visible>IntegerGreaterThan(Container(155).NumItems,6)+!IntegerGreaterThan(Container(155).NumItems,7)</visible>
                 <posx>555</posx>
                 <posy>181</posy>
                 <width>810</width>
@@ -41,7 +41,7 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <visible>Integer.IsGreater(Container(155).NumItems,5)+!Integer.IsGreater(Container(155).NumItems,6)</visible>
+                <visible>IntegerGreaterThan(Container(155).NumItems,5)+!IntegerGreaterThan(Container(155).NumItems,6)</visible>
                 <posx>555</posx>
                 <posy>218</posy>
                 <width>810</width>
@@ -49,7 +49,7 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <visible>Integer.IsGreater(Container(155).NumItems,4)+!Integer.IsGreater(Container(155).NumItems,5)</visible>
+                <visible>IntegerGreaterThan(Container(155).NumItems,4)+!IntegerGreaterThan(Container(155).NumItems,5)</visible>
                 <posx>555</posx>
                 <posy>254</posy>
                 <width>810</width>
@@ -57,7 +57,7 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <visible>Integer.IsGreater(Container(155).NumItems,3)+!Integer.IsGreater(Container(155).NumItems,4)</visible>
+                <visible>IntegerGreaterThan(Container(155).NumItems,3)+!IntegerGreaterThan(Container(155).NumItems,4)</visible>
                 <posx>555</posx>
                 <posy>291</posy>
                 <width>810</width>
@@ -65,7 +65,7 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <visible>Integer.IsGreater(Container(155).NumItems,2)+!Integer.IsGreater(Container(155).NumItems,3)</visible>
+                <visible>IntegerGreaterThan(Container(155).NumItems,2)+!IntegerGreaterThan(Container(155).NumItems,3)</visible>
                 <posx>555</posx>
                 <posy>327</posy>
                 <width>810</width>
@@ -73,7 +73,7 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <visible>Integer.IsGreater(Container(155).NumItems,1)+!Integer.IsGreater(Container(155).NumItems,2)</visible>
+                <visible>IntegerGreaterThan(Container(155).NumItems,1)+!IntegerGreaterThan(Container(155).NumItems,2)</visible>
                 <posx>555</posx>
                 <posy>364</posy>
                 <width>810</width>
@@ -81,7 +81,7 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="image">
-                <visible>Integer.IsGreater(Container(155).NumItems,0)+!Integer.IsGreater(Container(155).NumItems,1)</visible>
+                <visible>IntegerGreaterThan(Container(155).NumItems,0)+!IntegerGreaterThan(Container(155).NumItems,1)</visible>
                 <posx>555</posx>
                 <posy>400</posy>
                 <width>810</width>
@@ -89,16 +89,16 @@
                 <texture border="84">common/bg_dialog.png</texture>
             </control>
             <control type="group">
-                <animation effect="slide" time="0" start="0,0" end="0,0" condition="Integer.IsGreater(Container(155).NumItems,9)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,36" condition="Integer.IsGreater(Container(155).NumItems,8)+!Integer.IsGreater(Container(155).NumItems,9)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,73" condition="Integer.IsGreater(Container(155).NumItems,7)+!Integer.IsGreater(Container(155).NumItems,8)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,109" condition="Integer.IsGreater(Container(155).NumItems,6)+!Integer.IsGreater(Container(155).NumItems,7)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,146" condition="Integer.IsGreater(Container(155).NumItems,5)+!Integer.IsGreater(Container(155).NumItems,6)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,182" condition="Integer.IsGreater(Container(155).NumItems,4)+!Integer.IsGreater(Container(155).NumItems,5)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,219" condition="Integer.IsGreater(Container(155).NumItems,3)+!Integer.IsGreater(Container(155).NumItems,4)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,255" condition="Integer.IsGreater(Container(155).NumItems,2)+!Integer.IsGreater(Container(155).NumItems,3)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,292" condition="Integer.IsGreater(Container(155).NumItems,1)+!Integer.IsGreater(Container(155).NumItems,2)">conditional</animation>
-                <animation effect="slide" time="0" start="0,0" end="0,328" condition="Integer.IsGreater(Container(155).NumItems,0)+!Integer.IsGreater(Container(155).NumItems,1)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,0" condition="IntegerGreaterThan(Container(155).NumItems,9)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,36" condition="IntegerGreaterThan(Container(155).NumItems,8)+!IntegerGreaterThan(Container(155).NumItems,9)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,73" condition="IntegerGreaterThan(Container(155).NumItems,7)+!IntegerGreaterThan(Container(155).NumItems,8)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,109" condition="IntegerGreaterThan(Container(155).NumItems,6)+!IntegerGreaterThan(Container(155).NumItems,7)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,146" condition="IntegerGreaterThan(Container(155).NumItems,5)+!IntegerGreaterThan(Container(155).NumItems,6)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,182" condition="IntegerGreaterThan(Container(155).NumItems,4)+!IntegerGreaterThan(Container(155).NumItems,5)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,219" condition="IntegerGreaterThan(Container(155).NumItems,3)+!IntegerGreaterThan(Container(155).NumItems,4)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,255" condition="IntegerGreaterThan(Container(155).NumItems,2)+!IntegerGreaterThan(Container(155).NumItems,3)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,292" condition="IntegerGreaterThan(Container(155).NumItems,1)+!IntegerGreaterThan(Container(155).NumItems,2)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,328" condition="IntegerGreaterThan(Container(155).NumItems,0)+!IntegerGreaterThan(Container(155).NumItems,1)">conditional</animation>
                 <include name="WindowClosingButton">
                     <param name="id" value="0"/>
                     <param name="x" value="1315"/>
@@ -158,7 +158,7 @@
                 </control>
             </control>
             <control type="image" id="150">
-                <animation effect="slide" time="0" start="0,0" end="0,3510" condition="Integer.IsGreater(Container(155).NumItems,0)">conditional</animation>
+                <animation effect="slide" time="0" start="0,0" end="0,3510" condition="IntegerGreaterThan(Container(155).NumItems,0)">conditional</animation>
                 <description>User image</description>
                 <texture></texture>
                 <aspectratio>keep</aspectratio>

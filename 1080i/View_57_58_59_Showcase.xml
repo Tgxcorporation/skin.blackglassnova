@@ -63,7 +63,7 @@
                 <visible>![ListItem.IsParentFolder]</visible>
                 <animation effect="slide" time="0" start="0,0" end="0,40" condition="[!control.isvisible(45741)+!control.isvisible(45742)]">Conditional</animation>
                 <control type="label">
-                    <animation effect="slide" time="0" start="0,0" end="0,25" condition="String.IsEmpty(control.getlabel(45742))">Conditional</animation>
+                    <animation effect="slide" time="0" start="0,0" end="0,25" condition="IsEmpty(control.getlabel(45742))">Conditional</animation>
                     <posx>100</posx>
                     <posy>925</posy>
                     <width>1720</width>
@@ -75,7 +75,7 @@
                     <label>$VAR[Fanart_Title]</label>
                 </control>
                 <control type="image">
-                    <visible>!String.IsEmpty(control.getlabel(45742))</visible>
+                    <visible>!IsEmpty(control.getlabel(45742))</visible>
                     <posx>0</posx>
                     <posy>911</posy>
                     <width>1920</width>
@@ -83,7 +83,7 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="group" id="45741">
-                    <visible>![Container.content(actors) | container.content(albums) | container.content(addons)] + !String.IsEmpty(ListItem.RatingAndVotes)</visible>
+                    <visible>![Container.content(actors) | container.content(albums) | container.content(addons)] + !IsEmpty(ListItem.RatingAndVotes)</visible>
                     <control type="image">
                         <posx>1860</posx>
                         <posy>1009</posy>
@@ -148,9 +148,9 @@
             <include>Icon_Fade</include>
             <visible>Control.hasfocus(505050)</visible>
             <control type="group">
-                <visible>![String.IsEqual(Container(500).ListItem.Label,..)]</visible>
+                <visible>![StringCompare(Container(500).ListItem.Label,..)]</visible>
                 <control type="image">
-                    <visible>Control.HasFocus(505050)+!String.IsEmpty(Container(500).ListItem.Property(DBID))</visible>
+                    <visible>Control.HasFocus(505050)+!IsEmpty(Container(500).ListItem.Property(DBID))</visible>
                     <posx>50</posx>
                     <posy>925</posy>
                     <width>30</width>
@@ -224,7 +224,7 @@
             <include>ScrollOffsetLabel_59</include>
             <control type="image">
                 <include>Icon_Fade</include>
-                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                 <posx>-100</posx>
                 <posy>569</posy>
                 <width>2258</width>
@@ -287,7 +287,7 @@
                         <include>ListFocusAnimation</include>
                         <!-- CDART VIDEO -->
                         <include name="DiscArt">
-                            <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
+                            <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                             <param name="x" value="27"/>
                             <param name="y" value="56"/>
                             <param name="width" value="220"/>
@@ -380,7 +380,7 @@
                 <control type="group">
                     <posy>219</posy>
                     <control type="group">
-                        <visible>!String.IsEqual(ListItem.Title,)+!ListItem.IsParentFolder</visible>
+                        <visible>!StringCompare(ListItem.Title,)+!ListItem.IsParentFolder</visible>
                         <control type="image">
                             <posx>92</posx>
                             <posy>399</posy>
@@ -399,7 +399,7 @@
                     </control>
                     <!-- CDART VIDEO -->
                     <include name="DiscArt">
-                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
+                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                         <param name="x" value="45"/>
                         <param name="y" value="293"/>
                         <param name="width" value="264"/>
@@ -423,7 +423,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Title,)</visible>
+                    <visible>!StringCompare(ListItem.Title,)</visible>
                     <posx>344</posx>
                     <posy>645</posy>
                     <control type="label">
@@ -529,7 +529,7 @@
             <include>ScrollOffsetLabel_58</include>
             <control type="image">
                 <include>Icon_Fade</include>
-                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                 <posx>-100</posx>
                 <posy>629</posy>
                 <width>2258</width>
@@ -586,7 +586,7 @@
                         <include>ListFocusAnimation</include>
                         <!-- CDART MUSIC -->
                         <include name="DiscArt">
-                            <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                            <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                             <param name="x" value="37"/>
                             <param name="y" value="12"/>
                             <param name="width" value="310"/>
@@ -673,7 +673,7 @@
                 <control type="group">
                     <posy>279</posy>
                     <control type="group">
-                        <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
+                        <visible>!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                         <control type="image">
                             <posx>152</posx>
                             <posy>399</posy>
@@ -692,7 +692,7 @@
                     </control>
                     <!-- CDART MUSIC -->
                     <include name="DiscArt">
-                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                         <param name="x" value="45"/>
                         <param name="y" value="264"/>
                         <param name="width" value="321"/>
@@ -709,7 +709,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
+                    <visible>!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
                     <posx>404</posx>
                     <posy>705</posy>
                     <control type="label">
@@ -783,7 +783,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder+Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
+                    <visible>!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder+Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
                     <posx>404</posx>
                     <posy>705</posy>
                     <control type="label">
@@ -826,7 +826,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder+![container.content(albums) | container.content(artists)]</visible>
+                    <visible>!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder+![container.content(albums) | container.content(artists)]</visible>
                     <posx>404</posx>
                     <posy>705</posy>
                     <control type="label">
@@ -910,7 +910,7 @@
             <include>ScrollOffsetLabel_57</include>
             <control type="image">
                 <include>Icon_Fade</include>
-                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
+                <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                 <posx>-100</posx>
                 <posy>629</posy>
                 <width>2258</width>
@@ -1029,7 +1029,7 @@
                                             <visible>![ListItem.IsParentFolder]</visible>
                                             <animation effect="slide" time="0" start="0,0" end="0,40" condition="[!control.isvisible(45741)+!control.isvisible(45742)]">Conditional</animation>
                                             <control type="label">
-                                                <animation effect="slide" time="0" start="0,0" end="0,25" condition="String.IsEmpty(control.getlabel(45742))">Conditional</animation>
+                                                <animation effect="slide" time="0" start="0,0" end="0,25" condition="IsEmpty(control.getlabel(45742))">Conditional</animation>
                                                 <posx>100</posx>
                                                 <posy>925</posy>
                                                 <width>1720</width>
@@ -1041,7 +1041,7 @@
                                                 <label>$VAR[Fanart_Title]</label>
                                             </control>
                                             <control type="image">
-                                                <visible>!String.IsEmpty(control.getlabel(45742))</visible>
+                                                <visible>!IsEmpty(control.getlabel(45742))</visible>
                                                 <posx>0</posx>
                                                 <posy>911</posy>
                                                 <width>1920</width>
@@ -1049,7 +1049,7 @@
                                                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
                                             </control>
                                             <control type="group" id="45741">
-                                                <visible>![Container.content(actors) | container.content(albums) | container.content(addons)] + !String.IsEmpty(ListItem.RatingAndVotes)</visible>
+                                                <visible>![Container.content(actors) | container.content(albums) | container.content(addons)] + !IsEmpty(ListItem.RatingAndVotes)</visible>
                                                 <control type="image">
                                                     <posx>1860</posx>
                                                     <posy>1009</posy>
@@ -1114,9 +1114,9 @@
                                         <include>Icon_Fade</include>
                                         <visible>Control.hasfocus(505050)</visible>
                                         <control type="group">
-                                            <visible>![String.IsEqual(Container(500).ListItem.Label,..)]</visible>
+                                            <visible>![StringCompare(Container(500).ListItem.Label,..)]</visible>
                                             <control type="image">
-                                                <visible>Control.HasFocus(505050)+!String.IsEmpty(Container(500).ListItem.Property(DBID))</visible>
+                                                <visible>Control.HasFocus(505050)+!IsEmpty(Container(500).ListItem.Property(DBID))</visible>
                                                 <posx>50</posx>
                                                 <posy>925</posy>
                                                 <width>30</width>
@@ -1190,7 +1190,7 @@
                                         <include>ScrollOffsetLabel_59</include>
                                         <control type="image">
                                             <include>Icon_Fade</include>
-                                            <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
+                                            <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                                             <posx>-100</posx>
                                             <posy>569</posy>
                                             <width>2258</width>
@@ -1253,7 +1253,7 @@
                                                     <include>ListFocusAnimation</include>
                                                     <!-- CDART VIDEO -->
                                                     <include name="DiscArt">
-                                                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
+                                                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                                                         <param name="x" value="27"/>
                                                         <param name="y" value="56"/>
                                                         <param name="width" value="220"/>
@@ -1346,7 +1346,7 @@
                                             <control type="group">
                                                 <posy>219</posy>
                                                 <control type="group">
-                                                    <visible>!String.IsEqual(ListItem.Title,)+!ListItem.IsParentFolder</visible>
+                                                    <visible>!StringCompare(ListItem.Title,)+!ListItem.IsParentFolder</visible>
                                                     <control type="image">
                                                         <posx>92</posx>
                                                         <posy>399</posy>
@@ -1365,7 +1365,7 @@
                                                 </control>
                                                 <!-- CDART VIDEO -->
                                                 <include name="DiscArt">
-                                                    <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
+                                                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                                                     <param name="x" value="45"/>
                                                     <param name="y" value="293"/>
                                                     <param name="width" value="264"/>
@@ -1389,7 +1389,7 @@
                                                 </control>
                                             </control>
                                             <control type="group">
-                                                <visible>!String.IsEqual(ListItem.Title,)</visible>
+                                                <visible>!StringCompare(ListItem.Title,)</visible>
                                                 <posx>344</posx>
                                                 <posy>645</posy>
                                                 <control type="label">
@@ -1495,7 +1495,7 @@
                                         <include>ScrollOffsetLabel_58</include>
                                         <control type="image">
                                             <include>Icon_Fade</include>
-                                            <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
+                                            <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                                             <posx>-100</posx>
                                             <posy>629</posy>
                                             <width>2258</width>
@@ -1552,7 +1552,7 @@
                                                     <include>ListFocusAnimation</include>
                                                     <!-- CDART MUSIC -->
                                                     <include name="DiscArt">
-                                                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                                                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                                                         <param name="x" value="37"/>
                                                         <param name="y" value="12"/>
                                                         <param name="width" value="310"/>
@@ -1639,7 +1639,7 @@
                                             <control type="group">
                                                 <posy>279</posy>
                                                 <control type="group">
-                                                    <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
+                                                    <visible>!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                                                     <control type="image">
                                                         <posx>152</posx>
                                                         <posy>399</posy>
@@ -1658,7 +1658,7 @@
                                                 </control>
                                                 <!-- CDART MUSIC -->
                                                 <include name="DiscArt">
-                                                    <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                                                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                                                     <param name="x" value="45"/>
                                                     <param name="y" value="264"/>
                                                     <param name="width" value="321"/>
@@ -1675,7 +1675,7 @@
                                                 </control>
                                             </control>
                                             <control type="group">
-                                                <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
+                                                <visible>!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder+!Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
                                                 <posx>404</posx>
                                                 <posy>705</posy>
                                                 <control type="label">
@@ -1749,7 +1749,7 @@
                                                 </control>
                                             </control>
                                             <control type="group">
-                                                <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder+Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
+                                                <visible>!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder+Skin.HasSetting(plexbmc)+[container.content(albums) | container.content(artists)]</visible>
                                                 <posx>404</posx>
                                                 <posy>705</posy>
                                                 <control type="label">
@@ -1792,7 +1792,7 @@
                                                 </control>
                                             </control>
                                             <control type="group">
-                                                <visible>!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder+![container.content(albums) | container.content(artists)]</visible>
+                                                <visible>!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder+![container.content(albums) | container.content(artists)]</visible>
                                                 <posx>404</posx>
                                                 <posy>705</posy>
                                                 <control type="label">
@@ -1876,7 +1876,7 @@
                                         <include>ScrollOffsetLabel_57</include>
                                         <control type="image">
                                             <include>Icon_Fade</include>
-                                            <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!String.IsEqual(ListItem.Label,)+!ListItem.IsParentFolder</visible>
+                                            <visible>[Control.hasfocus(7000)|Control.hasfocus(6069)]+!StringCompare(ListItem.Label,)+!ListItem.IsParentFolder</visible>
                                             <posx>-100</posx>
                                             <posy>629</posy>
                                             <width>2258</width>
@@ -2023,7 +2023,7 @@
                                             <control type="group">
                                                 <posy>279</posy>
                                                 <control type="group">
-                                                    <visible>!String.IsEqual(ListItem.Title,)+!ListItem.IsParentFolder</visible>
+                                                    <visible>!StringCompare(ListItem.Title,)+!ListItem.IsParentFolder</visible>
                                                     <control type="image">
                                                         <posx>395</posx>
                                                         <posy>399</posy>
@@ -2057,7 +2057,7 @@
                                                 </control>
                                             </control>
                                             <control type="group">
-                                                <visible>!String.IsEqual(ListItem.Title,)+!ListItem.IsParentFolder</visible>
+                                                <visible>!StringCompare(ListItem.Title,)+!ListItem.IsParentFolder</visible>
                                                 <posx>647</posx>
                                                 <posy>705</posy>
                                                 <control type="label">
@@ -2236,7 +2236,7 @@
                 <control type="group">
                     <posy>279</posy>
                     <control type="group">
-                        <visible>!String.IsEqual(ListItem.Title,)+!ListItem.IsParentFolder</visible>
+                        <visible>!StringCompare(ListItem.Title,)+!ListItem.IsParentFolder</visible>
                         <control type="image">
                             <posx>395</posx>
                             <posy>399</posy>
@@ -2270,7 +2270,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>!String.IsEqual(ListItem.Title,)+!ListItem.IsParentFolder</visible>
+                    <visible>!StringCompare(ListItem.Title,)+!ListItem.IsParentFolder</visible>
                     <posx>647</posx>
                     <posy>705</posy>
                     <control type="label">

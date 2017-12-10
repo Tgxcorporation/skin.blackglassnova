@@ -51,7 +51,7 @@
             <texture>common/BlackDot.png</texture>
         </control>
         <control type="multiimage">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+            <visible>[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + !IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>KenBurns</include>
             <include>Dimensions_Fullscreen</include>
             <imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
@@ -63,7 +63,7 @@
             <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
         </control>
         <control type="image">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + String.IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
+            <visible>[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)] + Skin.HasSetting(MusicPlayingFanart) + IsEmpty(Window(Visualisation).Property(ArtistSlideshow))</visible>
             <include>Dimensions_Fullscreen</include>
             <include>KenBurns</include>
             <fadetime>400</fadetime>
@@ -73,7 +73,7 @@
             <animation effect="fade" start="100" end="0" time="250">Hidden</animation>
         </control>
         <control type="visualisation">
-            <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
+            <visible>[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))] + [Skin.HasSetting(Show_Player)|window.isactive(visualisation)]</visible>
             <posx>0</posx>
             <posy>0</posy>
             <width>1920</width>
@@ -422,7 +422,7 @@
             </control>
             <include>TopBar</include>
             <control type="group" id="495678">
-                <visible>[[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|Player.HasVideo]+[window.isactive(AddonBrowser.xml)|window.isactive(FileManager.xml)|window.isactive(Home.xml)|window.isactive(MyMusicNav.xml)|window.isactive(MyMusicSongs.xml)|window.isactive(MyPics.xml)|window.isactive(MyPrograms.xml)|window.isactive(MyPVRChannels.xml)|window.isactive(MyPVRGuide.xml)|window.isactive(MyPVRRecordings.xml)|window.isactive(MyPVRSearch.xml)|window.isactive(MyPVRTimers.xml)|window.isactive(MyVideoNav.xml)|window.isactive(MyWeather.xml)|window.isactive(CustomAddons.xml)]</visible>
+                <visible>[[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]|Player.HasVideo]+[window.isactive(AddonBrowser.xml)|window.isactive(FileManager.xml)|window.isactive(Home.xml)|window.isactive(MyMusicNav.xml)|window.isactive(MyMusicSongs.xml)|window.isactive(MyPics.xml)|window.isactive(MyPrograms.xml)|window.isactive(MyPVRChannels.xml)|window.isactive(MyPVRGuide.xml)|window.isactive(MyPVRRecordings.xml)|window.isactive(MyPVRSearch.xml)|window.isactive(MyPVRTimers.xml)|window.isactive(MyVideoNav.xml)|window.isactive(MyWeather.xml)|window.isactive(CustomAddons.xml)]</visible>
                 <animation effect="slide" tween="circle" easing="out" time="250" start="0,0" end="580,0" condition="[ControlGroup(9000).HasFocus()|Control.HasFocus(8999)]+Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">conditional</animation>
                 <animation effect="slide" start="0,-88" end="0,0" time="200">Visible</animation>
                 <animation effect="slide" start="0,0" end="0,-88" time="200">Hidden</animation>
@@ -435,7 +435,7 @@
                     <texture>common/bg_dialog.png</texture>
                 </control>
                 <control type="label">
-                    <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
+                    <visible>[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
                     <posx>360</posx>
                     <posy>0</posy>
                     <height>46</height>
@@ -447,7 +447,7 @@
                     <label>$INFO[MusicPlayer.Artist,,  •  ]$INFO[MusicPlayer.Title,[COLOR=AlternateColor],[/COLOR]]</label>
                 </control>
                 <control type="label">
-                    <visible>[Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
+                    <visible>[Player.HasAudio + IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))]</visible>
                     <posx>1555</posx>
                     <posy>0</posy>
                     <height>46</height>
@@ -891,7 +891,7 @@
                 <texture border="3">list/bg_facade_nofocus.png</texture>
             </control>
             <control type="label">
-                <visible>!String.IsEqual(ListItem.Label,)</visible>
+                <visible>!StringCompare(ListItem.Label,)</visible>
                 <posx>TextMargin</posx>
                 <height>71</height>
                 <width>1041</width>
@@ -902,7 +902,7 @@
             </control>
             <control type="label">
                 <posx>645r</posx>
-                <visible>!String.IsEqual(ListItem.Label,) + [!String.IsEqual(ListItem.Label2,$LOCALIZE[106])+!String.IsEqual(ListItem.Label2,$LOCALIZE[107])]</visible>
+                <visible>!StringCompare(ListItem.Label,) + [!StringCompare(ListItem.Label2,$LOCALIZE[106])+!StringCompare(ListItem.Label2,$LOCALIZE[107])]</visible>
                 <height>71</height>
                 <width>600</width>
                 <align>right</align>
@@ -912,7 +912,7 @@
                 <scroll>false</scroll>
             </control>
             <control type="label">
-                <visible>String.IsEqual(ListItem.Label,)</visible>
+                <visible>StringCompare(ListItem.Label,)</visible>
                 <posx>TextMargin</posx>
                 <posy>10</posy>
                 <height>78</height>
@@ -923,7 +923,7 @@
                 <scroll>false</scroll>
             </control>
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[106])</visible>
+                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[106])</visible>
                 <posx>1128</posx>
                 <posy>0</posy>
                 <height>73</height>
@@ -932,7 +932,7 @@
                 <texture>buttons/RadioOffNF.png</texture>
             </control>
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[107])</visible>
+                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[107])</visible>
                 <posx>1128</posx>
                 <posy>0</posy>
                 <height>73</height>
@@ -950,7 +950,7 @@
                 <include>FacadeFocus</include>
             </control>
             <control type="label">
-                <visible>!String.IsEqual(ListItem.Label,)</visible>
+                <visible>!StringCompare(ListItem.Label,)</visible>
                 <posx>TextMargin</posx>
                 <height>71</height>
                 <width>1041</width>
@@ -960,7 +960,7 @@
             </control>
             <control type="label">
                 <posx>645r</posx>
-                <visible>!String.IsEqual(ListItem.Label,) + [!String.IsEqual(ListItem.Label2,$LOCALIZE[106])+!String.IsEqual(ListItem.Label2,$LOCALIZE[107])]</visible>
+                <visible>!StringCompare(ListItem.Label,) + [!StringCompare(ListItem.Label2,$LOCALIZE[106])+!StringCompare(ListItem.Label2,$LOCALIZE[107])]</visible>
                 <height>71</height>
                 <width>600</width>
                 <align>right</align>
@@ -969,7 +969,7 @@
                 <label>$INFO[ListItem.Label2]</label>
             </control>
             <control type="label">
-                <visible>String.IsEqual(ListItem.Label,)</visible>
+                <visible>StringCompare(ListItem.Label,)</visible>
                 <posx>TextMargin</posx>
                 <posy>10</posy>
                 <height>78</height>
@@ -979,7 +979,7 @@
                 <label>$INFO[ListItem.Label2]</label>
             </control>
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[106])</visible>
+                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[106])</visible>
                 <posx>1128</posx>
                 <posy>0</posy>
                 <height>73</height>
@@ -988,7 +988,7 @@
                 <texture>buttons/RadioOffFO.png</texture>
             </control>
             <control type="image">
-                <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[107])</visible>
+                <visible>!StringCompare(ListItem.Label,) + StringCompare(ListItem.Label2,$LOCALIZE[107])</visible>
                 <posx>1128</posx>
                 <posy>0</posy>
                 <height>73</height>
@@ -1088,8 +1088,8 @@
                 <control type="image">
                     <visible>Skin.HasSetting(EnableClearArt)</visible>
                     <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearLogo)+
-                    [!String.IsEmpty(Player.Art(clearlogo))|!String.IsEmpty(Player.Art(tvshow.clearlogo))]+
-                    [!String.IsEmpty(Player.Art(clearart))|!String.IsEmpty(Player.Art(tvshow.clearart))]">
+                    [!IsEmpty(Player.Art(clearlogo))|!IsEmpty(Player.Art(tvshow.clearlogo))]+
+                    [!IsEmpty(Player.Art(clearart))|!IsEmpty(Player.Art(tvshow.clearart))]">
                         <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
                         <effect type="fade" start="100" end="0" time="500" delay="3000"/>
                     </animation>
@@ -1103,8 +1103,8 @@
                 <control type="image">
                     <visible>Skin.HasSetting(EnableClearLogo)</visible>
                     <animation type="Conditional" pulse="true" reversible="false" condition="Skin.HasSetting(EnableClearArt)+
-                    [!String.IsEmpty(Player.Art(clearlogo))|!String.IsEmpty(Player.Art(tvshow.clearlogo))]+
-                    [!String.IsEmpty(Player.Art(clearart))|!String.IsEmpty(Player.Art(tvshow.clearart))]">
+                    [!IsEmpty(Player.Art(clearlogo))|!IsEmpty(Player.Art(tvshow.clearlogo))]+
+                    [!IsEmpty(Player.Art(clearart))|!IsEmpty(Player.Art(tvshow.clearart))]">
                         <effect type="slide" start="0,0" end="0,0" time="1500" delay="3500"/>
                         <effect type="fade" start="0" end="100" time="500" delay="3000"/>
                     </animation>
@@ -1155,7 +1155,7 @@
             </control>
             <!-- CDART VIDEO -->
             <include name="DiscArt">
-                <param name="visible" value="!String.IsEmpty(VideoPlayer.Cover)+VideoPlayer.Content(movies)"/>
+                <param name="visible" value="!IsEmpty(VideoPlayer.Cover)+VideoPlayer.Content(movies)"/>
                 <param name="x" value="147"/>
                 <param name="y" value="565"/>
                 <param name="width" value="356"/>
@@ -1243,7 +1243,7 @@
     <include name="ScrollOffsetLabel">
         <!--<visible>Container.Scrolling</visible>-->
         <visible>Skin.HasSetting(ScrollOffsetLabelEnabled)</visible>
-        <visible>Container.Scrolling + [String.IsEqual(Container.SortMethod,$LOCALIZE[551]) | String.IsEqual(Container.SortMethod,$LOCALIZE[561]) | String.IsEqual(Container.SortMethod,$LOCALIZE[558]) | String.IsEqual(Container.SortMethod,$LOCALIZE[557]) | String.IsEqual(Container.SortMethod,$LOCALIZE[556])]</visible>
+        <visible>Container.Scrolling + [StringCompare(Container.SortMethod,$LOCALIZE[551]) | StringCompare(Container.SortMethod,$LOCALIZE[561]) | StringCompare(Container.SortMethod,$LOCALIZE[558]) | StringCompare(Container.SortMethod,$LOCALIZE[557]) | StringCompare(Container.SortMethod,$LOCALIZE[556])]</visible>
         <include>Icon_Fade</include>
         <control type="image">
             <left>0</left>

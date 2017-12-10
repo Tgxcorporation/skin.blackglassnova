@@ -564,7 +564,7 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
-                <visible>!String.IsEmpty(Container(11).ListItem.StartDate)</visible>
+                <visible>!IsEmpty(Container(11).ListItem.StartDate)</visible>
                 <posx>381</posx>
                 <posy>562</posy>
                 <height>36</height>
@@ -574,7 +574,7 @@
                 <label>[B]$INFO[VideoPlayer.ChannelNumberLabel,,  •  ]$INFO[VideoPlayer.ChannelName][/B]  •  $INFO[Container(11).ListItem.StartDate]</label>
             </control>
             <control type="label">
-                <visible>String.IsEmpty(Container(11).ListItem.StartDate)</visible>
+                <visible>IsEmpty(Container(11).ListItem.StartDate)</visible>
                 <posx>381</posx>
                 <posy>562</posy>
                 <height>36</height>
@@ -757,7 +757,7 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
-                <visible>!String.IsEmpty(Container(11).ListItem.StartDate)</visible>
+                <visible>!IsEmpty(Container(11).ListItem.StartDate)</visible>
                 <posx>381</posx>
                 <posy>562</posy>
                 <height>36</height>
@@ -767,7 +767,7 @@
                 <label>[B]$INFO[VideoPlayer.ChannelNumberLabel,,  •  ]$INFO[VideoPlayer.ChannelName][/B]  •  $INFO[Container(11).ListItem.StartDate]</label>
             </control>
             <control type="label">
-                <visible>String.IsEmpty(Container(11).ListItem.StartDate)</visible>
+                <visible>IsEmpty(Container(11).ListItem.StartDate)</visible>
                 <posx>381</posx>
                 <posy>562</posy>
                 <height>36</height>

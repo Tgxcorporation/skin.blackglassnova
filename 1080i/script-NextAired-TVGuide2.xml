@@ -6,7 +6,7 @@
     <controls>
         <include>Fanart_Art</include>
         <control type="group">
-            <visible>!String.IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))+!Skin.HasSetting(DisableFanart)</visible>
+            <visible>!IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))+!Skin.HasSetting(DisableFanart)</visible>
             <include condition="Skin.HasSetting(BlackGlassMode)">OpenClose</include>
             <control type="image">
                 <visible>Control.HasFocus(200)|Control.HasFocus(201)|Control.HasFocus(202)|Control.HasFocus(203)|Control.HasFocus(204)|Control.HasFocus(205)|Control.HasFocus(206)|Control.HasFocus(207)|Control.HasFocus(208)|Control.HasFocus(209)|Control.HasFocus(210)|Control.HasFocus(211)|Control.HasFocus(212)|Control.HasFocus(213)|Control.HasFocus(214)|Control.HasFocus(215)</visible>
@@ -251,7 +251,7 @@
                         <label>$INFO[Window(Home).Property(NextAired.200.Wday)] $INFO[Window(Home).Property(NextAired.200.Date)]</label>
                     </control>
                     <control type="label">
-                        <visible>!String.IsEqual(Window(Home).Property(NextAired.200.Wday),)</visible>
+                        <visible>!StringCompare(Window(Home).Property(NextAired.200.Wday),)</visible>
                         <posx>395</posx>
                         <posy>0</posy>
                         <width>60</width>
@@ -840,7 +840,7 @@
                     <visible>control.hasfocus(200)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -850,7 +850,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -860,7 +860,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -929,7 +929,7 @@
                     <visible>control.hasfocus(201)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -939,7 +939,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -949,7 +949,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1018,7 +1018,7 @@
                     <visible>control.hasfocus(202)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1028,7 +1028,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1038,7 +1038,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1107,7 +1107,7 @@
                     <visible>control.hasfocus(203)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1117,7 +1117,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1127,7 +1127,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1196,7 +1196,7 @@
                     <visible>control.hasfocus(204)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1206,7 +1206,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1216,7 +1216,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1285,7 +1285,7 @@
                     <visible>control.hasfocus(205)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1295,7 +1295,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1305,7 +1305,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1374,7 +1374,7 @@
                     <visible>control.hasfocus(206)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1384,7 +1384,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1394,7 +1394,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1463,7 +1463,7 @@
                     <visible>control.hasfocus(207)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1473,7 +1473,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1483,7 +1483,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1552,7 +1552,7 @@
                     <visible>control.hasfocus(208)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1562,7 +1562,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1572,7 +1572,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1641,7 +1641,7 @@
                     <visible>control.hasfocus(209)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1651,7 +1651,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1661,7 +1661,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1730,7 +1730,7 @@
                     <visible>control.hasfocus(210)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1740,7 +1740,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1750,7 +1750,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1819,7 +1819,7 @@
                     <visible>control.hasfocus(211)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1829,7 +1829,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1839,7 +1839,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1908,7 +1908,7 @@
                     <visible>control.hasfocus(212)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1918,7 +1918,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -1928,7 +1928,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>
@@ -1997,7 +1997,7 @@
                     <visible>control.hasfocus(213)</visible>
                     <include>VisibleFadeEffect</include>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),0)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),0)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -2007,7 +2007,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),1)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),1)</visible>
                         <posx>50</posx>
                         <posy>775</posy>
                         <width>410</width>
@@ -2017,7 +2017,7 @@
                         <include>ThumbBorder</include>
                     </control>
                     <control type="image">
-                        <visible>String.IsEqual(Window(Home).Property(TVGuide.ThumbType),2)</visible>
+                        <visible>StringCompare(Window(Home).Property(TVGuide.ThumbType),2)</visible>
                         <posx>77</posx>
                         <posy>775</posy>
                         <width>356</width>

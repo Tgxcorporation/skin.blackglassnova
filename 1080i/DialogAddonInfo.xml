@@ -84,7 +84,7 @@
                     <onleft>8070</onleft>
                 </control>
                 <control type="button" id="705">
-                    <visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
+                    <visible>IntegerGreaterThan(Container(50).NumItems,0)</visible>
                     <label>$LOCALIZE[20008]</label>
                     <include>LeftMenuButton</include>
                     <onleft>50</onleft>
@@ -236,7 +236,7 @@
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="label">
-                    <visible>String.IsEmpty(ListItem.AddonBroken)</visible>
+                    <visible>IsEmpty(ListItem.AddonBroken)</visible>
                     <posx>228</posx>
                     <posy>768</posy>
                     <width>1041</width>
@@ -245,7 +245,7 @@
                     <label>$INFO[ListItem.AddonDisclaimer,[COLOR=WarningColor]$LOCALIZE[24052]: [/COLOR]]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(ListItem.AddonBroken)</visible>
+                    <visible>!IsEmpty(ListItem.AddonBroken)</visible>
                     <posx>228</posx>
                     <posy>768</posy>
                     <width>1041</width>
@@ -284,7 +284,7 @@
             <!--SCREENSHOTS-->
             <control type="group" id="7050">
                 <visible>control.hasfocus(705)|ControlGroup(7050).HasFocus</visible>
-                <visible>Integer.IsGreater(Container(50).NumItems,0)</visible>
+                <visible>IntegerGreaterThan(Container(50).NumItems,0)</visible>
                 <include>VisibleFadeEffectDelay</include>
                 <posx>178</posx>
                 <posy>382</posy>

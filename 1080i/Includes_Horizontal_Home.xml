@@ -227,7 +227,7 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="image">
-                <visible>Integer.IsGreater(Container(9001).NumItems,0)</visible>
+                <visible>IntegerGreaterThan(Container(9001).NumItems,0)</visible>
                 <include>VisibleFadeEffect</include>
                 <posx>0</posx>
                 <posy>909</posy>
@@ -616,7 +616,7 @@
                     <onfocus>SetFocus(701)</onfocus>
                 </control>
                 <control type="button" id="7018">
-                    <visible>Integer.IsGreater(Container(701).Numitems,0)</visible>
+                    <visible>IntegerGreaterThan(Container(701).Numitems,0)</visible>
                     <posx>0</posx>
                     <posy>455</posy>
                     <width>650</width>
@@ -625,7 +625,7 @@
                     <onclick>Control.Move(701,-1)</onclick>
                 </control>
                 <control type="button" id="7019">
-                    <visible>Integer.IsGreater(Container(701).Numitems,0)</visible>
+                    <visible>IntegerGreaterThan(Container(701).Numitems,0)</visible>
                     <posx>1270</posx>
                     <posy>455</posy>
                     <width>650</width>

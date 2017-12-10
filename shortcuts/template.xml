@@ -56,14 +56,14 @@
                 <control type="group">
                     <visible>Control.IsVisible(70001$SKINSHORTCUTS[mainmenuid])</visible>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
                         <visible>![
-                            String.IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Year)+
-                            String.IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Artist)+
-                            String.IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Duration)+
-                            String.IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Label2)+
-                            String.IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Genre)+
-                            String.IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA)
+                            IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Year)+
+                            IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Artist)+
+                            IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Duration)+
+                            IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Label2)+
+                            IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.Genre)+
+                            IsEmpty(Container(70001$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA)
                             ]</visible>
                         <posx>0</posx>
                         <posy>909</posy>
@@ -72,7 +72,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
+                        <visible>IntegerGreaterThan(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
                         <posx>0</posx>
                         <posy>999</posy>
                         <width>1920</width>
@@ -80,7 +80,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="button">
-                        <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>!IntegerGreaterThan(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
                         <posx>0</posx>
                         <posy>50</posy>
                         <width>1920</width>
@@ -109,7 +109,7 @@
                     <control type="image">
                         <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70001$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
                         <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90001$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
-                        <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                        <visible>!IntegerGreaterThan(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                         <texture>defaultEmptyBig.png</texture>
                         <fadetime>300</fadetime>
@@ -250,14 +250,14 @@
                 <control type="group">
                     <visible>Control.IsVisible(70002$SKINSHORTCUTS[mainmenuid])</visible>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
                         <visible>![
-                            String.IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Year)+
-                            String.IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Artist)+
-                            String.IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Duration)+
-                            String.IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Label2)+
-                            String.IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Genre)+
-                            String.IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA)
+                            IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Year)+
+                            IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Artist)+
+                            IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Duration)+
+                            IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Label2)+
+                            IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.Genre)+
+                            IsEmpty(Container(70002$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA)
                             ]</visible>
                         <posx>0</posx>
                         <posy>909</posy>
@@ -266,7 +266,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
+                        <visible>IntegerGreaterThan(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
                         <posx>0</posx>
                         <posy>999</posy>
                         <width>1920</width>
@@ -274,7 +274,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="button">
-                        <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>!IntegerGreaterThan(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
                         <posx>0</posx>
                         <posy>50</posy>
                         <width>1920</width>
@@ -303,7 +303,7 @@
                     <control type="image">
                         <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70002$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
                         <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90002$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
-                        <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                        <visible>!IntegerGreaterThan(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                         <texture>defaultEmptyBig.png</texture>
                         <fadetime>300</fadetime>
@@ -444,14 +444,14 @@
                 <control type="group">
                     <visible>Control.IsVisible(70003$SKINSHORTCUTS[mainmenuid])</visible>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
                         <visible>![
-                            String.IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Year)+
-                            String.IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Artist)+
-                            String.IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Duration)+
-                            String.IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Label2)+
-                            String.IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Genre)+
-                            String.IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA)
+                            IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Year)+
+                            IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Artist)+
+                            IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Duration)+
+                            IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Label2)+
+                            IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.Genre)+
+                            IsEmpty(Container(70003$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA)
                             ]</visible>
                         <posx>0</posx>
                         <posy>909</posy>
@@ -460,7 +460,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
+                        <visible>IntegerGreaterThan(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
                         <posx>0</posx>
                         <posy>999</posy>
                         <width>1920</width>
@@ -468,7 +468,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="button">
-                        <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>!IntegerGreaterThan(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
                         <posx>0</posx>
                         <posy>50</posy>
                         <width>1920</width>
@@ -497,7 +497,7 @@
                     <control type="image">
                         <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70003$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
                         <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90003$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
-                        <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                        <visible>!IntegerGreaterThan(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                         <texture>defaultEmptyBig.png</texture>
                         <fadetime>300</fadetime>
@@ -638,14 +638,14 @@
                 <control type="group">
                     <visible>Control.IsVisible(70004$SKINSHORTCUTS[mainmenuid])</visible>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
                         <visible>![
-                            String.IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Year)+
-                            String.IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Artist)+
-                            String.IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Duration)+
-                            String.IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Label2)+
-                            String.IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Genre)+
-                            String.IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA)
+                            IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Year)+
+                            IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Artist)+
+                            IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Duration)+
+                            IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Label2)+
+                            IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.Genre)+
+                            IsEmpty(Container(70004$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA)
                             ]</visible>
                         <posx>0</posx>
                         <posy>909</posy>
@@ -654,7 +654,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
+                        <visible>IntegerGreaterThan(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
                         <posx>0</posx>
                         <posy>999</posy>
                         <width>1920</width>
@@ -662,7 +662,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="button">
-                        <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>!IntegerGreaterThan(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
                         <posx>0</posx>
                         <posy>50</posy>
                         <width>1920</width>
@@ -691,7 +691,7 @@
                     <control type="image">
                         <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70004$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
                         <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90004$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
-                        <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                        <visible>!IntegerGreaterThan(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                         <texture>defaultEmptyBig.png</texture>
                         <fadetime>300</fadetime>
@@ -832,14 +832,14 @@
                 <control type="group">
                     <visible>Control.IsVisible(70005$SKINSHORTCUTS[mainmenuid])</visible>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
                         <visible>![
-                            String.IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Year)+
-                            String.IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Artist)+
-                            String.IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Duration)+
-                            String.IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Label2)+
-                            String.IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Genre)+
-                            String.IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA)
+                            IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Year)+
+                            IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Artist)+
+                            IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Duration)+
+                            IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Label2)+
+                            IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.Genre)+
+                            IsEmpty(Container(70005$SKINSHORTCUTS[mainmenuid]).ListItem.MPAA)
                             ]</visible>
                         <posx>0</posx>
                         <posy>909</posy>
@@ -848,7 +848,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="image">
-                        <visible>Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
+                        <visible>IntegerGreaterThan(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
                         <posx>0</posx>
                         <posy>999</posy>
                         <width>1920</width>
@@ -856,7 +856,7 @@
                         <texture border="3">list/bg_facade_nofocus_top.png</texture>
                     </control>
                     <control type="button">
-                        <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
+                        <visible>!IntegerGreaterThan(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)</visible>
                         <posx>0</posx>
                         <posy>50</posy>
                         <width>1920</width>
@@ -885,7 +885,7 @@
                     <control type="image">
                         <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70005$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
                         <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(90005$SKINSHORTCUTS[mainmenuid]).HasFocus">Conditional</animation>
-                        <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                        <visible>!IntegerGreaterThan(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                         <include>Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                         <texture>defaultEmptyBig.png</texture>
                         <fadetime>300</fadetime>
@@ -1054,7 +1054,7 @@
                 </control>
                 <control type="image">
                     <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70001$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
-                    <visible>!Integer.IsGreater(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <visible>!IntegerGreaterThan(Container(70001$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70001$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <texture>defaultEmptyBig.png</texture>
                     <fadetime>300</fadetime>
@@ -1147,7 +1147,7 @@
                 </control>
                 <control type="image">
                     <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70002$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
-                    <visible>!Integer.IsGreater(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <visible>!IntegerGreaterThan(Container(70002$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70002$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <texture>defaultEmptyBig.png</texture>
                     <fadetime>300</fadetime>
@@ -1240,7 +1240,7 @@
                 </control>
                 <control type="image">
                     <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70003$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
-                    <visible>!Integer.IsGreater(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <visible>!IntegerGreaterThan(Container(70003$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70003$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <texture>defaultEmptyBig.png</texture>
                     <fadetime>300</fadetime>
@@ -1333,7 +1333,7 @@
                 </control>
                 <control type="image">
                     <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70004$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
-                    <visible>!Integer.IsGreater(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <visible>!IntegerGreaterThan(Container(70004$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70004$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <texture>defaultEmptyBig.png</texture>
                     <fadetime>300</fadetime>
@@ -1426,7 +1426,7 @@
                 </control>
                 <control type="image">
                     <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus(70005$SKINSHORTCUTS[mainmenuid])">Conditional</animation>
-                    <visible>!Integer.IsGreater(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
+                    <visible>!IntegerGreaterThan(Container(70005$SKINSHORTCUTS[mainmenuid]).NumItems,0)+!Container(70005$SKINSHORTCUTS[mainmenuid]).IsUpdating</visible>
                     <include>Vertical_Widget_Empty_$SKINSHORTCUTS[gfxType]</include>
                     <texture>defaultEmptyBig.png</texture>
                     <fadetime>300</fadetime>

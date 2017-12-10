@@ -42,7 +42,7 @@
             <visible>Player.Caching</visible>
             <include>OSDVisibleFadeEffect</include>
             <control type="image" id="1">
-                <visible>Integer.IsGreater(Player.CacheLevel, 0)</visible>
+                <visible>IntegerGreaterThan(Player.CacheLevel, 0)</visible>
                 <posx>810</posx>
                 <posy>390</posy>
                 <width>300</width>
@@ -58,7 +58,7 @@
                 <animation effect="rotate" center="auto" start="360" end="0" time="750" loop="true" condition="true">Conditional</animation>
             </control>
             <control type="label" id="1">
-                <visible>Integer.IsGreater(Player.CacheLevel, 0)</visible>
+                <visible>IntegerGreaterThan(Player.CacheLevel, 0)</visible>
                 <posx>0</posx>
                 <posy>0</posy>
                 <height>1080</height>

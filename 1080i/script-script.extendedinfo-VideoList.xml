@@ -37,8 +37,8 @@
             <include condition="!Skin.HasSetting(BlackGlassMode)">Info_50_ExtendedInfo</include>
             <!-- COMMON -->
             <control type="group">
-                <visible>String.IsEqual(Container(500).ListItem.Label,..)|
-                    String.IsEmpty(Container(500).ListItem.Plot)|
+                <visible>StringCompare(Container(500).ListItem.Label,..)|
+                    IsEmpty(Container(500).ListItem.Plot)|
                     control.hasfocus(60)</visible>
                 <include>Icon_Fade</include>
                 <control type="image">
@@ -62,7 +62,7 @@
                 <include condition="Skin.HasSetting(BlackGlassMode)">Info_50_BG_ExtendedInfo</include>
                 <!-- COMMON -->
                 <control type="group">
-                    <visible>String.IsEqual(Container(500).ListItem.Label,..)|String.IsEmpty(Container(500).ListItem.Plot)</visible>
+                    <visible>StringCompare(Container(500).ListItem.Label,..)|IsEmpty(Container(500).ListItem.Plot)</visible>
                     <include>Icon_Fade</include>
                     <control type="image">
                         <posx>18</posx>

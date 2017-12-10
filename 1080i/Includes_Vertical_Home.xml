@@ -160,7 +160,7 @@
                     <param name="gfxType" value="Square"/>
                     <param name="content" value="PlexRecentPhotoContent"/>
                     <param name="id" value="900"/>
-                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),photo)"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),photo)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value=""/>
                 </include>
@@ -175,7 +175,7 @@
                     <param name="gfxType" value="Square"/>
                     <param name="content" value="PlexQueueContent"/>
                     <param name="id" value="901"/>
-                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Label,$LOCALIZE[31010])"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Label,$LOCALIZE[31010])"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="-"/>
                 </include>
@@ -190,7 +190,7 @@
                     <param name="gfxType" value="Poster"/>
                     <param name="content" value="PlexRecentMovieContent"/>
                     <param name="id" value="311"/>
-                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),movie)"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),movie)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,  •  ]$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
                 </include>
@@ -204,7 +204,7 @@
                     <param name="gfxType" value="Poster"/>
                     <param name="content" value="PlexOnDeckMovieContent"/>
                     <param name="id" value="312"/>
-                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),movie)"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),movie)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,  •  ]$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
                 </include>
@@ -219,7 +219,7 @@
                     <param name="gfxType" value="Square"/>
                     <param name="content" value="PlexRecentAlbumContent"/>
                     <param name="id" value="511"/>
-                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),artist)"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),artist)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Label2]"/>
                 </include>
@@ -249,7 +249,7 @@
                     <param name="gfxType" value="Poster"/>
                     <param name="content" value="PlexRecentEpisodeContent"/>
                     <param name="id" value="411"/>
-                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),show)"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),show)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Property(TVshowTitle)]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Property(SeasonEpisode)]$INFO[ListItem.Property(Rating),  •  ]$INFO[ListItem.Property(Runtime),  •  , $LOCALIZE[31297]]"/>
                 </include>
@@ -263,7 +263,7 @@
                     <param name="gfxType" value="Poster"/>
                     <param name="content" value="PlexOnDeckEpisodeContent"/>
                     <param name="id" value="412"/>
-                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),show)"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),show)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Property(TVshowTitle)]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Property(SeasonEpisode)]$INFO[ListItem.Property(Rating),  •  ]$INFO[ListItem.Property(Runtime),  •  , $LOCALIZE[31297]]"/>
                 </include>
@@ -277,7 +277,7 @@
                     <param name="gfxType" value="Poster"/>
                     <param name="content" value="PlexRecentlyViewedShowContent"/>
                     <param name="id" value="413"/>
-                    <param name="visibility" value="String.IsEqual(Container(300).ListItem.Property(type),show)"/>
+                    <param name="visibility" value="StringCompare(Container(300).ListItem.Property(type),show)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Property(Rating),,  •  ]$INFO[ListItem.Property(Year),,  •  ]$INFO[ListItem.Property(Runtime),, $LOCALIZE[31297]]"/>
                 </include>
@@ -383,64 +383,64 @@
                         <posy>78</posy>
                         <height>923</height>
                         <include>VerticalScroller</include>
-                        <onright condition="Skin.HasSetting(plexbmc)+!String.IsEmpty(Container(300).ListItem.Property(uuid))">900</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),1)">700011</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),2)">700012</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),3)">700013</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),4)">700014</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),5)">700015</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),6)">700016</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),7)">700017</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),8)">700018</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),9)">700019</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),10)">7000110</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),11)">7000111</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),12)">7000112</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),13)">7000113</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),14)">7000114</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),15)">7000115</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),16)">7000116</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),17)">7000117</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),18)">7000118</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),19)">7000119</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),20)">7000120</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),21)">7000121</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),22)">7000122</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),23)">7000123</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),24)">7000124</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),25)">7000125</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),26)">7000126</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),27)">7000127</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),28)">7000128</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),29)">7000129</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),30)">7000130</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),31)">7000131</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),32)">7000132</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),33)">7000133</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),34)">7000134</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),35)">7000135</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),36)">7000136</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),37)">7000137</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),38)">7000138</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),39)">7000139</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),40)">7000140</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),41)">7000141</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),42)">7000142</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),43)">7000143</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),44)">7000144</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),45)">7000145</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),46)">7000146</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),47)">7000147</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),48)">7000148</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),49)">7000149</onright>
-                        <onright condition="String.IsEqual(Container(300).ListItem.Property(id),50)">7000150</onright>
+                        <onright condition="Skin.HasSetting(plexbmc)+!IsEmpty(Container(300).ListItem.Property(uuid))">900</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),1)">700011</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),2)">700012</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),3)">700013</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),4)">700014</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),5)">700015</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),6)">700016</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),7)">700017</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),8)">700018</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),9)">700019</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),10)">7000110</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),11)">7000111</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),12)">7000112</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),13)">7000113</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),14)">7000114</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),15)">7000115</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),16)">7000116</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),17)">7000117</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),18)">7000118</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),19)">7000119</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),20)">7000120</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),21)">7000121</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),22)">7000122</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),23)">7000123</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),24)">7000124</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),25)">7000125</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),26)">7000126</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),27)">7000127</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),28)">7000128</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),29)">7000129</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),30)">7000130</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),31)">7000131</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),32)">7000132</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),33)">7000133</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),34)">7000134</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),35)">7000135</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),36)">7000136</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),37)">7000137</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),38)">7000138</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),39)">7000139</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),40)">7000140</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),41)">7000141</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),42)">7000142</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),43)">7000143</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),44)">7000144</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),45)">7000145</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),46)">7000146</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),47)">7000147</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),48)">7000148</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),49)">7000149</onright>
+                        <onright condition="StringCompare(Container(300).ListItem.Property(id),50)">7000150</onright>
                         <onleft>300</onleft>
                     </control>
                 </control>
 
                 <!--SUB MENU PANEL-->
                 <control type="group">
-                    <animation effect="slide" tween="circle" start="0,0" end="455,0" time="200" delay="0" reversible="true" condition="Integer.IsGreater(Container(9001).NumItems,0)+[Control.HasFocus(9001)|Control.hasfocus(8999)|Control.hasfocus(8983)|Control.hasfocus(8984)]">conditional</animation>
+                    <animation effect="slide" tween="circle" start="0,0" end="455,0" time="200" delay="0" reversible="true" condition="IntegerGreaterThan(Container(9001).NumItems,0)+[Control.HasFocus(9001)|Control.hasfocus(8999)|Control.hasfocus(8983)|Control.hasfocus(8984)]">conditional</animation>
                     <control type="button" id="8999">
                         <posx>-600</posx>
                         <posy>0</posy>
@@ -470,7 +470,7 @@
                             <texture>common/BlackDot.png</texture>
                         </control>
                         <control type="image">
-                            <visible>Integer.IsGreater(Container(9001).NumItems,0)</visible>
+                            <visible>IntegerGreaterThan(Container(9001).NumItems,0)</visible>
                             <include>VisibleFadeEffect</include>
                             <posx>-470</posx>
                             <posy>178</posy>

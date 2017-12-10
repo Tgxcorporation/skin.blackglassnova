@@ -201,7 +201,7 @@
                     </control>
                     <!-- CDART MUSIC -->
                     <include name="DiscArt">
-                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                         <param name="x" value="51"/>
                         <param name="y" value="-127"/>
                         <param name="width" value="404"/>
@@ -531,7 +531,7 @@
                     </control>
                     <!-- CDART VIDEO -->
                     <include name="DiscArt">
-                        <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
+                        <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)|Window.IsVisible(MyPlaylist.xml)]"/>
                         <param name="x" value="51"/>
                         <param name="y" value="-127"/>
                         <param name="width" value="404"/>

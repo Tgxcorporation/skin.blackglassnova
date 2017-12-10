@@ -63,7 +63,7 @@
                 <onleft>3110</onleft>
                 <!--current color name-->
                 <control type="button" id="3030">
-                    <visible>!String.IsEmpty(Window.Property(palettename))</visible>
+                    <visible>!IsEmpty(Window.Property(palettename))</visible>
                     <onright>3110</onright>
                     <label>$ADDON[script.skin.helper.colorpicker 32141]: $INFO[Window.Property(palettename)]</label>
                     <width>444</width>

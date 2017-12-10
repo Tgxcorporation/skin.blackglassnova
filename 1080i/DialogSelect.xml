@@ -68,7 +68,7 @@
                     <texture>list/bg_facade_vertical.png</texture>
                 </control>
                 <control type="image">
-                    <visible>String.IsEmpty(Container(6).ListItem.Thumb)+[String.IsEmpty(Container(6).ListItem.Icon)|String.StartsWith(Container(6).ListItem.Icon,Default)]</visible>
+                    <visible>IsEmpty(Container(6).ListItem.Thumb)+[IsEmpty(Container(6).ListItem.Icon)|SubString(Container(6).ListItem.Icon,Default,left)]</visible>
                     <posx>1011</posx>
                     <posy>154</posy>
                     <width>434</width>
@@ -78,7 +78,7 @@
                     <include>ThumbBorder</include>
                 </control>
                 <control type="image">
-                    <visible>!String.IsEmpty(Container(6).ListItem.Thumb)</visible>
+                    <visible>!IsEmpty(Container(6).ListItem.Thumb)</visible>
                     <posx>1011</posx>
                     <posy>154</posy>
                     <width>434</width>
@@ -88,7 +88,7 @@
                     <include>ThumbBorder</include>
                 </control>
                 <control type="image">
-                    <visible>!String.IsEmpty(Container(6).ListItem.Icon)</visible>
+                    <visible>!IsEmpty(Container(6).ListItem.Icon)</visible>
                     <posx>1011</posx>
                     <posy>154</posy>
                     <width>434</width>
@@ -120,7 +120,7 @@
                         <texture border="3">list/bg_facade_nofocus.png</texture>
                     </control>
                     <control type="label">
-                        <visible>[String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
+                        <visible>[IsEmpty(ListItem.Label2)+IsEmpty(ListItem.AddonVersion)+IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <height>71</height>
                         <width>905</width>
@@ -130,7 +130,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
+                        <visible>![IsEmpty(ListItem.Label2)+IsEmpty(ListItem.AddonVersion)+IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <height>42</height>
                         <width>905</width>
@@ -140,7 +140,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
+                        <visible>![IsEmpty(ListItem.Label2)+IsEmpty(ListItem.AddonVersion)+IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -160,7 +160,7 @@
                         <include>FacadeFocus</include>
                     </control>
                     <control type="label">
-                        <visible>[String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
+                        <visible>[IsEmpty(ListItem.Label2)+IsEmpty(ListItem.AddonVersion)+IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <height>71</height>
                         <width>915</width>
@@ -169,7 +169,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
+                        <visible>![IsEmpty(ListItem.Label2)+IsEmpty(ListItem.AddonVersion)+IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <height>42</height>
                         <width>905</width>
@@ -178,7 +178,7 @@
                         <info>ListItem.Label</info>
                     </control>
                     <control type="label">
-                        <visible>![String.IsEmpty(ListItem.Label2)+String.IsEmpty(ListItem.AddonVersion)+String.IsEmpty(ListItem.AddonCreator)]</visible>
+                        <visible>![IsEmpty(ListItem.Label2)+IsEmpty(ListItem.AddonVersion)+IsEmpty(ListItem.AddonCreator)]</visible>
                         <posx>25</posx>
                         <posy>39</posy>
                         <height>28</height>

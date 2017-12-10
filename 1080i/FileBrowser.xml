@@ -77,7 +77,7 @@
                         <include>SquareThumb</include>
                     </control>
                     <control type="label">
-                        <visible>String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>StringCompare(ListItem.Label2,)</visible>
                         <posx>103</posx>
                         <height>71</height>
                         <width>800</width>
@@ -87,7 +87,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>!StringCompare(ListItem.Label2,)</visible>
                         <posx>103</posx>
                         <height>42</height>
                         <width>800</width>
@@ -97,7 +97,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>!StringCompare(ListItem.Label2,)</visible>
                         <posx>103</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -123,7 +123,7 @@
                         <include>SquareThumb</include>
                     </control>
                     <control type="label">
-                        <visible>String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>StringCompare(ListItem.Label2,)</visible>
                         <posx>103</posx>
                         <height>71</height>
                         <width>800</width>
@@ -132,7 +132,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>!StringCompare(ListItem.Label2,)</visible>
                         <posx>103</posx>
                         <height>42</height>
                         <width>800</width>
@@ -141,7 +141,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>!StringCompare(ListItem.Label2,)</visible>
                         <posx>103</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -179,7 +179,7 @@
                         <colordiffuse>NoFocusedColor</colordiffuse>
                     </control>
                     <control type="label">
-                        <visible>String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>StringCompare(ListItem.Label2,)</visible>
                         <posx>100</posx>
                         <height>71</height>
                         <width>800</width>
@@ -188,7 +188,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>!StringCompare(ListItem.Label2,)</visible>
                         <posx>100</posx>
                         <height>42</height>
                         <width>800</width>
@@ -197,7 +197,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>!StringCompare(ListItem.Label2,)</visible>
                         <posx>100</posx>
                         <posy>39</posy>
                         <height>28</height>
@@ -222,7 +222,7 @@
                         <include>SquareThumb</include>
                     </control>
                     <control type="label">
-                        <visible>String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>StringCompare(ListItem.Label2,)</visible>
                         <posx>100</posx>
                         <height>71</height>
                         <width>800</width>
@@ -231,7 +231,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>!StringCompare(ListItem.Label2,)</visible>
                         <posx>100</posx>
                         <height>42</height>
                         <width>800</width>
@@ -240,7 +240,7 @@
                         <label>$INFO[ListItem.Label]</label>
                     </control>
                     <control type="label">
-                        <visible>!String.IsEqual(ListItem.Label2,)</visible>
+                        <visible>!StringCompare(ListItem.Label2,)</visible>
                         <posx>100</posx>
                         <posy>39</posy>
                         <height>28</height>

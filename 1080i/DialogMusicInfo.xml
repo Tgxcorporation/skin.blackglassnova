@@ -27,7 +27,7 @@
                 <texture border="3">list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
-                <visible>!String.IsEqual(ListItem.DBType,artist)</visible>
+                <visible>!StringCompare(ListItem.DBType,artist)</visible>
                 <posx>223</posx>
                 <posy>323</posy>
                 <height>36</height>
@@ -38,7 +38,7 @@
                 <label>$INFO[Listitem.Album]</label>
             </control>
             <control type="label">
-                <visible>String.IsEqual(ListItem.DBType,artist)</visible>
+                <visible>StringCompare(ListItem.DBType,artist)</visible>
                 <posx>223</posx>
                 <posy>323</posy>
                 <height>36</height>
@@ -77,28 +77,28 @@
                 <scrolltime>200</scrolltime>
                 <pagecontrol>9600</pagecontrol>
                 <control type="button" id="500">
-                    <visible>String.IsEqual(ListItem.DBType,artist)</visible>
+                    <visible>StringCompare(ListItem.DBType,artist)</visible>
                     <description>Biography</description>
                     <include>RightDialogButton</include>
                     <label>21887</label>
                     <onleft>49</onleft>
                 </control>
                 <control type="button" id="501">
-                    <visible>String.IsEqual(ListItem.DBType,album)</visible>
+                    <visible>StringCompare(ListItem.DBType,album)</visible>
                     <description>Review</description>
                     <include>RightDialogButton</include>
                     <label>183</label>
                     <onleft>49</onleft>
                 </control>
                 <control type="button" id="502">
-                    <visible>String.IsEqual(ListItem.DBType,artist)</visible>
+                    <visible>StringCompare(ListItem.DBType,artist)</visible>
                     <description>Discography</description>
                     <include>RightDialogButton</include>
                     <label>21888</label>
                     <onleft>50</onleft>
                 </control>
                 <control type="button" id="503">
-                    <visible>String.IsEqual(ListItem.DBType,album)</visible>
+                    <visible>StringCompare(ListItem.DBType,album)</visible>
                     <description>Tracks</description>
                     <include>RightDialogButton</include>
                     <label>182</label>
@@ -111,7 +111,7 @@
                     <onleft>49</onleft>
                 </control>
                 <control type="button" id="12">
-                    <visible>String.IsEqual(ListItem.DBType,artist)</visible>
+                    <visible>StringCompare(ListItem.DBType,artist)</visible>
                     <description>Get Fanart</description>
                     <include>RightDialogButton</include>
                     <label>20413</label>
@@ -121,7 +121,7 @@
                     <description>Set my rating</description>
                     <include>RightDialogButton</include>
                     <label>31033</label>
-                    <visible>String.IsEqual(ListItem.DBType,album) | String.IsEqual(ListItem.DBType,song)</visible>
+                    <visible>StringCompare(ListItem.DBType,album) | StringCompare(ListItem.DBType,song)</visible>
                 </control>
                 <control type="button" id="6">
                     <description>Refresh</description>
@@ -146,7 +146,7 @@
                 <include>VisibleFadeEffectDelay</include>
                 <!-- CDART MUSIC -->
                 <include name="DiscArt">
-                    <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[String.IsEqual(ListItem.DBType,album)|String.IsEqual(ListItem.DBType,song)]"/>
+                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[StringCompare(ListItem.DBType,album)|StringCompare(ListItem.DBType,song)]"/>
                     <param name="x" value="1540"/>
                     <param name="y" value="865"/>
                     <param name="width" value="316"/>
@@ -162,7 +162,7 @@
                     <include>ThumbBorder</include>
                 </control>
                 <control type="group">
-                    <visible>String.IsEqual(ListItem.DBType,album)</visible>
+                    <visible>StringCompare(ListItem.DBType,album)</visible>
                     <posx>178</posx>
                     <posy>382</posy>
                     <include>VisibleFadeEffect</include>
@@ -236,61 +236,61 @@
                                 <label>$LOCALIZE[557]:</label>
                                 <label2>$INFO[ListItem.Artist]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Artist)</visible>
+                                <visible>!IsEmpty(ListItem.Artist)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[515]:</label>
                                 <label2>$INFO[ListItem.Genre]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Genre)</visible>
+                                <visible>!IsEmpty(ListItem.Genre)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[38018]:</label>
                                 <label2>$INFO[ListItem.UserRating,,.0]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.UserRating)</visible>
+                                <visible>!IsEmpty(ListItem.UserRating)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[563]:</label>
                                 <label2>$INFO[ListItem.RatingAndVotes]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.RatingAndVotes)</visible>
+                                <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[175]:</label>
                                 <label2>$INFO[ListItem.Property(Album_Mood)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Album_Mood))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Album_Mood))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[176]:</label>
                                 <label2>$INFO[ListItem.Property(Album_Style)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Album_Style))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Album_Style))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21895]:</label>
                                 <label2>$INFO[ListItem.Property(Album_Theme)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Album_Theme))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Album_Theme))</visible>
                             </item>
                             <item>
                                 <label>146</label>
                                 <label2>$INFO[ListItem.Property(Album_Type)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Album_Type))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Album_Type))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21899]:</label>
                                 <label2>$INFO[ListItem.Property(Album_Label)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Album_Label))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Album_Label))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[562]:</label>
                                 <label2>$INFO[ListItem.Year]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Year)</visible>
+                                <visible>!IsEmpty(ListItem.Year)</visible>
                             </item>
                         </content>
                     </control>
@@ -304,7 +304,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>String.IsEqual(ListItem.DBType,song)</visible>
+                    <visible>StringCompare(ListItem.DBType,song)</visible>
                     <posx>178</posx>
                     <posy>382</posy>
                     <include>VisibleFadeEffect</include>
@@ -378,85 +378,85 @@
                                 <label>$LOCALIZE[557]:</label>
                                 <label2>$INFO[ListItem.Artist]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Artist)</visible>
+                                <visible>!IsEmpty(ListItem.Artist)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[558]:</label>
                                 <label2>$INFO[ListItem.Album]$INFO[listitem.discnumber, - $LOCALIZE[427] ]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Album)</visible>
+                                <visible>!IsEmpty(ListItem.Album)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[515]:</label>
                                 <label2>$INFO[ListItem.Genre]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Genre)</visible>
+                                <visible>!IsEmpty(ListItem.Genre)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[562]:</label>
                                 <label2>$INFO[ListItem.Year]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Year)</visible>
+                                <visible>!IsEmpty(ListItem.Year)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[554]:</label>
                                 <label2>$INFO[ListItem.TrackNumber]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.TrackNumber)</visible>
+                                <visible>!IsEmpty(ListItem.TrackNumber)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[38018]:</label>
                                 <label2>$INFO[ListItem.UserRating,,.0]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.UserRating)</visible>
+                                <visible>!IsEmpty(ListItem.UserRating)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[563]:</label>
                                 <label2>$INFO[ListItem.RatingAndVotes]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.RatingAndVotes)</visible>
+                                <visible>!IsEmpty(ListItem.RatingAndVotes)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[427]:</label>
                                 <label2>$INFO[ListItem.discnumber]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.discnumber)</visible>
+                                <visible>!IsEmpty(ListItem.discnumber)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[180]:</label>
                                 <label2>$INFO[ListItem.Duration]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Duration)</visible>
+                                <visible>!IsEmpty(ListItem.Duration)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21899]:</label>
                                 <label2>$INFO[ListItem.Property(Album_Label)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Album_Label))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Album_Label))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[567]:</label>
                                 <label2>$INFO[ListItem.PlayCount]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.PlayCount)</visible>
+                                <visible>!IsEmpty(ListItem.PlayCount)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[568]:</label>
                                 <label2>$INFO[ListItem.LastPlayed]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.LastPlayed)</visible>
+                                <visible>!IsEmpty(ListItem.LastPlayed)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[573]:</label>
                                 <label2>$INFO[ListItem.Path]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Path)</visible>
+                                <visible>!IsEmpty(ListItem.Path)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21800]:</label>
                                 <label2>$INFO[ListItem.FileName]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.FileName)</visible>
+                                <visible>!IsEmpty(ListItem.FileName)</visible>
                             </item>
                         </content>
                     </control>
@@ -470,7 +470,7 @@
                     </control>
                 </control>
                 <control type="group">
-                    <visible>String.IsEqual(ListItem.DBType,artist)</visible>
+                    <visible>StringCompare(ListItem.DBType,artist)</visible>
                     <posx>178</posx>
                     <posy>382</posy>
                     <include>VisibleFadeEffect</include>
@@ -544,55 +544,55 @@
                                 <label>$LOCALIZE[21893]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Born)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Artist_Born))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Artist_Born))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21894]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Formed)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Artist_Formed))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Artist_Formed))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[515]:</label>
                                 <label2>$INFO[ListItem.Genre]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Genre)</visible>
+                                <visible>!IsEmpty(ListItem.Genre)</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[175]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Mood)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Artist_Mood))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Artist_Mood))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[176]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Style)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Artist_Style))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Artist_Style))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21892]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Instrument)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Artist_Instrument))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Artist_Instrument))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21897]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Died)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Artist_Died))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Artist_Died))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21896]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_Disbanded)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Artist_Disbanded))</visible>
                             </item>
                             <item>
                                 <label>$LOCALIZE[21898]:</label>
                                 <label2>$INFO[ListItem.Property(Artist_YearsActive)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(ListItem.Property(Artist_YearsActive))</visible>
+                                <visible>!IsEmpty(ListItem.Property(Artist_YearsActive))</visible>
                             </item>
                         </content>
                     </control>
@@ -644,7 +644,7 @@
                 <include>VisibleFadeEffectDelay</include>
                 <!-- CDART MUSIC -->
                 <include name="DiscArt">
-                    <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[String.IsEqual(ListItem.DBType,album)|String.IsEqual(ListItem.DBType,song)]"/>
+                    <param name="visible" value="!IsEmpty(ListItem.Thumb)+[StringCompare(ListItem.DBType,album)|StringCompare(ListItem.DBType,song)]"/>
                     <param name="x" value="1540"/>
                     <param name="y" value="865"/>
                     <param name="width" value="316"/>
@@ -671,7 +671,7 @@
                         <pagecontrol>61</pagecontrol>
                         <scrolltime>200</scrolltime>
                         <orientation>vertical</orientation>
-                        <itemlayout condition="String.IsEqual(ListItem.DBType,album)" height="73" width="1131">
+                        <itemlayout condition="StringCompare(ListItem.DBType,album)" height="73" width="1131">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
@@ -699,7 +699,7 @@
                                 <scroll>false</scroll>
                             </control>
                         </itemlayout>
-                        <focusedlayout condition="String.IsEqual(ListItem.DBType,album)" height="73" width="1131">
+                        <focusedlayout condition="StringCompare(ListItem.DBType,album)" height="73" width="1131">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
@@ -725,7 +725,7 @@
                                 <label>$INFO[ListItem.Duration]</label>
                             </control>
                         </focusedlayout>
-                        <itemlayout condition="String.IsEqual(ListItem.DBType,artist)" height="73" width="1131">
+                        <itemlayout condition="StringCompare(ListItem.DBType,artist)" height="73" width="1131">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>
@@ -753,7 +753,7 @@
                                 <scroll>false</scroll>
                             </control>
                         </itemlayout>
-                        <focusedlayout condition="String.IsEqual(ListItem.DBType,artist)" height="73" width="1131">
+                        <focusedlayout condition="StringCompare(ListItem.DBType,artist)" height="73" width="1131">
                             <control type="image">
                                 <posx>0</posx>
                                 <posy>0</posy>

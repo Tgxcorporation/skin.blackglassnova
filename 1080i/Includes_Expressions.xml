@@ -16,13 +16,13 @@
     <expression name="ContentIsPoster">
         [Container.content(actors) |
         Container.Content(musicvideos) |
-        [container.content(movies)+!String.IsEqual(Container.FolderName,$LOCALIZE[19017])] |
+        [container.content(movies)+!StringCompare(Container.FolderName,$LOCALIZE[19017])] |
         container.content(TVshows) |
         container.content(seasons) |
         Container.Content(sets)]
     </expression>
     <expression name="ContentIsEpisode">
-        [Container.content(episodes)|[container.content(movies)+String.IsEqual(Container.FolderName,$LOCALIZE[19017])]]
+        [Container.content(episodes)|[container.content(movies)+StringCompare(Container.FolderName,$LOCALIZE[19017])]]
     </expression>
     <expression name="ContentIsChannel">
         [Window.IsActive(MyPVRChannels.xml)|

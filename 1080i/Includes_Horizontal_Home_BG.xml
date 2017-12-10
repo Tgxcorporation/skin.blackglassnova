@@ -571,7 +571,7 @@
                         <include>ShelfIcons</include>
                     </control>
                     <control type="button" id="7018">
-                        <visible>Integer.IsGreater(Container(701).Numitems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(701).Numitems,0)</visible>
                         <posx>150</posx>
                         <posy>685</posy>
                         <width>500</width>
@@ -580,7 +580,7 @@
                         <onclick>Control.Move(701,-1)</onclick>
                     </control>
                     <control type="button" id="7019">
-                        <visible>Integer.IsGreater(Container(701).Numitems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(701).Numitems,0)</visible>
                         <posx>1270</posx>
                         <posy>685</posy>
                         <width>500</width>

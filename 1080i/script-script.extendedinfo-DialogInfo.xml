@@ -87,37 +87,37 @@
                                 <label>$ADDON[script.extendedinfo 32011]:</label>
                                 <label2>$INFO[Window.Property(TotalMovies)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(Window.Property(TotalMovies))</visible>
+                                <visible>!IsEmpty(Window.Property(TotalMovies))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32021]:</label>
                                 <label2>$INFO[Window.Property(DBMovies)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(Window.Property(DBMovies))</visible>
+                                <visible>!IsEmpty(Window.Property(DBMovies))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32012]:</label>
                                 <label2>$INFO[Window.Property(Birthday)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(Window.Property(Birthday))</visible>
+                                <visible>!IsEmpty(Window.Property(Birthday))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32020]:</label>
                                 <label2>$INFO[Window.Property(Age)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(Window.Property(Age))</visible>
+                                <visible>!IsEmpty(Window.Property(Age))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32013]:</label>
                                 <label2>$INFO[Window.Property(Deathday)]$INFO[Window.Property(DeathageLong), (,)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(Window.Property(Deathday))</visible>
+                                <visible>!IsEmpty(Window.Property(Deathday))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32014]:</label>
                                 <label2>$INFO[Window.Property(PlaceOfBirth)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(Window.Property(PlaceOfBirth))</visible>
+                                <visible>!IsEmpty(Window.Property(PlaceOfBirth))</visible>
                             </item>
                             <!--<item>-->
                             <!--<label>$ADDON[script.extendedinfo 32015]:</label>-->
@@ -129,13 +129,13 @@
                                 <label>$ADDON[script.extendedinfo 32016]:</label>
                                 <label2>$INFO[Window.Property(AlsoKnownAs)]</label2>
                                 <onclick>noop</onclick>
-                                <visible>!String.IsEmpty(Window.Property(AlsoKnownAs))</visible>
+                                <visible>!IsEmpty(Window.Property(AlsoKnownAs))</visible>
                             </item>
                             <item>
                                 <label>$ADDON[script.extendedinfo 32017]:</label>
                                 <label2>$INFO[Window.Property(Homepage)]</label2>
                                 <onclick>RunScript(script.extendedinfo,homepage=$INFO[Window.Property(Homepage)])</onclick>
-                                <visible>!String.IsEmpty(Window.Property(Homepage))</visible>
+                                <visible>!IsEmpty(Window.Property(Homepage))</visible>
                             </item>
                         </content>
                     </control>
@@ -178,7 +178,7 @@
                 <!--Movie actor roles-->
                 <control type="group" id="1500">
                     <visible>control.hasfocus(105)|ControlGroup(1500).HasFocus</visible>
-                    <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
+                    <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
@@ -212,8 +212,8 @@
                                 <texture border="3">list/bg_facade_nofocus.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -223,8 +223,8 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>!String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -234,7 +234,7 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="label">
-                                <visible>String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
@@ -245,7 +245,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -275,8 +275,8 @@
                                 <include>FacadeFocus</include>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -285,8 +285,8 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>!String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -295,7 +295,7 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="label">
-                                <visible>String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
@@ -305,7 +305,7 @@
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
-                                <visible>!String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -347,7 +347,7 @@
                 <!--TV Show actor roles-->
                 <control type="group" id="2500">
                     <visible>control.hasfocus(205)|ControlGroup(2500).HasFocus</visible>
-                    <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
+                    <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
@@ -381,8 +381,8 @@
                                 <texture border="3">list/bg_facade_nofocus.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -392,8 +392,8 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>!String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -403,7 +403,7 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="label">
-                                <visible>String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
@@ -414,7 +414,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -444,8 +444,8 @@
                                 <include>FacadeFocus</include>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -454,8 +454,8 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>!String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -464,7 +464,7 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="label">
-                                <visible>String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
@@ -474,7 +474,7 @@
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
-                                <visible>!String.IsEqual(ListItem.Property(Character),)</visible>
+                                <visible>!StringCompare(ListItem.Property(Character),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -516,7 +516,7 @@
                 <!--Movie crew member-->
                 <control type="group" id="5500">
                     <visible>control.hasfocus(505)|ControlGroup(5500).HasFocus</visible>
-                    <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
+                    <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
@@ -550,8 +550,8 @@
                                 <texture border="3">list/bg_facade_nofocus.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -561,8 +561,8 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>!String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -572,7 +572,7 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="label">
-                                <visible>String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
@@ -583,7 +583,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -613,8 +613,8 @@
                                 <include>FacadeFocus</include>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -623,8 +623,8 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>!String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -633,7 +633,7 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="label">
-                                <visible>String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
@@ -643,7 +643,7 @@
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
-                                <visible>!String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -685,7 +685,7 @@
                 <!--TVShow crew member-->
                 <control type="group" id="6500">
                     <visible>control.hasfocus(605)|ControlGroup(6500).HasFocus</visible>
-                    <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
+                    <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
@@ -719,8 +719,8 @@
                                 <texture border="3">list/bg_facade_nofocus.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -730,8 +730,8 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>!String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -741,7 +741,7 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="label">
-                                <visible>String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
@@ -752,7 +752,7 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <visible>!String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -782,8 +782,8 @@
                                 <include>FacadeFocus</include>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -792,8 +792,8 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="image">
-                                <visible>!String.IsEmpty(ListItem.Property(DBID))</visible>
-                                <visible>!String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!IsEmpty(ListItem.Property(DBID))</visible>
+                                <visible>!StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>10</posx>
                                 <posy>0</posy>
                                 <width>26</width>
@@ -802,7 +802,7 @@
                                 <texture>OverlayUnwatched.png</texture>
                             </control>
                             <control type="label">
-                                <visible>String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>71</height>
@@ -812,7 +812,7 @@
                                 <label>$INFO[ListItem.Label]$INFO[ListItem.Year, (,)]</label>
                             </control>
                             <control type="label">
-                                <visible>!String.IsEqual(ListItem.Property(Job),)</visible>
+                                <visible>!StringCompare(ListItem.Property(Job),)</visible>
                                 <posx>TextMargin</posx>
                                 <posy>0</posy>
                                 <height>42</height>
@@ -854,7 +854,7 @@
                 <!--Youtube-->
                 <control type="group" id="3500">
                     <visible>control.hasfocus(305)|ControlGroup(3500).HasFocus</visible>
-                    <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
+                    <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
@@ -939,7 +939,7 @@
                 <!--PICTURES-->
                 <control type="group" id="4500">
                     <visible>control.hasfocus(405)|ControlGroup(4500).HasFocus</visible>
-                    <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
+                    <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
@@ -1003,7 +1003,7 @@
                 <!--FANART-->
                 <control type="group" id="7500">
                     <visible>control.hasfocus(705)|ControlGroup(7500).HasFocus</visible>
-                    <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
+                    <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
                     <include>VisibleFadeEffectDelay</include>
                     <posx>178</posx>
                     <posy>163</posy>
@@ -1078,49 +1078,49 @@
                         <onleft>49</onleft>
                     </control>
                     <control type="button" id="105">
-                        <visible>Integer.IsGreater(Container(150).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(150).NumItems,0)</visible>
                         <description>Movie actor roles</description>
                         <include>RightDialogButton</include>
                         <label>342</label>
                         <onleft>150</onleft>
                     </control>
                     <control type="button" id="205">
-                        <visible>Integer.IsGreater(Container(250).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(250).NumItems,0)</visible>
                         <description>TV Show actor roles</description>
                         <include>RightDialogButton</include>
                         <label>20343</label>
                         <onleft>250</onleft>
                     </control>
                     <control type="button" id="505">
-                        <visible>Integer.IsGreater(Container(550).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(550).NumItems,0)</visible>
                         <description>Movie crew member</description>
                         <include>RightDialogButton</include>
                         <label>$ADDON[script.extendedinfo 32122]</label>
                         <onleft>550</onleft>
                     </control>
                     <control type="button" id="605">
-                        <visible>Integer.IsGreater(Container(650).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(650).NumItems,0)</visible>
                         <description>TVShow crew member</description>
                         <include>RightDialogButton</include>
                         <label>$ADDON[script.extendedinfo 32123]</label>
                         <onleft>650</onleft>
                     </control>
                     <control type="button" id="305">
-                        <visible>Integer.IsGreater(Container(350).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(350).NumItems,0)</visible>
                         <description>Youtube</description>
                         <include>RightDialogButton</include>
                         <label>$ADDON[script.extendedinfo 32118]</label>
                         <onleft>350</onleft>
                     </control>
                     <control type="button" id="405">
-                        <visible>Integer.IsGreater(Container(450).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(450).NumItems,0)</visible>
                         <description>Artwork</description>
                         <include>RightDialogButton</include>
                         <label>$ADDON[script.extendedinfo 32119]</label>
                         <onleft>450</onleft>
                     </control>
                     <control type="button" id="705">
-                        <visible>Integer.IsGreater(Container(750).NumItems,0)</visible>
+                        <visible>IntegerGreaterThan(Container(750).NumItems,0)</visible>
                         <description>Fanart</description>
                         <include>RightDialogButton</include>
                         <label>20445</label>

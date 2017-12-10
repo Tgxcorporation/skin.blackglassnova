@@ -247,8 +247,8 @@
         <focusposition>1</focusposition>
         <itemlayout height="262" width="417">
             <control type="image">
-                <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
-                <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
+                <visible>SubString(ListItem.Property(LabelID),weather,left)</visible>
+                <animation effect="fade" start="100" end="50" time="100" condition="[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                 <posx>29</posx>
                 <posy>9</posy>
                 <width>359</width>
@@ -259,8 +259,8 @@
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="image">
-                <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
-                <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
+                <visible>!SubString(ListItem.Property(LabelID),weather,left)</visible>
+                <animation effect="fade" start="100" end="50" time="100" condition="[StringCompare(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                 <posx>29</posx>
                 <posy>9</posy>
                 <width>359</width>
@@ -271,7 +271,7 @@
                 <colordiffuse>UnfocusedIconColor</colordiffuse>
             </control>
             <control type="label">
-                <visible>[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
+                <visible>[StringCompare(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
                 <posx>3</posx>
                 <posy>0</posy>
                 <width>390</width>
@@ -281,7 +281,7 @@
                 <label>$LOCALIZE[13106]</label>
             </control>
             <control type="image">
-                <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>!SubString(ListItem.Property(LabelID),weather,left)</visible>
                 <animation effect="rotate" start="0" end="180" center="208,224" reversible="false" condition="true">Conditional</animation>
                 <posx>29</posx>
                 <posy>9</posy>
@@ -293,7 +293,7 @@
                 <bordersize>27</bordersize>
             </control>
             <control type="image">
-                <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                <visible>SubString(ListItem.Property(LabelID),weather,left)</visible>
                 <animation effect="rotate" start="0" end="180" center="208,224" reversible="false" condition="true">Conditional</animation>
                 <posx>29</posx>
                 <posy>9</posy>
@@ -309,8 +309,8 @@
             <control type="group">
                 <include>ListFocusAnimation</include>
                 <control type="image">
-                    <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
-                    <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
+                    <visible>SubString(ListItem.Property(LabelID),weather,left)</visible>
+                    <animation effect="fade" start="100" end="50" time="100" condition="[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                     <posx>3</posx>
                     <posy>0</posy>
                     <width>390</width>
@@ -320,8 +320,8 @@
                     <include>ThumbBorderOverlay</include>
                 </control>
                 <control type="image">
-                    <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
-                    <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
+                    <visible>!SubString(ListItem.Property(LabelID),weather,left)</visible>
+                    <animation effect="fade" start="100" end="50" time="100" condition="[StringCompare(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                     <posx>3</posx>
                     <posy>0</posy>
                     <width>390</width>
@@ -331,7 +331,7 @@
                     <include>ThumbBorderOverlay</include>
                 </control>
                 <control type="label">
-                    <visible>[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
+                    <visible>[StringCompare(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
                     <posx>3</posx>
                     <posy>0</posy>
                     <width>390</width>
@@ -341,7 +341,7 @@
                     <label>$LOCALIZE[13106]</label>
                 </control>
                 <control type="image">
-                    <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                    <visible>!SubString(ListItem.Property(LabelID),weather,left)</visible>
                     <animation effect="rotate" start="0" end="180" center="198,233" reversible="false" condition="true">Conditional</animation>
                     <posx>3</posx>
                     <posy>0</posy>
@@ -352,7 +352,7 @@
                     <include>ThumbBorderOverlayDiffused</include>
                 </control>
                 <control type="image">
-                    <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
+                    <visible>SubString(ListItem.Property(LabelID),weather,left)</visible>
                     <animation effect="rotate" start="0" end="180" center="198,233" reversible="false" condition="true">Conditional</animation>
                     <posx>3</posx>
                     <posy>0</posy>
@@ -387,8 +387,8 @@
             <control type="group">
                 <posx>103</posx>
                 <control type="image">
-                    <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
-                    <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
+                    <visible>SubString(ListItem.Property(LabelID),weather,left)</visible>
+                    <animation effect="fade" start="100" end="50" time="100" condition="[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -396,8 +396,8 @@
                     <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png">special://skin/backgrounds/Weather.jpg</texture>
                 </control>
                 <control type="image">
-                    <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
-                    <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
+                    <visible>!SubString(ListItem.Property(LabelID),weather,left)</visible>
+                    <animation effect="fade" start="100" end="50" time="100" condition="[StringCompare(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                     <posx>-27</posx>
                     <posy>0</posy>
                     <width>1077</width>
@@ -427,7 +427,7 @@
                     <texture border="90">common/bg_panel_home.png</texture>
                 </control>
                 <control type="label">
-                    <visible>[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
+                    <visible>[StringCompare(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
                     <posx>-27</posx>
                     <posy>220</posy>
                     <width>1077</width>
@@ -444,8 +444,8 @@
                 <control type="group">
                     <posx>103</posx>
                     <control type="image">
-                        <visible>String.StartsWith(ListItem.Property(LabelID),weather)</visible>
-                        <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
+                        <visible>SubString(ListItem.Property(LabelID),weather,left)</visible>
+                        <animation effect="fade" start="100" end="50" time="100" condition="[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                         <posx>-27</posx>
                         <posy>0</posy>
                         <width>1077</width>
@@ -453,8 +453,8 @@
                         <texture background="true" diffuse="common/bg_panel_skinsettings_diffuse.png">special://skin/backgrounds/weather.jpg</texture>
                     </control>
                     <control type="image">
-                        <visible>!String.StartsWith(ListItem.Property(LabelID),weather)</visible>
-                        <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
+                        <visible>!SubString(ListItem.Property(LabelID),weather,left)</visible>
+                        <animation effect="fade" start="100" end="50" time="100" condition="[StringCompare(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                         <posx>-27</posx>
                         <posy>0</posy>
                         <width>1077</width>
@@ -484,7 +484,7 @@
                         <texture border="90">common/bg_panel_home.png</texture>
                     </control>
                     <control type="label">
-                        <visible>[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
+                        <visible>[StringCompare(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]</visible>
                         <posx>-27</posx>
                         <posy>220</posy>
                         <width>1077</width>
@@ -522,7 +522,7 @@
                 <texture flipx="true" border="3">list/bg_facade_nofocus.png</texture>
             </control>
             <control type="label">
-                <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
+                <animation effect="fade" start="100" end="50" time="100" condition="[StringCompare(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                 <posx>TextMargin</posx>
                 <height>63</height>
                 <width>373</width>
@@ -544,7 +544,7 @@
                     <include>FlippedFacadeFocus</include>
                 </control>
                 <control type="label">
-                    <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
+                    <animation effect="fade" start="100" end="50" time="100" condition="[StringCompare(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                     <posx>TextMargin</posx>
                     <height>63</height>
                     <width>373</width>
@@ -565,7 +565,7 @@
                     <include>FlippedFacadeFocus</include>
                 </control>
                 <control type="label">
-                    <animation effect="fade" start="100" end="50" time="100" condition="[String.IsEqual(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[String.IsEqual(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
+                    <animation effect="fade" start="100" end="50" time="100" condition="[StringCompare(ListItem.Property(hide),True) + Window.IsVisible(CustomPlexHomeSettings.xml)]|[StringCompare(ListItem.Property(skinshortcuts-disabled),True) + Window.IsVisible(script-skinshortcuts.xml)]">Conditional</animation>
                     <posx>TextMargin</posx>
                     <height>63</height>
                     <width>373</width>
@@ -591,7 +591,7 @@
             </control>
             <!--WIDGET 1-->
             <control type="image">
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                 <visible>controlGroup(41200).HasFocus()</visible>
                 <posx>128</posx>
                 <posy>455</posy>
@@ -620,30 +620,30 @@
                 <control type="button" id="40410">
                     <textoffsety>13</textoffsety>
                     <height>55</height>
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName)</onclick>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40420">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName),weather) + !StringCompare(Container(211).ListItem.Property(widgetName),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[31115]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40430">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName),weather) + !StringCompare(Container(211).ListItem.Property(widgetName),settings) + !StringCompare(Container(211).ListItem.Property(widgetName),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[580]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40440">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName),weather) + !StringCompare(Container(211).ListItem.Property(widgetName),settings) + !StringCompare(Container(211).ListItem.Property(widgetName),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[581]</label>
@@ -662,30 +662,30 @@
                     <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName)]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label>-</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetAspectLabel]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetSortByLabel]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetSortDirectionLabel]</label>
                 </control>
             </control>
             <!--WIDGET 2-->
             <control type="image">
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                 <visible>controlGroup(41201).HasFocus()</visible>
                 <posx>374</posx>
                 <posy>455</posy>
@@ -715,30 +715,30 @@
                 <control type="button" id="40411">
                     <textoffsety>13</textoffsety>
                     <height>55</height>
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.1)</onclick>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40421">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.1),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.1),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.1)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[31115]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40431">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.1),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.1),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.1)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[580]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40441">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.1),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.1),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.1)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[581]</label>
@@ -757,30 +757,30 @@
                     <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.1)]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label>-</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetAspectLabel.1]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetSortByLabel.1]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetSortDirectionLabel.1]</label>
                 </control>
             </control>
             <!--WIDGET 3-->
             <control type="image">
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                 <visible>controlGroup(41202).HasFocus()</visible>
                 <posx>620</posx>
                 <posy>455</posy>
@@ -810,30 +810,30 @@
                 <control type="button" id="40412">
                     <textoffsety>13</textoffsety>
                     <height>55</height>
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.2)</onclick>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40422">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),settings)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.2),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.2),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.2)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[31115]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40432">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.2),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.2),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.2)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[580]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40442">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.2),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.2),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.2)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[581]</label>
@@ -852,30 +852,30 @@
                     <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.2)]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label>-</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetAspectLabel.2]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetSortByLabel.2]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetSortDirectionLabel.2]</label>
                 </control>
             </control>
             <!--WIDGET 4-->
             <control type="image">
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                 <visible>controlGroup(41203).HasFocus()</visible>
                 <posx>866</posx>
                 <posy>455</posy>
@@ -905,30 +905,30 @@
                 <control type="button" id="40413">
                     <textoffsety>13</textoffsety>
                     <height>55</height>
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.3)</onclick>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40423">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.3),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.3),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.3)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[31115]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40433">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.3),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.3),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.3)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[580]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40443">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.3),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.3),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.3)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[581]</label>
@@ -947,30 +947,30 @@
                     <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.3)]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label>-</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetAspectLabel.3]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetSortByLabel.3]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetSortDirectionLabel.3]</label>
                 </control>
             </control>
             <!--WIDGET 5-->
             <control type="image">
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                 <visible>controlGroup(41204).HasFocus()</visible>
                 <posx>1112</posx>
                 <posy>455</posy>
@@ -1000,30 +1000,30 @@
                 <control type="button" id="40414">
                     <textoffsety>13</textoffsety>
                     <height>55</height>
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.4)</onclick>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40424">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.4),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.4),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.4)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[31115]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40434">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.4),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.4),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.4)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[580]</label>
                     <include>SkinShortcuts_WidgetButton</include>
                 </control>
                 <control type="button" id="40444">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.4),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.4),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.4)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[581]</label>
@@ -1042,23 +1042,23 @@
                     <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.4)]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label>-</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetAspectLabel.4]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetSortByLabel.4]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <include>SkinShortcuts_WidgetLabel</include>
                     <label fallback="231">$VAR[WidgetSortDirectionLabel.4]</label>
                 </control>
@@ -1070,7 +1070,7 @@
             <animation effect="fade" start="100" end="50" time="100" delay="150" condition="![controlGroup(30000).HasFocus()]">Conditional</animation>
             <!--WIDGET 1-->
             <control type="image">
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                 <visible>controlGroup(41200).HasFocus()</visible>
                 <posx>242</posx>
                 <posy>485</posy>
@@ -1098,30 +1098,30 @@
                 <control type="button" id="40410">
                     <textoffsety>13</textoffsety>
                     <height>55</height>
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName)</onclick>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40420">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName),weather) + !StringCompare(Container(211).ListItem.Property(widgetName),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[31115]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40430">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName),weather) + !StringCompare(Container(211).ListItem.Property(widgetName),settings) + !StringCompare(Container(211).ListItem.Property(widgetName),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[580]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40440">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName),weather) + !StringCompare(Container(211).ListItem.Property(widgetName),settings) + !StringCompare(Container(211).ListItem.Property(widgetName),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[581]</label>
@@ -1139,30 +1139,30 @@
                     <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName)]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label>-</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetAspectLabel]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetSortByLabel]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetSortDirectionLabel]</label>
                 </control>
             </control>
             <!--WIDGET 2-->
             <control type="image">
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                 <visible>controlGroup(41201).HasFocus()</visible>
                 <posx>442</posx>
                 <posy>485</posy>
@@ -1191,30 +1191,30 @@
                 <control type="button" id="40411">
                     <textoffsety>13</textoffsety>
                     <height>55</height>
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.1)</onclick>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40421">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.1),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.1),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.1)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[31115]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40431">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.1),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.1),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.1)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[580]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40441">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.1),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.1),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.1)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[581]</label>
@@ -1232,30 +1232,30 @@
                     <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.1)]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label>-</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetAspectLabel.1]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetSortByLabel.1]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetSortDirectionLabel.1]</label>
                 </control>
             </control>
             <!--WIDGET 3-->
             <control type="image">
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                 <visible>controlGroup(41202).HasFocus()</visible>
                 <posx>642</posx>
                 <posy>485</posy>
@@ -1284,30 +1284,30 @@
                 <control type="button" id="40412">
                     <textoffsety>13</textoffsety>
                     <height>55</height>
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.2)</onclick>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40422">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),settings)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.2),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.2),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.2)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[31115]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40432">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.2),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.2),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.2)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[580]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40442">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.2),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.2),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.2)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[581]</label>
@@ -1325,30 +1325,30 @@
                     <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.2)]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label>-</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetAspectLabel.2]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetSortByLabel.2]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetSortDirectionLabel.2]</label>
                 </control>
             </control>
             <!--WIDGET 4-->
             <control type="image">
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                 <visible>controlGroup(41203).HasFocus()</visible>
                 <posx>842</posx>
                 <posy>485</posy>
@@ -1377,30 +1377,30 @@
                 <control type="button" id="40413">
                     <textoffsety>13</textoffsety>
                     <height>55</height>
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.3)</onclick>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40423">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.3),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.3),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.3)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[31115]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40433">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.3),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.3),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.3)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[580]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40443">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.3),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.3),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.3)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[581]</label>
@@ -1418,30 +1418,30 @@
                     <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.3)]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label>-</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetAspectLabel.3]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetSortByLabel.3]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetSortDirectionLabel.3]</label>
                 </control>
             </control>
             <!--WIDGET 5-->
             <control type="image">
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                 <visible>controlGroup(41204).HasFocus()</visible>
                 <posx>1042</posx>
                 <posy>485</posy>
@@ -1470,30 +1470,30 @@
                 <control type="button" id="40414">
                     <textoffsety>13</textoffsety>
                     <height>55</height>
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025],property=widgetName.4)</onclick>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40424">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.4),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.4),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.4)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[31115]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40434">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.4),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.4),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.4)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[580]</label>
                     <include>SkinShortcuts_WidgetButton_BG</include>
                 </control>
                 <control type="button" id="40444">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.4),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.4),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.4)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <label>$LOCALIZE[581]</label>
@@ -1511,23 +1511,23 @@
                     <label fallback="231">$INFO[Container(211).ListItem.Property(widgetName.4)]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <height>55</height>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label>-</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetAspectLabel.4]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetSortByLabel.4]</label>
                 </control>
                 <control type="label">
-                    <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                    <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                     <include>SkinShortcuts_WidgetLabel_BG</include>
                     <label fallback="231">$VAR[WidgetSortDirectionLabel.4]</label>
                 </control>
@@ -1574,11 +1574,11 @@
             </control>
             <control type="group" id="40400">
                 <height>230</height>
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName))</visible>
                 <control type="button" id="40410">
                     <posy>0</posy>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
-                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
+                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
                     <onclick>RunScript(script.skin.helper.service,action=setskinshortcutsproperty,header=$ADDON[script.skinshortcuts 32025][COLOR=SeparatorColor] › [/COLOR]$ADDON[script.skinshortcuts 32099] 1,property=widgetName)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
                     <onup>31200</onup>
@@ -1587,8 +1587,8 @@
                 <control type="button" id="40420">
                     <posy>50</posy>
                     <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel]</label>
-                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings)</enable>
+                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName),weather) + !StringCompare(Container(211).ListItem.Property(widgetName),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1598,8 +1598,8 @@
                 <control type="button" id="40430">
                     <posy>100</posy>
                     <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel]</label>
-                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName),Playlists)</enable>
+                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName),weather) + !StringCompare(Container(211).ListItem.Property(widgetName),settings) + !StringCompare(Container(211).ListItem.Property(widgetName),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1609,8 +1609,8 @@
                 <control type="button" id="40440">
                     <posy>150</posy>
                     <label>$LOCALIZE[581][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortDirectionLabel]</label>
-                    <visible>String.IsEqual(Window.Property(groupname),mainmenu)</visible>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName),Playlists)</enable>
+                    <visible>StringCompare(Window.Property(groupname),mainmenu)</visible>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName),weather) + !StringCompare(Container(211).ListItem.Property(widgetName),settings) + !StringCompare(Container(211).ListItem.Property(widgetName),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1636,7 +1636,7 @@
             </control>
             <control type="group" id="40401">
                 <height>230</height>
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.1))</visible>
                 <control type="button" id="40411">
                     <posy>0</posy>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
@@ -1648,7 +1648,7 @@
                 <control type="button" id="40421">
                     <posy>50</posy>
                     <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.1]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.1),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.1),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.1)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1658,7 +1658,7 @@
                 <control type="button" id="40431">
                     <posy>100</posy>
                     <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.1]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.1),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.1),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.1)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1668,7 +1668,7 @@
                 <control type="button" id="40441">
                     <posy>150</posy>
                     <label>$LOCALIZE[581][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortDirectionLabel.1]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.1),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.1),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.1),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.1),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.1)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1694,7 +1694,7 @@
             </control>
             <control type="group" id="40402">
                 <height>230</height>
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.2))</visible>
                 <control type="button" id="40412">
                     <posy>0</posy>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
@@ -1706,7 +1706,7 @@
                 <control type="button" id="40422">
                     <posy>50</posy>
                     <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.2]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2å),settings)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.2),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.2å),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.2)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1716,7 +1716,7 @@
                 <control type="button" id="40432">
                     <posy>100</posy>
                     <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.2]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.2),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.2),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.2)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1726,7 +1726,7 @@
                 <control type="button" id="40442">
                     <posy>150</posy>
                     <label>$LOCALIZE[581][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortDirectionLabel.2]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.2),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.2),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.2),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.2),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.2)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1752,7 +1752,7 @@
             </control>
             <control type="group" id="40403">
                 <height>230</height>
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.3))</visible>
                 <control type="button" id="40413">
                     <posy>0</posy>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
@@ -1764,7 +1764,7 @@
                 <control type="button" id="40423">
                     <posy>50</posy>
                     <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.3]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.3),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.3),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.3)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1774,7 +1774,7 @@
                 <control type="button" id="40433">
                     <posy>100</posy>
                     <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.3]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.3),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.3),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.3)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1784,7 +1784,7 @@
                 <control type="button" id="40443">
                     <posy>150</posy>
                     <label>$LOCALIZE[581][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortDirectionLabel.3]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.3),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.3),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.3),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.3),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.3)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1810,7 +1810,7 @@
             </control>
             <control type="group" id="40404">
                 <height>200</height>
-                <visible>!String.IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
+                <visible>!IsEmpty(Container(211).ListItem.Property(widgetName.4))</visible>
                 <control type="button" id="40414">
                     <posy>0</posy>
                     <label>$ADDON[script.skinshortcuts 32025]</label>
@@ -1822,7 +1822,7 @@
                 <control type="button" id="40424">
                     <posy>50</posy>
                     <label>$LOCALIZE[31115][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetAspectLabel.4]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.4),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.4),settings)</enable>
                     <onclick>SetProperty(chooseProperty,widgetAspect.4)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1832,7 +1832,7 @@
                 <control type="button" id="40434">
                     <posy>100</posy>
                     <label>$LOCALIZE[580][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortByLabel.4]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.4),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.4),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortBy.4)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>
@@ -1842,7 +1842,7 @@
                 <control type="button" id="40444">
                     <posy>150</posy>
                     <label>$LOCALIZE[581][COLOR=SeparatorColor] › [/COLOR]$VAR[WidgetSortDirectionLabel.4]</label>
-                    <enable>!String.IsEqual(Container(211).ListItem.Property(widgetName.4),weather) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),settings) + !String.IsEqual(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
+                    <enable>!StringCompare(Container(211).ListItem.Property(widgetName.4),weather) + !StringCompare(Container(211).ListItem.Property(widgetName.4),settings) + !StringCompare(Container(211).ListItem.Property(widgetName.4),Playlists)</enable>
                     <onclick>SetProperty(chooseProperty,widgetSortDirection.4)</onclick>
                     <onclick>SendClick(404)</onclick>
                     <include>SkinShortcuts_Vertical_WidgetButton</include>

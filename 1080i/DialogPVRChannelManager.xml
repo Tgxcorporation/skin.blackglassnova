@@ -27,7 +27,7 @@
                 <texture>list/bg_facade_nofocus_top.png</texture>
             </control>
             <control type="label">
-                <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>93</posx>
                 <posy>136</posy>
                 <height>100</height>
@@ -38,7 +38,7 @@
                 <label>$LOCALIZE[19199] - $LOCALIZE[19023]</label>
             </control>
             <control type="label">
-                <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
+                <visible>!IsEmpty(Window.Property(IsRadio))</visible>
                 <posx>93</posx>
                 <posy>136</posy>
                 <height>100</height>
@@ -215,13 +215,13 @@
                         <label>$LOCALIZE[19204]</label>
                     </control>
                     <control type="button" id="34">
-                        <visible>String.IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>IsEmpty(Window.Property(IsRadio))</visible>
                         <width>695</width>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[19024]</label>
                     </control>
                     <control type="button" id="34">
-                        <visible>!String.IsEmpty(Window.Property(IsRadio))</visible>
+                        <visible>!IsEmpty(Window.Property(IsRadio))</visible>
                         <width>695</width>
                         <include>LeftMenuButton</include>
                         <label>$LOCALIZE[19023]</label>

@@ -205,7 +205,7 @@
             </control>
             <!-- CDART VIDEO -->
             <include name="DiscArt">
-                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
+                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(movies)|Container.content(MusicVideos)]"/>
                 <param name="x" value="1385"/>
                 <param name="y" value="792"/>
                 <param name="width" value="316"/>
@@ -213,7 +213,7 @@
                 <param name="texture" value="$VAR[VideoCdArt]"/>
             </include>
             <include name="DiscArt">
-                <param name="visible" value="!String.IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
+                <param name="visible" value="!IsEmpty(ListItem.Thumb)+[Container.content(albums)|Container.content(songs)]"/>
                 <param name="x" value="1385"/>
                 <param name="y" value="792"/>
                 <param name="width" value="316"/>
