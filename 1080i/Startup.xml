@@ -2,7 +2,7 @@
 <window>
     <defaultcontrol always="true">10</defaultcontrol>
     <onload>AlarmClock(StartupDelay,SetFocus(12),$VAR[StartupDelay],silent)</onload>
-    <onload>Skin.SetBool(SkinHelper.EnableMusicArt)</onload>
+    <!--<onload>Skin.SetBool(SkinHelper.EnableMusicArt)</onload>-->
     <animation effect="fade" time="800">WindowOpen</animation>
     <animation effect="fade" time="200">WindowClose</animation>
     <controls>

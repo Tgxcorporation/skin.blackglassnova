@@ -3,7 +3,7 @@
     <include condition="!Skin.HasSetting(BlackGlassMode)|Skin.HasSetting(DisableSlidingAnimations)">OpenClose</include>
     <defaultcontrol>300</defaultcontrol>
     <onload condition="!Skin.HasSetting(Hide.Favourites)">RunScript(script.favourites)</onload>
-    <onload condition="IsEmpty(Skin.String(SkinHelper.RandomFanartDelay))">Skin.SetString(SkinHelper.RandomFanartDelay,9)</onload>
+    <!--<onload condition="IsEmpty(Skin.String(SkinHelper.RandomFanartDelay))">Skin.SetString(SkinHelper.RandomFanartDelay,9)</onload>-->
     <onload condition="Skin.HasSetting(StopPlaybackOnMenu)">PlayerControl(stop)</onload>
     <controls>
         <!--DUMMY BUTTON-->
