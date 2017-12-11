@@ -147,6 +147,7 @@
                     <label>$INFO[Window(Home).Property(SkinHelper.skin_version)] by Tgx</label>
                 </control>
             </control>
+
             <control type="list" id="9001">
                 <posx>1359</posx>
                 <posy>382</posy>
