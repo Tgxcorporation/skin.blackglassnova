@@ -100,18 +100,18 @@
                     <texture flipy="true" border="10">common/basichome_upper_gradient.png</texture>
                 </control>
                 <control type="image">
-                    <posx>647</posx>
-                    <posy>801</posy>
-                    <width>195</width>
-                    <height>54</height>
+                    <posx>651</posx>
+                    <posy>771</posy>
+                    <width>187</width>
+                    <height>74</height>
                     <texture>common/logo.png</texture>
                     <colordiffuse>ff000000</colordiffuse>
                 </control>
                 <control type="image">
-                    <posx>646</posx>
-                    <posy>800</posy>
-                    <width>195</width>
-                    <height>54</height>
+                    <posx>650</posx>
+                    <posy>770</posy>
+                    <width>187</width>
+                    <height>74</height>
                     <texture>common/logo.png</texture>
                 </control>
                 <control type="label">
