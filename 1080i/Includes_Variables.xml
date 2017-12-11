@@ -49,14 +49,9 @@
         <!--<value>defaultIconBig.png</value>-->
     </variable>
     <variable name="Thumbs">
-        <!--EXCEPTIONS-->
-        <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
-        <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.1),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.1),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
-        <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.2),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.2),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
-        <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.3),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.3),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
-        <value condition="[Window.IsActive(Home.xml)+[StringCompare(Container(300).ListItem.Property(widgetType.4),episodes)|[StringCompare(Container(300).ListItem.Property(widgetType.4),musicvideos)+!StringCompare(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <!--NORMAL-->
         <value condition="StringCompare(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
+        <!--<value condition="Window.IsVisible(Home.xml) + !IsEmpty(ListItem.Art(tvshow.thumb)) + !SubString(ListItem.Art(tvshow.thumb),Default,left)">$INFO[ListItem.Art(tvshow.thumb)]</value>-->
         <value condition="Container.Content(episodes) + !IsEmpty(ListItem.thumb) + !SubString(ListItem.thumb,Default,left)">$INFO[ListItem.thumb]</value>
         <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,left)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,left)">$INFO[ListItem.Icon]</value>
@@ -94,239 +89,33 @@
         <value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
     </variable>
     <variable name="HomeTitles">
-        <value condition="Control.hasfocus(900)">$LOCALIZE[31961]</value>
-        <value condition="Control.hasfocus(901)">$LOCALIZE[31961]</value>
-        <value condition="Control.hasfocus(212)">$LOCALIZE[31961]</value>
-        <value condition="Control.hasfocus(311)">$LOCALIZE[31961]</value>
-        <value condition="Control.hasfocus(312)">$LOCALIZE[31011]</value>
-        <value condition="Control.hasfocus(411)">$LOCALIZE[31961]</value>
-        <value condition="Control.hasfocus(412)">$LOCALIZE[31011]</value>
-        <value condition="Control.hasfocus(413)">$LOCALIZE[31932]</value>
-        <value condition="Control.hasfocus(511)">$LOCALIZE[31961]</value>
-        <value condition="ControlGroup(900011).hasfocus()|ControlGroup(900012).hasfocus()|ControlGroup(900013).hasfocus()|ControlGroup(900014).hasfocus()|ControlGroup(900015).hasfocus()|ControlGroup(900016).hasfocus()|ControlGroup(900017).hasfocus()|ControlGroup(900018).hasfocus()|ControlGroup(900019).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName)]</value>
-        <value condition="ControlGroup(9000110).hasfocus()|ControlGroup(9000111).hasfocus()|ControlGroup(9000112).hasfocus()|ControlGroup(9000113).hasfocus()|ControlGroup(9000114).hasfocus()|ControlGroup(9000115).hasfocus()|ControlGroup(9000116).hasfocus()|ControlGroup(9000117).hasfocus()|ControlGroup(9000118).hasfocus()|ControlGroup(9000119).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName)]</value>
-        <value condition="ControlGroup(9000120).hasfocus()|ControlGroup(9000121).hasfocus()|ControlGroup(9000122).hasfocus()|ControlGroup(9000123).hasfocus()|ControlGroup(9000124).hasfocus()|ControlGroup(9000125).hasfocus()|ControlGroup(9000126).hasfocus()|ControlGroup(9000127).hasfocus()|ControlGroup(9000128).hasfocus()|ControlGroup(9000129).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName)]</value>
-        <value condition="ControlGroup(9000130).hasfocus()|ControlGroup(9000131).hasfocus()|ControlGroup(9000132).hasfocus()|ControlGroup(9000133).hasfocus()|ControlGroup(9000134).hasfocus()|ControlGroup(9000135).hasfocus()|ControlGroup(9000136).hasfocus()|ControlGroup(9000137).hasfocus()|ControlGroup(9000138).hasfocus()|ControlGroup(9000139).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName)]</value>
-        <value condition="ControlGroup(9000140).hasfocus()|ControlGroup(9000141).hasfocus()|ControlGroup(9000142).hasfocus()|ControlGroup(9000143).hasfocus()|ControlGroup(9000144).hasfocus()|ControlGroup(9000145).hasfocus()|ControlGroup(9000146).hasfocus()|ControlGroup(9000147).hasfocus()|ControlGroup(9000148).hasfocus()|ControlGroup(9000149).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName)]</value>
-        <value condition="ControlGroup(900021).hasfocus()|ControlGroup(900022).hasfocus()|ControlGroup(900023).hasfocus()|ControlGroup(900024).hasfocus()|ControlGroup(900025).hasfocus()|ControlGroup(900026).hasfocus()|ControlGroup(900027).hasfocus()|ControlGroup(900028).hasfocus()|ControlGroup(900029).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.1)]</value>
-        <value condition="ControlGroup(9000210).hasfocus()|ControlGroup(9000211).hasfocus()|ControlGroup(9000212).hasfocus()|ControlGroup(9000213).hasfocus()|ControlGroup(9000214).hasfocus()|ControlGroup(9000215).hasfocus()|ControlGroup(9000216).hasfocus()|ControlGroup(9000217).hasfocus()|ControlGroup(9000218).hasfocus()|ControlGroup(9000219).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.1)]</value>
-        <value condition="ControlGroup(9000220).hasfocus()|ControlGroup(9000221).hasfocus()|ControlGroup(9000222).hasfocus()|ControlGroup(9000223).hasfocus()|ControlGroup(9000224).hasfocus()|ControlGroup(9000225).hasfocus()|ControlGroup(9000226).hasfocus()|ControlGroup(9000227).hasfocus()|ControlGroup(9000228).hasfocus()|ControlGroup(9000229).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.1)]</value>
-        <value condition="ControlGroup(9000230).hasfocus()|ControlGroup(9000231).hasfocus()|ControlGroup(9000232).hasfocus()|ControlGroup(9000233).hasfocus()|ControlGroup(9000234).hasfocus()|ControlGroup(9000235).hasfocus()|ControlGroup(9000236).hasfocus()|ControlGroup(9000237).hasfocus()|ControlGroup(9000238).hasfocus()|ControlGroup(9000239).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.1)]</value>
-        <value condition="ControlGroup(9000240).hasfocus()|ControlGroup(9000241).hasfocus()|ControlGroup(9000242).hasfocus()|ControlGroup(9000243).hasfocus()|ControlGroup(9000244).hasfocus()|ControlGroup(9000245).hasfocus()|ControlGroup(9000246).hasfocus()|ControlGroup(9000247).hasfocus()|ControlGroup(9000248).hasfocus()|ControlGroup(9000249).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.1)]</value>
-        <value condition="ControlGroup(900031).hasfocus()|ControlGroup(900032).hasfocus()|ControlGroup(900033).hasfocus()|ControlGroup(900034).hasfocus()|ControlGroup(900035).hasfocus()|ControlGroup(900036).hasfocus()|ControlGroup(900037).hasfocus()|ControlGroup(900038).hasfocus()|ControlGroup(900039).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.2)]</value>
-        <value condition="ControlGroup(9000310).hasfocus()|ControlGroup(9000311).hasfocus()|ControlGroup(9000312).hasfocus()|ControlGroup(9000313).hasfocus()|ControlGroup(9000314).hasfocus()|ControlGroup(9000315).hasfocus()|ControlGroup(9000316).hasfocus()|ControlGroup(9000317).hasfocus()|ControlGroup(9000318).hasfocus()|ControlGroup(9000319).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.2)]</value>
-        <value condition="ControlGroup(9000320).hasfocus()|ControlGroup(9000321).hasfocus()|ControlGroup(9000322).hasfocus()|ControlGroup(9000323).hasfocus()|ControlGroup(9000324).hasfocus()|ControlGroup(9000325).hasfocus()|ControlGroup(9000326).hasfocus()|ControlGroup(9000327).hasfocus()|ControlGroup(9000328).hasfocus()|ControlGroup(9000329).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.2)]</value>
-        <value condition="ControlGroup(9000330).hasfocus()|ControlGroup(9000331).hasfocus()|ControlGroup(9000332).hasfocus()|ControlGroup(9000333).hasfocus()|ControlGroup(9000334).hasfocus()|ControlGroup(9000335).hasfocus()|ControlGroup(9000336).hasfocus()|ControlGroup(9000337).hasfocus()|ControlGroup(9000338).hasfocus()|ControlGroup(9000339).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.2)]</value>
-        <value condition="ControlGroup(9000340).hasfocus()|ControlGroup(9000341).hasfocus()|ControlGroup(9000342).hasfocus()|ControlGroup(9000343).hasfocus()|ControlGroup(9000344).hasfocus()|ControlGroup(9000345).hasfocus()|ControlGroup(9000346).hasfocus()|ControlGroup(9000347).hasfocus()|ControlGroup(9000348).hasfocus()|ControlGroup(9000349).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.2)]</value>
-        <value condition="ControlGroup(900041).hasfocus()|ControlGroup(900042).hasfocus()|ControlGroup(900043).hasfocus()|ControlGroup(900044).hasfocus()|ControlGroup(900045).hasfocus()|ControlGroup(900046).hasfocus()|ControlGroup(900047).hasfocus()|ControlGroup(900048).hasfocus()|ControlGroup(900049).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.3)]</value>
-        <value condition="ControlGroup(9000410).hasfocus()|ControlGroup(9000411).hasfocus()|ControlGroup(9000412).hasfocus()|ControlGroup(9000413).hasfocus()|ControlGroup(9000414).hasfocus()|ControlGroup(9000415).hasfocus()|ControlGroup(9000416).hasfocus()|ControlGroup(9000417).hasfocus()|ControlGroup(9000418).hasfocus()|ControlGroup(9000419).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.3)]</value>
-        <value condition="ControlGroup(9000420).hasfocus()|ControlGroup(9000421).hasfocus()|ControlGroup(9000422).hasfocus()|ControlGroup(9000423).hasfocus()|ControlGroup(9000424).hasfocus()|ControlGroup(9000425).hasfocus()|ControlGroup(9000426).hasfocus()|ControlGroup(9000427).hasfocus()|ControlGroup(9000428).hasfocus()|ControlGroup(9000429).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.3)]</value>
-        <value condition="ControlGroup(9000430).hasfocus()|ControlGroup(9000431).hasfocus()|ControlGroup(9000432).hasfocus()|ControlGroup(9000433).hasfocus()|ControlGroup(9000434).hasfocus()|ControlGroup(9000435).hasfocus()|ControlGroup(9000436).hasfocus()|ControlGroup(9000437).hasfocus()|ControlGroup(9000438).hasfocus()|ControlGroup(9000439).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.3)]</value>
-        <value condition="ControlGroup(9000440).hasfocus()|ControlGroup(9000441).hasfocus()|ControlGroup(9000442).hasfocus()|ControlGroup(9000443).hasfocus()|ControlGroup(9000444).hasfocus()|ControlGroup(9000445).hasfocus()|ControlGroup(9000446).hasfocus()|ControlGroup(9000447).hasfocus()|ControlGroup(9000448).hasfocus()|ControlGroup(9000449).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.3)]</value>
-        <value condition="ControlGroup(900051).hasfocus()|ControlGroup(900052).hasfocus()|ControlGroup(900053).hasfocus()|ControlGroup(900054).hasfocus()|ControlGroup(900055).hasfocus()|ControlGroup(900056).hasfocus()|ControlGroup(900057).hasfocus()|ControlGroup(900058).hasfocus()|ControlGroup(900059).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.4)]</value>
-        <value condition="ControlGroup(9000510).hasfocus()|ControlGroup(9000511).hasfocus()|ControlGroup(9000512).hasfocus()|ControlGroup(9000513).hasfocus()|ControlGroup(9000514).hasfocus()|ControlGroup(9000515).hasfocus()|ControlGroup(9000516).hasfocus()|ControlGroup(9000517).hasfocus()|ControlGroup(9000518).hasfocus()|ControlGroup(9000519).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.4)]</value>
-        <value condition="ControlGroup(9000520).hasfocus()|ControlGroup(9000521).hasfocus()|ControlGroup(9000522).hasfocus()|ControlGroup(9000523).hasfocus()|ControlGroup(9000524).hasfocus()|ControlGroup(9000525).hasfocus()|ControlGroup(9000526).hasfocus()|ControlGroup(9000527).hasfocus()|ControlGroup(9000528).hasfocus()|ControlGroup(9000529).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.4)]</value>
-        <value condition="ControlGroup(9000530).hasfocus()|ControlGroup(9000531).hasfocus()|ControlGroup(9000532).hasfocus()|ControlGroup(9000533).hasfocus()|ControlGroup(9000534).hasfocus()|ControlGroup(9000535).hasfocus()|ControlGroup(9000536).hasfocus()|ControlGroup(9000537).hasfocus()|ControlGroup(9000538).hasfocus()|ControlGroup(9000539).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.4)]</value>
-        <value condition="ControlGroup(9000540).hasfocus()|ControlGroup(9000541).hasfocus()|ControlGroup(9000542).hasfocus()|ControlGroup(9000543).hasfocus()|ControlGroup(9000544).hasfocus()|ControlGroup(9000545).hasfocus()|ControlGroup(9000546).hasfocus()|ControlGroup(9000547).hasfocus()|ControlGroup(9000548).hasfocus()|ControlGroup(9000549).hasfocus()">$INFO[Container(300).ListItem.Property(widgetName.4)]</value>
+        <value condition="ControlGroup(48000).hasfocus()">$INFO[Container(8000).ListItem.Property(ItemType)]</value>
+        <value condition="ControlGroup(48001).hasfocus()">$INFO[Container(8001).ListItem.Property(ItemType)]</value>
+        <value condition="ControlGroup(48002).hasfocus()">$INFO[Container(8002).ListItem.Property(ItemType)]</value>
+        <value condition="ControlGroup(48003).hasfocus()">$INFO[Container(8003).ListItem.Property(ItemType)]</value>
+        <value condition="ControlGroup(48004).hasfocus()">$INFO[Container(8004).ListItem.Property(ItemType)]</value>
+        <value condition="ControlGroup(48005).hasfocus()">$INFO[Container(8005).ListItem.Property(ItemType)]</value>
+        <value condition="ControlGroup(48006).hasfocus()">$INFO[Container(8006).ListItem.Property(ItemType)]</value>
+        <value condition="ControlGroup(48007).hasfocus()">$INFO[Container(8007).ListItem.Property(ItemType)]</value>
+        <value condition="ControlGroup(48008).hasfocus()">$INFO[Container(8008).ListItem.Property(ItemType)]</value>
+        <value condition="ControlGroup(48009).hasfocus()">$INFO[Container(8009).ListItem.Property(ItemType)]</value>
+        <value condition="ControlGroup(48010).hasfocus()">$INFO[Container(8010).ListItem.Property(ItemType)]</value>
+        <value condition="ControlGroup(48011).hasfocus()">$INFO[Container(8011).ListItem.Property(ItemType)]</value>
         <value>MrMC</value>
     </variable>
     <variable name="HomeSubTitles">
-        <value condition="ControlGroup(900011).hasfocus()">$INFO[Container(700011).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900012).hasfocus()">$INFO[Container(700012).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900013).hasfocus()">$INFO[Container(700013).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900014).hasfocus()">$INFO[Container(700014).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900015).hasfocus()">$INFO[Container(700015).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900016).hasfocus()">$INFO[Container(700016).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900017).hasfocus()">$INFO[Container(700017).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900018).hasfocus()">$INFO[Container(700018).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900019).hasfocus()">$INFO[Container(700019).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000110).hasfocus()">$INFO[Container(7000110).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000111).hasfocus()">$INFO[Container(7000111).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000112).hasfocus()">$INFO[Container(7000112).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000113).hasfocus()">$INFO[Container(7000113).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000114).hasfocus()">$INFO[Container(7000114).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000115).hasfocus()">$INFO[Container(7000115).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000116).hasfocus()">$INFO[Container(7000116).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000117).hasfocus()">$INFO[Container(7000117).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000118).hasfocus()">$INFO[Container(7000118).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000119).hasfocus()">$INFO[Container(7000119).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000120).hasfocus()">$INFO[Container(7000120).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000121).hasfocus()">$INFO[Container(7000121).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000122).hasfocus()">$INFO[Container(7000122).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000123).hasfocus()">$INFO[Container(7000123).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000124).hasfocus()">$INFO[Container(7000124).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000125).hasfocus()">$INFO[Container(7000125).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000126).hasfocus()">$INFO[Container(7000126).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000127).hasfocus()">$INFO[Container(7000127).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000128).hasfocus()">$INFO[Container(7000128).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000129).hasfocus()">$INFO[Container(7000129).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000130).hasfocus()">$INFO[Container(7000130).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000131).hasfocus()">$INFO[Container(7000131).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000132).hasfocus()">$INFO[Container(7000132).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000133).hasfocus()">$INFO[Container(7000133).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000134).hasfocus()">$INFO[Container(7000134).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000135).hasfocus()">$INFO[Container(7000135).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000136).hasfocus()">$INFO[Container(7000136).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000137).hasfocus()">$INFO[Container(7000137).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000138).hasfocus()">$INFO[Container(7000138).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000139).hasfocus()">$INFO[Container(7000139).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000140).hasfocus()">$INFO[Container(7000140).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000141).hasfocus()">$INFO[Container(7000141).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000142).hasfocus()">$INFO[Container(7000142).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000143).hasfocus()">$INFO[Container(7000143).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000144).hasfocus()">$INFO[Container(7000144).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000145).hasfocus()">$INFO[Container(7000145).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000146).hasfocus()">$INFO[Container(7000146).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000147).hasfocus()">$INFO[Container(7000147).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000148).hasfocus()">$INFO[Container(7000148).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000149).hasfocus()">$INFO[Container(7000149).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900021).hasfocus()">$INFO[Container(700021).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900022).hasfocus()">$INFO[Container(700022).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900023).hasfocus()">$INFO[Container(700023).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900024).hasfocus()">$INFO[Container(700024).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900025).hasfocus()">$INFO[Container(700025).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900026).hasfocus()">$INFO[Container(700026).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900027).hasfocus()">$INFO[Container(700027).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900028).hasfocus()">$INFO[Container(700028).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900029).hasfocus()">$INFO[Container(700029).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000210).hasfocus()">$INFO[Container(7000210).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000211).hasfocus()">$INFO[Container(7000211).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000212).hasfocus()">$INFO[Container(7000212).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000213).hasfocus()">$INFO[Container(7000213).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000214).hasfocus()">$INFO[Container(7000214).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000215).hasfocus()">$INFO[Container(7000215).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000216).hasfocus()">$INFO[Container(7000216).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000217).hasfocus()">$INFO[Container(7000217).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000218).hasfocus()">$INFO[Container(7000218).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000219).hasfocus()">$INFO[Container(7000219).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000220).hasfocus()">$INFO[Container(7000220).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000221).hasfocus()">$INFO[Container(7000221).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000222).hasfocus()">$INFO[Container(7000222).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000223).hasfocus()">$INFO[Container(7000223).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000224).hasfocus()">$INFO[Container(7000224).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000225).hasfocus()">$INFO[Container(7000225).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000226).hasfocus()">$INFO[Container(7000226).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000227).hasfocus()">$INFO[Container(7000227).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000228).hasfocus()">$INFO[Container(7000228).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000229).hasfocus()">$INFO[Container(7000229).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000230).hasfocus()">$INFO[Container(7000230).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000231).hasfocus()">$INFO[Container(7000231).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000232).hasfocus()">$INFO[Container(7000232).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000233).hasfocus()">$INFO[Container(7000233).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000234).hasfocus()">$INFO[Container(7000234).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000235).hasfocus()">$INFO[Container(7000235).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000236).hasfocus()">$INFO[Container(7000236).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000237).hasfocus()">$INFO[Container(7000237).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000238).hasfocus()">$INFO[Container(7000238).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000239).hasfocus()">$INFO[Container(7000239).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000240).hasfocus()">$INFO[Container(7000240).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000241).hasfocus()">$INFO[Container(7000241).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000242).hasfocus()">$INFO[Container(7000242).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000243).hasfocus()">$INFO[Container(7000243).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000244).hasfocus()">$INFO[Container(7000244).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000245).hasfocus()">$INFO[Container(7000245).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000246).hasfocus()">$INFO[Container(7000246).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000247).hasfocus()">$INFO[Container(7000247).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000248).hasfocus()">$INFO[Container(7000248).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000249).hasfocus()">$INFO[Container(7000249).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900031).hasfocus()">$INFO[Container(700031).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900032).hasfocus()">$INFO[Container(700032).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900033).hasfocus()">$INFO[Container(700033).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900034).hasfocus()">$INFO[Container(700034).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900035).hasfocus()">$INFO[Container(700035).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900036).hasfocus()">$INFO[Container(700036).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900037).hasfocus()">$INFO[Container(700037).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900038).hasfocus()">$INFO[Container(700038).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900039).hasfocus()">$INFO[Container(700039).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000310).hasfocus()">$INFO[Container(7000310).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000311).hasfocus()">$INFO[Container(7000311).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000312).hasfocus()">$INFO[Container(7000312).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000313).hasfocus()">$INFO[Container(7000313).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000314).hasfocus()">$INFO[Container(7000314).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000315).hasfocus()">$INFO[Container(7000315).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000316).hasfocus()">$INFO[Container(7000316).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000317).hasfocus()">$INFO[Container(7000317).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000318).hasfocus()">$INFO[Container(7000318).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000319).hasfocus()">$INFO[Container(7000319).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000320).hasfocus()">$INFO[Container(7000320).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000321).hasfocus()">$INFO[Container(7000321).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000322).hasfocus()">$INFO[Container(7000322).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000323).hasfocus()">$INFO[Container(7000323).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000324).hasfocus()">$INFO[Container(7000324).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000325).hasfocus()">$INFO[Container(7000325).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000326).hasfocus()">$INFO[Container(7000326).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000327).hasfocus()">$INFO[Container(7000327).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000328).hasfocus()">$INFO[Container(7000328).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000329).hasfocus()">$INFO[Container(7000329).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000330).hasfocus()">$INFO[Container(7000330).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000331).hasfocus()">$INFO[Container(7000331).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000332).hasfocus()">$INFO[Container(7000332).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000333).hasfocus()">$INFO[Container(7000333).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000334).hasfocus()">$INFO[Container(7000334).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000335).hasfocus()">$INFO[Container(7000335).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000336).hasfocus()">$INFO[Container(7000336).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000337).hasfocus()">$INFO[Container(7000337).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000338).hasfocus()">$INFO[Container(7000338).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000339).hasfocus()">$INFO[Container(7000339).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000340).hasfocus()">$INFO[Container(7000340).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000341).hasfocus()">$INFO[Container(7000341).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000342).hasfocus()">$INFO[Container(7000342).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000343).hasfocus()">$INFO[Container(7000343).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000344).hasfocus()">$INFO[Container(7000344).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000345).hasfocus()">$INFO[Container(7000345).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000346).hasfocus()">$INFO[Container(7000346).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000347).hasfocus()">$INFO[Container(7000347).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000348).hasfocus()">$INFO[Container(7000348).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000349).hasfocus()">$INFO[Container(7000349).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900041).hasfocus()">$INFO[Container(700041).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900042).hasfocus()">$INFO[Container(700042).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900043).hasfocus()">$INFO[Container(700043).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900044).hasfocus()">$INFO[Container(700044).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900045).hasfocus()">$INFO[Container(700045).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900046).hasfocus()">$INFO[Container(700046).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900047).hasfocus()">$INFO[Container(700047).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900048).hasfocus()">$INFO[Container(700048).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(900049).hasfocus()">$INFO[Container(700049).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000410).hasfocus()">$INFO[Container(7000410).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000411).hasfocus()">$INFO[Container(7000411).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000412).hasfocus()">$INFO[Container(7000412).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000413).hasfocus()">$INFO[Container(7000413).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000414).hasfocus()">$INFO[Container(7000414).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000415).hasfocus()">$INFO[Container(7000415).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000416).hasfocus()">$INFO[Container(7000416).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000417).hasfocus()">$INFO[Container(7000417).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000418).hasfocus()">$INFO[Container(7000418).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000419).hasfocus()">$INFO[Container(7000419).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000420).hasfocus()">$INFO[Container(7000420).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000421).hasfocus()">$INFO[Container(7000421).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000422).hasfocus()">$INFO[Container(7000422).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000423).hasfocus()">$INFO[Container(7000423).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000424).hasfocus()">$INFO[Container(7000424).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000425).hasfocus()">$INFO[Container(7000425).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000426).hasfocus()">$INFO[Container(7000426).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000427).hasfocus()">$INFO[Container(7000427).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000428).hasfocus()">$INFO[Container(7000428).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000429).hasfocus()">$INFO[Container(7000429).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000430).hasfocus()">$INFO[Container(7000430).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000431).hasfocus()">$INFO[Container(7000431).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000432).hasfocus()">$INFO[Container(7000432).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000433).hasfocus()">$INFO[Container(7000433).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000434).hasfocus()">$INFO[Container(7000434).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000435).hasfocus()">$INFO[Container(7000435).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000436).hasfocus()">$INFO[Container(7000436).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000437).hasfocus()">$INFO[Container(7000437).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000438).hasfocus()">$INFO[Container(7000438).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000439).hasfocus()">$INFO[Container(7000439).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000440).hasfocus()">$INFO[Container(7000440).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000441).hasfocus()">$INFO[Container(7000441).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000442).hasfocus()">$INFO[Container(7000442).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000443).hasfocus()">$INFO[Container(7000443).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000444).hasfocus()">$INFO[Container(7000444).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000445).hasfocus()">$INFO[Container(7000445).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000446).hasfocus()">$INFO[Container(7000446).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000447).hasfocus()">$INFO[Container(7000447).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000448).hasfocus()">$INFO[Container(7000448).NumItems,, $LOCALIZE[31025]]</value>
-        <value condition="ControlGroup(9000449).hasfocus()">$INFO[Container(7000449).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48000).hasfocus()">$INFO[Container(8000).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48001).hasfocus()">$INFO[Container(8001).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48002).hasfocus()">$INFO[Container(8002).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48003).hasfocus()">$INFO[Container(8003).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48004).hasfocus()">$INFO[Container(8004).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48005).hasfocus()">$INFO[Container(8005).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48006).hasfocus()">$INFO[Container(8006).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48007).hasfocus()">$INFO[Container(8007).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48008).hasfocus()">$INFO[Container(8008).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48009).hasfocus()">$INFO[Container(8009).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48010).hasfocus()">$INFO[Container(8010).NumItems,, $LOCALIZE[31025]]</value>
+        <value condition="ControlGroup(48011).hasfocus()">$INFO[Container(8011).NumItems,, $LOCALIZE[31025]]</value>
         <value condition="IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + [Library.HasContent(musicvideos) | Library.HasServices] + [Container(300).HasFocus(13) | Container(300).HasFocus(14)]">$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count), ,  •  ]$LOCALIZE[16101]$INFO[Window(Home).Property(MusicVideos.Unwatched), ]</value>
         <value condition="!IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + [Library.HasContent(musicvideos) | Library.HasServices] + [Container(300).HasFocus(13) | Container(300).HasFocus(14)]">$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count), ,  •  ]</value>
         <value condition="IntegerGreaterThan(Window(Home).Property(Movies.Unwatched),0) + [Library.HasContent(movies) | Library.HasServices] + Container(300).HasFocus(4)">$LOCALIZE[20342]$INFO[Window(Home).Property(Movies.Count), ,  •  ]$LOCALIZE[16101]$INFO[Window(Home).Property(Movies.Unwatched), ]</value>
@@ -496,13 +285,11 @@
         <value>resource://resource.images.weathericons.transparent/</value>
     </variable>
     <variable name="Default.Art">
-        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
         <value condition="Skin.HasSetting(BlackGlassMode)">special://skin/backgrounds/default/default2.jpg</value>
         <value>special://skin/backgrounds/default/default.jpg</value>
     </variable>
     <variable name="Videos.Art">
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Videos.Background))">$INFO[Skin.String(Videos.Background)]</value>
         <value>special://skin/backgrounds/Videos.jpg</value>
     </variable>
@@ -515,17 +302,14 @@
         <value>special://skin/backgrounds/Quit.jpg</value>
     </variable>
     <variable name="Movies.Art">
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Movies.Background))">$INFO[Skin.String(Movies.Background)]</value>
         <value>special://skin/backgrounds/Movies.jpg</value>
     </variable>
     <variable name="TVShows.Art">
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
         <value condition="!IsEmpty(Skin.String(TVShows.Background))">$INFO[Skin.String(TVShows.Background)]</value>
         <value>special://skin/backgrounds/TVShows.jpg</value>
     </variable>
     <variable name="Music.Art">
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Music.Background))">$INFO[Skin.String(Music.Background)]</value>
         <value>special://skin/backgrounds/Music.jpg</value>
     </variable>
@@ -534,12 +318,10 @@
         <value>special://skin/backgrounds/Addons.jpg</value>
     </variable>
     <variable name="Concerts.Art">
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Concerts.Background))">$INFO[Skin.String(Concerts.Background)]</value>
         <value>special://skin/backgrounds/Concerts.jpg</value>
     </variable>
     <variable name="Clips.Art">
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Clips.Background))">$INFO[Skin.String(Clips.Background)]</value>
         <value>special://skin/backgrounds/Clips.jpg</value>
     </variable>
@@ -566,7 +348,6 @@
         <value>special://skin/backgrounds/Radio.jpg</value>
     </variable>
     <variable name="Pictures.Art">
-        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
         <value condition="!IsEmpty(Skin.String(Pictures.Background))">$INFO[Skin.String(Pictures.Background)]</value>
         <value>special://skin/backgrounds/Pictures.jpg</value>
     </variable>
@@ -607,283 +388,19 @@
         <value>$VAR[Default.Art]</value>
     </variable>
     <variable name="WidgetsBackgrounds">
-        <!-- WIDGET 1 -->
-        <value condition="Control.HasFocus(700011)+!IsEmpty(Container(700011).ListItem.Art(fanart))">$INFO[Container(700011).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700012)+!IsEmpty(Container(700012).ListItem.Art(fanart))">$INFO[Container(700012).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700013)+!IsEmpty(Container(700013).ListItem.Art(fanart))">$INFO[Container(700013).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700014)+!IsEmpty(Container(700014).ListItem.Art(fanart))">$INFO[Container(700014).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700015)+!IsEmpty(Container(700015).ListItem.Art(fanart))">$INFO[Container(700015).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700016)+!IsEmpty(Container(700016).ListItem.Art(fanart))">$INFO[Container(700016).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700017)+!IsEmpty(Container(700017).ListItem.Art(fanart))">$INFO[Container(700017).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700018)+!IsEmpty(Container(700018).ListItem.Art(fanart))">$INFO[Container(700018).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700019)+!IsEmpty(Container(700019).ListItem.Art(fanart))">$INFO[Container(700019).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000110)+!IsEmpty(Container(7000110).ListItem.Art(fanart))">$INFO[Container(7000110).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000111)+!IsEmpty(Container(7000111).ListItem.Art(fanart))">$INFO[Container(7000111).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000112)+!IsEmpty(Container(7000112).ListItem.Art(fanart))">$INFO[Container(7000112).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000113)+!IsEmpty(Container(7000113).ListItem.Art(fanart))">$INFO[Container(7000113).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000114)+!IsEmpty(Container(7000114).ListItem.Art(fanart))">$INFO[Container(7000114).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000115)+!IsEmpty(Container(7000115).ListItem.Art(fanart))">$INFO[Container(7000115).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000116)+!IsEmpty(Container(7000116).ListItem.Art(fanart))">$INFO[Container(7000116).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000117)+!IsEmpty(Container(7000117).ListItem.Art(fanart))">$INFO[Container(7000117).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000118)+!IsEmpty(Container(7000118).ListItem.Art(fanart))">$INFO[Container(7000118).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000119)+!IsEmpty(Container(7000119).ListItem.Art(fanart))">$INFO[Container(7000119).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000120)+!IsEmpty(Container(7000120).ListItem.Art(fanart))">$INFO[Container(7000120).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000121)+!IsEmpty(Container(7000121).ListItem.Art(fanart))">$INFO[Container(7000121).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000122)+!IsEmpty(Container(7000122).ListItem.Art(fanart))">$INFO[Container(7000122).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000123)+!IsEmpty(Container(7000123).ListItem.Art(fanart))">$INFO[Container(7000123).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000124)+!IsEmpty(Container(7000124).ListItem.Art(fanart))">$INFO[Container(7000124).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000125)+!IsEmpty(Container(7000125).ListItem.Art(fanart))">$INFO[Container(7000125).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000126)+!IsEmpty(Container(7000126).ListItem.Art(fanart))">$INFO[Container(7000126).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000127)+!IsEmpty(Container(7000127).ListItem.Art(fanart))">$INFO[Container(7000127).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000128)+!IsEmpty(Container(7000128).ListItem.Art(fanart))">$INFO[Container(7000128).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000129)+!IsEmpty(Container(7000129).ListItem.Art(fanart))">$INFO[Container(7000129).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000130)+!IsEmpty(Container(7000130).ListItem.Art(fanart))">$INFO[Container(7000130).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000131)+!IsEmpty(Container(7000131).ListItem.Art(fanart))">$INFO[Container(7000131).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000132)+!IsEmpty(Container(7000132).ListItem.Art(fanart))">$INFO[Container(7000132).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000133)+!IsEmpty(Container(7000133).ListItem.Art(fanart))">$INFO[Container(7000133).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000134)+!IsEmpty(Container(7000134).ListItem.Art(fanart))">$INFO[Container(7000134).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000135)+!IsEmpty(Container(7000135).ListItem.Art(fanart))">$INFO[Container(7000135).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000136)+!IsEmpty(Container(7000136).ListItem.Art(fanart))">$INFO[Container(7000136).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000137)+!IsEmpty(Container(7000137).ListItem.Art(fanart))">$INFO[Container(7000137).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000138)+!IsEmpty(Container(7000138).ListItem.Art(fanart))">$INFO[Container(7000138).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000139)+!IsEmpty(Container(7000139).ListItem.Art(fanart))">$INFO[Container(7000139).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000140)+!IsEmpty(Container(7000140).ListItem.Art(fanart))">$INFO[Container(7000140).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000141)+!IsEmpty(Container(7000141).ListItem.Art(fanart))">$INFO[Container(7000141).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000142)+!IsEmpty(Container(7000142).ListItem.Art(fanart))">$INFO[Container(7000142).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000143)+!IsEmpty(Container(7000143).ListItem.Art(fanart))">$INFO[Container(7000143).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000144)+!IsEmpty(Container(7000144).ListItem.Art(fanart))">$INFO[Container(7000144).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000145)+!IsEmpty(Container(7000145).ListItem.Art(fanart))">$INFO[Container(7000145).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000146)+!IsEmpty(Container(7000146).ListItem.Art(fanart))">$INFO[Container(7000146).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000147)+!IsEmpty(Container(7000147).ListItem.Art(fanart))">$INFO[Container(7000147).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000148)+!IsEmpty(Container(7000148).ListItem.Art(fanart))">$INFO[Container(7000148).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000149)+!IsEmpty(Container(7000149).ListItem.Art(fanart))">$INFO[Container(7000149).ListItem.Art(fanart)]</value>
-        <!-- WIDGET 2 -->
-        <value condition="Control.HasFocus(700021)+!IsEmpty(Container(700021).ListItem.Art(fanart))">$INFO[Container(700021).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700022)+!IsEmpty(Container(700022).ListItem.Art(fanart))">$INFO[Container(700022).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700023)+!IsEmpty(Container(700023).ListItem.Art(fanart))">$INFO[Container(700023).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700024)+!IsEmpty(Container(700024).ListItem.Art(fanart))">$INFO[Container(700024).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700025)+!IsEmpty(Container(700025).ListItem.Art(fanart))">$INFO[Container(700025).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700026)+!IsEmpty(Container(700026).ListItem.Art(fanart))">$INFO[Container(700026).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700027)+!IsEmpty(Container(700027).ListItem.Art(fanart))">$INFO[Container(700027).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700028)+!IsEmpty(Container(700028).ListItem.Art(fanart))">$INFO[Container(700028).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700029)+!IsEmpty(Container(700029).ListItem.Art(fanart))">$INFO[Container(700029).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000210)+!IsEmpty(Container(7000210).ListItem.Art(fanart))">$INFO[Container(7000210).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000211)+!IsEmpty(Container(7000211).ListItem.Art(fanart))">$INFO[Container(7000211).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000212)+!IsEmpty(Container(7000212).ListItem.Art(fanart))">$INFO[Container(7000212).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000213)+!IsEmpty(Container(7000213).ListItem.Art(fanart))">$INFO[Container(7000213).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000214)+!IsEmpty(Container(7000214).ListItem.Art(fanart))">$INFO[Container(7000214).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000215)+!IsEmpty(Container(7000215).ListItem.Art(fanart))">$INFO[Container(7000215).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000216)+!IsEmpty(Container(7000216).ListItem.Art(fanart))">$INFO[Container(7000216).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000217)+!IsEmpty(Container(7000217).ListItem.Art(fanart))">$INFO[Container(7000217).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000218)+!IsEmpty(Container(7000218).ListItem.Art(fanart))">$INFO[Container(7000218).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000219)+!IsEmpty(Container(7000219).ListItem.Art(fanart))">$INFO[Container(7000219).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000220)+!IsEmpty(Container(7000220).ListItem.Art(fanart))">$INFO[Container(7000220).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000221)+!IsEmpty(Container(7000221).ListItem.Art(fanart))">$INFO[Container(7000221).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000222)+!IsEmpty(Container(7000222).ListItem.Art(fanart))">$INFO[Container(7000222).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000223)+!IsEmpty(Container(7000223).ListItem.Art(fanart))">$INFO[Container(7000223).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000224)+!IsEmpty(Container(7000224).ListItem.Art(fanart))">$INFO[Container(7000224).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000225)+!IsEmpty(Container(7000225).ListItem.Art(fanart))">$INFO[Container(7000225).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000226)+!IsEmpty(Container(7000226).ListItem.Art(fanart))">$INFO[Container(7000226).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000227)+!IsEmpty(Container(7000227).ListItem.Art(fanart))">$INFO[Container(7000227).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000228)+!IsEmpty(Container(7000228).ListItem.Art(fanart))">$INFO[Container(7000228).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000229)+!IsEmpty(Container(7000229).ListItem.Art(fanart))">$INFO[Container(7000229).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000230)+!IsEmpty(Container(7000230).ListItem.Art(fanart))">$INFO[Container(7000230).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000231)+!IsEmpty(Container(7000231).ListItem.Art(fanart))">$INFO[Container(7000231).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000232)+!IsEmpty(Container(7000232).ListItem.Art(fanart))">$INFO[Container(7000232).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000233)+!IsEmpty(Container(7000233).ListItem.Art(fanart))">$INFO[Container(7000233).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000234)+!IsEmpty(Container(7000234).ListItem.Art(fanart))">$INFO[Container(7000234).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000235)+!IsEmpty(Container(7000235).ListItem.Art(fanart))">$INFO[Container(7000235).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000236)+!IsEmpty(Container(7000236).ListItem.Art(fanart))">$INFO[Container(7000236).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000237)+!IsEmpty(Container(7000237).ListItem.Art(fanart))">$INFO[Container(7000237).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000238)+!IsEmpty(Container(7000238).ListItem.Art(fanart))">$INFO[Container(7000238).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000239)+!IsEmpty(Container(7000239).ListItem.Art(fanart))">$INFO[Container(7000239).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000240)+!IsEmpty(Container(7000240).ListItem.Art(fanart))">$INFO[Container(7000240).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000241)+!IsEmpty(Container(7000241).ListItem.Art(fanart))">$INFO[Container(7000241).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000242)+!IsEmpty(Container(7000242).ListItem.Art(fanart))">$INFO[Container(7000242).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000243)+!IsEmpty(Container(7000243).ListItem.Art(fanart))">$INFO[Container(7000243).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000244)+!IsEmpty(Container(7000244).ListItem.Art(fanart))">$INFO[Container(7000244).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000245)+!IsEmpty(Container(7000245).ListItem.Art(fanart))">$INFO[Container(7000245).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000246)+!IsEmpty(Container(7000246).ListItem.Art(fanart))">$INFO[Container(7000246).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000247)+!IsEmpty(Container(7000247).ListItem.Art(fanart))">$INFO[Container(7000247).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000248)+!IsEmpty(Container(7000248).ListItem.Art(fanart))">$INFO[Container(7000248).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000249)+!IsEmpty(Container(7000249).ListItem.Art(fanart))">$INFO[Container(7000249).ListItem.Art(fanart)]</value>
-
-        <!-- WIDGET 3 -->
-        <value condition="Control.HasFocus(700031)+!IsEmpty(Container(700031).ListItem.Art(fanart))">$INFO[Container(700031).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700032)+!IsEmpty(Container(700032).ListItem.Art(fanart))">$INFO[Container(700032).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700033)+!IsEmpty(Container(700033).ListItem.Art(fanart))">$INFO[Container(700033).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700034)+!IsEmpty(Container(700034).ListItem.Art(fanart))">$INFO[Container(700034).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700035)+!IsEmpty(Container(700035).ListItem.Art(fanart))">$INFO[Container(700035).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700036)+!IsEmpty(Container(700036).ListItem.Art(fanart))">$INFO[Container(700036).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700037)+!IsEmpty(Container(700037).ListItem.Art(fanart))">$INFO[Container(700037).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700038)+!IsEmpty(Container(700038).ListItem.Art(fanart))">$INFO[Container(700038).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700039)+!IsEmpty(Container(700039).ListItem.Art(fanart))">$INFO[Container(700039).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000310)+!IsEmpty(Container(7000310).ListItem.Art(fanart))">$INFO[Container(7000310).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000311)+!IsEmpty(Container(7000311).ListItem.Art(fanart))">$INFO[Container(7000311).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000312)+!IsEmpty(Container(7000312).ListItem.Art(fanart))">$INFO[Container(7000312).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000313)+!IsEmpty(Container(7000313).ListItem.Art(fanart))">$INFO[Container(7000313).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000314)+!IsEmpty(Container(7000314).ListItem.Art(fanart))">$INFO[Container(7000314).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000315)+!IsEmpty(Container(7000315).ListItem.Art(fanart))">$INFO[Container(7000315).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000316)+!IsEmpty(Container(7000316).ListItem.Art(fanart))">$INFO[Container(7000316).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000317)+!IsEmpty(Container(7000317).ListItem.Art(fanart))">$INFO[Container(7000317).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000318)+!IsEmpty(Container(7000318).ListItem.Art(fanart))">$INFO[Container(7000318).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000319)+!IsEmpty(Container(7000319).ListItem.Art(fanart))">$INFO[Container(7000319).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000320)+!IsEmpty(Container(7000320).ListItem.Art(fanart))">$INFO[Container(7000320).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000321)+!IsEmpty(Container(7000321).ListItem.Art(fanart))">$INFO[Container(7000321).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000322)+!IsEmpty(Container(7000322).ListItem.Art(fanart))">$INFO[Container(7000322).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000323)+!IsEmpty(Container(7000323).ListItem.Art(fanart))">$INFO[Container(7000323).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000324)+!IsEmpty(Container(7000324).ListItem.Art(fanart))">$INFO[Container(7000324).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000325)+!IsEmpty(Container(7000325).ListItem.Art(fanart))">$INFO[Container(7000325).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000326)+!IsEmpty(Container(7000326).ListItem.Art(fanart))">$INFO[Container(7000326).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000327)+!IsEmpty(Container(7000327).ListItem.Art(fanart))">$INFO[Container(7000327).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000328)+!IsEmpty(Container(7000328).ListItem.Art(fanart))">$INFO[Container(7000328).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000329)+!IsEmpty(Container(7000329).ListItem.Art(fanart))">$INFO[Container(7000329).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000330)+!IsEmpty(Container(7000330).ListItem.Art(fanart))">$INFO[Container(7000330).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000331)+!IsEmpty(Container(7000331).ListItem.Art(fanart))">$INFO[Container(7000331).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000332)+!IsEmpty(Container(7000332).ListItem.Art(fanart))">$INFO[Container(7000332).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000333)+!IsEmpty(Container(7000333).ListItem.Art(fanart))">$INFO[Container(7000333).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000334)+!IsEmpty(Container(7000334).ListItem.Art(fanart))">$INFO[Container(7000334).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000335)+!IsEmpty(Container(7000335).ListItem.Art(fanart))">$INFO[Container(7000335).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000336)+!IsEmpty(Container(7000336).ListItem.Art(fanart))">$INFO[Container(7000336).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000337)+!IsEmpty(Container(7000337).ListItem.Art(fanart))">$INFO[Container(7000337).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000338)+!IsEmpty(Container(7000338).ListItem.Art(fanart))">$INFO[Container(7000338).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000339)+!IsEmpty(Container(7000339).ListItem.Art(fanart))">$INFO[Container(7000339).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000340)+!IsEmpty(Container(7000340).ListItem.Art(fanart))">$INFO[Container(7000340).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000341)+!IsEmpty(Container(7000341).ListItem.Art(fanart))">$INFO[Container(7000341).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000342)+!IsEmpty(Container(7000342).ListItem.Art(fanart))">$INFO[Container(7000342).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000343)+!IsEmpty(Container(7000343).ListItem.Art(fanart))">$INFO[Container(7000343).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000344)+!IsEmpty(Container(7000344).ListItem.Art(fanart))">$INFO[Container(7000344).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000345)+!IsEmpty(Container(7000345).ListItem.Art(fanart))">$INFO[Container(7000345).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000346)+!IsEmpty(Container(7000346).ListItem.Art(fanart))">$INFO[Container(7000346).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000347)+!IsEmpty(Container(7000347).ListItem.Art(fanart))">$INFO[Container(7000347).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000348)+!IsEmpty(Container(7000348).ListItem.Art(fanart))">$INFO[Container(7000348).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000349)+!IsEmpty(Container(7000349).ListItem.Art(fanart))">$INFO[Container(7000349).ListItem.Art(fanart)]</value>
-
-        <!-- WIDGET 4 -->
-        <value condition="Control.HasFocus(700041)+!IsEmpty(Container(700041).ListItem.Art(fanart))">$INFO[Container(700041).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700042)+!IsEmpty(Container(700042).ListItem.Art(fanart))">$INFO[Container(700042).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700043)+!IsEmpty(Container(700043).ListItem.Art(fanart))">$INFO[Container(700043).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700044)+!IsEmpty(Container(700044).ListItem.Art(fanart))">$INFO[Container(700044).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700045)+!IsEmpty(Container(700045).ListItem.Art(fanart))">$INFO[Container(700045).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700046)+!IsEmpty(Container(700046).ListItem.Art(fanart))">$INFO[Container(700046).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700047)+!IsEmpty(Container(700047).ListItem.Art(fanart))">$INFO[Container(700047).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700048)+!IsEmpty(Container(700048).ListItem.Art(fanart))">$INFO[Container(700048).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700049)+!IsEmpty(Container(700049).ListItem.Art(fanart))">$INFO[Container(700049).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000410)+!IsEmpty(Container(7000410).ListItem.Art(fanart))">$INFO[Container(7000410).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000411)+!IsEmpty(Container(7000411).ListItem.Art(fanart))">$INFO[Container(7000411).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000412)+!IsEmpty(Container(7000412).ListItem.Art(fanart))">$INFO[Container(7000412).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000413)+!IsEmpty(Container(7000413).ListItem.Art(fanart))">$INFO[Container(7000413).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000414)+!IsEmpty(Container(7000414).ListItem.Art(fanart))">$INFO[Container(7000414).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000415)+!IsEmpty(Container(7000415).ListItem.Art(fanart))">$INFO[Container(7000415).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000416)+!IsEmpty(Container(7000416).ListItem.Art(fanart))">$INFO[Container(7000416).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000417)+!IsEmpty(Container(7000417).ListItem.Art(fanart))">$INFO[Container(7000417).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000418)+!IsEmpty(Container(7000418).ListItem.Art(fanart))">$INFO[Container(7000418).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000419)+!IsEmpty(Container(7000419).ListItem.Art(fanart))">$INFO[Container(7000419).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000420)+!IsEmpty(Container(7000420).ListItem.Art(fanart))">$INFO[Container(7000420).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000421)+!IsEmpty(Container(7000421).ListItem.Art(fanart))">$INFO[Container(7000421).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000422)+!IsEmpty(Container(7000422).ListItem.Art(fanart))">$INFO[Container(7000422).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000423)+!IsEmpty(Container(7000423).ListItem.Art(fanart))">$INFO[Container(7000423).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000424)+!IsEmpty(Container(7000424).ListItem.Art(fanart))">$INFO[Container(7000424).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000425)+!IsEmpty(Container(7000425).ListItem.Art(fanart))">$INFO[Container(7000425).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000426)+!IsEmpty(Container(7000426).ListItem.Art(fanart))">$INFO[Container(7000426).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000427)+!IsEmpty(Container(7000427).ListItem.Art(fanart))">$INFO[Container(7000427).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000428)+!IsEmpty(Container(7000428).ListItem.Art(fanart))">$INFO[Container(7000428).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000429)+!IsEmpty(Container(7000429).ListItem.Art(fanart))">$INFO[Container(7000429).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000430)+!IsEmpty(Container(7000430).ListItem.Art(fanart))">$INFO[Container(7000430).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000431)+!IsEmpty(Container(7000431).ListItem.Art(fanart))">$INFO[Container(7000431).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000432)+!IsEmpty(Container(7000432).ListItem.Art(fanart))">$INFO[Container(7000432).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000433)+!IsEmpty(Container(7000433).ListItem.Art(fanart))">$INFO[Container(7000433).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000434)+!IsEmpty(Container(7000434).ListItem.Art(fanart))">$INFO[Container(7000434).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000435)+!IsEmpty(Container(7000435).ListItem.Art(fanart))">$INFO[Container(7000435).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000436)+!IsEmpty(Container(7000436).ListItem.Art(fanart))">$INFO[Container(7000436).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000437)+!IsEmpty(Container(7000437).ListItem.Art(fanart))">$INFO[Container(7000437).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000438)+!IsEmpty(Container(7000438).ListItem.Art(fanart))">$INFO[Container(7000438).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000439)+!IsEmpty(Container(7000439).ListItem.Art(fanart))">$INFO[Container(7000439).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000440)+!IsEmpty(Container(7000440).ListItem.Art(fanart))">$INFO[Container(7000440).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000441)+!IsEmpty(Container(7000441).ListItem.Art(fanart))">$INFO[Container(7000441).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000442)+!IsEmpty(Container(7000442).ListItem.Art(fanart))">$INFO[Container(7000442).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000443)+!IsEmpty(Container(7000443).ListItem.Art(fanart))">$INFO[Container(7000443).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000444)+!IsEmpty(Container(7000444).ListItem.Art(fanart))">$INFO[Container(7000444).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000445)+!IsEmpty(Container(7000445).ListItem.Art(fanart))">$INFO[Container(7000445).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000446)+!IsEmpty(Container(7000446).ListItem.Art(fanart))">$INFO[Container(7000446).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000447)+!IsEmpty(Container(7000447).ListItem.Art(fanart))">$INFO[Container(7000447).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000448)+!IsEmpty(Container(7000448).ListItem.Art(fanart))">$INFO[Container(7000448).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000449)+!IsEmpty(Container(7000449).ListItem.Art(fanart))">$INFO[Container(7000449).ListItem.Art(fanart)]</value>
-
-        <!-- WIDGET 5 -->
-        <value condition="Control.HasFocus(700051)+!IsEmpty(Container(700051).ListItem.Art(fanart))">$INFO[Container(700051).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700052)+!IsEmpty(Container(700052).ListItem.Art(fanart))">$INFO[Container(700052).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700053)+!IsEmpty(Container(700053).ListItem.Art(fanart))">$INFO[Container(700053).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700054)+!IsEmpty(Container(700054).ListItem.Art(fanart))">$INFO[Container(700054).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700055)+!IsEmpty(Container(700055).ListItem.Art(fanart))">$INFO[Container(700055).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700056)+!IsEmpty(Container(700056).ListItem.Art(fanart))">$INFO[Container(700056).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700057)+!IsEmpty(Container(700057).ListItem.Art(fanart))">$INFO[Container(700057).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700058)+!IsEmpty(Container(700058).ListItem.Art(fanart))">$INFO[Container(700058).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(700059)+!IsEmpty(Container(700059).ListItem.Art(fanart))">$INFO[Container(700059).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000510)+!IsEmpty(Container(7000510).ListItem.Art(fanart))">$INFO[Container(7000510).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000511)+!IsEmpty(Container(7000511).ListItem.Art(fanart))">$INFO[Container(7000511).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000512)+!IsEmpty(Container(7000512).ListItem.Art(fanart))">$INFO[Container(7000512).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000513)+!IsEmpty(Container(7000513).ListItem.Art(fanart))">$INFO[Container(7000513).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000514)+!IsEmpty(Container(7000514).ListItem.Art(fanart))">$INFO[Container(7000514).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000515)+!IsEmpty(Container(7000515).ListItem.Art(fanart))">$INFO[Container(7000515).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000516)+!IsEmpty(Container(7000516).ListItem.Art(fanart))">$INFO[Container(7000516).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000517)+!IsEmpty(Container(7000517).ListItem.Art(fanart))">$INFO[Container(7000517).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000518)+!IsEmpty(Container(7000518).ListItem.Art(fanart))">$INFO[Container(7000518).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000519)+!IsEmpty(Container(7000519).ListItem.Art(fanart))">$INFO[Container(7000519).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000520)+!IsEmpty(Container(7000520).ListItem.Art(fanart))">$INFO[Container(7000520).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000521)+!IsEmpty(Container(7000521).ListItem.Art(fanart))">$INFO[Container(7000521).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000522)+!IsEmpty(Container(7000522).ListItem.Art(fanart))">$INFO[Container(7000522).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000523)+!IsEmpty(Container(7000523).ListItem.Art(fanart))">$INFO[Container(7000523).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000524)+!IsEmpty(Container(7000524).ListItem.Art(fanart))">$INFO[Container(7000524).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000525)+!IsEmpty(Container(7000525).ListItem.Art(fanart))">$INFO[Container(7000525).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000526)+!IsEmpty(Container(7000526).ListItem.Art(fanart))">$INFO[Container(7000526).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000527)+!IsEmpty(Container(7000527).ListItem.Art(fanart))">$INFO[Container(7000527).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000528)+!IsEmpty(Container(7000528).ListItem.Art(fanart))">$INFO[Container(7000528).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000529)+!IsEmpty(Container(7000529).ListItem.Art(fanart))">$INFO[Container(7000529).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000530)+!IsEmpty(Container(7000530).ListItem.Art(fanart))">$INFO[Container(7000530).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000531)+!IsEmpty(Container(7000531).ListItem.Art(fanart))">$INFO[Container(7000531).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000532)+!IsEmpty(Container(7000532).ListItem.Art(fanart))">$INFO[Container(7000532).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000533)+!IsEmpty(Container(7000533).ListItem.Art(fanart))">$INFO[Container(7000533).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000534)+!IsEmpty(Container(7000534).ListItem.Art(fanart))">$INFO[Container(7000534).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000535)+!IsEmpty(Container(7000535).ListItem.Art(fanart))">$INFO[Container(7000535).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000536)+!IsEmpty(Container(7000536).ListItem.Art(fanart))">$INFO[Container(7000536).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000537)+!IsEmpty(Container(7000537).ListItem.Art(fanart))">$INFO[Container(7000537).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000538)+!IsEmpty(Container(7000538).ListItem.Art(fanart))">$INFO[Container(7000538).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000539)+!IsEmpty(Container(7000539).ListItem.Art(fanart))">$INFO[Container(7000539).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000540)+!IsEmpty(Container(7000540).ListItem.Art(fanart))">$INFO[Container(7000540).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000541)+!IsEmpty(Container(7000541).ListItem.Art(fanart))">$INFO[Container(7000541).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000542)+!IsEmpty(Container(7000542).ListItem.Art(fanart))">$INFO[Container(7000542).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000543)+!IsEmpty(Container(7000543).ListItem.Art(fanart))">$INFO[Container(7000543).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000544)+!IsEmpty(Container(7000544).ListItem.Art(fanart))">$INFO[Container(7000544).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000545)+!IsEmpty(Container(7000545).ListItem.Art(fanart))">$INFO[Container(7000545).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000546)+!IsEmpty(Container(7000546).ListItem.Art(fanart))">$INFO[Container(7000546).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000547)+!IsEmpty(Container(7000547).ListItem.Art(fanart))">$INFO[Container(7000547).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000548)+!IsEmpty(Container(7000548).ListItem.Art(fanart))">$INFO[Container(7000548).ListItem.Art(fanart)]</value>
-        <value condition="Control.HasFocus(7000549)+!IsEmpty(Container(7000549).ListItem.Art(fanart))">$INFO[Container(7000549).ListItem.Art(fanart)]</value>
-
+        <value condition="Control.HasFocus(8000)+!IsEmpty(Container(8000).ListItem.Art(fanart))">$INFO[Container(8000).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(8001)+!IsEmpty(Container(8001).ListItem.Art(fanart))">$INFO[Container(8001).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(8002)+!IsEmpty(Container(8002).ListItem.Art(fanart))">$INFO[Container(8002).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(8003)+!IsEmpty(Container(8003).ListItem.Art(fanart))">$INFO[Container(8003).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(8004)+!IsEmpty(Container(8004).ListItem.Art(fanart))">$INFO[Container(8004).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(8005)+!IsEmpty(Container(8005).ListItem.Art(fanart))">$INFO[Container(8005).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(8006)+!IsEmpty(Container(8006).ListItem.Art(fanart))">$INFO[Container(8006).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(8007)+!IsEmpty(Container(8007).ListItem.Art(fanart))">$INFO[Container(8007).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(8008)+!IsEmpty(Container(8008).ListItem.Art(fanart))">$INFO[Container(8008).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(8009)+!IsEmpty(Container(8009).ListItem.Art(fanart))">$INFO[Container(8009).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(8010)+!IsEmpty(Container(8010).ListItem.Art(fanart))">$INFO[Container(8010).ListItem.Art(fanart)]</value>
+        <value condition="Control.HasFocus(8011)+!IsEmpty(Container(8011).ListItem.Art(fanart))">$INFO[Container(8011).ListItem.Art(fanart)]</value>
         <value>$VAR[HomeBackgrounds]</value>
-    </variable>
-    <variable name="SkinSettings.RandomBackground.Art">
-        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+Container(9004).HasFocus(0)">$INFO[Window(Home).Property(SkinHelper.GlobalFanartBackground)]</value>
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+Container(9004).HasFocus(1)">$INFO[Window(Home).Property(SkinHelper.AllVideosBackground)]</value>
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+Container(9004).HasFocus(2)">$INFO[Window(Home).Property(SkinHelper.AllMoviesBackground)]</value>
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+Container(9004).HasFocus(3)">$INFO[Window(Home).Property(SkinHelper.AllTvShowsBackground)]</value>
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+Container(9004).HasFocus(4)">$INFO[Window(Home).Property(SkinHelper.AllMusicBackground)]</value>
-        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+Container(9004).HasFocus(5)">$INFO[Window(Home).Property(SkinHelper.PicturesBackground)]</value>
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+Container(9004).HasFocus(13)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+Container(9004).HasFocus(14)">$INFO[Window(Home).Property(SkinHelper.AllMusicVideosBackground)]</value>
-        <value>$INFO[Container(9004).ListItem.Icon]</value>
-    </variable>
-    <variable name="SkinSettings.RandomBackground.Label">
-        <value condition="Skin.HasSetting(Default.Background.EnableRandomFanart)+Container(9004).HasFocus(0)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(Videos.Background.EnableRandomFanart)+Container(9004).HasFocus(1)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(Movies.Background.EnableRandomFanart)+Container(9004).HasFocus(2)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(TVShows.Background.EnableRandomFanart)+Container(9004).HasFocus(3)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(Music.Background.EnableRandomFanart)+Container(9004).HasFocus(4)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(Pictures.Background.EnableRandomFanart)+Container(9004).HasFocus(5)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+Container(9004).HasFocus(13)">$LOCALIZE[590]</value>
-        <value condition="Skin.HasSetting(MusicVideos.Background.EnableRandomFanart)+Container(9004).HasFocus(14)">$LOCALIZE[590]</value>
-        <value>$INFO[Container(9004).ListItem.Thumb]</value>
     </variable>
     <variable name="YouTubeContent">
         <value condition="Container.Content(albums)">plugin://script.extendedinfo?info=youtubesearch&amp;&amp;id=$ESCINFO[ListItem.Artist] $ESCINFO[ListItem.Album]</value>
@@ -1118,94 +635,5 @@
         <value condition="control.hasfocus(1618)">$LOCALIZE[31302]</value>
         <value condition="control.hasfocus(1620)">$LOCALIZE[31303]</value>
         <value></value>
-    </variable>
-    <variable name="WidgetAspectLabel">
-        <value condition="!IsEmpty(Container(211).ListItem.Property(widgetAspect))">$INFO[Container(211).ListItem.Property(widgetAspect)]</value>
-        <value>$LOCALIZE[31118]</value>
-    </variable>
-    <variable name="WidgetSortByLabel">
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy),lastplayed)">$LOCALIZE[568]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy),lastused)">$LOCALIZE[12012]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy),sorttitle)">$LOCALIZE[551]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy),rating)">$LOCALIZE[563]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy),year)">$LOCALIZE[562]</value>
-        <value>$LOCALIZE[16018]</value>
-    </variable>
-    <variable name="WidgetSortDirectionLabel">
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortDirection),ascending)">$LOCALIZE[584]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortDirection),descending)">$LOCALIZE[585]</value>
-        <value>$LOCALIZE[16018]</value>
-    </variable>
-    <variable name="WidgetAspectLabel.1">
-        <value condition="!IsEmpty(Container(211).ListItem.Property(widgetAspect.1))">$INFO[Container(211).ListItem.Property(widgetAspect.1)]</value>
-        <value>$LOCALIZE[31118]</value>
-    </variable>
-    <variable name="WidgetSortByLabel.1">
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.1),lastplayed)">$LOCALIZE[568]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.1),lastused)">$LOCALIZE[12012]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.1),sorttitle)">$LOCALIZE[551]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.1),rating)">$LOCALIZE[563]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.1),year)">$LOCALIZE[562]</value>
-        <value>$LOCALIZE[16018]</value>
-    </variable>
-    <variable name="WidgetSortDirectionLabel.1">
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortDirection.1),ascending)">$LOCALIZE[584]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortDirection.1),descending)">$LOCALIZE[585]</value>
-        <value>$LOCALIZE[16018]</value>
-    </variable>
-    <variable name="WidgetAspectLabel.2">
-        <value condition="!IsEmpty(Container(211).ListItem.Property(widgetAspect.2))">$INFO[Container(211).ListItem.Property(widgetAspect.2)]</value>
-        <value>$LOCALIZE[31118]</value>
-    </variable>
-    <variable name="WidgetSortByLabel.2">
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.2),lastplayed)">$LOCALIZE[568]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.2),lastused)">$LOCALIZE[12012]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.2),sorttitle)">$LOCALIZE[551]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.2),rating)">$LOCALIZE[563]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.2),year)">$LOCALIZE[562]</value>
-        <value>$LOCALIZE[16018]</value>
-    </variable>
-    <variable name="WidgetSortDirectionLabel.2">
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortDirection.2),ascending)">$LOCALIZE[584]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortDirection.2),descending)">$LOCALIZE[585]</value>
-        <value>$LOCALIZE[16018]</value>
-    </variable>
-    <variable name="WidgetAspectLabel.3">
-        <value condition="!IsEmpty(Container(211).ListItem.Property(widgetAspect.3))">$INFO[Container(211).ListItem.Property(widgetAspect.3)]</value>
-        <value>$LOCALIZE[31118]</value>
-    </variable>
-    <variable name="WidgetSortByLabel.3">
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.3),lastplayed)">$LOCALIZE[568]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.3),lastused)">$LOCALIZE[12012]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.3),sorttitle)">$LOCALIZE[551]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.3),rating)">$LOCALIZE[563]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.3),year)">$LOCALIZE[562]</value>
-        <value>$LOCALIZE[16018]</value>
-    </variable>
-    <variable name="WidgetSortDirectionLabel.3">
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortDirection.3),ascending)">$LOCALIZE[584]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortDirection.3),descending)">$LOCALIZE[585]</value>
-        <value>$LOCALIZE[16018]</value>
-    </variable>
-    <variable name="WidgetAspectLabel.4">
-        <value condition="!IsEmpty(Container(211).ListItem.Property(widgetAspect.4))">$INFO[Container(211).ListItem.Property(widgetAspect.4)]</value>
-        <value>$LOCALIZE[31118]</value>
-    </variable>
-    <variable name="WidgetSortByLabel.4">
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.4),lastplayed)">$LOCALIZE[568]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.4),lastused)">$LOCALIZE[12012]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.4),sorttitle)">$LOCALIZE[551]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.4),rating)">$LOCALIZE[563]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortBy.4),year)">$LOCALIZE[562]</value>
-        <value>$LOCALIZE[16018]</value>
-    </variable>
-    <variable name="WidgetSortDirectionLabel.4">
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortDirection.4),ascending)">$LOCALIZE[584]</value>
-        <value condition="StringCompare(Container(211).ListItem.Property(widgetSortDirection.4),descending)">$LOCALIZE[585]</value>
-        <value>$LOCALIZE[16018]</value>
-    </variable>
-    <variable name="WidgetLimit">
-        <value condition="Skin.HasSetting(DisableWidgetLimit)">1000</value>
-        <value>24</value>
     </variable>
 </includes>
