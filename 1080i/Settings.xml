@@ -263,11 +263,11 @@
                         <onclick>ActivateWindow(systeminfo)</onclick>
                         <label2>$VAR[Settings.Art]</label2>
                     </item>
-                    <item>
-                        <label>$LOCALIZE[14114]</label>
-                        <onclick>ActivateWindow(eventlog)</onclick>
-                        <label2>$VAR[Settings.Art]</label2>
-                    </item>
+                    <!--<item>-->
+                        <!--<label>$LOCALIZE[14114]</label>-->
+                        <!--<onclick>ActivateWindow(eventlog)</onclick>-->
+                        <!--<label2>$VAR[Settings.Art]</label2>-->
+                    <!--</item>-->
                     <item>
                         <label>$LOCALIZE[7]</label>
                         <onclick>ActivateWindow(FileManager)</onclick>
