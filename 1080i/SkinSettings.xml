@@ -643,36 +643,36 @@
                                 <label2>$LOCALIZE[305]</label2>
                                 <onclick>Skin.ToggleSetting(Use_Artist_Slideshow)</onclick>
                             </item>
-                            <item id="97">
-                                <label>$LOCALIZE[31079]</label>
-                                <label2>$INFO[Skin.String(WeatherFanartArt.name)]</label2>
-                                <onclick>RunScript(script.image.resource.select,property=WeatherFanartArt&amp;type=resource.images.weatherfanart)</onclick>
-                            </item>
-                            <item id="93">
-                                <label>$LOCALIZE[31519]</label>
-                                <label2>$INFO[Skin.String(weatherArtPath)]</label2>
-                                <onclick>Skin.SetPath(weatherArtPath)</onclick>
-                            </item>
-                            <item id="95">
-                                <visible>!IsEmpty(Skin.String(weatherArtPath))</visible>
-                                <label>$LOCALIZE[10035] - $LOCALIZE[31519]</label>
-                                <onclick>Skin.Reset(weatherArtPath)</onclick>
-                            </item>
-                            <item id="98">
-                                <label>$LOCALIZE[31080]</label>
-                                <label2>$INFO[Skin.String(WeatherIconArt.name)]</label2>
-                                <onclick>RunScript(script.image.resource.select,property=WeatherIconArt&amp;type=resource.images.weathericon)</onclick>
-                            </item>
-                            <item id="94">
-                                <label>$LOCALIZE[31520]</label>
-                                <label2>$INFO[Skin.String(weatherIconPath)]</label2>
-                                <onclick>Skin.SetPath(weatherIconPath)</onclick>
-                            </item>
-                            <item id="96">
-                                <visible>!IsEmpty(Skin.String(weatherIconPath))</visible>
-                                <label>$LOCALIZE[10035] - $LOCALIZE[31520]</label>
-                                <onclick>Skin.Reset(weatherIconPath)</onclick>
-                            </item>
+                            <!--<item id="97">-->
+                                <!--<label>$LOCALIZE[31079]</label>-->
+                                <!--<label2>$INFO[Skin.String(WeatherFanartArt.name)]</label2>-->
+                                <!--<onclick>RunScript(script.image.resource.select,property=WeatherFanartArt&amp;type=resource.images.weatherfanart)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="93">-->
+                                <!--<label>$LOCALIZE[31519]</label>-->
+                                <!--<label2>$INFO[Skin.String(weatherArtPath)]</label2>-->
+                                <!--<onclick>Skin.SetPath(weatherArtPath)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="95">-->
+                                <!--<visible>!IsEmpty(Skin.String(weatherArtPath))</visible>-->
+                                <!--<label>$LOCALIZE[10035] - $LOCALIZE[31519]</label>-->
+                                <!--<onclick>Skin.Reset(weatherArtPath)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="98">-->
+                                <!--<label>$LOCALIZE[31080]</label>-->
+                                <!--<label2>$INFO[Skin.String(WeatherIconArt.name)]</label2>-->
+                                <!--<onclick>RunScript(script.image.resource.select,property=WeatherIconArt&amp;type=resource.images.weathericon)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="94">-->
+                                <!--<label>$LOCALIZE[31520]</label>-->
+                                <!--<label2>$INFO[Skin.String(weatherIconPath)]</label2>-->
+                                <!--<onclick>Skin.SetPath(weatherIconPath)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="96">-->
+                                <!--<visible>!IsEmpty(Skin.String(weatherIconPath))</visible>-->
+                                <!--<label>$LOCALIZE[10035] - $LOCALIZE[31520]</label>-->
+                                <!--<onclick>Skin.Reset(weatherIconPath)</onclick>-->
+                            <!--</item>-->
                         </content>
                     </control>
                     <control type="scrollbar" id="503">
@@ -1419,18 +1419,18 @@
                                 <label2>$LOCALIZE[1223]</label2>
                                 <onclick>Skin.ToggleSetting(DVD.Hide)</onclick>
                             </item>
-                            <item id="15">
-                                <visible>!Skin.HasSetting(Weather.Hide)</visible>
-                                <label>$LOCALIZE[8]</label>
-                                <label2>$LOCALIZE[305]</label2>
-                                <onclick>Skin.ToggleSetting(Weather.Hide)</onclick>
-                            </item>
-                            <item id="15">
-                                <visible>Skin.HasSetting(Weather.Hide)</visible>
-                                <label>[COLOR=DisabledColor]$LOCALIZE[8][/COLOR]</label>
-                                <label2>$LOCALIZE[1223]</label2>
-                                <onclick>Skin.ToggleSetting(Weather.Hide)</onclick>
-                            </item>
+                            <!--<item id="15">-->
+                                <!--<visible>!Skin.HasSetting(Weather.Hide)</visible>-->
+                                <!--<label>$LOCALIZE[8]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(Weather.Hide)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="15">-->
+                                <!--<visible>Skin.HasSetting(Weather.Hide)</visible>-->
+                                <!--<label>[COLOR=DisabledColor]$LOCALIZE[8][/COLOR]</label>-->
+                                <!--<label2>$LOCALIZE[1223]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(Weather.Hide)</onclick>-->
+                            <!--</item>-->
                             <item id="10">
                                 <visible>!Skin.HasSetting(Settings.Hide)</visible>
                                 <label>$LOCALIZE[5]</label>

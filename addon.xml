@@ -3,8 +3,8 @@
     <requires>
         <import addon="xbmc.gui" version="5.10.0"/>
         <import addon="script.favourites" version="3.2.0"/>
-        <import addon="resource.images.weatherfanart.single" version="0.0.4"/>
-        <import addon="resource.images.weathericons.transparent" version="0.0.4"/>
+        <!--<import addon="resource.images.weatherfanart.single" version="0.0.4"/>-->
+        <!--<import addon="resource.images.weathericons.transparent" version="0.0.4"/>-->
         <import addon="resource.images.studios.white" version="0.0.6"/>
         <import addon="resource.images.recordlabels.white" version="0.0.6"/>
         <import addon="resource.uisounds.nebula" version="0.0.1"/>

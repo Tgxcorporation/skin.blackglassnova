@@ -1419,13 +1419,13 @@
             <onclick condition="System.HasMediaDvd">PlayDVD()</onclick>
             <onclick condition="!System.HasMediaDvd">Notification($LOCALIZE[164],$LOCALIZE[219],5,DefaultIconWarning.png)</onclick>
         </item>
-        <item id="15">
-            <visible>!Skin.HasSetting(Weather.Hide)</visible>
-            <label>$LOCALIZE[8]</label>
-            <thumb fallback="special://skin/backgrounds/Weather.jpg">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</thumb>
-            <icon fallback="special://skin/backgrounds/Weather.jpg">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</icon>
-            <onclick>ActivateWindow(Weather)</onclick>
-        </item>
+        <!--<item id="15">-->
+            <!--<visible>!Skin.HasSetting(Weather.Hide)</visible>-->
+            <!--<label>$LOCALIZE[8]</label>-->
+            <!--<thumb fallback="special://skin/backgrounds/Weather.jpg">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</thumb>-->
+            <!--<icon fallback="special://skin/backgrounds/Weather.jpg">$INFO[Weather.fanartcode,special://skin/backgrounds/weather/,.jpg]</icon>-->
+            <!--<onclick>ActivateWindow(Weather)</onclick>-->
+        <!--</item>-->
         <item id="10">
             <visible>!Skin.HasSetting(Settings.Hide)</visible>
             <label>$LOCALIZE[5]</label>

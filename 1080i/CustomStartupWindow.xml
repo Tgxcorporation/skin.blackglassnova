@@ -299,18 +299,18 @@
                     <selected>StringCompare(Skin.String(StartupWindow),addonbrowser)</selected>
                 </control>
                 <!--WEATHER-->
-                <control type="radiobutton" id="714">
-                    <width>820</width>
-                    <radioposx>720</radioposx>
-                    <textwidth>660</textwidth>
-                    <include>LeftMenuButton</include>
-                    <label>$LOCALIZE[8]</label>
-                    <onclick>Skin.SetString(StartupWindow,weather)</onclick>
-                    <onclick>Skin.Reset(CustomStartup.Label)</onclick>
-                    <onclick>Skin.Reset(CustomStartup.Path)</onclick>
-                    <onclick>Skin.Reset(StartupWindowOption)</onclick>
-                    <selected>StringCompare(Skin.String(StartupWindow),weather)</selected>
-                </control>
+                <!--<control type="radiobutton" id="714">-->
+                    <!--<width>820</width>-->
+                    <!--<radioposx>720</radioposx>-->
+                    <!--<textwidth>660</textwidth>-->
+                    <!--<include>LeftMenuButton</include>-->
+                    <!--<label>$LOCALIZE[8]</label>-->
+                    <!--<onclick>Skin.SetString(StartupWindow,weather)</onclick>-->
+                    <!--<onclick>Skin.Reset(CustomStartup.Label)</onclick>-->
+                    <!--<onclick>Skin.Reset(CustomStartup.Path)</onclick>-->
+                    <!--<onclick>Skin.Reset(StartupWindowOption)</onclick>-->
+                    <!--<selected>StringCompare(Skin.String(StartupWindow),weather)</selected>-->
+                <!--</control>-->
                 <!--FAVOURITES-->
                 <control type="radiobutton" id="715">
                     <width>820</width>

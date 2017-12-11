@@ -243,11 +243,11 @@
                         <label2>$VAR[Addons.Art]</label2>
                         <onclick>ActivateWindow(AddonBrowser,root)</onclick>
                     </item>
-                    <item>
-                        <label>$LOCALIZE[8]</label>
-                        <label2>$VAR[Weather.Art]</label2>
-                        <onclick>ActivateWindow(WeatherSettings)</onclick>
-                    </item>
+                    <!--<item>-->
+                        <!--<label>$LOCALIZE[8]</label>-->
+                        <!--<label2>$VAR[Weather.Art]</label2>-->
+                        <!--<onclick>ActivateWindow(WeatherSettings)</onclick>-->
+                    <!--</item>-->
                     <item>
                         <label>$LOCALIZE[14036]</label>
                         <label2>$VAR[Settings.Art]</label2>
