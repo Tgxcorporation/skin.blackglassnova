@@ -354,14 +354,6 @@
                                 <onclick>Skin.ResetSettings</onclick>
                                 <onclick>ReloadSkin()</onclick>
                             </item>
-                            <item id="127">
-                                <label>$ADDON[script.skin.helper.skinbackup 32004]</label>
-                                <onclick>RunScript(script.skin.helper.skinbackup,action=backup)</onclick>
-                            </item>
-                            <item id="128">
-                                <label>$ADDON[script.skin.helper.skinbackup 32006]</label>
-                                <onclick>RunScript(script.skin.helper.skinbackup,action=restore)</onclick>
-                            </item>
                         </content>
                     </control>
                     <control type="scrollbar" id="501">
@@ -593,30 +585,30 @@
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(EnableClearArt)</onclick>
                             </item>
-                            <item id="25">
-                                <visible>Skin.HasSetting(EnableStudioArt)</visible>
-                                <label>$LOCALIZE[31075]</label>
-                                <label2>$LOCALIZE[107]</label2>
-                                <onclick>Skin.ToggleSetting(EnableStudioArt)</onclick>
-                            </item>
-                            <item id="25">
-                                <visible>!Skin.HasSetting(EnableStudioArt)</visible>
-                                <label>$LOCALIZE[31075]</label>
-                                <label2>$LOCALIZE[106]</label2>
-                                <onclick>Skin.ToggleSetting(EnableStudioArt)</onclick>
-                            </item>
-                            <item id="26">
-                                <visible>Skin.HasSetting(EnableStudioArt)</visible>
-                                <label>$LOCALIZE[31078]</label>
-                                <label2>$INFO[Skin.String(StudioArt.name)]</label2>
-                                <onclick>RunScript(script.image.resource.select,property=StudioArt&amp;type=resource.images.studios)</onclick>
-                            </item>
-                            <item id="27">
-                                <visible>Skin.HasSetting(EnableStudioArt)</visible>
-                                <label>$LOCALIZE[31081]</label>
-                                <label2>$INFO[Skin.String(LabelArt.name)]</label2>
-                                <onclick>RunScript(script.image.resource.select,property=LabelArt&amp;type=resource.images.recordlabels)</onclick>
-                            </item>
+                            <!--<item id="25">-->
+                                <!--<visible>Skin.HasSetting(EnableStudioArt)</visible>-->
+                                <!--<label>$LOCALIZE[31075]</label>-->
+                                <!--<label2>$LOCALIZE[107]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(EnableStudioArt)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="25">-->
+                                <!--<visible>!Skin.HasSetting(EnableStudioArt)</visible>-->
+                                <!--<label>$LOCALIZE[31075]</label>-->
+                                <!--<label2>$LOCALIZE[106]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(EnableStudioArt)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="26">-->
+                                <!--<visible>Skin.HasSetting(EnableStudioArt)</visible>-->
+                                <!--<label>$LOCALIZE[31078]</label>-->
+                                <!--<label2>$INFO[Skin.String(StudioArt.name)]</label2>-->
+                                <!--<onclick>RunScript(script.image.resource.select,property=StudioArt&amp;type=resource.images.studios)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="27">-->
+                                <!--<visible>Skin.HasSetting(EnableStudioArt)</visible>-->
+                                <!--<label>$LOCALIZE[31081]</label>-->
+                                <!--<label2>$INFO[Skin.String(LabelArt.name)]</label2>-->
+                                <!--<onclick>RunScript(script.image.resource.select,property=LabelArt&amp;type=resource.images.recordlabels)</onclick>-->
+                            <!--</item>-->
                             <!--<item id="91">-->
                             <!--<visible>!Skin.HasSetting(TVTunes.Enabled)</visible>-->
                             <!--<label>$LOCALIZE[31984]</label>-->
