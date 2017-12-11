@@ -136,10 +136,10 @@
                         <onclick>noop</onclick>
                     </item>
                     <!--STARTUP-->
-                    <item id="6">
-                        <label>$LOCALIZE[31018]</label>
-                        <onclick>noop</onclick>
-                    </item>
+                    <!--<item id="6">-->
+                        <!--<label>$LOCALIZE[31018]</label>-->
+                        <!--<onclick>noop</onclick>-->
+                    <!--</item>-->
                     <!--QUIT MENU-->
                     <item id="7">
                         <visible>!System.Platform.IOS + !System.Platform.TVOS</visible>
