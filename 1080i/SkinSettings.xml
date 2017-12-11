@@ -1371,18 +1371,18 @@
                                 <label2>$LOCALIZE[1223]</label2>
                                 <onclick>Skin.ToggleSetting(PvrRadio.Hide)</onclick>
                             </item>
-                            <item id="2">
-                                <visible>!Skin.HasSetting(Addons.Hide)</visible>
-                                <label>$LOCALIZE[24001]</label>
-                                <label2>$LOCALIZE[305]</label2>
-                                <onclick>Skin.ToggleSetting(Addons.Hide)</onclick>
-                            </item>
-                            <item id="2">
-                                <visible>Skin.HasSetting(Addons.Hide)</visible>
-                                <label>[COLOR=DisabledColor]$LOCALIZE[24001][/COLOR]</label>
-                                <label2>$LOCALIZE[1223]</label2>
-                                <onclick>Skin.ToggleSetting(Addons.Hide)</onclick>
-                            </item>
+                            <!--<item id="2">-->
+                                <!--<visible>!Skin.HasSetting(Addons.Hide)</visible>-->
+                                <!--<label>$LOCALIZE[24001]</label>-->
+                                <!--<label2>$LOCALIZE[305]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(Addons.Hide)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="2">-->
+                                <!--<visible>Skin.HasSetting(Addons.Hide)</visible>-->
+                                <!--<label>[COLOR=DisabledColor]$LOCALIZE[24001][/COLOR]</label>-->
+                                <!--<label2>$LOCALIZE[1223]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(Addons.Hide)</onclick>-->
+                            <!--</item>-->
                             <item id="91">
                                 <visible>!Skin.HasSetting(Pictures.Hide)</visible>
                                 <label>$LOCALIZE[1]</label>

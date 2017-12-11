@@ -1383,13 +1383,13 @@
             <icon fallback="special://skin/backgrounds/Radio.jpg">$INFO[Skin.String(Radio.Icon)]</icon>
             <onclick>ActivateWindow(RadioChannels)</onclick>
         </item>
-        <item id="2">
-            <visible>!Skin.HasSetting(Addons.Hide)</visible>
-            <label>$LOCALIZE[24001]</label>
-            <thumb>$VAR[Addons.Art]</thumb>
-            <icon fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Icon)]</icon>
-            <onclick>ActivateWindow(1119)</onclick>
-        </item>
+        <!--<item id="2">-->
+            <!--<visible>!Skin.HasSetting(Addons.Hide)</visible>-->
+            <!--<label>$LOCALIZE[24001]</label>-->
+            <!--<thumb>$VAR[Addons.Art]</thumb>-->
+            <!--<icon fallback="special://skin/backgrounds/Addons.jpg">$INFO[Skin.String(Addons.Icon)]</icon>-->
+            <!--<onclick>ActivateWindow(1119)</onclick>-->
+        <!--</item>-->
         <item id="1">
             <visible>!Skin.HasSetting(Pictures.Hide)</visible>
             <label>$LOCALIZE[1]</label>
