@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="buttonmenu" id="111">
     <defaultcontrol always="true">9009</defaultcontrol>
-    <!--<zorder>15</zorder>-->
+    <zorder>15</zorder>
     <onload condition="!Integer.IsGreater(Container(9009).NumItems,0)">close</onload>
     <include>DialogOpenClose</include>
     <controls>
