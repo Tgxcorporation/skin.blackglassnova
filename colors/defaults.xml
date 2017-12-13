@@ -20,20 +20,12 @@
     <color name="WarningColor">FFfe3737</color>
     <color name="ShadowColor">FF000000</color>
     <!-- CUSTOMIZATION -->
-    <color name="ListFocusColor_fuchsia">FFFF0000</color>
-    <color name="SubListFocusColor_fuchsia">FFcc0000</color>
-    <color name="ListFocusColor_azure">FFFF0000</color>
-    <color name="SubListFocusColor_azure">FFcc0000</color>
-    <color name="ListFocusColor_blue">FFFF0000</color>
-    <color name="SubListFocusColor_blue">FFcc0000</color>
-    <color name="ListFocusColor_green">FFFF0000</color>
-    <color name="SubListFocusColor_green">FFcc0000</color>
-    <color name="ListFocusColor_red">FFFF0000</color>
-    <color name="SubListFocusColor_red">FFcc0000</color>
-    <color name="ListFocusColor_violet">FFFF0000</color>
-    <color name="SubListFocusColor_violet">FFcc0000</color>
-    <color name="ListFocusColor_white">FFFF0000</color>
-    <color name="SubListFocusColor_white">FFcc0000</color>
-    <color name="ListFocusColor_yellow">FFFF0000</color>
-    <color name="SubListFocusColor_yellow">FFcc0000</color>
+    <color name="Color_fuchsia">FFff00b4</color>
+    <color name="Color_azure">FF00deff</color>
+    <color name="Color_blue">FF0066ff</color>
+    <color name="Color_green">FF00ff36</color>
+    <color name="Color_red">FFFF0000</color>
+    <color name="Color_violet">FFc600ff</color>
+    <color name="Color_white">FFFFFFFF</color>
+    <color name="Color_yellow">FFffd200</color>
 </colors>

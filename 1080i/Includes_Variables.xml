@@ -532,11 +532,23 @@
         <value>00:02</value>
     </variable>
     <variable name="Picked.Highlight.Color">
-        <value condition="!IsEmpty(Skin.String(PickedColor.Highlight))+Skin.HasSetting(Highlighted.Color.Custom)">$INFO[Skin.String(PickedColor.Highlight)]</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Fuchsia)">Color_fuchsia</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Azure)">Color_azure</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Yellow)">Color_yellow</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Blue)">Color_blue</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Green)">Color_green</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Red)">Color_red</value>
+        <value condition="Skin.HasSetting(Highlighted.Color.Violet)">Color_violet</value>
         <value>ffffffff</value>
     </variable>
     <variable name="Picked.Overlay.Color">
-        <value condition="!IsEmpty(Skin.String(PickedColor.Overlay))+Skin.HasSetting(Overlay.Color.Custom)">$INFO[Skin.String(PickedColor.Overlay)]</value>
+        <value condition="Skin.HasSetting(Overlay.Color.Fuchsia)">Color_fuchsia</value>
+        <value condition="Skin.HasSetting(Overlay.Color.Azure)">Color_azure</value>
+        <value condition="Skin.HasSetting(Overlay.Color.Yellow)">Color_yellow</value>
+        <value condition="Skin.HasSetting(Overlay.Color.Blue)">Color_blue</value>
+        <value condition="Skin.HasSetting(Overlay.Color.Green)">Color_green</value>
+        <value condition="Skin.HasSetting(Overlay.Color.Red)">Color_red</value>
+        <value condition="Skin.HasSetting(Overlay.Color.Violet)">Color_violet</value>
         <value>ffffffff</value>
     </variable>
     <variable name="MusicInfoTextboxVar">
