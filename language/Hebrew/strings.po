@@ -1,4 +1,4 @@
-# Kodi Media Center language file
+# MrMC Media Center language file
 # Addon Name: Black Glass Nova
 # Addon id: skin.blackglassnova
 # Addon Provider: Tgx
@@ -57,7 +57,7 @@ msgid "Go Plex"
 msgstr "עבור לפלקס"
 
 msgctxt "#31009"
-msgid "Go Kodi"
+msgid "Go MrMC"
 msgstr "עבור לקודי"
 
 msgctxt "#31010"
@@ -202,7 +202,7 @@ msgstr "הפעל Clear Logo"
 
 msgctxt "#31045"
 msgid "Customize PleXBMC menu items"
-msgstr "ערוך תפריט PieKodi"
+msgstr "ערוך תפריט PieMrMC"
 
 msgctxt "#31046"
 msgid "Startup delay in seconds"

@@ -1,3 +1,7 @@
+6.6.0
+Adapted skin to MrMC.
+Bugs fixed.
+
 6.5.0
 Added Game Controller support.
 Updated busy spinner.
@@ -49,7 +53,7 @@ New layout for music osd.
 Added Favourites to Quit Menu.
 Added option to disable zoomed images as fanart in pictures.
 New layout and navigation for vertical home menu.
-Added support for image resources from Kodi repository: weather Icons, weather fanarts, studio logos, album labels logos.
+Added support for image resources from MrMC repository: weather Icons, weather fanarts, studio logos, album labels logos.
 Added 'Enable/Disable' button in home menu editor.
 Topbars enhancements. Added volume and window controls in Music and Video OSD.
 Changed icon for visualisation settings in MusicOSD.
