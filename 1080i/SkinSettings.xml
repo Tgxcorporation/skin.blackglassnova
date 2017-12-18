@@ -431,11 +431,11 @@
                             <!--<label2>$LOCALIZE[106]</label2>-->
                             <!--<onclick>Skin.ToggleSetting(HidePlayingMusicInfo)</onclick>-->
                             <!--</item>-->
-                            <item id="3">
-                                <label>$LOCALIZE[24020] $LOCALIZE[31132]</label>
-                                <label2>$INFO[Skin.String(LyricPath)]</label2>
-                                <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
-                            </item>
+                            <!--<item id="3">-->
+                                <!--<label>$LOCALIZE[24020] $LOCALIZE[31132]</label>-->
+                                <!--<label2>$INFO[Skin.String(LyricPath)]</label2>-->
+                                <!--<onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>-->
+                            <!--</item>-->
                             <item id="15">
                                 <visible>Skin.HasSetting(PVRChannelListBig)</visible>
                                 <label>$LOCALIZE[31996]</label>
@@ -537,54 +537,54 @@
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(DisableFanartPictures)</onclick>
                             </item>
-                            <item id="21">
-                                <visible>Skin.HasSetting(EnableCdArt)</visible>
-                                <label>$LOCALIZE[31040]</label>
-                                <label2>$LOCALIZE[107]</label2>
-                                <onclick>Skin.ToggleSetting(EnableCdArt)</onclick>
-                            </item>
-                            <item id="21">
-                                <visible>!Skin.HasSetting(EnableCdArt)</visible>
-                                <label>$LOCALIZE[31040]</label>
-                                <label2>$LOCALIZE[106]</label2>
-                                <onclick>Skin.ToggleSetting(EnableCdArt)</onclick>
-                            </item>
-                            <item id="23">
-                                <visible>Skin.HasSetting(EnableExtraFanart)</visible>
-                                <label>$LOCALIZE[31041]</label>
-                                <label2>$LOCALIZE[107]</label2>
-                                <onclick>Skin.ToggleSetting(EnableExtraFanart)</onclick>
-                            </item>
-                            <item id="23">
-                                <visible>!Skin.HasSetting(EnableExtraFanart)</visible>
-                                <label>$LOCALIZE[31041]</label>
-                                <label2>$LOCALIZE[106]</label2>
-                                <onclick>Skin.ToggleSetting(EnableExtraFanart)</onclick>
-                            </item>
-                            <item id="33">
-                                <visible>!Skin.HasSetting(EnableClearLogo)</visible>
-                                <label>$LOCALIZE[31044]</label>
-                                <label2>$LOCALIZE[106]</label2>
-                                <onclick>Skin.ToggleSetting(EnableClearLogo)</onclick>
-                            </item>
-                            <item id="33">
-                                <visible>Skin.HasSetting(EnableClearLogo)</visible>
-                                <label>$LOCALIZE[31044]</label>
-                                <label2>$LOCALIZE[107]</label2>
-                                <onclick>Skin.ToggleSetting(EnableClearLogo)</onclick>
-                            </item>
-                            <item id="24">
-                                <visible>Skin.HasSetting(EnableClearArt)</visible>
-                                <label>$LOCALIZE[31042]</label>
-                                <label2>$LOCALIZE[107]</label2>
-                                <onclick>Skin.ToggleSetting(EnableClearArt)</onclick>
-                            </item>
-                            <item id="24">
-                                <visible>!Skin.HasSetting(EnableClearArt)</visible>
-                                <label>$LOCALIZE[31042]</label>
-                                <label2>$LOCALIZE[106]</label2>
-                                <onclick>Skin.ToggleSetting(EnableClearArt)</onclick>
-                            </item>
+                            <!--<item id="21">-->
+                                <!--<visible>Skin.HasSetting(EnableCdArt)</visible>-->
+                                <!--<label>$LOCALIZE[31040]</label>-->
+                                <!--<label2>$LOCALIZE[107]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(EnableCdArt)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="21">-->
+                                <!--<visible>!Skin.HasSetting(EnableCdArt)</visible>-->
+                                <!--<label>$LOCALIZE[31040]</label>-->
+                                <!--<label2>$LOCALIZE[106]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(EnableCdArt)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="23">-->
+                                <!--<visible>Skin.HasSetting(EnableExtraFanart)</visible>-->
+                                <!--<label>$LOCALIZE[31041]</label>-->
+                                <!--<label2>$LOCALIZE[107]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(EnableExtraFanart)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="23">-->
+                                <!--<visible>!Skin.HasSetting(EnableExtraFanart)</visible>-->
+                                <!--<label>$LOCALIZE[31041]</label>-->
+                                <!--<label2>$LOCALIZE[106]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(EnableExtraFanart)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="33">-->
+                                <!--<visible>!Skin.HasSetting(EnableClearLogo)</visible>-->
+                                <!--<label>$LOCALIZE[31044]</label>-->
+                                <!--<label2>$LOCALIZE[106]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(EnableClearLogo)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="33">-->
+                                <!--<visible>Skin.HasSetting(EnableClearLogo)</visible>-->
+                                <!--<label>$LOCALIZE[31044]</label>-->
+                                <!--<label2>$LOCALIZE[107]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(EnableClearLogo)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="24">-->
+                                <!--<visible>Skin.HasSetting(EnableClearArt)</visible>-->
+                                <!--<label>$LOCALIZE[31042]</label>-->
+                                <!--<label2>$LOCALIZE[107]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(EnableClearArt)</onclick>-->
+                            <!--</item>-->
+                            <!--<item id="24">-->
+                                <!--<visible>!Skin.HasSetting(EnableClearArt)</visible>-->
+                                <!--<label>$LOCALIZE[31042]</label>-->
+                                <!--<label2>$LOCALIZE[106]</label2>-->
+                                <!--<onclick>Skin.ToggleSetting(EnableClearArt)</onclick>-->
+                            <!--</item>-->
                             <!--<item id="25">-->
                                 <!--<visible>Skin.HasSetting(EnableStudioArt)</visible>-->
                                 <!--<label>$LOCALIZE[31075]</label>-->
