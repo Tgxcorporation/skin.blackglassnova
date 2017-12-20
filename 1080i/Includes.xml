@@ -1035,7 +1035,6 @@
     </include>
     <include name="OSDInfoPanel">
         <control type="group">
-            <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <control type="group">
                 <!-- CLEAR ART / LOGO -->

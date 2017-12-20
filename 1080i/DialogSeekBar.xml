@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
-    <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
     <visible>![Skin.HasSetting(DisableOSDInfoOnPause)+Player.Paused]|Window.IsVisible(VideoOSD.xml)</visible>
     <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(DialogSubtitles.xml) | Window.IsActive(DialogSelect.xml) | Window.IsActive(MyVideoPlaylist.xml) | Window.IsActive(Settings.xml) | Window.IsActive(DialogButtonMenu.xml)]</visible>
-    <visible>[Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSD.xml) | [Window.IsVisible(FullScreenVideo) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.paused]]]</visible>
-    <include>OSDFade</include>
+    <visible>[Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSD.xml) | [Window.IsVisible(FullScreenVideo) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]]</visible>
     <include>OSDFade</include>
     <zorder>3</zorder>
     <controls>
