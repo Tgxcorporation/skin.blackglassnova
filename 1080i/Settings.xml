@@ -144,7 +144,7 @@
                     <align>center</align>
                     <font>WindowTitleSubFont</font>
                     <textcolor>MainColor</textcolor>
-                    <label>$INFO[Window(Home).Property(SkinHelper.skin_version)] by Tgx</label>
+                    <label>by Tgx</label>
                 </control>
             </control>
             <control type="list" id="9001">
