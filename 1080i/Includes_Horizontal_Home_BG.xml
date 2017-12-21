@@ -274,6 +274,10 @@
                         <onup condition="control.isvisible(8009)+Container(701).HasFocus(8009)">8009</onup>
                         <onup condition="control.isvisible(8010)+Container(701).HasFocus(8010)">8010</onup>
                         <onup condition="control.isvisible(8011)+Container(701).HasFocus(8011)">8011</onup>
+                        <onup condition="control.isvisible(8021)+Container(701).HasFocus(8021)">8021</onup>
+                        <onup condition="control.isvisible(8022)+Container(701).HasFocus(8022)">8022</onup>
+                        <onup condition="control.isvisible(8023)+Container(701).HasFocus(8023)">8023</onup>
+                        <onup condition="control.isvisible(8024)+Container(701).HasFocus(8024)">8024</onup>
                         <ondown>300</ondown>
                         <focusposition>1</focusposition>
                         <orientation>horizontal</orientation>

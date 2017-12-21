@@ -20,7 +20,11 @@
                 Control.IsVisible(8008)|
                 Control.IsVisible(8009)|
                 Control.IsVisible(8010)|
-                Control.IsVisible(8011)
+                Control.IsVisible(8011)|
+                Control.IsVisible(8021)|
+                Control.IsVisible(8022)|
+                Control.IsVisible(8023)|
+                Control.IsVisible(8024)
                 ]</visible>
             <include>HiddenButton</include>
         </control>
@@ -39,7 +43,11 @@
                 ControlGroup(48008).HasFocus|
                 ControlGroup(48009).HasFocus|
                 ControlGroup(48010).HasFocus|
-                ControlGroup(48011).HasFocus
+                ControlGroup(48011).HasFocus|
+                ControlGroup(48021).HasFocus|
+                ControlGroup(48022).HasFocus|
+                ControlGroup(48023).HasFocus|
+                ControlGroup(48024).HasFocus
                 ]</visible>
             <include>HiddenButton</include>
         </control>

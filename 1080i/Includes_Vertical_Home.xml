@@ -143,7 +143,7 @@
                 <pagecontrol>60</pagecontrol>
                 <itemgap>0</itemgap>
                 <!--MOVIES-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetPlex">
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetMrMC">
                     <param name="title" value="$LOCALIZE[31961]"/>
                     <param name="height" value="650"/>
                     <param name="ondown" value="8010"/>
@@ -156,7 +156,7 @@
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Rating,,  •  ]$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
                 </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetPlex">
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetMrMC">
                     <param name="title" value="$LOCALIZE[682]"/>
                     <param name="height" value="650"/>
                     <param name="ondown" value="8010"/>
@@ -170,7 +170,7 @@
                     <param name="labelSubTitle" value="$INFO[ListItem.Rating,,  •  ]$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
                 </include>
                 <!--EPISODES-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetPlex">
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetMrMC">
                     <param name="title" value="$LOCALIZE[31961]"/>
                     <param name="height" value="489"/>
                     <param name="ondown" value="8011"/>
@@ -183,7 +183,7 @@
                     <param name="labelTitle" value="$INFO[ListItem.Season]$INFO[ListItem.Episode,x,  •  ]$INFO[ListItem.TVShowTitle]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Rating,,  •  ]$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
                 </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetPlex">
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetMrMC">
                     <param name="title" value="$LOCALIZE[682]"/>
                     <param name="height" value="489"/>
                     <param name="ondown" value="8011"/>
@@ -197,7 +197,7 @@
                     <param name="labelSubTitle" value="$INFO[ListItem.Rating,,  •  ]$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
                 </include>
                 <!--MUSIC-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetPlex">
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetMrMC">
                     <param name="title" value="$LOCALIZE[132]  •  $LOCALIZE[31961]"/>
                     <param name="height" value="573"/>
                     <param name="ondown" value="8004"/>
@@ -210,7 +210,7 @@
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Year,  •  ]$INFO[ListItem.MPAA,  •  ]$INFO[ListItem.Genre,  •  ]"/>
                 </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetPlex">
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetMrMC">
                     <param name="title" value="$LOCALIZE[134]  •  $LOCALIZE[31961]"/>
                     <param name="height" value="573"/>
                     <param name="ondown" value="8004"/>
@@ -224,7 +224,7 @@
                     <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Year,  •  ]$INFO[ListItem.MPAA,  •  ]$INFO[ListItem.Genre,  •  ]"/>
                 </include>
                 <!--MUSICVIDEOS-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetPlex">
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetMrMC">
                     <param name="title" value="$LOCALIZE[31961]"/>
                     <param name="height" value="573"/>
                     <param name="ondown" value="8003"/>
@@ -236,6 +236,43 @@
                     <param name="visibility" value="Container(300).HasFocus(13)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Label]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Artist]$INFO[ListItem.Year,  •  ]$INFO[ListItem.MPAA,  •  ]$INFO[ListItem.Genre,  •  ]"/>
+                </include>
+                <!--TV-->
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetMrMCCustom">
+                    <param name="title" value="$LOCALIZE[19017]"/>
+                    <param name="height" value="529"/>
+                    <param name="ondown" value="8022"/>
+                    <param name="onup" value="901"/>
+                    <param name="onright" value="8022"/>
+                    <param name="gradientY" value="259"/>
+                    <param name="gfxType" value="Channel"/>
+                    <param name="id" value="8021"/>
+                    <param name="visibility" value="Container(300).HasFocus(300)"/>
+                    <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+                    <param name="labelSubTitle" value="$INFO[ListItem.Label2]$INFO[ListItem.Duration,  •  , $LOCALIZE[31297]]"/>
+                    <param name="limit" value="-"/>
+                    <param name="sortby" value="date"/>
+                    <param name="sortorder" value="descending"/>
+                    <param name="target" value="pvr"/>
+                    <param name="content" value="pvr://recordings/tv"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetMrMCCustom">
+                    <param name="title" value="$LOCALIZE[19023]"/>
+                    <param name="height" value="529"/>
+                    <param name="ondown" value="8022"/>
+                    <param name="onup" value="8021"/>
+                    <param name="onright" value="8022"/>
+                    <param name="gradientY" value="259"/>
+                    <param name="gfxType" value="Channel"/>
+                    <param name="id" value="8022"/>
+                    <param name="visibility" value="Container(300).HasFocus(300)"/>
+                    <param name="labelTitle" value="$INFO[ListItem.Label]"/>
+                    <param name="labelSubTitle" value="$INFO[ListItem.Label2]$INFO[ListItem.Duration,  •  , $LOCALIZE[31297]]"/>
+                    <param name="limit" value="-"/>
+                    <param name="sortby" value="number"/>
+                    <param name="sortorder" value="ascending"/>
+                    <param name="target" value="pvr"/>
+                    <param name="content" value="pvr://channels/tv/*"/>
                 </include>
             </control>
             <control type="scrollbar" id="60">
@@ -330,6 +367,8 @@
                         <onright condition="control.isvisible(8001)+Container(300).HasFocus(5)">8001</onright>
                         <onright condition="control.isvisible(8002)+Container(300).HasFocus(6)">8002</onright>
                         <onright condition="control.isvisible(8003)+Container(300).HasFocus(13)">8003</onright>
+                        <onright condition="control.isvisible(8021)+Container(300).HasFocus(300)">8021</onright>
+                        <onright condition="control.isvisible(8023)+Container(300).HasFocus(301)">8023</onright>
                         <onleft>300</onleft>
                     </control>
                 </control>

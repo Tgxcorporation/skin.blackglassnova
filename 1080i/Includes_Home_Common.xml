@@ -180,7 +180,7 @@
         <texturenofocus border="27">common/JewelCase.png</texturenofocus>
         <onclick>noop</onclick>
     </include>
-    <include name="WidgetPlex">
+    <include name="WidgetMrMC">
         <control type="group" id="4$PARAM[id]">
             <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(4$PARAM[id]).HasFocus">Conditional</animation>
             <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(4$PARAM[id]).HasFocus]">Conditional</animation>
@@ -326,7 +326,154 @@
             </control>
         </control>
     </include>
-    <include name="Vertical_WidgetPlex">
+    <include name="WidgetMrMCCustom">
+        <control type="group" id="4$PARAM[id]">
+            <animation effect="slide" tween="circle" time="150" start="0,0" end="0,400" reversible="true" condition="[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(4$PARAM[id]).HasFocus">Conditional</animation>
+            <animation effect="fade" time="200" start="100" end="0" reversible="true" condition="![[Control.hasfocus(701)|Control.hasfocus(7018)|Control.hasfocus(7019)|Control.hasfocus(7010)]|ControlGroup(4$PARAM[id]).HasFocus]">Conditional</animation>
+            <control type="group">
+                <visible>Control.IsVisible($PARAM[id])</visible>
+                <control type="image">
+                    <visible>IntegerGreaterThan(Container($PARAM[id]).NumItems,0)</visible>
+                    <visible>![
+                        IsEmpty(Container($PARAM[id]).ListItem.Year)+
+                        IsEmpty(Container($PARAM[id]).ListItem.Mpaa)+
+                        IsEmpty(Container($PARAM[id]).ListItem.Label2)+
+                        IsEmpty(Container($PARAM[id]).ListItem.Genre)+
+                        IsEmpty(Container($PARAM[id]).ListItem.Episode)
+                        ]</visible>
+                    <posx>0</posx>
+                    <posy>909</posy>
+                    <width>1920</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="image">
+                    <visible>IntegerGreaterThan(Container($PARAM[id]).NumItems,0)+!Skin.HasSetting(BlackGlassMode)</visible>
+                    <posx>0</posx>
+                    <posy>999</posy>
+                    <width>1920</width>
+                    <height>73</height>
+                    <texture border="3">list/bg_facade_nofocus_top.png</texture>
+                </control>
+                <control type="button">
+                    <visible>!IntegerGreaterThan(Container($PARAM[id]).NumItems,0)</visible>
+                    <posx>0</posx>
+                    <posy>50</posy>
+                    <width>1920</width>
+                    <height>990</height>
+                    <include>HiddenButton</include>
+                </control>
+            </control>
+            <control type="fixedlist" id="$PARAM[id]">
+                <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(4$PARAM[id]).HasFocus">Conditional</animation>
+                <visible>Container(701).HasFocus($PARAM[id])</visible>
+                <onright>$PARAM[id]</onright>
+                <onup>9900</onup>
+                <ondown>701</ondown>
+                <onleft condition="Skin.HasSetting(VerticalHome)">701</onleft>
+                <onleft>$PARAM[id]</onleft>
+                <include>Widget_$PARAM[gfxType]</include>
+                <content limit="$PARAM[limit]" sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[target]" >$PARAM[content]</content>
+            </control>
+            <control type="group">
+                <visible>Control.IsVisible($PARAM[id])</visible>
+                <control type="image">
+                    <visible>Container($PARAM[id]).IsUpdating</visible>
+                    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
+                    <include>Widget_Empty_$PARAM[gfxType]</include>
+                    <texture>OSD/loading.png</texture>
+                </control>
+                <control type="image">
+                    <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
+                    <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(4$PARAM[id]).HasFocus">Conditional</animation>
+                    <visible>!IntegerGreaterThan(Container($PARAM[id]).NumItems,0)+!Container($PARAM[id]).IsUpdating</visible>
+                    <include>Widget_Empty_$PARAM[gfxType]</include>
+                    <texture>defaultEmptyBig.png</texture>
+                    <fadetime>300</fadetime>
+                </control>
+                <control type="label">
+                    <posx>100</posx>
+                    <posy>925</posy>
+                    <width>1720</width>
+                    <height>45</height>
+                    <align>center</align>
+                    <font>InfoTitleFont</font>
+                    <textcolor>MainColor</textcolor>
+                    <shadowcolor>ShadowColor</shadowcolor>
+                    <label>$PARAM[labelTitle]</label>
+                </control>
+                <control type="label">
+                    <posx>30</posx>
+                    <posy>1010</posy>
+                    <height>33</height>
+                    <width>1120</width>
+                    <align>left</align>
+                    <font>InfoDetailsFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <label>$PARAM[labelLeft]</label>
+                </control>
+                <control type="label">
+                    <posx>205</posx>
+                    <posy>1010</posy>
+                    <height>33</height>
+                    <width>1520</width>
+                    <align>center</align>
+                    <font>InfoDetailsFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <label>$PARAM[labelCenter]</label>
+                </control>
+                <control type="group">
+                    <visible>$PARAM[visibilityLabelRight]</visible>
+                    <control type="image">
+                        <posx>1860</posx>
+                        <posy>1009</posy>
+                        <include>Stars</include>
+                    </control>
+                    <control type="label">
+                        <posx>1835</posx>
+                        <posy>1010</posy>
+                        <height>33</height>
+                        <width>1120</width>
+                        <align>right</align>
+                        <font>InfoDetailsFont</font>
+                        <textcolor>AlternateColor</textcolor>
+                        <label fallback="0.0">$PARAM[labelRight]</label>
+                    </control>
+                </control>
+                <control type="button">
+                    <posx>0</posx>
+                    <posy>50</posy>
+                    <width>830</width>
+                    <height>990</height>
+                    <include>HiddenButton</include>
+                    <onclick>Control.Move($PARAM[id],-1)</onclick>
+                </control>
+                <control type="button">
+                    <posx>1090</posx>
+                    <posy>50</posy>
+                    <width>830</width>
+                    <height>990</height>
+                    <include>HiddenButton</include>
+                    <onclick>Control.Move($PARAM[id],1)</onclick>
+                </control>
+            </control>
+            <control type="button" id="$PARAM[id]">
+                <include>ListFocusAnimation</include>
+                <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(4$PARAM[id]).HasFocus">Conditional</animation>
+                <visible>!IntegerGreaterThan(Container($PARAM[id]).Numitems,0)+Container(701).HasFocus($PARAM[id])</visible>
+                <onup>9900</onup>
+                <ondown>701</ondown>
+                <include>Widget_Empty_Border_$PARAM[gfxType]</include>
+            </control>
+            <control type="image">
+                <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
+                <animation effect="fade" time="200" start="100" end="75" reversible="true" condition="!ControlGroup(4$PARAM[id]).HasFocus">Conditional</animation>
+                <visible>!IntegerGreaterThan(Container($PARAM[id]).Numitems,0)+Container(701).HasFocus($PARAM[id])</visible>
+                <include>Widget_Empty_Reflection_$PARAM[gfxType]</include>
+            </control>
+        </control>
+    </include>
+    <include name="Vertical_WidgetMrMC">
         <control type="group" id="4$PARAM[id]">
             <include>OpenCloseVisible</include>
             <visible>$PARAM[visibility]</visible>
@@ -359,7 +506,62 @@
                     <param name="labelTitle" value="$PARAM[labelTitle]"/>
                     <param name="labelSubTitle" value="$PARAM[labelSubTitle]"/>
                 </include>
-                <include>$PARAM[content]</include>
+            </control>
+            <control type="image">
+                <visible>Container($PARAM[id]).IsUpdating</visible>
+                <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" tween="circle" easing="inout" condition="true">Conditional</animation>
+                <include>Vertical_Widget_Empty_$PARAM[gfxType]</include>
+                <texture>OSD/loading.png</texture>
+            </control>
+            <control type="image">
+                <animation effect="zoom" start="95,95" end="100,100" time="150" center="auto" tween="back" easing="out" reversible="false" condition="Control.HasFocus($PARAM[id])">Conditional</animation>
+                <visible>!IntegerGreaterThan(Container($PARAM[id]).NumItems,0)+!Container($PARAM[id]).IsUpdating</visible>
+                <include>Vertical_Widget_Empty_$PARAM[gfxType]</include>
+                <texture>defaultEmptyBig.png</texture>
+                <fadetime>300</fadetime>
+            </control>
+            <control type="button" id="$PARAM[id]">
+                <visible>!IntegerGreaterThan(Container($PARAM[id]).Numitems,0)</visible>
+                <onup>$PARAM[onup]</onup>
+                <ondown>$PARAM[ondown]</ondown>
+                <include>Vertical_Widget_Empty_Border_$PARAM[gfxType]</include>
+            </control>
+        </control>
+    </include>
+    <include name="Vertical_WidgetMrMCCustom">
+        <control type="group" id="4$PARAM[id]">
+            <include>OpenCloseVisible</include>
+            <visible>$PARAM[visibility]</visible>
+            <height>$PARAM[height]</height>
+            <control type="image">
+                <visible>IntegerGreaterThan(Container($PARAM[id]).Numitems,0)</visible>
+                <posx>-50</posx>
+                <posy>$PARAM[gradientY]</posy>
+                <width>2020</width>
+                <height>400</height>
+                <texture>common/vertical_widget_gradient.png</texture>
+            </control>
+            <control type="label">
+                <posx>120</posx>
+                <posy>30</posy>
+                <height>40</height>
+                <width>1920</width>
+                <font>FacadeListMainFont</font>
+                <textcolor>MainColor</textcolor>
+                <scroll>false</scroll>
+                <label>$PARAM[title]</label>
+            </control>
+            <control type="list" id="$PARAM[id]">
+                <onright>$PARAM[onright]</onright>
+                <onup>$PARAM[onup]</onup>
+                <ondown>$PARAM[ondown]</ondown>
+                <onleft>300</onleft>
+                <include name="Vertical_Widget_$PARAM[gfxType]">
+                    <param name="id" value="$PARAM[id]"/>
+                    <param name="labelTitle" value="$PARAM[labelTitle]"/>
+                    <param name="labelSubTitle" value="$PARAM[labelSubTitle]"/>
+                </include>
+                <content limit="$PARAM[limit]" sortby="$PARAM[sortby]" sortorder="$PARAM[sortorder]" target="$PARAM[target]" >$PARAM[content]</content>
             </control>
             <control type="image">
                 <visible>Container($PARAM[id]).IsUpdating</visible>
@@ -1251,13 +1453,41 @@
                 <onclick>SetFocus(8011)</onclick>
                 <onup>SetFocus(8011)</onup>
             </item>
+            <item id="8021">
+                <visible>Container(300).HasFocus(300)</visible>
+                <include>VisibleFadeEffect</include>
+                <label>$LOCALIZE[19017]</label>
+                <onclick>SetFocus(8021)</onclick>
+                <onup>SetFocus(8021)</onup>
+            </item>
+            <item id="8022">
+                <visible>Container(300).HasFocus(300)</visible>
+                <include>VisibleFadeEffect</include>
+                <label>$LOCALIZE[19023]</label>
+                <onclick>SetFocus(8022)</onclick>
+                <onup>SetFocus(8022)</onup>
+            </item>
+            <!--<item id="8023">-->
+                <!--<visible>Container(300).HasFocus(301)</visible>-->
+                <!--<include>VisibleFadeEffect</include>-->
+                <!--<label>$LOCALIZE[19017]</label>-->
+                <!--<onclick>SetFocus(8023)</onclick>-->
+                <!--<onup>SetFocus(8023)</onup>-->
+            <!--</item>-->
+            <!--<item id="8024">-->
+                <!--<visible>Container(300).HasFocus(301)</visible>-->
+                <!--<include>VisibleFadeEffect</include>-->
+                <!--<label>$LOCALIZE[19024]</label>-->
+                <!--<onclick>SetFocus(8024)</onclick>-->
+                <!--<onup>SetFocus(8024)</onup>-->
+            <!--</item>-->
         </content>
     </include>
     <include name="WidgetsCollection">
         <control type="group" id="700">
             <posy>-490</posy>
             <!--MOVIES-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetPlex">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMC">
                 <param name="gfxType" value="Poster"/>
                 <param name="id" value="8000"/>
                 <param name="labelTitle" value="$INFO[Container(8000).ListItem.Label]"/>
@@ -1266,7 +1496,7 @@
                 <param name="labelRight" value="$INFO[Container(8000).ListItem.Rating]"/>
                 <param name="visibilityLabelRight" value="true"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetPlex">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMC">
                 <param name="gfxType" value="Poster"/>
                 <param name="id" value="8010"/>
                 <param name="labelTitle" value="$INFO[Container(8010).ListItem.Label]"/>
@@ -1276,7 +1506,7 @@
                 <param name="visibilityLabelRight" value="true"/>
             </include>
             <!--EPISODES-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetPlex">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMC">
                 <param name="gfxType" value="Episode"/>
                 <param name="id" value="8001"/>
                 <param name="labelTitle" value="$INFO[Container(8001).ListItem.TVShowTitle]"/>
@@ -1285,7 +1515,7 @@
                 <param name="labelRight" value="$INFO[Container(8001).ListItem.Rating]"/>
                 <param name="visibilityLabelRight" value="true"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetPlex">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMC">
                 <param name="gfxType" value="Episode"/>
                 <param name="id" value="8011"/>
                 <param name="labelTitle" value="$INFO[Container(8011).ListItem.TVShowTitle]"/>
@@ -1295,7 +1525,7 @@
                 <param name="visibilityLabelRight" value="true"/>
             </include>
             <!--MUSIC-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetPlex">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMC">
                 <param name="gfxType" value="Square"/>
                 <param name="id" value="8002"/>
                 <param name="labelTitle" value="$INFO[Container(8002).ListItem.Label]"/>
@@ -1304,7 +1534,7 @@
                 <param name="labelRight" value="-"/>
                 <param name="visibilityLabelRight" value="false"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetPlex">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMC">
                 <param name="gfxType" value="Square"/>
                 <param name="id" value="8004"/>
                 <param name="labelTitle" value="$INFO[Container(8004).ListItem.Label]"/>
@@ -1314,7 +1544,7 @@
                 <param name="visibilityLabelRight" value="false"/>
             </include>
             <!--MUSICVIDEOS-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetPlex">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMC">
                 <param name="gfxType" value="Square"/>
                 <param name="id" value="8003"/>
                 <param name="labelTitle" value="$INFO[Container(8003).ListItem.Label]"/>
@@ -1323,6 +1553,64 @@
                 <param name="labelRight" value="-"/>
                 <param name="visibilityLabelRight" value="false"/>
             </include>
+            <!--TV-->
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMCCustom">
+                <param name="gfxType" value="Channel"/>
+                <param name="id" value="8021"/>
+                <param name="labelTitle" value="$INFO[Container(8021).ListItem.Label]"/>
+                <param name="labelLeft" value="-"/>
+                <param name="labelCenter" value="$INFO[Container(8021).ListItem.Label2]$INFO[Container(8021).ListItem.Duration, $LOCALIZE[31297]  •  ]"/>
+                <param name="labelRight" value="-"/>
+                <param name="visibilityLabelRight" value="false"/>
+                <param name="limit" value="-"/>
+                <param name="sortby" value="date"/>
+                <param name="sortorder" value="descending"/>
+                <param name="target" value="pvr"/>
+                <param name="content" value="pvr://recordings/tv"/>
+            </include>
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMCCustom">
+                <param name="gfxType" value="Channel"/>
+                <param name="id" value="8022"/>
+                <param name="labelTitle" value="$INFO[Container(8022).ListItem.Label]"/>
+                <param name="labelLeft" value="-"/>
+                <param name="labelCenter" value="$INFO[Container(8022).ListItem.Label2]$INFO[Container(8022).ListItem.Duration, $LOCALIZE[31297]  •  ]"/>
+                <param name="labelRight" value="-"/>
+                <param name="visibilityLabelRight" value="false"/>
+                <param name="limit" value="-"/>
+                <param name="sortby" value="number"/>
+                <param name="sortorder" value="ascending"/>
+                <param name="target" value="pvr"/>
+                <param name="content" value="pvr://channels/tv/*"/>
+            </include>
+            <!--RADIO-->
+            <!--<include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMCCustom">-->
+                <!--<param name="gfxType" value="Channel"/>-->
+                <!--<param name="id" value="8023"/>-->
+                <!--<param name="labelTitle" value="$INFO[Container(8023).ListItem.Label]"/>-->
+                <!--<param name="labelLeft" value="-"/>-->
+                <!--<param name="labelCenter" value="$INFO[Container(8023).ListItem.Label2]$INFO[Container(8023).ListItem.Duration, $LOCALIZE[31297]  •  ]"/>-->
+                <!--<param name="labelRight" value="-"/>-->
+                <!--<param name="visibilityLabelRight" value="false"/>-->
+                <!--<param name="limit" value="-"/>-->
+                <!--<param name="sortby" value="date"/>-->
+                <!--<param name="sortorder" value="descending"/>-->
+                <!--<param name="target" value="pvr"/>-->
+                <!--<param name="content" value="pvr://recordings/radio"/>-->
+            <!--</include>-->
+            <!--<include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMCCustom">-->
+                <!--<param name="gfxType" value="Channel"/>-->
+                <!--<param name="id" value="8024"/>-->
+                <!--<param name="labelTitle" value="$INFO[Container(8024).ListItem.Label]"/>-->
+                <!--<param name="labelLeft" value="-"/>-->
+                <!--<param name="labelCenter" value="$INFO[Container(8024).ListItem.Label2]$INFO[Container(8024).ListItem.Duration, $LOCALIZE[31297]  •  ]"/>-->
+                <!--<param name="labelRight" value="-"/>-->
+                <!--<param name="visibilityLabelRight" value="false"/>-->
+                <!--<param name="limit" value="-"/>-->
+                <!--<param name="sortby" value="number"/>-->
+                <!--<param name="sortorder" value="ascending"/>-->
+                <!--<param name="target" value="pvr"/>-->
+                <!--<param name="content" value="pvr://channels/radio/*"/>-->
+            <!--</include>-->
         </control>
     </include>
     <include name="Home.Main.Menu.Items">
