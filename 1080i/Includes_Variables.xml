@@ -54,6 +54,7 @@
     </variable>
     <variable name="Thumbs">
         <!--EXCEPTIONS-->
+        <value condition="Skin.HasSetting(WidgetEpisodePoster) + Window.IsVisible(Home.xml) + !String.IsEmpty(ListItem.Art(tvshow.thumb)) + !String.StartsWith(ListItem.Art(tvshow.thumb),Default)">$INFO[ListItem.Art(tvshow.thumb)]</value>
         <value condition="[Window.IsActive(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <value condition="[Window.IsActive(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType.1),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType.1),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
         <value condition="[Window.IsActive(Home.xml)+[String.IsEqual(Container(300).ListItem.Property(widgetType.2),episodes)|[String.IsEqual(Container(300).ListItem.Property(widgetType.2),musicvideos)+!String.IsEqual(Container(300).ListItem.Property(labelID),$LOCALIZE[31971])]]]">$INFO[ListItem.thumb]</value>
