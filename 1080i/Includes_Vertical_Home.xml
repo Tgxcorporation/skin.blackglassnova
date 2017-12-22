@@ -170,7 +170,7 @@
                     <param name="labelSubTitle" value="$INFO[ListItem.Rating,,  •  ]$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
                 </include>
                 <!--EPISODES-->
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetMrMC">
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)+!Skin.HasSetting(WidgetEpisodePoster)" content="Vertical_WidgetMrMC">
                     <param name="title" value="$LOCALIZE[31961]"/>
                     <param name="height" value="489"/>
                     <param name="ondown" value="8011"/>
@@ -183,7 +183,7 @@
                     <param name="labelTitle" value="$INFO[ListItem.Season]$INFO[ListItem.Episode,x,  •  ]$INFO[ListItem.TVShowTitle]"/>
                     <param name="labelSubTitle" value="$INFO[ListItem.Rating,,  •  ]$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
                 </include>
-                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" content="Vertical_WidgetMrMC">
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)+!Skin.HasSetting(WidgetEpisodePoster)" content="Vertical_WidgetMrMC">
                     <param name="title" value="$LOCALIZE[682]"/>
                     <param name="height" value="489"/>
                     <param name="ondown" value="8011"/>
@@ -191,6 +191,32 @@
                     <param name="onright" value="8011"/>
                     <param name="gradientY" value="219"/>
                     <param name="gfxType" value="Episode"/>
+                    <param name="id" value="8011"/>
+                    <param name="visibility" value="Container(300).HasFocus(5)"/>
+                    <param name="labelTitle" value="$INFO[ListItem.Season]$INFO[ListItem.Episode,x,  •  ]$INFO[ListItem.TVShowTitle]"/>
+                    <param name="labelSubTitle" value="$INFO[ListItem.Rating,,  •  ]$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)+Skin.HasSetting(WidgetEpisodePoster)" content="Vertical_WidgetMrMC">
+                    <param name="title" value="$LOCALIZE[31961]"/>
+                    <param name="height" value="650"/>
+                    <param name="ondown" value="8011"/>
+                    <param name="onup" value="901"/>
+                    <param name="onright" value="8011"/>
+                    <param name="gradientY" value="380"/>
+                    <param name="gfxType" value="Poster"/>
+                    <param name="id" value="8001"/>
+                    <param name="visibility" value="Container(300).HasFocus(5)"/>
+                    <param name="labelTitle" value="$INFO[ListItem.Season]$INFO[ListItem.Episode,x,  •  ]$INFO[ListItem.TVShowTitle]"/>
+                    <param name="labelSubTitle" value="$INFO[ListItem.Rating,,  •  ]$INFO[ListItem.Year,,  •  ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]"/>
+                </include>
+                <include condition="!Skin.HasSetting(Hide.RecentlyAdded)+Skin.HasSetting(WidgetEpisodePoster)" content="Vertical_WidgetMrMC">
+                    <param name="title" value="$LOCALIZE[682]"/>
+                    <param name="height" value="650"/>
+                    <param name="ondown" value="8011"/>
+                    <param name="onup" value="8001"/>
+                    <param name="onright" value="8011"/>
+                    <param name="gradientY" value="380"/>
+                    <param name="gfxType" value="Poster"/>
                     <param name="id" value="8011"/>
                     <param name="visibility" value="Container(300).HasFocus(5)"/>
                     <param name="labelTitle" value="$INFO[ListItem.Season]$INFO[ListItem.Episode,x,  •  ]$INFO[ListItem.TVShowTitle]"/>

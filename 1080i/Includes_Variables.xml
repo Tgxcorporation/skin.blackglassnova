@@ -51,7 +51,7 @@
     <variable name="Thumbs">
         <!--NORMAL-->
         <value condition="StringCompare(ListItem.Label,..)">$VAR[ThumbsFolderBack]</value>
-        <!--<value condition="Window.IsVisible(Home.xml) + !IsEmpty(ListItem.Art(tvshow.thumb)) + !SubString(ListItem.Art(tvshow.thumb),Default,left)">$INFO[ListItem.Art(tvshow.thumb)]</value>-->
+        <value condition="Skin.HasSetting(WidgetEpisodePoster) + Window.IsVisible(Home.xml) + !IsEmpty(ListItem.Art(tvshow.thumb)) + !SubString(ListItem.Art(tvshow.thumb),Default,left)">$INFO[ListItem.Art(tvshow.thumb)]</value>
         <value condition="Container.Content(episodes) + !IsEmpty(ListItem.thumb) + !SubString(ListItem.thumb,Default,left)">$INFO[ListItem.thumb]</value>
         <value condition="!IsEmpty(ListItem.Art(poster))+!SubString(ListItem.Art(poster),Default,left)">$INFO[ListItem.Art(poster)]</value>
         <value condition="!IsEmpty(ListItem.Icon)+!SubString(ListItem.Icon,Default,left)">$INFO[ListItem.Icon]</value>

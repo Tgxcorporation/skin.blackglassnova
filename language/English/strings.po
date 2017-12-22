@@ -771,7 +771,11 @@ msgctxt "#31917"
 msgid "Stop playback on return to menu"
 msgstr ""
 
-#empty strings from id 31918 to 31931
+#empty strings from id 31918 to 31930
+
+msgctxt "#31930"
+msgid "Display posters for shelf episodes"
+msgstr ""
 
 msgctxt "#31931"
 msgid "On Deck"

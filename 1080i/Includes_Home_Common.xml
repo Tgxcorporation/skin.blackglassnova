@@ -1506,7 +1506,7 @@
                 <param name="visibilityLabelRight" value="true"/>
             </include>
             <!--EPISODES-->
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMC">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)+!Skin.HasSetting(WidgetEpisodePoster)" name="WidgetMrMC">
                 <param name="gfxType" value="Episode"/>
                 <param name="id" value="8001"/>
                 <param name="labelTitle" value="$INFO[Container(8001).ListItem.TVShowTitle]"/>
@@ -1515,8 +1515,26 @@
                 <param name="labelRight" value="$INFO[Container(8001).ListItem.Rating]"/>
                 <param name="visibilityLabelRight" value="true"/>
             </include>
-            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)" name="WidgetMrMC">
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)+!Skin.HasSetting(WidgetEpisodePoster)" name="WidgetMrMC">
                 <param name="gfxType" value="Episode"/>
+                <param name="id" value="8011"/>
+                <param name="labelTitle" value="$INFO[Container(8011).ListItem.TVShowTitle]"/>
+                <param name="labelLeft" value="$INFO[Container(8011).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelCenter" value="$INFO[Container(8011).ListItem.Season]$INFO[Container(8011).ListItem.Episode,x,  •  ]$INFO[Container(8011).ListItem.Label]"/>
+                <param name="labelRight" value="$INFO[Container(8011).ListItem.Rating]"/>
+                <param name="visibilityLabelRight" value="true"/>
+            </include>
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)+Skin.HasSetting(WidgetEpisodePoster)" name="WidgetMrMC">
+                <param name="gfxType" value="Poster"/>
+                <param name="id" value="8001"/>
+                <param name="labelTitle" value="$INFO[Container(8001).ListItem.TVShowTitle]"/>
+                <param name="labelLeft" value="$INFO[Container(8001).ListItem.Duration,, $LOCALIZE[31297]]"/>
+                <param name="labelCenter" value="$INFO[Container(8001).ListItem.Season]$INFO[Container(8001).ListItem.Episode,x,  •  ]$INFO[Container(8001).ListItem.Label]"/>
+                <param name="labelRight" value="$INFO[Container(8001).ListItem.Rating]"/>
+                <param name="visibilityLabelRight" value="true"/>
+            </include>
+            <include condition="!Skin.HasSetting(Hide.RecentlyAdded)+Skin.HasSetting(WidgetEpisodePoster)" name="WidgetMrMC">
+                <param name="gfxType" value="Poster"/>
                 <param name="id" value="8011"/>
                 <param name="labelTitle" value="$INFO[Container(8011).ListItem.TVShowTitle]"/>
                 <param name="labelLeft" value="$INFO[Container(8011).ListItem.Duration,, $LOCALIZE[31297]]"/>
