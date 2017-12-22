@@ -1264,13 +1264,13 @@
                             </item>
                             <item id="63">
                                 <visible>Skin.HasSetting(WidgetEpisodePoster)</visible>
-                                <label>$LOCALIZE[31930]</label>
+                                <label>$LOCALIZE[31911]</label>
                                 <label2>$LOCALIZE[107]</label2>
                                 <onclick>Skin.ToggleSetting(WidgetEpisodePoster)</onclick>
                             </item>
                             <item id="63">
                                 <visible>!Skin.HasSetting(WidgetEpisodePoster)</visible>
-                                <label>$LOCALIZE[31930]</label>
+                                <label>$LOCALIZE[31911]</label>
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(WidgetEpisodePoster)</onclick>
                             </item>
