@@ -215,17 +215,17 @@
                 </control>
                 <control type="togglebutton" id="353">
                     <visible>VideoPlayer.Content(LiveTV)</visible>
-                    <visible>Player.CanRecord</visible>
-                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!Player.CanRecord">Conditional</animation>-->
+                    <visible>PVR.CanRecordPlayingChannel</visible>
+                    <!--<animation effect="fade" start="100" end="50" time="0" condition="!PVR.CanRecordPlayingChannel">Conditional</animation>-->
                     <label>$LOCALIZE[264]</label>
                     <altlabel>$LOCALIZE[265]</altlabel>
                     <include>TopBarButton</include>
                     <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_rec_focus.png</texturefocus>
                     <texturenofocus>topbar/topbar_rec_nofocus.png</texturenofocus>
-                    <usealttexture>Player.Recording</usealttexture>
+                    <usealttexture>PVR.IsRecordingPlayingChannel</usealttexture>
                     <alttexturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_rec_on_focus.png</alttexturefocus>
                     <alttexturenofocus>topbar/topbar_rec_on_nofocus.png</alttexturenofocus>
-                    <onclick>PlayerControl(Record)</onclick>
+                    <onclick>PVR.ToggleRecordPlayingChannel</onclick>
                 </control>
                 <control type="button" id="250">
                     <label>$LOCALIZE[31356]</label>
