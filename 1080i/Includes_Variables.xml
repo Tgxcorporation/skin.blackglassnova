@@ -83,22 +83,22 @@
         <value condition="Window.IsActive(DialogVideoInfo.xml)">$LOCALIZE[20060]</value>
         <value condition="Window.IsActive(DialogFavourites.xml)">$LOCALIZE[1036]</value>
         <value condition="Container.content(movies) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342]</value>
-        <value condition="Container.content(movies)">$LOCALIZE[20342]$INFO[Container.FolderName, - ]</value>
-        <value condition="Container.content(sets)">$LOCALIZE[20342]$INFO[Container.FolderName, - ]</value>
+        <value condition="Container.content(movies)">$LOCALIZE[20342]$INFO[Container.FolderName,  •  ]</value>
+        <value condition="Container.content(sets)">$LOCALIZE[20342]$INFO[Container.FolderName,  •  ]</value>
         <value condition="Container.content(tvshows) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343]</value>
-        <value condition="Container.content(tvshows)">$LOCALIZE[20343]$INFO[Container.FolderName, - ]</value>
-        <value condition="Container.content(seasons)">$INFO[Container.FolderName,, - ]$LOCALIZE[33054]</value>
+        <value condition="Container.content(tvshows)">$LOCALIZE[20343]$INFO[Container.FolderName,  •  ]</value>
+        <value condition="Container.content(seasons)">$INFO[Container.FolderName,,  •  ]$LOCALIZE[33054]</value>
         <value condition="Container.content(episodes)+ListItem.IsParentFolder">$INFO[Container.FolderName]</value>
-        <value condition="Container.content(episodes)">$INFO[ListItem.TVShowTitle,, - ]$LOCALIZE[20373] $INFO[ListItem.Season]</value>
+        <value condition="Container.content(episodes)">$INFO[ListItem.TVShowTitle,,  •  ]$LOCALIZE[20373] $INFO[ListItem.Season]</value>
         <value condition="Container.content(musicvideos) + String.IsEqual(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389]</value>
         <value condition="Window.IsActive(MyVideoNav.xml)+String.Contains(Container.FolderPath,movies)">$LOCALIZE[20342]</value>
         <value condition="Window.IsActive(MyVideoNav.xml)+String.Contains(Container.FolderPath,tvshows)">$LOCALIZE[20343]</value>
         <value condition="Window.IsActive(MyVideoNav.xml)+String.Contains(Container.FolderPath,musicvideos)">$LOCALIZE[20389]</value>
-        <value condition="Window.IsActive(MyVideoNav.xml)">$LOCALIZE[3]$INFO[Container.FolderName, - ]</value>
-        <value condition="Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicSongs.xml)">$LOCALIZE[2]$INFO[Container.FolderName, - ]</value>
-        <value condition="Window.IsActive(MyPics.xml)">$LOCALIZE[1]$INFO[Container.FolderName, - ]</value>
-        <value condition="Window.IsActive(AddonBrowser.xml)">$LOCALIZE[10040]$INFO[Container.FolderName, - ]</value>
-        <value condition="Window.IsActive(CustomAddons.xml)|Window.IsActive(MyPrograms.xml)">$LOCALIZE[0]$INFO[Container.FolderName, - ]</value>
+        <value condition="Window.IsActive(MyVideoNav.xml)">$LOCALIZE[3]$INFO[Container.FolderName,  •  ]</value>
+        <value condition="Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyMusicSongs.xml)">$LOCALIZE[2]$INFO[Container.FolderName,  •  ]</value>
+        <value condition="Window.IsActive(MyPics.xml)">$LOCALIZE[1]$INFO[Container.FolderName,  •  ]</value>
+        <value condition="Window.IsActive(AddonBrowser.xml)">$LOCALIZE[10040]$INFO[Container.FolderName,  •  ]</value>
+        <value condition="Window.IsActive(CustomAddons.xml)|Window.IsActive(MyPrograms.xml)">$LOCALIZE[0]$INFO[Container.FolderName,  •  ]</value>
         <value condition="!String.IsEmpty(Container.FolderName)">$INFO[Container.FolderName]</value>
     </variable>
     <variable name="HomeTitles">
@@ -435,7 +435,7 @@
     </variable>
     <variable name="Fanart_Title">
         <value condition="Window.IsVisible(MyWeather.xml)">$INFO[Container(50).ListItem.Label]</value>
-        <value>$INFO[ListItem.ChannelNumberLabel,, - ]$INFO[ListItem.Label]</value>
+        <value>$INFO[ListItem.ChannelNumberLabel,,  •  ]$INFO[ListItem.Label]</value>
     </variable>
     <variable name="Fanart_Details">
         <value condition="Window.IsVisible(MyWeather.xml)">$INFO[Container(50).ListItem.Property(Property3)]</value>
@@ -577,8 +577,10 @@
         <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyPlaylist.xml)]+[container.content(tvshows) | Container.Content(Seasons) | container.content(episodes)]">$VAR[TVShows.Art]</value>
         <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyPlaylist.xml)]+[Container.Content(movies)]">$VAR[Movies.Art]</value>
         <value condition="[Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyPlaylist.xml)]+[Container.Content(musicvideos)]">$VAR[Clips.Art]</value>
-        <value condition="Window.IsActive(MyVideoNav.xml)|Window.IsActive(MyPlaylist.xml)">$VAR[Videos.Art]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml)|[Window.IsVisible(MyPlaylist.xml)+Window.IsVisible(videoplaylist)]">$VAR[Videos.Art]</value>
+        <value condition="Window.IsVisible(MyVideoNav.xml)|[Window.IsVisible(MyPlaylist.xml)+Window.IsVisible(musicplaylist)]">$VAR[Music.Art]</value>
         <value condition="Window.IsActive(MyPrograms.xml)|Window.IsActive(CustomAddons.xml)|Window.IsActive(AddonBrowser.xml)">$VAR[Addons.Art]</value>
+        <value condition="Window.IsVisible(MusicVisualisation.xml)">$VAR[Music.Art]</value>
         <value condition="Window.IsActive(FileManager.xml)|Window.IsActive(Settings.xml)|Window.IsActive(SettingsCategory.xml)|Window.IsActive(SettingsProfile.xml)|Window.IsActive(SettingsSystemInfo.xml)|Window.IsActive(SkinSettings.xml)|Window.IsActive(EventLog.xml)">$VAR[Settings.Art]</value>
         <value condition="Window.IsActive(MyMusicPlaylistEditor.xml)|Window.IsActive(SmartPlaylistEditor.xml)|Window.IsActive(MusicVisualization.xml)|Window.IsActive(MyMusicSongs.xml)|Window.IsActive(MyMusicNav.xml)|Window.IsActive(MyPlaylist.xml)|Window.IsActive(MyMusicPlaylistEditor.xml)">$VAR[Music.Art]</value>
         <value condition="!String.IsEmpty(Window.Property(IsRadio))">$VAR[Radio.Art]</value>
@@ -1192,7 +1194,7 @@
         <value condition="Player.Rewinding">$VAR[VideoPlayerForwardRewindVar]</value>
         <value condition="Player.IsTempo">$LOCALIZE[224]: $INFO[Player.PlaySpeed]</value>
         <value condition="Player.ChapterCount">$VAR[ChapterLabel]</value>
-        <value condition="Player.hasvideo + VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,, - ]$INFO[VideoPlayer.ChannelName]</value>
+        <value condition="Player.hasvideo + VideoPlayer.Content(livetv)">$INFO[VideoPlayer.ChannelNumber,,  •  ]$INFO[VideoPlayer.ChannelName]</value>
         <value condition="Player.hasvideo + !VideoPlayer.Content(livetv)">$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist]</value>
         <value condition="Player.HasAudio + String.IsEmpty(Window(Videos).Property(PlayingBackgroundMedia))">$INFO[MusicPlayer.Artist]</value>
     </variable>
@@ -1202,17 +1204,17 @@
         <value condition="String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),MovieTitles)">$LOCALIZE[20342]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),TVShowTitles)">$LOCALIZE[20343]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),MusicVideoTitles)">$LOCALIZE[31971]</value>
-        <value condition="String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),Playlists)">$LOCALIZE[3] - $LOCALIZE[136]</value>
+        <value condition="String.IsEqual(Skin.String(StartupWindow),Videos) + String.IsEqual(Skin.String(StartupWindowOption),Playlists)">$LOCALIZE[3]  •  $LOCALIZE[136]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),Music) + String.IsEqual(Skin.String(StartupWindowOption),root)">$LOCALIZE[2]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),Music) + String.IsEqual(Skin.String(StartupWindowOption),Albums)">$LOCALIZE[132]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),Music) + String.IsEqual(Skin.String(StartupWindowOption),Artists)">$LOCALIZE[133]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),Music) + String.Contains(Skin.String(StartupWindowOption),videodb://musicvideos/)">$LOCALIZE[31972]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),tvchannels)">$LOCALIZE[19023]</value>
-        <value condition="String.IsEqual(Skin.String(StartupWindow),tvrecordings)">$LOCALIZE[19020] - $LOCALIZE[20007]</value>
-        <value condition="String.IsEqual(Skin.String(StartupWindow),tvguide)">$LOCALIZE[19020] - $LOCALIZE[22020]</value>
+        <value condition="String.IsEqual(Skin.String(StartupWindow),tvrecordings)">$LOCALIZE[19020]  •  $LOCALIZE[20007]</value>
+        <value condition="String.IsEqual(Skin.String(StartupWindow),tvguide)">$LOCALIZE[19020]  •  $LOCALIZE[22020]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),radiochannels)">$LOCALIZE[19024]</value>
-        <value condition="String.IsEqual(Skin.String(StartupWindow),radiorecordings)">$LOCALIZE[19021] - $LOCALIZE[20007]</value>
-        <value condition="String.IsEqual(Skin.String(StartupWindow),radioguide)">$LOCALIZE[19021] - $LOCALIZE[22020]</value>
+        <value condition="String.IsEqual(Skin.String(StartupWindow),radiorecordings)">$LOCALIZE[19021]  •  $LOCALIZE[20007]</value>
+        <value condition="String.IsEqual(Skin.String(StartupWindow),radioguide)">$LOCALIZE[19021]  •  $LOCALIZE[22020]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),programs)">$LOCALIZE[0]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),Videos)">$LOCALIZE[3]</value>
         <value condition="String.IsEqual(Skin.String(StartupWindow),pictures)">$LOCALIZE[1]</value>
