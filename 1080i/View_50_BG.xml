@@ -1117,7 +1117,7 @@
             </control>
         </control>
     </include>
-    <include name="View_570_EventLog_BG">
+    <include name="View_50_EventLog_BG">
         <control type="group">
             <include>ScrollOffsetLabel_50_BG</include>
             <control type="group">
@@ -1137,14 +1137,14 @@
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
                 <control type="image">
-                    <visible>!Integer.IsGreater(Container(570).NumItems,10)</visible>
+                    <visible>!Integer.IsGreater(Container(50).NumItems,10)</visible>
                     <posx>740</posx>
                     <posy>933</posy>
                     <width>1180</width>
                     <height>73</height>
                     <texture border="3">list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="list" id="570">
+                <control type="list" id="50">
                     <viewtype label="535">Large List</viewtype>
                     <posx>740</posx>
                     <posy>203</posy>
@@ -1153,8 +1153,8 @@
                     <pagecontrol>60</pagecontrol>
                     <onleft>6060</onleft>
                     <onright>60</onright>
-                    <onup>570</onup>
-                    <ondown>570</ondown>
+                    <onup>50</onup>
+                    <ondown>50</ondown>
                     <preloaditems>4</preloaditems>
                     <include>List_Layout_BG</include>
                 </control>
@@ -1170,12 +1170,12 @@
                 <posy>203</posy>
                 <height>803</height>
                 <include>VerticalScroller</include>
-                <onleft>570</onleft>
+                <onleft>50</onleft>
                 <onright>505050</onright>
             </control>
         </control>
     </include>
-    <include name="Info_570_EventLog_BG">
+    <include name="Info_50_EventLog_BG">
         <control type="group">
             <visible>!String.IsEmpty(ListItem.Property(Event.Description))</visible>
             <include>Icon_Fade</include>
@@ -1211,7 +1211,7 @@
                         <height>325</height>
                         <include>VerticalScroller</include>
                         <onleft>9000</onleft>
-                        <onright>570</onright>
+                        <onright>50</onright>
                     </control>
                 </control>
             </control>
