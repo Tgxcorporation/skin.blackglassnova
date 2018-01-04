@@ -9,7 +9,7 @@
             <visible>!Player.Muted + !Player.passthrough</visible>
             <include>VisibleFadeEffect</include>
             <posx>735</posx>
-            <posy>435</posy>
+            <posy>665</posy>
             <include content="WindowClosingButton">
                 <param name="id" value="9001"/>
                 <param name="x" value="400"/>

@@ -2,6 +2,7 @@
 <window type="dialog">
     <defaultcontrol always="true">9000</defaultcontrol>
     <include>DialogOpenClose</include>
+    <zorder>10</zorder>
     <controls>
         <include>DimBG</include>
         <control type="group">

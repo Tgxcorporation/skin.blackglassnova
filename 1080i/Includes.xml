@@ -1084,6 +1084,7 @@
         <control type="group">
             <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
+            <posy>30</posy>
             <control type="group">
                 <!-- CLEAR ART / LOGO -->
                 <control type="image">
