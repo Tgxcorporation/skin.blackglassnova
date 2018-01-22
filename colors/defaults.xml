@@ -19,6 +19,7 @@
     <color name="UnfocusedIconColor">ffffffff</color>
     <color name="WarningColor">FFfe3737</color>
     <color name="ShadowColor">FF000000</color>
+    <color name="systemfocus">ff6dc3ff</color>
     <!-- CUSTOMIZATION -->
     <color name="Color_fuchsia">FFff00b4</color>
     <color name="Color_azure">FF00deff</color>
