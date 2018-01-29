@@ -4,6 +4,7 @@
 	<onload condition="VideoPlayer.Content(LiveTV) + !Player.PauseEnabled">SetFocus(704)</onload>
 	<depth>DepthOSD</depth>
 	<defaultcontrol always="true">704</defaultcontrol>
+	<zorder>5</zorder>
 	<controls>
 		<control type="button">
 			<description>background close area</description>
@@ -25,8 +26,7 @@
 				<posy>-30</posy>
 				<width>1920</width>
 				<height>180</height>
-				<texture flipy="true" border="0,30,0,30">OSD/OSDBackground.png</texture>
-				<colordiffuse>FFE2E2E2</colordiffuse>
+				<texture>common/basichome_upper_gradient.png</texture>
 			</control>
 			<control type="grouplist" id="202">
 				<right>50</right>

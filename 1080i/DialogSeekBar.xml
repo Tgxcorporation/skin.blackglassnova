@@ -4,7 +4,8 @@
     <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(DialogSubtitles.xml) | Window.IsActive(DialogSelect.xml) | Window.IsActive(MyVideoPlaylist.xml) | Window.IsActive(Settings.xml) | Window.IsActive(DialogButtonMenu.xml)]</visible>
     <visible>[Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSD.xml) | [Window.IsVisible(FullScreenVideo) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]]</visible>
     <include>OSDFade</include>
-    <zorder>3</zorder>
+    <zorder>0</zorder>
+    <onunload>Dialog.Close(osdsettings)</onunload>
     <controls>
         <control type="image">
             <visible>Window.IsActive(VideoOSD.xml)</visible>
