@@ -2,7 +2,7 @@
 <window>
     <include>DialogOpenClose</include>
     <controls>
-        <include>DimBG</include>
+        <!--<include>DimBG</include>-->
         <control type="group">
             <include condition="Skin.HasSetting(BlackGlassMode)+!Skin.HasSetting(DisableSlidingAnimations)">OpenCloseSlideRight</include>
             <posy>-173</posy>

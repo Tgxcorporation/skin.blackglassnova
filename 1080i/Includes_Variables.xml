@@ -618,6 +618,24 @@
         <value condition="control.hasfocus(1620)">$LOCALIZE[31303]</value>
         <value></value>
     </variable>
+    <variable name="TopbarOSDSettingsLabel">
+        <value condition="control.hasfocus(255)">$LOCALIZE[36501]</value>
+        <value condition="control.hasfocus(704)">$LOCALIZE[24012]</value>
+        <value condition="control.hasfocus(70043)">$LOCALIZE[10004]</value>
+        <value condition="control.hasfocus(11111)">$LOCALIZE[13396]</value>
+        <value condition="control.hasfocus(11102)">$LOCALIZE[13395]</value>
+        <value condition="control.hasfocus(11105)">$LOCALIZE[36560]</value>
+        <value condition="control.hasfocus(11103)">$LOCALIZE[15020]</value>
+        <value condition="control.hasfocus(11104)">$LOCALIZE[31097]$INFO[VideoPlayer.AudioLanguage,  •  ]</value>
+        <value condition="control.hasfocus(12104)">$LOCALIZE[449]</value>
+        <value condition="control.hasfocus(12101)">$LOCALIZE[33003]</value>
+        <value condition="control.hasfocus(12102)">$LOCALIZE[22006]</value>
+        <value condition="control.hasfocus(12103)">$LOCALIZE[31096]$INFO[VideoPlayer.SubtitlesLanguage,  •  ]</value>
+        <value condition="control.hasfocus(13101)">$LOCALIZE[24022]</value>
+        <value condition="control.hasfocus(13102)">$LOCALIZE[36501]$INFO[VideoPlayer.StereoscopicMode,  •  ]</value>
+        <value condition="control.hasfocus(13103)">$LOCALIZE[36509]</value>
+        <value></value>
+    </variable>
     <variable name="TopbarMusicOSDLabel">
         <value condition="control.hasfocus(306)">$LOCALIZE[19069]</value>
         <value condition="control.hasfocus(307)">$LOCALIZE[19069]$INFO[MusicPlayer.ChannelName,  •  ]</value>

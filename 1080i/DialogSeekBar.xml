@@ -2,28 +2,28 @@
 <window type="dialog">
     <visible>![Skin.HasSetting(DisableOSDInfoOnPause)+Player.Paused]|Window.IsVisible(VideoOSD.xml)</visible>
     <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(DialogSubtitles.xml) | Window.IsActive(DialogSelect.xml) | Window.IsActive(MyVideoPlaylist.xml) | Window.IsActive(Settings.xml) | Window.IsActive(DialogButtonMenu.xml)]</visible>
-    <visible>[Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSD.xml) | [Window.IsVisible(FullScreenVideo) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]]</visible>
+    <visible>[Window.IsActive(Custom_1102_OsdSettings.xml) | Window.IsActive(Custom_1101_SettingsList.xml) | Window.IsActive(OSDSettings.xml) | Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSD.xml) | [Window.IsVisible(FullScreenVideo) + [Player.Caching | Player.Seeking | player.forwarding | player.rewinding | Player.DisplayAfterSeek | Player.Paused]]]</visible>
     <include>OSDFade</include>
     <zorder>0</zorder>
     <onunload>Dialog.Close(osdsettings)</onunload>
     <controls>
         <control type="image">
-            <visible>Window.IsActive(VideoOSD.xml)</visible>
+            <visible>Window.IsActive(VideoOSD.xml) | Window.IsActive(Custom_1102_OsdSettings.xml) | Window.IsActive(Custom_1101_SettingsList.xml) | Window.IsActive(OSDSettings.xml) </visible>
             <include>VisibleFadeEffect</include>
             <posx>-150</posx>
             <posy>-3</posy>
             <texture>common/basichome_upper_gradient.png</texture>
             <width>2220</width>
-            <height>440</height>
+            <height>500</height>
         </control>
         <control type="image">
-            <visible>Window.IsActive(VideoOSD.xml)</visible>
+            <visible>Window.IsActive(VideoOSD.xml) | Window.IsActive(Custom_1102_OsdSettings.xml) | Window.IsActive(Custom_1101_SettingsList.xml) | Window.IsActive(OSDSettings.xml) </visible>
             <include>VisibleFadeEffect</include>
             <posx>-150</posx>
             <posy>-3</posy>
             <texture>common/basichome_upper_gradient.png</texture>
             <width>2220</width>
-            <height>440</height>
+            <height>500</height>
         </control>
         <control type="image">
             <posx>-15</posx>
@@ -103,7 +103,7 @@
             <label></label>
         </control>
         <control type="group">
-            <visible>Window.IsActive(DialogFullScreenInfo.xml) | [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd.xml)]</visible>
+            <!--<visible>Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(Custom_1102_OsdSettings.xml) | Window.IsActive(Custom_1101_SettingsList.xml) | [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | Window.IsActive(videoosd.xml)]</visible>-->
             <include>OSDVisibleFadeEffect</include>
             <posy>0</posy>
             <control type="image">
