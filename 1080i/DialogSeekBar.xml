@@ -2,7 +2,7 @@
 <window type="dialog">
     <visible>!Window.IsVisible(DialogPlayerProcessInfo.xml)</visible>
     <visible>![Skin.HasSetting(DisableOSDInfoOnPause)+Player.Paused]|Window.IsVisible(VideoOSD.xml)</visible>
-    <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
+    <visible>![Window.IsVisible(SliderDialog) | Window.IsVisible(OSDVideoSettings) | Window.IsVisible(OSDAudioSettings) | Window.IsVisible(osdcmssettings) | Window.IsVisible(VideoBookmarks) | Window.IsActive(script-XBMC-Subtitles-main.xml)]</visible>
     <visible>Window.IsActive(DialogFullScreenInfo.xml) | Window.IsActive(VideoOSD.xml) | [Window.IsVisible(FullScreenVideo) + !System.IdleTime(20) + [Player.Seeking | Player.DisplayAfterSeek | [Player.Paused + !Player.Caching] | Player.Forwarding | Player.Rewinding | !String.IsEmpty(PVR.ChannelNumberInput)]]</visible>
     <include>OSDFade</include>
     <zorder>3</zorder>
