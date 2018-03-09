@@ -128,7 +128,7 @@
             <control type="radiobutton" id="8">
                 <description>Default RadioButton</description>
                 <width>1231</width>
-                <radioposx>1128</radioposx>
+                <radioposx>1142</radioposx>
                 <textwidth>1070</textwidth>
                 <include>LeftMenuButton</include>
             </control>

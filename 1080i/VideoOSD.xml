@@ -415,7 +415,7 @@
                         <label>449</label>
                         <height>70</height>
                         <width>478</width>
-                        <radioposx>380</radioposx>
+                        <radioposx>394</radioposx>
                         <include>LeftMenuButton</include>
                         <onclick>ShowSubtitles</onclick>
                         <selected>VideoPlayer.SubtitlesEnabled</selected>

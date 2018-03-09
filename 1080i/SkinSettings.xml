@@ -953,9 +953,9 @@
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
-                                <posx>630r</posx>
+                                <posx>660r</posx>
                                 <height>71</height>
-                                <width>530</width>
+                                <width>500</width>
                                 <font>FacadeListMainFont</font>
                                 <textcolor>MainColor</textcolor>
                                 <align>right</align>
@@ -1106,10 +1106,10 @@
                         <posx>-130</posx>
                         <posy>-327</posy>
                         <control type="button" id="102">
-                            <posx>1286</posx>
-                            <posy>352</posy>
-                            <width>29</width>
-                            <height>27</height>
+                            <posx>1246</posx>
+                            <posy>339</posy>
+                            <width>50</width>
+                            <height>50</height>
                             <onclick>Control.Move(9004,-1)</onclick>
                             <texturefocus>buttons/SpinDownFO.png</texturefocus>
                             <texturenofocus>buttons/SpinDownNF.png</texturenofocus>
@@ -1118,10 +1118,10 @@
                             <ondown>300</ondown>
                         </control>
                         <control type="button" id="103">
-                            <posx>1315</posx>
-                            <posy>352</posy>
-                            <width>29</width>
-                            <height>27</height>
+                            <posx>1295</posx>
+                            <posy>339</posy>
+                            <width>50</width>
+                            <height>50</height>
                             <onclick>Control.Move(9004,1)</onclick>
                             <texturefocus>buttons/SpinUpFO.png</texturefocus>
                             <texturenofocus>buttons/SpinUpNF.png</texturenofocus>
@@ -1622,7 +1622,7 @@
                             <width>615</width>
                             <height>70</height>
                             <label>$LOCALIZE[742]</label>
-                            <radioposx>525</radioposx>
+                            <radioposx>539</radioposx>
                             <font>SmallButtonFont</font>
                             <onright>852802</onright>
                             <onleft>9000</onleft>
@@ -1681,7 +1681,7 @@
                             <width>615</width>
                             <height>70</height>
                             <label>$LOCALIZE[31070]</label>
-                            <radioposx>525</radioposx>
+                            <radioposx>539</radioposx>
                             <font>SmallButtonFont</font>
                             <onright>9000</onright>
                             <onleft>852801</onleft>
@@ -1755,7 +1755,7 @@
                             <width>615</width>
                             <height>70</height>
                             <label>$LOCALIZE[742]</label>
-                            <radioposx>525</radioposx>
+                            <radioposx>539</radioposx>
                             <font>SmallButtonFont</font>
                             <onright>852802</onright>
                             <onleft>9000</onleft>
@@ -1801,7 +1801,7 @@
                             <width>615</width>
                             <height>70</height>
                             <label>$LOCALIZE[31070]</label>
-                            <radioposx>525</radioposx>
+                            <radioposx>539</radioposx>
                             <font>SmallButtonFont</font>
                             <onright>9000</onright>
                             <onleft>852801</onleft>
