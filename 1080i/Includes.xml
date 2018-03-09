@@ -870,7 +870,7 @@
         <height>90</height>
         <align>center</align>
         <aligny>center</aligny>
-        <radioposx>215</radioposx>
+        <radioposx>229</radioposx>
         <font>ExtraSmallButtonFont</font>
         <textoffsetx>0</textoffsetx>
         <textcolor>AlternateColor</textcolor>
@@ -925,19 +925,19 @@
             </control>
             <control type="image">
                 <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[106])</visible>
-                <posx>1128</posx>
+                <posx>1142</posx>
                 <posy>0</posy>
                 <height>73</height>
-                <width>58</width>
+                <width>50</width>
                 <aspectratio align="right" aligny="center">keep</aspectratio>
                 <texture>buttons/RadioOffNF.png</texture>
             </control>
             <control type="image">
                 <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[107])</visible>
-                <posx>1128</posx>
+                <posx>1142</posx>
                 <posy>0</posy>
                 <height>73</height>
-                <width>58</width>
+                <width>50</width>
                 <aspectratio align="right" aligny="center">keep</aspectratio>
                 <texture>buttons/RadioOnNF.png</texture>
             </control>
@@ -981,19 +981,19 @@
             </control>
             <control type="image">
                 <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[106])</visible>
-                <posx>1128</posx>
+                <posx>1142</posx>
                 <posy>0</posy>
                 <height>73</height>
-                <width>58</width>
+                <width>50</width>
                 <aspectratio align="right" aligny="center">keep</aspectratio>
                 <texture>buttons/RadioOffFO.png</texture>
             </control>
             <control type="image">
                 <visible>!String.IsEqual(ListItem.Label,) + String.IsEqual(ListItem.Label2,$LOCALIZE[107])</visible>
-                <posx>1128</posx>
+                <posx>1142</posx>
                 <posy>0</posy>
                 <height>73</height>
-                <width>58</width>
+                <width>50</width>
                 <aspectratio align="right" aligny="center">keep</aspectratio>
                 <texture>buttons/RadioOnFO.png</texture>
             </control>
