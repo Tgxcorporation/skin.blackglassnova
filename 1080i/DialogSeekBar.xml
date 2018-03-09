@@ -263,6 +263,7 @@
             <animation effect="slide" start="0,0" end="0,70" time="100" condition="window.IsActive(VideoOSD.xml)+window.IsActive(DialogFullScreenInfo.xml)">conditional</animation>
             <visible>!Skin.HasSetting(DisablePauseIconOSD)</visible>
             <visible>!Player.Caching</visible>
+            <visible>!Window.IsVisible(DialogSubtitles.xml)</visible>
             <include>OSDVisibleFadeEffect</include>
             <posy>0</posy>
             <control type="image">
