@@ -1363,7 +1363,7 @@
         <value condition="control.hasfocus(251)">$LOCALIZE[13395]</value>
         <value condition="control.hasfocus(11105)">$LOCALIZE[36560]</value>
         <value condition="control.hasfocus(252)">$LOCALIZE[13396]</value>
-        <value condition="control.hasfocus(250)">$LOCALIZE[31356]</value>
+        <!--<value condition="control.hasfocus(250)">$LOCALIZE[31356]</value>-->
         <value condition="control.hasfocus(253)">$LOCALIZE[298]</value>
         <value condition="control.hasfocus(254)">$LOCALIZE[31355]</value>
         <value condition="control.hasfocus(255)">$LOCALIZE[36501]</value>
@@ -1387,6 +1387,14 @@
         <value condition="control.hasfocus(16161)">$LOCALIZE[31304]</value>
         <value condition="control.hasfocus(1618)">$LOCALIZE[31302]</value>
         <value condition="control.hasfocus(1620)">$LOCALIZE[31303]</value>
+        <value></value>
+    </variable>
+    <variable name="TopbarOSDSettingsLabel">
+        <value condition="control.hasfocus(401)">$LOCALIZE[13397]</value>
+        <value condition="control.hasfocus(402)">$LOCALIZE[24134]</value>
+        <value condition="control.hasfocus(403)">$LOCALIZE[22006]</value>
+        <value condition="control.hasfocus(404)">$LOCALIZE[21448]$INFO[VideoPlayer.SubtitlesLanguage,  •  ]</value>
+        <value condition="control.hasfocus(405)">$LOCALIZE[21447]$INFO[VideoPlayer.AudioLanguage,  •  ]</value>
         <value></value>
     </variable>
     <variable name="TopbarGameOSDLabel">
