@@ -484,7 +484,7 @@
                     <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist,,  •  ]$INFO[VideoPlayer.Album,,  •  ]$INFO[VideoPlayer.Season,  •  $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,  •  ]$INFO[VideoPlayer.Title]</label>
                 </control>
                 <control type="label">
-                    <visible>Player.hasvideo + [[VideoPlayer.HasEpg+VideoPlayer.Content(livetv)]|!VideoPlayer.Content(livetv)]</visible>
+                    <visible>Player.hasvideo + !VideoPlayer.HasEpg</visible>
                     <posx>1555</posx>
                     <posy>0</posy>
                     <height>46</height>
@@ -494,6 +494,18 @@
                     <font>NotificationFont</font>
                     <textcolor>AlternateColor</textcolor>
                     <label>$INFO[VideoPlayer.TimeSpeed] - $INFO[VideoPlayer.Duration]</label>
+                </control>
+                <control type="label">
+                    <visible>Player.hasvideo + VideoPlayer.HasEpg</visible>
+                    <posx>1555</posx>
+                    <posy>0</posy>
+                    <height>46</height>
+                    <width>400</width>
+                    <scroll>false</scroll>
+                    <align>right</align>
+                    <font>NotificationFont</font>
+                    <textcolor>AlternateColor</textcolor>
+                    <label>$INFO[VideoPlayer.TimeSpeed] - $INFO[PVR.EpgEventDuration]</label>
                 </control>
             </control>
         </control>
@@ -1175,6 +1187,15 @@
             </control>
             <control type="group">
                 <posx>400</posx>
+                <control type="image">
+                    <posx>1218</posx>
+                    <posy>561</posy>
+                    <width>25</width>
+                    <height>40</height>
+                    <texture>OverlayRecordingHalf.png</texture>
+                    <aspectratio>keep</aspectratio>
+                    <visible>PVR.IsRecordingPlayingChannel</visible>
+                </control>
                 <control type="label">
                     <visible>VideoPlayer.Content(livetv)</visible>
                     <animation effect="slide" time="0" start="0,0" end="0,-15" condition="Player.ChapterCount">Conditional</animation>

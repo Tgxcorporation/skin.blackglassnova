@@ -22,7 +22,8 @@
             <posx>0</posx>
             <posy>0</posy>
             <control type="slider" id="87">
-                <description>Seek Slider</description>
+                <visible>Player.SeekEnabled</visible>
+                <visible>!VideoPlayer.HasEpg</visible>
                 <posx>0</posx>
                 <posy>985</posy>
                 <width>1920</width>
@@ -30,6 +31,21 @@
                 <onup>100</onup>
                 <ondown>87</ondown>
                 <action>seek</action>
+                <info>Player.Progress</info>
+                <texturesliderbar>OSD/osd_progress_empty.png</texturesliderbar>
+                <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
+                <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>
+            </control>
+            <control type="slider" id="87">
+                <visible>Player.SeekEnabled</visible>
+                <visible>VideoPlayer.HasEpg</visible>
+                <posx>0</posx>
+                <posy>985</posy>
+                <width>1920</width>
+                <height>54</height>å
+                <onup>100</onup>
+                <ondown>87</ondown>
+                <info>PVR.EpgEventProgress</info>
                 <texturesliderbar>OSD/osd_progress_empty.png</texturesliderbar>
                 <textureslidernib>buttons/SliderNibNF.png</textureslidernib>
                 <textureslidernibfocus>buttons/SliderNibFO.png</textureslidernibfocus>

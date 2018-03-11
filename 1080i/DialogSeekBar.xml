@@ -68,7 +68,8 @@
             <label>$INFO[VideoPlayer.TVShowTitle]$INFO[VideoPlayer.Artist,,  •  ]$INFO[VideoPlayer.Album,,  •  ]$INFO[VideoPlayer.Season,  •  $LOCALIZE[31973],.]$INFO[VideoPlayer.Episode,,  •  ]$INFO[VideoPlayer.Title]</label>
         </control>
         <control type="label">
-            <visible>![!VideoPlayer.HasEpg+VideoPlayer.Content(livetv)]</visible>
+            <visible>!String.isempty(Player.Duration)</visible>
+            <visible>Player.HasVideo + ![Player.HasGame | VideoPlayer.HasEpg]</visible>
             <posx>1855</posx>
             <posy>0</posy>
             <width>500</width>
@@ -77,10 +78,10 @@
             <aligny>center</aligny>
             <font>OSDFont</font>
             <shadowcolor>ShadowColor</shadowcolor>
-            <label>[COLOR=AlternateColor]$LOCALIZE[19127]: $INFO[Player.FinishTime]  •  [/COLOR]$INFO[System.Time]</label>
+            <label>$INFO[Player.FinishTime,[COLOR=AlternateColor]$LOCALIZE[19127]: ,  •  [/COLOR]]$INFO[System.Time]</label>
         </control>
         <control type="label">
-            <visible>[!VideoPlayer.HasEpg+VideoPlayer.Content(livetv)]</visible>
+            <visible>VideoPlayer.HasEpg</visible>
             <posx>1855</posx>
             <posy>0</posy>
             <width>500</width>
@@ -89,7 +90,7 @@
             <aligny>center</aligny>
             <font>OSDFont</font>
             <shadowcolor>ShadowColor</shadowcolor>
-            <label>$INFO[System.Time]</label>
+            <label>$INFO[PVR.EpgEventFinishTime,[COLOR=AlternateColor]$LOCALIZE[19127]: ,  •  [/COLOR]]$INFO[System.Time]</label>
         </control>
         <control type="label">
             <posx>1899</posx>
@@ -127,7 +128,7 @@
         </include>
         <include content="ProgressBar">
             <param name="id" value="0"/>
-            <param name="visible" value="!Player.ChannelPreviewActive"/>
+            <param name="visible" value="!VideoPlayer.Content(livetv)"/>
             <param name="x" value="0"/>
             <param name="y" value="1001"/>
             <param name="width" value="1920"/>
@@ -142,8 +143,8 @@
             <param name="reveal" value="false"/>
         </include>
         <include content="ProgressBar">
-            <param name="id" value="23"/>
-            <param name="visible" value="true"/>
+            <param name="id" value="0"/>
+            <param name="visible" value="!VideoPlayer.HasEpg"/>
             <param name="x" value="0"/>
             <param name="y" value="1001"/>
             <param name="width" value="1920"/>
@@ -159,7 +160,23 @@
         </include>
         <include content="ProgressBar">
             <param name="id" value="0"/>
-            <param name="visible" value="PVR.IsTimeShift + !Player.ChannelPreviewActive"/>
+            <param name="visible" value="VideoPlayer.HasEpg"/>
+            <param name="x" value="0"/>
+            <param name="y" value="1001"/>
+            <param name="width" value="1920"/>
+            <param name="height" value="54"/>
+            <param name="texturebg" value="-"/>
+            <param name="gfx" value="OSD/osd_progress_mid54.png"/>
+            <param name="border" value="3"/>
+            <param name="borderbg" value="0"/>
+            <param name="coldiffbg" value="ffffffff"/>
+            <param name="colordiffuse" value="ffffffff"/>
+            <param name="info" value="PVR.EpgEventProgress"/>
+            <param name="reveal" value="false"/>
+        </include>
+        <include content="ProgressBar">
+            <param name="id" value="0"/>
+            <param name="visible" value="PVR.IsTimeShift + !Player.ChannelPreviewActive + VideoPlayer.Content(livetv)"/>
             <param name="x" value="0"/>
             <param name="y" value="1046"/>
             <param name="width" value="1920"/>
@@ -175,7 +192,7 @@
         </include>
         <control type="slider" id="401">
             <description>Seek Position</description>
-            <visible>Player.Seeking</visible>
+            <visible>!VideoPlayer.HasEpg</visible>
             <animation effect="fade" start="0" end="100" time="150">Visible</animation>
             <animation effect="fade" start="100" end="0" time="150">Hidden</animation>
             <posx>0</posx>
@@ -209,13 +226,24 @@
             <shadowcolor>ShadowColor</shadowcolor>
         </control>
         <control type="label">
-            <visible>![!VideoPlayer.HasEpg+VideoPlayer.Content(livetv)]</visible>
+            <visible>!VideoPlayer.HasEpg</visible>
             <posx>1855</posx>
             <posy>1026</posy>
             <height>52</height>
             <width>180</width>
             <align>right</align>
             <label>$INFO[Player.TimeRemaining,-]</label>
+            <font>OSDFont</font>
+            <shadowcolor>ShadowColor</shadowcolor>
+        </control>
+        <control type="label">
+            <visible>VideoPlayer.HasEpg</visible>
+            <posx>1855</posx>
+            <posy>1026</posy>
+            <height>52</height>
+            <width>180</width>
+            <align>right</align>
+            <label>$INFO[PVR.EpgEventRemainingTime,-]</label>
             <font>OSDFont</font>
             <shadowcolor>ShadowColor</shadowcolor>
         </control>
