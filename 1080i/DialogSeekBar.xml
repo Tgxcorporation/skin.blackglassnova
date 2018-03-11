@@ -14,7 +14,7 @@
             <posy>-3</posy>
             <texture>common/basichome_upper_gradient.png</texture>
             <width>2220</width>
-            <height>440</height>
+            <height>540</height>
         </control>
         <control type="image">
             <visible>Window.IsActive(VideoOSD.xml)</visible>
@@ -23,7 +23,7 @@
             <posy>-3</posy>
             <texture>common/basichome_upper_gradient.png</texture>
             <width>2220</width>
-            <height>440</height>
+            <height>540</height>
         </control>
         <control type="image">
             <posx>-15</posx>
