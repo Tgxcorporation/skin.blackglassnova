@@ -97,7 +97,7 @@
             <control type="radiobutton" id="4">
                 <width>1131</width>
                 <height>73</height>
-                <radioposx>1028</radioposx>
+                <radioposx>1042</radioposx>
                 <textwidth>970</textwidth>
                 <include>LeftMenuButton</include>
             </control>

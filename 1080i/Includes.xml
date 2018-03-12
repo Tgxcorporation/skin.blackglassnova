@@ -859,7 +859,7 @@
         <height>90</height>
         <align>center</align>
         <aligny>center</aligny>
-        <radioposx>215</radioposx>
+        <radioposx>229</radioposx>
         <font>ExtraSmallButtonFont</font>
         <textoffsetx>0</textoffsetx>
         <textcolor>AlternateColor</textcolor>

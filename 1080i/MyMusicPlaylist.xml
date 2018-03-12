@@ -174,7 +174,7 @@
                     <align>left</align>
                     <!-- <textoffsetx>30</textoffsetx> -->
                     <textwidth>287</textwidth>
-                    <radioposx>345</radioposx>
+                    <radioposx>359</radioposx>
                     <!-- <font>SmallButtonFont</font> -->
                     <include>LeftMenuButton</include>
                     <label>$LOCALIZE[191]</label>

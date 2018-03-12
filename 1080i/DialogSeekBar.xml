@@ -14,7 +14,7 @@
             <posy>-3</posy>
             <texture>common/basichome_upper_gradient.png</texture>
             <width>2220</width>
-            <height>500</height>
+            <height>540</height>
         </control>
         <control type="image">
             <visible>Window.IsActive(VideoOSD.xml) | Window.IsActive(Custom_1102_OsdSettings.xml) | Window.IsActive(Custom_1101_SettingsList.xml) | Window.IsActive(OSDSettings.xml) </visible>
@@ -23,7 +23,7 @@
             <posy>-3</posy>
             <texture>common/basichome_upper_gradient.png</texture>
             <width>2220</width>
-            <height>500</height>
+            <height>540</height>
         </control>
         <control type="image">
             <posx>-15</posx>
@@ -47,7 +47,7 @@
             <visible>VideoPlayer.Content(livetv)</visible>
             <posx>64</posx>
             <posy>0</posy>
-            <width>1370</width>
+            <width>1270</width>
             <height>52</height>
             <align>left</align>
             <aligny>center</aligny>
@@ -59,7 +59,7 @@
             <visible>!VideoPlayer.Content(livetv)</visible>
             <posx>64</posx>
             <posy>0</posy>
-            <width>1370</width>
+            <width>1270</width>
             <height>52</height>
             <align>left</align>
             <aligny>center</aligny>
@@ -263,6 +263,7 @@
             <animation effect="slide" start="0,0" end="0,70" time="100" condition="window.IsActive(VideoOSD.xml)+window.IsActive(DialogFullScreenInfo.xml)">conditional</animation>
             <visible>!Skin.HasSetting(DisablePauseIconOSD)</visible>
             <visible>!Player.Caching</visible>
+            <visible>!Window.IsVisible(DialogSubtitles.xml)</visible>
             <include>OSDVisibleFadeEffect</include>
             <posy>0</posy>
             <control type="image">

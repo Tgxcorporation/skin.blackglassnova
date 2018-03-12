@@ -592,7 +592,6 @@
         <value condition="control.hasfocus(251)">$LOCALIZE[13395]</value>
         <value condition="control.hasfocus(11105)">$LOCALIZE[36560]</value>
         <value condition="control.hasfocus(252)">$LOCALIZE[13396]</value>
-        <value condition="control.hasfocus(250)">$LOCALIZE[31356]</value>
         <value condition="control.hasfocus(253)">$LOCALIZE[298]</value>
         <value condition="control.hasfocus(254)">$LOCALIZE[31355]</value>
         <value condition="control.hasfocus(255)">$LOCALIZE[36501]</value>
@@ -634,6 +633,12 @@
         <value condition="control.hasfocus(13101)">$LOCALIZE[24022]</value>
         <value condition="control.hasfocus(13102)">$LOCALIZE[36501]$INFO[VideoPlayer.StereoscopicMode,  •  ]</value>
         <value condition="control.hasfocus(13103)">$LOCALIZE[36509]</value>
+        <value condition="control.hasfocus(250)">$LOCALIZE[24012]</value>
+        <value condition="control.hasfocus(401)">$LOCALIZE[13397]</value>
+        <value condition="control.hasfocus(402)">$LOCALIZE[33003]</value>
+        <value condition="control.hasfocus(403)">$LOCALIZE[22006]</value>
+        <value condition="control.hasfocus(404)">$LOCALIZE[21448]$INFO[VideoPlayer.SubtitlesLanguage,  •  ]</value>
+        <value condition="control.hasfocus(405)">$LOCALIZE[21447]$INFO[VideoPlayer.AudioLanguage,  •  ]</value>
         <value></value>
     </variable>
     <variable name="TopbarMusicOSDLabel">

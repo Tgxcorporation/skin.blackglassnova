@@ -314,7 +314,7 @@
                     <label>$LOCALIZE[749]</label>
                     <width>433</width>
                     <height>73</height>
-                    <radioposx>345</radioposx>
+                    <radioposx>359</radioposx>
                     <font>SmallButtonFont</font>
                     <textwidth>287</textwidth>
                     <include>LeftMenuButton</include>

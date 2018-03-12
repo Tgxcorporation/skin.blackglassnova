@@ -326,6 +326,7 @@
                         <onup>4</onup>
                         <ondown>490</ondown>
                         <onright>49</onright>
+                        <spinposx>22</spinposx>
                         <include>LeftMenuButton</include>
                     </control>
                     <control type="label" id="301">

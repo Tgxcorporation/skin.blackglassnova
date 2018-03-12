@@ -217,8 +217,8 @@
                                 <label>20178</label>
                                 <onup>309</onup>
                                 <ondown>303</ondown>
-                                <radioposx>335</radioposx>
-                                <radioposy>31</radioposy>
+                                <radioposx>349</radioposx>
+                                <radioposy>19</radioposy>
                                 <include>KeyboardButtons</include>
                             </control>
                             <control type="button" id="120">
@@ -305,8 +305,8 @@
                                 <label>20179</label>
                                 <onup>302</onup>
                                 <ondown>307</ondown>
-                                <radioposx>335</radioposx>
-                                <radioposy>31</radioposy>
+                                <radioposx>349</radioposx>
+                                <radioposy>19</radioposy>
                                 <include>KeyboardButtons</include>
                             </control>
                             <control type="button" id="140">
@@ -403,8 +403,8 @@
                                 <ondown>300</ondown>
                                 <textoffsetx>32</textoffsetx>
                                 <align>left</align>
-                                <radioposx>175</radioposx>
-                                <radioposy>31</radioposy>
+                                <radioposx>189</radioposx>
+                                <radioposy>19</radioposy>
                                 <include>KeyboardButtons</include>
                             </control>
                             <control type="button" id="160">

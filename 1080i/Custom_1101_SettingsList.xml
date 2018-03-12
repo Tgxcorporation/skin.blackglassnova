@@ -87,7 +87,7 @@
                     <ondown>12100</ondown>
                     <control type="radiobutton" id="12104">
                         <label>-</label>
-                        <radioposx>0</radioposx>
+                        <radioposx>1</radioposx>
                         <texturenofocus>-</texturenofocus>
                         <texturefocus>-</texturefocus>
                         <include>TopBarButton</include>
@@ -118,8 +118,8 @@
                     <control type="button" id="12102">
                         <label>$LOCALIZE[22006]</label>
                         <include>TopBarButton</include>
-                        <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_epg_focus.png</texturefocus>
-                        <texturenofocus>topbar/topbar_epg_nofocus.png</texturenofocus>
+                        <texturefocus colordiffuse="$VAR[Picked.Highlight.Color]">topbar/topbar_subtitle_delay_focus.png</texturefocus>
+                        <texturenofocus>topbar/topbar_subtitle_delay_nofocus.png</texturenofocus>
                         <onclick>SubtitleDelay</onclick>
                         <enable>VideoPlayer.HasSubtitles + VideoPlayer.SubtitlesEnabled</enable>
                     </control>
