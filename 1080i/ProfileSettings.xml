@@ -89,6 +89,7 @@
                     <include>LeftMenuButton</include>
                 </control>
                 <control type="radiobutton" id="8">
+                    <radioposx>511</radioposx>
                     <width>600</width>
                     <textwidth>450</textwidth>
                     <include>LeftMenuButton</include>

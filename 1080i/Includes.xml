@@ -809,6 +809,8 @@
         <width>578</width>
         <font>LeftMenuButtonFont</font>
         <align>left</align>
+        <spinposx>39</spinposx>
+        <radioposx>519</radioposx>
         <radioposx>505</radioposx>
         <textoffsetx>TextMargin</textoffsetx>
         <include>TextureFocus</include>

@@ -48,6 +48,7 @@
                 <width>931</width>
                 <height>73</height>
                 <align>left</align>
+                <spinposx>39</spinposx>
                 <include>LeftMenuButton</include>
                 <onup>28</onup>
                 <ondown>5</ondown>
@@ -80,7 +81,7 @@
                 <posy>0</posy>
                 <width>931</width>
                 <height>73</height>
-                <radioposx>828</radioposx>
+                <radioposx>842</radioposx>
                 <textwidth>770</textwidth>
                 <include>LeftMenuButton</include>
             </control>
