@@ -1356,6 +1356,7 @@
         <value></value>
     </variable>
     <variable name="TopbarVideoOSDLabel">
+        <value condition="control.hasfocus(250)">$LOCALIZE[24012]</value>
         <value condition="control.hasfocus(306)">$LOCALIZE[19069]</value>
         <value condition="control.hasfocus(307)">$LOCALIZE[19069]$INFO[VideoPlayer.ChannelName,  •  ]</value>
         <value condition="control.hasfocus(350)">$LOCALIZE[23050]</value>
@@ -1388,15 +1389,15 @@
         <value condition="control.hasfocus(1620)">$LOCALIZE[31303]</value>
         <value></value>
     </variable>
-    <variable name="TopbarOSDSettingsLabel">
-        <value condition="control.hasfocus(250)">$LOCALIZE[24012]</value>
-        <value condition="control.hasfocus(401)">$LOCALIZE[13397]</value>
-        <value condition="control.hasfocus(402)">$LOCALIZE[31356]</value>
-        <value condition="control.hasfocus(403)">$LOCALIZE[22006]</value>
-        <value condition="control.hasfocus(404)">$LOCALIZE[21448]$INFO[VideoPlayer.SubtitlesLanguage,  •  ]</value>
-        <value condition="control.hasfocus(405)">$LOCALIZE[21447]$INFO[VideoPlayer.AudioLanguage,  •  ]</value>
-        <value></value>
-    </variable>
+    <!--<variable name="TopbarOSDSettingsLabel">-->
+        <!--<value condition="control.hasfocus(250)">$LOCALIZE[24012]</value>-->
+        <!--<value condition="control.hasfocus(401)">$LOCALIZE[13397]</value>-->
+        <!--<value condition="control.hasfocus(402)">$LOCALIZE[31356]</value>-->
+        <!--<value condition="control.hasfocus(403)">$LOCALIZE[22006]</value>-->
+        <!--<value condition="control.hasfocus(404)">$LOCALIZE[21448]$INFO[VideoPlayer.SubtitlesLanguage,  •  ]</value>-->
+        <!--<value condition="control.hasfocus(405)">$LOCALIZE[21447]$INFO[VideoPlayer.AudioLanguage,  •  ]</value>-->
+        <!--<value></value>-->
+    <!--</variable>-->
     <variable name="TopbarGameOSDLabel">
         <value condition="control.hasfocus(1010)">$LOCALIZE[35224]  •  Select + X</value>
         <value condition="control.hasfocus(1020)">$LOCALIZE[13007]  •  Select + B</value>
