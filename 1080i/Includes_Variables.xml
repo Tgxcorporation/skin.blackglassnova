@@ -1356,7 +1356,7 @@
         <value></value>
     </variable>
     <variable name="TopbarVideoOSDLabel">
-        <value condition="control.hasfocus(250)">$LOCALIZE[24012]</value>
+        <value condition="control.hasfocus(250)">$LOCALIZE[24133]</value>
         <value condition="control.hasfocus(306)">$LOCALIZE[19069]</value>
         <value condition="control.hasfocus(307)">$LOCALIZE[19069]$INFO[VideoPlayer.ChannelName,  •  ]</value>
         <value condition="control.hasfocus(350)">$LOCALIZE[23050]</value>
