@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window type="dialog">
-    <defaultcontrol always="true">10</defaultcontrol>
+    <defaultcontrol always="true">9000</defaultcontrol>
     <include>DialogOpenClose</include>
     <controls>
         <include>DimBG</include>
@@ -55,9 +55,9 @@
                     <posy>140</posy>
                     <height>160</height>
                     <include>VerticalScroller</include>
-                    <onleft>10</onleft>
-                    <onright>10</onright>
-                    <ondown>10</ondown>
+                    <onleft>9000</onleft>
+                    <onright>9000</onright>
+                    <ondown>9000</ondown>
                 </control>
                 <control type="image">
                     <posx>0</posx>
@@ -66,7 +66,7 @@
                     <height>79</height>
                     <texture>list/bg_facade_nofocus_top.png</texture>
                 </control>
-                <control type="grouplist">
+                <control type="grouplist" id="9000">
                     <posx>0</posx>
                     <posy>336</posy>
                     <width>864</width>
