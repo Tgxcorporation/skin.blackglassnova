@@ -1,4 +1,14 @@
+7.0.0
+Leia support.
+
 6.5.0
+New subtitle control submenu in video osd.
+New more visible gfx for topbar icons.
+New more visible gfx for radio/toggle and spin buttons.
+Added missing Color Management Support.
+Simplified Music and Videos OSD.
+Added option to display posters for home shelf episodes.
+Custom Highlight color for the rest of controls.
 Added Game Controller support.
 Updated busy spinner.
 Added option to disable widget limit.
