@@ -1274,6 +1274,7 @@
                                 <label2>$LOCALIZE[106]</label2>
                                 <onclick>Skin.ToggleSetting(WidgetEpisodePoster)</onclick>
                             </item>
+                            <!--HOME ITEMS-->
                             <item id="1003">
                                 <label/>
                                 <label2>$LOCALIZE[31974]</label2>
@@ -1314,6 +1315,18 @@
                                 <label>[COLOR=DisabledColor]$LOCALIZE[20343][/COLOR]</label>
                                 <label2>$LOCALIZE[1223]</label2>
                                 <onclick>Skin.ToggleSetting(TVShows.Hide)</onclick>
+                            </item>
+                            <item id="51">
+                                <visible>!Skin.HasSetting(PlexAddon.Hide)</visible>
+                                <label>Plex</label>
+                                <label2>$LOCALIZE[305]</label2>
+                                <onclick>Skin.ToggleSetting(PlexAddon.Hide)</onclick>
+                            </item>
+                            <item id="51">
+                                <visible>Skin.HasSetting(PlexAddon.Hide)</visible>
+                                <label>[COLOR=DisabledColor]Plex[/COLOR]</label>
+                                <label2>$LOCALIZE[1223]</label2>
+                                <onclick>Skin.ToggleSetting(PlexAddon.Hide)</onclick>
                             </item>
                             <item id="30">
                                 <visible>Skin.HasSetting(Clips.Show) + Library.HasContent(MusicVideos)</visible>

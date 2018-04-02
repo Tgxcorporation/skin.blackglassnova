@@ -1653,6 +1653,13 @@
             <icon fallback="special://skin/backgrounds/TVShows.jpg">$INFO[Skin.String(TVShows.Icon)]</icon>
             <onclick>$VAR[TvShowEntryPoint]</onclick>
         </item>
+        <item id="51">
+            <visible>!Skin.HasSetting(PlexAddon.Hide)</visible>
+            <label fallback="20343">Plex</label>
+            <thumb>special://skin/backgrounds/Channels.jpg</thumb>
+            <icon fallback="special://skin/backgrounds/TVShows.jpg">special://skin/backgrounds/Channels.jpg</icon>
+            <onclick>RunAddon(script.plex)</onclick>
+        </item>
         <item id="13">
             <visible>Skin.HasSetting(Clips.Show) + Library.HasContent(MusicVideos)</visible>
             <label>$LOCALIZE[31972]</label>
