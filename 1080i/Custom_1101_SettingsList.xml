@@ -42,7 +42,7 @@
                     <orientation>horizontal</orientation>
                     <itemgap>10</itemgap>
                     <align>center</align>
-                    <onup>11100</onup>
+                    <onup>Back</onup>
                     <ondown>11100</ondown>
                     <control type="button" id="11111">
                         <label>$LOCALIZE[13396]</label>
@@ -83,7 +83,7 @@
                     <orientation>horizontal</orientation>
                     <itemgap>10</itemgap>
                     <align>center</align>
-                    <onup>12100</onup>
+                    <onup>Back</onup>
                     <ondown>12100</ondown>
                     <control type="radiobutton" id="12104">
                         <label>-</label>
@@ -140,7 +140,7 @@
                     <orientation>horizontal</orientation>
                     <itemgap>10</itemgap>
                     <align>center</align>
-                    <onup>13100</onup>
+                    <onup>Back</onup>
                     <ondown>13100</ondown>
                     <control type="radiobutton" id="13101">
                         <label>-</label>
