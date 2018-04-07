@@ -67,7 +67,7 @@
         <pagecontrol>9060</pagecontrol>
         <focusposition>6</focusposition>
         <movement>0</movement>
-        <preloaditems>4</preloaditems>
+        <!--<preloaditems>4</preloaditems>-->
         <itemgap>0</itemgap>
         <itemlayout height="71" width="467">
             <control type="image">

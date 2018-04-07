@@ -805,7 +805,7 @@
         <orientation>horizontal</orientation>
         <focusposition>2</focusposition>
         <movement>0</movement>
-        <preloaditems>4</preloaditems>
+        <!--<preloaditems>4</preloaditems>-->
         <itemlayout height="1050" width="384">
             <control type="group">
                 <posy>539</posy>
@@ -1214,7 +1214,7 @@
         <orientation>horizontal</orientation>
         <focusposition>2</focusposition>
         <movement>0</movement>
-        <preloaditems>4</preloaditems>
+        <!--<preloaditems>4</preloaditems>-->
         <itemlayout height="1050" width="384">
             <control type="group">
                 <posy>539</posy>
