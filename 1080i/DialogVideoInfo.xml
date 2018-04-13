@@ -1009,6 +1009,15 @@
                         <description>Trailers</description>
                         <onleft>9009</onleft>
                     </control>
+                    <control type="button" id="9046">
+                        <visible>System.HasAddon(plugin.video.specialfeatures)</visible>
+                        <visible>String.IsEqual(Window(home).Property(SpecialFeatures.Visible),true)</visible>
+                        <label>$LOCALIZE[31096]</label>
+                        <include>RightDialogButton</include>
+                        <description>Special Features button</description>
+                        <onclick>Action(close)</onclick>
+                        <onclick>RunScript(plugin.video.specialfeatures,listitem)</onclick>
+                    </control>
                     <control type="togglebutton" id="9010">
                         <visible>System.HasAddon(script.extendedinfo)</visible>
                         <visible>String.IsEqual(ListItem.DBType,movie)|String.IsEqual(ListItem.DBType,tvshow)|[String.IsEqual(ListItem.DBType,episode)+Skin.HasSetting(plexbmc)+!String.StartsWith(ListItem.Title,Season)+String.IsEmpty(ListItem.VideoCodec)]</visible>
