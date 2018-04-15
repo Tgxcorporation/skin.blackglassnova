@@ -396,7 +396,11 @@ msgctxt "#31095"
 msgid "Card List"
 msgstr ""
 
-#empty strings from id 31096 to 31109
+msgctxt "#31096"
+msgid "Special Features"
+msgstr ""
+
+#empty strings from id 31097 to 31109
 
 msgctxt "#31110"
 msgid "Edit Background for Media Type"
