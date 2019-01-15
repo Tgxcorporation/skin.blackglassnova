@@ -89,6 +89,13 @@
                     <include>LeftMenuButton</include>
                     <onleft>50</onleft>
                 </control>
+                <control type="button" id="10">
+                    <label>$LOCALIZE[39024]</label>
+                    <width>433</width>
+                    <height>73</height>
+                    <include>LeftMenuButton</include>
+                    <onleft>8060</onleft>
+                </control>
                 <control type="button" id="7">
                     <label>$LOCALIZE[24021]</label>
                     <width>433</width>
